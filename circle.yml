@@ -1,3 +1,9 @@
 test:
   override:
     - echo "no tests"
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - ./bin/deploy.sh
