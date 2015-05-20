@@ -1,6 +1,3 @@
-
-try {console.log('temp')} catch(e) {}
-
 var inview1 = new Waypoint.Inview({
   element: jQuery('#what')[0],
   enter: function(direction) {
