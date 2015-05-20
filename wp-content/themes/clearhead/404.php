@@ -40,7 +40,7 @@ get_header(); ?>
 			<section class="error-404 not-found">
 				<header class="page-header jellassic-park">
           <div class="container">
-            <h1 class="page-title"><?php esc_html_e( '4-jello-4 page not found - don&rsquo;t be scared', 'clearhead' ); ?></h1>
+            <h1 class="page-title"><?php esc_html_e( '4-jello-4 page not found - don&rsquo;t be scurred', 'clearhead' ); ?></h1>
           </div>
 				</header><!-- .page-header -->
 
