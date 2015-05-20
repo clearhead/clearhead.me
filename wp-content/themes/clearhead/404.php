@@ -7,9 +7,8 @@
 
 get_header(); ?>
 
-
   <style>
-    /*custom jp*/
+    /* custom jp - a collab by hm & tf <3 */
     .4jell04 {
       background-image: url(/wp-content/themes/clearhead/images/4jello4.gif);
       background-size: 100%;
