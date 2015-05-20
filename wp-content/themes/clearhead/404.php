@@ -17,6 +17,7 @@ get_header(); ?>
       background-position: center center;
     }
     .jellassic-park .page-title {
+      margin: 0;
       padding: 8em 0;
       color: #fff;
       text-align: center;
