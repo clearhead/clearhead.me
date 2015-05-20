@@ -19,6 +19,7 @@ get_header(); ?>
     .jellassic-park .page-title {
       padding: 8em 0;
       color: #fff;
+      text-align: center;
     }
     @media (max-width: 1024px) {
       .jellassic-park { height: 310px;}
