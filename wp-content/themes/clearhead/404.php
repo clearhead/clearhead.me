@@ -14,12 +14,23 @@ get_header(); ?>
       background-size: 100%;
       background-repeat: no-repeat;
       height: 550px;
+      background-position: center center;
     }
-    @media (max-width: 600px) {
-      .jellassic-park { background-size: 200%;}
+    .jellassic-park .page-title {
+      margin-top: 200px;
+      color: #fff;
     }
     @media (max-width: 1024px) {
       .jellassic-park { height: 310px;}
+      .jellassic-park .page-title {
+        margin-top: 5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      .jellassic-park { background-size: 200%;}
+      .jellassic-park .page-title {
+        margin-top: 1rem;
+      }
     }
   </style>
 	<div id="primary" class="content-area">
