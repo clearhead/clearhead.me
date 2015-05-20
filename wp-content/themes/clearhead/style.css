@@ -902,6 +902,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family: 'ff-bau-web-pro';}
 .button-icon{padding-left:3rem; position:relative;}
 .button-icon svg{position:absolute; left:1.2rem; top:.35rem;}
 
+.m-button-outline:hover{text-decoration: none; opacity: 0.8;}
+.m-button-outline:active{text-decoration: none; opacity: 1;}
+
 @media screen and (max-width:640px){
 .m-button-outline{border:2px solid #3DC5F3; color: #3DC5F3; background: none; border-radius:3px; cursor: pointer; display: inline-block; box-sizing: border-box; line-height: 1.125rem; padding: .5rem 1rem; }
 .m-button-outline:hover{text-decoration: none; opacity: 0.8;}
