@@ -7,15 +7,33 @@
 
 get_header(); ?>
 
+
+  <style>
+    /*custom jp*/
+    .4jell04 {
+      background-image: url(/wp-content/themes/clearhead/images/4jello4.gif);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      height: 550px;
+    }
+    @media (max-width: 600px) {
+      .4jell04 { background-size: 200%;}
+    }
+    @media (max-width: 1024px) {
+      .4jell04 { height: 310px;}
+    }
+  </style>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'clearhead' ); ?></h1>
+				<header class="page-header 4jell04">
+          <div class="container">
+            <h1 class="page-title"><?php esc_html_e( '4jell04 Page not found - don&rsquo;t be scared', 'clearhead' ); ?></h1>
+          </div>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="page-content container clearfix mt3">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'clearhead' ); ?></p>
 
 					<?php get_search_form(); ?>
