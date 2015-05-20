@@ -17,19 +17,19 @@ get_header(); ?>
       background-position: center center;
     }
     .jellassic-park .page-title {
-      margin-top: 200px;
+      padding-top: 200px;
       color: #fff;
     }
     @media (max-width: 1024px) {
       .jellassic-park { height: 310px;}
       .jellassic-park .page-title {
-        margin-top: 5rem;
+        padding-top: 5rem;
       }
     }
     @media (max-width: 600px) {
       .jellassic-park { background-size: 200%;}
       .jellassic-park .page-title {
-        margin-top: 1rem;
+        padding-top: 1rem;
       }
     }
   </style>
