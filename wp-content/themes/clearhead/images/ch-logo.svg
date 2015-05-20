@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch Beta 3.3.2 (12041) - http://www.bohemiancoding.com/sketch -->
+    <title>ch-logo</title>
+    <desc>Created with Sketch Beta.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ch-logo" sketch:type="MSArtboardGroup" fill="#2D2E2B">
+            <path d="M5.492,19.972 L5.492,15.327 L1.214,15.327 L5.492,11.089 L5.492,8.992 C5.492,5.741 7.253,4.334 8.632,3.586 C10.167,2.826 11.588,2.826 11.7,2.826 C12.109,2.826 12.446,3.137 12.446,3.531 C12.446,4.023 12.109,4.304 11.7,4.304 C11.615,4.304 10.433,4.347 9.266,4.952 C7.759,5.727 7.028,7.022 7.028,8.992 L7.028,9.034 L6.97,9.696 L6.97,11.694 L4.86,13.777 L6.97,13.777 L6.97,18.452 L11.434,18.452 C11.869,18.452 12.193,18.803 12.193,19.212 C12.193,19.619 11.869,19.972 11.434,19.972 L5.492,19.972" id="left" sketch:type="MSShapeGroup"></path>
+            <path d="M14.154,19.212 C14.112,18.803 14.463,18.437 14.859,18.437 C15.083,18.437 19.657,18.184 19.657,13.736 L19.657,9.119 C19.657,9.034 19.602,7.837 18.968,6.642 C18.209,5.107 16.842,4.347 14.859,4.347 C14.463,4.347 14.154,4.051 14.154,3.616 C14.154,3.15 14.463,2.841 14.859,2.841 L14.929,2.841 C18.138,2.841 19.644,4.558 20.362,5.98 C21.122,7.543 21.135,8.992 21.135,9.119 L21.135,13.736 C21.135,18.48 17.054,19.832 14.929,20 C14.52,20 14.154,19.606 14.154,19.212" id="right" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
