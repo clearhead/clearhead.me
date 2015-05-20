@@ -9,26 +9,26 @@ get_header(); ?>
 
   <style>
     /* custom jp - a collab by hm & tf <3 */
-    .4jell04 {
+    .jellassic-park {
       background-image: url(/wp-content/themes/clearhead/images/4jello4.gif);
       background-size: 100%;
       background-repeat: no-repeat;
       height: 550px;
     }
     @media (max-width: 600px) {
-      .4jell04 { background-size: 200%;}
+      .jellassic-park { background-size: 200%;}
     }
     @media (max-width: 1024px) {
-      .4jell04 { height: 310px;}
+      .jellassic-park { height: 310px;}
     }
   </style>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header 4jell04">
+				<header class="page-header jellassic-park">
           <div class="container">
-            <h1 class="page-title"><?php esc_html_e( '4jell04 Page not found - don&rsquo;t be scared', 'clearhead' ); ?></h1>
+            <h1 class="page-title"><?php esc_html_e( '4-jello-4 page not found - don&rsquo;t be scared', 'clearhead' ); ?></h1>
           </div>
 				</header><!-- .page-header -->
 
