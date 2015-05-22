@@ -1477,14 +1477,29 @@ input[type="submit"]:hover {
 /*--------------------------------------------------------------
 ## Post Footer
 --------------------------------------------------------------*/
+.prev-next {
+  position: relative;
+}
 .prev-next .prev {
   text-align: right;
-  float: left;
-  width: 7rem;
+  left: 0;
+  /*padding-left: .5rem;*/
 }
 .prev-next .next {
-  float: right;
+  right: 0;
   width: 7rem;
+  /*padding-right: .5rem;*/
+}
+.prev-next .next, .prev-next .prev {
+  position: absolute;
+  bottom: 20px;
+  /*width: 4.5rem;*/
+  width: 5rem;
+  opacity: .3;
+}
+.prev-next .next:hover, .prev-next .prev:hover {
+  opacity: 1;
+  text-decoration: none;
 }
 .label {
   color: #3DC5F3;
