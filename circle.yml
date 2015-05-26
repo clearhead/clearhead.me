@@ -7,3 +7,7 @@ deployment:
     branch: master
     commands:
       - ./bin/deploy.sh
+  staging:
+    branch: staging
+    commands:
+      - ./bin/stage.sh
