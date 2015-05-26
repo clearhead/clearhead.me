@@ -1,10 +1,8 @@
 # clearhead.me
 
-Circle CI: https://circleci.com/gh/clearhead/clearhead.me
-
-Production: http://clearhead.me/
-
-Staging: http://clearhead.staging.wpengine.com/
+* Circle CI: https://circleci.com/gh/clearhead/clearhead.me
+* Production: http://clearhead.me/
+* Staging: http://clearhead.staging.wpengine.com/
 
 ### Workflow
 
