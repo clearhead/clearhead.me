@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
-git remote add production git@git.wpengine.com:production/clearhead.git
-git push production master
+git remote add staging git@git.wpengine.com:staging/clearhead.git
+git push staging master
