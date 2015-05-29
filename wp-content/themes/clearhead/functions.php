@@ -65,11 +65,11 @@ function clearhead_setup() {
 	/*
 	 * Enable support for Post Formats.
 	 * See http://codex.wordpress.org/Post_Formats
-	 
+
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link',
 	) );
-	
+
 	*/
 
 	// Set up the WordPress core custom background feature.
@@ -105,7 +105,7 @@ add_action( 'widgets_init', 'clearhead_widgets_init' );
 function clearhead_scripts() {
 
 	wp_enqueue_style( 'basscss', get_template_directory_uri() . '/css/basscss.min.css' );
-	
+
 	wp_enqueue_style( 'clearhead-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20120206', true);
@@ -115,12 +115,20 @@ function clearhead_scripts() {
 	wp_enqueue_script( 'clearhead-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 	if (is_front_page()){ wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array(), '20120206', true ); }
 
-
 	wp_enqueue_script( 'clearhead-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+  if (!is_front_page()){
+    wp_enqueue_style( 'rainbow-css', get_template_directory_uri() . '/bower_components/rainbow/themes/solarized-dark.css', array(), '20150629', true );
+    wp_enqueue_script( 'rainbow-js', get_template_directory_uri() . '/bower_components/rainbow/js/rainbow.min.js', array(), '20150629', true );
+    wp_enqueue_script( 'rainbow-langjs', get_template_directory_uri() . '/bower_components/rainbow/js/language/javascript.js', array(), '20150629', true );
+    wp_enqueue_script( 'rainbow-langcss', get_template_directory_uri() . '/bower_components/rainbow/js/language/css.js', array(), '20150629', true );
+  }
+
+
 }
 add_action( 'wp_enqueue_scripts', 'clearhead_scripts' );
 

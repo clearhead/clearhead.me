@@ -1,0 +1,10 @@
+{
+	"folders":
+  [
+      {
+          "path": ".",
+          "folder_exclude_patterns": ["wp-admin", "wp-includes"],
+          "file_exclude_patterns": ["*.min.*", "mysql.sql"]
+      }
+  ]
+}

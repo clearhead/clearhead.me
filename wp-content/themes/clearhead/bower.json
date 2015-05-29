@@ -1,0 +1,22 @@
+{
+  "name": "clearhead",
+  "version": "0.0.0",
+  "homepage": "https://github.com/clearhead/clearhead.me",
+  "authors": [
+    "Tom Fuertes <tomfuertes@gmail.com>"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "rainbow": "~1.1.9"
+  }
+}
