@@ -104,7 +104,7 @@ add_action( 'widgets_init', 'clearhead_widgets_init' );
  */
 function clearhead_scripts() {
 
-	wp_enqueue_style( 'basscss', get_template_directory_uri() . '/css/basscss.min.css' );
+	wp_enqueue_style( 'basscss', get_template_directory_uri() . '/css/basscss.min.css' array(), '20150629' );
 
 	wp_enqueue_style( 'clearhead-style', get_stylesheet_uri() );
 
