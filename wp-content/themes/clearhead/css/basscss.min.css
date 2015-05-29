@@ -678,10 +678,11 @@ a {
 a:hover {
   text-decoration: underline
 }
+/* // now in prismcss
 code, pre {
   background-color: #eee;
   border-radius: 3px
-}
+}*/
 hr {
   border: 0;
   border-bottom-style: solid;
