@@ -247,16 +247,3 @@ add_filter( 'get_the_archive_title', function ($title) {
         }
     return $title;
 });
-
-// Adding a custom open graph image meta tag
-function fb_home_image( $tags ) {
-    if ( is_home() || is_front_page() ) {
-        // Remove the default blank image added by Jetpack
-        unset( $tags['og:image'] );
- 
-        $fb_home_img = 'http://clearhead.me/wp-content/themes/clearhead/images/ch-logo.svg';
-        $tags['og:image'] = esc_url( $fb_home_img );
-    }
-    return $tags;
-}
-add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
