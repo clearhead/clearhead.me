@@ -14,6 +14,7 @@
 <meta property="og:image" content="http://clearhead.me/wp-content/themes/clearhead/images/ch-logo.svg"/>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="//cdn.optimizely.com/js/2448130542.js"></script>
 <script src="//use.typekit.net/jlb8kqs.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
 <?php wp_head(); ?>
