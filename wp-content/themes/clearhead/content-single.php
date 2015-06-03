@@ -125,6 +125,7 @@ if ( has_post_thumbnail() ) {
 
 <div class="more container clearfix">
 	<h3 class="center h2 mt3 mb0">want to read more?</h3>
+	<a href="/blog/all-posts" class="button button-blue inline-block" style="margin: 1em auto 4em; display: block; width: 120px;">see all posts</a>
 	<h4 class="center mt1 sm-show">latest posts in the head</h4>
 
 	<?php $others = new WP_Query(array('showposts'=> 3,'post__not_in' => array($post->ID))); ?>
