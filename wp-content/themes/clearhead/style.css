@@ -809,6 +809,10 @@ h6,
 .teal {
   color: #3DC5F3;
 }
+.bg-light-green {
+  background: #acd69b;
+  color:#225e2f;
+}
 .orange {
   color: #f37227;
 }
@@ -1683,4 +1687,22 @@ input[type="submit"]:hover {
   .d-match {
     width: 40%;
   }
+}
+
+/** Opticon Update **/
+
+#opticon a {
+  color: #225e2f;
+}
+#opticon a:hover {
+  opacity: 0.6;
+}
+#opticon h1 {
+  font-weight: 2000;
+}
+#opticon h1, #opticon h3{
+  display: inline-block;
+}
+#opticon .medium {
+  margin: 0;
 }
