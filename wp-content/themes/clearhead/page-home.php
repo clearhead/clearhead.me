@@ -18,7 +18,7 @@ get_header(); ?>
       <?php while ( have_posts() ) : the_post(); ?>
 
       <!-- opticon promo -->
-      <div id="opticon" style="display:none">
+      <div id="opticon">
         <div class="callout bg-light-green center py4 clearfix">
           <div class="container">
             <h1 class="medium">we're at Opticon</h1><br />
