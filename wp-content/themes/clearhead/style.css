@@ -1695,6 +1695,10 @@ input[type="submit"]:hover {
   color: #225e2f;
 }
 
+#opticon a:hover {
+  opacity: 0.6;
+}
+
 #opticon h1 {
   font-weight: 2000;
 }
