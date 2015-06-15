@@ -3,10 +3,6 @@ test:
     - echo "no tests"
 
 deployment:
-  master:
-    branch: master
-    commands:
-      - ./bin/deploy.sh
   staging:
     branch: staging
     commands:
