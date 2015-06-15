@@ -1688,3 +1688,12 @@ input[type="submit"]:hover {
     width: 40%;
   }
 }
+
+/** Opticon Update **/
+#opticon a {
+  color: #225e2f;
+}
+
+#opticon h1, #opticon h3{
+  display: inline-block;
+}
