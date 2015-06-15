@@ -809,6 +809,10 @@ h6,
 .teal {
   color: #3DC5F3;
 }
+.bg-light-green {
+  background: #acd69b;
+  color:#225e2f;
+}
 .orange {
   color: #f37227;
 }

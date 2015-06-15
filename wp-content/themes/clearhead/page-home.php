@@ -17,6 +17,14 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<div id="opticon">
+			<div class="callout bg-light-green center py4 clearfix">
+				<div class="container">
+					<h1 class="medium">We're at Opticon - Nominated for 5 Optie Awards including Partner of the Year<br />
+					<em><a href="">here’s how you can meet us.</a></em></h3>
+				</div>
+			</div>
+
 			<div class="hero bg-teal clearfix py4">
 
 				<div class="container">
