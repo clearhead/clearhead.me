@@ -17,7 +17,8 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<div id="opticon">
+      <!-- opticon promo -->
+  		<div id="opticon">
 				<div class="callout bg-light-green center py4 clearfix">
 					<div class="container">
 						<h1 class="medium">we're at Opticon</h1><br />
@@ -26,6 +27,15 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+      <style> /*bypass so it caches*/
+        .bg-light-green { background: #acd69b; color: #225e2f; }
+        #opticon a { color: #225e2f; }
+        #opticon a:hover { opacity: 0.6; }
+        #opticon h1 { font-weight: 2000; }
+        #opticon h1,
+        #opticon h3 { display: inline-block; }
+        #opticon .medium { margin: 0; }
+      </style><!-- /opticon promo -->
 
 			<div class="hero bg-teal clearfix py4">
 
@@ -60,7 +70,7 @@ get_header(); ?>
 							<h1 class="center mt0 mb2 bold">services tested on real problems</h2>
 							<p class="center">Running the tests isn’t the problem. Reporting isn’t the problem. The problem is moving the people and behavior, day in and out, towards more validated and likely to succeed decisions. That’s what we’re solving for.</p>
 						</div>
-					
+
 					<div class="cols">
 						<div class="point sm-col sm-col-4 px2">
 							<h3 class="title blue center light-line bold h4">digital optimization <br class="sm-show">programs</h3>
@@ -100,7 +110,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="ideas">
 				<div class="container clearfix light-line">
 					<img class="sm-hide mb2" src="<?php bloginfo('template_directory') ?>/images/books-sm.svg">
@@ -110,7 +120,7 @@ get_header(); ?>
 					<p>We’ve investigated every corner of every funnel in most industries. Our arsenal of experiments is growing every day, and will be at your fingertips for figuring out what works, and what doesn’t.</p>
 
 					<h4 class="teal regular light-line">If it exists, we’ve tested it.</h4>
-					
+
 					<ul class="list-reset disc small mt3 mb3 ml0 dual">
 						<li class="mb1">Brands & retailers</li>
 						<li class="mb1">Media & publishers</li>
@@ -125,14 +135,14 @@ get_header(); ?>
 					</ul>
 					</div>
 					<div class="sm-col sm-col-6 px4 mt3">
-						
+
 						<img class="sm-show" src="<?php bloginfo('template_directory') ?>/images/books.svg">
-						
+
 						</div>
-					
+
 				</div>
 			</div>
-			
+
 			<div class="tests">
 				<div class="container no-line clearfix">
 					<div class="sm-col sm-col-6">
@@ -148,7 +158,7 @@ get_header(); ?>
 						<h3 class="blue mt0 mxn1 light-line">3-Step Checkout</h3>
 						<p class="stat mt2 mb1 small mxn1"><span class="teal">kpi</span> order conversion rate</p>
 						<p class="stat mb0 small mxn1"><span class="teal">duration</span> 53 days</p>
-						</div>	
+						</div>
 					</div>
 					<div class="sm-col sm-col-4 px2 mb3">
 						<div class="p3 bg-light-teal">
@@ -166,12 +176,12 @@ get_header(); ?>
 					</div>
 					</div>
 				</div>
-				
+
 				</div>
-				
+
 			</div>
 			</div>
-			
+
 			<div id="why">
 			<div class="callout bg-light-orange center py4 clearfix">
 				<div class="container">
@@ -179,7 +189,7 @@ get_header(); ?>
 					<em>here’s why we do it.</em></h3>
 				</div>
 			</div>
-			
+
 			<div class="help">
 				<div class="container clearfix light-line">
 					<div class="sm-col sm-col-6">
@@ -195,11 +205,11 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="quotes py4">
-				
+
 				<div class="container light-line">
-				
+
 					<div class="container clearfix">
 						<div class="cols mxn2 flex flex-end">
 						<div class="sm-col sm-col-6 px2 mb3">
@@ -207,7 +217,7 @@ get_header(); ?>
 							<h3 class="mt0 quote medium light-line">Every day, I have to do more, faster, with less, but it’s hard to build a better ship while already out at sea.</h3>
 							<a class="white block mt2 center" href="/so-youre-being-asked-to-do-more-faster-with-less/">How we accelerate change and improvement</a>
 							<svg height="35" width="30"><polygon points="0,0 30,35 30,0" class="bg-light-orange" /></svg>
-							</div>	
+							</div>
 						</div>
 						<div class="sm-col sm-col-6 px2 mb3">
 							<div class="p3 bg-light-orange relative">
@@ -218,12 +228,12 @@ get_header(); ?>
 						</div>
 						</div>
 					</div>
-				
+
 					<div class="container clearfix center narrow">
 						<h1 class="mt3 mb2 bold">sound familiar?</h1>
 						<p class="mb4">We’re here to listen and take your unique starting place seriously. Whether your organization is large or small, an optimization machine or a total greenhorn, we’re here to help.</p>
 					</div>
-					
+
 					<div class="container clearfix">
 						<div class="cols mxn2 point-up">
 						<div class="sm-col sm-col-6 px2 mb3">
@@ -231,7 +241,7 @@ get_header(); ?>
 							<h3 class="mt0 quote medium light-line">Everyone is committed to optimization here, but I still feel like we are just doing the bare minimum.</h3>
 							<a class="white block mt2 center" href="/you-bought-the-software-you-ran-some-tests-but-are-you-really-optimizing">How we get you to world class optimization</a>
 							<svg height="35" width="30"><polygon points="30,0 0,35 30,35" class="bg-light-orange" /></svg>
-							</div>	
+							</div>
 						</div>
 						<div class="sm-col sm-col-6 px2 mb3">
 							<div class="p3 bg-light-orange relative">
@@ -244,27 +254,27 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="testimonial py2 mb4">
 				<div class="container clearfix">
 					<div class="cols mxn3">
-						
+
 						<div class="sm-col sm-col-right sm-col-9 grape medium h2 px3">
 							When we began to embark on our journey towards data-driven Optimization, we brought Clearhead in on the ground floor. We didn't just want a partner to help with testing and analytics execution, we wanted one who had a strategy and a team that made our business and organization more data driven. Together we've done all of the above.
 						</div>
-						
+
 						<div class="sm-col sm-col-3 center px3">
 							<img src="<?php bloginfo('url') ?>/wp-content/uploads/2015/05/john-s.png" />
 							<h4 class="mt1 mb0 orange regular">John Satterley</h4>
 							<h4 class="mt1 regular">Group Director, Digital Development at Village Roadshow</h4>
 						</div>
-						
+
 					</div>
 				</div>
-				
+
 			</div>
 			</div>
-			
+
 			<div id="who">
 			<div class="callout bg-light-purple center py4 clearfix">
 				<div class="container">
@@ -272,7 +282,7 @@ get_header(); ?>
 					<em>here’s who we do it with</em></h3>
 				</div>
 			</div>
-			
+
 			<div class="friends">
 				<div class="container center light-line clearfix">
 					<div class="narrow">
@@ -300,7 +310,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="plus">
 				<div class="container light-line clearfix center">
 					<div class="narrow">
@@ -313,14 +323,14 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="who">
 				<div class="container clearfix light-line">
-					
+
 					<h4 class="mt0 mb0 light-purple regular">Success starts with the best team.</h4>
 					<h1 class="mt0 mb2 bold">who you'll work with</h2>
 					<p class="md-col-8">More than just practitioners, your co-pilots are fun, middle-brained thinkers who’ve studied the tools of the trade and practice validating and optimizing — a lot.</p>
-				
+
 					<div class="cols mxn2 center dark-purple faces">
 						<div class="sm-col sm-col-2 px2">
 							<img src="<?php bloginfo('template_directory') ?>/images/headshots/ryan-g.png"/>
@@ -348,7 +358,7 @@ get_header(); ?>
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="partners">
 				<div class="container no-line center clearfix">
 					<h4 class="mt0 mb1 light-purple regular">Practiced with your partners.</h4>
@@ -361,7 +371,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="tools container clearfix">
 					<div class="cols px4 m-px0">
 						<div class="sm-col sm-col-4 px2 m-px0">
