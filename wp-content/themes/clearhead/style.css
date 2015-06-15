@@ -1694,15 +1694,15 @@ input[type="submit"]:hover {
 #opticon a {
   color: #225e2f;
 }
-
 #opticon a:hover {
   opacity: 0.6;
 }
-
 #opticon h1 {
   font-weight: 2000;
 }
-
 #opticon h1, #opticon h3{
   display: inline-block;
+}
+#opticon .medium {
+  margin: 0;
 }
