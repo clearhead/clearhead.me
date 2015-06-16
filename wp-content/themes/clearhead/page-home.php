@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="callout bg-light-green center py4 clearfix">
 					<div class="container">
 						<h1 class="medium">we're at opticon</h1><br />
-						<h3 class="medium"> nominated for 5 optie awards including partner of the year</h3><br />
+						<h3 class="medium">nominated for 5 optie awards including partner of the year</h3><br />
 						<h3 class="medium"><em><a href="http://clearhead.me/all-about-opticon-2015">here’s how you can meet us.</a></em></h3>
 					</div>
 				</div>
