@@ -12,69 +12,6 @@
 
 get_header(); ?>
 
-<<<<<<< HEAD
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-			<div id="opticon">
-				<div class="callout bg-light-green center py4 clearfix">
-					<div class="container">
-						<h1 class="medium">we're at opticon</h1><br />
-						<h3 class="medium">nominated for 5 optie awards including partner of the year</h3><br />
-						<h3 class="medium"><em><a href="http://clearhead.me/all-about-opticon-2015">here’s how you can meet us.</a></em></h3>
-					</div>
-				</div>
-			</div>
-
-			<div class="hero bg-teal clearfix py4">
-
-				<div class="container">
-
-					<div class="sm-col sm-col-7">
-
-					<h1 class="logo mt3 mb0"><img src="<?php bloginfo('template_directory') ?>/images/ch-type-white.svg" /></h1>
-					<h2 class="tagline mt0 mb3 h5">the validation and optimization agency</h2>
-
-					<p>We help innovative companies employ a/b  testing, personalization & analytics in pursuit of continuous, data-driven improvement.</p>
-					<p>Our team is expert in the tools  & methods you are hearing so much about. We  built Clearhead to  deliver what you really want&mdash; confidence through data.</p>
-
-					</div>
-
-				</div>
-
-			</div>
-
-			<div id="what">
-			<div class="callout bg-light-teal center py4 clearfix">
-				<div class="container">
-					<h3 class="medium">we’re in the hypothesis validation business.<br />
-					<em>here’s how we do it.</em></h3>
-				</div>
-			</div>
-
-			<div class="how clearfix">
-				<div class="container mt3 clearfix light-line">
-						<div class="narrow">
-						    <h4 class="center mt0 mb0 teal regular">miles walked in your shoes.</h4>
-							<h1 class="center mt0 mb2 bold">services tested on real problems</h2>
-							<p class="center">Running the tests isn’t the problem. Reporting isn’t the problem. The problem is moving the people and behavior, day in and out, towards more validated and likely to succeed decisions. That’s what we’re solving for.</p>
-						</div>
-					
-					<div class="cols">
-						<div class="point sm-col sm-col-4 px2">
-							<h3 class="title blue center light-line bold h4">digital optimization <br class="sm-show">programs</h3>
-							<p class="px1 mb2">You’re designing, building & trying new things every day. Expectations are mounting. Through A/B testing, personalization and analytics, we ensure that your website investments aren’t just “approved”, but optimal.</p>
-						</div>
-						<div class="point sm-col sm-col-4 px2">
-							<h3 class="title blue center light-line bold h4">data-driven <br class="sm-show">redesigns</h3>
-							<p class="px1 mb2">The decision has been made. For something this big, the process should be informed by solutions validated by your customers. Ensure your redesign doesn’t simply get out the door, but is destined for success.</p>
-						</div>
-						<div class="point sm-col sm-col-4 px2">
-							<h3 class="title blue center light-line bold h4">digital <br class="sm-show">transformation</h3>
-							<p class="px1 mb2">Of course you want to test & optimize. But you’re not sure if your org chart and internal culture and practices support these new rules. Let’s define what is really required to get to that aspirational “to be” state.
-=======
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
@@ -145,9 +82,7 @@ get_header(); ?>
             </div>
             <div class="point sm-col sm-col-4 px2">
               <h3 class="title blue center light-line bold h4">digital <br class="sm-show">transformation</h3>
-              <p class="px1 mb2">Of course you want to test & optimize. But you’re not sure if your org chart and internal culture and practices support these new rules. Let’s define what is really required to get to that aspirational “to be” state.
->>>>>>> c933f53f7e6eee114e104eaa40a6edbd2dae8e81
-</p>
+              <p class="px1 mb2">Of course you want to test & optimize. But you’re not sure if your org chart and internal culture and practices support these new rules. Let’s define what is really required to get to that aspirational “to be” state.</p>
             </div>
           </div>
         </div>
