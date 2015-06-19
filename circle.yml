@@ -4,6 +4,6 @@ test:
 
 deployment:
   staging:
-    branch: staging
+    branch: master
     commands:
       - ./bin/stage.sh
