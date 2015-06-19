@@ -17,7 +17,7 @@ get_header(); ?>
 
       <?php while ( have_posts() ) : the_post(); ?>
 
-      <?php include 'opticon-banner.php'; ?>
+      <?php # include 'opticon-banner.php'; ?>
 
       <div class="hero bg-teal clearfix py4">
 
