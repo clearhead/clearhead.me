@@ -13,6 +13,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<script src="//d3c3cq33003psk.cloudfront.net/opentag-128043-1821808.js" async defer></script>
 <script src="//cdn.optimizely.com/js/2448130542.js"></script>
 <script src="//use.typekit.net/jlb8kqs.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
