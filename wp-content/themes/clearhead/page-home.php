@@ -203,7 +203,7 @@ get_header(); ?>
             <div class="sm-col sm-col-6 px2 mb3">
               <div class="p3 bg-light-orange relative">
               <h3 class="mt0 quote medium light-line">It’s a challenge finding capable new hires for optimization and, further, it’s hard to get new headcount approved.</h3>
-              <a class="white block mt2 center" href="/#who">How we join our teams</a>
+              <a class="white block mt2 center" href="/#who">How we join your teams</a>
               <svg height="35" width="30"><polygon points="0,0 0,35 30,0" class="bg-light-orange" /></svg>
               </div>
             </div>
