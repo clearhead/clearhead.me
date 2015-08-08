@@ -1746,3 +1746,17 @@ input[type="submit"]:hover {
     width: 40%;
   }
 }
+
+/*--------------------------------------------------------------
+## Experimental
+## @TODO Remove or merge
+--------------------------------------------------------------*/
+
+.header-blog {
+	background: #3DC5F3;
+	padding: 20px 0 30px;
+}
+.header-blog h2 {
+	color: #fff;
+	font-size: 44px;
+}
