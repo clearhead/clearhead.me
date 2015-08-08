@@ -7,17 +7,24 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<?php get_template_part( 'partials/header', 'post' ); ?>
 
-		<?php while ( have_posts() ) : the_post(); ?>
+	<div class="col-width">
 
-			<?php get_template_part( 'content', 'single' ); ?>
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
 
-		<?php endwhile; // end of the loop. ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+				<?php get_template_part( 'content', 'single' ); ?>
 
-<?php get_sidebar( 'post' ); ?>
+			<?php endwhile; // end of the loop. ?>
+
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+		<?php get_sidebar( 'post' ); ?>
+
+	</div>
+
 <?php get_footer(); ?>

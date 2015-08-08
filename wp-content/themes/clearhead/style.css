@@ -1150,6 +1150,56 @@ input[type="submit"]:hover {
 }
 
 /*--------------------------------------------------------------
+## Layouts
+--------------------------------------------------------------*/
+
+.col-width {
+	margin: 0 auto;
+	max-width: 50em;
+	padding: 1.5em 1.75rem 1.5em 1.5rem;
+}
+.single-post .entry-content {
+	width: 100%;
+}
+
+@media screen and (min-width:780px) {
+
+	.col-width {
+		padding: 0;
+	}
+	.site-content .content-area {
+		width: 100%;
+		float: left;
+		margin: 0 -28% 0 0;
+	}
+	.single-post .site-main {
+		margin: 0 28% 0 0;
+		padding: 30px 30px 30px 0;
+	}
+	.single-post .site-content #secondary {
+		overflow: hidden;
+		width: 28%;
+		float: right;
+		margin: 30px 0;
+	}
+
+}
+
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+
+.widget-title {
+	margin-top: 0;
+}
+.widget ul {
+	margin: 0 0 1.5em;
+}
+.widget ul ul {
+	margin: 0 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
 ## Entry Header (Big Blue Area)
 --------------------------------------------------------------*/
 .entry-header {
