@@ -129,6 +129,21 @@ $GLOBALS["gtm4wp_eventfieldtexts"] = array(
 		"description" => __( "Check this option to include a Tag Manager event when a visitor uses a social button to share/like content on a social network.", GTM4WP_TEXTDOMAIN ),
 		"phase"       => GTM4WP_PHASE_STABLE
 	),
+	GTM4WP_OPTION_EVENTS_YOUTUBE => array(
+		"label"       => __( "YouTube video events", GTM4WP_TEXTDOMAIN ),
+		"description" => __( "Check this option to include a Tag Manager event when a visitor interacts with a YouTube video embeded on your site.", GTM4WP_TEXTDOMAIN ),
+		"phase"       => GTM4WP_PHASE_EXPERIMENTAL
+	),
+	GTM4WP_OPTION_EVENTS_VIMEO => array(
+		"label"       => __( "Vimeo video events", GTM4WP_TEXTDOMAIN ),
+		"description" => __( "Check this option to include a Tag Manager event when a visitor interacts with a Vimeo video embeded on your site.", GTM4WP_TEXTDOMAIN ),
+		"phase"       => GTM4WP_PHASE_EXPERIMENTAL
+	),
+	GTM4WP_OPTION_EVENTS_SOUNDCLOUD => array(
+		"label"       => __( "Soundcloud events", GTM4WP_TEXTDOMAIN ),
+		"description" => __( "Check this option to include a Tag Manager event when a visitor interacts with a Soundcloud media embeded on your site.", GTM4WP_TEXTDOMAIN ),
+		"phase"       => GTM4WP_PHASE_EXPERIMENTAL
+	),
 	GTM4WP_OPTION_EVENTS_OUTBOUND    => array(
 		"label"       => __( "Outbound link click events (gtm4wp.outboundClick)", GTM4WP_TEXTDOMAIN ),
 		"description" => __( "Check this option to include a Tag Manager event when a visitor clicks on a link directing the visitor out of your website.", GTM4WP_TEXTDOMAIN ),
@@ -374,7 +389,13 @@ $GLOBALS["gtm4wp_integratefieldtexts"] = array(
 	GTM4WP_OPTION_INTEGRATE_WCREMARKETING  => array(
 		"label"         => __( "AdWords Remarketing", GTM4WP_TEXTDOMAIN ),
 		"description"   => __( "Enable this to add Google AdWords dynamic remarketing variables to the dataLayer", GTM4WP_TEXTDOMAIN ),
-		"phase"       => GTM4WP_PHASE_STABLE,
+		"phase"         => GTM4WP_PHASE_STABLE,
+		"plugintocheck" => "woocommerce/woocommerce.php"
+	),
+	GTM4WP_OPTION_INTEGRATE_WCREMARKETINGSKU => array(
+		"label"         => __( "Use SKU instead of ID", GTM4WP_TEXTDOMAIN ),
+		"description"   => __( "Check this to use product SKU in the dynamic remarketing variables instead of the ID of the products. Will fallback to ID if no SKU is set.", GTM4WP_TEXTDOMAIN ),
+		"phase"         => GTM4WP_PHASE_EXPERIMENTAL,
 		"plugintocheck" => "woocommerce/woocommerce.php"
 	)
 );
@@ -460,8 +481,9 @@ function gtm4wp_admin_output_field( $args ) {
 		}
 
 		case GTM4WP_ADMIN_GROUP_PLACEMENT: {
-			echo '<input type="radio" id="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']_0" name="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']" value="0" ' . ( $gtm4wp_options[GTM4WP_OPTION_GTM_PLACEMENT] == 0 ? 'checked="checked"' : '' ) . '/> ' . __( "Footer of the page (not recommended by Google, no tweak in your template required)", GTM4WP_TEXTDOMAIN ) . '<br />';
-			echo '<input type="radio" id="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']_1" name="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']" value="1" ' . ( $gtm4wp_options[GTM4WP_OPTION_GTM_PLACEMENT] == 1 ? 'checked="checked"' : '' ) . '/> ' . __( "Custom (needs tweak in your template)", GTM4WP_TEXTDOMAIN ) . '<br />' . $args["description"];
+			echo '<input type="radio" id="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']_' . GTM4WP_PLACEMENT_FOOTER . '" name="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']" value="' . GTM4WP_PLACEMENT_FOOTER . '" ' . ( $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] == GTM4WP_PLACEMENT_FOOTER ? 'checked="checked"' : '' ) . '/> ' . __( "Footer of the page (not recommended by Google, no tweak in your template required)", GTM4WP_TEXTDOMAIN ) . '<br />';
+			echo '<input type="radio" id="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']_' . GTM4WP_PLACEMENT_BODYOPEN . '" name="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']" value="' . GTM4WP_PLACEMENT_BODYOPEN . '" ' . ( $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] == GTM4WP_PLACEMENT_BODYOPEN ? 'checked="checked"' : '' ) . '/> ' . __( "Custom (needs tweak in your template)", GTM4WP_TEXTDOMAIN ) . '<br />';
+			echo '<input type="radio" id="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']_' . GTM4WP_PLACEMENT_BODYOPEN_AUTO . '" name="' . GTM4WP_OPTIONS . '[' . GTM4WP_OPTION_GTM_PLACEMENT . ']" value="' . GTM4WP_PLACEMENT_BODYOPEN_AUTO . '" ' . ( $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] == GTM4WP_PLACEMENT_BODYOPEN_AUTO ? 'checked="checked"' : '' ) . '/> ' . __( "Codeless injection (no tweak, right placement but experimental, could break your frontend)", GTM4WP_TEXTDOMAIN ) . '<br /><br />' . $args["description"];
 			
 			break;
 		}
@@ -542,6 +564,8 @@ function gtm4wp_admin_output_field( $args ) {
 }
 
 function gtm4wp_sanitize_options($options) {
+	global $wpdb;
+	
 	$output = gtm4wp_reload_options();
 
 	foreach($output as $optionname => $optionvalue) {
@@ -562,6 +586,17 @@ function gtm4wp_sanitize_options($options) {
 		// dataLayer events
 		} else if ( substr($optionname, 0, 6) == "event-" ) {
 			$output[$optionname] = (boolean) $newoptionvalue;
+
+			// clear oembed transients when feature is enabled because we need to hook into the oembed process to enable some 3rd party APIs
+			if ( $output[$optionname] && !$optionvalue ) {
+				if ( GTM4WP_OPTION_EVENTS_YOUTUBE == $optionname ) {
+					$wpdb->query( "DELETE FROM $wpdb->postmeta WHERE meta_value LIKE '%youtube.com%' AND meta_key LIKE '_oembed_%'" );
+				}
+
+				if ( GTM4WP_OPTION_EVENTS_VIMEO == $optionname ) {
+					$wpdb->query( "DELETE FROM $wpdb->postmeta WHERE meta_value LIKE '%vimeo.com%' AND meta_key LIKE '_oembed_%'" );
+				}
+			}
 
 		// integrations
 		} else if ( substr($optionname, 0, 10) == "integrate-" ) {
@@ -584,7 +619,7 @@ function gtm4wp_sanitize_options($options) {
 		// GTM container code placement
 		} else if ( $optionname == GTM4WP_OPTION_GTM_PLACEMENT ) {
 			$output[$optionname] = (int) $newoptionvalue;
-			if ( ( $output[$optionname] < 0) || ( $output[$optionname] > 1 ) ) {
+			if ( ( $output[$optionname] < 0) || ( $output[$optionname] > 2 ) ) {
 				$output[$optionname] = 0;
 			}
 
@@ -820,6 +855,11 @@ function gtm4wp_admin_init() {
 		)
 	);
 
+	// apply oembed code changes on the admin as well since the oembed call on the admin is cached by WordPress into a transient
+	// that is applied on the frontend later
+	require_once( dirname( __FILE__ ) . "/../integration/youtube.php" );
+	require_once( dirname( __FILE__ ) . "/../integration/vimeo.php" );
+	require_once( dirname( __FILE__ ) . "/../integration/soundcloud.php" );
 }
 
 function gtm4wp_show_admin_page() {
@@ -864,7 +904,10 @@ function gtm4wp_add_admin_js($hook) {
 			"blockmacrostabtitle" => __( "Blacklist macros" , GTM4WP_TEXTDOMAIN ),
 			"wpcf7tabtitle" => __( "Contact Form 7" , GTM4WP_TEXTDOMAIN ),
 			"wctabtitle" => __( "WooCommerce" , GTM4WP_TEXTDOMAIN ),
-			"weathertabtitle" => __( "Weather data" , GTM4WP_TEXTDOMAIN )
+			"weathertabtitle" => __( "Weather data" , GTM4WP_TEXTDOMAIN ),
+			"generaleventstabtitle" => __( "General events" , GTM4WP_TEXTDOMAIN ),
+			"mediaeventstabtitle" => __( "Media events" , GTM4WP_TEXTDOMAIN ),
+			"depecratedeventstabtitle" => __( "Depecrated" , GTM4WP_TEXTDOMAIN )
 		);
 		wp_localize_script( "admin-subtabs", 'gtm4wp', $subtabtexts );
 		wp_enqueue_script( "admin-subtabs" );
