@@ -29,7 +29,7 @@
 		  	<?php $recently = new WP_Query(array('showposts'=> 1,'post__not_in' => array($post->ID))); ?>
 				<?php while ($recently->have_posts()) : $recently->the_post(); ?>
 					<span class="small title mb1">
-						<?php echo get_the_twitter_excerpt( ); ?>
+						<?php echo clearhead_twitter_excerpt( ); ?>
 						</span>
 						<a class="small m-button-trans" href="<?php the_permalink();?>">read post</a>
 				<?php endwhile; wp_reset_query(); ?>
@@ -41,7 +41,7 @@
 			<a class="button button-trans m-button-trans" href="http://clearhead.theresumator.com/apply">apply here</a>
 
 		  </div>
-		</div>	
+		</div>
 	</div>
 
 	<div class="bottom clearfix">
@@ -51,7 +51,7 @@
 			<div class="copy sm-col sm-col-4 white small sm-show">&copy; <?php the_date(Y); ?> clearhead</div>
 			</div>
 		</div>
-	</div>	
+	</div>
 
 </div><!-- #page -->
 

@@ -23,49 +23,44 @@ function clearhead_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'clearhead_body_classes' );
 
-if ( version_compare( $GLOBALS['wp_version'], '4.1', '<' ) ) :
-	/**
-	 * Filters wp_title to print a neat <title> tag based on what is being viewed.
-	 *
-	 * @param string $title Default title text for current view.
-	 * @param string $sep Optional separator.
-	 * @return string The filtered title.
-	 */
-	function clearhead_wp_title( $title, $sep ) {
-		if ( is_feed() ) {
-			return $title;
-		}
+/**
+ * Returns excerpt with tags and curly quotes stripped.
+ * Used in archive.php and footer.php.
+ */
+function clearhead_twitter_excerpt() {
+	$excerpt = get_the_excerpt();
+	$excerpt = strip_shortcodes( $excerpt );
+	$excerpt = strip_tags( $excerpt );
+	$excerpt = remove_curly_quotes( $excerpt );
+	$the_str = substr( $excerpt, 0, 118 );
+	return $the_str.'...';
+}
 
-		global $page, $paged;
-
-		// Add the blog name
-		$title .= get_bloginfo( 'name', 'display' );
-
-		// Add the blog description for the home/front page.
-		$site_description = get_bloginfo( 'description', 'display' );
-		if ( $site_description && ( is_home() || is_front_page() ) ) {
-			$title .= " $sep $site_description";
-		}
-
-		// Add a page number if necessary:
-		if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() ) {
-			$title .= " $sep " . sprintf( __( 'Page %s', 'clearhead' ), max( $paged, $page ) );
-		}
-
-		return $title;
+/**
+ * Filters the archive title.
+ */
+function clearhead_archive_title() {
+	if ( is_category() ) {
+		$title = single_cat_title( '', false );
+	} elseif ( is_tag() ) {
+		$title = single_tag_title( '', false );
+	} elseif ( is_author() ) {
+		$title = '<span class="vcard">' . get_the_author() . '</span>' ;
 	}
-	add_filter( 'wp_title', 'clearhead_wp_title', 10, 2 );
+    return $title;
+}
+add_filter( 'get_the_archive_title', 'clearhead_archive_title' );
 
-	/**
-	 * Title shim for sites older than WordPress 4.1.
-	 *
-	 * @link https://make.wordpress.org/core/2014/10/29/title-tags-in-4-1/
-	 * @todo Remove this function when WordPress 4.3 is released.
-	 */
-	function clearhead_render_title() {
-		?>
-		<title><?php wp_title( '|', true, 'right' ); ?></title>
-		<?php
-	}
-	add_action( 'wp_head', 'clearhead_render_title' );
-endif;
+/**
+ * Removes curly quotes.
+ *
+ * @TODO Where is this function called from?
+ */
+function remove_curly_quotes( $text ) {
+    // First, replace UTF-8 characters.
+    $text = str_replace(array("\xe2\x80\x98", "\xe2\x80\x99", "\xe2\x80\x9c", "\xe2\x80\x9d", "\xe2\x80\x93", "\xe2\x80\x94", "\xe2\x80\xa6"), array("'", "'", '"', '"', '-', '--',
+        '...'), $text);
+    // Next, replace their Windows-1252 equivalents.
+    $text = str_replace(array(chr(145), chr(146), chr(147), chr(148), chr(150), chr(151), chr(133)), array("'", "'", '"', '"', '-', '--', '...'), $text);
+    return $text;
+}
