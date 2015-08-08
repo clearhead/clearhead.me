@@ -1002,6 +1002,14 @@ input[type="submit"]:hover {
   box-shadow: none;
   transition: .5s ease all;
 }
+.admin-bar #masthead {
+	top: 32px;
+}
+@media screen and ( max-width: 782px ) {
+	.admin-bar #masthead {
+		top: 46px;
+	}
+}
 #masthead .container {
   padding-left: 1rem;
   padding-right: 1rem;
