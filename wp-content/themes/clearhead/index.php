@@ -17,9 +17,9 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
-		
+
 		<div class="more container clearfix mt3">
-			
+
 			<h3 class="center h2 mt3 mb0">latest posts</h3>
 			<h4 class="center mt1 mb2 sm-show">from the clearhead team</h4>
 
@@ -53,11 +53,10 @@ get_header(); ?>
 			<?php get_template_part( 'content', 'none' ); ?>
 
 		<?php endif; ?>
-		
+
 		</div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

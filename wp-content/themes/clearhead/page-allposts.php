@@ -3,6 +3,8 @@
 Template Name: All Posts
 */
 
+/* @TODO: This template should be removed. Querying all posts is intense */
+
 get_header(); ?>
 
 	<div id="primary" class="content-area">
@@ -17,5 +19,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
