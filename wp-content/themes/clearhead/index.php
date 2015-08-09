@@ -13,6 +13,11 @@
 
 get_header(); ?>
 
+
+	<?php if ( is_home() ) : ?>
+		<?php get_template_part( 'partials/header', 'blog' ); ?>
+	<?php endif; ?>
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

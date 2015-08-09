@@ -7,7 +7,7 @@
 ?>
 
 <div class="header-blog">
-	<div class="col-width">
-		<h2>clearhead blog</h2>
+	<div class="container">
+		<h2>Clearhead Blog</h2>
 	</div>
 </div>
