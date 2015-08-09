@@ -586,7 +586,8 @@ textarea {
 .site-content:before,
 .site-content:after,
 .site-footer:before,
-.site-footer:after {
+.site-footer:after,
+.layout-sidebar:after {
   content: "";
   display: table;
 }
@@ -595,30 +596,10 @@ textarea {
 .comment-content:after,
 .site-header:after,
 .site-content:after,
-.site-footer:after {
+.site-footer:after,
+.layout-sidebar:after {
   clear: both;
 }
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/
-.widget {
-  margin: 0 0 1.5em;
-}
-
-/* Make sure select elements fit in widgets. */
-.widget select {
-  max-width: 100%;
-}
-
-/* Search widget. */
-.widget_search .search-submit {
-  display: none;
-}
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1153,7 +1134,7 @@ input[type="submit"]:hover {
 ## Layouts
 --------------------------------------------------------------*/
 
-.col-width {
+.layout-sidebar {
 	margin: 0 auto;
 	max-width: 50em;
 	padding: 1.5em 1.75rem 1.5em 1.5rem;
@@ -1164,23 +1145,20 @@ input[type="submit"]:hover {
 
 @media screen and (min-width:780px) {
 
-	.col-width {
+	.layout-sidebar {
 		padding: 0;
 	}
-	.site-content .content-area {
+	.site-content .layout-main {
 		width: 100%;
-		float: left;
-		margin: 0 -28% 0 0;
+		padding: 30px 0;
 	}
-	.single-post .site-main {
-		margin: 0 28% 0 0;
-		padding: 30px 30px 30px 0;
+	.single-post .entry-content {
+		float: left;
+		width: calc( 100% - 270px );
 	}
 	.single-post .site-content #secondary {
-		overflow: hidden;
-		width: 28%;
+		width: 240px;
 		float: right;
-		margin: 30px 0;
 	}
 
 }
@@ -1189,6 +1167,11 @@ input[type="submit"]:hover {
 ## Widgets
 --------------------------------------------------------------*/
 
+.widget {
+	margin: 0 0 1.5em;
+	background: #f1f1f1;
+	padding: 20px;
+}
 .widget-title {
 	margin-top: 0;
 }
@@ -1198,6 +1181,16 @@ input[type="submit"]:hover {
 .widget ul ul {
 	margin: 0 0 0 1.5em;
 }
+/* Make sure select elements fit in widgets. */
+.widget select {
+  max-width: 100%;
+}
+
+/* Search widget. */
+.widget_search .search-submit {
+  display: none;
+}
+
 
 /*--------------------------------------------------------------
 ## Entry Header (Big Blue Area)
@@ -1539,29 +1532,15 @@ input[type="submit"]:hover {
 /*--------------------------------------------------------------
 ## Post Footer
 --------------------------------------------------------------*/
-.prev-next {
-  position: relative;
-}
+.prev-next .next,
 .prev-next .prev {
-  text-align: right;
-  left: 0;
-  /*padding-left: .5rem;*/
+	opacity: .3;
+	padding-bottom: 30px;
 }
-.prev-next .next {
-  right: 0;
-  width: 7rem;
-  /*padding-right: .5rem;*/
-}
-.prev-next .next, .prev-next .prev {
-  position: absolute;
-  bottom: 20px;
-  /*width: 4.5rem;*/
-  width: 5rem;
-  opacity: .3;
-}
-.prev-next .next:hover, .prev-next .prev:hover {
-  opacity: 1;
-  text-decoration: none;
+.prev-next .next:hover,
+.prev-next .prev:hover {
+	opacity: 1;
+	text-decoration: none;
 }
 .label {
   color: #3DC5F3;
@@ -1570,10 +1549,18 @@ input[type="submit"]:hover {
 .prev-next .date {
   font-size: 12px;
 }
-@media screen and (max-width:640px) {
-  .prev-next .next {
-    text-align: right;
-  }
+@media screen and (min-width:640px) {
+	.prev-next .next,
+	.prev-next .prev {
+		width: 48%;
+	}
+	.prev-next .prev {
+		float: left;
+	}
+	.prev-next .next {
+		float: right;
+		text-align: right;
+	}
 }
 .author {
   background: #F4F8FA;

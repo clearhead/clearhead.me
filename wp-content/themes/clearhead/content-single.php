@@ -6,12 +6,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
+	<?php get_template_part( 'partials/header', 'post' ); ?>
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-	</div><!-- .entry-content -->
+	<div class="layout-sidebar">
+		<div class="layout-main">
+			<div class="entry-content">
+				<?php the_content(); ?>
+			</div><!-- .entry-content -->
+			<?php get_sidebar( 'post' ); ?>
+		</div>
+	</div>
 
-	<div class="container prev-next mb4 clearfix">
+	<div class="container prev-next mb4 clear">
 		<div class="prev">
 			<?php
 			$prev_post = get_previous_post();
