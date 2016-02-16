@@ -20,12 +20,6 @@
 					<p class="date m0 h2 low"><?php the_time('F j, Y'); ?></p>
 					<?php the_title( '<h1 class="entry-title mt1 mb1 bold h1">', '</h1>' ); ?>
 				</div>
-
-				<div class="sm-col sm-col-4 entry-meta m-mt1">
-					<?php echo get_avatar( get_the_author_meta( 'ID' ), 46 ); ?>
-					<p class="m0"><?php the_author(); ?></p>
-					<p class="m0 italic low"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
-				</div><!-- .entry-meta -->
 			</div>
 
 			<div class="clearfix foot mt4 mb2">
@@ -53,13 +47,26 @@
 		</div><!-- .container -->
 	</div><!-- .entry-header -->
 
-	<div class="layout-sidebar">
-		<div class="layout-main">
-			<div class="entry-content">
-				<?php the_content(); ?>
-			</div><!-- .entry-content -->
+	<div class="entry-meta container author-top mt3 mb3">
+		<div class="py2 clearfix">
+			<?php echo get_avatar( get_the_author_meta( 'ID' ), 72 ); ?>
+			<div class="author-information">
+				<h3 class="m0"><a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), hi, true); ?>"><?php the_author(); ?></a></h3>
+				<p class="m0 job-title"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
+			</div>
+			<div class="author-linkedin">
+				<?php
+				$linkedin = get_user_meta( get_the_author_meta( 'ID' ), linked, true );
+				if ( $linkedin ) : ?>
+					<a class="button block" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), hi, true); ?>">say hi to <?php the_author_meta('first_name'); ?> on linkedin</a>
+				<?php endif; ?>
+			</div>
 		</div>
-	</div>
+	</div><!-- .entry-meta -->
+
+	<div class="entry-content container mt4">
+		<?php the_content(); ?>
+	</div><!-- .entry-content -->
 
 	<div class="container prev-next mb4 clear">
 		<div class="prev">
@@ -110,25 +117,6 @@
 			<a href="#comments" class="button button-blue inline-block">join the conversation</a>
 		</div>
 
-	</div>
-
-	<div class="info py3 clearfix mxn2 sm-center">
-		<div class="sm-col sm-col-8 with-av px2">
-			<?php echo get_avatar( get_the_author_meta( 'ID' ), 72 ); ?>
-			<p class="label m0 mb1">posted by</p>
-			<p class="m0 h3 name bold"><?php the_author(); ?></p>
-			<p class="m0 h6"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
-			<p class="bio mt1"><?php the_author_meta( 'description' ); ?></p>
-		</div>
-		<div class="sm-col sm-col-4 px2 center">
-			<a class="button block button-dark-blue" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), hi, true); ?>">say hi to <?php the_author_meta('first_name'); ?></a>
-			<?php $twitter = get_user_meta( get_the_author_meta( 'ID' ), twitter, true ); if ($twitter) { ?>
-			<a class="block mt2" href="http://twitter.com/<?php echo $twitter; ?>">@<?php echo $twitter; ?></a>
-			<?php } ?>
-			<?php $linked = get_user_meta( get_the_author_meta( 'ID' ), linked, true ); if ($linked) { ?>
-			<a class="block mb1" href="<?php echo $linked; ?>">linkedin</a>
-			<?php } ?>
-		</div>
 	</div>
 
 </div>

@@ -1134,6 +1134,7 @@ input[type="submit"]:hover {
 ## Layouts
 --------------------------------------------------------------*/
 
+/*
 .layout-sidebar {
 	margin: 0 auto;
 	max-width: 50em;
@@ -1162,6 +1163,7 @@ input[type="submit"]:hover {
 	}
 
 }
+*/
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -1289,6 +1291,26 @@ input[type="submit"]:hover {
     right: 0;
     left: auto;
   }
+}
+.author-top {
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.author-top .avatar {
+	border-radius: 100%;
+	float: left;
+	margin-right: 30px;
+}
+.author-top .author-information {
+	float: left;
+	width: calc(100% - 320px );
+}
+.author-top .author-information h3 a {
+	color: #3DC5F3;
+}
+.author-top .author-linkedin {
+	float: right;
+	width: 200px;
 }
 
 /*--------------------------------------------------------------
