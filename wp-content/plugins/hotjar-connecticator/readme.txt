@@ -3,8 +3,8 @@ Contributors: bluemedicinelabs, internetmedicineman, trishacupra
 Donate link: http://www.BlueMedicineLabs.com/
 Tags: header, headers, Hotjar, script, analytics, connect, connecticator, insights, heatmaps
 Requires at least: 3.6
-Tested up to: 4.1
-Stable tag: 1.0
+Tested up to: 4.3.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,9 +30,6 @@ This plugin makes it very fast, simple, and easy to your Hotjar script code to y
 
 6. Finally test your script is working in your Hotjar account.
 
-
-
-
 == Installation ==
 
 You can find the plugin in the WordPress menu under Settings > Hotjar Connecticator
@@ -43,13 +40,11 @@ You can find the plugin in the WordPress menu under Settings > Hotjar Connectica
 2. Search for `Hotjar Connecticator`
 3. Install and activate the plugin
 
-
 = Manual =
 
 1. Upload `hotjar` directory to the `/wp-content/plugins/` directory
 2. Activate the plugin through the Plugins menu in WordPress
 3. Configure plugin (go to the Settings/Hotjar Connecticator)
-
 
 == Frequently Asked Questions ==
 
@@ -59,19 +54,18 @@ A. No. But the awesome Hotjar Team are aware of us creating this third party plu
 
 Disclaimer: This plugin is created and maintained only by the authors at Blue Medicine Labs. Reference to Hotjar and use of any brand elements does not equate to endorsement.
 
-
 = Q. I installed the plugin. Where do I paste in my Hotjar script now? =
 
 A. You can find the plugin in the WordPress menu under `Settings > Hotjar Connecticator`
-
 
 == Screenshots ==
 
 1. Just paste your code in the box here and click the Save button. It's that easy.
 
-
-
 == Changelog ==
+
+= 1.0.1 =
+* Update compatibility token
 
 = 1.0 =
 * Initial version

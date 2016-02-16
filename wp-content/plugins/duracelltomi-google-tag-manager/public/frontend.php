@@ -3,7 +3,11 @@ define( 'GTM4WP_WPFILTER_COMPILE_DATALAYER', 'gtm4wp_compile_datalayer' );
 define( 'GTM4WP_WPFILTER_COMPILE_REMARKTING', 'gtm4wp_compile_remarkering' );
 define( 'GTM4WP_WPFILTER_GETTHEGTMTAG', 'gtm4wp_get_the_gtm_tag' );
 
-if ( $GLOBALS[ "gtm4wp_options" ][ GTM4WP_OPTION_DATALAYER_NAME ] == "" ) {
+$GLOBALS[ "gtm4wp_container_code_written" ] = false;
+
+// check for empty is needed to prevent error in WP CLI
+// bugfix by Patrick Holberg Hesselberg
+if ( empty($GLOBALS[ "gtm4wp_options" ] ) || ($GLOBALS[ "gtm4wp_options" ][ GTM4WP_OPTION_DATALAYER_NAME ] == "") ) {
 	$GLOBALS[ "gtm4wp_datalayer_name" ] = "dataLayer";
 } else {
 	$GLOBALS[ "gtm4wp_datalayer_name" ] = $GLOBALS[ "gtm4wp_options" ][ GTM4WP_OPTION_DATALAYER_NAME ];
@@ -159,7 +163,7 @@ function gtm4wp_add_basic_datalayer_data( $dataLayer ) {
 	
 	if ( is_search() ) {
 		$dataLayer["siteSearchTerm"] = get_search_query();
-		$dataLayer["siteSearchFrom"] = $_SERVER["HTTP_REFERER"];
+		$dataLayer["siteSearchFrom"] = ( isset($_SERVER["HTTP_REFERER"]) ? $_SERVER["HTTP_REFERER"] : "" );
 		$dataLayer["siteSearchResults"] = $wp_query->post_count;
 	}
 	
@@ -320,8 +324,8 @@ function gtm4wp_add_basic_datalayer_data( $dataLayer ) {
 	}
 
 	if ( $gtm4wp_options[ GTM4WP_OPTION_INCLUDE_WEATHER ] ) {
-		$dataLayer[ "weatherCategory" ] = __( "(no weather data available)", GTM4WP_TEXTDOMAIN );
-		$dataLayer[ "weatherDescription" ] = __( "(no weather data available)", GTM4WP_TEXTDOMAIN );
+		$dataLayer[ "weatherCategory" ] = __( "(no weather data available)", 'duracelltomi-google-tag-manager' );
+		$dataLayer[ "weatherDescription" ] = __( "(no weather data available)", 'duracelltomi-google-tag-manager' );
 		$dataLayer[ "weatherTemp" ] = 0;
 		$dataLayer[ "weatherPressure" ] = 0;
 		$dataLayer[ "weatherWindSpeed" ] = 0;
@@ -382,23 +386,32 @@ function gtm4wp_wp_loaded() {
 }
 
 function gtm4wp_get_the_gtm_tag() {
-	global $gtm4wp_options, $gtm4wp_datalayer_name;
+	global $gtm4wp_options, $gtm4wp_datalayer_name, $gtm4wp_container_code_written;
 	
 	$_gtm_tag = '';
 	
-	if ( $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] != "" ) {
-		$_gtm_tag .= '
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=' . $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] . '"
+	if ( ( $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] != "" ) && ( ! $gtm4wp_container_code_written ) ) {
+		$_gtm_codes = explode( ",", str_replace( array(";"," "), array(",",""), $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] ) );
+
+		foreach( $_gtm_codes as $one_gtm_code ) {
+			$_gtm_tag .= '
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=' . $one_gtm_code . '"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({\'gtm.start\':
 new Date().getTime(),event:\'gtm.js\'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 \'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,\'script\',\'' . $gtm4wp_datalayer_name . '\',\'' . $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] . '\');</script>
+})(window,document,\'script\',\'' . $gtm4wp_datalayer_name . '\',\'' . $one_gtm_code . '\');</script>';
+		}
+
+		$_gtm_tag .= '
 <!-- End Google Tag Manager -->';
+
+    $_gtm_tag = apply_filters( GTM4WP_WPFILTER_GETTHEGTMTAG, $_gtm_tag );
+    $gtm4wp_container_code_written = true;
 	}
 
-	return apply_filters( GTM4WP_WPFILTER_GETTHEGTMTAG, $_gtm_tag );
+	return $_gtm_tag;
 }
 
 function gtm4wp_the_gtm_tag() {
@@ -409,35 +422,47 @@ function gtm4wp_enqueue_scripts() {
 	global $gtm4wp_options, $gtp4wp_plugin_url;
 		
 	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_OUTBOUND ] ) {
-		wp_enqueue_script( "gtm4wp-outbound-click-tracker", $gtp4wp_plugin_url . "js/gtm4wp-outbound-click-tracker.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-outbound-click-tracker", $gtp4wp_plugin_url . "js/gtm4wp-outbound-click-tracker.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 
 	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_DOWNLOADS ] ) {
-		wp_enqueue_script( "gtm4wp-download-tracker", $gtp4wp_plugin_url . "js/gtm4wp-download-tracker.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-download-tracker", $gtp4wp_plugin_url . "js/gtm4wp-download-tracker.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 
 	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_EMAILCLICKS ] ) {
-		wp_enqueue_script( "gtm4wp-email-link-tracker", $gtp4wp_plugin_url . "js/gtm4wp-email-link-tracker.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-email-link-tracker", $gtp4wp_plugin_url . "js/gtm4wp-email-link-tracker.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 
 	if ( $gtm4wp_options[ GTM4WP_OPTION_INTEGRATE_WPCF7 ] ) {
-		wp_enqueue_script( "gtm4wp-contact-form-7-tracker", $gtp4wp_plugin_url . "js/gtm4wp-contact-form-7-tracker.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-contact-form-7-tracker", $gtp4wp_plugin_url . "js/gtm4wp-contact-form-7-tracker.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 
 	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_FORMMOVE ] ) {
-		wp_enqueue_script( "gtm4wp-form-move-tracker", $gtp4wp_plugin_url . "js/gtm4wp-form-move-tracker.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-form-move-tracker", $gtp4wp_plugin_url . "js/gtm4wp-form-move-tracker.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 
 	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_SOCIAL ] ) {
-		wp_enqueue_script( "gtm4wp-social-actions", $gtp4wp_plugin_url . "js/gtm4wp-social-tracker.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-social-actions", $gtp4wp_plugin_url . "js/gtm4wp-social-tracker.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 
 	if ( isset ( $GLOBALS["woocommerce"] ) ) {
 		require_once( dirname( __FILE__ ) . "/../integration/woocommerce.php" );
 	}
 
+	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_YOUTUBE ] ) {
+		require_once( dirname( __FILE__ ) . "/../integration/youtube.php" );
+	}
+
+	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_VIMEO ] ) {
+		require_once( dirname( __FILE__ ) . "/../integration/vimeo.php" );
+	}
+
+	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_SOUNDCLOUD ] ) {
+		require_once( dirname( __FILE__ ) . "/../integration/soundcloud.php" );
+	}
+
 	if ( $gtm4wp_options[ GTM4WP_OPTION_SCROLLER_ENABLED ] ) {
-		wp_enqueue_script( "gtm4wp-scroll-tracking", $gtp4wp_plugin_url . "js/analytics-talk-content-tracking.js", array( "jquery" ), "1.0", false );
+		wp_enqueue_script( "gtm4wp-scroll-tracking", $gtp4wp_plugin_url . "js/analytics-talk-content-tracking.js", array( "jquery" ), GTM4WP_VERSION, false );
 	}
 }
 
@@ -452,7 +477,7 @@ function gtm4wp_wp_footer() {
 function gtm4wp_wp_body_open() {
 	global $gtm4wp_options;
 
-	if ( GTM4WP_PLACEMENT_BODYOPEN == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) {
+	if ( ( GTM4WP_PLACEMENT_BODYOPEN == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) || ( GTM4WP_PLACEMENT_BODYOPEN_AUTO == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) ) {
 		gtm4wp_the_gtm_tag();
 	}
 }
@@ -513,7 +538,7 @@ function gtm4wp_wp_header_end() {
 		gtm4wp_track_downloads( "' . str_replace( '"', '', $gtm4wp_options[ GTM4WP_OPTION_EVENTS_DWLEXT ] ) . '" );
 	});';
 		}
-		
+//var_dump($gtm4wp_datalayer_data);		
 		$_gtm_tag .= '
 	' . $gtm4wp_datalayer_name . '.push(' . str_replace(
 			array( '"-~-', '-~-"' ),
@@ -528,12 +553,28 @@ function gtm4wp_wp_header_end() {
 	echo $_gtm_tag;	
 }
 
+function gtm4wp_body_class( $classes ) {
+  global $gtm4wp_options;
+  
+  // solution is based on the code of Yaniv Friedensohn
+  // http://www.affectivia.com/blog/placing-the-google-tag-manager-in-wordpress-after-the-body-tag/
+  if ( GTM4WP_PLACEMENT_BODYOPEN_AUTO == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) {
+		$classes[] = '">' . gtm4wp_get_the_gtm_tag() . '<br style="display:none;';
+	}
+
+	return $classes;
+}
+
 add_action( "wp_enqueue_scripts", "gtm4wp_enqueue_scripts" );
 add_action( "wp_head", "gtm4wp_wp_header_begin", 1 );
 add_action( "wp_head", "gtm4wp_wp_header_end", 100 );
 add_action( "wp_footer", "gtm4wp_wp_footer" );
 add_action( "wp_loaded", "gtm4wp_wp_loaded" );
+add_filter( "body_class", "gtm4wp_body_class", 10000 );
 add_filter( GTM4WP_WPFILTER_COMPILE_DATALAYER, "gtm4wp_add_basic_datalayer_data" );
 
 // to be able to easily migrate from other Google Tag Manager plugins
 add_action( "body_open", "gtm4wp_wp_body_open" );
+
+// compatibility with existing themes that natively support code injection after opening body tag
+add_action( "genesis_before", "gtm4wp_wp_body_open" );

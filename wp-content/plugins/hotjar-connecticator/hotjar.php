@@ -1,12 +1,12 @@
 <?php
 /**
-* Plugin Name: Hotjar Connecticator
-* Plugin URI: http://www.bluemedicinelabs.com/
-* Version: 1.0
-* Author: Blue Medicine Labs
-* Author URI: http://www.bluemedicinelabs.com/
-* Description: Allows you to insert your Hotjar script in the header of your WP site
-* License: GPL2
+Plugin Name: Hotjar Connecticator
+Plugin URI: http://www.bluemedicinelabs.com/
+Version: 1.0.1
+Author: Blue Medicine Labs
+Author URI: http://www.bluemedicinelabs.com/
+Description: Allows you to insert your Hotjar script in the header of your WP site
+License: GPL2
 */
 
 /*  Copyright 2014 Blue Medicine Labs
