@@ -58,7 +58,6 @@
 			<div class="entry-content">
 				<?php the_content(); ?>
 			</div><!-- .entry-content -->
-			<?php get_sidebar( 'post' ); ?>
 		</div>
 	</div>
 

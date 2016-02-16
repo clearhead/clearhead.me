@@ -3,8 +3,6 @@ define( 'GTM4WP_WPFILTER_COMPILE_DATALAYER', 'gtm4wp_compile_datalayer' );
 define( 'GTM4WP_WPFILTER_COMPILE_REMARKTING', 'gtm4wp_compile_remarkering' );
 define( 'GTM4WP_WPFILTER_GETTHEGTMTAG', 'gtm4wp_get_the_gtm_tag' );
 
-$GLOBALS[ "gtm4wp_container_code_written" ] = false;
-
 if ( $GLOBALS[ "gtm4wp_options" ][ GTM4WP_OPTION_DATALAYER_NAME ] == "" ) {
 	$GLOBALS[ "gtm4wp_datalayer_name" ] = "dataLayer";
 } else {
@@ -384,11 +382,11 @@ function gtm4wp_wp_loaded() {
 }
 
 function gtm4wp_get_the_gtm_tag() {
-	global $gtm4wp_options, $gtm4wp_datalayer_name, $gtm4wp_container_code_written;
+	global $gtm4wp_options, $gtm4wp_datalayer_name;
 	
 	$_gtm_tag = '';
 	
-	if ( ( $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] != "" ) && ( ! $gtm4wp_container_code_written ) ) {
+	if ( $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] != "" ) {
 		$_gtm_tag .= '
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=' . $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] . '"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -398,12 +396,9 @@ j=d.createElement(s),dl=l!=\'dataLayer\'?\'&l=\'+l:\'\';j.async=true;j.src=
 \'//www.googletagmanager.com/gtm.js?id=\'+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,\'script\',\'' . $gtm4wp_datalayer_name . '\',\'' . $gtm4wp_options[ GTM4WP_OPTION_GTM_CODE ] . '\');</script>
 <!-- End Google Tag Manager -->';
-
-    $_gtm_tag = apply_filters( GTM4WP_WPFILTER_GETTHEGTMTAG, $_gtm_tag );
-    $gtm4wp_container_code_written = true;
 	}
 
-	return $_gtm_tag;
+	return apply_filters( GTM4WP_WPFILTER_GETTHEGTMTAG, $_gtm_tag );
 }
 
 function gtm4wp_the_gtm_tag() {
@@ -441,18 +436,6 @@ function gtm4wp_enqueue_scripts() {
 		require_once( dirname( __FILE__ ) . "/../integration/woocommerce.php" );
 	}
 
-	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_YOUTUBE ] ) {
-		require_once( dirname( __FILE__ ) . "/../integration/youtube.php" );
-	}
-
-	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_VIMEO ] ) {
-		require_once( dirname( __FILE__ ) . "/../integration/vimeo.php" );
-	}
-
-	if ( $gtm4wp_options[ GTM4WP_OPTION_EVENTS_SOUNDCLOUD ] ) {
-		require_once( dirname( __FILE__ ) . "/../integration/soundcloud.php" );
-	}
-
 	if ( $gtm4wp_options[ GTM4WP_OPTION_SCROLLER_ENABLED ] ) {
 		wp_enqueue_script( "gtm4wp-scroll-tracking", $gtp4wp_plugin_url . "js/analytics-talk-content-tracking.js", array( "jquery" ), "1.0", false );
 	}
@@ -469,7 +452,7 @@ function gtm4wp_wp_footer() {
 function gtm4wp_wp_body_open() {
 	global $gtm4wp_options;
 
-	if ( ( GTM4WP_PLACEMENT_BODYOPEN == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) || ( GTM4WP_PLACEMENT_BODYOPEN_AUTO == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) ) {
+	if ( GTM4WP_PLACEMENT_BODYOPEN == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) {
 		gtm4wp_the_gtm_tag();
 	}
 }
@@ -530,7 +513,7 @@ function gtm4wp_wp_header_end() {
 		gtm4wp_track_downloads( "' . str_replace( '"', '', $gtm4wp_options[ GTM4WP_OPTION_EVENTS_DWLEXT ] ) . '" );
 	});';
 		}
-//var_dump($gtm4wp_datalayer_data);		
+		
 		$_gtm_tag .= '
 	' . $gtm4wp_datalayer_name . '.push(' . str_replace(
 			array( '"-~-', '-~-"' ),
@@ -545,28 +528,12 @@ function gtm4wp_wp_header_end() {
 	echo $_gtm_tag;	
 }
 
-function gtm4wp_body_class( $classes ) {
-  global $gtm4wp_options;
-  
-  // solution is based on the code of Yaniv Friedensohn
-  // http://www.affectivia.com/blog/placing-the-google-tag-manager-in-wordpress-after-the-body-tag/
-  if ( GTM4WP_PLACEMENT_BODYOPEN_AUTO == $gtm4wp_options[ GTM4WP_OPTION_GTM_PLACEMENT ] ) {
-		$classes[] = '">' . gtm4wp_get_the_gtm_tag() . '<br style="display:none;';
-	}
-
-	return $classes;
-}
-
 add_action( "wp_enqueue_scripts", "gtm4wp_enqueue_scripts" );
 add_action( "wp_head", "gtm4wp_wp_header_begin", 1 );
 add_action( "wp_head", "gtm4wp_wp_header_end", 100 );
 add_action( "wp_footer", "gtm4wp_wp_footer" );
 add_action( "wp_loaded", "gtm4wp_wp_loaded" );
-add_filter( "body_class", "gtm4wp_body_class", 10000 );
 add_filter( GTM4WP_WPFILTER_COMPILE_DATALAYER, "gtm4wp_add_basic_datalayer_data" );
 
 // to be able to easily migrate from other Google Tag Manager plugins
 add_action( "body_open", "gtm4wp_wp_body_open" );
-
-// compatibility with existing themes that natively support code injection after opening body tag
-add_action( "genesis_before", "gtm4wp_wp_body_open" );

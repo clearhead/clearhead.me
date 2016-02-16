@@ -294,6 +294,33 @@ class hyperdb extends wpdb {
 	}
 
 	/**
+	 * Return true if the specified table is read only. This is not as safe as locking the 
+	 * database in code, but in cases where database locks are not possible (i.e., Percona
+	 * xdbc) it is necessary to have some facility for locking that occurs outside of the
+	 * database.
+	 *
+	 * To use this file, drop a file into the DOCROOT named '_wpeprivate/.wpdbreadonly' 
+	 * containing one table name per line of the tables that should be read only.
+	 *
+	 * @param string $table the name of the table.
+	 * @return bool true if the table is marked read only.
+	 */
+	 function is_table_read_only( $table ) {
+		static $tables = null;
+		if ( $tables === null ) {
+			$file = ABSPATH . '/_wpeprivate/.wpdbreadonly';
+			if ( file_exists( $file ) ) {
+				$contents = file( $file, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES );
+				if ( $contents === false ) {
+					return false;
+				}
+				$this->tables = array_fill_keys( $contents, true );
+			}
+		}
+		return isset( $this->tables[$table] );
+	}
+
+	/**
 	 * Set a flag to prevent reading from slaves which might be lagging after a write
 	 */
 	function send_reads_to_masters() {
@@ -613,6 +640,11 @@ class hyperdb extends wpdb {
 		// some queries are made before the plugins have been loaded, and thus cannot be filtered with this method
 		if ( function_exists('apply_filters') )
 			$query = apply_filters('query', $query);
+
+		// can we write to the table in question?
+		if ( $this->is_write_query( $query ) && $this->is_table_read_only( $this->get_table_from_query( $query ) ) ) {
+			return false;
+		}
 
 		// initialise return
 		$return_val = 0;
