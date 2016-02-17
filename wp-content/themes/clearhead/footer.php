@@ -48,7 +48,7 @@
 		<div class="container">
 			<div class="py2 clearfix">
 			<div class="sm-col sm-col-8 white small sm-show">simple, sustainable optimization solutions. designed by humans in austin, tx</div>
-			<div class="copy sm-col sm-col-4 white small sm-show">&copy; <?php the_date(Y); ?> clearhead</div>
+			<div class="copy sm-col sm-col-4 white small sm-show">&copy; <?php echo date( 'Y' ); ?> clearhead</div>
 			</div>
 		</div>
 	</div>

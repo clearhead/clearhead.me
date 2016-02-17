@@ -6,14 +6,8 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php
-	if ( has_post_thumbnail() ) {
-		$hero = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
-	}
-	?>
-
-	<div class="entry-header py3"<?php if ( $hero ) { echo "style='background-image:url(" . esc_url( $hero ) . ")'";} ?>>
-		<div class="container">
+	<div class="entry-header">
+		<div class="container clearfix">
 
 			<div class="cols clearfix">
 				<div class="sm-col sm-col-8 mt4 m-mt1">
@@ -22,7 +16,7 @@
 				</div>
 			</div>
 
-			<div class="clearfix foot mt4 mb2">
+			<div class="clearfix foot mt3 mb3">
 				<div class="tagged sm-col sm-col-8 md-col-9 low">
 					<?php $tags_list = get_the_tag_list( '', __( ' ', 'clearhead' ) );
 					if ( $tags_list ) {
@@ -47,107 +41,82 @@
 		</div><!-- .container -->
 	</div><!-- .entry-header -->
 
+	<?php
+	if ( has_post_thumbnail() ) : ?>
+	<div class="entry-image">
+		<div class="container">
+			<?php the_post_thumbnail(); ?>
+		</div>
+	</div>
+	<?php endif; ?>
+
 	<div class="entry-meta container author-top mt3 mb3">
-		<div class="py2 clearfix">
+		<div class="clearfix">
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 72 ); ?>
 			<div class="author-information">
-				<h3 class="m0"><a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), hi, true); ?>"><?php the_author(); ?></a></h3>
+				<h3 class="m0"><a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>"><?php the_author(); ?></a></h3>
 				<p class="m0 job-title"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
 			</div>
 			<div class="author-linkedin">
 				<?php
 				$linkedin = get_user_meta( get_the_author_meta( 'ID' ), linked, true );
 				if ( $linkedin ) : ?>
-					<a class="button block" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), hi, true); ?>">say hi to <?php the_author_meta('first_name'); ?> on linkedin</a>
+					<a class="button" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), hi, true); ?>">say hi to <?php the_author_meta( 'first_name' ); ?> on linkedin</a>
 				<?php endif; ?>
 			</div>
 		</div>
 	</div><!-- .entry-meta -->
 
-	<div class="entry-content container mt4">
+	<div class="entry-content container">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 
-	<div class="container prev-next mb4 clear">
-		<div class="prev">
-			<?php
-			$prev_post = get_previous_post();
-			if (!empty( $prev_post )): ?>
-		  	<a href="<?php echo get_permalink( $prev_post->ID ); ?>">
-		  		<p class="label m0 mb1">previous</p>
-		  		<p class="m0 mb1 date sm-show"><?php echo get_post_time('F j', true, $prev_post->ID); ?></p>
-		  		<h2 class="h6 mt0 sm-show"><?php echo $prev_post->post_title; ?></h2>
-		  	</a>
-			<?php endif; ?>
-		</div>
-		<div class="next">
-			<?php
-			$next_post = get_next_post();
-			if ( !empty( $next_post ) ): ?>
-		  	<a href="<?php echo get_permalink( $next_post->ID ); ?>">
-		  		<p class="label m0 mb1">next</p>
-		  		<p class="m0 mb1 date sm-show"><?php echo get_post_time('F j', true, $next_post->ID); ?></p>
-		  		<h2 class="h6 mt0 sm-show"><?php echo $next_post->post_title; ?></h2>
-		  	</a>
-			<?php endif; ?>
-		</div>
-	</div>
-
 </article><!-- #post-## -->
 
-<div class="author">
-<div class="container narrow">
-
-	<div class="activity py3 clearfix">
-
-		<div class="social sm-col sm-col-5 sm-center">
-			<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=clearheadme" target="_blank">
-				<?php get_template_part( 'svg/twitter.svg' ); ?>
-			</a>
-			<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
-				<?php get_template_part( 'svg/facebook.svg' ); ?>
-			</a>
-			<a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" target="_blank">
-				<?php get_template_part( 'svg/linkedin.svg' ); ?>
-			</a>
-		</div>
-
-		<div class="sm-col sm-col-7 right-align sm-show">
-			<span class="count"><?php comments_number( 'no comments', 'one comment', '% comments' ); ?></span>
-			<a href="#comments" class="button button-blue inline-block">join the conversation</a>
-		</div>
-
-	</div>
-
-</div>
-</div>
-
-
-<div class="more container clearfix">
-	<h3 class="center h2 mt3 mb0">want to read more?</h3>
-	<a href="/blog/all-posts" class="button button-blue inline-block" style="margin: 1em auto 4em; display: block; width: 120px;">see all posts</a>
-	<h4 class="center mt1 sm-show">latest posts in the head</h4>
-
-	<?php $others = new WP_Query(array('showposts'=> 3,'post__not_in' => array($post->ID))); ?>
-	<?php while ($others->have_posts()) : $others->the_post(); ?>
+<div class="related-posts">
+	<div class="container clearfix">
+	<h3>recent posts</h3>
+	<?php $others = new WP_Query( array('showposts'=> 3,'post__not_in' => array( $post->ID ) ) ); ?>
+	<?php while ( $others->have_posts() ) : $others->the_post(); ?>
 		<a href="<?php the_permalink();?>">
-		<div class="item mt3 clearfix">
-			<h2 class="sm-col sm-col-8 mt0 h3">
-				<?php the_title( ); ?></h2>
-			<div class="meta sm-col sm-col-4">
-				<div class="left">
-				<div class="sm-show">
-				<?php echo get_avatar( get_the_author_meta( 'ID' ), 72 ); ?>
-				</div>
-				</div>
-				<div class="left">
-				<p class="m0">posted <?php the_time('F j'); ?> by</p>
-				<p class="m0"><?php the_author(); ?> </p>
-				</div>
+		<div class="related-post clearfix">
+			<div class="related-image">
+				<?php the_post_thumbnail( 'clearhead-archive' ); ?>
+			</div>
+			<div class="related-content">
+				<h3><?php the_title( ); ?></h3>
+				<p>by <a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>"><?php the_author(); ?></a></p>
 			</div>
 		</div>
 		</a>
 	<?php endwhile; wp_reset_query(); ?>
+	</div>
+</div>
+
+<div class="share">
+	<div class="container">
+
+		<div class="activity py3 clearfix">
+
+			<div class="social sm-col sm-col-5 sm-center">
+				<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=clearheadme" target="_blank">
+					<?php get_template_part( 'svg/twitter.svg' ); ?>
+				</a>
+				<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
+					<?php get_template_part( 'svg/facebook.svg' ); ?>
+				</a>
+				<a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" target="_blank">
+					<?php get_template_part( 'svg/linkedin.svg' ); ?>
+				</a>
+			</div>
+
+			<div class="sm-col sm-col-7 right-align sm-show">
+				<span class="count"><?php comments_number( 'no comments', 'one comment', '% comments' ); ?></span>
+				<a href="#comments" class="button button-blue inline-block">join the conversation</a>
+			</div>
+
+		</div>
+	</div>
 </div>
 
 <div id="comments" class="container narrow clearfix">

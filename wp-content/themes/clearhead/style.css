@@ -1199,9 +1199,6 @@ input[type="submit"]:hover {
 --------------------------------------------------------------*/
 .entry-header {
   background-color: #117793;
-  overflow: auto;
-  background-position: 50% 50%;
-  background-size: cover;
 }
 .page .entry-header {
   padding: 3rem 0;
@@ -1292,25 +1289,56 @@ input[type="submit"]:hover {
     left: auto;
   }
 }
+.entry-image {
+	margin: 3em auto;
+}
+@media screen and (min-width:640px) {
+	.has-post-thumbnail .entry-header {
+		padding-bottom: 6em;
+	}
+	.entry-image {
+		margin: -5em auto 3em;
+	}
+}
 .author-top {
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+	max-width: 35em;
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 .author-top .avatar {
 	border-radius: 100%;
 	float: left;
 	margin-right: 30px;
+	margin-top: -1em;
 }
 .author-top .author-information {
 	float: left;
-	width: calc(100% - 320px );
+	width: calc(100% - 102px );
+}
+.author-top .job-title {
+	font-style: italic;
+	color: #aaa;
 }
 .author-top .author-information h3 a {
 	color: #3DC5F3;
 }
 .author-top .author-linkedin {
-	float: right;
-	width: 200px;
+	clear: left;
+	padding-top: 1.5em;
+}
+
+@media screen and (min-width:640px) {
+	.author-top .author-information {
+		width: calc(100% - 302px );
+	}
+	.author-top .author-linkedin {
+		float: right;
+		clear: none;
+		width: 200px;
+		padding: 0;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1584,13 +1612,8 @@ input[type="submit"]:hover {
 		text-align: right;
 	}
 }
-.author {
-  background: #F4F8FA;
-}
-.author .activity {
-  border-bottom: 1px solid rgba(50, 50, 50, 0.06);
-}
-.author .social a {
+
+.share .social a {
   display: inline-block;
   padding: 0;
   border-radius: 3px;
@@ -1598,75 +1621,30 @@ input[type="submit"]:hover {
   height: 32px;
   text-align: center;
   background: rgba(50, 50, 50, 0.2);
+  color: #fff;
 }
-.author .social a svg {
+.share .social a:hover {
+	color: #3DC5F3;
+}
+.share .social a svg {
   position: relative;
   top: 5px;
 }
-.author .count {
-  margin-right: 10px;
-  font-weight: 500;
-}
-.author .avatar {
-  border-radius: 120px;
-  width: 72px;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.author .label {
-  font-size: 12px;
-}
-.author .bio {
-  font-size: 14px;
-}
-.author .with-av {
-  position: relative;
-  padding-left: 90px;
+
+.related-posts {
+  background: #F4F8FA;
 }
 
-/*--------------------------------------------------------------
-## Post Index Listing
---------------------------------------------------------------*/
-.more {
-  max-width: 35em;
-}
-.more h4 {
-  font-size: 14px;
-  opacity: 0.6;
-  font-weight: 400;
-}
-.more h2 {
-  padding-right: 50px;
-  font-weight: 600;
-}
-.more .meta {
-  position: relative;
-  padding-left: 60px;
-  text-transform: lowercase;
-}
-.more .meta p {
-  font-size: 14px;
-}
-.more .avatar {
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 48px;
-}
-@media screen and (max-width:640px) {
-  .author .with-av {
-    padding-left: 1rem;
-  }
-  .author .avatar {
-    position: relative;
-  }
-  .more .meta {
-    padding-left: 0
-  }
+@media screen and (min-width:640px) {
+	.related-posts .related-content {
+		float: left;
+		width: calc( 100% - 200px - 2em );
+	}
+	.related-posts .related-image {
+		float: left;
+		margin-right: 2em;
+		width: 200px;
+	}
 }
 
 /*--------------------------------------------------------------
