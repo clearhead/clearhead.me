@@ -124,6 +124,20 @@ function clearhead_scripts() {
 add_action( 'wp_enqueue_scripts', 'clearhead_scripts' );
 
 /**
+ * Adds a body class to indicate sidebar position
+ */
+function clearhead_body_class_options( $classes ) {
+
+	// Layout options
+	if ( is_home() || is_archive() ) {
+		$classes[] = 'sidebar-right';
+	}
+	return $classes;
+
+}
+add_filter( 'body_class', 'clearhead_body_class_options' );
+
+/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';

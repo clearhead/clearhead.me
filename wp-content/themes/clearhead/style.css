@@ -1134,7 +1134,20 @@ input[type="submit"]:hover {
 ## Layouts
 --------------------------------------------------------------*/
 
-
+.sidebar-right .content-area {
+	float: left;
+    margin: 0 -260px 0 0;
+    width: 100%;
+}
+.sidebar-right .site-main {
+    margin: 0 280px 0 0;
+}
+.sidebar-right #secondary {
+    float: right;
+    overflow: hidden;
+    width: 260px;
+    background-color: #f9f9fa;
+}
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -1142,7 +1155,6 @@ input[type="submit"]:hover {
 
 .widget {
 	margin: 0 0 1.5em;
-	background: #f1f1f1;
 	padding: 20px;
 }
 .widget-title {
