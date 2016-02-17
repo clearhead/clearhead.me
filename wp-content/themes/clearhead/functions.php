@@ -83,8 +83,8 @@ add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
  */
 function clearhead_widgets_init() {
 	register_sidebar( array(
-		'name'          => __( 'Posts Sidebar', 'clearhead' ),
-		'id'            => 'sidebar-post',
+		'name'          => __( 'Sidebar', 'clearhead' ),
+		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',

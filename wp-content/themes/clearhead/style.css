@@ -1134,36 +1134,7 @@ input[type="submit"]:hover {
 ## Layouts
 --------------------------------------------------------------*/
 
-/*
-.layout-sidebar {
-	margin: 0 auto;
-	max-width: 50em;
-	padding: 1.5em 1.75rem 1.5em 1.5rem;
-}
-.single-post .entry-content {
-	width: 100%;
-}
 
-@media screen and (min-width:780px) {
-
-	.layout-sidebar {
-		padding: 0;
-	}
-	.site-content .layout-main {
-		width: 100%;
-		padding: 30px 0;
-	}
-	.single-post .entry-content {
-		float: left;
-		width: calc( 100% - 270px );
-	}
-	.single-post .site-content #secondary {
-		width: 240px;
-		float: right;
-	}
-
-}
-*/
 
 /*--------------------------------------------------------------
 ## Widgets
