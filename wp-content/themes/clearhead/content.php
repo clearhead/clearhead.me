@@ -5,7 +5,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="archive-entry-header">
 		<div class="container">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 
@@ -17,20 +17,10 @@
 		</div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content container">
+	<div class="entry-content">
 		<?php
 			/* translators: %s: Name of current post */
-			the_content( sprintf(
-				__( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'clearhead' ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-		?>
-
-		<?php
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'clearhead' ),
-				'after'  => '</div>',
-			) );
+			the_excerpt();
 		?>
 	</div><!-- .entry-content -->
 

@@ -1204,16 +1204,20 @@ input[type="submit"]:hover {
   padding: 3rem 0;
   text-align: center;
 }
-.entry-header {
+.single-post .entry-header,
+.page .entry-header {
   color: #fff;
   text-transform: lowercase;
 }
-.entry-header h1 {
+.single-post .entry-header h1,
+.page .entry-header h1 {
   font-size: 38px;
   line-height: 1.5;
 }
-.entry-header a,
-.entry-header .low {
+.single-post .entry-header a,
+.single-post .entry-header .low,
+.page .entry-header a,
+.page .entry-header .low{
   color: rgba(255, 255, 255, 0.6);
 }
 .entry-header .foot {
@@ -1293,10 +1297,10 @@ input[type="submit"]:hover {
 	margin: 3em auto;
 }
 @media screen and (min-width:640px) {
-	.has-post-thumbnail .entry-header {
+	.single-post .has-post-thumbnail .entry-header {
 		padding-bottom: 6em;
 	}
-	.entry-image {
+	.single-post .entry-image {
 		margin: -5em auto 3em;
 	}
 }
@@ -1409,7 +1413,9 @@ input[type="submit"]:hover {
 --------------------------------------------------------------*/
 .light-line {
   border-bottom: 1px solid rgba(17, 119, 147, 0.15);
-  padding-bottom: 1rem;
+}
+.home .light-line {
+	padding-bottom: 1rem;
 }
 .container.light-line {
   padding-top: 5rem;
