@@ -45,6 +45,8 @@ function clearhead_setup() {
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'clearhead' ),
 		'footer' => __( 'Footer Menu', 'clearhead' ),
+		'featured-posts' => __( 'Featured Posts', 'clearhead' ),
+		'featured-categories' => __( 'Featured Categories', 'clearhead' ),
 	) );
 
 	/*

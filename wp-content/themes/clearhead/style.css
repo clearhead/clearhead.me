@@ -1221,12 +1221,16 @@ input[type="submit"]:hover {
 .widget_search .search-submit {
   display: none;
 }
-.widget_categories ul li {
+
+/* Categories Widget */
+.widget_categories ul li,
+.menu-featured-categories-container ul li {
 	display: inline-block;
 	margin-bottom: .5em;
 	margin-right: .5em;
 }
-.widget_categories ul li a {
+.widget_categories ul li a,
+.menu-featured-categories-container ul li a  {
 	background: #fff;
 	color: #3DC5F3;
 	display: block;
@@ -1235,7 +1239,8 @@ input[type="submit"]:hover {
 	border: 1px solid #dedee1;
 	text-transform: lowercase;
 }
-.widget_categories ul li a:hover {
+.widget_categories ul li a:hover,
+.menu-featured-categories-container ul li a:hover {
 	color: #323232;
 }
 .widget input[type="search"] {
