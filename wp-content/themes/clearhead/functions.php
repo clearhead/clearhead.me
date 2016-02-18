@@ -131,6 +131,7 @@ function clearhead_body_class_options( $classes ) {
 	// Layout options
 	if ( is_home() || is_archive() || is_search() ) {
 		$classes[] = 'sidebar-right';
+		$classes[] = 'archive-view';
 	}
 	return $classes;
 
