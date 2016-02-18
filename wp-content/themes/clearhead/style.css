@@ -624,6 +624,13 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+## Archive
+--------------------------------------------------------------*/
+.page-header {
+	border-bottom: 2px solid #ebebeb;
+}
+
+/*--------------------------------------------------------------
 ## Asides
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
@@ -767,18 +774,7 @@ a {
 #page {
   font-family: 'ff-bau-web-pro' !important;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'ff-bau-web-pro';
 }
 .medium {
@@ -1134,19 +1130,29 @@ input[type="submit"]:hover {
 ## Layouts
 --------------------------------------------------------------*/
 
-.sidebar-right .content-area {
-	float: left;
-    margin: 0 -260px 0 0;
-    width: 100%;
+.sidebar-right article {
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #eee;
 }
-.sidebar-right .site-main {
-    margin: 0 280px 0 0;
+.sidebar-right article:last-of-type {
+	border-bottom: none;
+	margin-bottom: 3em;
 }
-.sidebar-right #secondary {
-    float: right;
-    overflow: hidden;
-    width: 260px;
-    background-color: #f9f9fa;
+
+@media screen and (min-width:680px) {
+	.sidebar-right .content-area {
+		float: left;
+	    margin: 0 -260px 0 0;
+	    width: 100%;
+	}
+	.sidebar-right .site-main {
+	    margin: 0 280px 0 0;
+	}
+	.sidebar-right #secondary {
+	    float: right;
+	    overflow: hidden;
+	    width: 260px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1156,12 +1162,27 @@ input[type="submit"]:hover {
 .widget {
 	margin: 0 0 1.5em;
 	padding: 20px;
+	background-color: #f9f9fa;
+	margin-bottom: 3em;
+	font-size: 14px;
+}
+@media screen and (min-width:640px) {
+	.widget {
+		margin-bottom: 0;
+	}
 }
 .widget-title {
 	margin-top: 0;
+	color: #797e80;
+	border-bottom: 1px solid #d2d4d5;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
 }
 .widget ul {
 	margin: 0 0 1.5em;
+}
+.widget ul li {
+	margin-bottom: .5em;
 }
 .widget ul ul {
 	margin: 0 0 0 1.5em;
@@ -1176,6 +1197,35 @@ input[type="submit"]:hover {
   display: none;
 }
 
+.widget_categories ul {
+	margin: 0;
+	padding: 0;
+}
+.widget_categories ul li {
+	display: inline-block;
+	margin-bottom: .5em;
+	margin-right: .5em;
+}
+.widget_categories ul li a {
+	background: #fff;
+	color: #3DC5F3;
+	display: block;
+	padding: .25em .5em;
+	border-radius: 3px;
+	border: 1px solid #dedee1;
+	text-transform: lowercase;
+}
+.widget_categories ul li a:hover {
+	color: #323232;
+}
+.widget input[type="search"] {
+	height: auto;
+}
+.widget_recent_entries ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
 
 /*--------------------------------------------------------------
 ## Entry Header (Big Blue Area)
@@ -1389,6 +1439,21 @@ input[type="submit"]:hover {
 .wp-caption-text {
   opacity: 0.8;
   font-size: 14px;
+}
+.author-meta .avatar {
+    border-radius: 100%;
+    float: left;
+    margin-right: 30px;
+}
+.author-meta .author-information {
+    float: left;
+    width: calc(100% - 102px );
+}
+.author-meta .author-information h3 a {
+	color: #3DC5F3;
+}
+.author-meta .author-information h3 a:hover {
+	color: #323232;
 }
 
 /*--------------------------------------------------------------

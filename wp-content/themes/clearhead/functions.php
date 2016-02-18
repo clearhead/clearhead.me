@@ -129,7 +129,7 @@ add_action( 'wp_enqueue_scripts', 'clearhead_scripts' );
 function clearhead_body_class_options( $classes ) {
 
 	// Layout options
-	if ( is_home() || is_archive() ) {
+	if ( is_home() || is_archive() || is_search() ) {
 		$classes[] = 'sidebar-right';
 	}
 	return $classes;

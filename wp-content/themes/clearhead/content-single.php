@@ -59,7 +59,7 @@
 			</div>
 			<div class="author-linkedin">
 				<?php
-				$linkedin = get_user_meta( get_the_author_meta( 'ID' ), linked, true );
+				$linkedin = get_user_meta( get_the_author_meta( 'ID' ), 'linked', true );
 				if ( $linkedin ) : ?>
 					<a class="button" href="<?php echo esc_url( $linkedin ); ?>">say hi to <?php the_author_meta( 'first_name' ); ?> on linkedin</a>
 				<?php endif; ?>
