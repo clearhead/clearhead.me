@@ -74,14 +74,13 @@
 	<h3>recent posts</h3>
 	<?php $others = new WP_Query( array('showposts'=> 3,'post__not_in' => array( $post->ID ) ) ); ?>
 	<?php while ( $others->have_posts() ) : $others->the_post(); ?>
-		<a href="<?php the_permalink();?>">
 		<div class="related-post clearfix">
 			<div class="related-image">
-				<?php the_post_thumbnail( 'clearhead-archive' ); ?>
+				<a href="<?php the_permalink();?>"><?php the_post_thumbnail( 'clearhead-archive' ); ?></a>
 			</div>
 			<div class="related-content">
-				<h3><?php the_title( ); ?></h3>
-				<p>by <a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>"><?php the_author(); ?></a></p>
+				<h3><a href="<?php the_permalink();?>"><?php the_title( ); ?></a></h3>
+				<p>by <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
 			</div>
 		</div>
 		</a>

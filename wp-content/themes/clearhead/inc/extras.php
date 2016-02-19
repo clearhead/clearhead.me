@@ -66,6 +66,6 @@ function remove_curly_quotes( $text ) {
 }
 
 function clearhead_excerpt_more( $more ) {
-	return '&hellip;';
+	return'&hellip; <a class="read-more" href="'. get_permalink() . '"> Read More &raquo;</a>';
 }
 add_filter( 'excerpt_more', 'clearhead_excerpt_more' );
