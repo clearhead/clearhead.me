@@ -23,7 +23,7 @@
 	<div class="author-meta clearfix">
 		<?php echo get_avatar( get_the_author_meta( 'ID' ), 52 ); ?>
 		<div class="author-information">
-			<h3 class="m0"><a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>"><?php the_author(); ?></a></h3>
+			<h3 class="m0"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
 			<?php clearhead_posted_on(); ?>
 		</div>
 	</div>
