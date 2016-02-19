@@ -630,13 +630,30 @@ textarea {
 .page-header {
 	border-bottom: 2px solid #ebebeb;
 }
+.page-header h1 {
+	font-size: 26px
+}
+.archive-view .entry-image {
+	margin: 0 auto 2em;
+}
 .archive-view article {
 	padding-bottom: 1.5em;
 	border-bottom: 1px solid #eee;
 }
+.archive-view article:first-of-type {
+	margin-top: 2em;
+}
 .archive-view article:last-of-type {
 	border-bottom: none;
 	margin-bottom: 3em;
+}
+.archive-view .entry-title {
+	font-size: 26px;
+}
+.archive-view .entry-content,
+.archive-view .entry-content p {
+	font-size: 18px;
+	line-height: 1.3;
 }
 .archive-view .entry-content,
 .archive-view .posted-on a {
@@ -651,11 +668,18 @@ textarea {
     float: left;
     width: calc(100% - 82px );
 }
+.author-meta .author-information h3 {
+	font-size: 15px;
+}
 .author-meta .author-information h3 a {
 	color: #3DC5F3;
 }
 .author-meta .author-information h3 a:hover {
 	color: #323232;
+}
+.author-meta .author-information .posted-on {
+	font-size: 12px;
+	letter-spacing: 0.3px;
 }
 
 /*--------------------------------------------------------------
@@ -1202,6 +1226,7 @@ input[type="submit"]:hover {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	font-size: 14px;
 }
 .widget ul li {
 	margin-bottom: 1em;
@@ -1266,6 +1291,9 @@ input[type="submit"]:hover {
 .page .entry-header h1 {
   font-size: 38px;
   line-height: 1.5;
+}
+.entry-title {
+	text-transform: lowercase;
 }
 .single-post .entry-header a,
 .single-post .entry-header .low,
@@ -1378,10 +1406,16 @@ input[type="submit"]:hover {
 	font-style: italic;
 	color: #aaa;
 }
+.author-top .author-information h3 {
+	font-size: 17px;
+}
 .author-top .author-information h3 a {
 	color: #3DC5F3;
 }
-.author-top .author-linkedin {
+.author-top .author-information p {
+	font-size: 15px;
+}
+.author-top .author-contact {
 	clear: left;
 	padding-top: 1.5em;
 }
@@ -1390,10 +1424,9 @@ input[type="submit"]:hover {
 	.author-top .author-information {
 		width: calc(100% - 302px );
 	}
-	.author-top .author-linkedin {
+	.author-top .author-contact {
 		float: right;
 		clear: none;
-		width: 200px;
 		padding: 0;
 	}
 }
@@ -1412,9 +1445,14 @@ input[type="submit"]:hover {
 .entry-content a:hover {
   opacity: 0.6;
 }
+.entry-content {
+	font-size: 20px;
+	line-height: 1.4;
+}
 .entry-content p {
-  line-height: 1.8em;
-  margin-bottom: 2.5em;
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 2.5em;
 }
 .narrow {
   max-width: 35em;

@@ -54,15 +54,11 @@
 		<div class="clearfix">
 			<?php echo get_avatar( get_the_author_meta( 'ID' ), 72 ); ?>
 			<div class="author-information">
-				<h3 class="m0"><a href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>"><?php the_author(); ?></a></h3>
+				<h3 class="m0"><a href="<?php echo get_the_author_link(); ?>"><?php the_author(); ?></a></h3>
 				<p class="m0 job-title"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
 			</div>
-			<div class="author-linkedin">
-				<?php
-				$linkedin = get_user_meta( get_the_author_meta( 'ID' ), 'linked', true );
-				if ( $linkedin ) : ?>
-					<a class="button" href="<?php echo esc_url( $linkedin ); ?>">say hi to <?php the_author_meta( 'first_name' ); ?> on linkedin</a>
-				<?php endif; ?>
+			<div class="author-contact">
+					<a class="button" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>">say hi to <?php the_author_meta( 'first_name' ); ?></a>
 			</div>
 		</div>
 	</div><!-- .entry-meta -->

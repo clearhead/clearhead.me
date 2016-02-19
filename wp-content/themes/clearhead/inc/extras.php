@@ -64,3 +64,8 @@ function remove_curly_quotes( $text ) {
     $text = str_replace(array(chr(145), chr(146), chr(147), chr(148), chr(150), chr(151), chr(133)), array("'", "'", '"', '"', '-', '--', '...'), $text);
     return $text;
 }
+
+function clearhead_excerpt_more( $more ) {
+	return '&hellip;';
+}
+add_filter( 'excerpt_more', 'clearhead_excerpt_more' );
