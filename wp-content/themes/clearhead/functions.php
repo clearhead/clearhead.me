@@ -9,7 +9,7 @@
  * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 640; /* pixels */
+	$content_width = 800; /* pixels */
 }
 
 if ( ! function_exists( 'clearhead_setup' ) ) :
@@ -103,7 +103,7 @@ function clearhead_scripts() {
 
 	wp_enqueue_style( 'basscss', get_template_directory_uri() . '/css/basscss.min.css', array(), '20150629' );
 
-	wp_enqueue_style( 'clearhead-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'clearhead-style', get_stylesheet_uri(), array(), '20160222');
 
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20120206', true);
 
