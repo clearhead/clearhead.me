@@ -70,8 +70,8 @@
 </article><!-- #post-## -->
 
 <?php
-$query = array();
 $related_posts = array();
+$query = array();
 $query['showposts'] = 3;
 
 if ( class_exists( 'Jetpack_RelatedPosts' ) && method_exists( 'Jetpack_RelatedPosts', 'init_raw' ) ) :
@@ -89,13 +89,15 @@ endif;
 if ( $related_posts ) {
 	$query['post__in'] = $related_posts;
 	$query['orderby'] = 'post__in';
+	$title = __( 'related posts', 'clearhead' );
 } else {
 	$query['post__not_in'] = array( $post->ID );
+	$title = __( 'recent posts', 'clearhead' );
 }
 ?>
 <div class="related-posts">
 	<div class="container clearfix">
-	<h3>recent posts</h3>
+	<h3><?php esc_attr_e( $title ); ?></h3>
 	<?php $related = new WP_Query( $query ); ?>
 	<?php while ( $related->have_posts() ) : $related->the_post(); ?>
 		<div class="related-post clearfix">
