@@ -70,35 +70,47 @@
 </article><!-- #post-## -->
 
 <?php
+$query = array();
+$related_posts = array();
+$query['showposts'] = 3;
+
 if ( class_exists( 'Jetpack_RelatedPosts' ) && method_exists( 'Jetpack_RelatedPosts', 'init_raw' ) ) :
-$related = Jetpack_RelatedPosts::init_raw()
-	->set_query_name( 'clearhead-custom' ) // Optional, name can be anything
-	->get_for_post_id( get_the_ID(), array( 'size' => 3 )
-);
+	$related = Jetpack_RelatedPosts::init_raw()
+		->set_query_name( 'clearhead-custom' ) // Optional, name can be anything
+		->get_for_post_id( get_the_ID(), array( 'size' => 3 )
+	);
+	if ( $related ) :
+        foreach ( $related as $result ) :
+        	$related_posts[] = $result[ 'id' ];
+        endforeach;
+    endif;
+endif;
+
+if ( $related_posts ) {
+	$query['post__in'] = $related_posts;
+	$query['orderby'] = 'post__in';
+} else {
+	$query['post__not_in'] = array( $post->ID );
+}
 ?>
 <div class="related-posts">
 	<div class="container clearfix">
-	<h3>related posts</h3>
-	<?php
-    if ( $related ) :
-        foreach ( $related as $result ) :
-        	// Get the related post IDs
-            $related_post = get_post( $result[ 'id' ] );
-            ?>
-			<div class="related-post clearfix">
-				<div class="related-image">
-					<a href="<?php $related_post->the_permalink();?>"><?php $related_post->the_post_thumbnail( 'clearhead-archive' ); ?></a>
-				</div>
-				<div class="related-content">
-					<h3><a href="<?php $related_post->the_permalink();?>"><?php $related_post->the_title( ); ?></a></h3>
-					<p>by <a href="<?php echo get_author_posts_url( $related_post->get_the_author_meta( 'ID' ), $related_post->get_the_author_meta( 'user_nicename' ) ); ?>"><?php $related_post->the_author(); ?></a></p>
-				</div>
+	<h3>recent posts</h3>
+	<?php $related = new WP_Query( $query ); ?>
+	<?php while ( $related->have_posts() ) : $related->the_post(); ?>
+		<div class="related-post clearfix">
+			<div class="related-image">
+				<a href="<?php the_permalink();?>"><?php the_post_thumbnail( 'clearhead-archive' ); ?></a>
 			</div>
-        <?php endforeach;
-    endif; ?>
+			<div class="related-content">
+				<h3><a href="<?php the_permalink();?>"><?php the_title( ); ?></a></h3>
+				<p>by <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
+			</div>
+		</div>
+		</a>
+	<?php endwhile; wp_reset_query(); ?>
 	</div>
 </div>
-<?php endif; ?>
 
 <div class="share">
 	<div class="container">

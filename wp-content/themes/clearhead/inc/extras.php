@@ -69,3 +69,12 @@ function clearhead_excerpt_more( $more ) {
 	return'&hellip; <a class="read-more" href="'. get_permalink() . '"> Read More &raquo;</a>';
 }
 add_filter( 'excerpt_more', 'clearhead_excerpt_more' );
+
+function clearhead_remove_rp() {
+    if ( class_exists( 'Jetpack_RelatedPosts' ) ) {
+        $jprp = Jetpack_RelatedPosts::init();
+        $callback = array( $jprp, 'filter_add_target_to_dom' );
+        remove_filter( 'the_content', $callback, 40 );
+    }
+}
+add_filter( 'wp', 'clearhead_remove_rp', 20 );
