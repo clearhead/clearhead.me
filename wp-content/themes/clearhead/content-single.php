@@ -69,24 +69,36 @@
 
 </article><!-- #post-## -->
 
+<?php
+if ( class_exists( 'Jetpack_RelatedPosts' ) && method_exists( 'Jetpack_RelatedPosts', 'init_raw' ) ) :
+$related = Jetpack_RelatedPosts::init_raw()
+	->set_query_name( 'clearhead-custom' ) // Optional, name can be anything
+	->get_for_post_id( get_the_ID(), array( 'size' => 3 )
+);
+?>
 <div class="related-posts">
 	<div class="container clearfix">
-	<h3>recent posts</h3>
-	<?php $others = new WP_Query( array('showposts'=> 3,'post__not_in' => array( $post->ID ) ) ); ?>
-	<?php while ( $others->have_posts() ) : $others->the_post(); ?>
-		<div class="related-post clearfix">
-			<div class="related-image">
-				<a href="<?php the_permalink();?>"><?php the_post_thumbnail( 'clearhead-archive' ); ?></a>
+	<h3>related posts</h3>
+	<?php
+    if ( $related ) :
+        foreach ( $related as $result ) :
+        	// Get the related post IDs
+            $related_post = get_post( $result[ 'id' ] );
+            ?>
+			<div class="related-post clearfix">
+				<div class="related-image">
+					<a href="<?php $related_post->the_permalink();?>"><?php $related_post->the_post_thumbnail( 'clearhead-archive' ); ?></a>
+				</div>
+				<div class="related-content">
+					<h3><a href="<?php $related_post->the_permalink();?>"><?php $related_post->the_title( ); ?></a></h3>
+					<p>by <a href="<?php echo get_author_posts_url( $related_post->get_the_author_meta( 'ID' ), $related_post->get_the_author_meta( 'user_nicename' ) ); ?>"><?php $related_post->the_author(); ?></a></p>
+				</div>
 			</div>
-			<div class="related-content">
-				<h3><a href="<?php the_permalink();?>"><?php the_title( ); ?></a></h3>
-				<p>by <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></p>
-			</div>
-		</div>
-		</a>
-	<?php endwhile; wp_reset_query(); ?>
+        <?php endforeach;
+    endif; ?>
 	</div>
 </div>
+<?php endif; ?>
 
 <div class="share">
 	<div class="container">
