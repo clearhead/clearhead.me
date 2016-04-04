@@ -26,13 +26,13 @@
 
 				<div class="social sm-show sm-col sm-col-4 md-col-3 right-align low">
 					<span>share</span>
-					<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=clearheadme" target="_blank">
+					<a href="http://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php echo urlencode( html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8') ); ?>&via=clearheadme" target="_blank">
 						<?php get_template_part( 'svg/twitter.svg' ); ?>
 					</a>
 					<a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
 						<?php get_template_part( 'svg/facebook.svg' ); ?>
 					</a>
-					<a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" target="_blank">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php echo urlencode( html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8') ); ?>" target="_blank">
 						<?php get_template_part( 'svg/linkedin.svg' ); ?>
 					</a>
 				</div>
