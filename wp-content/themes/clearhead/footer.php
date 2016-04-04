@@ -21,7 +21,7 @@
 		  </div>
 		  <div class="sm-col sm-col-4">
 		  	<img width="170" src="<?php bloginfo('template_directory') ?>/images/ch-type-white.svg" />
-		  	<h2 class="h6 small mt0">the digital optimization<span class="sm-show sm-show-inline"> & validation</span> agency</h2>
+		  	<h2 class="h6 small mt0">the digital validation<span class="sm-show sm-show-inline"> & optimization</span> agency</h2>
 
 		  	<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'small list-reset mt2 ml0 dual-m' ) ); ?>
 
