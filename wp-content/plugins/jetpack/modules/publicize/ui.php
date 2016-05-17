@@ -22,8 +22,8 @@ class Publicize_UI {
 	}
 
 	function init() {
-		// Show only to users with the capability required to create/delete global connections.
-		if ( ! current_user_can( $this->publicize->GLOBAL_CAP ) ) {
+		// Show only to users with the capability required to manage their Publicize connections.
+		if ( ! current_user_can( 'publish_posts' ) ) {
 			return;
 		}
 
@@ -130,7 +130,7 @@ class Publicize_UI {
 
 			<?php
 			if ( $this->in_jetpack ) {
-				$doc_link = "http://jetpack.me/support/publicize/";
+				$doc_link = "http://jetpack.com/support/publicize/";
 			} else {
 				$doc_link = "http://en.support.wordpress.com/publicize/";
 			}

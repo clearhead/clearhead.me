@@ -3,8 +3,8 @@ Contributors: bluemedicinelabs, internetmedicineman, trishacupra
 Donate link: http://www.BlueMedicineLabs.com/
 Tags: header, headers, Hotjar, script, analytics, connect, connecticator, insights, heatmaps
 Requires at least: 3.6
-Tested up to: 4.3.1
-Stable tag: 1.0.1
+Tested up to: 4.4.2
+Stable tag: 1.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -63,6 +63,12 @@ A. You can find the plugin in the WordPress menu under `Settings > Hotjar Connec
 1. Just paste your code in the box here and click the Save button. It's that easy.
 
 == Changelog ==
+
+= 1.1.0 =
+* Cleaned up code, checked functionality with 4.4.2
+
+= 1.0.2 =
+* Improve compatibility with WP 4.4
 
 = 1.0.1 =
 * Update compatibility token

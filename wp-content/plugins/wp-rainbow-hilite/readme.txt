@@ -3,8 +3,8 @@ Contributors: podpirate
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F8NKC6TCASUXE
 Tags: code, syntax highlighting, rainbow, code
 Requires at least: 3.8
-Tested up to: 4.1
-Stable tag: 1.0.5
+Tested up to: 4.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,7 +18,6 @@ Code syntax Highlighting. Documentation can be found [here](http://wpdev.podpira
 - Highlighted code can be copy-pasted directly out of the site. No "view raw" button needed.
 - User friendly TinyMCE integration.
 - Many programming languages supported.
-- German translation.
 
 Includes [rainbow.js](http://craig.is/making/rainbows) a syntax highlighting script written by [Craig Campbell](http://craig.is/).
 Line numbering through [rainbow.linenumbers](https://github.com/Sjeiti/rainbow.linenumbers) by [Ron Valstar](http://www.sjeiti.com/).
@@ -92,6 +91,9 @@ Either post it on the [GitHub-repo](https://github.com/mcguffin/wp-rainbow-hilit
 4. Highlighted Code
 
 == Changelog ==
+
+= 1.0.6 =
+Localization: Move de_DE to translate.wordpress.org
 
 = 1.0.5 =
 Fix: Safer script loading
