@@ -227,7 +227,7 @@ get_header(); ?>
             <div class="sm-col sm-col-6 px2 mb3">
               <div class="p3 bg-light-orange relative">
               <h3 class="mt0 quote medium light-line">We capture lots of data. Report on a million things. But “data” has become a four letter word here because nobody really does anything with it.</h3>
-              <a class="white block mt2 center" href="/tag/case-studies/">Data stories that drive improvement</a>
+              <a class="white block mt2 center" href="/blog/category/case-studies/">Data stories that drive improvement</a>
               <svg height="35" width="30"><polygon points="0,0 0,35 30,35" class="bg-light-orange" /></svg>
               </div>
             </div>
