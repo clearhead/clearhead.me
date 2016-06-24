@@ -228,7 +228,7 @@ get_header(); ?>
 			<div class="who">
 				<div class="container clearfix light-line">
 
-					<h1 class="mt0 mb2 bold">great quarterbacks are always surrounded by the best team</h2>
+					<h1 class="md-col-8 mt0 mb2 bold">great quarterbacks are always surrounded by the best team</h2>
 					<p class="md-col-8">More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.</p>
 
 					<div class="cols mxn2 center dark-purple faces">
