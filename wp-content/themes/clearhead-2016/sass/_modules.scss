@@ -1,0 +1,502 @@
+// Hero
+// ----
+.hero {
+    background-color: $blue;
+    color: $white;
+    padding: calc(7em + 50px) 0 5.828125em;
+    h1 {
+        line-height: 1.0625;
+        margin-bottom: 0.0625em;
+    }
+    h5 {
+        margin-bottom: 2.1875em;
+        color: rgba($white, 0.6);
+    }
+    p {
+        font-size: 1.125em;
+    	letter-spacing: -0.0390625em;
+        line-height: 1.625;
+    	font-weight: $medium;
+        margin-bottom: 1.5625em;
+        &:last-child {
+            margin-bottom: 1em;
+        }
+    }
+}
+
+// Photo callout
+// -------------
+.photo-callout {
+    background-color: darken($gray, 7.5%);
+    padding: 0;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 12.78125em;
+    }
+    h3 {
+        margin: 0;
+        text-align: center;
+        line-height: 1;
+        padding: 0.875em 0 0.71875em;
+    }
+    &-blue {
+        background-color: darken(#BFE1EB, 7.5%);
+        h3 {
+            background-color: #BFE1EB;
+            color: $dark-blue;
+        }
+    }
+    &-orange {
+        background-color: darken(#EEB48A, 7.5%);
+        h3 {
+            background-color: #EEB48A;
+            color: #AB442A;
+        }
+    }
+    &-purple {
+        background-color: darken($light-purple, 7.5%);
+        h3 {
+            background-color: $light-purple;
+            color: $dark-purple;
+        }
+    }
+}
+
+// Solutions List
+// --------------
+.solutions-list {
+    margin-top: 2.25em;
+    li {
+        display: flex;
+        padding: ($gutter - 0.21875em) $gutter ($gutter - 0.1875em);
+        border: 1px solid $gray;
+        margin-bottom: 0.4125em;
+        > div:first-child {
+            width: ($column * 3);
+            margin-right: $gutter;
+            flex-shrink: 0;
+        }
+        > div:last-child {
+            padding-left: $gutter;
+            border-left: 1px solid $gray;
+            width: calc(100% - (($column * 3) + ($gutter * 3)));
+        }
+    }
+    h3 {
+        font-weight: $bold;
+        line-height: 1.2875;
+        margin: 0.2875em 0 0.734375em;
+    }
+    figure {
+        background-color: $gray;
+        padding-top: 32.75%;
+        max-width: 9em;
+    }
+    strong {
+        font-weight: $medium;
+        display: block;
+        margin: 0.2875em 0 0.45625em;
+    }
+    p {
+        margin-bottom: 0.765625em;
+    }
+    a {
+        display: block;
+        font-weight: $medium;
+        font-size: 0.875em;
+        line-height: 1;
+        margin-bottom: 0.1875em;
+    }
+}
+
+// Expositive Remarks
+// ------------------
+.expositive-remarks {
+    margin-bottom: -0.36875em;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &:first-child {
+            align-items: flex-end;
+            li {
+                &:last-child {
+                    margin-bottom: 0.346875em;
+                }
+            }
+        }
+        &:last-child {
+            align-items: flex-start;
+            li {
+                &:first-child {
+                    margin-top: -0.390625em;
+                }
+                &:last-child {
+                    margin-top: 1.15625em;
+                }
+            }
+        }
+    }
+    li {
+        width: calc(50% - 1.890625em);
+        padding: 0.9375em 1.8125em 0.325em 1.96875em;
+        position: relative;
+        border: 1px solid $gray;
+        margin: 0 0.390625em 1.5em 0.390625em;
+        background-color: $white;
+        &:before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            bottom: 10.5px;
+            height: 48px;
+            width: 48px;
+            background-repeat: no-repeat;
+            background-size: 29.5px;
+        }
+        &:first-child {
+            &:before {
+                left: -48px;
+                background-image: url('img/point-left.svg');
+                background-position: right -2.5px bottom 2px;
+            }
+        }
+        &:last-child {
+            &:before {
+                right: -48px;
+                background-image: url('img/point-right.svg');
+                background-position: left -2.5px bottom 2px;
+            }
+        }
+        a {
+            display: block;
+            font-size: 0.875em;
+            margin-top: 0.390625em;
+            min-height: 2.5em;
+            padding: 0.4125em 0;
+            border-top: 1px solid $gray;
+            font-weight: $medium;
+            line-height: 1.4125;
+        }
+    }
+}
+
+// Stories List
+// ------------
+.stories-list {
+    margin: 2.26875em 0 3.875em;
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    li {
+        width: $fluid-thirds;
+
+        border: 1px solid $gray;
+        > div:first-child {
+            flex-shrink: 0;
+            padding: 0.625em 0.75em 0.78175em;
+            display: flex;
+            align-items: center;
+        }
+        > div:last-child {
+            padding: 0.625em 0.75em 0.78175em;
+            border-top: 1px solid $gray;
+        }
+    }
+    h3 {
+        font-weight: $bold;
+        line-height: 1.2875;
+        margin: 0.2875em 0 0;
+    }
+    figure {
+        background-color: $gray;
+        height: 2.734375em;
+        width: 2.734375em;
+        margin: 0.125em 0.125em 0 0.26875em;
+        flex-shrink: 0;
+    }
+    strong {
+        font-weight: $medium;
+        display: block;
+        margin: 0.2875em 0 0.45625em;
+    }
+    p {
+        margin-bottom: 0.71875em;
+    }
+    a {
+        display: block;
+        font-weight: $medium;
+        font-size: 0.875em;
+        line-height: 1;
+        margin-bottom: 0.1875em;
+        text-transform: lowercase;
+    }
+}
+
+// Client Testimonial
+// ------------------
+.client-testimonial {
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    .client {
+        width: 7.75em;
+        margin-right: 2.390625em;
+        flex-shrink: 0;
+        .logo {
+            height: 6.671875em;
+            width: 6.671875em;
+            background-color: $sky-blue;
+            margin-bottom: 0.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            figure {
+                height: 5.0625em;
+                width: 5.0625em;
+                background-color: $gray;
+            }
+        }
+        strong {
+            display: block;
+            font-weight: $medium;
+            color: $dark-blue;
+            letter-spacing: -(0.5em/18);
+            margin-bottom: 0.0625em;
+        }
+        small {
+            display: block;
+            font-size: 0.8125em;
+            line-height: 1.5;
+            margin-bottom: 0.25em;
+        }
+    }
+    .testimonial {
+        padding: 1.0625em 1.125em 0.9375em 2.03125em;
+        position: relative;
+        border: 1px solid $gray;
+        &:before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            bottom: 54px;
+            height: 51px;
+            width: 36px;
+            background-repeat: no-repeat;
+            background-size: 29.5px;
+
+            // background-color: rgba(red, 0.5);
+        }
+        &:before {
+            left: -36px;
+            background-image: url('img/point-left.svg');
+            background-position: right -0.5px bottom 2px;
+        }
+        blockquote {
+            letter-spacing: -(0.55em/18);
+        }
+    }
+}
+
+/*
+&:before {
+    bottom: 10.5px;
+    height: 48px;
+    width: 48px;
+}
+&:first-child {
+    &:before {
+        left: -48px;
+        background-image: url('img/point-left.svg');
+        background-position: right -2.5px bottom 2px;
+    }
+}
+&:last-child {
+    &:before {
+        right: -48px;
+        background-image: url('img/point-right.svg');
+        background-position: left -2.5px bottom 2px;
+    }
+}
+*/
+
+// Logo List
+// ---------
+.logo-list {
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li {
+        display: block;
+        background-color: $sky-blue;
+        padding: 0.9765625em;
+        margin: 0 0.234375em 0.234375em 0;
+        figure {
+            background-color: $gray;
+            height: 3.65625em;
+            min-width: 3.65625em;
+        }
+        &.more {
+            figure {
+                display: flex;
+                align-items: center;
+                padding: 0 0.9375em;
+                background-color: transparent;
+                em {
+                    font-weight: $medium;
+                    text-transform: lowercase;
+                    font-size: 0.9375em;
+                    display: block;
+                    letter-spacing: -(0.6em/18);
+                }
+            }
+        }
+    }
+    &-clients {
+        margin: 2.59375em 0;
+    }
+    &-solutions {
+        margin: 1.65625em 0 2.90625em;
+    }
+}
+
+// Contact CTA
+// -----------
+.contact-cta {
+    display: flex;
+    align-items: center;
+    p {
+        margin: 0 1.625em 0 0;
+    }
+}
+
+// Platforms List
+// --------------
+.platforms-list {
+    margin-bottom: -0.09375em;
+    ul {
+        column-count: 4;
+        column-gap: $gutter;
+        column-rule-width: 0;
+        column-width: (($column * 2) + $gutter);
+        margin: 1.59375em 0 0 -0.0625em;
+        li {
+            margin: 0 0 0.1875em 1.0625em;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            &:before {
+                content: "•";
+                position: absolute;
+                left: -0.9375em;
+                top: -0.03125em;
+                color: $gray;
+                font-size: 1.125em;
+            }
+        }
+    }
+}
+
+// Origin Stories
+// --------------
+.origin-stories {
+    margin: 3.6875em 0 3.875em;
+    h3 {
+        text-transform: none;
+        font-weight: 700;
+        margin-bottom: 1.6328125em;
+    }
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            border-left: 1px solid $gray;
+            border-right: 1px solid $gray;
+            border-bottom: 1px solid $gray;
+            width: $fluid-thirds;
+            .photo {
+                background-color: $gray;
+                padding-top: 59.75%;
+            }
+            figcaption {
+                padding: 0.25em 0.6875em 0.25em 0.8125em;
+                height: 2.71875em;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div {
+                    display: block;
+                    font-weight: $medium;
+                    text-transform: lowercase;
+                    font-size: 0.875em;
+                    letter-spacing: -(0.55em/18);
+                    margin-top: 0.21875em;
+                }
+                span {
+                    display: block;
+                    width: 1em;
+                    height: 1em;
+                    background-color: $gray;
+                }
+            }
+        }
+    }
+}
+
+// Team List
+// ---------
+.team-list {
+    margin: 2.59375em 0 2.953125em;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            flex-shrink: 0;
+            width: calc((100%/6) - 1.625em);
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .photo {
+                    width: 100%;
+                    padding-top: 100%;
+                    background-color: $gray;
+                }
+                figcaption {
+                    margin-top: 0.71875em;
+                    text-transform: lowercase;
+                    font-weight: $medium;
+                    text-align: center;
+                    color: $purple;
+                    line-height: 1.125;
+                    letter-spacing: -(0.5em/18);
+                    span {
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Widgets
+// --------------------------
+h3.widget-title {
+    font-size: 1.478125em;
+    font-weight: $bold;
+}
+.menu-featured-categories-container {
+    ul li a {
+        letter-spacing: 0;
+    }
+}
+.menu-featured-posts-container {
+    a {
+        color: $black;
+    }
+}
