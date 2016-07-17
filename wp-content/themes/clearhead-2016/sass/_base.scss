@@ -41,7 +41,9 @@ a {
 	text-transform: lowercase;
 	font-weight: $medium;
 	font-size: 0.875em;
-	transition: background-color 0.1875s ease;
+	transition:
+		background-color 0.1875s ease,
+		color 0.1875s ease;
 	&:hover {
 		color: $white;
 		background-color: $dark-blue;
@@ -50,7 +52,7 @@ a {
 		background-color: #FDB216;
 		color: $black;
 		&:hover {
-			background-color: darken(#FDB216, 7.5%);
+			background-color: darken(#FDB216, 10%);
 		}
 	}
 	&-reduced {

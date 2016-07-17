@@ -99,8 +99,8 @@ a {
   text-transform: lowercase;
   font-weight: 500;
   font-size: 0.875em;
-  -webkit-transition: background-color 0.1875s ease;
-  transition: background-color 0.1875s ease; }
+  -webkit-transition: background-color 0.1875s ease, color 0.1875s ease;
+  transition: background-color 0.1875s ease, color 0.1875s ease; }
   .button:hover {
     color: #FFFFFF;
     background-color: #19748f; }
@@ -108,7 +108,7 @@ a {
     background-color: #FDB216;
     color: #313335; }
     .button-yellow:hover {
-      background-color: #eb9f02; }
+      background-color: #de9702; }
   .button-reduced {
     padding: 0.65625em 1.09375em 0.5em; }
 
