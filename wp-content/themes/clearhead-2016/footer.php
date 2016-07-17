@@ -20,13 +20,13 @@
 					<h3>Need to talk?</h3>
 					<form> <!-- Still needs CMS integraton  -->
 						<label for="name">Name <span>(required)</span></label>
-						<input type="text" name="name">
+						<input type="text" id="name">
 
 						<label for="email">Email <span>(required)</span></label>
-						<input type="email" name="email">
+						<input type="email" id="email">
 
 						<label for="message">Tell us about your project, goal or design <span>(required)</span></label>
-						<textarea name="message" rows="4"></textarea>
+						<textarea id="message" rows="4"></textarea>
 
 						<input class="button button-reduced button-yellow" type="submit" value="Submit">
 					</form>
@@ -47,22 +47,21 @@
 				<div class="info cap-3c-2g">
 					<h2>Clearhead</h2>
 					<h5>The Digital Optimization Company</h5>
-					<nav> <!-- Still needs CMS integraton  -->
-						<ul>
-							<li><a href=".">Services</a></li>
-							<li><a href=".">Process</a></li>
-							<li><a href=".">Team</a></li>
-							<li><a href=".">Contact Us</a></li>
-							<li><a href=".">Jobs</a></li>
-							<li><a href=".">Blog</a></li>
-						</ul>
+					<nav role="navigation">
+						<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'small list-reset mt2 ml0 dual-m' ) ); ?>
 					</nav>
+
 					<div class="post-embed">
 						<h3>Recently Published</h3>
-						<p>
-							“It’s hard to balance that urge to just dogpile the latest thing when you’re feeling like there’s a land grab or…”
-						</p>
-						<a href=".">Read Post</a>
+
+						<?php $recently = new WP_Query(array('showposts'=> 1,'post__not_in' => array($post->ID))); ?>
+						<?php while ($recently->have_posts()) : $recently->the_post(); ?>
+
+						<p>“<?php echo clearhead_twitter_excerpt( ); ?>”</p>
+						<a href="<?php the_permalink();?>">Read Post</a>
+
+						<?php endwhile; wp_reset_query(); ?>
+
 					</div>
 					<div class="info-action">
 						<h3>Follow Us</h3>
