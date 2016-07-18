@@ -63,23 +63,39 @@ var inview2 = new Waypoint.Inview({
 });
 
 
-
 jQuery('.menu-item a, a.smooth-scroll, a[href$="main"]').click(function() {
-	var href = jQuery(this).attr('href');
-	var trimmed = href.substring(1);
-    //debugger;
-    if(trimmed === "main") {
-        jQuery('html, body').animate({
-            scrollTop: 0
-        }, 700);
+    if (jQuery(window).width() <= 639) {
+    	var href = jQuery(this).attr('href');
+    	var trimmed = href.substring(1);
+        if(trimmed === "main") {
+            jQuery('html, body').animate({
+                scrollTop: 0
+            }, 700);
+        }
+        else {
+            jQuery('html, body').animate({
+                    scrollTop: jQuery( trimmed ).offset().top - 98
+            }, 700);
+        }
+        jQuery(".main-navigation").removeClass("toggled");
+        return false;
     }
     else {
-        jQuery('html, body').animate({
-            scrollTop: jQuery( trimmed ).offset().top - 49
-        }, 700);
+        var href = jQuery(this).attr('href');
+    	var trimmed = href.substring(1);
+        if(trimmed === "main") {
+            jQuery('html, body').animate({
+                scrollTop: 0
+            }, 700);
+        }
+        else {
+            jQuery('html, body').animate({
+                    scrollTop: jQuery( trimmed ).offset().top - 49
+            }, 700);
+        }
+        jQuery(".main-navigation").removeClass("toggled");
+        return false;
     }
-    jQuery(".main-navigation").removeClass("toggled");
-    return false;
 });
 
 

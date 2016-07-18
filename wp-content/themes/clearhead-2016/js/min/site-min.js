@@ -18,12 +18,26 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
     event.preventDefault();
 });
 
+// show/hide browse menu
+jQuery('.menu-toggle-mobile').click(function(e) {
+    e.preventDefault();
+    jQuery('body').toggleClass('show-menu-mobile');
+});
+
+
 //Validation for contact form before submission
 jQuery(".contact-form").validate();
+
+//Update the submit button to remove the arrow
+jQuery(".pushbutton-wide").val("Submit");
+jQuery(".contact-form textarea").attr("rows", 4);
+
 
 //All the contact forms from Jetpack have the .contact-form class
 (function($) {
     $(".contact-form").on('submit', function (e) {
+        //disable the button on form submit
+        jQuery(".pushbutton-wide").prop('disabled', true);
         if($(this).valid())
         {
           //Wrapper for our form fields to submit via ajax
@@ -73,7 +87,7 @@ jQuery(".contact-form").validate();
           formData['action']           = 'grunion-contact-form';
 
           //Loading animation. Uses Font Awesome but could be replaced with whatever.
-          $(this).find('input[type=submit]').after('<span class="loader"></span>');
+          $(this).find('input[type=submit]').after('<span class="spinner"></span>');
 
           // process the form
           $.ajax({
@@ -112,10 +126,10 @@ jQuery(".contact-form").validate();
           $(".mt0").hide();
 
           });
-
           // stop the form from submitting
           e.preventDefault();
         }
+        jQuery(".pushbutton-wide").prop('disabled', false);
     });
 })(jQuery);
 

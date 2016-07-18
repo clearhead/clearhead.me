@@ -37,15 +37,19 @@
 
 header {
 	width: 100%;
-	background-color: $white;
 	color: $black;
 	// padding: 0.578125em 0;
-
 	position: fixed;
 	top: 0;
 	z-index: 100;
 	box-shadow: 0 0 0.325em 0 rgba($black, 0);
 	transition: box-shadow 0.25s ease;
+
+	font-size: 112.5%;
+	@include w480  { font-size: 106.25%; }
+	@include w640  { font-size: 103.125%; }
+	@include w1000 { font-size: 100%; }
+
 	&.scrolled {
 		box-shadow: 0 0 0.325em 0 rgba($black, 0.3);
 		nav ul li.active {
@@ -63,42 +67,61 @@ header {
 			}
 		}
 	}
-	> .container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 2.78125em;
+	.main-header {
+		position: relative;
+		z-index: 90;
+		background: $white;
+		> .container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 2.78125em;
+		}
 	}
 	.logo {
-		height: 2.78125em;
-		width: 2.78125em;
-		background-color: $blue;
-		color: transparent;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		figure {
-			height: 0.96875em;
-			width: 1.0625em;
-			margin: 0 0.09375em 0.09375em 0;
+		figcaption {
+			font-weight: $bold;
+			text-transform: lowercase;
+			margin-top: 0.25em;
+		}
+		@include w640 {
+			height: 2.78125em;
+			width: 2.78125em;
+			background-color: $blue;
+			color: transparent;
+			overflow: hidden;
 			display: flex;
-			border: 1.5px solid $black;
-
-			// display: none;
-			.icon {
-			}
-			figcaption {
-				position: absolute;
-				pointer-events: none;
+			align-items: center;
+			justify-content: center;
+			figure {
+				height: 0.96875em;
+				width: 1.0625em;
+				margin: 0 0.09375em 0.09375em 0;
+				display: flex;
+				border: 1.5px solid $black;
+				.icon {
+				}
+				figcaption {
+					position: absolute;
+					pointer-events: none;
+				}
 			}
 		}
 	}
 	.menu-desktop {
-		width: calc(100% - 13.5em);
 		margin-right: 0.346875em;
+
+		width: calc(100% - 4.5em);
+		max-width: 30em;
+		@include w1000 {
+			width: calc(100% - 13.5em);
+			max-width: none;
+		}
 		nav {
 			display: none;
+			@include w640 {
+				display: block;
+			}
 		}
 	}
 	nav {
@@ -126,16 +149,30 @@ header {
 		}
 	}
 	.menu-mobile {
+		position: absolute;
+		z-index: 80;
 		background-color: $black;
 		width: 100%;
+		overflow: hidden;
+		pointer-events: none;
+		transform: translateY(-3.5em);
+		transition: transform 0.25s ease;
+		@include w640 {
+			display: none;
+		}
 		nav ul {
-			height: 3.5em;
+			height: 2.78125em;
 			li {
 				a {
-					font-size: 0.9375em;
 					color: rgba($white, 0.9);
-					line-height: 4;
 					padding: 0 0.4125em;
+
+					font-size: 0.75em;
+					line-height: 3.625;
+					@media screen and (min-width: 360px) {
+						font-size: 0.8125em;
+						line-height: 3.5;
+					}
 				}
 			}
 		}
@@ -147,33 +184,53 @@ header {
 		color: $dark-blue;
 		text-transform: lowercase;
 		display: block;
-		padding: 8.5px;
+		padding: 0.5625em;
 		line-height: 1.25;
 		border-radius: 0.171875em;
+		flex-shrink: 0;
+		@include w640 {
+			display: none;
+		}
 		figure {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 		}
 		figcaption {
 			position: relative;
-			top: 0.125em;
+			top: 0.0275em;
+			flex-shrink: 0;
 		}
 		.icon {
-			order: 2;
 			height: 1em;
 			width: 1em;
-			margin-left: 0.5em;
 			position: relative;
+			flex-shrink: 0;
+			text-align: right;
+			margin-left: 0.5em;
 			span {
 				display: block;
 				position: absolute;
 				font-size: 1.875em;
 				top: -0.2875em;
 				font-weight: $medium;
-
-				// transform: rotate(45deg);
+				transform: rotate(0deg);
+				transition:
+					transform 0.25s ease,
+					top 0.25s ease,
+					left 0.25s ease;
 			}
 		}
+	}
+}
+body.show-menu-mobile {
+	.menu-mobile {
+		transform: translateY(0);
+		pointer-events: auto;
+	}
+	.menu-toggle-mobile .icon span {
+		transform: rotate(45deg);
+		left: -0.5px;
 	}
 }
 body.archive-view header {
@@ -198,6 +255,36 @@ body:not(.home) nav li {
 			color: $dark-blue;
 			border-bottom-width: 0.25em;
 		}
+	}
+}
+
+body.archive-view, body.single {
+	.menu-mobile nav li.menu-item-blog {
+		a {
+			color: $blue;
+			border-color: $blue;
+			border-bottom-width: 0.25em;
+		}
+	}
+}
+
+
+.contact-form {
+	input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+
+	/*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/
+	input[disabled] {
+    color: black;
+		background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
 	}
 }
 
