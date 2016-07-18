@@ -23,7 +23,7 @@ jQuery(".contact-form").validate();
 
 //Update the submit button to remove the arrow
 jQuery(".pushbutton-wide").val("Submit");
-jQuery(".contact textarea").attr("rows", 4);
+jQuery(".contact-form textarea").attr("rows", 4);
 
 
 //All the contact forms from Jetpack have the .contact-form class

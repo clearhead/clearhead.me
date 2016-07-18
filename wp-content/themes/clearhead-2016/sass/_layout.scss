@@ -201,25 +201,6 @@ body:not(.home) nav li {
 	}
 }
 
-.contact-form {
-	input.error, textarea.error {
-		border:1px solid red!important;
-	}
-	.error {
-		color: red!important;
-	}
-
-	/*When form is submitted, button is disabled so users won't press it while
-	ajax completes*/
-	input[disabled] {
-    color: black;
-		background-color: #DCDAD1;
-    padding: 2px;
-    margin: 0 0 0 0;
-    background-image: none;
-	}
-}
-
 footer {
 	.main-footer {
 		padding: 2em 0 1.875em;

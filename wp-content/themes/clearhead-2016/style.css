@@ -89,7 +89,7 @@ a {
   a:hover {
     color: #19748f; }
 
-.button, .pushbutton-wide {
+.button, .contact-form .pushbutton-wide, .contact-form .contact-submit input.pushbutton-wide {
   display: inline-block;
   background-color: #32C4F5;
   color: #FFFFFF;
@@ -101,7 +101,7 @@ a {
   font-size: 0.875em;
   -webkit-transition: background-color 0.1875s ease, color 0.1875s ease;
   transition: background-color 0.1875s ease, color 0.1875s ease; }
-  .button:hover, .pushbutton-wide:hover {
+  .button:hover, .contact-form .pushbutton-wide:hover, .contact-form .contact-submit input.pushbutton-wide:hover {
     color: #FFFFFF;
     background-color: #19748f; }
   .button-yellow {
@@ -111,13 +111,6 @@ a {
       background-color: #de9702; }
   .button-reduced {
     padding: 0.65625em 1.09375em 0.5em; }
-
-.pushbutton-wide {
-  background-color: #FDB216;
-  color: #313335;
-  padding: 0.65625em 1.09375em 0.5em; }
-  .pushbutton-wide:hover {
-    background-color: #de9702; }
 
 strong, b {
   font-weight: 700; }
@@ -502,20 +495,6 @@ body.archive-view header:not(.scrolled):after {
 body:not(.home) nav li.current_page_item a, body:not(.home) nav li.current_page_parent a {
   color: #19748f;
   border-bottom-width: 0.25em; }
-
-.contact-form {
-  /*When form is submitted, button is disabled so users won't press it while
-	ajax completes*/ }
-  .contact-form input.error, .contact-form textarea.error {
-    border: 1px solid red !important; }
-  .contact-form .error {
-    color: red !important; }
-  .contact-form input[disabled] {
-    color: black;
-    background-color: #DCDAD1;
-    padding: 2px;
-    margin: 0 0 0 0;
-    background-image: none; }
 
 footer .main-footer {
   padding: 2em 0 1.875em;
@@ -1143,7 +1122,9 @@ h3.widget-title {
   color: #313335; }
 
 .contact-form {
-  margin-top: 0.84375em; }
+  margin-top: 0.84375em;
+  /*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/ }
   .contact-form label {
     color: #9CB1B6; }
     .contact-form label span {
@@ -1157,9 +1138,25 @@ h3.widget-title {
     transition: background-color 0.1875s ease; }
     .contact-form input:not([type="submit"]):focus, .contact-form textarea:focus {
       background-color: #FFFFFF; }
-  .contact-form input.button, .contact-form input.pushbutton-wide {
+  .contact-form input.button, .contact-form input.pushbutton-wide, .contact-form .contact-submit input.pushbutton-wide {
     width: auto;
     padding: 0.6875em 1.1875em 0.45625em; }
+  .contact-form .pushbutton-wide, .contact-form .contact-submit input.pushbutton-wide {
+    background-color: #FDB216;
+    color: #313335;
+    padding: 0.65625em 1.09375em 0.5em; }
+    .contact-form .pushbutton-wide:hover, .contact-form .contact-submit input.pushbutton-wide:hover {
+      background-color: #de9702; }
+  .contact-form input.error, .contact-form textarea.error {
+    border: 1px solid red !important; }
+  .contact-form .error {
+    color: red !important; }
+  .contact-form input[disabled] {
+    color: black;
+    background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none; }
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -2034,6 +2031,16 @@ body.single-post .legacy-styles .entry-image, body.page .legacy-styles .entry-im
     width: 200px; } }
 
 /*--------------------------------------------------------------
+	## Contact Forms
+	--------------------------------------------------------------*/
+.legacy-styles .pushbutton-wide {
+  background-color: #FDB216 !important;
+  color: #313335 !important;
+  padding: 0.65625em 1.09375em 0.5em !important; }
+  .legacy-styles .pushbutton-wide:hover {
+    background-color: #de9702 !important; }
+
+/*--------------------------------------------------------------
 	## CH General
 	--------------------------------------------------------------*/
 .legacy-styles .medium {
@@ -2081,7 +2088,7 @@ body.single-post .legacy-styles .entry-image, body.page .legacy-styles .entry-im
   background: #B698C7;
   color: #49286d; }
 
-.legacy-styles .button, .legacy-styles .pushbutton-wide {
+.legacy-styles .button, .legacy-styles .contact-form .pushbutton-wide, .contact-form .legacy-styles .pushbutton-wide, .legacy-styles .contact-form .contact-submit input.pushbutton-wide, .contact-form .contact-submit .legacy-styles input.pushbutton-wide {
   background: #3DC5F3;
   text-transform: lowercase;
   border-radius: 3px;
