@@ -89,61 +89,6 @@ a {
   a:hover {
     color: #19748f; }
 
-.loader {
-  font-size: 10px;
-  margin: 50px auto;
-  text-indent: -9999em;
-  width: 11em;
-  height: 11em;
-  border-radius: 50%;
-  background: #ffffff;
-  background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-  background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
-  position: relative;
-  -webkit-animation: load3 1.4s infinite linear;
-  animation: load3 1.4s infinite linear;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0); }
-
-.loader:before {
-  width: 50%;
-  height: 50%;
-  background: #ffffff;
-  border-radius: 100% 0 0 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: ''; }
-
-.loader:after {
-  background: #0dc5c1;
-  width: 75%;
-  height: 75%;
-  border-radius: 50%;
-  content: '';
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; }
-
-@-webkit-keyframes load3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes load3 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
 .button, .pushbutton-wide {
   display: inline-block;
   background-color: #32C4F5;
@@ -558,11 +503,19 @@ body:not(.home) nav li.current_page_item a, body:not(.home) nav li.current_page_
   color: #19748f;
   border-bottom-width: 0.25em; }
 
-.contact-form input.error, .contact-form textarea.error {
-  border: 1px solid red !important; }
-
-.contact-form .error {
-  color: red !important; }
+.contact-form {
+  /*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/ }
+  .contact-form input.error, .contact-form textarea.error {
+    border: 1px solid red !important; }
+  .contact-form .error {
+    color: red !important; }
+  .contact-form input[disabled] {
+    color: black;
+    background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none; }
 
 footer .main-footer {
   padding: 2em 0 1.875em;

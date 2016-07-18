@@ -21,9 +21,13 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
 //Validation for contact form before submission
 jQuery(".contact-form").validate();
 
+//Update the submit button to remove the arrow
+jQuery(".pushbutton-wide").val("Submit");
+
 //All the contact forms from Jetpack have the .contact-form class
 (function($) {
     $(".contact-form").on('submit', function (e) {
+        jQuery(".pushbutton-wide").prop('disabled', true);
         if($(this).valid())
         {
           //Wrapper for our form fields to submit via ajax
@@ -112,9 +116,9 @@ jQuery(".contact-form").validate();
           $(".mt0").hide();
 
           });
-
           // stop the form from submitting
           e.preventDefault();
         }
+        jQuery(".pushbutton-wide").prop('disabled', false);
     });
 })(jQuery);
