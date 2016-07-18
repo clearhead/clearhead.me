@@ -15,7 +15,7 @@ var inview1 = new Waypoint.Inview({
 });
 
 var inview2 = new Waypoint.Inview({
-  element: jQuery('#why')[0],
+  element: jQuery('#with')[0],
   enter: function(direction) {
   	if (direction == "down") {
   		jQuery(".menu-item").removeClass("active");
