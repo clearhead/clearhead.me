@@ -23,10 +23,13 @@ jQuery(".contact-form").validate();
 
 //Update the submit button to remove the arrow
 jQuery(".pushbutton-wide").val("Submit");
+jQuery(".contact textarea").attr("rows", 4);
+
 
 //All the contact forms from Jetpack have the .contact-form class
 (function($) {
     $(".contact-form").on('submit', function (e) {
+        //disable the button on form submit
         jQuery(".pushbutton-wide").prop('disabled', true);
         if($(this).valid())
         {
@@ -77,7 +80,7 @@ jQuery(".pushbutton-wide").val("Submit");
           formData['action']           = 'grunion-contact-form';
 
           //Loading animation. Uses Font Awesome but could be replaced with whatever.
-          $(this).find('input[type=submit]').after('<span class="loader"></span>');
+          $(this).find('input[type=submit]').after('<span class="spinner"></span>');
 
           // process the form
           $.ajax({
