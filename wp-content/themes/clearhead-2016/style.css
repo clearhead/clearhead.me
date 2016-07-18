@@ -819,7 +819,8 @@ section {
   background-color: #ccd0d0;
   padding: 0;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  background-repeat: no-repeat; }
   .photo-callout .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -838,18 +839,22 @@ section {
     margin: 0;
     text-align: center;
     line-height: 1;
-    padding: 0.875em 0 0.71875em; }
+    padding: 0.875em 0.5em 0.71875em; }
   .photo-callout-blue {
     background-color: #98d5e4;
-    background-image: url("img/callout-photos/what-we-do.jpg");
-    background-position: center -10.346875em; }
+    background-image: url("img/callout-photos/what-we-do.jpg"); }
+    @media screen and (min-width: 62.5em) {
+      .photo-callout-blue {
+        background-position: center calc(50% - 2.8125em); } }
     .photo-callout-blue h3 {
       background-color: #BFE1EB;
       color: #19748f; }
   .photo-callout-orange {
     background-color: #f59b5e;
-    background-image: url("img/callout-photos/who-we-do-it-with.jpg");
-    background-position: center -6.5em; }
+    background-image: url("img/callout-photos/who-we-do-it-with.jpg"); }
+    @media screen and (min-width: 62.5em) {
+      .photo-callout-orange {
+        background-position: center calc(50% + 1em); } }
     .photo-callout-orange h3 {
       background-color: #EEB48A;
       color: #AB442A; }
