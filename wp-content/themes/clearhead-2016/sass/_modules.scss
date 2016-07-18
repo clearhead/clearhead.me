@@ -461,7 +461,7 @@
 }
 
 // Widgets
-// --------------------------
+// -------
 h3.widget-title {
     font-size: 1.478125em;
     font-weight: $bold;
@@ -475,4 +475,60 @@ h3.widget-title {
     a {
         color: $black;
     }
+}
+
+
+// Contact Form
+// ------------
+.contact-form {
+	margin-top: 0.84375em;
+	label {
+		color: #9CB1B6; // ‘dark gray’ used only here
+		span {
+			color: #5D767C; // ‘extra dark gray’ used only here
+			&:before {
+				content: " ";
+			}
+		}
+	}
+	input:not([type="submit"]), textarea {
+		background-color: #B9BDC4;
+		border: none;
+		transition: background-color 0.1875s ease;
+		&:focus {
+			background-color: $white;
+		}
+	}
+	input.button {
+		width: auto;
+		padding: 0.6875em 1.1875em 0.45625em;
+	}
+
+  //Styles for submit button in footer..feel free to fix up nicely
+  .pushbutton-wide, .contact-submit input.pushbutton-wide {
+  	@extend .button;
+  	background-color: #FDB216;
+  	color: $black;
+  	padding: 0.65625em 1.09375em 0.5em;
+  	&:hover {
+  		background-color: darken(#FDB216, 10%);
+  	}
+  }
+
+  input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+
+	/*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/
+	input[disabled] {
+    color: black;
+		background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
+	}
 }

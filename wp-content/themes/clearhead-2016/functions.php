@@ -113,9 +113,12 @@ add_action( 'widgets_init', 'clearhead_2016_widgets_init' );
  * Enqueue scripts and styles.
  */
 function clearhead_2016_scripts() {
+
 	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri() );
 
-  wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
+	wp_deregister_style( 'grunion.css' ); // Grunion contact form
+
+	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
 	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/site.js', array(), '20151215', true );
 

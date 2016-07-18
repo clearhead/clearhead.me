@@ -17,14 +17,14 @@
 		<div class="main-footer">
 			<div class="container">
 				<div class="contact" id="contact" >
+
 					<?php $the_query = new WP_Query( 'page_id=22' );
 						while ( $the_query->have_posts() ) :
 							$the_query->the_post();
 							the_content();
 							endwhile;
-						wp_reset_postdata();?>
-
-
+						wp_reset_postdata();
+					?>
 
 					<div class="contact-info">
 						<div>
