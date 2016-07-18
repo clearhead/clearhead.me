@@ -283,45 +283,21 @@
             position: absolute;
             display: inline-block;
             bottom: 54px;
-            height: 51px;
+            height: 48.5px;
             width: 36px;
             background-repeat: no-repeat;
-            background-size: 29.5px;
-
-            // background-color: rgba(red, 0.5);
+            background-size: 36px;
         }
         &:before {
             left: -36px;
-            background-image: url('img/point-left.svg');
-            background-position: right -0.5px bottom 2px;
+            background-image: url('img/point-left-large.svg');
+            background-position: right 0 bottom 0;
         }
         blockquote {
             letter-spacing: -(0.55em/18);
         }
     }
 }
-
-/*
-&:before {
-    bottom: 10.5px;
-    height: 48px;
-    width: 48px;
-}
-&:first-child {
-    &:before {
-        left: -48px;
-        background-image: url('img/point-left.svg');
-        background-position: right -2.5px bottom 2px;
-    }
-}
-&:last-child {
-    &:before {
-        right: -48px;
-        background-image: url('img/point-right.svg');
-        background-position: left -2.5px bottom 2px;
-    }
-}
-*/
 
 // Logo List
 // ---------

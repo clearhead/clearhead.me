@@ -12,17 +12,18 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-<script src="//use.typekit.net/jlb8kqs.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-<meta name="google-site-verification" content="rOVbTCkNzfmtGVaB3SNC3RQvDzAq88fhCv8fTG4mBbY" />
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
+	<script src="//use.typekit.net/jlb8kqs.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<meta name="google-site-verification" content="rOVbTCkNzfmtGVaB3SNC3RQvDzAq88fhCv8fTG4mBbY" />
 
-<?php wp_head(); ?>
+	<?php wp_head(); ?>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -42,12 +43,45 @@
 					<figcaption>Clearhead</figcaption>
 				</figure>
 			</a>
-			<nav role="navigation">
-				<?php /*
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'clearhead-2016' ); ?></button>
-				*/ ?>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-			</nav>
+			<div class="menu-desktop">
+				<nav role="navigation">
+					<?php /*
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'clearhead-2016' ); ?></button>
+					*/ ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				</nav>
+			</div>
+			<a href="#show-menu" class="menu-toggle-mobile">
+				<figure>
+					<div class="icon"><span>+</span></div>
+					<figcaption>Menu</figcaption>
+				</figure>
+			</a>
+		</div>
+		<div class="menu-mobile">
+			<div class="container">
+				<nav role="navigation">
+			        <div class="menu-main-menu-container">
+			            <ul class="menu">
+			                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-6">
+			                    <a href="/#what">Services</a>
+			                </li>
+			                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-8">
+			                    <a href="/#with">Process</a>
+			                </li>
+			                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-7">
+			                    <a href="/#who">Team</a>
+			                </li>
+			                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11">
+			                    <a href="http://clearhead.dev/blog/">Blog</a>
+			                </li>
+			                <li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-9">
+			                    <a href="/#contact">Contact</a>
+			                </li>
+			            </ul>
+			        </div>
+			    </nav>
+			</div>
 		</div>
 	</header>
 

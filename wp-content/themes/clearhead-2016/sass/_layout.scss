@@ -3,7 +3,7 @@
 .container {
 	min-width: 288px;
 	margin: 0 auto;
-	max-width: calc(100% - 2em);
+	max-width: calc(100% - 1.5em);
 	width: 50em;
 	@include w480 {
 		width: 48.5em;
@@ -54,8 +54,16 @@ header {
 				border-bottom-width: 0.25em;
 			}
 		}
+		.menu-mobile nav ul li {
+			&.active {
+				a {
+					color: $blue;
+					border-color: $blue;
+				}
+			}
+		}
 	}
-	.container {
+	> .container {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -76,6 +84,8 @@ header {
 			margin: 0 0.09375em 0.09375em 0;
 			display: flex;
 			border: 1.5px solid $black;
+
+			// display: none;
 			.icon {
 			}
 			figcaption {
@@ -84,13 +94,20 @@ header {
 			}
 		}
 	}
-	nav {
+	.menu-desktop {
 		width: calc(100% - 13.5em);
 		margin-right: 0.346875em;
+		nav {
+			display: none;
+		}
+	}
+	nav {
+		width: 100%;
 		ul {
 			display: flex;
 			justify-content: space-between;
 			height: 2.78125em;
+			// background-color: $black;
 			li {
 				display: flex;
 				a {
@@ -105,6 +122,56 @@ header {
 					transition: border-bottom-width 0.25s ease;
 					border-bottom: 0 solid #0096BE; // ‘medium blue’ used only here
 				}
+			}
+		}
+	}
+	.menu-mobile {
+		background-color: $black;
+		width: 100%;
+		nav ul {
+			height: 3.5em;
+			li {
+				a {
+					font-size: 0.9375em;
+					color: rgba($white, 0.9);
+					line-height: 4;
+					padding: 0 0.4125em;
+				}
+			}
+		}
+	}
+	.menu-toggle-mobile {
+		font-size: 0.8125em;
+		font-weight: $medium;
+		background-color: $light-blue;
+		color: $dark-blue;
+		text-transform: lowercase;
+		display: block;
+		padding: 8.5px;
+		line-height: 1.25;
+		border-radius: 0.171875em;
+		figure {
+			display: flex;
+			align-items: center;
+		}
+		figcaption {
+			position: relative;
+			top: 0.125em;
+		}
+		.icon {
+			order: 2;
+			height: 1em;
+			width: 1em;
+			margin-left: 0.5em;
+			position: relative;
+			span {
+				display: block;
+				position: absolute;
+				font-size: 1.875em;
+				top: -0.2875em;
+				font-weight: $medium;
+
+				// transform: rotate(45deg);
 			}
 		}
 	}
