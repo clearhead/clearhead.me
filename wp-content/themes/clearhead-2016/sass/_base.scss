@@ -59,6 +59,18 @@ a {
 		padding: 0.65625em 1.09375em 0.5em;
 	}
 }
+
+//Styles for submit button in footer..feel free to fix up nicely
+.pushbutton-wide {
+	@extend .button;
+	background-color: #FDB216;
+	color: $black;
+	padding: 0.65625em 1.09375em 0.5em;
+	&:hover {
+		background-color: darken(#FDB216, 10%);
+	}
+}
+
 strong, b {
 	font-weight: $bold;
 }

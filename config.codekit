@@ -42,6 +42,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/readme.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/readme.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
@@ -20728,6 +20737,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/js\/jquery.validate.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/jquery.validate.min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/jquery.validate.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/js\/jquery.waypoints.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -20935,22 +20955,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/wp-content\/themes\/clearhead-2016\/sass\/_base.scss": {
-		"createSourceMap": 0,
-		"debugStyle": 0,
-		"decimalPrecision": 10,
-		"fileType": 4,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/sass\/_base.scss",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/css\/_base.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"useLibsass": 0
 		},
 	"\/wp-content\/themes\/clearhead-2016\/sass\/_layout.scss": {
 		"createSourceMap": 0,
@@ -31251,7 +31255,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Joel Farris",
+"lastSavedByUser": "Julian M. Jones",
 "manualImportLinks": {
 	},
 "projectAttributes": {
@@ -31415,7 +31419,7 @@
 	"coffeeMinifyOutput": 1,
 	"coffeeOutputStyle": 0,
 	"coffeeSyntaxCheckerStyle": 1,
-	"externalServerAddress": "http:\/\/clearhead.dev\/",
+	"externalServerAddress": "http:\/\/local.clearhead\/",
 	"externalServerPreviewPathAddition": "",
 	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
 	"hamlAutoOutputPathEnabled": 1,

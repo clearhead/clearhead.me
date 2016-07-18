@@ -201,6 +201,15 @@ body:not(.home) nav li {
 	}
 }
 
+.contact-form {
+	input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+}
+
 footer {
 	.main-footer {
 		padding: 2em 0 1.875em;
@@ -293,6 +302,12 @@ footer {
 				order: 2;
 				width: 100%;
 				max-width: calc(100% - ((((1em * (((800 - (20 * 8)) / 9) / 18)) * 3) + ((1em * (20 / 18)) * 2)) + 2.5625em));
+
+				//Footer form submission styles
+				blockquote.contact-form-submission {
+					border-left: 3px solid #3DC5F3;
+					color: white;
+				}
 
 				padding-top: 0.325em;
 				form {

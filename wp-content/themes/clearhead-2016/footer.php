@@ -16,20 +16,13 @@
 	<footer role="contentinfo">
 		<div class="main-footer">
 			<div class="container">
-				<div class="contact" id="contact">
-					<h3>Need to talk?</h3>
-					<form> <!-- Still needs CMS integraton  -->
-						<label for="name">Name <span>(required)</span></label>
-						<input type="text" id="name">
-
-						<label for="email">Email <span>(required)</span></label>
-						<input type="email" id="email">
-
-						<label for="message">Tell us about your project, goal or design <span>(required)</span></label>
-						<textarea id="message" rows="4"></textarea>
-
-						<input class="button button-reduced button-yellow" type="submit" value="Submit">
-					</form>
+				<div class="contact" id="contact" >
+					<?php $the_query = new WP_Query( 'page_id=22' );
+						while ( $the_query->have_posts() ) :
+							$the_query->the_post();
+							the_content();
+							endwhile;
+						wp_reset_postdata();?>
 
 
 

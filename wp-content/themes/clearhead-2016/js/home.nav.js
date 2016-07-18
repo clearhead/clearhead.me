@@ -67,7 +67,6 @@ var inview2 = new Waypoint.Inview({
 jQuery('.menu-item a, a.smooth-scroll, a[href$="main"]').click(function() {
 	var href = jQuery(this).attr('href');
 	var trimmed = href.substring(1);
-    //debugger;
     if(trimmed === "main") {
         jQuery('html, body').animate({
             scrollTop: 0
