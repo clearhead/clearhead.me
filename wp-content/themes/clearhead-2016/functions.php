@@ -112,11 +112,13 @@ add_action( 'widgets_init', 'clearhead_2016_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function clearhead_2016_scripts() {
+function clearhead_2016_scripts_and_styles() {
 
 	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri() );
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
+
+	wp_deregister_style( 'jetpack.css' ); // Jetpack's Random Stylesheet
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
@@ -149,7 +151,7 @@ function clearhead_2016_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts' );
+add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts_and_styles' );
 
 /**
  * Implement the Custom Header feature.
