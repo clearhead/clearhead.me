@@ -109,6 +109,10 @@ function clearhead_2016_widgets_init() {
 }
 add_action( 'widgets_init', 'clearhead_2016_widgets_init' );
 
+// First, make sure Jetpack doesn't concatenate all its CSS
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+
+
 /**
  * Enqueue scripts and styles.
  */
@@ -117,8 +121,6 @@ function clearhead_2016_scripts_and_styles() {
 	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri() );
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
-
-	wp_deregister_style( 'jetpack.css' ); // Jetpack's Random Stylesheet
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
