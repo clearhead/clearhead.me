@@ -1,0 +1,57 @@
+<svg width="159px" height="49px" viewBox="0 0 159 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <path d="M0,0 L36,0 L36,35.8456261 L0,35.8456261 L0,0 Z M41,0 L77,0 L77,35.8456261 L41,35.8456261 L41,0 Z M82,0 L118,0 L118,35.8456261 L82,35.8456261 L82,0 Z M123,0 L159,0 L159,35.8456261 L123,35.8456261 L123,0 Z" id="path-1"></path>
+        <rect id="path-3" x="0" y="0" width="37" height="37"></rect>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="37" height="37" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+        <rect id="path-5" x="41" y="0" width="37" height="37"></rect>
+        <mask id="mask-6" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="37" height="37" fill="white">
+            <use xlink:href="#path-5"></use>
+        </mask>
+        <rect id="path-7" x="81" y="0" width="37" height="37"></rect>
+        <mask id="mask-8" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="37" height="37" fill="white">
+            <use xlink:href="#path-7"></use>
+        </mask>
+        <rect id="path-9" x="122" y="0" width="37" height="37"></rect>
+        <mask id="mask-10" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="37" height="37" fill="white">
+            <use xlink:href="#path-9"></use>
+        </mask>
+        <circle id="path-11" cx="109" cy="43" r="4"></circle>
+        <mask id="mask-12" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="-2" y="-2" width="12" height="12">
+            <rect x="103" y="37" width="12" height="12" fill="white"></rect>
+            <use xlink:href="#path-11" fill="black"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Clearhead-Home-Photography-1" transform="translate(-221.000000, -1420.000000)">
+            <g id="Group-13-Copy-2" transform="translate(200.000000, 1328.000000)">
+                <g id="ddr_graphic" transform="translate(21.000000, 92.000000)">
+                    <g id="Path-98" transform="translate(0.000000, 1.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <polygon fill="#32C4F5" mask="url(#mask-2)" points="4.31640625 34.9942244 123.589844 0.874340025 157.589844 -0.125659975 157.589844 34.3019964"></polygon>
+                    </g>
+                    <use id="Rectangle-151" stroke="#32C4F5" mask="url(#mask-4)" stroke-width="6" xlink:href="#path-3"></use>
+                    <use id="Rectangle-151-Copy" stroke="#32C4F5" mask="url(#mask-6)" stroke-width="6" xlink:href="#path-5"></use>
+                    <use id="Rectangle-151-Copy-2" stroke="#32C4F5" mask="url(#mask-8)" stroke-width="6" xlink:href="#path-7"></use>
+                    <use id="Rectangle-151-Copy-3" stroke="#32C4F5" mask="url(#mask-10)" stroke-width="4" xlink:href="#path-9"></use>
+                    <circle id="Oval-113-Copy" fill="#FFFFFF" cx="139" cy="17" r="4"></circle>
+                    <circle id="Oval-113-Copy" fill="#FFFFFF" cx="150" cy="17" r="4"></circle>
+                    <circle id="Oval-113-Copy" fill="#FFFFFF" cx="139" cy="28" r="4"></circle>
+                    <circle id="Oval-113-Copy" fill="#FFFFFF" cx="150" cy="28" r="4"></circle>
+                    <circle id="Oval-113" fill="#32C4F5" cx="8" cy="43" r="4"></circle>
+                    <circle id="Oval-113" fill="#32C4F5" cx="61" cy="43" r="4"></circle>
+                    <circle id="Oval-113" fill="#32C4F5" cx="95" cy="43" r="4"></circle>
+                    <g id="Oval-113">
+                        <use fill="#32C4F5" fill-rule="evenodd" xlink:href="#path-11"></use>
+                        <use stroke="#FFFFFF" mask="url(#mask-12)" stroke-width="4" xlink:href="#path-11"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

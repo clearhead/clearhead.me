@@ -103,8 +103,10 @@ body.page-template-default {
 	}
 }
 
-img {
-	background-color: $gray;
+.legacy-styles {
+	img {
+		background-color: $gray;
+	}
 }
 
 

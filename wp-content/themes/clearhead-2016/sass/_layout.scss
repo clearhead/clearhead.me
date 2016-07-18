@@ -79,10 +79,29 @@ header {
 		}
 	}
 	.logo {
+		flex-shrink: 0;
 		figcaption {
 			font-weight: $bold;
 			text-transform: lowercase;
 			margin-top: 0.25em;
+			position: relative;
+			span {
+				display: block;
+				color: transparent;
+			}
+			svg {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				pointer-events: none;
+				top: -0.0625em;
+				* {
+					fill: $blue;
+				}
+			}
+		}
+		.icon {
+			display: none;
 		}
 		@include w640 {
 			height: 2.78125em;
@@ -96,14 +115,13 @@ header {
 			figure {
 				height: 0.96875em;
 				width: 1.0625em;
-				margin: 0 0.09375em 0.09375em 0;
+				margin: 0 0.125em 0.09375em 0;
 				display: flex;
-				border: 1.5px solid $black;
 				.icon {
+					display: block;
 				}
 				figcaption {
-					position: absolute;
-					pointer-events: none;
+					display: none;
 				}
 			}
 		}
