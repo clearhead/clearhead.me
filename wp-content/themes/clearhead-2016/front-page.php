@@ -193,7 +193,7 @@ get_header(); ?>
 										<div>
 											<h3>Testing the Power of Print</h3>
 											<figure>
-												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/stories/stories-bluedot.png" alt="blu dot" />
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/stories/stories-bluedot.png" alt="blu dot">
 											</figure>
 										</div>
 										<div>
@@ -210,7 +210,7 @@ get_header(); ?>
 								<div class="client">
 									<div class="logo">
 										<figure class="village-roadshow-logo">
-											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/village-roadshow.png" alt="Village Roadshow" />
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/village-roadshow.png" alt="Village Roadshow">
 										</figure>
 									</div>
 									<strong>John Satterley</strong>
@@ -248,46 +248,69 @@ get_header(); ?>
 							<div class="logo-list logo-list-clients">
 								<ul>
 									<li>
-										<figure style="width: 5em"></figure>
+										<figure style="max-width: 4em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/adidas.png" alt="Adidas">
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/blu-dot.png" alt="Blu Dot">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7.25em"></figure>
+										<figure style="max-width: 7.25em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/world-market.png" alt="World Market">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 9.75em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/cvs.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7.4125em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/express.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/keurig.png" alt="Keurig">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7em"></figure>
+										<figure style="max-width: 8.5em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/patagonia.png" alt="Patagonia">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 5em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/tesco.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/tory-burch.png" alt="Tory Burch">
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/ulta.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/usaa.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 5.5em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/vitamix.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 9em"></figure>
-									</li>
-									<li>
-										<figure style="width: 5.09375em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/whole-foods.svg' ); ?>
+										</figure>
 									</li>
 									<li class="more">
 										<figure>
@@ -312,19 +335,29 @@ get_header(); ?>
 								<div class="logo-list logo-list-solutions">
 									<ul>
 										<li>
-											<figure style="width: 5em"></figure>
+											<figure style="max-width: 6.15625em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/optimizely.png" alt="Optimizely">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7em"></figure>
+											<figure style="max-width: 9.15625em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/monetate.png" alt="Monetate">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7.25em"></figure>
+											<figure style="max-width: 5.32em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/qubit.png" alt="Qubit">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 9.75em"></figure>
+											<figure style="max-width: 8.8125em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/maxymiser.png" alt="Maxymiser">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7.4125em"></figure>
+											<figure>
+												<?php get_template_part( 'img/technologies/user-testing.svg' ); ?>
+											</figure>
 										</li>
 									</ul>
 								</div>
@@ -364,7 +397,7 @@ get_header(); ?>
 								<div class="client">
 									<div class="logo">
 										<figure class="keurig-logo">
-											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/keurig.png" alt="Keurig" />
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/keurig.png" alt="Keurig">
 										</figure>
 									</div>
 									<strong>Delia Vallejo</strong>
@@ -404,10 +437,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-matty/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/matty.jpg');"></div>
 												<figcaption>
 													<div>Read Matty’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -415,10 +450,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-ryan/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/ryan.jpg');"></div>
 												<figcaption>
 													<div>Read Ryan’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -426,10 +463,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-sam/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/sam.jpg');"></div>
 												<figcaption>
 													<div>Read Sam’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -440,7 +479,7 @@ get_header(); ?>
 							<hr class="extra-space">
 
 							<div class="cap-6c-6g">
-								<h2>Great Quarterbacks are Always Surrounded by the Best Team</h2>
+								<h2>Success Starts with the Best&nbsp;Team</h2>
 								<p>
 									More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization&nbsp;methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.
 								</p>
@@ -450,37 +489,49 @@ get_header(); ?>
 								<ul>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/consultants.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Strategic Consultants</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/directors.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Optimization Directors</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/managers.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Project Managers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/designers.jpg" alt="employee headshot">
+											</div>
 											<figcaption><span>UX</span>&nbsp;+&nbsp;Interface Designers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/developers.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Front-end Developers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/analysts.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Data Analysts</figcaption>
 										</figure>
 									</li>
