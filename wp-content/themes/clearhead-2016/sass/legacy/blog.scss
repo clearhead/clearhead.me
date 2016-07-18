@@ -1067,6 +1067,18 @@ body.single-post, body.page {
 	}
 }
 	/*--------------------------------------------------------------
+	## Contact Forms
+	--------------------------------------------------------------*/
+	.legacy-styles .pushbutton-wide {
+		background-color: #FDB216!important;
+  	color: $black!important;
+  	padding: 0.65625em 1.09375em 0.5em!important;
+  	&:hover {
+  		background-color: darken(#FDB216, 10%)!important;
+  	}
+	}
+
+	/*--------------------------------------------------------------
 	## CH General
 	--------------------------------------------------------------*/
 .legacy-styles {
@@ -1115,6 +1127,7 @@ body.single-post, body.page {
 	  background: #B698C7;
 	  color: #49286d;
 	}
+
 	.button {
 	  background: #3DC5F3;
 	  text-transform: lowercase;

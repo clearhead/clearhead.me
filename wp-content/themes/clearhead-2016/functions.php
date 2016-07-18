@@ -109,10 +109,14 @@ function clearhead_2016_widgets_init() {
 }
 add_action( 'widgets_init', 'clearhead_2016_widgets_init' );
 
+// First, make sure Jetpack doesn't concatenate all its CSS
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+
+
 /**
  * Enqueue scripts and styles.
  */
-function clearhead_2016_scripts() {
+function clearhead_2016_scripts_and_styles() {
 
 	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri() );
 
@@ -149,7 +153,7 @@ function clearhead_2016_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts' );
+add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts_and_styles' );
 
 /**
  * Implement the Custom Header feature.

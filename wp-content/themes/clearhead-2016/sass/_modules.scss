@@ -503,4 +503,32 @@ h3.widget-title {
 		width: auto;
 		padding: 0.6875em 1.1875em 0.45625em;
 	}
+
+  //Styles for submit button in footer..feel free to fix up nicely
+  .pushbutton-wide, .contact-submit input.pushbutton-wide {
+  	@extend .button;
+  	background-color: #FDB216;
+  	color: $black;
+  	padding: 0.65625em 1.09375em 0.5em;
+  	&:hover {
+  		background-color: darken(#FDB216, 10%);
+  	}
+  }
+
+  input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+
+	/*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/
+	input[disabled] {
+    color: black;
+		background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
+	}
 }
