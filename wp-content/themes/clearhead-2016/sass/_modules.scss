@@ -4,13 +4,65 @@
     background-color: $blue;
     color: $white;
     padding: calc(7em + 50px) 0 5.828125em;
+    // position: relative;
+    .logo-icon {
+        width: 3.4125em;
+        height: 3.4125em;
+        position: relative;
+        // top: -1.0625em;
+
+        position: relative;
+        margin: 0 auto;
+        bottom: 2.325rem;
+
+        @include w640 {
+            display: none;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
     h1 {
         line-height: 1.0625;
         margin-bottom: 0.0625em;
+
+        position: relative;
+        text-align: center;
+        bottom: 1.25rem;
+        figure {
+            display: block;
+            pointer-events: none;
+            margin: 0.0625em 0 0.278125em;
+            svg {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                @include w640 {
+                    margin: 0;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            color: transparent;
+        }
+        @include w640 {
+            bottom: 0;
+            text-align: left;
+        }
     }
     h5 {
         margin-bottom: 2.1875em;
         color: rgba($white, 0.6);
+
+        position: relative;
+        text-align: center;
+        bottom: 1.25rem;
+        @include w640 {
+            bottom: 0;
+            text-align: left;
+        }
     }
     p {
         font-size: 1.125em;
@@ -29,6 +81,8 @@
 .photo-callout {
     background-color: darken($gray, 7.5%);
     padding: 0;
+    background-size: cover;
+    background-position: center;
     .container {
         display: flex;
         align-items: center;
@@ -42,14 +96,18 @@
         padding: 0.875em 0 0.71875em;
     }
     &-blue {
-        background-color: darken(#BFE1EB, 7.5%);
+        background-color: darken(#B6E1EC, 7.5%);
+        background-image: url('img/callout-photos/what-we-do.jpg');
+        background-position: center -10.346875em;
         h3 {
             background-color: #BFE1EB;
             color: $dark-blue;
         }
     }
     &-orange {
-        background-color: darken(#EEB48A, 7.5%);
+        background-color: darken(#F7B182, 7.5%);
+        background-image: url('img/callout-photos/who-we-do-it-with.jpg');
+        background-position: center -6.5em;
         h3 {
             background-color: #EEB48A;
             color: #AB442A;
@@ -57,6 +115,7 @@
     }
     &-purple {
         background-color: darken($light-purple, 7.5%);
+        background-image: url('img/callout-photos/who-we-are.jpg');
         h3 {
             background-color: $light-purple;
             color: $dark-purple;
@@ -90,9 +149,10 @@
         margin: 0.2875em 0 0.734375em;
     }
     figure {
-        background-color: $gray;
-        padding-top: 32.75%;
         max-width: 9em;
+        svg {
+            height: 100%;
+        }
     }
     strong {
         font-weight: $medium;
@@ -212,11 +272,23 @@
         margin: 0.2875em 0 0;
     }
     figure {
-        background-color: $gray;
         height: 2.734375em;
         width: 2.734375em;
-        margin: 0.125em 0.125em 0 0.26875em;
+        margin: 0.125em 0.25em 0 0.26875em;
         flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &.buildium-logo {
+            padding-right: 0.1875em;
+        }
+        svg {
+            max-width: 100%;
+        }
+        img {
+            width: 2.125em;
+            height: auto;
+        }
     }
     strong {
         font-weight: $medium;
@@ -255,9 +327,16 @@
             align-items: center;
             justify-content: center;
             figure {
-                height: 5.0625em;
-                width: 5.0625em;
-                background-color: $gray;
+                height: 5.5em;
+                // width: 5.0625em;
+                // background-color: $gray;
+                img {
+                    max-height: 100%;
+                    width: auto;
+                }
+                &.keurig-logo {
+                    height: 3.75em;
+                }
             }
         }
         strong {

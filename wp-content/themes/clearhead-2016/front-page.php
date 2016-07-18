@@ -21,7 +21,17 @@ get_header(); ?>
 				<section class="hero">
 					<div class="container">
 						<div class="cap-6c-6g">
-							<h1>Clearhead</h1>
+
+							<div class="logo-icon">
+								<figure>
+									<?php get_template_part( 'img/logo-icon.svg' ); ?>
+								</figure>
+							</div>
+
+							<h1>
+								<span>Clearhead</span>
+								<figure><?php get_template_part( 'img/logo-type.svg' ); ?></figure>
+							</h1>
 							<h5>The Digital Optimization Company</h5>
 							<p>
 								We help daring brands optimize their business outcomes through continuous testing &amp; personalization.
@@ -55,7 +65,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Digital Optimization Programs</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Uncovering the best ideas quickly and iteratively</strong>
@@ -68,7 +80,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Data-driven Redesigns</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Disrupt with confidence</strong>
@@ -81,7 +95,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Optimization Accelerators</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Building towards a test-and-learn culture</strong>
@@ -148,7 +164,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>Breaking Best Practices</h3>
-											<figure></figure>
+											<figure class="buildium-logo">
+												<?php get_template_part( 'img/stories/buildium.svg' ); ?>
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -160,7 +178,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>MVT’S Hidden Thrills</h3>
-											<figure></figure>
+											<figure>
+												<?php get_template_part( 'img/stories/village-roadshow.svg' ); ?>
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -172,7 +192,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>Testing the Power of Print</h3>
-											<figure></figure>
+											<figure>
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/stories/stories-bluedot.png" alt="blu dot" />
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -187,7 +209,9 @@ get_header(); ?>
 							<div class="client-testimonial">
 								<div class="client">
 									<div class="logo">
-										<figure></figure>
+										<figure class="village-roadshow-logo">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/village-roadshow.png" alt="Village Roadshow" />
+										</figure>
 									</div>
 									<strong>John Satterley</strong>
 									<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
@@ -339,7 +363,9 @@ get_header(); ?>
 							<div class="client-testimonial">
 								<div class="client">
 									<div class="logo">
-										<figure></figure>
+										<figure class="keurig-logo">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/keurig.png" alt="Keurig" />
+										</figure>
 									</div>
 									<strong>Delia Vallejo</strong>
 									<small>Senior Director Ecommerce, Keurig&nbsp;Green&nbsp;Mountain</small>

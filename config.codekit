@@ -20641,6 +20641,135 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 152401,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144902,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 188460,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/logo-icon.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/logo-icon.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/logo-type.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/logo-type.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/solutions\/data-driven-redesigns.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/solutions\/data-driven-redesigns.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/solutions\/digital-optimization-programs.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/solutions\/digital-optimization-programs.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/solutions\/optimization-accelerators.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/solutions\/optimization-accelerators.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/stories\/buildium.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/stories\/buildium.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/stories\/stories-bluedot.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7333,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/stories\/stories-bluedot.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/stories\/stories-bluedot.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/stories\/village-roadshow.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/stories\/village-roadshow.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/testimonials\/keurig.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8342,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/testimonials\/keurig.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/testimonials\/keurig.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/testimonials\/village-roadshow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23195,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/testimonials\/village-roadshow.png",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/testimonials\/village-roadshow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/inc\/custom-header.php": {
 		"fileType": 8192,
 		"ignore": 0,

@@ -46,8 +46,13 @@
 				<?php endif; ?>
 
 					<figure>
-						<div class="icon"></div>
-						<figcaption>Clearhead</figcaption>
+						<div class="icon">
+							<?php get_template_part( 'img/logo-icon.svg' ); ?>
+						</div>
+						<figcaption>
+							<?php get_template_part( 'img/logo-type.svg' ); ?>
+							<span>Clearhead</span>
+						</figcaption>
 					</figure>
 				</a>
 				<div class="menu-desktop">
