@@ -83,6 +83,7 @@
     padding: 0;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     .container {
         display: flex;
         align-items: center;
@@ -93,12 +94,14 @@
         margin: 0;
         text-align: center;
         line-height: 1;
-        padding: 0.875em 0 0.71875em;
+        padding: 0.875em 0.5em 0.71875em;
     }
     &-blue {
         background-color: darken(#B6E1EC, 7.5%);
         background-image: url('img/callout-photos/what-we-do.jpg');
-        background-position: center -10.346875em;
+        @include w1000 {
+            background-position: center calc(50% - 2.8125em);
+        }
         h3 {
             background-color: #BFE1EB;
             color: $dark-blue;
@@ -107,7 +110,9 @@
     &-orange {
         background-color: darken(#F7B182, 7.5%);
         background-image: url('img/callout-photos/who-we-do-it-with.jpg');
-        background-position: center -6.5em;
+        @include w1000 {
+            background-position: center calc(50% + 1em);
+        }
         h3 {
             background-color: #EEB48A;
             color: #AB442A;
