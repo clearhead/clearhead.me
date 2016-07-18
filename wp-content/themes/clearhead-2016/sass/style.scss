@@ -1,0 +1,43 @@
+/*!
+Theme Name: clearhead-2016
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: clearhead-2016
+
+clearhead-2016 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+
+@import "_reset";
+
+@import "_variables";
+@import "_base";
+@import "_layout";
+@import "_modules";
+
+
+// Styles from previous theme for blog
+@import "legacy/blog";
+
+
+// Styles included with Underscores:
+@import "_u/variables-site/variables-site";
+@import "_u/mixins/mixins-master";
+// @import "_u/normalize";
+// @import "_u/typography/typography";
+// @import "_u/elements/elements";
+//@import "_u/forms/forms";
+// @import "_u/navigation/navigation";
+@import "_u/modules/accessibility";
+// @import "_u/modules/alignments";
+// @import "_u/modules/clearings";
+// @import "_u/site/secondary/widgets";
+// @import "_u/site/site";
+// @import "_u/modules/infinite-scroll";
+// @import "_u/media/media";
