@@ -320,27 +320,6 @@ footer {
 				}
 
 				padding-top: 0.325em;
-				form {
-					margin-top: 0.84375em;
-					label {
-						color: #9CB1B6; // ‘dark gray’ used only here
-						span {
-							color: #5D767C; // ‘extra dark gray’ used only here
-						}
-					}
-					input:not([type="submit"]), textarea {
-						background-color: #B9BDC4;
-						border: none;
-						transition: background-color 0.1875s ease;
-						&:focus {
-							background-color: $white;
-						}
-					}
-					input.button {
-						width: auto;
-						padding: 0.6875em 1.1875em 0.45625em;
-					}
-				}
 				.contact-info {
 					display: flex;
 					justify-content: space-between;

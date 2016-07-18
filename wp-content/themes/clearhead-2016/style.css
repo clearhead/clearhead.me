@@ -612,22 +612,6 @@ footer .main-footer {
       footer .main-footer .container .contact blockquote.contact-form-submission {
         border-left: 3px solid #3DC5F3;
         color: white; }
-      footer .main-footer .container .contact form {
-        margin-top: 0.84375em; }
-        footer .main-footer .container .contact form label {
-          color: #9CB1B6; }
-          footer .main-footer .container .contact form label span {
-            color: #5D767C; }
-        footer .main-footer .container .contact form input:not([type="submit"]), footer .main-footer .container .contact form textarea {
-          background-color: #B9BDC4;
-          border: none;
-          -webkit-transition: background-color 0.1875s ease;
-          transition: background-color 0.1875s ease; }
-          footer .main-footer .container .contact form input:not([type="submit"]):focus, footer .main-footer .container .contact form textarea:focus {
-            background-color: #FFFFFF; }
-        footer .main-footer .container .contact form input.button, footer .main-footer .container .contact form input.pushbutton-wide {
-          width: auto;
-          padding: 0.6875em 1.1875em 0.45625em; }
       footer .main-footer .container .contact .contact-info {
         display: -webkit-box;
         display: -webkit-flex;
@@ -1157,6 +1141,25 @@ h3.widget-title {
 
 .menu-featured-posts-container a {
   color: #313335; }
+
+.contact-form {
+  margin-top: 0.84375em; }
+  .contact-form label {
+    color: #9CB1B6; }
+    .contact-form label span {
+      color: #5D767C; }
+      .contact-form label span:before {
+        content: " "; }
+  .contact-form input:not([type="submit"]), .contact-form textarea {
+    background-color: #B9BDC4;
+    border: none;
+    -webkit-transition: background-color 0.1875s ease;
+    transition: background-color 0.1875s ease; }
+    .contact-form input:not([type="submit"]):focus, .contact-form textarea:focus {
+      background-color: #FFFFFF; }
+  .contact-form input.button, .contact-form input.pushbutton-wide {
+    width: auto;
+    padding: 0.6875em 1.1875em 0.45625em; }
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
