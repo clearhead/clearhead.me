@@ -11,13 +11,13 @@ function waypointObject(url) {
     enter: function(direction) {
       if (direction === "down") {
         jQuery(".menu-item").removeClass("active");
-        jQuery('#primary-menu li:has(a[href="/' + url + '"])').addClass("active");
+        jQuery('.menu li:has(a[href="/' + url + '"])').addClass("active");
       }
     },
     exit: function(direction) {
       if (direction === "up") {
         jQuery(".menu-item").removeClass("active");
-        jQuery('#primary-menu li:has(a[href="/' + url + '"])').addClass("active");
+        jQuery('.menu li:has(a[href="/' + url + '"])').addClass("active");
       }
     }
   });
