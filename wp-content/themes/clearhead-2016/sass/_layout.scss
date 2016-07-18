@@ -381,12 +381,12 @@ footer {
 						figure {
 							height: 1.0625em;
 							width: 1.325em;
-							background-color: $white;
 							position: relative;
 							margin-bottom: 1px;
 							bottom: 1px;
 							right: 2px;
 							margin-right: 5px;
+							background-image: url('img/icons/twitter.svg');
 						}
 						span {
 							font-size: 0.875em;
@@ -422,8 +422,16 @@ footer {
 					}
 					figure {
 						width: calc(100% - 13.78125em);
-						background-color: #BABDC3;
-						padding-top: 20.325%;
+						a {
+							display: block;
+							transition: opacity 0.1875s ease;
+							&:hover {
+								opacity: 0.68125;
+							}
+						}
+						img {
+							display: block;
+						}
 					}
 				}
 			}

@@ -396,9 +396,14 @@
         padding: 0.9765625em;
         margin: 0 0.234375em 0.234375em 0;
         figure {
-            background-color: $gray;
+            // background-color: $gray;
             height: 3.65625em;
             min-width: 3.65625em;
+            display: flex;
+            align-items: center;
+            img, svg {
+                max-height: 100%;
+            }
         }
         &.more {
             figure {
@@ -481,6 +486,7 @@
             .photo {
                 background-color: $gray;
                 padding-top: 59.75%;
+                background-size: cover;
             }
             figcaption {
                 padding: 0.25em 0.6875em 0.25em 0.8125em;
@@ -501,7 +507,17 @@
                     display: block;
                     width: 1em;
                     height: 1em;
-                    background-color: $gray;
+                    svg * {
+                        stroke: $blue;
+                        transition: stroke 0.1875s ease;
+                    }
+                }
+            }
+            a:hover {
+                figcaption span {
+                    svg * {
+                        stroke: $dark-blue;
+                    }
                 }
             }
         }
@@ -524,8 +540,10 @@
                 align-items: center;
                 .photo {
                     width: 100%;
-                    padding-top: 100%;
                     background-color: $gray;
+                    img {
+                        display: block;
+                    }
                 }
                 figcaption {
                     margin-top: 0.71875em;
