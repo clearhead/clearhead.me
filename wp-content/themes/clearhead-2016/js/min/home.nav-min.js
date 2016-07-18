@@ -99,11 +99,3 @@ jQuery('.menu-item a, a.smooth-scroll, a[href$="main"]').click(function() {
 });
 
 
-
-// show/hide browse menu
-jQuery('.menu-toggle-mobile').click(function(e) {
-    e.preventDefault();
-    jQuery('body').toggleClass('show-menu-mobile');
-});
-
-
