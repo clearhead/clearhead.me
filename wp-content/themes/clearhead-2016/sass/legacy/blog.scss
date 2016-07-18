@@ -87,7 +87,7 @@ body.page-template-default {
 	.entry-content.container {
 		margin-top: 4em;
 		h1, h2, h3, h4, h5, h6 {
-		    font-family: 'ff-bau-web-pro';
+			font-family: "ff-bau-web-pro";
 		}
 		h4 {
 			text-transform: none;
@@ -485,7 +485,7 @@ img {
 	}
 	.entry-content,
 	.posted-on a {
-		color: #787e81;
+		color: lighten($black, 17.5%);
 	}
 }
 
@@ -780,8 +780,8 @@ img {
 	}
 	.entry-content,
 	.entry-content p {
-		font-size: 16px;
-		line-height: 1.5;
+		font-size: 18px;
+		line-height: 1.4;
 	}
 	.read-more {
 		display: inline-block;
@@ -922,7 +922,8 @@ body.single-post, body.page {
 	  color: #117793;
 	}
 	.entry-content {
-	  font-family: "ff-more-web-pro";
+	  font-family: "minion-pro", Georgia, Times, 'Times New Roman', serif;
+	// font-family: "ff-bau-web-pro";
 	}
 	.entry-content blockquote {
 	  border-left: 3px solid #3DC5F3;
