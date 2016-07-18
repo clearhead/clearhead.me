@@ -6,10 +6,8 @@ deployment:
   production:
     branch: master
     commands:
-      - git fetch --unshallow
-      - ./bin/master_deploy.sh
+      - ./bin/deploy.sh
   staging:
     branch: staging
     commands:
-      - git fetch --unshallow
-      - ./bin/staging_deploy.sh
+      - ./bin/stage.sh
