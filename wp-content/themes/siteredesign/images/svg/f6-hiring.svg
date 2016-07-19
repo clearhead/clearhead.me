@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="223px" height="181px" viewBox="0 0 223 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>now_hiring</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="4.86808101" y="4.51716421" width="203" height="107" rx="4"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="203" height="107" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ecommerce-Survey-Webpage" transform="translate(-191.000000, -9153.000000)">
+            <g id="now_hiring" transform="translate(190.000000, 9148.000000)">
+                <path d="M25.7805564,77.42188 L97.3608613,8.58520868 C99.7500881,6.28755966 103.788711,6.10468457 106.373169,8.17018466 L183.39116,69.7230022" id="Path-232" stroke="#32C4F5" stroke-width="4" transform="translate(104.585858, 42.077860) rotate(-5.000000) translate(-104.585858, -42.077860) "></path>
+                <g id="Group-23" transform="translate(-0.000000, 48.000000)">
+                    <g id="Group-22" transform="translate(112.549525, 69.444997) rotate(-6.000000) translate(-112.549525, -69.444997) translate(6.049525, 10.944997)">
+                        <rect id="Rectangle-244" fill="#32C4F5" x="0.31358539" y="0.0164343139" width="212" height="116" rx="7"></rect>
+                        <use id="Rectangle-244" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="6" fill="#32C4F5" xlink:href="#path-1"></use>
+                        <text id="NOW" font-family="BauLF-Bold" font-size="27" font-weight="bold" line-spacing="30" letter-spacing="-0.100000001" fill="#FFFFFF">
+                            <tspan x="65.7439146" y="56.9835657">NOW</tspan>
+                            <tspan x="47.6864146" y="86.9835657">HIRIN</tspan>
+                            <tspan x="138.932415" y="86.9835657">G</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

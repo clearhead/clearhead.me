@@ -1,0 +1,114 @@
+%font-family-a
+  // font-family: "futura-pt-condensed",sans-serif
+  font-family: "minion-pro", sans-serif
+  font-style: normal
+  font-weight: 400
+
+%font-family-b
+  font-family: 'ff-bau-web-pro', sans-serif
+  // font-weight: 700
+
+
+html 
+  @extend %font-family-a
+  margin: 0 auto
+  font-size: 16px
+  color: $black
+  +medium 
+    font-size: 18px
+  +x-large 
+    font-size: 20px
+  +xx-large 
+    font-size: 22px
+
+
+button
+  @extend %font-family-a
+  font-size: 1em
+  letter-spacing: 1px
+
+h1, h2, h3, h4, h5, h6, li, p, a, small, span, blockquote, cite, input, label
+  // line-height: 1.25em
+
+
+  &.heading-1
+    font-size: 1.5em
+    // text-transform: uppercase
+    +medium    
+      // font-size: 1em
+    +x-large   
+      // font-size: 1em
+    +xx-large  
+      // font-size: 1.1em
+    &--lightblue
+      @extend .heading-1
+      color: $text-color-lightblue
+
+  &.heading-2
+    font-size: 1.35em
+    // letter-spacing: -0.4px
+    line-height: 1.35em
+    // text-transform: uppercase
+    // text-align: center
+    +medium    
+    +x-large   
+    +xx-large
+    &--blue
+      @extend .heading-2
+      color: $text-color-blue
+      font-size: 1.9090909091em
+      letter-spacing: -.8px
+      
+
+  &.heading-3 
+    font-size: 1.1363636364em
+    // line-height: 2.6
+    // text-align: center
+    // letter-spacing: -0.1px
+    +medium    
+    +x-large   
+    +x-large
+    +xx-large  
+    &--upper
+      @extend .heading-3
+      text-transform: uppercase
+    
+  &.heading-4
+    font-size: 0.9090909091em
+    letter-spacing: -.6px
+    &--purple
+      @extend .heading-4
+      color: $text-color-purple
+
+  &.heading-5 
+    // text-transform: uppercase
+    // font-size: .75em
+    // letter-spacing: 2px
+
+  
+
+h1,h2,h3,h4,h5 
+  @extend %font-family-b
+  font-weight: 700
+
+input
+  @extend %font-family-a
+  font-style: italic
+p
+  @extend %font-family-a
+  font-size: 1.1em
+  line-height: 1.475em
+  // letter-spacing: .2 5px
+
+p, small 
+  margin-top: 1.5em
+
+  &:first-of-type 
+    margin-top: 0
+  
+a 
+  text-decoration: none
+  color: inherit
+  margin: 0
+
+  

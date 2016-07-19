@@ -1,0 +1,40 @@
+doctype html
+html
+  |{% set pageId = pageId is defined ? pageId : '' %}
+  |{% set bodyClass = bodyClass is defined ? bodyClass : '' %}
+
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    meta(name="apple-touch-fullscreen" content="yes")
+    link(rel='stylesheet', href='/css/site.css', type='text/css' )
+    |<script src="https://use.typekit.net/vbj5qxd.js"></script>
+    |<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    |{% includeCssFile craft.incravoutils.addTimestamp('/css/site.css') %}
+
+    
+
+
+body(data-page-id="{{ pageId }}" class="{{ pageId }} {{ bodyClass }}")
+  input(type="hidden" id="siteUrl" value="{{ siteUrl }}")
+  |{% include 'partials/_svg-grid' %}
+  |{% include 'partials/_header' %}
+  //- |{% include 'partials/_mobile-nav' %}
+  |{% block content %}
+  |{% endblock %}
+  |{% include 'partials/_footer' %}
+  script(src="{{ craft.incravoutils.addTimestamp('/js/site.js') }}")
+   //- |<script>
+  //- |    var cb = function() {
+  //- |      var l = document.createElement('link'); l.rel = 'stylesheet';
+  //- |      l.href = '/css/site.css?v1';
+  //- |      var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+  //- |    };
+  //- |    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+  //- |        webkitRequestAnimationFrame || msRequestAnimationFrame;
+  //- |    if (raf) raf(cb);
+  //- |    else window.addEventListener('load', cb);
+  //- |</script>
+  |{% if 'dev.' in siteUrl %}
+  .mq-tracker
+  |{% endif %}

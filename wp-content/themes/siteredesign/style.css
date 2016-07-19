@@ -1,0 +1,1125 @@
+@charset "UTF-8";
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+img {
+  display: inline-block; }
+
+.mq-tracker {
+  text-transform: initial;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  z-index: 9000;
+  background-color: #FFBC67;
+  font-size: 1.5em;
+  opacity: 0.8;
+  color: white; }
+  .mq-tracker:after {
+    content: "[default]";
+    position: absolute;
+    bottom: 0;
+    left: 10px; }
+  @media (min-width: 20.625em) {
+    .mq-tracker {
+      background-color: #DA727E; }
+      .mq-tracker:after {
+        content: "min-width: [small]"; } }
+  @media (min-width: 38.75em) {
+    .mq-tracker {
+      background-color: #AC6C82; }
+      .mq-tracker:after {
+        content: "min-width: [medium]"; } }
+  @media (min-width: 48.75em) {
+    .mq-tracker {
+      background-color: #685C79; }
+      .mq-tracker:after {
+        content: "min-width: [large]"; } }
+  @media (min-width: 64em) {
+    .mq-tracker {
+      background-color: #455C7B; }
+      .mq-tracker:after {
+        content: "min-width: [x-large]"; } }
+  @media (min-width: 80em) {
+    .mq-tracker {
+      background-color: #FFBC67; }
+      .mq-tracker:after {
+        content: "min-width: [xx-large]"; } }
+  @media (min-width: 100em) {
+    .mq-tracker {
+      background-color: #DA727E; }
+      .mq-tracker:after {
+        content: "min-width: [xxx-large]"; } }
+
+html, button, input, p {
+  font-family: "minion-pro", sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 span.text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p {
+  font-family: "ff-bau-web-pro", sans-serif; }
+
+html {
+  margin: 0 auto;
+  font-size: 16px;
+  color: #313335; }
+  @media (min-width: 38.75em) {
+    html {
+      font-size: 18px; } }
+  @media (min-width: 64em) {
+    html {
+      font-size: 20px; } }
+  @media (min-width: 80em) {
+    html {
+      font-size: 22px; } }
+
+button {
+  font-size: 1em;
+  letter-spacing: 1px; }
+
+h1.heading-1, h1.heading-1--lightblue, h2.heading-1, h2.heading-1--lightblue, h3.heading-1, h3.heading-1--lightblue, h4.heading-1, h4.heading-1--lightblue, h5.heading-1, h5.heading-1--lightblue, h6.heading-1, h6.heading-1--lightblue, li.heading-1, li.heading-1--lightblue, p.heading-1, p.heading-1--lightblue, a.heading-1, a.heading-1--lightblue, small.heading-1, small.heading-1--lightblue, span.heading-1, span.heading-1--lightblue, blockquote.heading-1, blockquote.heading-1--lightblue, cite.heading-1, cite.heading-1--lightblue, input.heading-1, input.heading-1--lightblue, label.heading-1, label.heading-1--lightblue {
+  font-size: 1.5em; }
+  h1.heading-1--lightblue, h2.heading-1--lightblue, h3.heading-1--lightblue, h4.heading-1--lightblue, h5.heading-1--lightblue, h6.heading-1--lightblue, li.heading-1--lightblue, p.heading-1--lightblue, a.heading-1--lightblue, small.heading-1--lightblue, span.heading-1--lightblue, blockquote.heading-1--lightblue, cite.heading-1--lightblue, input.heading-1--lightblue, label.heading-1--lightblue {
+    color: #b6e1ec; }
+h1.heading-2, h1.heading-2--blue, h2.heading-2, h2.heading-2--blue, h3.heading-2, h3.heading-2--blue, h4.heading-2, h4.heading-2--blue, h5.heading-2, h5.heading-2--blue, h6.heading-2, h6.heading-2--blue, li.heading-2, li.heading-2--blue, p.heading-2, p.heading-2--blue, a.heading-2, a.heading-2--blue, small.heading-2, small.heading-2--blue, span.heading-2, span.heading-2--blue, blockquote.heading-2, blockquote.heading-2--blue, cite.heading-2, cite.heading-2--blue, input.heading-2, input.heading-2--blue, label.heading-2, label.heading-2--blue {
+  font-size: 1.35em;
+  line-height: 1.35em; }
+  h1.heading-2--blue, h2.heading-2--blue, h3.heading-2--blue, h4.heading-2--blue, h5.heading-2--blue, h6.heading-2--blue, li.heading-2--blue, p.heading-2--blue, a.heading-2--blue, small.heading-2--blue, span.heading-2--blue, blockquote.heading-2--blue, cite.heading-2--blue, input.heading-2--blue, label.heading-2--blue {
+    color: #32c4f5;
+    font-size: 1.9090909091em;
+    letter-spacing: -0.8px; }
+h1.heading-3, h1.heading-3--upper, h2.heading-3, h2.heading-3--upper, h3.heading-3, h3.heading-3--upper, h4.heading-3, h4.heading-3--upper, h5.heading-3, h5.heading-3--upper, h6.heading-3, h6.heading-3--upper, li.heading-3, li.heading-3--upper, p.heading-3, p.heading-3--upper, a.heading-3, a.heading-3--upper, small.heading-3, small.heading-3--upper, span.heading-3, span.heading-3--upper, blockquote.heading-3, blockquote.heading-3--upper, cite.heading-3, cite.heading-3--upper, input.heading-3, input.heading-3--upper, label.heading-3, label.heading-3--upper {
+  font-size: 1.1363636364em; }
+  h1.heading-3--upper, h2.heading-3--upper, h3.heading-3--upper, h4.heading-3--upper, h5.heading-3--upper, h6.heading-3--upper, li.heading-3--upper, p.heading-3--upper, a.heading-3--upper, small.heading-3--upper, span.heading-3--upper, blockquote.heading-3--upper, cite.heading-3--upper, input.heading-3--upper, label.heading-3--upper {
+    text-transform: uppercase; }
+h1.heading-4, h1.heading-4--purple, h2.heading-4, h2.heading-4--purple, h3.heading-4, h3.heading-4--purple, h4.heading-4, h4.heading-4--purple, h5.heading-4, h5.heading-4--purple, h6.heading-4, h6.heading-4--purple, li.heading-4, li.heading-4--purple, p.heading-4, p.heading-4--purple, a.heading-4, a.heading-4--purple, small.heading-4, small.heading-4--purple, span.heading-4, span.heading-4--purple, blockquote.heading-4, blockquote.heading-4--purple, cite.heading-4, cite.heading-4--purple, input.heading-4, input.heading-4--purple, label.heading-4, label.heading-4--purple {
+  font-size: 0.9090909091em;
+  letter-spacing: -0.6px; }
+  h1.heading-4--purple, h2.heading-4--purple, h3.heading-4--purple, h4.heading-4--purple, h5.heading-4--purple, h6.heading-4--purple, li.heading-4--purple, p.heading-4--purple, a.heading-4--purple, small.heading-4--purple, span.heading-4--purple, blockquote.heading-4--purple, cite.heading-4--purple, input.heading-4--purple, label.heading-4--purple {
+    color: #8e69ad; }
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700; }
+
+input {
+  font-style: italic; }
+
+p {
+  font-size: 1.1em;
+  line-height: 1.475em; }
+
+p, small {
+  margin-top: 1.5em; }
+  p:first-of-type, small:first-of-type {
+    margin-top: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0; }
+
+body.ch-report .nav-wrap {
+  flex-wrap: nowrap;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
+  body.ch-report .nav-wrap .ch-wrap {
+    color: white;
+    align-items: center; }
+    body.ch-report .nav-wrap .ch-wrap .heading-5 {
+      margin-right: 0.5em;
+      font-size: 0.85em; }
+    body.ch-report .nav-wrap .ch-wrap img {
+      width: 0.8em; }
+  body.ch-report .nav-wrap .social-wrap {
+    align-items: center;
+    justify-content: flex-end; }
+    body.ch-report .nav-wrap .social-wrap a, body.ch-report .nav-wrap .social-wrap img {
+      width: 1.25em; }
+      body.ch-report .nav-wrap .social-wrap a:nth-of-type(2), body.ch-report .nav-wrap .social-wrap img:nth-of-type(2) {
+        margin: 0 0.85em; }
+body.ch-report section.hero-wrap {
+  min-height: 20em;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat; }
+  body.ch-report section.hero-wrap .heading-wrap {
+    padding: 1em 0 0.5em;
+    margin-top: 0.5em;
+    background: white;
+    width: 76%;
+    text-align: center; }
+    @media (min-width: 38.75em) {
+      body.ch-report section.hero-wrap .heading-wrap {
+        height: 6em; } }
+    body.ch-report section.hero-wrap .heading-wrap .heading-3, body.ch-report section.hero-wrap .heading-wrap h1.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h2.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h3.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h4.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h5.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h6.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap li.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap p.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap a.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap small.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap span.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap cite.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap input.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap label.heading-3--upper {
+      padding-top: 0.35em;
+      letter-spacing: 1px;
+      color: rgba(49, 51, 53, 0.9); }
+    body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
+      font-size: 2.1em;
+      padding-top: 0.0454545455em;
+      letter-spacing: -0.4px; }
+body.ch-report section.intro .key-quest {
+  margin: 1em 0 1.5em; }
+  body.ch-report section.intro .key-quest li {
+    margin: 1.175em 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.1em; }
+body.ch-report section.intro .table-wrap {
+  padding: 0 1em 1em;
+  background: rgba(229, 238, 244, 0.7);
+  margin-bottom: 1.5em; }
+  body.ch-report section.intro .table-wrap .heading-3, body.ch-report section.intro .table-wrap h1.heading-3--upper, body.ch-report section.intro .table-wrap h2.heading-3--upper, body.ch-report section.intro .table-wrap h3.heading-3--upper, body.ch-report section.intro .table-wrap h4.heading-3--upper, body.ch-report section.intro .table-wrap h5.heading-3--upper, body.ch-report section.intro .table-wrap h6.heading-3--upper, body.ch-report section.intro .table-wrap li.heading-3--upper, body.ch-report section.intro .table-wrap p.heading-3--upper, body.ch-report section.intro .table-wrap a.heading-3--upper, body.ch-report section.intro .table-wrap small.heading-3--upper, body.ch-report section.intro .table-wrap span.heading-3--upper, body.ch-report section.intro .table-wrap blockquote.heading-3--upper, body.ch-report section.intro .table-wrap cite.heading-3--upper, body.ch-report section.intro .table-wrap input.heading-3--upper, body.ch-report section.intro .table-wrap label.heading-3--upper {
+    margin: 1em 0; }
+    body.ch-report section.intro .table-wrap .heading-3 span, body.ch-report section.intro .table-wrap h1.heading-3--upper span, body.ch-report section.intro .table-wrap h2.heading-3--upper span, body.ch-report section.intro .table-wrap h3.heading-3--upper span, body.ch-report section.intro .table-wrap h4.heading-3--upper span, body.ch-report section.intro .table-wrap h5.heading-3--upper span, body.ch-report section.intro .table-wrap h6.heading-3--upper span, body.ch-report section.intro .table-wrap li.heading-3--upper span, body.ch-report section.intro .table-wrap p.heading-3--upper span, body.ch-report section.intro .table-wrap a.heading-3--upper span, body.ch-report section.intro .table-wrap small.heading-3--upper span, body.ch-report section.intro .table-wrap span.heading-3--upper span, body.ch-report section.intro .table-wrap blockquote.heading-3--upper span, body.ch-report section.intro .table-wrap cite.heading-3--upper span, body.ch-report section.intro .table-wrap input.heading-3--upper span, body.ch-report section.intro .table-wrap label.heading-3--upper span {
+      color: #32c4f5; }
+body.ch-report section.intro .thanks-wrap {
+  margin: 1em 0 0.25em; }
+  body.ch-report section.intro .thanks-wrap .heading-4, body.ch-report section.intro .thanks-wrap h1.heading-4--purple, body.ch-report section.intro .thanks-wrap h2.heading-4--purple, body.ch-report section.intro .thanks-wrap h3.heading-4--purple, body.ch-report section.intro .thanks-wrap h4.heading-4--purple, body.ch-report section.intro .thanks-wrap h5.heading-4--purple, body.ch-report section.intro .thanks-wrap h6.heading-4--purple, body.ch-report section.intro .thanks-wrap li.heading-4--purple, body.ch-report section.intro .thanks-wrap p.heading-4--purple, body.ch-report section.intro .thanks-wrap a.heading-4--purple, body.ch-report section.intro .thanks-wrap small.heading-4--purple, body.ch-report section.intro .thanks-wrap span.heading-4--purple, body.ch-report section.intro .thanks-wrap blockquote.heading-4--purple, body.ch-report section.intro .thanks-wrap cite.heading-4--purple, body.ch-report section.intro .thanks-wrap input.heading-4--purple, body.ch-report section.intro .thanks-wrap label.heading-4--purple {
+    font-size: 0.8181818182em;
+    margin-bottom: 1.5em;
+    letter-spacing: -0.5px; }
+body.ch-report section.intro .thanks-list {
+  column-count: 2; }
+  body.ch-report section.intro .thanks-list li {
+    font-weight: 500;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border-bottom: 1px solid #b6e1ec;
+    line-height: 1.4em;
+    font-size: 0.7em;
+    padding-left: 1.5em;
+    letter-spacing: -0.3px;
+    margin: 0.75em 0;
+    color: rgba(49, 51, 53, 0.9); }
+    body.ch-report section.intro .thanks-list li:nth-of-type(3) {
+      font-size: 0.67em; }
+body.ch-report section.intro .data-wrap {
+  flex-wrap: nowrap;
+  align-items: flex-end; }
+  body.ch-report section.intro .data-wrap .text-wrap {
+    padding-left: 0.5em; }
+body.ch-report section.keyfind .title-wrap {
+  height: 5.25em; }
+  body.ch-report section.keyfind .title-wrap .heading-1, body.ch-report section.keyfind .title-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .title-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .title-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .title-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .title-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .title-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .title-wrap li.heading-1--lightblue, body.ch-report section.keyfind .title-wrap p.heading-1--lightblue, body.ch-report section.keyfind .title-wrap a.heading-1--lightblue, body.ch-report section.keyfind .title-wrap small.heading-1--lightblue, body.ch-report section.keyfind .title-wrap span.heading-1--lightblue, body.ch-report section.keyfind .title-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .title-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .title-wrap input.heading-1--lightblue, body.ch-report section.keyfind .title-wrap label.heading-1--lightblue {
+    font-size: 1.67em;
+    padding-top: 0.2em;
+    letter-spacing: -0.3px; }
+body.ch-report section.keyfind .item-wrap:not(:last-of-type) {
+  border-bottom: 1px solid RGBA(49, 51, 53, 0.2); }
+body.ch-report section.keyfind .item-wrap .data-wrap {
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between; }
+  body.ch-report section.keyfind .item-wrap .data-wrap .text1 {
+    color: #32c4f5; }
+body.ch-report section.keyfind .item-wrap .heading-wrap {
+  margin-bottom: 2em; }
+  body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
+    margin-top: 0.25em;
+    font-size: 1.6em;
+    letter-spacing: -0.9px;
+    line-height: 1.3; }
+    body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2 span, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue span {
+      color: #8e69ad; }
+  body.ch-report section.keyfind .item-wrap .heading-wrap .heading-4--purple {
+    margin-top: 0.35em;
+    font-size: 1em; }
+body.ch-report section.keyfind .item-wrap .sub-items-wrap {
+  margin-bottom: 2em; }
+  body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item {
+    width: 42.5%; }
+    body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item:first-of-type {
+      margin-right: 3.5em; }
+    body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap {
+      flex-wrap: nowrap;
+      align-items: flex-start; }
+      body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap .heading-1, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap li.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap a.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap small.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap span.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap input.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap label.heading-1--lightblue {
+        flex-shrink: 0; }
+      body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap .heading-1, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap li.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap a.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap small.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap span.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap input.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap label.heading-1--lightblue {
+        padding: 0.1em 0.25em 0 0;
+        font-size: 2.3636363636em;
+        font-weight: 500;
+        color: black;
+        letter-spacing: -2.3px;
+        width: inherit;
+        width: initial;
+        display: flex;
+        justify-content: flex-start; }
+        body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap .heading-1 span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap label.heading-1--lightblue span {
+          font-size: 0.6em;
+          align-self: flex-start; }
+      body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p {
+        font-size: 0.7em;
+        line-height: 1.6em;
+        letter-spacing: -0.2px;
+        color: #6a6460; }
+body.ch-report section.keyfind .finding-1 img {
+  margin-bottom: 2.6em; }
+body.ch-report section.keyfind .finding-1 .sub-item img {
+  margin-bottom: 1.8em; }
+body.ch-report section.keyfind .finding-1 .text-wrap {
+  padding-bottom: 3em; }
+body.ch-report section.keyfind .finding-2 {
+  padding-bottom: 3.6em; }
+  body.ch-report section.keyfind .finding-2 .quote-wrap {
+    first-of-type-margin-bottom: 2em; }
+  body.ch-report section.keyfind .finding-2 .row-wrap {
+    margin-bottom: 2.25em; }
+  body.ch-report section.keyfind .finding-2 .text-wrap {
+    padding-left: 0.5em;
+    width: 54%; }
+    body.ch-report section.keyfind .finding-2 .text-wrap .heading-1, body.ch-report section.keyfind .finding-2 .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap label.heading-1--lightblue {
+      display: flex;
+      align-items: flex-start;
+      margin-top: 1em; }
+      body.ch-report section.keyfind .finding-2 .text-wrap .heading-1 span, body.ch-report section.keyfind .finding-2 .text-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap label.heading-1--lightblue span {
+        font-size: 0.6em;
+        font-weight: 400; }
+    body.ch-report section.keyfind .finding-2 .text-wrap p {
+      font-size: 0.7em;
+      line-height: 1.6em;
+      letter-spacing: -0.2px;
+      color: #6a6460; }
+  body.ch-report section.keyfind .finding-2 .data-wrap {
+    align-items: flex-end; }
+  body.ch-report section.keyfind .finding-2 .image-wrap {
+    width: 43%; }
+  body.ch-report section.keyfind .finding-2 .heading-wrap {
+    margin-bottom: 1.75em; }
+  body.ch-report section.keyfind .finding-2 .sub-item {
+    width: 46%; }
+  body.ch-report section.keyfind .finding-2 .row-wrap {
+    justify-content: space-between; }
+  body.ch-report section.keyfind .finding-2 .para-wrap {
+    margin: 1.9em 0 4em; }
+body.ch-report section.keyfind .finding-3 .image-wrap {
+  margin-left: 0.6em;
+  margin-top: 0.5em; }
+body.ch-report section.keyfind .finding-3 .text-wrap {
+  padding-left: 0.5em;
+  padding-top: 0.2em; }
+body.ch-report section.keyfind .finding-3 .data-wrap {
+  margin-bottom: 2.75em; }
+body.ch-report section.keyfind .finding-3 img {
+  padding: 1em 1em 0 1em; }
+body.ch-report section.keyfind .finding-3 li {
+  margin: 0.75em 0; }
+body.ch-report section.keyfind .finding-4 p span {
+  font-weight: 600; }
+body.ch-report section.keyfind .finding-4 span.text3 {
+  font-weight: 400;
+  font-size: 0.6363636364em; }
+body.ch-report section.keyfind .finding-4 img {
+  width: initial; }
+body.ch-report section.keyfind .finding-4 .vs-wrap {
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 2.75em;
+  margin-bottom: 0.5em; }
+  body.ch-report section.keyfind .finding-4 .vs-wrap .heading-1--lightblue {
+    font-weight: 500; }
+  body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap {
+    justify-content: flex-end; }
+  body.ch-report section.keyfind .finding-4 .vs-wrap .guy-wrap {
+    width: 38%; }
+    body.ch-report section.keyfind .finding-4 .vs-wrap .guy-wrap .data-wrap {
+      justify-content: initial; }
+  body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap .heading-1, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap label.heading-1--lightblue {
+    display: flex;
+    align-items: flex-start; }
+    body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap .heading-1 span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap label.heading-1--lightblue span {
+      font-size: 0.5em; }
+body.ch-report section.keyfind .finding-5 .heading-wrap {
+  margin-bottom: 1.25em; }
+body.ch-report section.keyfind .finding-5 .section-wrap {
+  margin-bottom: 2em; }
+body.ch-report section.keyfind .finding-5 .margin-wrap {
+  margin-top: 2em;
+  margin-bottom: 0.35em; }
+  body.ch-report section.keyfind .finding-5 .margin-wrap .heading-3, body.ch-report section.keyfind .finding-5 .margin-wrap h1.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap h2.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap h3.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap h4.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap h5.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap h6.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap li.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap p.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap a.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap small.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap span.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap blockquote.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap cite.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap input.heading-3--upper, body.ch-report section.keyfind .finding-5 .margin-wrap label.heading-3--upper {
+    margin: 2em 0 1.5em; }
+body.ch-report section.keyfind .finding-5 .heading-2, body.ch-report section.keyfind .finding-5 h1.heading-2--blue, body.ch-report section.keyfind .finding-5 h2.heading-2--blue, body.ch-report section.keyfind .finding-5 h3.heading-2--blue, body.ch-report section.keyfind .finding-5 h4.heading-2--blue, body.ch-report section.keyfind .finding-5 h5.heading-2--blue, body.ch-report section.keyfind .finding-5 h6.heading-2--blue, body.ch-report section.keyfind .finding-5 li.heading-2--blue, body.ch-report section.keyfind .finding-5 p.heading-2--blue, body.ch-report section.keyfind .finding-5 a.heading-2--blue, body.ch-report section.keyfind .finding-5 small.heading-2--blue, body.ch-report section.keyfind .finding-5 span.heading-2--blue, body.ch-report section.keyfind .finding-5 blockquote.heading-2--blue, body.ch-report section.keyfind .finding-5 cite.heading-2--blue, body.ch-report section.keyfind .finding-5 input.heading-2--blue, body.ch-report section.keyfind .finding-5 label.heading-2--blue {
+  margin-bottom: 1.25em; }
+body.ch-report section.keyfind .finding-5 .row-wrap {
+  margin-bottom: 2.25em;
+  align-items: flex-start; }
+  body.ch-report section.keyfind .finding-5 .row-wrap .item {
+    width: calc(50% - .75em); }
+  body.ch-report section.keyfind .finding-5 .row-wrap p {
+    padding-right: 0.5em; }
+body.ch-report section.keyfind .finding-5 .text-wrap {
+  padding-left: 0.5em; }
+body.ch-report section.keyfind .finding-6 .row-wrap {
+  margin-top: 0.25em;
+  justify-content: space-around;
+  margin-bottom: 1.6em; }
+  body.ch-report section.keyfind .finding-6 .row-wrap .data-wrap {
+    margin-left: 1.25em; }
+  body.ch-report section.keyfind .finding-6 .row-wrap .text-wrap {
+    width: 45%;
+    padding-left: 1em; }
+body.ch-report section.keyfind .finding-7 {
+  padding-bottom: 2.75em; }
+  body.ch-report section.keyfind .finding-7 .row-wrap {
+    margin-bottom: 2em; }
+  body.ch-report section.keyfind .finding-7 .heading-wrap {
+    margin-bottom: 1.75em; }
+  body.ch-report section.keyfind .finding-7 .heading-2, body.ch-report section.keyfind .finding-7 h1.heading-2--blue, body.ch-report section.keyfind .finding-7 h2.heading-2--blue, body.ch-report section.keyfind .finding-7 h3.heading-2--blue, body.ch-report section.keyfind .finding-7 h4.heading-2--blue, body.ch-report section.keyfind .finding-7 h5.heading-2--blue, body.ch-report section.keyfind .finding-7 h6.heading-2--blue, body.ch-report section.keyfind .finding-7 li.heading-2--blue, body.ch-report section.keyfind .finding-7 p.heading-2--blue, body.ch-report section.keyfind .finding-7 a.heading-2--blue, body.ch-report section.keyfind .finding-7 small.heading-2--blue, body.ch-report section.keyfind .finding-7 span.heading-2--blue, body.ch-report section.keyfind .finding-7 blockquote.heading-2--blue, body.ch-report section.keyfind .finding-7 cite.heading-2--blue, body.ch-report section.keyfind .finding-7 input.heading-2--blue, body.ch-report section.keyfind .finding-7 label.heading-2--blue {
+    margin-bottom: 1.25em; }
+  body.ch-report section.keyfind .finding-7 .text-wrap {
+    padding-right: 1em; }
+  body.ch-report section.keyfind .finding-7 .image-wrap {
+    margin-left: 1em; }
+body.ch-report section.keyfind .finding-8 {
+  padding-bottom: 2.75em; }
+  body.ch-report section.keyfind .finding-8 .row-wrap {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em; }
+  body.ch-report section.keyfind .finding-8 .heading-wrap {
+    margin-bottom: 1.25em; }
+    body.ch-report section.keyfind .finding-8 .heading-wrap .heading-2 span, body.ch-report section.keyfind .finding-8 .heading-wrap h1.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h2.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h3.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h4.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h5.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h6.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap li.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap p.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap a.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap small.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap span.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap blockquote.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap cite.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap input.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap label.heading-2--blue span {
+      font-style: italic; }
+  body.ch-report section.keyfind .finding-8 .image-wrap {
+    margin-right: 1.8em; }
+  body.ch-report section.keyfind .finding-8 .text-wrap {
+    width: 55%;
+    margin-bottom: 1.5em; }
+  body.ch-report section.keyfind .finding-8 .list-wrap {
+    margin-bottom: 2.4em; }
+    body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list {
+      margin-bottom: 1.5em; }
+      body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li {
+        font-size: 1.1em;
+        line-height: 1.5; }
+        body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li:before {
+          content: "•";
+          padding-right: 1em; }
+body.ch-report section.keyfind .finding-9 {
+  padding-bottom: 3.5em; }
+  body.ch-report section.keyfind .finding-9 .heading-wrap {
+    margin-bottom: 2.5em; }
+    body.ch-report section.keyfind .finding-9 .heading-wrap .heading-2, body.ch-report section.keyfind .finding-9 .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .finding-9 .heading-wrap label.heading-2--blue {
+      margin-bottom: 1.25em; }
+    body.ch-report section.keyfind .finding-9 .heading-wrap .heading-3, body.ch-report section.keyfind .finding-9 .heading-wrap h1.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap h2.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap h3.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap h4.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap h5.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap h6.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap li.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap p.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap a.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap small.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap span.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap blockquote.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap cite.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap input.heading-3--upper, body.ch-report section.keyfind .finding-9 .heading-wrap label.heading-3--upper {
+      margin: 2.35em 0 1.1em;
+      font-size: 1.05em;
+      letter-spacing: -0.6px;
+      line-height: 1.5;
+      padding-right: 1em; }
+body.ch-report section.keyfind .finding-10 {
+  padding-bottom: 0; }
+  body.ch-report section.keyfind .finding-10 .margin-wrap {
+    margin: 2.1em 0 1.75em; }
+  body.ch-report section.keyfind .finding-10 .last-para {
+    margin: 2em 0 0; }
+  body.ch-report section.keyfind .finding-10 .row-wrap {
+    margin-bottom: 2.75em; }
+    body.ch-report section.keyfind .finding-10 .row-wrap .text-wrap {
+      width: 50%; }
+    body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap {
+      width: 50%;
+      align-items: flex-end;
+      padding-right: 0.5em; }
+      body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info {
+        font-size: 0.7em;
+        font-weight: 400;
+        line-height: 1.6;
+        letter-spacing: -0.2px; }
+    body.ch-report section.keyfind .finding-10 .row-wrap .heading-1, body.ch-report section.keyfind .finding-10 .row-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap label.heading-1--lightblue {
+      display: flex;
+      align-items: flex-start; }
+      body.ch-report section.keyfind .finding-10 .row-wrap .heading-1 span, body.ch-report section.keyfind .finding-10 .row-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap label.heading-1--lightblue span {
+        font-size: 0.5em; }
+body.ch-report section.principles .section-wrap .sports-wrap {
+  margin: 2.25em 0; }
+  body.ch-report section.principles .section-wrap .sports-wrap .image-wrap {
+    margin-top: 0.5em;
+    padding-right: 0.75em; }
+  body.ch-report section.principles .section-wrap .sports-wrap .wrap {
+    align-items: flex-start; }
+body.ch-report section.principles ul.purple-bars {
+  margin-top: 1.75em; }
+  body.ch-report section.principles ul.purple-bars li {
+    margin: 0.1em 0;
+    height: 1.725em;
+    line-height: 1.8em;
+    font-size: 1.1em;
+    background: rgba(182, 152, 199, 0.3); }
+    body.ch-report section.principles ul.purple-bars li:before {
+      content: "•";
+      padding: 0 0.75em 0 1em; }
+body.ch-report section.principles .future-item {
+  margin-top: 2.2em; }
+  body.ch-report section.principles .future-item .question p {
+    font-weight: 600; }
+  body.ch-report section.principles .future-item .answer {
+    margin-top: 0.75em; }
+  body.ch-report section.principles .future-item .section-toggle {
+    margin-top: 0.5em;
+    font-weight: 500;
+    font-size: 0.75em;
+    letter-spacing: -0.3px;
+    color: #32c4f5; }
+body.ch-report section.principles .contact-wrap {
+  margin-bottom: 2em;
+  padding: 2.15em 0;
+  border-bottom: 1px solid RGBA(49, 51, 53, 0.2); }
+  body.ch-report section.principles .contact-wrap .heading-4, body.ch-report section.principles .contact-wrap h1.heading-4--purple, body.ch-report section.principles .contact-wrap h2.heading-4--purple, body.ch-report section.principles .contact-wrap h3.heading-4--purple, body.ch-report section.principles .contact-wrap h4.heading-4--purple, body.ch-report section.principles .contact-wrap h5.heading-4--purple, body.ch-report section.principles .contact-wrap h6.heading-4--purple, body.ch-report section.principles .contact-wrap li.heading-4--purple, body.ch-report section.principles .contact-wrap p.heading-4--purple, body.ch-report section.principles .contact-wrap a.heading-4--purple, body.ch-report section.principles .contact-wrap small.heading-4--purple, body.ch-report section.principles .contact-wrap span.heading-4--purple, body.ch-report section.principles .contact-wrap blockquote.heading-4--purple, body.ch-report section.principles .contact-wrap cite.heading-4--purple, body.ch-report section.principles .contact-wrap input.heading-4--purple, body.ch-report section.principles .contact-wrap label.heading-4--purple {
+    font-size: 1.05em;
+    line-height: 1.5;
+    letter-spacing: -0.6px; }
+  body.ch-report section.principles .contact-wrap form {
+    margin-top: 0.75em;
+    margin-bottom: 1.5em;
+    display: flex;
+    align-items: center; }
+  body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button {
+    font-size: 0.7272727273em;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0; }
+  body.ch-report section.principles .contact-wrap input {
+    font-style: normal;
+    border: 1px solid #d6d6d6;
+    padding: 0.675em 0 0.675em 1em; }
+  body.ch-report section.principles .contact-wrap button {
+    padding: 0.75em 2em;
+    background: #32c4f5;
+    border: 0;
+    color: white;
+    cursor: pointer; }
+    body.ch-report section.principles .contact-wrap button:hover {
+      background: #63d2f7; }
+body.ch-report section.principles .final-text {
+  margin-top: 1.25em; }
+body.ch-report footer {
+  background: rgba(229, 238, 244, 0.7); }
+  body.ch-report footer .heading-3, body.ch-report footer h1.heading-3--upper, body.ch-report footer h2.heading-3--upper, body.ch-report footer h3.heading-3--upper, body.ch-report footer h4.heading-3--upper, body.ch-report footer h5.heading-3--upper, body.ch-report footer h6.heading-3--upper, body.ch-report footer li.heading-3--upper, body.ch-report footer p.heading-3--upper, body.ch-report footer a.heading-3--upper, body.ch-report footer small.heading-3--upper, body.ch-report footer span.heading-3--upper, body.ch-report footer blockquote.heading-3--upper, body.ch-report footer cite.heading-3--upper, body.ch-report footer input.heading-3--upper, body.ch-report footer label.heading-3--upper {
+    font-size: 0.9em;
+    line-height: 1.8;
+    font-weight: 500;
+    margin-bottom: 0.5em; }
+  body.ch-report footer .about-wrap {
+    margin-top: 2em; }
+    body.ch-report footer .about-wrap p {
+      font-size: 0.8em;
+      line-height: 1.5; }
+      body.ch-report footer .about-wrap p a {
+        font-size: inherit; }
+      body.ch-report footer .about-wrap p:first-of-type {
+        margin-top: 1.25em; }
+  body.ch-report footer a {
+    font-size: 0.8em;
+    line-height: 1;
+    font-weight: 400;
+    margin: 0.5em 0; }
+body.ch-report .quote-wrap {
+  padding: 1em;
+  background: rgba(229, 238, 244, 0.7);
+  width: 84%;
+  margin-bottom: 0.4em; }
+  body.ch-report .quote-wrap:last-of-type {
+    margin-bottom: 0; }
+  body.ch-report .quote-wrap span {
+    color: #32c4f5;
+    font-weight: 400;
+    font-size: 0.85em;
+    line-height: 1.4em;
+    letter-spacing: -0.6px; }
+  body.ch-report .quote-wrap p {
+    font-weight: 400;
+    font-size: 0.95em;
+    line-height: 1.7em;
+    letter-spacing: -0.2px;
+    color: RGBA(49, 51, 53, 0.8);
+    margin-bottom: 0.4em; }
+body.ch-report li {
+  display: flex;
+  flex-wrap: nowrap; }
+body.ch-report p.ol {
+  margin-right: 1.25em;
+  background: RGB(182, 152, 199);
+  font-size: 0.675em;
+  border-radius: 50px;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+  flex-shrink: 0; }
+body.ch-report img {
+  width: 100%; }
+body.ch-report a {
+  color: #32c4f5; }
+  body.ch-report a:hover {
+    color: #63d2f7; }
+body.ch-report .title-wrap {
+  background: RGBA(182, 152, 199, 0.3);
+  height: 4.75em; }
+  body.ch-report .title-wrap .heading-1, body.ch-report .title-wrap h1.heading-1--lightblue, body.ch-report .title-wrap h2.heading-1--lightblue, body.ch-report .title-wrap h3.heading-1--lightblue, body.ch-report .title-wrap h4.heading-1--lightblue, body.ch-report .title-wrap h5.heading-1--lightblue, body.ch-report .title-wrap h6.heading-1--lightblue, body.ch-report .title-wrap li.heading-1--lightblue, body.ch-report .title-wrap p.heading-1--lightblue, body.ch-report .title-wrap a.heading-1--lightblue, body.ch-report .title-wrap small.heading-1--lightblue, body.ch-report .title-wrap span.heading-1--lightblue, body.ch-report .title-wrap blockquote.heading-1--lightblue, body.ch-report .title-wrap cite.heading-1--lightblue, body.ch-report .title-wrap input.heading-1--lightblue, body.ch-report .title-wrap label.heading-1--lightblue {
+    color: #8e69ad;
+    font-size: 1.5454545455em; }
+
+.grid-row {
+  max-width: 65.5em;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.gs--f1 {
+  flex-grow: 1; }
+.gs--f2 {
+  flex-grow: 2; }
+.gs--f3 {
+  flex-grow: 3; }
+.gs--f4 {
+  flex-grow: 4; }
+.gs--full {
+  width: 100%; }
+.gs--half {
+  width: 50%; }
+  .gs--half--offset {
+    margin-left: 50%; }
+.gs--third {
+  width: 33.33333333%; }
+  .gs--thirdx2 {
+    width: 66.66666667%; }
+  .gs--third--offset {
+    margin-left: 33.33333333%; }
+    .gs--third--offsetx2 {
+      margin-left: 66.66666667%; }
+.gs--fourth {
+  width: 25%; }
+  .gs--fourthx3 {
+    width: 75%; }
+  .gs--fourth--offset {
+    margin-left: 25%; }
+    .gs--fourth--offsetx3 {
+      margin-left: 75%; }
+.gs--fifth {
+  width: 20%; }
+  .gs--fifthx2 {
+    width: 40%; }
+  .gs--fifthx3 {
+    width: 60%; }
+  .gs--fifthx4 {
+    width: 80%; }
+.gs--sixth {
+  width: 16.66666667%; }
+  .gs--sixthx5 {
+    width: 83.33333335%; }
+.gs--seventh {
+  width: 14.28571429%; }
+.gs--eighth {
+  width: 12.5%; }
+  .gs--eighthx7 {
+    width: 87.5%; }
+.gs--ninth {
+  width: 11.11111111%; }
+  .gs--ninthx2 {
+    width: 22.22222222%; }
+.gs--tenth {
+  width: 10%; }
+  .gs--tenthx9 {
+    width: 90%; }
+  .gs--tenthx3 {
+    width: 30%; }
+  .gs--tenthx7 {
+    width: 70%; }
+.gs--eleventh {
+  width: 9.090909091%; }
+.gs--twelveth {
+  width: 8.333333333%; }
+  .gs--twelvethx2 {
+    width: 16.666666666%; }
+  .gs--twelvethx3 {
+    width: 24.999999999%; }
+  .gs--twelvethx4 {
+    width: 33.333333332%; }
+  .gs--twelvethx5 {
+    width: 41.666666665%; }
+.gs--reset {
+  width: auto; }
+
+@media (min-width: 38.75em) {
+  .gm--f1 {
+    flex-grow: 1; }
+  .gm--f2 {
+    flex-grow: 2; }
+  .gm--f3 {
+    flex-grow: 3; }
+  .gm--f4 {
+    flex-grow: 4; }
+  .gm--full {
+    width: 100%; }
+  .gm--half {
+    width: 50%; }
+    .gm--half--offset {
+      margin-left: 50%; }
+  .gm--third {
+    width: 33.33333333%; }
+    .gm--thirdx2 {
+      width: 66.66666667%; }
+    .gm--third--offset {
+      margin-left: 33.33333333%; }
+      .gm--third--offsetx2 {
+        margin-left: 66.66666667%; }
+  .gm--fourth {
+    width: 25%; }
+    .gm--fourthx3 {
+      width: 75%; }
+    .gm--fourth--offset {
+      margin-left: 25%; }
+      .gm--fourth--offsetx3 {
+        margin-left: 75%; }
+  .gm--fifth {
+    width: 20%; }
+    .gm--fifthx2 {
+      width: 40%; }
+    .gm--fifthx3 {
+      width: 60%; }
+    .gm--fifthx4 {
+      width: 80%; }
+  .gm--sixth {
+    width: 16.66666667%; }
+    .gm--sixthx5 {
+      width: 83.33333335%; }
+  .gm--seventh {
+    width: 14.28571429%; }
+  .gm--eighth {
+    width: 12.5%; }
+    .gm--eighthx7 {
+      width: 87.5%; }
+  .gm--ninth {
+    width: 11.11111111%; }
+    .gm--ninthx2 {
+      width: 22.22222222%; }
+  .gm--tenth {
+    width: 10%; }
+    .gm--tenthx9 {
+      width: 90%; }
+    .gm--tenthx3 {
+      width: 30%; }
+    .gm--tenthx7 {
+      width: 70%; }
+  .gm--eleventh {
+    width: 9.090909091%; }
+  .gm--twelveth {
+    width: 8.333333333%; }
+    .gm--twelvethx2 {
+      width: 16.666666666%; }
+    .gm--twelvethx3 {
+      width: 24.999999999%; }
+    .gm--twelvethx4 {
+      width: 33.333333332%; }
+    .gm--twelvethx5 {
+      width: 41.666666665%; }
+  .gm--reset {
+    width: auto; } }
+@media (min-width: 48.75em) {
+  .gl--f1 {
+    flex-grow: 1; }
+  .gl--f2 {
+    flex-grow: 2; }
+  .gl--f3 {
+    flex-grow: 3; }
+  .gl--f4 {
+    flex-grow: 4; }
+  .gl--full {
+    width: 100%; }
+  .gl--half {
+    width: 50%; }
+    .gl--half--offset {
+      margin-left: 50%; }
+  .gl--third {
+    width: 33.33333333%; }
+    .gl--thirdx2 {
+      width: 66.66666667%; }
+    .gl--third--offset {
+      margin-left: 33.33333333%; }
+      .gl--third--offsetx2 {
+        margin-left: 66.66666667%; }
+  .gl--fourth {
+    width: 25%; }
+    .gl--fourthx3 {
+      width: 75%; }
+    .gl--fourth--offset {
+      margin-left: 25%; }
+      .gl--fourth--offsetx3 {
+        margin-left: 75%; }
+  .gl--fifth {
+    width: 20%; }
+    .gl--fifthx2 {
+      width: 40%; }
+    .gl--fifthx3 {
+      width: 60%; }
+    .gl--fifthx4 {
+      width: 80%; }
+  .gl--sixth {
+    width: 16.66666667%; }
+    .gl--sixthx5 {
+      width: 83.33333335%; }
+  .gl--seventh {
+    width: 14.28571429%; }
+  .gl--eighth {
+    width: 12.5%; }
+    .gl--eighthx7 {
+      width: 87.5%; }
+  .gl--ninth {
+    width: 11.11111111%; }
+    .gl--ninthx2 {
+      width: 22.22222222%; }
+  .gl--tenth {
+    width: 10%; }
+    .gl--tenthx9 {
+      width: 90%; }
+    .gl--tenthx3 {
+      width: 30%; }
+    .gl--tenthx7 {
+      width: 70%; }
+  .gl--eleventh {
+    width: 9.090909091%; }
+  .gl--twelveth {
+    width: 8.333333333%; }
+    .gl--twelvethx2 {
+      width: 16.666666666%; }
+    .gl--twelvethx3 {
+      width: 24.999999999%; }
+    .gl--twelvethx4 {
+      width: 33.333333332%; }
+    .gl--twelvethx5 {
+      width: 41.666666665%; }
+  .gl--reset {
+    width: auto; } }
+@media (min-width: 64em) {
+  .gxl--f1 {
+    flex-grow: 1; }
+  .gxl--f2 {
+    flex-grow: 2; }
+  .gxl--f3 {
+    flex-grow: 3; }
+  .gxl--f4 {
+    flex-grow: 4; }
+  .gxl--full {
+    width: 100%; }
+  .gxl--half {
+    width: 50%; }
+    .gxl--half--offset {
+      margin-left: 50%; }
+  .gxl--third {
+    width: 33.33333333%; }
+    .gxl--thirdx2 {
+      width: 66.66666667%; }
+    .gxl--third--offset {
+      margin-left: 33.33333333%; }
+      .gxl--third--offsetx2 {
+        margin-left: 66.66666667%; }
+  .gxl--fourth {
+    width: 25%; }
+    .gxl--fourthx3 {
+      width: 75%; }
+    .gxl--fourth--offset {
+      margin-left: 25%; }
+      .gxl--fourth--offsetx3 {
+        margin-left: 75%; }
+  .gxl--fifth {
+    width: 20%; }
+    .gxl--fifthx2 {
+      width: 40%; }
+    .gxl--fifthx3 {
+      width: 60%; }
+    .gxl--fifthx4 {
+      width: 80%; }
+  .gxl--sixth {
+    width: 16.66666667%; }
+    .gxl--sixthx5 {
+      width: 83.33333335%; }
+  .gxl--seventh {
+    width: 14.28571429%; }
+  .gxl--eighth {
+    width: 12.5%; }
+    .gxl--eighthx7 {
+      width: 87.5%; }
+  .gxl--ninth {
+    width: 11.11111111%; }
+    .gxl--ninthx2 {
+      width: 22.22222222%; }
+  .gxl--tenth {
+    width: 10%; }
+    .gxl--tenthx9 {
+      width: 90%; }
+    .gxl--tenthx3 {
+      width: 30%; }
+    .gxl--tenthx7 {
+      width: 70%; }
+  .gxl--eleventh {
+    width: 9.090909091%; }
+  .gxl--twelveth {
+    width: 8.333333333%; }
+    .gxl--twelvethx2 {
+      width: 16.666666666%; }
+    .gxl--twelvethx3 {
+      width: 24.999999999%; }
+    .gxl--twelvethx4 {
+      width: 33.333333332%; }
+    .gxl--twelvethx5 {
+      width: 41.666666665%; }
+  .gxl--reset {
+    width: auto; } }
+@media (min-width: 80em) {
+  .gxxl--f1 {
+    flex-grow: 1; }
+  .gxxl--f2 {
+    flex-grow: 2; }
+  .gxxl--f3 {
+    flex-grow: 3; }
+  .gxxl--f4 {
+    flex-grow: 4; }
+  .gxxl--full {
+    width: 100%; }
+  .gxxl--half {
+    width: 50%; }
+    .gxxl--half--offset {
+      margin-left: 50%; }
+  .gxxl--third {
+    width: 33.33333333%; }
+    .gxxl--thirdx2 {
+      width: 66.66666667%; }
+    .gxxl--third--offset {
+      margin-left: 33.33333333%; }
+      .gxxl--third--offsetx2 {
+        margin-left: 66.66666667%; }
+  .gxxl--fourth {
+    width: 25%; }
+    .gxxl--fourthx3 {
+      width: 75%; }
+    .gxxl--fourth--offset {
+      margin-left: 25%; }
+      .gxxl--fourth--offsetx3 {
+        margin-left: 75%; }
+  .gxxl--fifth {
+    width: 20%; }
+    .gxxl--fifthx2 {
+      width: 40%; }
+    .gxxl--fifthx3 {
+      width: 60%; }
+    .gxxl--fifthx4 {
+      width: 80%; }
+  .gxxl--sixth {
+    width: 16.66666667%; }
+    .gxxl--sixthx5 {
+      width: 83.33333335%; }
+  .gxxl--seventh {
+    width: 14.28571429%; }
+  .gxxl--eighth {
+    width: 12.5%; }
+    .gxxl--eighthx7 {
+      width: 87.5%; }
+  .gxxl--ninth {
+    width: 11.11111111%; }
+    .gxxl--ninthx2 {
+      width: 22.22222222%; }
+  .gxxl--tenth {
+    width: 10%; }
+    .gxxl--tenthx9 {
+      width: 90%; }
+    .gxxl--tenthx3 {
+      width: 30%; }
+    .gxxl--tenthx7 {
+      width: 70%; }
+  .gxxl--eleventh {
+    width: 9.090909091%; }
+  .gxxl--twelveth {
+    width: 8.333333333%; }
+    .gxxl--twelvethx2 {
+      width: 16.666666666%; }
+    .gxxl--twelvethx3 {
+      width: 24.999999999%; }
+    .gxxl--twelvethx4 {
+      width: 33.333333332%; }
+    .gxxl--twelvethx5 {
+      width: 41.666666665%; }
+  .gxxl--reset {
+    width: auto; } }
+@media (min-width: 100em) {
+  .gxxxl--f1 {
+    flex-grow: 1; }
+  .gxxxl--f2 {
+    flex-grow: 2; }
+  .gxxxl--f3 {
+    flex-grow: 3; }
+  .gxxxl--f4 {
+    flex-grow: 4; }
+  .gxxxl--full {
+    width: 100%; }
+  .gxxxl--half {
+    width: 50%; }
+    .gxxxl--half--offset {
+      margin-left: 50%; }
+  .gxxxl--third {
+    width: 33.33333333%; }
+    .gxxxl--thirdx2 {
+      width: 66.66666667%; }
+    .gxxxl--third--offset {
+      margin-left: 33.33333333%; }
+      .gxxxl--third--offsetx2 {
+        margin-left: 66.66666667%; }
+  .gxxxl--fourth {
+    width: 25%; }
+    .gxxxl--fourthx3 {
+      width: 75%; }
+    .gxxxl--fourth--offset {
+      margin-left: 25%; }
+      .gxxxl--fourth--offsetx3 {
+        margin-left: 75%; }
+  .gxxxl--fifth {
+    width: 20%; }
+    .gxxxl--fifthx2 {
+      width: 40%; }
+    .gxxxl--fifthx3 {
+      width: 60%; }
+    .gxxxl--fifthx4 {
+      width: 80%; }
+  .gxxxl--sixth {
+    width: 16.66666667%; }
+    .gxxxl--sixthx5 {
+      width: 83.33333335%; }
+  .gxxxl--seventh {
+    width: 14.28571429%; }
+  .gxxxl--eighth {
+    width: 12.5%; }
+    .gxxxl--eighthx7 {
+      width: 87.5%; }
+  .gxxxl--ninth {
+    width: 11.11111111%; }
+    .gxxxl--ninthx2 {
+      width: 22.22222222%; }
+  .gxxxl--tenth {
+    width: 10%; }
+    .gxxxl--tenthx9 {
+      width: 90%; }
+    .gxxxl--tenthx3 {
+      width: 30%; }
+    .gxxxl--tenthx7 {
+      width: 70%; }
+  .gxxxl--eleventh {
+    width: 9.090909091%; }
+  .gxxxl--twelveth {
+    width: 8.333333333%; }
+    .gxxxl--twelvethx2 {
+      width: 16.666666666%; }
+    .gxxxl--twelvethx3 {
+      width: 24.999999999%; }
+    .gxxxl--twelvethx4 {
+      width: 33.333333332%; }
+    .gxxxl--twelvethx5 {
+      width: 41.666666665%; }
+  .gxxxl--reset {
+    width: auto; } }
+.grid-row-children-alignment--centered {
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+.grid-row-children-alignment--vcentered {
+  align-items: center;
+  height: 100%; }
+.grid-row-children-alignment--hcentered {
+  justify-content: center; }
+
+.grid-row-width--narrow {
+  max-width: 68em; }
+.grid-row-width--wide {
+  max-width: 80em; }
+.grid-row-width--widest {
+  max-width: none; }
+
+.grid-row-padding--sides-only {
+  padding: 0 20px; }
+  @media (min-width: 38.75em) {
+    .grid-row-padding--sides-only {
+      padding: 0 30px; } }
+  @media (min-width: 48.75em) {
+    .grid-row-padding--sides-only {
+      padding: 0 30px; } }
+  @media (min-width: 100em) {
+    .grid-row-padding--sides-only {
+      padding: 0; } }
+.grid-row-padding--top-only {
+  padding: 1em 0; }
+  @media (min-width: 38.75em) {
+    .grid-row-padding--top-only {
+      padding: 1.25em 0; } }
+  @media (min-width: 64em) {
+    .grid-row-padding--top-only {
+      padding: 3.25em 0; } }
+  @media (min-width: 80em) {
+    .grid-row-padding--top-only {
+      padding: 2.6em 0; } }
+.grid-row-padding--short {
+  padding: 2em 1.5em; }
+  @media (min-width: 38.75em) {
+    .grid-row-padding--short {
+      padding: 1.75em 30px; } }
+  @media (min-width: 48.75em) {
+    .grid-row-padding--short {
+      padding: 0.75em 5em; } }
+  @media (min-width: 64em) {
+    .grid-row-padding--short {
+      padding: 0.85em 6em; } }
+.grid-row-padding--full {
+  padding: 1em 2em; }
+  @media (min-width: 38.75em) {
+    .grid-row-padding--full {
+      padding: 2em 4.5em; } }
+  @media (min-width: 64em) {
+    .grid-row-padding--full {
+      padding: 3.25em 6em; } }
+
+.nowrap {
+  flex-wrap: nowrap;
+  align-items: center; }
+
+/* No files to import found in content_blocks/* */
+/* No files to import found in partials/* */
+a[href="http://html5box.com/html5gallery/watermark.php"] {
+  display: none; }

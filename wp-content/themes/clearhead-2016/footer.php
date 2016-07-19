@@ -34,7 +34,9 @@
 								Austin, TX 78704
 							</p>
 						</div>
-						<figure></figure>
+						<figure>
+							<a href="https://www.google.com/maps/place/3601+S+Congress+Ave,+Austin,+TX+78704/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/location.jpg" alt="location"></a>
+						</figure>
 					</div>
 				</div>
 				<div class="info cap-3c-2g">
@@ -67,7 +69,7 @@
 					</div>
 					<div class="info-action">
 						<h3>Think you’d fit in?</h3>
-						<a href="." class="button button-reduced">Apply Here</a>
+						<a href="http://clearhead.theresumator.com/apply" class="button button-reduced">Apply Here</a>
 					</div>
 				</div>
 			</div>
