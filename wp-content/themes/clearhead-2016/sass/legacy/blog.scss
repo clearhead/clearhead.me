@@ -885,10 +885,6 @@ body.single-post, body.page {
 		}
 		.entry-image {
 			margin: -4.5em auto 2.625em;
-			img {
-				//temporary
-				height: 350px;
-			}
 		}
 	}
 }
@@ -1039,9 +1035,7 @@ body.single-post, body.page {
 	}
 
 	.related-posts .related-image {
-		//temporary
 		img {
-			height: 87px;
 			display: block;
 		}
 		a {

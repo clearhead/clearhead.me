@@ -21136,6 +21136,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/js\/home.nav.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/home.nav.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/home.nav-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/js\/inview.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -25055,6 +25066,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead\/js\/customizer.js",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead\/js\/min\/customizer-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/wp-content\/themes\/clearhead\/js\/home.nav.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead\/js\/home.nav.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead\/js\/min\/home.nav-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
