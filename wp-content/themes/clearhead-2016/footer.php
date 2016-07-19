@@ -16,22 +16,15 @@
 	<footer role="contentinfo">
 		<div class="main-footer">
 			<div class="container">
-				<div class="contact" id="contact">
-					<h3>Need to talk?</h3>
-					<form> <!-- Still needs CMS integraton  -->
-						<label for="name">Name <span>(required)</span></label>
-						<input type="text" id="name">
+				<div class="contact" id="contact" >
 
-						<label for="email">Email <span>(required)</span></label>
-						<input type="email" id="email">
-
-						<label for="message">Tell us about your project, goal or design <span>(required)</span></label>
-						<textarea id="message" rows="4"></textarea>
-
-						<input class="button button-reduced button-yellow" type="submit" value="Submit">
-					</form>
-
-
+					<?php $the_query = new WP_Query( 'page_id=22' );
+						while ( $the_query->have_posts() ) :
+							$the_query->the_post();
+							the_content();
+							endwhile;
+						wp_reset_postdata();
+					?>
 
 					<div class="contact-info">
 						<div>
@@ -41,7 +34,9 @@
 								Austin, TX 78704
 							</p>
 						</div>
-						<figure></figure>
+						<figure>
+							<a href="https://www.google.com/maps/place/3601+S+Congress+Ave,+Austin,+TX+78704/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/location.jpg" alt="location"></a>
+						</figure>
 					</div>
 				</div>
 				<div class="info cap-3c-2g">
@@ -74,7 +69,7 @@
 					</div>
 					<div class="info-action">
 						<h3>Think you’d fit in?</h3>
-						<a href="." class="button button-reduced">Apply Here</a>
+						<a href="http://clearhead.theresumator.com/apply" class="button button-reduced">Apply Here</a>
 					</div>
 				</div>
 			</div>

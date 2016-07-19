@@ -4,13 +4,65 @@
     background-color: $blue;
     color: $white;
     padding: calc(7em + 50px) 0 5.828125em;
+    // position: relative;
+    .logo-icon {
+        width: 3.4125em;
+        height: 3.4125em;
+        position: relative;
+        // top: -1.0625em;
+
+        position: relative;
+        margin: 0 auto;
+        bottom: 2.325rem;
+
+        @include w640 {
+            display: none;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+    }
     h1 {
         line-height: 1.0625;
         margin-bottom: 0.0625em;
+
+        position: relative;
+        text-align: center;
+        bottom: 1.25rem;
+        figure {
+            display: block;
+            pointer-events: none;
+            margin: 0.0625em 0 0.278125em;
+            svg {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                @include w640 {
+                    margin: 0;
+                }
+            }
+        }
+        span {
+            position: absolute;
+            color: transparent;
+        }
+        @include w640 {
+            bottom: 0;
+            text-align: left;
+        }
     }
     h5 {
         margin-bottom: 2.1875em;
         color: rgba($white, 0.6);
+
+        position: relative;
+        text-align: center;
+        bottom: 1.25rem;
+        @include w640 {
+            bottom: 0;
+            text-align: left;
+        }
     }
     p {
         font-size: 1.125em;
@@ -29,6 +81,9 @@
 .photo-callout {
     background-color: darken($gray, 7.5%);
     padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     .container {
         display: flex;
         align-items: center;
@@ -39,17 +94,25 @@
         margin: 0;
         text-align: center;
         line-height: 1;
-        padding: 0.875em 0 0.71875em;
+        padding: 0.875em 0.5em 0.71875em;
     }
     &-blue {
-        background-color: darken(#BFE1EB, 7.5%);
+        background-color: darken(#B6E1EC, 7.5%);
+        background-image: url('img/callout-photos/what-we-do.jpg');
+        @include w1000 {
+            background-position: center calc(50% - 2.8125em);
+        }
         h3 {
             background-color: #BFE1EB;
             color: $dark-blue;
         }
     }
     &-orange {
-        background-color: darken(#EEB48A, 7.5%);
+        background-color: darken(#F7B182, 7.5%);
+        background-image: url('img/callout-photos/who-we-do-it-with.jpg');
+        @include w1000 {
+            background-position: center calc(50% + 1em);
+        }
         h3 {
             background-color: #EEB48A;
             color: #AB442A;
@@ -57,6 +120,7 @@
     }
     &-purple {
         background-color: darken($light-purple, 7.5%);
+        background-image: url('img/callout-photos/who-we-are.jpg');
         h3 {
             background-color: $light-purple;
             color: $dark-purple;
@@ -90,9 +154,10 @@
         margin: 0.2875em 0 0.734375em;
     }
     figure {
-        background-color: $gray;
-        padding-top: 32.75%;
         max-width: 9em;
+        svg {
+            height: 100%;
+        }
     }
     strong {
         font-weight: $medium;
@@ -212,11 +277,23 @@
         margin: 0.2875em 0 0;
     }
     figure {
-        background-color: $gray;
         height: 2.734375em;
         width: 2.734375em;
-        margin: 0.125em 0.125em 0 0.26875em;
+        margin: 0.125em 0.25em 0 0.26875em;
         flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        &.buildium-logo {
+            padding-right: 0.1875em;
+        }
+        svg {
+            max-width: 100%;
+        }
+        img {
+            width: 2.125em;
+            height: auto;
+        }
     }
     strong {
         font-weight: $medium;
@@ -255,9 +332,16 @@
             align-items: center;
             justify-content: center;
             figure {
-                height: 5.0625em;
-                width: 5.0625em;
-                background-color: $gray;
+                height: 5.5em;
+                // width: 5.0625em;
+                // background-color: $gray;
+                img {
+                    max-height: 100%;
+                    width: auto;
+                }
+                &.keurig-logo {
+                    height: 3.75em;
+                }
             }
         }
         strong {
@@ -283,45 +367,21 @@
             position: absolute;
             display: inline-block;
             bottom: 54px;
-            height: 51px;
+            height: 48.5px;
             width: 36px;
             background-repeat: no-repeat;
-            background-size: 29.5px;
-
-            // background-color: rgba(red, 0.5);
+            background-size: 36px;
         }
         &:before {
             left: -36px;
-            background-image: url('img/point-left.svg');
-            background-position: right -0.5px bottom 2px;
+            background-image: url('img/point-left-large.svg');
+            background-position: right 0 bottom 0;
         }
         blockquote {
             letter-spacing: -(0.55em/18);
         }
     }
 }
-
-/*
-&:before {
-    bottom: 10.5px;
-    height: 48px;
-    width: 48px;
-}
-&:first-child {
-    &:before {
-        left: -48px;
-        background-image: url('img/point-left.svg');
-        background-position: right -2.5px bottom 2px;
-    }
-}
-&:last-child {
-    &:before {
-        right: -48px;
-        background-image: url('img/point-right.svg');
-        background-position: left -2.5px bottom 2px;
-    }
-}
-*/
 
 // Logo List
 // ---------
@@ -336,9 +396,14 @@
         padding: 0.9765625em;
         margin: 0 0.234375em 0.234375em 0;
         figure {
-            background-color: $gray;
+            // background-color: $gray;
             height: 3.65625em;
             min-width: 3.65625em;
+            display: flex;
+            align-items: center;
+            img, svg {
+                max-height: 100%;
+            }
         }
         &.more {
             figure {
@@ -421,6 +486,7 @@
             .photo {
                 background-color: $gray;
                 padding-top: 59.75%;
+                background-size: cover;
             }
             figcaption {
                 padding: 0.25em 0.6875em 0.25em 0.8125em;
@@ -441,7 +507,17 @@
                     display: block;
                     width: 1em;
                     height: 1em;
-                    background-color: $gray;
+                    svg * {
+                        stroke: $blue;
+                        transition: stroke 0.1875s ease;
+                    }
+                }
+            }
+            a:hover {
+                figcaption span {
+                    svg * {
+                        stroke: $dark-blue;
+                    }
                 }
             }
         }
@@ -464,8 +540,10 @@
                 align-items: center;
                 .photo {
                     width: 100%;
-                    padding-top: 100%;
                     background-color: $gray;
+                    img {
+                        display: block;
+                    }
                 }
                 figcaption {
                     margin-top: 0.71875em;
@@ -485,7 +563,7 @@
 }
 
 // Widgets
-// --------------------------
+// -------
 h3.widget-title {
     font-size: 1.478125em;
     font-weight: $bold;
@@ -499,4 +577,60 @@ h3.widget-title {
     a {
         color: $black;
     }
+}
+
+
+// Contact Form
+// ------------
+.contact-form {
+	margin-top: 0.84375em;
+	label {
+		color: #9CB1B6; // ‘dark gray’ used only here
+		span {
+			color: #5D767C; // ‘extra dark gray’ used only here
+			&:before {
+				content: " ";
+			}
+		}
+	}
+	input:not([type="submit"]), textarea {
+		background-color: #B9BDC4;
+		border: none;
+		transition: background-color 0.1875s ease;
+		&:focus {
+			background-color: $white;
+		}
+	}
+	input.button {
+		width: auto;
+		padding: 0.6875em 1.1875em 0.45625em;
+	}
+
+  //Styles for submit button in footer..feel free to fix up nicely
+  .pushbutton-wide, .contact-submit input.pushbutton-wide {
+  	@extend .button;
+  	background-color: #FDB216;
+  	color: $black;
+  	padding: 0.65625em 1.09375em 0.5em;
+  	&:hover {
+  		background-color: darken(#FDB216, 10%);
+  	}
+  }
+
+  input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+
+	/*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/
+	input[disabled] {
+    color: black;
+		background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
+	}
 }

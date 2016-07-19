@@ -109,11 +109,20 @@ function clearhead_2016_widgets_init() {
 }
 add_action( 'widgets_init', 'clearhead_2016_widgets_init' );
 
+// First, make sure Jetpack doesn't concatenate all its CSS
+add_filter( 'jetpack_implode_frontend_css', '__return_false' );
+
+
 /**
  * Enqueue scripts and styles.
  */
-function clearhead_2016_scripts() {
+function clearhead_2016_scripts_and_styles() {
+
 	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri() );
+
+	wp_deregister_style( 'grunion.css' ); // Grunion contact form
+
+	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
 	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/site.js', array(), '20151215', true );
 
@@ -133,7 +142,6 @@ function clearhead_2016_scripts() {
 
 	wp_enqueue_script( 'clearhead-2016-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-
 	// script from previous clearhead theme
 	if ( ! is_front_page() ) :
 		wp_enqueue_style( 'prism-css', get_template_directory_uri() . '/js/themes/prism-okaidia.css', array(), '20150629');
@@ -145,7 +153,7 @@ function clearhead_2016_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts' );
+add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts_and_styles' );
 
 /**
  * Implement the Custom Header feature.

@@ -21,7 +21,17 @@ get_header(); ?>
 				<section class="hero">
 					<div class="container">
 						<div class="cap-6c-6g">
-							<h1>Clearhead</h1>
+
+							<div class="logo-icon">
+								<figure>
+									<?php get_template_part( 'img/logo-icon.svg' ); ?>
+								</figure>
+							</div>
+
+							<h1>
+								<span>Clearhead</span>
+								<figure><?php get_template_part( 'img/logo-type.svg' ); ?></figure>
+							</h1>
 							<h5>The Digital Optimization Company</h5>
 							<p>
 								We help daring brands optimize their business outcomes through continuous testing &amp; personalization.
@@ -55,7 +65,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Digital Optimization Programs</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Uncovering the best ideas quickly and iteratively</strong>
@@ -68,7 +80,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Data-driven Redesigns</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Disrupt with confidence</strong>
@@ -81,7 +95,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Optimization Accelerators</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Building towards a test-and-learn culture</strong>
@@ -148,7 +164,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>Breaking Best Practices</h3>
-											<figure></figure>
+											<figure class="buildium-logo">
+												<?php get_template_part( 'img/stories/buildium.svg' ); ?>
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -160,7 +178,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>MVT’S Hidden Thrills</h3>
-											<figure></figure>
+											<figure>
+												<?php get_template_part( 'img/stories/village-roadshow.svg' ); ?>
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -172,7 +192,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>Testing the Power of Print</h3>
-											<figure></figure>
+											<figure>
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/stories/stories-bluedot.png" alt="blu dot">
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -187,7 +209,9 @@ get_header(); ?>
 							<div class="client-testimonial">
 								<div class="client">
 									<div class="logo">
-										<figure></figure>
+										<figure class="village-roadshow-logo">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/village-roadshow.png" alt="Village Roadshow">
+										</figure>
 									</div>
 									<strong>John Satterley</strong>
 									<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
@@ -224,46 +248,69 @@ get_header(); ?>
 							<div class="logo-list logo-list-clients">
 								<ul>
 									<li>
-										<figure style="width: 5em"></figure>
+										<figure style="max-width: 4em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/adidas.png" alt="Adidas">
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/blu-dot.png" alt="Blu Dot">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7.25em"></figure>
+										<figure style="max-width: 7.25em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/world-market.png" alt="World Market">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 9.75em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/cvs.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7.4125em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/express.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/keurig.png" alt="Keurig">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7em"></figure>
+										<figure style="max-width: 8.5em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/patagonia.png" alt="Patagonia">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 5em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/tesco.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/tory-burch.png" alt="Tory Burch">
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/ulta.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/usaa.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 5.5em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/vitamix.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 9em"></figure>
-									</li>
-									<li>
-										<figure style="width: 5.09375em"></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/whole-foods.svg' ); ?>
+										</figure>
 									</li>
 									<li class="more">
 										<figure>
@@ -288,19 +335,29 @@ get_header(); ?>
 								<div class="logo-list logo-list-solutions">
 									<ul>
 										<li>
-											<figure style="width: 5em"></figure>
+											<figure style="max-width: 6.15625em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/optimizely.png" alt="Optimizely">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7em"></figure>
+											<figure style="max-width: 9.15625em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/monetate.png" alt="Monetate">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7.25em"></figure>
+											<figure style="max-width: 5.32em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/qubit.png" alt="Qubit">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 9.75em"></figure>
+											<figure style="max-width: 8.8125em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/maxymiser.png" alt="Maxymiser">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7.4125em"></figure>
+											<figure>
+												<?php get_template_part( 'img/technologies/user-testing.svg' ); ?>
+											</figure>
 										</li>
 									</ul>
 								</div>
@@ -339,7 +396,9 @@ get_header(); ?>
 							<div class="client-testimonial">
 								<div class="client">
 									<div class="logo">
-										<figure></figure>
+										<figure class="keurig-logo">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/keurig.png" alt="Keurig">
+										</figure>
 									</div>
 									<strong>Delia Vallejo</strong>
 									<small>Senior Director Ecommerce, Keurig&nbsp;Green&nbsp;Mountain</small>
@@ -378,10 +437,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-matty/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/matty.jpg');"></div>
 												<figcaption>
 													<div>Read Matty’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -389,10 +450,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-ryan/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/ryan.jpg');"></div>
 												<figcaption>
 													<div>Read Ryan’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -400,10 +463,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-sam/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/sam.jpg');"></div>
 												<figcaption>
 													<div>Read Sam’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -414,7 +479,7 @@ get_header(); ?>
 							<hr class="extra-space">
 
 							<div class="cap-6c-6g">
-								<h2>Great Quarterbacks are Always Surrounded by the Best Team</h2>
+								<h2>Success Starts with the Best&nbsp;Team</h2>
 								<p>
 									More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization&nbsp;methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.
 								</p>
@@ -424,37 +489,49 @@ get_header(); ?>
 								<ul>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/consultants.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Strategic Consultants</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/directors.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Optimization Directors</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/managers.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Project Managers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/designers.jpg" alt="employee headshot">
+											</div>
 											<figcaption><span>UX</span>&nbsp;+&nbsp;Interface Designers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/developers.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Front-end Developers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/analysts.jpg" alt="employee headshot">
+											</div>
 											<figcaption>Data Analysts</figcaption>
 										</figure>
 									</li>

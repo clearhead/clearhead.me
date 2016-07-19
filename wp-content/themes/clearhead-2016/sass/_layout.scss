@@ -3,7 +3,7 @@
 .container {
 	min-width: 288px;
 	margin: 0 auto;
-	max-width: calc(100% - 2em);
+	max-width: calc(100% - 1.5em);
 	width: 50em;
 	@include w480 {
 		width: 48.5em;
@@ -37,15 +37,19 @@
 
 header {
 	width: 100%;
-	background-color: $white;
 	color: $black;
 	// padding: 0.578125em 0;
-
 	position: fixed;
 	top: 0;
 	z-index: 100;
 	box-shadow: 0 0 0.325em 0 rgba($black, 0);
 	transition: box-shadow 0.25s ease;
+
+	font-size: 112.5%;
+	@include w480  { font-size: 106.25%; }
+	@include w640  { font-size: 103.125%; }
+	@include w1000 { font-size: 100%; }
+
 	&.scrolled {
 		box-shadow: 0 0 0.325em 0 rgba($black, 0.3);
 		nav ul li.active {
@@ -54,43 +58,97 @@ header {
 				border-bottom-width: 0.25em;
 			}
 		}
+		.menu-mobile nav ul li {
+			&.active {
+				a {
+					color: $blue;
+					border-color: $blue;
+				}
+			}
+		}
 	}
-	.container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 2.78125em;
+	.main-header {
+		position: relative;
+		z-index: 90;
+		background: $white;
+		> .container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 2.78125em;
+		}
 	}
 	.logo {
-		height: 2.78125em;
-		width: 2.78125em;
-		background-color: $blue;
-		color: transparent;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		figure {
-			height: 0.96875em;
-			width: 1.0625em;
-			margin: 0 0.09375em 0.09375em 0;
-			display: flex;
-			border: 1.5px solid $black;
-			.icon {
+		flex-shrink: 0;
+		figcaption {
+			font-weight: $bold;
+			text-transform: lowercase;
+			margin-top: 0.25em;
+			position: relative;
+			span {
+				display: block;
+				color: transparent;
 			}
-			figcaption {
+			svg {
+				width: 100%;
+				height: 100%;
 				position: absolute;
 				pointer-events: none;
+				top: -0.0625em;
+				* {
+					fill: $blue;
+				}
+			}
+		}
+		.icon {
+			display: none;
+		}
+		@include w640 {
+			height: 2.78125em;
+			width: 2.78125em;
+			background-color: $blue;
+			color: transparent;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			figure {
+				height: 0.96875em;
+				width: 1.0625em;
+				margin: 0 0.125em 0.09375em 0;
+				display: flex;
+				.icon {
+					display: block;
+				}
+				figcaption {
+					display: none;
+				}
+			}
+		}
+	}
+	.menu-desktop {
+		margin-right: 0.346875em;
+
+		width: calc(100% - 4.5em);
+		max-width: 30em;
+		@include w1000 {
+			width: calc(100% - 13.5em);
+			max-width: none;
+		}
+		nav {
+			display: none;
+			@include w640 {
+				display: block;
 			}
 		}
 	}
 	nav {
-		width: calc(100% - 13.5em);
-		margin-right: 0.346875em;
+		width: 100%;
 		ul {
 			display: flex;
 			justify-content: space-between;
 			height: 2.78125em;
+			// background-color: $black;
 			li {
 				display: flex;
 				a {
@@ -107,6 +165,90 @@ header {
 				}
 			}
 		}
+	}
+	.menu-mobile {
+		position: absolute;
+		z-index: 80;
+		background-color: $black;
+		width: 100%;
+		overflow: hidden;
+		pointer-events: none;
+		transform: translateY(-3.5em);
+		transition: transform 0.25s ease;
+		@include w640 {
+			display: none;
+		}
+		nav ul {
+			height: 2.78125em;
+			li {
+				a {
+					color: rgba($white, 0.9);
+					padding: 0 0.4125em;
+
+					font-size: 0.75em;
+					line-height: 3.625;
+					@media screen and (min-width: 360px) {
+						font-size: 0.8125em;
+						line-height: 3.5;
+					}
+				}
+			}
+		}
+	}
+	.menu-toggle-mobile {
+		font-size: 0.8125em;
+		font-weight: $medium;
+		background-color: $light-blue;
+		color: $dark-blue;
+		text-transform: lowercase;
+		display: block;
+		padding: 0.5625em;
+		line-height: 1.25;
+		border-radius: 0.171875em;
+		flex-shrink: 0;
+		@include w640 {
+			display: none;
+		}
+		figure {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		figcaption {
+			position: relative;
+			top: 0.0275em;
+			flex-shrink: 0;
+		}
+		.icon {
+			height: 1em;
+			width: 1em;
+			position: relative;
+			flex-shrink: 0;
+			text-align: right;
+			margin-left: 0.5em;
+			span {
+				display: block;
+				position: absolute;
+				font-size: 1.875em;
+				top: -0.2875em;
+				font-weight: $medium;
+				transform: rotate(0deg);
+				transition:
+					transform 0.25s ease,
+					top 0.25s ease,
+					left 0.25s ease;
+			}
+		}
+	}
+}
+body.show-menu-mobile {
+	.menu-mobile {
+		transform: translateY(0);
+		pointer-events: auto;
+	}
+	.menu-toggle-mobile .icon span {
+		transform: rotate(45deg);
+		left: -0.5px;
 	}
 }
 body.archive-view header {
@@ -131,6 +273,36 @@ body:not(.home) nav li {
 			color: $dark-blue;
 			border-bottom-width: 0.25em;
 		}
+	}
+}
+
+body.archive-view, body.single {
+	.menu-mobile nav li.menu-item-blog {
+		a {
+			color: $blue;
+			border-color: $blue;
+			border-bottom-width: 0.25em;
+		}
+	}
+}
+
+
+.contact-form {
+	input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+
+	/*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/
+	input[disabled] {
+    color: black;
+		background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
 	}
 }
 
@@ -209,12 +381,12 @@ footer {
 						figure {
 							height: 1.0625em;
 							width: 1.325em;
-							background-color: $white;
 							position: relative;
 							margin-bottom: 1px;
 							bottom: 1px;
 							right: 2px;
 							margin-right: 5px;
+							background-image: url('img/icons/twitter.svg');
 						}
 						span {
 							font-size: 0.875em;
@@ -227,28 +399,13 @@ footer {
 				width: 100%;
 				max-width: calc(100% - ((((1em * (((800 - (20 * 8)) / 9) / 18)) * 3) + ((1em * (20 / 18)) * 2)) + 2.5625em));
 
-				padding-top: 0.325em;
-				form {
-					margin-top: 0.84375em;
-					label {
-						color: #9CB1B6; // ‘dark gray’ used only here
-						span {
-							color: #5D767C; // ‘extra dark gray’ used only here
-						}
-					}
-					input:not([type="submit"]), textarea {
-						background-color: #B9BDC4;
-						border: none;
-						transition: background-color 0.1875s ease;
-						&:focus {
-							background-color: $white;
-						}
-					}
-					input.button {
-						width: auto;
-						padding: 0.6875em 1.1875em 0.45625em;
-					}
+				//Footer form submission styles
+				blockquote.contact-form-submission {
+					border-left: 3px solid #3DC5F3;
+					color: white;
 				}
+
+				padding-top: 0.325em;
 				.contact-info {
 					display: flex;
 					justify-content: space-between;
@@ -265,8 +422,16 @@ footer {
 					}
 					figure {
 						width: calc(100% - 13.78125em);
-						background-color: #BABDC3;
-						padding-top: 20.325%;
+						a {
+							display: block;
+							transition: opacity 0.1875s ease;
+							&:hover {
+								opacity: 0.68125;
+							}
+						}
+						img {
+							display: block;
+						}
 					}
 				}
 			}
