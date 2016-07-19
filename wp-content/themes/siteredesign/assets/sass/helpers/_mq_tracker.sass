@@ -1,0 +1,82 @@
+$small:          20.625em
+$medium:         38.75em
+$large:          48.75em
+$x-large:        64em
+$xx-large:       80em
+$xxx-large:      100em
+
+//media queries
+@mixin small 
+  @media (min-width: #{$small}) 
+    @content
+
+@mixin medium 
+  @media (min-width: #{$medium}) 
+    @content
+
+@mixin large 
+  @media (min-width: #{$large}) 
+    @content
+
+@mixin x-large 
+  @media (min-width: #{$x-large}) 
+    @content
+
+@mixin xx-large 
+  @media (min-width: #{$xx-large}) 
+    @content
+
+@mixin xxx-large 
+  @media (min-width: #{$xxx-large}) 
+    @content
+
+@mixin custom-width($width) 
+  @media (min-width: $width) 
+    @content
+  
+.mq-tracker
+  text-transform: initial
+  position: fixed
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 2em
+  line-height: 2em
+  z-index: 9000
+  background-color: #FFBC67
+  font-size: 1.5em
+  opacity: .8
+  color: white
+  &:after 
+    content: '[default]'
+    position: absolute
+    bottom: 0
+    left: 10px
+  +small 
+    background-color: #DA727E
+    &:after
+      content: 'min-width: [small]'
+  +medium 
+    background-color: #AC6C82
+    &:after
+      content: 'min-width: [medium]'
+  +large 
+    background-color: #685C79
+    &:after
+      content: 'min-width: [large]'
+  +x-large 
+    background-color: #455C7B
+    &:after 
+      content: 'min-width: [x-large]'
+  +xx-large 
+    background-color: #FFBC67
+    &:after
+      content: 'min-width: [xx-large]'
+  +xxx-large 
+    background-color: #DA727E
+    &:after
+      content: 'min-width: [xxx-large]'
+
+  // +desktop-widest {background-color: #AC6C82
+    &:after
+      content: 'min-width: [desktop-widest]'

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="780px" height="184px" viewBox="0 0 780 184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>participants chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ecommerce-Survey-Webpage" transform="translate(-122.000000, -1720.000000)">
+            <g id="participants" transform="translate(102.000000, 1648.000000)">
+                <g id="participants-chart" transform="translate(20.000000, 72.000000)">
+                    <rect id="Rectangle-4-Copy-5" fill="#19748F" x="483" y="48" width="203" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-8" fill="#19748F" x="429" y="96" width="351" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-2" fill="#19748F" x="281" y="0" width="499" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-6" fill="#B6E1EC" x="686" y="48" width="94" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-7" fill="#32C4F5" x="0" y="48" width="483" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-10" fill="#32C4F5" x="0" y="96" width="429" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-12" fill="#32C4F5" x="0" y="144" width="390" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-13" fill="#19748F" x="390" y="144" width="390" height="40"></rect>
+                    <rect id="Rectangle-4-Copy-4" fill="#32C4F5" x="0" y="0" width="281" height="40"></rect>
+                    <text id="62%-ecommerce" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="184.340222" y="72.5740051">62</tspan>
+                        <tspan x="203.366222" y="72.5740051" letter-spacing="-0.544444382">%</tspan>
+                        <tspan x="218.221778" y="72.5740051"> ecommerce</tspan>
+                    </text>
+                    <text id="55%-500+-employees" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="140.379222" y="120.574005">55</tspan>
+                        <tspan x="158.775222" y="120.574005" letter-spacing="-0.544444382">%</tspan>
+                        <tspan x="173.630778" y="120.574005"> 500+ employees</tspan>
+                    </text>
+                    <text id="50%-director/manager" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="138.224" y="168.574005">50% director/manager</tspan>
+                    </text>
+                    <text id="36%-with-company-&lt;-2" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="45.8419995" y="26.5740051">36% with company &lt; 2 years</tspan>
+                    </text>
+                    <text id="64%-with-company-3+-" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="437.158" y="26.5740051">64% with company 3+ years</tspan>
+                    </text>
+                    <text id="26%-marketing" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="532.660222" y="72.5740051">26</tspan>
+                        <tspan x="551.686222" y="72.5740051" letter-spacing="-0.544444382">%</tspan>
+                        <tspan x="566.541778" y="72.5740051"> marketing</tspan>
+                    </text>
+                    <text id="45%-&lt;-500-employees" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="528.535222" y="120.574005">45</tspan>
+                        <tspan x="547.099222" y="120.574005" letter-spacing="-0.544444382">%</tspan>
+                        <tspan x="561.954778" y="120.574005"> &lt; 500 employees</tspan>
+                    </text>
+                    <text id="50%-executive-(VP,-S" font-family="BauLF-Medium" font-size="14" font-weight="400" line-spacing="15" letter-spacing="-0.349999964" fill="#FFFFFF">
+                        <tspan x="492.632999" y="168.574005">50% executive (VP, SVP, C level)</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
