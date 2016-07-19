@@ -25,7 +25,23 @@
   <nav class="grid-row nav-wrap grid-row-padding--short">
     <div class="grid-row ch-wrap"><a href="">
         <h5 class="heading-5">clearhead.me</h5></a><a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/launch-icon.svg"></a></div>
-    <div class="grid-row social-wrap"><a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/facebook-icon.svg"></a><a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/twitter-icon.svg"></a><a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/linkedin-icon.svg"></a></div>
+    <div class="grid-row social-wrap">
+      <a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/facebook-icon.svg"></a>
+      <a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/twitter-icon.svg"></a>
+      <a href="">
+        <svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+          <title>LinkedIn</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="Ecommerce-Survey-Webpage" transform="translate(-879.000000, -20.000000)" fill="#FFFFFF">
+                  <path d="M900.89372,39.9033816 L896.054909,39.9033816 L896.054909,32.9065471 C896.054909,31.0751352 895.298,29.8248812 893.633573,29.8248812 C892.360473,29.8248812 891.65248,30.6685796 891.322941,31.4816908 C891.199364,31.7735442 891.218673,32.1800998 891.218673,32.5866554 L891.218673,39.9033816 L886.424916,39.9033816 C886.424916,39.9033816 886.486705,27.5091711 886.424916,26.3825405 L891.218673,26.3825405 L891.218673,28.5045313 C891.50187,27.5767179 893.03371,26.2525447 895.478217,26.2525447 C898.511001,26.2525447 900.89372,28.1973843 900.89372,32.3852893 L900.89372,39.9033816 L900.89372,39.9033816 Z M881.577095,24.6913202 L881.5462,24.6913202 C880.001488,24.6913202 879,23.6577259 879,22.3475718 C879,21.0119283 880.031095,20 881.606702,20 C883.181021,20 884.14904,21.0093794 884.179935,22.3437484 C884.179935,23.6539025 883.181021,24.6913202 881.577095,24.6913202 L881.577095,24.6913202 L881.577095,24.6913202 Z M879.552235,26.3825405 L883.819502,26.3825405 L883.819502,39.9033816 L879.552235,39.9033816 L879.552235,26.3825405 L879.552235,26.3825405 Z" id="LinkedIn"></path>
+              </g>
+          </g>
+        </svg>
+      </a>
+    </div>
   </nav>
   <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered hero-wrap">
     <div class="grid-row heading-wrap">
