@@ -3,10 +3,15 @@
 .container {
 	min-width: 288px;
 	margin: 0 auto;
-	max-width: calc(100% - 1.5em);
-	width: 50em;
+
+	max-width: calc(100% - 1.5rem);
+	width: 50rem;
 	@include w480 {
-		width: 48.5em;
+		width: 48.5rem;
+	}
+	@include w640 {
+		width: ($full/1.0625);
+		max-width: calc(100% - 2.5rem);
 	}
 	@include w1000 {
 		width: $full;
@@ -33,6 +38,34 @@
 .cap-8c-7g {
 	width: 100%;
 	max-width: ($column * 8) + ($gutter * 7);
+}
+
+@media screen and (max-width: 639px) {
+	.dn_n640 {
+		display: none;
+	}
+}
+@include w640 {
+	.dn_w640 {
+		display: none;
+	}
+}
+@media screen and (max-width: 999px) {
+	.dn_n1000 {
+		display: none;
+	}
+}
+@include w1000 {
+	.dn_w1000 {
+		display: none;
+	}
+}
+
+header, section, footer {
+	max-width: 100vw;
+}
+section, footer {
+	overflow-x: hidden;
 }
 
 header {
@@ -173,7 +206,7 @@ header {
 		width: 100%;
 		overflow: hidden;
 		pointer-events: none;
-		transform: translateY(-3.5em);
+		transform: translateY(-2.78125em);
 		transition: transform 0.25s ease;
 		@include w640 {
 			display: none;
@@ -241,14 +274,28 @@ header {
 		}
 	}
 }
-body.show-menu-mobile {
-	.menu-mobile {
+body {
+	.site-content, footer {
 		transform: translateY(0);
-		pointer-events: auto;
+		transition: transform 0.25s ease;
+		@include w640 {
+			transition: none;
+		}
 	}
-	.menu-toggle-mobile .icon span {
-		transform: rotate(45deg);
-		left: -0.5px;
+	&.show-menu-mobile {
+		.menu-mobile {
+			transform: translateY(0);
+			pointer-events: auto;
+		}
+		.menu-toggle-mobile .icon span {
+			transform: rotate(45deg);
+			left: -0.5px;
+		}
+		.site-content, footer {
+			transform: translateY(calc(50em / 16));
+			@include w480  { transform: translateY(calc(49em / 16.5)); } // 16.5 pt
+			@include w640  { transform: translateY(0) }
+		}
 	}
 }
 body.archive-view header {
@@ -307,6 +354,11 @@ body.archive-view, body.single {
 }
 
 footer {
+	.cap-3c-2g {
+		@media screen and (max-width: 639px) {
+			max-width: 100%;
+		}
+	}
 	.main-footer {
 		padding: 2em 0 1.875em;
 		background-color: #103B48; // ‘extra dark blue’ used only here
@@ -318,7 +370,11 @@ footer {
 		}
 		.container {
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
+			@include w640 {
+				flex-direction: row;
+				justify-content: space-between;
+			}
 			.info {
 				h2 {
 					color: $white;
@@ -356,6 +412,7 @@ footer {
 						font-size: 0.875em;
 						line-height: 1.25;
 						margin-bottom: 0.59375em;
+						max-width: 24rem;
 					}
 					a {
 						display: block;
@@ -387,6 +444,7 @@ footer {
 							right: 2px;
 							margin-right: 5px;
 							background-image: url('img/icons/twitter.svg');
+							background-size: cover;
 						}
 						span {
 							font-size: 0.875em;
@@ -395,9 +453,13 @@ footer {
 				}
 			}
 			.contact {
-				order: 2;
+				margin-bottom: 2.5em;
+				@include w640 {
+					order: 2;
+					max-width: calc(100% - ((((1em * (((800 - (20 * 8)) / 9) / 18)) * 3) + ((1em * (20 / 18)) * 2)) + 2.5625em));
+					margin-bottom: 0;
+				}
 				width: 100%;
-				max-width: calc(100% - ((((1em * (((800 - (20 * 8)) / 9) / 18)) * 3) + ((1em * (20 / 18)) * 2)) + 2.5625em));
 
 				//Footer form submission styles
 				blockquote.contact-form-submission {
@@ -419,9 +481,18 @@ footer {
 						font-size: 0.875em;
 						line-height: 1.5625;
 						letter-spacing: -(0.535em/18);
+						font-size: 0.75em;
+						@include w1000 {
+							font-size: 0.875em;
+						}
 					}
 					figure {
-						width: calc(100% - 13.78125em);
+						width: calc(100% - 8.5em);
+						max-width: 11em;
+						@include w1000 {
+							max-width: 14em;
+							width: calc(100% - 12.75em);
+						}
 						a {
 							display: block;
 							transition: opacity 0.1875s ease;
@@ -456,5 +527,11 @@ footer {
 section {
 	background-color: $white;
 	color: $black;
-	padding: 4.390625em 0;
+	padding: 2.25em 0;
+	@include w640 {
+		padding: 4.390625em 0;
+	}
+	@include w1000 {
+		padding: 4.390625em 0;
+	}
 }

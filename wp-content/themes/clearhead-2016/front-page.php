@@ -47,17 +47,17 @@ get_header(); ?>
 					<section class="photo-callout photo-callout-blue">
 						<div class="container">
 							<div class="cap-7c-6g">
-								<h3>Solving <em>big</em> problems through testing and personalization</h3>
+								<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
 							</div>
 						</div>
 					</section>
-
 					<section>
 						<div class="container">
+
 							<div class="cap-6c-5g">
 								<h2>Solutions Tested<br>on Real Problems</h2>
 								<p>
-									Running the tests isn’t the problem. Reporting isn’t the problem. The problem is moving people and behavior, day in and out, towards more validated and confident solutions. That’s what we’re solving for.
+									Running the tests isn’t the problem. Reporting isn’t&nbsp;the problem. The problem is moving people and behavior, day in and out, towards more validated and confident solutions. That’s what we’re solving for.
 								</p>
 							</div>
 
@@ -155,7 +155,7 @@ get_header(); ?>
 							<div class="cap-6c-5g">
 								<h2>Data Stories that Reveal Insight and Inspire Change</h2>
 								<p>
-									We’ve investigated every corner of digital experiences &amp; organizations across many industries. Whatever the problem, user journey, device, platform or success metric, we will optimize it.
+									We’ve investigated every corner of digital experiences &amp; organizations across many industries. Whatever the problem, user journey, device, platform or success metric, we will optimize&nbsp;it.
 								</p>
 							</div>
 
@@ -213,8 +213,10 @@ get_header(); ?>
 											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/village-roadshow.png" alt="Village Roadshow">
 										</figure>
 									</div>
-									<strong>John Satterley</strong>
-									<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
+									<div class="info">
+										<strong>John Satterley</strong>
+										<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
+									</div>
 								</div>
 								<div class="testimonial">
 									<blockquote>
@@ -226,12 +228,11 @@ get_header(); ?>
 						</div>
 					</section>
 				</div>
-
 				<div id="with">
 					<section class="photo-callout photo-callout-orange">
 						<div class="container">
 							<div class="cap-7c-6g">
-								<h3>You, us and a few of our friends</h3>
+								<h3>You, us and a few of&nbsp;our&nbsp;friends</h3>
 							</div>
 						</div>
 					</section>
@@ -263,12 +264,12 @@ get_header(); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
+										<figure style="max-width: 9.8125em;">
 											<?php get_template_part( 'img/clients/cvs.svg' ); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
+										<figure style="max-width: 7.4125em;">
 											<?php get_template_part( 'img/clients/express.svg' ); ?>
 										</figure>
 									</li>
@@ -283,7 +284,7 @@ get_header(); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
+										<figure style="max-width: 6.125em;">
 											<?php get_template_part( 'img/clients/tesco.svg' ); ?>
 										</figure>
 									</li>
@@ -293,7 +294,7 @@ get_header(); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
+										<figure style="max-width: 6.25em;">
 											<?php get_template_part( 'img/clients/ulta.svg' ); ?>
 										</figure>
 									</li>
@@ -303,12 +304,12 @@ get_header(); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
+										<figure style="max-width: 9.36875em;">
 											<?php get_template_part( 'img/clients/vitamix.svg' ); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
+										<figure style="max-width: 5.125em;">
 											<?php get_template_part( 'img/clients/whole-foods.svg' ); ?>
 										</figure>
 									</li>
@@ -355,14 +356,13 @@ get_header(); ?>
 											</figure>
 										</li>
 										<li>
-											<figure>
+											<figure style="max-width: 8.875em;">
 												<?php get_template_part( 'img/technologies/user-testing.svg' ); ?>
 											</figure>
 										</li>
 									</ul>
 								</div>
 							</div>
-
 							<h3>Platforms We Use</h3>
 							<div class="platforms-list">
 								<ul class="cap-8c-7g">
@@ -400,8 +400,10 @@ get_header(); ?>
 											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/keurig.png" alt="Keurig">
 										</figure>
 									</div>
-									<strong>Delia Vallejo</strong>
-									<small>Senior Director Ecommerce, Keurig&nbsp;Green&nbsp;Mountain</small>
+									<div class="info">
+										<strong>Delia Vallejo</strong>
+										<small>Senior Director Ecommerce, Keurig&nbsp;Green&nbsp;Mountain</small>
+									</div>
 								</div>
 								<div class="testimonial">
 									<blockquote>
@@ -412,6 +414,7 @@ get_header(); ?>
 						</div>
 					</section>
 				</div>
+
 
 				<div id="who">
 					<section class="photo-callout photo-callout-purple">
@@ -424,6 +427,8 @@ get_header(); ?>
 
 					<section class="theme-purple">
 						<div class="container">
+
+
 							<div class="cap-6c-5g">
 								<h2>We Were You</h2>
 								<p>
@@ -432,7 +437,8 @@ get_header(); ?>
 							</div>
 
 							<div class="origin-stories">
-								<h3>Curious about how Clearhead started?</h3>
+								<hr class="extra-space">
+								<h3>Curious about how Clearhead&nbsp;started?</h3>
 								<ul>
 									<li>
 										<a href="/blog/meet-matty/">
@@ -481,7 +487,7 @@ get_header(); ?>
 							<div class="cap-6c-6g">
 								<h2>Success Starts with the Best&nbsp;Team</h2>
 								<p>
-									More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization&nbsp;methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.
+									More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization<span class="dn_n640">&nbsp;</span><span class="dn_w640"> </span>methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.
 								</p>
 							</div>
 
@@ -492,7 +498,7 @@ get_header(); ?>
 											<div class="photo">
 												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/consultants.jpg" alt="employee headshot">
 											</div>
-											<figcaption>Strategic Consultants</figcaption>
+											<figcaption>Strategic<br>Consultants</figcaption>
 										</figure>
 									</li>
 									<li>
@@ -500,7 +506,7 @@ get_header(); ?>
 											<div class="photo">
 												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/directors.jpg" alt="employee headshot">
 											</div>
-											<figcaption>Optimization Directors</figcaption>
+											<figcaption>Optimization<br>Directors</figcaption>
 										</figure>
 									</li>
 									<li>
@@ -508,7 +514,7 @@ get_header(); ?>
 											<div class="photo">
 												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/managers.jpg" alt="employee headshot">
 											</div>
-											<figcaption>Project Managers</figcaption>
+											<figcaption>Project<br>Managers</figcaption>
 										</figure>
 									</li>
 									<li>
@@ -516,7 +522,7 @@ get_header(); ?>
 											<div class="photo">
 												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/designers.jpg" alt="employee headshot">
 											</div>
-											<figcaption><span>UX</span>&nbsp;+&nbsp;Interface Designers</figcaption>
+											<figcaption><span>UX</span>&nbsp;+&nbsp;Interface<br>Designers</figcaption>
 										</figure>
 									</li>
 									<li>
@@ -524,7 +530,7 @@ get_header(); ?>
 											<div class="photo">
 												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/developers.jpg" alt="employee headshot">
 											</div>
-											<figcaption>Front-end Developers</figcaption>
+											<figcaption>Front-end<br>Developers</figcaption>
 										</figure>
 									</li>
 									<li>
@@ -532,7 +538,7 @@ get_header(); ?>
 											<div class="photo">
 												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/analysts.jpg" alt="employee headshot">
 											</div>
-											<figcaption>Data Analysts</figcaption>
+											<figcaption>Data<br>Analysts</figcaption>
 										</figure>
 									</li>
 								</ul>
