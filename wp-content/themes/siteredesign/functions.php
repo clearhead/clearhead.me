@@ -54,7 +54,7 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  */
 function siteredesign_scripts_and_styles() {
 
-	wp_enqueue_style( 'siteredesign-style', get_stylesheet_uri(), false, '201607200320'));
+	wp_enqueue_style( 'siteredesign-style', get_stylesheet_uri(), false, '201607200320');
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 
