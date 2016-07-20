@@ -405,7 +405,7 @@
           <h4 class="heading-4--purple">finding #9</h4>
           <h2 class="heading-2">Why do we emulate? <span>We lack the people <br>or time to validate decisions.</span></h2>
           <p>It’s no secret that many organizations are attempting to do more with less, and this was heard loud and clear in our survey results. When respondents weren’t able to use data to validate assumptions going into a redesign, the primary reason was lack of resources (55%), followed by a lack of time (31%).</p>
-          <h3 class="heading-3">When you haven't used data to validate your assumptions during a redesign, what were the primary reasons?</h3><img src="images/svg/f9-table.svg">
+          <h3 class="heading-3">When you haven't used data to validate your assumptions during a redesign, what were the primary reasons?</h3><img src="<?php bloginfo('template_url'); ?>/images/svg/f9-table.svg">
         </div>
         <div class="quote-wrap">
           <p>“We thought we knew what customers wanted to hear about our products, but it was hard to make decisions about priority. Lots of back and forth on comps.”</p><span>- Matt Kritzer, VP Ecommerce and Online Marketing, Tommy John</span>
