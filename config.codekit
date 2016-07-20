@@ -63,6 +63,15 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/test\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/test\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-activate.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -21202,6 +21211,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/js\/min\/parallax-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/parallax-min.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/min\/parallax-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/js\/min\/site-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -21219,6 +21239,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/navigation.js",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/navigation-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/js\/parallax.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/parallax.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/parallax-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

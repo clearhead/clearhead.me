@@ -30,6 +30,9 @@
 
 	<?php wp_head(); ?>
 
+	<?php if ( is_front_page() ): ?>
+		<script src="<?php bloginfo('stylesheet_directory'); ?>/js/parallax.js" alt="blu dot"></script>
+	<?php endif; ?>
 </head>
 
 <body <?php body_class(); ?>>

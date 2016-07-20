@@ -110,11 +110,12 @@
 // Photo Callout
 // -------------
 .photo-callout {
-    background-color: darken($gray, 7.5%);
+    // background-color: darken($gray, 7.5%);
+    background-color: transparent;
     padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // background-repeat: no-repeat;
     .container {
         display: flex;
         align-items: center;
@@ -131,30 +132,30 @@
         padding: 0.75em 0.5em 0.65625em;
     }
     &-blue {
-        background-color: darken(#B6E1EC, 7.5%);
-        background-image: url('img/callout-photos/what-we-do.jpg');
-        @include w1000 {
-            background-position: center calc(50% - 2.8125em);
-        }
+        // background-color: darken(#B6E1EC, 7.5%);
+        // background-image: url('img/callout-photos/what-we-do.jpg');
+        // @include w1000 {
+        //     background-position: center calc(50% - 2.8125em);
+        // }
         h3 {
             background-color: #BFE1EB;
             color: $dark-blue;
         }
     }
     &-orange {
-        background-color: darken(#F7B182, 7.5%);
-        background-image: url('img/callout-photos/who-we-do-it-with.jpg');
-        @include w1000 {
-            background-position: center calc(50% + 1em);
-        }
+        // background-color: darken(#F7B182, 7.5%);
+        // background-image: url('img/callout-photos/who-we-do-it-with.jpg');
+        // @include w1000 {
+        //     background-position: center calc(50% + 1em);
+        // }
         h3 {
             background-color: #EEB48A;
             color: #AB442A;
         }
     }
     &-purple {
-        background-color: darken($light-purple, 7.5%);
-        background-image: url('img/callout-photos/who-we-are.jpg');
+        // background-color: darken($light-purple, 7.5%);
+        // background-image: url('img/callout-photos/who-we-are.jpg');
         h3 {
             background-color: $light-purple;
             color: $dark-purple;
@@ -428,14 +429,14 @@
         flex-direction: row;
     }
     .client {
+        margin-right: 2.390625em;
         flex-shrink: 0;
         order: 2;
         display: flex;
         align-items: center;
         @include w480 {
-            order: 0;
             display: block;
-            margin-right: 2.390625em;
+            order: 0;
             width: 7.75em;
         }
         .info {
@@ -453,7 +454,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-shrink: 0;
 
             font-size: 75%;
             @include w480 {
@@ -509,12 +509,14 @@
 
             bottom: -42px;
             left: 36px;
+            // background-color: red;
             transform: rotate(-90deg);
             @include w480 {
                 left: -36px;
                 top: 54px;
                 bottom: auto;
-                transform: none;
+                transform: rotate(-90deg);
+
             }
         }
         blockquote {

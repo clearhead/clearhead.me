@@ -366,12 +366,6 @@ article .author-meta h3 {
   .dn_w1000 {
     display: none; } }
 
-header, section, footer {
-  max-width: 100vw; }
-
-section, footer {
-  overflow-x: hidden; }
-
 header {
   width: 100%;
   color: #313335;
@@ -945,11 +939,8 @@ section {
         max-width: none; } }
 
 .photo-callout {
-  background-color: #ccd0d0;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: transparent;
+  padding: 0; }
   .photo-callout .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -973,30 +964,15 @@ section {
     text-align: center;
     line-height: 1.2;
     padding: 0.75em 0.5em 0.65625em; }
-  .photo-callout-blue {
-    background-color: #98d5e4;
-    background-image: url("img/callout-photos/what-we-do.jpg"); }
-    @media screen and (min-width: 62.5em) {
-      .photo-callout-blue {
-        background-position: center calc(50% - 2.8125em); } }
-    .photo-callout-blue h3 {
-      background-color: #BFE1EB;
-      color: #19748f; }
-  .photo-callout-orange {
-    background-color: #f59b5e;
-    background-image: url("img/callout-photos/who-we-do-it-with.jpg"); }
-    @media screen and (min-width: 62.5em) {
-      .photo-callout-orange {
-        background-position: center calc(50% + 1em); } }
-    .photo-callout-orange h3 {
-      background-color: #EEB48A;
-      color: #AB442A; }
-  .photo-callout-purple {
-    background-color: #a47fba;
-    background-image: url("img/callout-photos/who-we-are.jpg"); }
-    .photo-callout-purple h3 {
-      background-color: #B698C7;
-      color: #49286D; }
+  .photo-callout-blue h3 {
+    background-color: #BFE1EB;
+    color: #19748f; }
+  .photo-callout-orange h3 {
+    background-color: #EEB48A;
+    color: #AB442A; }
+  .photo-callout-purple h3 {
+    background-color: #B698C7;
+    color: #49286D; }
 
 .solutions-list {
   margin-top: 1.875em; }
@@ -1303,6 +1279,7 @@ section {
           -ms-flex-direction: row;
               flex-direction: row; } }
   .client-testimonial .client {
+    margin-right: 2.390625em;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
@@ -1320,12 +1297,11 @@ section {
             align-items: center; }
     @media screen and (min-width: 30em) {
       .client-testimonial .client {
+        display: block;
         -webkit-box-ordinal-group: 1;
         -webkit-order: 0;
             -ms-flex-order: 0;
                 order: 0;
-        display: block;
-        margin-right: 2.390625em;
         width: 7.75em; } }
     .client-testimonial .client .info {
       margin-left: 1em;
@@ -1350,9 +1326,6 @@ section {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -webkit-flex-shrink: 0;
-          -ms-flex-negative: 0;
-              flex-shrink: 0;
       font-size: 75%; }
       @media screen and (min-width: 30em) {
         .client-testimonial .client .logo {
@@ -1404,8 +1377,8 @@ section {
           left: -36px;
           top: 54px;
           bottom: auto;
-          -webkit-transform: none;
-                  transform: none; } }
+          -webkit-transform: rotate(-90deg);
+                  transform: rotate(-90deg); } }
     .client-testimonial .testimonial blockquote {
       letter-spacing: -0.0305555556em; }
 
