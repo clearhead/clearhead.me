@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="apple-touch-fullscreen" content="yes">
-    <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css">
     <title>Clearhead</title>
     <meta name="description" value=""><script src="https://use.typekit.net/erk8dkx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -19,6 +18,7 @@
     <meta name="twitter:title" content="Clearhead">
     <meta name="twitter:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
     <meta name="twitter:image" content="">
+    <?php wp_head(); ?>
   </head>
 </html>
 <body class="ch-report">
