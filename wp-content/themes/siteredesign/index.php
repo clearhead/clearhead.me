@@ -47,10 +47,10 @@
   <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered hero-wrap">
     <div class="grid-row heading-wrap">
       <div class="gs--full">
-        <h3 class="heading-3">Ecommerce Redesign Study 2016</h3>
+        <h2 class="heading-2--blue">The State of Ecommerce Redesigns in 2016</h2>
       </div>
       <div class="gs--full">
-        <h2 class="heading-2--blue">How Data Driven Are We?</h2>
+        <h3 class="heading-3">How Data-Driven Are We?</h3>
       </div>
     </div>
   </section>
@@ -405,7 +405,7 @@
           <h4 class="heading-4--purple">finding #9</h4>
           <h2 class="heading-2">Why do we emulate? <span>We lack the people <br>or time to validate decisions.</span></h2>
           <p>It’s no secret that many organizations are attempting to do more with less, and this was heard loud and clear in our survey results. When respondents weren’t able to use data to validate assumptions going into a redesign, the primary reason was lack of resources (55%), followed by a lack of time (31%).</p>
-          <h3 class="heading-3">When you haven't used data to validate your assumptions during a redesign, what were the primary reasons?</h3><img src="<?php bloginfo('template_url'); ?>/images/svg/f9-table.svg">
+          <h3 class="heading-3">When you haven't used data to validate your assumptions during a redesign, what were the primary reasons?</h3><img src="images/svg/f9-table.svg">
         </div>
         <div class="quote-wrap">
           <p>“We thought we knew what customers wanted to hear about our products, but it was hard to make decisions about priority. Lots of back and forth on comps.”</p><span>- Matt Kritzer, VP Ecommerce and Online Marketing, Tommy John</span>
@@ -822,6 +822,11 @@
             </div>
           </div>
         </div>
+        <div class="gs--full final-text">
+          <p>As our survey revealed, site redesigns--from the reasons they begin to the end goals they serve to the very definition itself--are rapidly evolving. Many organizations have difficulty defining their goals and success, and many are gaining inspiration from past experience or the outside. </p>
+          <p>Going forward, with the proliferation of technology, data and a more focused spotlight on UX, daring brands can engage ‘change the business’ redesigns with ‘run the business’ confidence. </p>
+          <p>We hope this small peek into the world of your peers brings you a bit of confidence as you begin the journey toward your next redesign - whatever your definition of the word may be.</p>
+        </div>
         <div class="gs--full contact-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" class="btn">download the full report (pdf)</a>
           <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
           <form>
@@ -831,11 +836,6 @@
             <button type="submit">let’s connect!</button>
           </form>
         </div>
-        <div class="gs--full final-text">
-          <p>As our survey revealed, site redesigns--from the reasons they begin to the end goals they serve to the very definition itself--are rapidly evolving. Many organizations have difficulty defining their goals and success, and many are gaining inspiration from past experience or the outside. </p>
-          <p>Going forward, with the proliferation of technology, data and a more focused spotlight on UX, daring brands can engage ‘change the business’ redesigns with ‘run the business’ confidence. </p>
-          <p>We hope this small peek into the world of your peers brings you a bit of confidence as you begin the journey toward your next redesign - whatever your definition of the word may be.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -844,10 +844,10 @@
       <div class="gs--full text-wrap">
         <h3 class="heading-3">Hungry for more? Check out these articles from the founders at Clearhead:</h3>
         <ul>
-          <li><a href="">A Call to Arms for Data-Driven Redesigns</a></li>
-          <li><a href="">Problem and Solution Mapping: A Primer for Your Digital Dial Tone</a></li>
-          <li><a href="">4 Steps to Create a Test Before Invest Digital Innovation Plan</a></li>
-          <li><a href="">Mythbusting the Magic Science of Optimization</a></li>
+          <li><a href="http://clearhead.me/blog/a-call-to-arms-for-data-driven-redesigns/">A Call to Arms for Data-Driven Redesigns</a></li>
+          <li><a href="http://clearhead.me/blog/problem-solution-mapping-primer-digital-dial-tone/">Problem and Solution Mapping: A Primer for Your Digital Dial Tone</a></li>
+          <li><a href="http://clearhead.me/blog/4-steps-to-create-a-test-before-invest-digital-innovation-plan/">4 Steps to Create a Test Before Invest Digital Innovation Plan</a></li>
+          <li><a href="http://clearhead.me/blog/mythbusting-the-magic-science-of-optimization/">Mythbusting the Magic Science of Optimization</a></li>
         </ul>
       </div>
       <div class="gs--full about-wrap">
