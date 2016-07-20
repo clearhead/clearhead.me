@@ -202,10 +202,10 @@ body.ch-report section.hero-wrap {
     body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
       padding-top: 0.0454545455em;
       letter-spacing: -0.4px;
-      font-size: 1.6em; }
-      @media (min-width: 48.75em) {
+      font-size: 1.25em; }
+      @media (min-width: 64em) {
         body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
-          font-size: 2.1em; } }
+          font-size: 1.5em; } }
 @media (min-width: 64em) {
   body.ch-report section.intro {
     padding-right: 4em; } }
@@ -630,6 +630,9 @@ body.ch-report section.principles ul.purple-bars {
       padding: 0 0.75em 0 1em; }
 body.ch-report section.principles .future-item {
   margin-top: 2.2em; }
+  body.ch-report section.principles .future-item:last-of-type {
+    padding-bottom: 2.5em;
+    border-bottom: 1px solid RGBA(49, 51, 53, 0.2); }
   body.ch-report section.principles .future-item .question {
     margin-bottom: 0.75em; }
     body.ch-report section.principles .future-item .question p {
@@ -659,9 +662,7 @@ body.ch-report section.principles .future-item {
     body.ch-report section.principles .future-item .active.section-toggle .min {
       display: flex; }
 body.ch-report section.principles .contact-wrap {
-  margin-bottom: 2em;
-  padding: 2.15em 0;
-  border-bottom: 1px solid RGBA(49, 51, 53, 0.2); }
+  padding: 2.15em 0 0; }
   body.ch-report section.principles .contact-wrap .heading-4, body.ch-report section.principles .contact-wrap h1.heading-4--purple, body.ch-report section.principles .contact-wrap h2.heading-4--purple, body.ch-report section.principles .contact-wrap h3.heading-4--purple, body.ch-report section.principles .contact-wrap h4.heading-4--purple, body.ch-report section.principles .contact-wrap h5.heading-4--purple, body.ch-report section.principles .contact-wrap h6.heading-4--purple, body.ch-report section.principles .contact-wrap li.heading-4--purple, body.ch-report section.principles .contact-wrap p.heading-4--purple, body.ch-report section.principles .contact-wrap a.heading-4--purple, body.ch-report section.principles .contact-wrap small.heading-4--purple, body.ch-report section.principles .contact-wrap span.heading-4--purple, body.ch-report section.principles .contact-wrap blockquote.heading-4--purple, body.ch-report section.principles .contact-wrap cite.heading-4--purple, body.ch-report section.principles .contact-wrap input.heading-4--purple, body.ch-report section.principles .contact-wrap label.heading-4--purple {
     font-size: 1.05em;
     line-height: 1.5;
@@ -724,7 +725,7 @@ body.ch-report section.principles .contact-wrap {
     margin-bottom: 2.15em;
     transition: all 0.1875s ease; }
 body.ch-report section.principles .final-text {
-  margin-top: 1.25em; }
+  margin-top: 2.25em; }
 body.ch-report footer {
   background: rgba(229, 238, 244, 0.7); }
   body.ch-report footer .heading-3, body.ch-report footer h1.heading-3--upper, body.ch-report footer h2.heading-3--upper, body.ch-report footer h3.heading-3--upper, body.ch-report footer h4.heading-3--upper, body.ch-report footer h5.heading-3--upper, body.ch-report footer h6.heading-3--upper, body.ch-report footer li.heading-3--upper, body.ch-report footer p.heading-3--upper, body.ch-report footer a.heading-3--upper, body.ch-report footer small.heading-3--upper, body.ch-report footer span.heading-3--upper, body.ch-report footer blockquote.heading-3--upper, body.ch-report footer cite.heading-3--upper, body.ch-report footer input.heading-3--upper, body.ch-report footer label.heading-3--upper {
