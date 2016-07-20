@@ -44,10 +44,10 @@
       </a>
     </div>
   </nav>
-  <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered hero-wrap">
+  <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered grid-row-padding--short hero-wrap">
     <div class="grid-row heading-wrap">
       <div class="gs--full">
-        <h2 class="heading-2--blue">The State of Ecommerce Redesigns in 2016</h2>
+        <h2 class="heading-2--blue">The State of Ecommerce Redesigns&nbsp;in&nbsp;2016</h2>
       </div>
       <div class="gs--full">
         <h3 class="heading-3">How Data-Driven Are We?</h3>
