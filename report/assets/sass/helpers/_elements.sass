@@ -41,14 +41,18 @@ body.ch-report
     background-position: top center
     background-repeat: no-repeat
     .heading-wrap
-      padding: .75em .25em
+      padding: .75em
       margin-top: .5em
       background: white
       text-align: center
       // width: 80%
       max-width: 780px
+      @media (min-width: 33.0625em)
+        padding: .75em 3em
+      @media (min-width: 38.4375em)
+        padding: .75em 4em
       +medium
-        padding: 1em 0
+        padding: 1em
         // height: 6em
         // width: 76%
       .heading-3
@@ -61,14 +65,18 @@ body.ch-report
       .heading-2
         padding: 0.04545454545em 0 .325em
         letter-spacing: -.4px
-        font-size: 1.15em
+        font-size: 1.25em
         line-height: 1.15em
         +small
           font-size: 1.35em
+        @media (min-width: 20.6875em)
+          font-size: 1.3em
         +medium
           font-size: 1.9em
         +large
           font-size: 2.1em
+        @media (min-width: 48.75em)
+          font-size: 1.9em
         // +x-large
         //   font-size: 2.1em
 

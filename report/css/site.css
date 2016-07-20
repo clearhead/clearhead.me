@@ -184,14 +184,20 @@ body.ch-report section.hero-wrap {
   background-position: top center;
   background-repeat: no-repeat; }
   body.ch-report section.hero-wrap .heading-wrap {
-    padding: 0.75em 0.25em;
+    padding: 0.75em;
     margin-top: 0.5em;
     background: white;
     text-align: center;
     max-width: 780px; }
+    @media (min-width: 33.0625em) {
+      body.ch-report section.hero-wrap .heading-wrap {
+        padding: 0.75em 3em; } }
+    @media (min-width: 38.4375em) {
+      body.ch-report section.hero-wrap .heading-wrap {
+        padding: 0.75em 4em; } }
     @media (min-width: 38.75em) {
       body.ch-report section.hero-wrap .heading-wrap {
-        padding: 1em 0; } }
+        padding: 1em; } }
     body.ch-report section.hero-wrap .heading-wrap .heading-3, body.ch-report section.hero-wrap .heading-wrap h1.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h2.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h3.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h4.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h5.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap h6.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap li.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap p.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap a.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap small.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap span.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap cite.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap input.heading-3--upper, body.ch-report section.hero-wrap .heading-wrap label.heading-3--upper {
       letter-spacing: -0.3px;
       color: rgba(49, 51, 53, 0.9);
@@ -202,17 +208,23 @@ body.ch-report section.hero-wrap {
     body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
       padding: 0.0454545455em 0 0.325em;
       letter-spacing: -0.4px;
-      font-size: 1.15em;
+      font-size: 1.25em;
       line-height: 1.15em; }
       @media (min-width: 20.625em) {
         body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
           font-size: 1.35em; } }
+      @media (min-width: 20.6875em) {
+        body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
+          font-size: 1.3em; } }
       @media (min-width: 38.75em) {
         body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
           font-size: 1.9em; } }
       @media (min-width: 48.75em) {
         body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
           font-size: 2.1em; } }
+      @media (min-width: 48.75em) {
+        body.ch-report section.hero-wrap .heading-wrap .heading-2, body.ch-report section.hero-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap li.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap p.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap a.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap small.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap span.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap input.heading-2--blue, body.ch-report section.hero-wrap .heading-wrap label.heading-2--blue {
+          font-size: 1.9em; } }
 @media (min-width: 64em) {
   body.ch-report section.intro {
     padding-right: 4em; } }
