@@ -29,10 +29,6 @@
 	<meta name="google-site-verification" content="rOVbTCkNzfmtGVaB3SNC3RQvDzAq88fhCv8fTG4mBbY" />
 
 	<?php wp_head(); ?>
-
-	<?php if ( is_front_page() ): ?>
-		<script src="<?php bloginfo('stylesheet_directory'); ?>/js/parallax.js" alt="blu dot"></script>
-	<?php endif; ?>
 </head>
 
 <body <?php body_class(); ?>>
