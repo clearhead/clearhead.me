@@ -90,7 +90,7 @@ html, button, input, p {
   font-style: normal;
   font-weight: 400; }
 
-h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 p.text3, body.ch-report section.keyfind .finding-5 .text-wrap .text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report section.principles .contact-wrap .btn, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p {
+h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 p.text3, body.ch-report section.keyfind .finding-5 .text-wrap .text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button, body.ch-report .share-button p, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p, body.ch-report .share-button {
   font-family: "ff-bau-web-pro", sans-serif; }
 
 html {
@@ -408,10 +408,16 @@ body.ch-report section.keyfind .finding-3 {
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .finding-3 .data-wrap {
         margin-bottom: 2.75em; } }
+  body.ch-report section.keyfind .finding-3 .share-button {
+    margin-left: 2em; }
   body.ch-report section.keyfind .finding-3 img {
     padding: 1em 1em 0 1em; }
   body.ch-report section.keyfind .finding-3 li {
     margin: 0.75em 0; }
+    body.ch-report section.keyfind .finding-3 li:first-of-type {
+      margin-bottom: 0; }
+    body.ch-report section.keyfind .finding-3 li:nth-of-type(2) {
+      margin-top: 0; }
 body.ch-report section.keyfind .finding-4 p span {
   font-weight: 600; }
 body.ch-report section.keyfind .finding-4 p.text3 {
@@ -561,6 +567,8 @@ body.ch-report section.keyfind .finding-8 .heading-wrap {
   margin-bottom: 1.25em; }
   body.ch-report section.keyfind .finding-8 .heading-wrap .heading-2 span, body.ch-report section.keyfind .finding-8 .heading-wrap h1.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h2.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h3.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h4.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h5.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h6.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap li.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap p.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap a.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap small.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap span.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap blockquote.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap cite.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap input.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap label.heading-2--blue span {
     font-style: italic; }
+body.ch-report section.keyfind .finding-8 a {
+  margin: 0; }
 @media (min-width: 38.75em) {
   body.ch-report section.keyfind .finding-8 .image-wrap {
     margin-right: 1.8em; } }
@@ -580,6 +588,9 @@ body.ch-report section.keyfind .finding-8 .list-wrap {
       body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li:before {
         content: "•";
         padding-right: 1em; }
+      body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li:nth-of-type(2):before {
+        content: " ";
+        padding-right: 1.35em; }
 body.ch-report section.keyfind .finding-9 {
   padding-bottom: 3.5em; }
   body.ch-report section.keyfind .finding-9 .heading-wrap {
@@ -719,32 +730,46 @@ body.ch-report section.principles .contact-wrap {
     @media (min-width: 38.75em) {
       body.ch-report section.principles .contact-wrap input {
         width: initial; } }
-  body.ch-report section.principles .contact-wrap button, body.ch-report section.principles .contact-wrap .btn {
-    padding: 0.75em 1em;
-    background: #32c4f5;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    letter-spacing: -0.2px;
-    flex-shrink: 0;
-    width: 100%; }
-    @media (min-width: 38.75em) {
-      body.ch-report section.principles .contact-wrap button, body.ch-report section.principles .contact-wrap .btn {
-        width: initial;
-        align-self: stretch;
-        padding: 0 1em;
-        transition: all 0.1875s ease; }
-        body.ch-report section.principles .contact-wrap button:hover, body.ch-report section.principles .contact-wrap .btn:hover {
-          background: #19748f; } }
-  body.ch-report section.principles .contact-wrap .btn {
-    padding: 0.75em 1em;
-    display: block;
-    width: 18em;
-    text-align: center;
-    margin-bottom: 2.15em;
-    transition: all 0.1875s ease; }
+body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button {
+  padding: 0.75em 1em;
+  background-color: #32c4f5;
+  border: 0;
+  color: white;
+  cursor: pointer;
+  letter-spacing: -0.2px;
+  flex-shrink: 0; }
+  @media (min-width: 38.75em) {
+    body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button {
+      width: initial;
+      align-self: stretch;
+      padding: 0 1em;
+      transition: all 0.1875s ease; }
+      body.ch-report section.principles button:hover, body.ch-report section.principles .btn:hover, body.ch-report section.principles .share-button:hover {
+        background-color: #19748f; } }
+body.ch-report section.principles .btn {
+  padding: 0.75em 1em;
+  display: block;
+  width: 18em;
+  text-align: center;
+  margin-bottom: 2.15em;
+  transition: all 0.1875s ease; }
 body.ch-report section.principles .final-text {
   margin-top: 2.25em; }
+body.ch-report .share-button {
+  width: 9em;
+  font-size: 0.875em;
+  margin-top: 0.375em;
+  transition: all 0.1875s ease; }
+  body.ch-report .share-button .button-wrap {
+    display: flex;
+    align-items: center; }
+  body.ch-report .share-button p {
+    margin-top: 0.15em; }
+  body.ch-report .share-button svg {
+    width: 0.875em; }
+  body.ch-report .share-button:hover {
+    color: white;
+    background: #19748f; }
 body.ch-report footer {
   background: rgba(229, 238, 244, 0.7); }
   body.ch-report footer .heading-3, body.ch-report footer h1.heading-3--upper, body.ch-report footer h2.heading-3--upper, body.ch-report footer h3.heading-3--upper, body.ch-report footer h4.heading-3--upper, body.ch-report footer h5.heading-3--upper, body.ch-report footer h6.heading-3--upper, body.ch-report footer li.heading-3--upper, body.ch-report footer p.heading-3--upper, body.ch-report footer a.heading-3--upper, body.ch-report footer small.heading-3--upper, body.ch-report footer span.heading-3--upper, body.ch-report footer blockquote.heading-3--upper, body.ch-report footer cite.heading-3--upper, body.ch-report footer input.heading-3--upper, body.ch-report footer label.heading-3--upper {
@@ -808,6 +833,14 @@ body.ch-report a {
   transition: color 0.1875s ease; }
   body.ch-report a:hover {
     color: #19748f; }
+body.ch-report .share-button {
+  display: flex;
+  align-items: center;
+  background: #32c4f5;
+  color: white;
+  padding: 0.5em; }
+  body.ch-report .share-button svg {
+    margin-right: 0.5em; }
 body.ch-report .title-wrap {
   background: RGBA(182, 152, 199, 0.3);
   height: 4.75em; }
