@@ -7,28 +7,29 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css">
     <title>Clearhead</title>
     <meta name="description" value=""><script src="https://use.typekit.net/erk8dkx.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-    <meta property="og:url" content="http://hatchedtv.com">
+    <script>try{Typekit.load();}catch(e){}</script>
+    <meta property="og:url" content="http://clearhead.me">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="HatchedTV">
-    <meta property="og:description" content="The new entrepreneurial show that gives American inventors – with a special focus on teens, moms, and minority owners – an exciting and educational opportunity of a lifetime.">
-    <meta property="og:image" content="http://hatchedtv.com/images/herobg.png">
+    <meta property="og:title" content="Clearhead">
+    <meta property="og:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
+    <meta property="og:image" content="">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@hatchedtv">
-    <meta name="twitter:creator" content="@hatchedtv">
-    <meta name="twitter:title" content="HatchedTV">
-    <meta name="twitter:description" content="The new entrepreneurial show that gives American inventors – with a special focus on teens, moms, and minority owners – an exciting and educational opportunity of a lifetime.">
-    <meta name="twitter:image" content="http://hatchedtv.com/images/herobg.png">
+    <meta name="twitter:site" content="@clearheadme">
+    <meta name="twitter:creator" content="@clearheadme">
+    <meta name="twitter:title" content="Clearhead">
+    <meta name="twitter:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
+    <meta name="twitter:image" content="">
   </head>
 </html>
 <body class="ch-report">
-  <nav class="grid-row nav-wrap grid-row-padding--short">
-    <div class="grid-row ch-wrap"><a href="">
-        <h5 class="heading-5">clearhead.me</h5></a><a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/launch-icon.svg"></a></div>
+  <nav class="grid-row-width--wide grid-row nav-wrap grid-row-padding--short">
+    <div class="grid-row ch-wrap"><a href="http://clearhead.me">
+        <h5 class="heading-5">clearhead.me</h5></a>
+	<a href="http://clearhead.me"><img src="<?php bloginfo('template_url'); ?>/images/svg/launch-icon.svg"></a></div>
     <div class="grid-row social-wrap">
-      <a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/facebook-icon.svg"></a>
-      <a href=""><img src="<?php bloginfo('template_url'); ?>/images/svg/twitter-icon.svg"></a>
-      <a href="">
+      <a href="https://www.facebook.com/ClearheadMe"><img src="<?php bloginfo('template_url'); ?>/images/svg/facebook-icon.svg"></a>
+      <a href="http://twitter.com/clearheadme"><img src="<?php bloginfo('template_url'); ?>/images/svg/twitter-icon.svg"></a>
+      <a href="https://www.linkedin.com/company/clearhead-group-llc">
         <svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
           <title>LinkedIn</title>
@@ -53,7 +54,7 @@
       </div>
     </div>
   </section>
-  <section class="grid-row grid-row-padding--full intro">
+  <section class="grid-row grid-row-padding--full grid-row-width--wide intro">
     <p>In a world where digital products can be iteratively changed and continuously optimized, it’s still commonplace for organizations to undertake disruptive full site or product redesign projects in shorter, specific time boxes. These projects are generally incredibly resource intensive and carry a high degree of risk and reward. </p>
     <p>While so much about digital consumer and business behavior has changed in the last 20 years, it seems that the redesign, as a project and practice, has survived significantly intact for many businesses. With investments this sizable, we wanted to gain clarity on the ecommerce website redesign process including the motivations for their undertaking, the extent to which data is injected into the process, how success is defined and measured and the problem patterns that frequently emerge. </p>
     <p>Clearhead, an award-winning digital optimization company, frequently partners with leading ecommerce brands to create better customer experiences through testing and personalization driven by data. With that in mind, we decided to go straight to the source. We connected with over 200 ecommerce leaders who have been through multiple resigns in their careers to better understand how redesigns are contemplated and executed today. </p>
@@ -70,7 +71,8 @@
       <li><p class="ol">9</p> Where do executives versus managers differ on these questions?</li>
     </ol>
     <div class="grid-row grid-row-children-alignment--centered table-wrap">
-      <h3 class="heading-3">We talked to <span>203 participants</span></h3><img src="<?php bloginfo('template_url'); ?>/images/svg/participants-chart.svg">
+      <h3 class="heading-3">We talked to <span>203 participants</span></h3>
+	<div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/participants-chart.svg"></div>
     </div>
     <div class="gs--full thanks-wrap">
       <h4 class="heading-4">special thanks to</h4>
@@ -91,7 +93,7 @@
     <div class="grid-row grid-row-children-alignment--centered title-wrap">
       <h1 class="heading-1">Key Findings</h1>
     </div>
-    <div class="grid-row grid-row-padding--full">
+    <div class="grid-row grid-row-padding--full grid-row-width--wide">
       <div class="grid-row grid-row-children-alignment--centered item-wrap finding-1">
         <div class="gs--full heading-wrap">
           <h4 class="heading-4--purple">finding #1</h4>
@@ -174,7 +176,7 @@
         <div class="gs--full">
           <div class="grid-row data-wrap">
             <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f3-img-new.svg"></div>
-            <div class="gs--half text-wrap">
+            <div class="gs--full gm--half text-wrap">
               <p>Respondents were able to select from many reasons as the “best reasons” to start a redesign. The most popular reasons (selected by 60% or greater respondents) were:</p>
               <ul>
                 <li><p class="ol">1</p> Change in market/customer behavior</li>
@@ -198,25 +200,22 @@
           <p>However, 20% reported that “<span>Executive Desire for a Change</span>” was the actual reason for their last redesign.</p>
         </div>
         <div class="grid-row vs-wrap">
-          <div class="guy-wrap">
-            <div class="grid-row data-wrap">
-              <div class="gs--thirdx2">
-                <div class="grid-row text-wrap">
-                  <h1 class="heading-1">6<span>%</span></h1><span class="text3">suggest “executive desire for change” is the best reason for a redesign</span>
-                </div>
+          <div class="desk-guys">
+            <div class="gm--fourth text-wrap-right">
+              <div class="text-wrap">
+                <h1 class="heading-1">6<span>%</span></h1>
+                <p class="text3">suggest “executive desire for change” is the best reason for a redesign</p>
               </div>
-              <div class="gs--third image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-little-guy.svg"></div>
             </div>
-          </div>
-          <h1 class="heading-1--lightblue">vs</h1>
-          <div class="guy-wrap">
-            <div class="grid-row data-wrap">
+            <div class="images-wrap">
+              <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-little-guy.svg"></div>
+              <h1 class="heading-1--lightblue">vs</h1>
               <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-big-guy.svg"></div>
-              <div class="gs--thirdx2 text-wrap">
-                <div class="gs--full">
-                  <h1 class="heading-1">20<span>%</span></h1>
-                </div>
-                <div class="gs--full"><span class="text3">report that “executive desire for change” is the actual reason for a redesign</span></div>
+            </div>
+            <div class="gm--fourth text-wrap-left">
+              <div class="text-wrap">
+                <h1 class="heading-1">20<span>%</span></h1>
+                <p class="text3">report that “executive desire for change” is the actual reason for a redesign</p>
               </div>
             </div>
           </div>
@@ -304,8 +303,12 @@
                 </div>
                 <div class="gs--half text-wrap">
                   <div class="gs--full"><span class="text1">stale site?</span></div>
-                  <div class="gs--full"><span class="text2">43%</span></div>
-                  <div class="gs--full"><span class="text3">claimed the biggest driver for a site redesign was that “the site has become stale”.</span></div>
+                  <div class="gs--full">
+                    <h1 class="heading-1">43<span>%</span></h1>
+                  </div>
+                  <div class="gs--full">
+                    <p class="text3">claimed the biggest driver for a site redesign was that “the site has become stale”.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -463,10 +466,10 @@
     </div>
   </section>
   <section class="principles">
-    <div class="grid-row grid-row-children-alignment--centered title-wrap">
+    <div class="grid-row grid-row-children-alignment--centered grid-row-padding--sides-only title-wrap">
       <h1 class="heading-1">Nine Principles of Future Redesigns</h1>
     </div>
-    <div class="grid-row grid-row-padding--full section-wrap">
+    <div class="grid-row grid-row-padding--full grid-row-width--wide section-wrap">
       <div class="grid-row grid-row-children-alignment--centered">
         <div class="gs--full margin-wrap">
           <p>The next era of redesigns may prove more difficult. </p>
@@ -477,7 +480,7 @@
             <div class="gs--full gm--thirdx2 text-wrap">
               <p>“Now the bar is higher. We were like the Cleveland Browns and made it to the Dallas Cowboys. We’re in the game now. We’re not yet the New England Patriots. Getting the rest of the way to the Superbowl of retailers is a harder path.”</p>
             </div>
-            <div class="gs--full gm--third image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/principles-helmets.png"></div>
+            <div class="gs--full gm--third image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/principles-helmets.png" class="helmet"></div>
           </div><span>- Shawn Freeman, formerly SVP Global Digital Technology and Operations, Ralph Lauren and SVP and GM Digital Business, GameStop</span>
         </div>
         <div class="gs--full">
@@ -501,7 +504,34 @@
               <p>A big-bang redesign creates risk and ambiguity. The risk is in making many decisions that go into one launch,  lowering the opportunity to validate each with customer feedback and data before launch. Second, performance ambiguity is created because it’s difficult to deconstruct what worked and what didn’t after an all-in-one launch. </p>
               <p>In contrast, we may see a broadening of the definition of “redesigns” in the future, evolving to include an increasingly popular iterative approach to validating priorities and UX decisions, testing, launching, and repeating that process for different parts of the site. This modern approach will allow each phase to have more confidence coming in and more data coming out on the impact. </p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -510,7 +540,34 @@
             <div class="answer">
               <p>Hand-in-hand with an iterative redesign approach is an increasing capability to validate performance of UX decisions prior to launch. This can be done through wireframe testing (online or in person) or A/B testing a new UX. While we can look to UX “best practices” as a hypothesis to a customer problem, there will be increased appetite to test the impact of a best practice in a different business and customer context. </p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -519,7 +576,34 @@
             <div class="answer">
               <p>With higher customer expectations, competition and slim margins, there is high pressure to drive profitable growth. At the same time, this is one of the biggest digital investments a company can make. We expect it to increasingly be asked "did it work?" and "was it worth it?" and for executives and participants to be required to answer clearly against the definition. We expect to see more definitions of success being tied to financial results. But moreover, we also expect to see the definition of success clarified and communicated more broadly as redesigns take an iterative approach and digital teams cross omnichannel boundaries.</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -528,7 +612,34 @@
             <div class="answer">
               <p>As the success metrics of an increasing number of iterative redesigns get more defined, it will also be possible to get more detailed measures of performance improvement. In each phase, the performance of decisions and return on investments will be forecasted and targets set for improvements in conversion, average order value and other KPIs. As such, executives will be able to build more confidence in the results of their “change the business” activities.</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -537,7 +648,34 @@
             <div class="answer">
               <p>75% of respondents chose UX research and design as a critical capability going into a redesign, and it was also reported as the most lacking capability. If we agree future redesigns will require even higher confidence for performance, we anticipate a shift of budget and resources to increase the understanding of the key customer experience problems and how to solve them with higher confidence.</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -546,7 +684,34 @@
             <div class="answer">
               <p>If the last redesigns were largely about mobile UX improvements, we believe future redesigns will be made with personalization in mind. There is as much appetite as there is ambiguity around personalizing content and experiences for key customer segments based on referral source, prior purchases, customer value, preferences, and more. Defining the opportunities based on segments will be a key factor in UX and technology decisions in the next redesign. Further, organizations will take a more “service” based approach to features and experiences, leveraging APIs, data layers & algorithms more to drive the experiences versus features and widgets.</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -555,7 +720,34 @@
             <div class="answer">
               <p>While many recent redesigns focused on creating an adaptive, mobile experience, the next redesign will benefit from understanding how visitors are using the new the mobile experience. As a result, we will further optimize experiences and ability to accomplish tasks between devices. In other words, our focus will turn from simply creating a usable mobile experience to optimizing for mobile-first, mobile-dependent, and omni-channel interactions (ex: in store browsing, matching mobile web to app, increasing sign-ups and sign-ins, etc.).</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -564,7 +756,34 @@
             <div class="answer">
               <p>After a ‘change-the-business’ big-bang redesign a performance drop is often expected due to the user experience disruption. Iterative redesigns are essentially a merging of run-the-business versus. change-the-business work streams. As such, each phase of an iterative redesign will be expected to have immediate benefits, building up to an overall benefit of an iteratively-redesigned site.</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="gs--full future-item">
             <div class="question">
@@ -573,16 +792,43 @@
             <div class="answer">
               <p>Given the growth of digital teams over the past years, mature organizations will consider the effort to maintain a site as an important factor to their redesign decisions. There will be higher consideration of UX and designs that facilitate automated personalization and API-driven content.</p>
             </div>
-            <h4 class="heading-4 section-toggle">minimize-selection</h4>
+            <div class="section-toggle">
+              <div class="toggle-wrap">
+                <div class="grid-row expand">
+                  <h4 class="heading-4">expand to read more</h4>
+                  <svg width="10px" height="6px" viewbox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-272.000000, -17624.000000)" fill="#32C4F5">
+                        <g id="Group-24" transform="translate(123.000000, 17618.000000)">
+                          <polygon id="down-arrow" transform="translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) " points="156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <div class="grid-row min">
+                  <h4 class="heading-4">minimize section</h4>
+                  <svg width="10px" height="7px" viewbox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Ecommerce-Survey-Webpage" transform="translate(-247.000000, -17256.000000)" fill="#32C4F5">
+                        <g id="Group-24-Copy-7" transform="translate(123.000000,  17250.000000)">
+                          <polygon id="Rectangle-224" transform="translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) " points="131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857"></polygon>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="gs--full contact-wrap">
+        <div class="gs--full contact-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" class="btn">download the full report (pdf)</a>
           <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
           <form>
             <input type="text" placeholder="name">
             <input type="text" placeholder="company">
             <input type="text" placeholder="email">
-            <button type="submit">let's connect!</button>
+            <button type="submit">let’s connect!</button>
           </form>
         </div>
         <div class="gs--full final-text">
@@ -593,53 +839,25 @@
       </div>
     </div>
   </section>
-  <footer class="grid-row grid-row-padding--full">
-    <div class="gs--full text-wrap">
-      <h3 class="heading-3">Hungry for more? Check out these articles from the founders at Clearhead:</h3>
-      <ul>
-        <li><a href="">A Call to Arms for Data-Driven Redesigns</a></li>
-        <li><a href="">Problem and Solution Mapping: A Primer for Your Digital Dial Tone</a></li>
-        <li><a href="">4 Steps to Create a Test Before Invest Digital Innovation Plan</a></li>
-        <li><a href="">Mythbusting the Magic Science of Optimization</a></li>
-      </ul>
-    </div>
-    <div class="gs--full about-wrap">
-      <h3 class="heading-3">About Clearhead</h3>
-      <p>Clearhead is the leading digital optimization company. An award-winning agency and consultancy, we help iconic brands and entrepreneurial leaders build better customer experiences and transform their business through data.</p>
-      <p>Headquartered in Austin, TX, Clearhead was founded in 2012 by former ecommerce executives obsessed with the intersection of design, analytics and product innovation. Today, we provide user experience design, product development, analytics and strategic consulting solutions grounded in pioneering testing and personalization expertise. </p>
-      <p>Our diverse roster of clients includes adidas, CVS, Express, Patagonia, Tesco, Tory Burch, Ulta, Vitamix and Whole Foods. </p>
-      <p>To learn more, visit <a href="http://www.clearhead.me">www.clearhead.me</a></p>
+  <footer>
+    <div class="grid-row grid-row-padding--full grid-row-width--wide">
+      <div class="gs--full text-wrap">
+        <h3 class="heading-3">Hungry for more? Check out these articles from the founders at Clearhead:</h3>
+        <ul>
+          <li><a href="">A Call to Arms for Data-Driven Redesigns</a></li>
+          <li><a href="">Problem and Solution Mapping: A Primer for Your Digital Dial Tone</a></li>
+          <li><a href="">4 Steps to Create a Test Before Invest Digital Innovation Plan</a></li>
+          <li><a href="">Mythbusting the Magic Science of Optimization</a></li>
+        </ul>
+      </div>
+      <div class="gs--full about-wrap">
+        <h3 class="heading-3">About Clearhead</h3>
+        <p>Clearhead is the leading digital optimization company. An award-winning agency and consultancy, we help iconic brands and entrepreneurial leaders build better customer experiences and transform their business through data.</p>
+        <p>Headquartered in Austin, TX, Clearhead was founded in 2012 by former ecommerce executives obsessed with the intersection of design, analytics and product innovation. Today, we provide user experience design, product development, analytics and strategic consulting solutions grounded in pioneering testing and personalization expertise. </p>
+        <p>Our diverse roster of clients includes adidas, CVS, Express, Patagonia, Tesco, Tory Burch, Ulta, Vitamix and Whole Foods. </p>
+        <p>To learn more, visit <a href="http://www.clearhead.me">www.clearhead.me</a></p>
+      </div>
     </div>
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
+<script src="<?php bloginfo('template_url'); ?>/js/site.js"></script>
