@@ -13,6 +13,7 @@ body.ch-report
     margin-right: auto
     left: 0
     right: 0
+
     .ch-wrap
       color: white
       align-items: center
@@ -21,14 +22,15 @@ body.ch-report
         margin-right: .5em
         +medium
           font-size: 0.85em
-      img
-        width: .8em
-      a
-        color: white
+    a
+      color: white
+      display: flex
+      &:hover
+        color: $text-color-blue
     .social-wrap
       align-items: center
       justify-content: flex-end
-      a, img
+      a
         width: 1.25em
         &:nth-of-type(2)
           margin: 0 .85em
@@ -658,17 +660,17 @@ body.ch-report
 
     .final-text
       margin-top: 2.25em
-  // .social-bar
-  //   display: none
-  //   +medium
-  //     display: initial
-  //     position: fixed
-  //     bottom: 0
-  //     background-color: $text-color-blue
-  //     color: white
-  //     width: 100%
-  //     a
-  //       color: white
+  .social-bar
+    display: initial
+    position: fixed
+    bottom: 0
+    background-color: $background-purple
+    color: white
+    width: 100%
+    padding-top: .85em
+    padding-bottom: .85em
+    a
+      color: white
   .share-button
     // display: flex
     // align-items: center

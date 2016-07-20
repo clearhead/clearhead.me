@@ -167,16 +167,17 @@ body.ch-report .nav-wrap {
       @media (min-width: 38.75em) {
         body.ch-report .nav-wrap .ch-wrap .heading-5 {
           font-size: 0.85em; } }
-    body.ch-report .nav-wrap .ch-wrap img {
-      width: 0.8em; }
-    body.ch-report .nav-wrap .ch-wrap a {
-      color: white; }
+  body.ch-report .nav-wrap a {
+    color: white;
+    display: flex; }
+    body.ch-report .nav-wrap a:hover {
+      color: #32c4f5; }
   body.ch-report .nav-wrap .social-wrap {
     align-items: center;
     justify-content: flex-end; }
-    body.ch-report .nav-wrap .social-wrap a, body.ch-report .nav-wrap .social-wrap img {
+    body.ch-report .nav-wrap .social-wrap a {
       width: 1.25em; }
-      body.ch-report .nav-wrap .social-wrap a:nth-of-type(2), body.ch-report .nav-wrap .social-wrap img:nth-of-type(2) {
+      body.ch-report .nav-wrap .social-wrap a:nth-of-type(2) {
         margin: 0 0.85em; }
 body.ch-report section.hero-wrap {
   min-height: 20em;
@@ -755,6 +756,17 @@ body.ch-report section.principles .btn {
   transition: all 0.1875s ease; }
 body.ch-report section.principles .final-text {
   margin-top: 2.25em; }
+body.ch-report .social-bar {
+  display: initial;
+  position: fixed;
+  bottom: 0;
+  background-color: #b698c7;
+  color: white;
+  width: 100%;
+  padding-top: 0.85em;
+  padding-bottom: 0.85em; }
+  body.ch-report .social-bar a {
+    color: white; }
 body.ch-report .share-button {
   width: 9em;
   font-size: 0.875em;
