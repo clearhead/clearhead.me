@@ -109,6 +109,78 @@
 
 // Photo Callout
 // -------------
+.parallax-callout {
+    padding: 0;
+    position: relative;
+    pointer-events: none;
+    // .prlx {
+    //     // background-color: #0099A9;
+    //     overflow: hidden;
+    //     position: relative;
+    //     background-color: gray;
+    // }
+    //
+    // .img {
+    //     background-position: center;
+    //     // background-size: cover;
+    //     background-repeat: no-repeat;
+    //     display: none;
+    //     position: absolute;
+    //     width: 100%;
+    // }
+    //
+    // .prlx2 {
+    //     height: 13em;
+    //
+    // }
+    //
+    // .img2 {
+    //     height: 100vh;
+    //     // top: -40vh;
+    //     background-color: black;
+    // }
+    //
+    // .img2 {
+    //     // background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg');
+    // }
+    $parallax-space: 60%; // Example, can be anything
+
+    .window {
+        height: 12.78125em;
+        overflow: hidden;
+        position: relative;
+        .photo {
+            display: none;
+            position: absolute;
+            height: 100% + $parallax-space;
+            top: -($parallax-space / 2);
+            width: 100%;
+            overflow: hidden;
+            background-color: $blue;
+            img {
+                display: block;
+                position: absolute;
+                top: -36.95652174%;
+                top: -26%;
+            }
+        }
+    }
+    .fill {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        .container {
+            height: 100%;
+        }
+    }
+}
+
+
+// Photo Callout
+// -------------
 .photo-callout {
     // background-color: darken($gray, 7.5%);
     background-color: transparent;
@@ -120,7 +192,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 12.78125em;
+        // height: 12.78125em;
         > * {
             flex-shrink: 0;
         }
@@ -132,7 +204,7 @@
         padding: 0.75em 0.5em 0.65625em;
     }
     &-blue {
-        // background-color: darken(#B6E1EC, 7.5%);
+        background-color: darken(#B6E1EC, 7.5%);
         // background-image: url('img/callout-photos/what-we-do.jpg');
         // @include w1000 {
         //     background-position: center calc(50% - 2.8125em);
@@ -143,7 +215,7 @@
         }
     }
     &-orange {
-        // background-color: darken(#F7B182, 7.5%);
+        background-color: darken(#F7B182, 7.5%);
         // background-image: url('img/callout-photos/who-we-do-it-with.jpg');
         // @include w1000 {
         //     background-position: center calc(50% + 1em);
@@ -154,7 +226,7 @@
         }
     }
     &-purple {
-        // background-color: darken($light-purple, 7.5%);
+        background-color: darken($light-purple, 7.5%);
         // background-image: url('img/callout-photos/who-we-are.jpg');
         h3 {
             background-color: $light-purple;

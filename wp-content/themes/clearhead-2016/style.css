@@ -938,6 +938,37 @@ section {
         margin-right: 0;
         max-width: none; } }
 
+.parallax-callout {
+  padding: 0;
+  position: relative;
+  pointer-events: none; }
+  .parallax-callout .window {
+    height: 12.78125em;
+    overflow: hidden;
+    position: relative; }
+    .parallax-callout .window .photo {
+      display: none;
+      position: absolute;
+      height: 160%;
+      top: -30%;
+      width: 100%;
+      overflow: hidden;
+      background-color: #32C4F5; }
+      .parallax-callout .window .photo img {
+        display: block;
+        position: absolute;
+        top: -36.95652174%;
+        top: -26%; }
+  .parallax-callout .fill {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; }
+    .parallax-callout .fill .container {
+      height: 100%; }
+
 .photo-callout {
   background-color: transparent;
   padding: 0; }
@@ -953,8 +984,7 @@ section {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    height: 12.78125em; }
+            justify-content: center; }
     .photo-callout .container > * {
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
@@ -964,15 +994,21 @@ section {
     text-align: center;
     line-height: 1.2;
     padding: 0.75em 0.5em 0.65625em; }
-  .photo-callout-blue h3 {
-    background-color: #BFE1EB;
-    color: #19748f; }
-  .photo-callout-orange h3 {
-    background-color: #EEB48A;
-    color: #AB442A; }
-  .photo-callout-purple h3 {
-    background-color: #B698C7;
-    color: #49286D; }
+  .photo-callout-blue {
+    background-color: #98d5e4; }
+    .photo-callout-blue h3 {
+      background-color: #BFE1EB;
+      color: #19748f; }
+  .photo-callout-orange {
+    background-color: #f59b5e; }
+    .photo-callout-orange h3 {
+      background-color: #EEB48A;
+      color: #AB442A; }
+  .photo-callout-purple {
+    background-color: #a47fba; }
+    .photo-callout-purple h3 {
+      background-color: #B698C7;
+      color: #49286D; }
 
 .solutions-list {
   margin-top: 1.875em; }

@@ -137,7 +137,7 @@ function clearhead_2016_scripts_and_styles() {
 
 	// script from previous clearhead theme
 	if ( is_front_page() ) :
-		wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), '20160716', true);
+		// wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), '20160716', true);
 		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array(), '20120206', true );
 	endif;
 

@@ -42,6 +42,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/min\/parallax-background-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/min\/parallax-background-min.js",
+		"outputAbbreviatedPath": "\/min\/min\/parallax-background-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 0
+		},
 	"\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
@@ -20650,6 +20661,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21105,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-sm.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -20661,6 +20683,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26162,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are-sm.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are-sm.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -20668,6 +20701,17 @@
 		"initialSize": 144902,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with-sm.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32383,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with-sm.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -21244,12 +21288,12 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 0
 		},
-	"\/wp-content\/themes\/clearhead-2016\/js\/parallax.js": {
+	"\/wp-content\/themes\/clearhead-2016\/js\/parallax-background.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/parallax.js",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/parallax-min.js",
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/parallax-background.js",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/js\/min\/parallax-background-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
