@@ -637,14 +637,6 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 		</main>
 	</div>
-
-	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/parallax-background.js"></script>
-	<script type="text/javascript">
-		jQuery('.window').parallaxBackground({
-		  'image': '.photo'
-		});
-	</script>
-
 <?php
 // get_sidebar();
 get_footer();
