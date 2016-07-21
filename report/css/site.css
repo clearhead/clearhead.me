@@ -90,7 +90,7 @@ html, button, input, p {
   font-style: normal;
   font-weight: 400; }
 
-h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 p.text3, body.ch-report section.keyfind .finding-5 .text-wrap .text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button, body.ch-report .share-button p, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p, body.ch-report .share-button {
+h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 p.text3, body.ch-report section.keyfind .finding-5 .text-wrap .text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button, body.ch-report .social-bar .bar-wrap p, body.ch-report .share-button p, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p {
   font-family: "ff-bau-web-pro", sans-serif; }
 
 html {
@@ -760,28 +760,58 @@ body.ch-report .social-bar {
   display: initial;
   position: fixed;
   bottom: 0;
-  background-color: #b698c7;
+  background-color: #123B47;
   color: white;
   width: 100%;
-  padding-top: 0.85em;
-  padding-bottom: 0.85em; }
+  padding-top: 0.5em;
+  padding-bottom: 0.5em; }
+  body.ch-report .social-bar svg {
+    width: 1em;
+    margin-right: 0.5em; }
+  body.ch-report .social-bar .bar-wrap {
+    justify-content: space-between; }
+    body.ch-report .social-bar .bar-wrap p {
+      font-size: 0.7em;
+      line-height: inherit;
+      font-weight: 500; }
+    body.ch-report .social-bar .bar-wrap .pdf-wrap a {
+      display: flex;
+      align-items: center;
+      transition: all 0.1875s ease; }
+      body.ch-report .social-bar .bar-wrap .pdf-wrap a:hover {
+        color: #32c4f5; }
+  body.ch-report .social-bar .share-wrap {
+    justify-content: flex-end; }
+    body.ch-report .social-bar .share-wrap .btn-wrap:first-of-type {
+      margin-right: 0.7058823529em; }
+      @media (min-width: 38.75em) {
+        body.ch-report .social-bar .share-wrap .btn-wrap:first-of-type {
+          margin-right: 0.5em; } }
+  body.ch-report .social-bar .share-button {
+    width: inherit;
+    font-size: 1em; }
   body.ch-report .social-bar a {
-    color: white; }
+    color: white;
+    margin-top: 0; }
 body.ch-report .share-button {
   width: 9em;
-  font-size: 0.875em;
   margin-top: 0.375em;
-  transition: all 0.1875s ease; }
+  transition: all 0.1875s ease;
+  font-size: 0.875em;
+  display: flex;
+  align-items: center;
+  background: #32c4f5;
+  color: white;
+  padding: 0.5em; }
   body.ch-report .share-button .button-wrap {
     display: flex;
     align-items: center; }
-  body.ch-report .share-button p {
-    margin-top: 0.15em; }
-  body.ch-report .share-button svg {
-    width: 0.875em; }
   body.ch-report .share-button:hover {
     color: white;
     background: #19748f; }
+  body.ch-report .share-button svg {
+    width: 1em;
+    margin-right: 0.5em; }
 body.ch-report footer {
   background: rgba(229, 238, 244, 0.7); }
   body.ch-report footer .heading-3, body.ch-report footer h1.heading-3--upper, body.ch-report footer h2.heading-3--upper, body.ch-report footer h3.heading-3--upper, body.ch-report footer h4.heading-3--upper, body.ch-report footer h5.heading-3--upper, body.ch-report footer h6.heading-3--upper, body.ch-report footer li.heading-3--upper, body.ch-report footer p.heading-3--upper, body.ch-report footer a.heading-3--upper, body.ch-report footer small.heading-3--upper, body.ch-report footer span.heading-3--upper, body.ch-report footer blockquote.heading-3--upper, body.ch-report footer cite.heading-3--upper, body.ch-report footer input.heading-3--upper, body.ch-report footer label.heading-3--upper {
@@ -845,14 +875,6 @@ body.ch-report a {
   transition: color 0.1875s ease; }
   body.ch-report a:hover {
     color: #19748f; }
-body.ch-report .share-button {
-  display: flex;
-  align-items: center;
-  background: #32c4f5;
-  color: white;
-  padding: 0.5em; }
-  body.ch-report .share-button svg {
-    margin-right: 0.5em; }
 body.ch-report .title-wrap {
   background: RGBA(182, 152, 199, 0.3);
   height: 4.75em; }
@@ -1337,13 +1359,13 @@ body.ch-report .title-wrap {
   max-width: none; }
 
 .grid-row-padding--sides-only {
-  padding: 0 1.5em; }
+  padding: 0 0.7058823529em; }
   @media (min-width: 38.75em) {
     .grid-row-padding--sides-only {
-      padding: 0 30px; } }
+      padding: 0 0.9em; } }
   @media (min-width: 48.75em) {
     .grid-row-padding--sides-only {
-      padding: 0 30px; } }
+      padding: 0 1.5em; } }
   @media (min-width: 100em) {
     .grid-row-padding--sides-only {
       padding: 0; } }
