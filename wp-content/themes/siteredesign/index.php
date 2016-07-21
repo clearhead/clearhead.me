@@ -9,40 +9,56 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <meta property="og:url" content="http://clearhead.me">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Clearhead">
+    <meta property="og:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
     <meta property="og:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/hero_bg.jpg">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@clearheadme">
     <meta name="twitter:creator" content="@clearheadme">
-    <meta name="twitter:title" content="Clearhead">
+    <meta name="twitter:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
     <meta name="twitter:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
-    <meta name="twitter:image" content="">
+    <meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/images/hero_bg.jpg">
     <?php wp_head(); ?>
+
   </head>
 </html>
 <body class="ch-report">
   <nav class="grid-row-width--wide grid-row nav-wrap grid-row-padding--short">
     <div class="grid-row ch-wrap"><a href="http://clearhead.me">
-        <h5 class="heading-5">clearhead.me</h5></a>
-	<a href="http://clearhead.me"><img src="<?php bloginfo('template_url'); ?>/images/svg/launch-icon.svg"></a></div>
-    <div class="grid-row social-wrap">
-      <a href="https://www.facebook.com/ClearheadMe"><img src="<?php bloginfo('template_url'); ?>/images/svg/facebook-icon.svg"></a>
-      <a href="http://twitter.com/clearheadme"><img src="<?php bloginfo('template_url'); ?>/images/svg/twitter-icon.svg"></a>
-      <a href="https://www.linkedin.com/company/clearhead-group-llc">
-        <svg width="22px" height="20px" viewBox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
-          <title>LinkedIn</title>
-          <desc>Created with Sketch.</desc>
-          <defs></defs>
-          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="Ecommerce-Survey-Webpage" transform="translate(-879.000000, -20.000000)" fill="#FFFFFF">
-                  <path d="M900.89372,39.9033816 L896.054909,39.9033816 L896.054909,32.9065471 C896.054909,31.0751352 895.298,29.8248812 893.633573,29.8248812 C892.360473,29.8248812 891.65248,30.6685796 891.322941,31.4816908 C891.199364,31.7735442 891.218673,32.1800998 891.218673,32.5866554 L891.218673,39.9033816 L886.424916,39.9033816 C886.424916,39.9033816 886.486705,27.5091711 886.424916,26.3825405 L891.218673,26.3825405 L891.218673,28.5045313 C891.50187,27.5767179 893.03371,26.2525447 895.478217,26.2525447 C898.511001,26.2525447 900.89372,28.1973843 900.89372,32.3852893 L900.89372,39.9033816 L900.89372,39.9033816 Z M881.577095,24.6913202 L881.5462,24.6913202 C880.001488,24.6913202 879,23.6577259 879,22.3475718 C879,21.0119283 880.031095,20 881.606702,20 C883.181021,20 884.14904,21.0093794 884.179935,22.3437484 C884.179935,23.6539025 883.181021,24.6913202 881.577095,24.6913202 L881.577095,24.6913202 L881.577095,24.6913202 Z M879.552235,26.3825405 L883.819502,26.3825405 L883.819502,39.9033816 L879.552235,39.9033816 L879.552235,26.3825405 L879.552235,26.3825405 Z" id="LinkedIn"></path>
+        <h5 class="heading-5">clearhead.me</h5>
+        <svg width="16px" height="16px" viewbox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+            <g id="Ecommerce-Survey-Webpage" transform="translate(-249.000000, -21.000000)" stroke-width="2" stroke="currentColor">
+              <g id="launch_icon" transform="translate(250.000000, 22.000000)">
+                <polyline id="Rectangle-110" points="8.63068182 0 14 0 14 5.36931818"></polyline>
+                <path id="Path-89" d="M13.4034091,0.596590909 L5.64772727,8.35227273"></path>
+                <polyline id="Rectangle-110" points="13.125 10.3778409 13.125 14 0 14 0 0.875 3.62215909 0.875"></polyline>
               </g>
+            </g>
           </g>
-        </svg>
-      </a>
-    </div>
+        </svg></a></div>
+    <div class="grid-row social-wrap"><a href="https://www.facebook.com/ClearheadMe">
+        <svg width="24px" height="24px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Ecommerce-Survey-Webpage" transform="translate(-795.000000, -18.000000)" fill="currentColor">
+              <path id="Facebook" d="M807.757249,41.884058 L796.318217,41.884058 C795.589972,41.884058 795,41.2937195 795,40.5657589 L795,19.3182064 C795,18.5900605 795.590065,18 796.318217,18 L817.565934,18 C818.2939,18 818.884058,18.5900605 818.884058,19.3182064 L818.884058,40.5657589 C818.884058,41.2938121 818.293808,41.884058 817.565934,41.884058 L811.479654,41.884058 L811.479654,32.6348344 L814.584192,32.6348344 L815.049052,29.0302479 L811.479654,29.0302479 L811.479654,26.7289472 C811.479654,25.6853362 811.769451,24.9741497 813.265975,24.9741497 L815.17472,24.9733157 L815.17472,21.7493446 C814.84461,21.7054167 813.711559,21.6072741 812.393342,21.6072741 C809.641343,21.6072741 807.757249,23.2870976 807.757249,26.3719638 L807.757249,29.0302479 L804.644742,29.0302479 L804.644742,32.6348344 L807.757249,32.6348344 L807.757249,41.884058 L807.757249,41.884058 Z"></path>
+            </g>
+          </g>
+        </svg></a><a href="http://twitter.com/clearheadme">
+        <svg width="24px" height="20px" viewbox="0 0 24 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Ecommerce-Survey-Webpage" transform="translate(-838.000000, -21.000000)" fill="currentColor">
+              <path id="Twitter" d="M861.884058,23.3562039 C861.006473,23.7558528 860.061597,24.0261191 859.070458,24.1468763 C860.082625,23.525839 860.859274,22.5410925 861.225168,21.3680221 C860.277488,21.9430566 859.230274,22.3613942 858.111563,22.5856576 C857.219959,21.6095366 855.945637,21 854.535333,21 C851.83108,21 849.637117,23.2498225 849.637117,26.0243639 C849.637117,26.4182626 849.679174,26.8006605 849.763288,27.1686826 C845.690787,26.958795 842.080912,24.9605501 839.662646,21.91718 C839.240676,22.6618497 838.99955,23.525839 838.99955,24.4458942 C838.99955,26.1882488 839.864518,27.7264661 841.179494,28.6278326 C840.377611,28.6033937 839.620589,28.3748175 838.958895,28.001045 L838.958895,28.0628613 C838.958895,30.4981324 840.648177,32.5294417 842.891206,32.9894693 C842.480451,33.1073514 842.047266,33.1662924 841.600062,33.1662924 C841.284636,33.1662924 840.97622,33.1361031 840.677616,33.0771621 C841.301459,35.0725318 843.109901,36.5259315 845.254798,36.5647463 C843.578134,37.9132022 841.464079,38.716813 839.169179,38.716813 C838.773845,38.716813 838.382717,38.6938116 838,38.6478088 C840.168729,40.0710192 842.745409,40.9033816 845.511345,40.9033816 C854.525519,40.9033816 859.453175,33.2482349 859.453175,26.608024 C859.453175,26.3895109 859.448969,26.1709977 859.440558,25.9567974 C860.398051,25.2480674 861.229374,24.3639518 861.884058,23.3562039"></path>
+            </g>
+          </g>
+        </svg></a><a href="https://www.linkedin.com/company/clearhead-group-llc">
+        <svg width="22px" height="20px" viewbox="0 0 22 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Ecommerce-Survey-Webpage" transform="translate(-879.000000, -20.000000)" fill="currentColor">
+              <path id="LinkedIn" d="M900.89372,39.9033816 L896.054909,39.9033816 L896.054909,32.9065471 C896.054909,31.0751352 895.298,29.8248812 893.633573,29.8248812 C892.360473,29.8248812 891.65248,30.6685796 891.322941,31.4816908 C891.199364,31.7735442 891.218673,32.1800998 891.218673,32.5866554 L891.218673,39.9033816 L886.424916,39.9033816 C886.424916,39.9033816 886.486705,27.5091711 886.424916,26.3825405 L891.218673,26.3825405 L891.218673,28.5045313 C891.50187,27.5767179 893.03371,26.2525447 895.478217,26.2525447 C898.511001,26.2525447 900.89372,28.1973843 900.89372,32.3852893 L900.89372,39.9033816 L900.89372,39.9033816 Z M881.577095,24.6913202 L881.5462,24.6913202 C880.001488,24.6913202 879,23.6577259 879,22.3475718 C879,21.0119283 880.031095,20 881.606702,20 C883.181021,20 884.14904,21.0093794 884.179935,22.3437484 C884.179935,23.6539025 883.181021,24.6913202 881.577095,24.6913202 L881.577095,24.6913202 L881.577095,24.6913202 Z M879.552235,26.3825405 L883.819502,26.3825405 L883.819502,39.9033816 L879.552235,39.9033816 L879.552235,26.3825405 L879.552235,26.3825405 Z"></path>
+            </g>
+          </g>
+        </svg></a></div>
   </nav>
   <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered grid-row-padding--short hero-wrap">
     <div class="grid-row heading-wrap">
@@ -180,6 +196,14 @@
               <p>Respondents were able to select from many reasons as the “best reasons” to start a redesign. The most popular reasons (selected by 60% or greater respondents) were:</p>
               <ul>
                 <li><p class="ol">1</p> Change in market/customer behavior</li>
+                <li><a href="https://twitter.com/intent/tweet?text=The%20%231%20reason%20%23ecommerce%20marketers%20redesign%20their%20website%3A%20Change%20in%20market/customer%20behavior.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0" class="share-button">
+                    <div class="button-wrap">
+                      <svg width="20" data-icon="twitter" viewbox="0 0 32 32" style="fill:currentcolor" class="js-geomicon geomicon">
+                        <title>twitter icon</title>
+                        <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+                      </svg>
+                      <p>click to tweet</p>
+                    </div></a></li>
                 <li><p class="ol">2</p> Moving to a new platform</li>
                 <li><p class="ol">3</p> Negative feedback from customers</li>
               </ul>
@@ -345,7 +369,14 @@
           <div class="grid-row row-wrap">
             <div class="data-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f6-hiring.svg"></div>
             <div class="text-wrap">
-              <p>75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).</p>
+              <p>75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).</p><a href="https://twitter.com/intent/tweet?text=The%20%231%20reason%20%23ecommerce%20marketers%20redesign%20their%20website%3A%20Change%20in%20market/customer%20behavior.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0" class="share-button">
+                <div class="button-wrap">
+                  <svg width="20" data-icon="twitter" viewbox="0 0 32 32" style="fill:currentcolor" class="js-geomicon geomicon">
+                    <title>twitter icon</title>
+                    <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+                  </svg>
+                  <p>click to tweet</p>
+                </div></a>
             </div>
           </div>
           <p>However, in their last redesign respondents report UX research and platform integration were also the most lacking capabilities at their disposal, with web analytics coming in third.</p>
@@ -380,7 +411,15 @@
         </div>
         <div class="gs--full list-wrap">
           <ul class="bullet-list">
-            <li>Only half (52%) of digital professionals test prototypes or wireframes with real customers. </li>
+            <li>Only half (52%) of digital professionals test prototypes or wireframes with real customers.</li>
+            <li><a href="https://twitter.com/intent/tweet?text=The%20%231%20reason%20%23ecommerce%20marketers%20redesign%20their%20website%3A%20Change%20in%20market/customer%20behavior.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0" class="share-button">
+                <div class="button-wrap">
+                  <svg width="20" data-icon="twitter" viewbox="0 0 32 32" style="fill:currentcolor" class="js-geomicon geomicon">
+                    <title>twitter icon</title>
+                    <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+                  </svg>
+                  <p>click to tweet</p>
+                </div></a></li>
             <li>39% do not define testable success metrics for design or technology solutions.</li>
             <li>Remember what we said about the big bang reveal? 58% of respondents skip the gradual rolling out of a redesign to ensure success.</li>
           </ul>
@@ -859,5 +898,24 @@
       </div>
     </div>
   </footer>
+  <div class="social-bar">
+    <div class="grid-row grid-row-padding--sides-only"><a href="images/report.pdf">download pdf</a></div>
+  </div>
 </body>
 <script src="<?php bloginfo('template_url'); ?>/js/site.js"></script>
+<script>window.twttr = (function(d, s, id) {
+ var js, fjs = d.getElementsByTagName(s)[0],
+   t = window.twttr || {};
+ if (d.getElementById(id)) return t;
+ js = d.createElement(s);
+ js.id = id;
+ js.src = "https://platform.twitter.com/widgets.js";
+ fjs.parentNode.insertBefore(js, fjs);
+ 
+ t._e = [];
+ t.ready = function(f) {
+   t._e.push(f);
+ };
+ 
+ return t;
+}(document, "script", "twitter-wjs"));</script>
