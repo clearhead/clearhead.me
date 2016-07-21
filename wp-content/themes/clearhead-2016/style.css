@@ -366,12 +366,6 @@ article .author-meta h3 {
   .dn_w1000 {
     display: none; } }
 
-header, section, footer {
-  max-width: 100vw; }
-
-section, footer {
-  overflow-x: hidden; }
-
 header {
   width: 100%;
   color: #313335;
@@ -944,12 +938,40 @@ section {
         margin-right: 0;
         max-width: none; } }
 
-.photo-callout {
-  background-color: #ccd0d0;
+.parallax-callout {
   padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  position: relative;
+  pointer-events: none; }
+  .parallax-callout .window {
+    height: 12.78125em;
+    overflow: hidden;
+    position: relative; }
+    .parallax-callout .window .photo {
+      display: none;
+      position: absolute;
+      height: 160%;
+      top: -30%;
+      width: 100%;
+      overflow: hidden;
+      background-color: #32C4F5; }
+      .parallax-callout .window .photo img {
+        display: block;
+        position: absolute;
+        top: -36.95652174%;
+        top: -26%; }
+  .parallax-callout .fill {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10; }
+    .parallax-callout .fill .container {
+      height: 100%; }
+
+.photo-callout {
+  background-color: transparent;
+  padding: 0; }
   .photo-callout .container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -962,8 +984,7 @@ section {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    height: 12.78125em; }
+            justify-content: center; }
     .photo-callout .container > * {
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
@@ -974,26 +995,17 @@ section {
     line-height: 1.2;
     padding: 0.75em 0.5em 0.65625em; }
   .photo-callout-blue {
-    background-color: #98d5e4;
-    background-image: url("img/callout-photos/what-we-do.jpg"); }
-    @media screen and (min-width: 62.5em) {
-      .photo-callout-blue {
-        background-position: center calc(50% - 2.8125em); } }
+    background-color: #98d5e4; }
     .photo-callout-blue h3 {
       background-color: #BFE1EB;
       color: #19748f; }
   .photo-callout-orange {
-    background-color: #f59b5e;
-    background-image: url("img/callout-photos/who-we-do-it-with.jpg"); }
-    @media screen and (min-width: 62.5em) {
-      .photo-callout-orange {
-        background-position: center calc(50% + 1em); } }
+    background-color: #f59b5e; }
     .photo-callout-orange h3 {
       background-color: #EEB48A;
       color: #AB442A; }
   .photo-callout-purple {
-    background-color: #a47fba;
-    background-image: url("img/callout-photos/who-we-are.jpg"); }
+    background-color: #a47fba; }
     .photo-callout-purple h3 {
       background-color: #B698C7;
       color: #49286D; }
@@ -1303,6 +1315,7 @@ section {
           -ms-flex-direction: row;
               flex-direction: row; } }
   .client-testimonial .client {
+    margin-right: 2.390625em;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
@@ -1320,12 +1333,11 @@ section {
             align-items: center; }
     @media screen and (min-width: 30em) {
       .client-testimonial .client {
+        display: block;
         -webkit-box-ordinal-group: 1;
         -webkit-order: 0;
             -ms-flex-order: 0;
                 order: 0;
-        display: block;
-        margin-right: 2.390625em;
         width: 7.75em; } }
     .client-testimonial .client .info {
       margin-left: 1em;
@@ -1350,9 +1362,6 @@ section {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center;
-      -webkit-flex-shrink: 0;
-          -ms-flex-negative: 0;
-              flex-shrink: 0;
       font-size: 75%; }
       @media screen and (min-width: 30em) {
         .client-testimonial .client .logo {
@@ -1404,8 +1413,8 @@ section {
           left: -36px;
           top: 54px;
           bottom: auto;
-          -webkit-transform: none;
-                  transform: none; } }
+          -webkit-transform: rotate(-90deg);
+                  transform: rotate(-90deg); } }
     .client-testimonial .testimonial blockquote {
       letter-spacing: -0.0305555556em; }
 

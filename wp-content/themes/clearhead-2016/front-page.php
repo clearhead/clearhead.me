@@ -44,13 +44,47 @@ get_header(); ?>
 				</section>
 
 				<div id="what">
-					<section class="photo-callout photo-callout-blue">
+					<section class="parallax-callout photo-callout photo-callout-blue">
+						<div class="fill">
+							<div class="container">
+								<div class="cap-7c-6g">
+									<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+								</div>
+							</div>
+						</div>
+					    <div class="window">
+							<div class="photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg" alt="" />
+							</div>
+					    </div>
+					</section>
+
+					<?php /*
+					<section
+						class="photo-callout photo-callout-blue"
+
+						data-parallax="scroll"
+						data-bleed="75"
+						data-image-src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg"
+						data-natural-width="2400"
+						data-natural-height="1000"
+						data-speed="0.8"
+					>
 						<div class="container">
 							<div class="cap-7c-6g">
 								<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
 							</div>
 						</div>
 					</section>
+					*/ ?>
+
+					<!-- <section class="photo-callout photo-callout-blue">
+						<div class="container">
+							<div class="cap-7c-6g">
+								<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+							</div>
+						</div>
+					</section> -->
 					<section>
 						<div class="container">
 
@@ -229,13 +263,39 @@ get_header(); ?>
 					</section>
 				</div>
 				<div id="with">
-					<section class="photo-callout photo-callout-orange">
+					<section class="parallax-callout photo-callout photo-callout-orange">
+						<div class="fill">
+							<div class="container">
+								<div class="cap-7c-6g">
+									<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+								</div>
+							</div>
+						</div>
+					    <div class="window">
+							<div class="photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-do-it-with.jpg" alt="" />
+							</div>
+					    </div>
+					</section>
+
+					<?php /*
+					<section
+						class="photo-callout photo-callout-orange"
+
+						data-parallax="scroll"
+						data-bleed="75"
+						data-image-src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-do-it-with.jpg"
+						data-natural-width="2400"
+						data-natural-height="1000"
+						data-speed="0.8"
+					>
 						<div class="container">
 							<div class="cap-7c-6g">
 								<h3>You, us and a few of&nbsp;our&nbsp;friends</h3>
 							</div>
 						</div>
 					</section>
+					*/ ?>
 
 					<section class="theme-orange">
 						<div class="container">
@@ -417,13 +477,39 @@ get_header(); ?>
 
 
 				<div id="who">
-					<section class="photo-callout photo-callout-purple">
+					<section class="parallax-callout photo-callout photo-callout-purple">
+						<div class="fill">
+							<div class="container">
+								<div class="cap-7c-6g">
+									<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+								</div>
+							</div>
+						</div>
+					    <div class="window">
+							<div class="photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-are.jpg" alt="" style="top: -22%;"/>
+							</div>
+					    </div>
+					</section>
+
+					<?php /*
+					<section
+						class="photo-callout photo-callout-purple"
+
+						data-parallax="scroll"
+						data-bleed="75"
+						data-image-src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-are.jpg"
+						data-natural-width="2400"
+						data-natural-height="1000"
+						data-speed="0.8"
+					>
 						<div class="container">
 							<div class="cap-7c-6g">
 								<h3>Miles walked in your shoes.</h3>
 							</div>
 						</div>
 					</section>
+					*/ ?>
 
 					<section class="theme-purple">
 						<div class="container">
@@ -551,6 +637,13 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 		</main>
 	</div>
+
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/parallax-background.js"></script>
+	<script type="text/javascript">
+		jQuery('.window').parallaxBackground({
+		  'image': '.photo'
+		});
+	</script>
 
 <?php
 // get_sidebar();

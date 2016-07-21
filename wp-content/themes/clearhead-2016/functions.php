@@ -124,7 +124,9 @@ function clearhead_2016_scripts_and_styles() {
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
+
 	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/site.js', array(), '20151215', true );
+
 
 	// scripts from previous clearhead theme
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20120206', true);
@@ -133,9 +135,9 @@ function clearhead_2016_scripts_and_styles() {
 
 	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-
 	// script from previous clearhead theme
 	if ( is_front_page() ) :
+		// wp_enqueue_script( 'parallax', get_template_directory_uri() . '/js/parallax.js', array('jquery'), '20160716', true);
 		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array(), '20120206', true );
 	endif;
 

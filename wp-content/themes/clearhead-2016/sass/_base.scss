@@ -12,6 +12,7 @@ body {
 	letter-spacing: -(0.27em/18);
 	&.scrolled {
 		background-color: $blue;
+
 	}
 	&.home, &.error404 {
 		background-color: $blue;

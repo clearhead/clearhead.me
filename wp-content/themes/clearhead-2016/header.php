@@ -29,7 +29,6 @@
 	<meta name="google-site-verification" content="rOVbTCkNzfmtGVaB3SNC3RQvDzAq88fhCv8fTG4mBbY" />
 
 	<?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
