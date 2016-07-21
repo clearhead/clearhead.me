@@ -898,9 +898,34 @@
       </div>
     </div>
   </footer>
-  <!-- <div class="social-bar">
-    <div class="grid-row grid-row-padding--sides-only"><a href="images/report.pdf">download pdf</a></div>
-  </div> -->
+  <div class="social-bar">
+    <div class="grid-row grid-row-padding--sides-only grid-row-children-alignment--vcentered bar-wrap">
+      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf"> 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="24" viewbox="0 0 24 24">
+            <path d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"></path>
+          </svg>
+          <p>download pdf</p></a></div>
+      <div class="gl--half">
+        <div class="grid-row share-wrap">
+          <div class="btn-wrap"><a href="https://twitter.com/intent/tweet?text=The%20%231%20reason%20%23ecommerce%20marketers%20redesign%20their%20website%3A%20Change%20in%20market/customer%20behavior.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0" class="share-button">
+              <svg width="20" data-icon="twitter" viewbox="0 0 32 32" style="fill:currentcolor" class="js-geomicon geomicon">
+                <title>twitter icon</title>
+                <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+              </svg>
+              <p>share</p></a></div>
+          <div class="btn-wrap"><a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//hubs.ly/H03Hdsn0" onClick="return fbs_click(400, 300)" target="_blank" title="Share This on Facebook" class="share-button">
+              <svg width="20px" viewbox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Ecommerce-Survey-Webpage" transform="translate(-795.000000, -18.000000)" fill="currentColor">
+                    <path id="Facebook" d="M807.757249,41.884058 L796.318217,41.884058 C795.589972,41.884058 795,41.2937195 795,40.5657589 L795,19.3182064 C795,18.5900605 795.590065,18 796.318217,18 L817.565934,18 C818.2939,18 818.884058,18.5900605 818.884058,19.3182064 L818.884058,40.5657589 C818.884058,41.2938121 818.293808,41.884058 817.565934,41.884058 L811.479654,41.884058 L811.479654,32.6348344 L814.584192,32.6348344 L815.049052,29.0302479 L811.479654,29.0302479 L811.479654,26.7289472 C811.479654,25.6853362 811.769451,24.9741497 813.265975,24.9741497 L815.17472,24.9733157 L815.17472,21.7493446 C814.84461,21.7054167 813.711559,21.6072741 812.393342,21.6072741 C809.641343,21.6072741 807.757249,23.2870976 807.757249,26.3719638 L807.757249,29.0302479 L804.644742,29.0302479 L804.644742,32.6348344 L807.757249,32.6348344 L807.757249,41.884058 L807.757249,41.884058 Z"></path>
+                  </g>
+                </g>
+              </svg>
+              <p>share</p></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 <script src="<?php bloginfo('template_url'); ?>/js/site.js"></script>
 <script>window.twttr = (function(d, s, id) {
