@@ -30,6 +30,8 @@ body.ch-report
     .social-wrap
       align-items: center
       justify-content: flex-end
+
+
       a
         width: 1.25em
         &:nth-of-type(2)
@@ -664,34 +666,64 @@ body.ch-report
     display: initial
     position: fixed
     bottom: 0
-    background-color: $background-purple
+    background-color: #123B47
     color: white
     width: 100%
-    padding-top: .85em
-    padding-bottom: .85em
+    padding-top: .5em
+    padding-bottom: .5em
+    svg
+      width: 1em
+      margin-right: .5em
+    .bar-wrap
+      justify-content: space-between
+      p
+        font-size: 0.7em
+        line-height: inherit
+        @extend %font-family-b
+        font-weight: 500
+      .pdf-wrap
+        a
+          display: flex
+          align-items: center
+          transition: all 0.1875s ease
+          &:hover
+            color: $text-color-blue
+    .share-wrap
+      justify-content: flex-end
+
+      .btn-wrap
+
+        &:first-of-type
+          margin-right: 0.7058823529em
+          +medium
+            margin-right: 0.5em
+    .share-button
+      width: inherit
+      font-size: 1em
     a
       color: white
+      margin-top: 0
   .share-button
-    // display: flex
-    // align-items: center
-    // line-height: initial
-    // padding: .75em
     width: 9em
-    font-size: 0.875em
     margin-top: .375em
     transition: all 0.1875s ease
+    font-size: 0.875em
+    display: flex
+    align-items: center
+    background: $text-color-blue
+    color: white
+    padding: .5em
     .button-wrap
       display: flex
       align-items: center
-    p
-      @extend %font-family-b
-      margin-top: .15em
-    svg
-      width: .875em
-      // align-self: center
     &:hover
       color: white
       background: $link-hover-color
+    p
+      @extend %font-family-b
+    svg
+      width: 1em
+      margin-right: .5em
 
 
   //-Footer
@@ -766,15 +798,7 @@ body.ch-report
     transition: color 0.1875s ease
     &:hover
       color: $link-hover-color
-  .share-button
-    @extend %font-family-b
-    display: flex
-    align-items: center
-    background: $text-color-blue
-    color: white
-    padding: .5em
-    svg
-      margin-right: .5em
+  
 
   //- Purple Bar
   .title-wrap
