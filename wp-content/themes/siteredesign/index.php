@@ -898,9 +898,9 @@
       </div>
     </div>
   </footer>
-  <div class="social-bar">
+  <!-- <div class="social-bar">
     <div class="grid-row grid-row-padding--sides-only"><a href="images/report.pdf">download pdf</a></div>
-  </div>
+  </div> -->
 </body>
 <script src="<?php bloginfo('template_url'); ?>/js/site.js"></script>
 <script>window.twttr = (function(d, s, id) {
