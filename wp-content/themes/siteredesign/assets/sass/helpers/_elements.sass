@@ -13,6 +13,7 @@ body.ch-report
     margin-right: auto
     left: 0
     right: 0
+
     .ch-wrap
       color: white
       align-items: center
@@ -21,14 +22,15 @@ body.ch-report
         margin-right: .5em
         +medium
           font-size: 0.85em
-      img
-        width: .8em
-      a
-        color: white
+    a
+      color: white
+      display: flex
+      &:hover
+        color: $text-color-blue
     .social-wrap
       align-items: center
       justify-content: flex-end
-      a, img
+      a
         width: 1.25em
         &:nth-of-type(2)
           margin: 0 .85em
@@ -275,10 +277,16 @@ body.ch-report
         margin-bottom: 1em
         +medium
           margin-bottom: 2.75em
+      .share-button
+        margin-left: 2em
       img
         padding: 1em 1em 0 1em
       li
         margin: .75em 0
+        &:first-of-type
+          margin-bottom: 0
+        &:nth-of-type(2)
+          margin-top: 0
     
     .finding-4
       p span
@@ -436,6 +444,8 @@ body.ch-report
         margin-bottom: 1.25em
         .heading-2 span
           font-style: italic
+      a
+        margin: 0
       .image-wrap
         +medium
           margin-right: 1.8em
@@ -454,6 +464,10 @@ body.ch-report
             &:before
               content: "•"
               padding-right: 1em
+            &:nth-of-type(2)
+              &:before
+                content: " "
+                padding-right: 1.35em  
     
     .finding-9
       padding-bottom: 3.5em
@@ -612,34 +626,73 @@ body.ch-report
         +medium
           width: initial
 
-      button, .btn
-        @extend %font-family-b
-        padding: .75em 1em
-        background: $text-color-blue
-        border: 0
-        color: white
-        cursor: pointer
-        letter-spacing: -.2px
-        flex-shrink: 0
-        width: 100%
-        +medium
-          width: initial
-          align-self: stretch
-          padding: 0 1em
-          transition: all 0.1875s ease
-          &:hover
-            background: $link-hover-color
-      .btn
-        padding: .75em 1em
-        display: block
-        width: 18em
-        text-align: center
-        margin-bottom: 2.15em
+    button, .btn, .share-button
+      @extend %font-family-b
+      padding: .75em 1em
+      background-color: $text-color-blue
+      border: 0
+      color: white
+      cursor: pointer
+      letter-spacing: -.2px
+      flex-shrink: 0
+      // width: 100%
+      +medium
+        width: initial
+        align-self: stretch
+        padding: 0 1em
         transition: all 0.1875s ease
+        &:hover
+          background-color: $link-hover-color
+    .btn
+      padding: .75em 1em
+      display: block
+      width: 18em
+      text-align: center
+      margin-bottom: 2.15em
+      transition: all 0.1875s ease
+    
+      // flex-shrink: 0
+      // width: 30%
+      // a
+      //   display: block
+      //   width: 100%
+        text-align: center
 
     .final-text
       margin-top: 2.25em
-        
+  .social-bar
+    display: initial
+    position: fixed
+    bottom: 0
+    background-color: $background-purple
+    color: white
+    width: 100%
+    padding-top: .85em
+    padding-bottom: .85em
+    a
+      color: white
+  .share-button
+    // display: flex
+    // align-items: center
+    // line-height: initial
+    // padding: .75em
+    width: 9em
+    font-size: 0.875em
+    margin-top: .375em
+    transition: all 0.1875s ease
+    .button-wrap
+      display: flex
+      align-items: center
+    p
+      @extend %font-family-b
+      margin-top: .15em
+    svg
+      width: .875em
+      // align-self: center
+    &:hover
+      color: white
+      background: $link-hover-color
+
 
   //-Footer
   footer
@@ -713,6 +766,15 @@ body.ch-report
     transition: color 0.1875s ease
     &:hover
       color: $link-hover-color
+  .share-button
+    @extend %font-family-b
+    display: flex
+    align-items: center
+    background: $text-color-blue
+    color: white
+    padding: .5em
+    svg
+      margin-right: .5em
 
   //- Purple Bar
   .title-wrap
