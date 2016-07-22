@@ -22,6 +22,14 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
 if(bowser.msedge) {
   jQuery(".wp-post-image").attr("sizes","");
 }
+else if(bowser.msie) {
+  jQuery("body").addClass("ie");
+}
+else if (bowser.firefox) {
+  jQuery("body").addClass("firefox");
+}
+
+
 
 // show/hide browse menu
 jQuery('.menu-toggle-mobile').click(function(e) {

@@ -64,9 +64,6 @@
 header, section, footer {
 	max-width: 100vw;
 }
-section:not(.theme-orange), footer { // columns broke with this enabled on theme orange
-	overflow-x: hidden;
-}
 
 @mixin transform($contents) {
   -webkit-transform: $contents;

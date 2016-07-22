@@ -368,9 +368,6 @@ article .author-meta h3 {
 header, section, footer {
   max-width: 100vw; }
 
-section:not(.theme-orange), footer {
-  overflow-x: hidden; }
-
 header {
   width: 100%;
   color: #313335;
@@ -1267,21 +1264,23 @@ section {
       display: inline-block;
       bottom: 10.5px;
       height: 48px;
-      width: 48px;
+      width: 28px;
       background-repeat: no-repeat;
       background-size: 29.5px; }
-    .expositive-remarks li:first-child {
-      margin-left: 24px; }
-      .expositive-remarks li:first-child:before {
-        left: -48px;
-        background-image: url("img/point-left.svg");
-        background-position: right -2.5px bottom 2px; }
-    .expositive-remarks li:last-child {
-      margin-right: 24px; }
-      .expositive-remarks li:last-child:before {
-        right: -48px;
-        background-image: url("img/point-right.svg");
-        background-position: left -2.5px bottom 2px; }
+    @media screen and (max-width: 639px) {
+      .expositive-remarks li:first-child {
+        left: 12px; } }
+    .expositive-remarks li:first-child:before {
+      left: -28px;
+      background-image: url("img/point-left.svg");
+      background-position: right -2.5px bottom 2px; }
+    @media screen and (max-width: 639px) {
+      .expositive-remarks li:last-child {
+        right: 12px; } }
+    .expositive-remarks li:last-child:before {
+      right: -28px;
+      background-image: url("img/point-right.svg");
+      background-position: left -2.5px bottom 2px; }
     .expositive-remarks li a {
       display: block;
       font-size: 0.875em;
@@ -1573,6 +1572,9 @@ section {
 
 .logo-list-solutions {
   margin: 1.65625em 0 2.90625em; }
+
+body.ie .logo-list li figure img, body.firefox .logo-list li figure img {
+  width: 100%; }
 
 .contact-cta {
   display: -webkit-box;
