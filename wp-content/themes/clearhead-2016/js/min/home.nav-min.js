@@ -33,21 +33,21 @@ jQuery('.px-window').parallaxBackground({
 jQuery('.menu-item a, a.smooth-scroll, a[href$="main"]').click(function() {
   var href = jQuery(this).attr('href');
   var trimmed = href.substring(1);
-  if (jQuery(window).width() <= 639) {
-      if(trimmed === "main") {
-          jQuery('html, body').animate({
-              scrollTop: 0
-          }, 700);
-      }
-      else {
-          jQuery('html, body').animate({
-                  scrollTop: jQuery( trimmed ).offset().top - 98
-          }, 700);
-      }
-      jQuery(".main-navigation").removeClass("toggled");
-      return false;
-  }
-  else {
+  // if (jQuery(window).width() <= 639) {
+  //     if(trimmed === "main") {
+  //         jQuery('html, body').animate({
+  //             scrollTop: 0
+  //         }, 700);
+  //     }
+  //     else {
+  //         jQuery('html, body').animate({
+  //                 scrollTop: jQuery( trimmed ).offset().top - 98
+  //         }, 700);
+  //     }
+  //     jQuery(".main-navigation").removeClass("toggled");
+  //     return false;
+  // }
+  // else {
       if(trimmed === "main") {
           jQuery('html, body').animate({
               scrollTop: 0
@@ -60,7 +60,7 @@ jQuery('.menu-item a, a.smooth-scroll, a[href$="main"]').click(function() {
       }
       jQuery(".main-navigation").removeClass("toggled");
       return false;
-  }
+  // }
 });
 
 

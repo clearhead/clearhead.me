@@ -64,8 +64,11 @@
             }
         }
         span {
+            width: 100%;
             position: absolute;
             color: transparent;
+            top: 0;
+            left: 0;
         }
         @include w640 {
             bottom: 0;
