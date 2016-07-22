@@ -248,7 +248,7 @@ get_header(); ?>
 										</figure>
 									</div>
 									<div class="info">
-										<strong>John Satterley</strong>
+										<strong>Jon Satterley</strong>
 										<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
 									</div>
 								</div>
@@ -267,7 +267,7 @@ get_header(); ?>
 						<div class="fill">
 							<div class="container">
 								<div class="cap-7c-6g">
-									<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+									<h3>You, us and a few of&nbsp;our&nbsp;friends</h3>
 								</div>
 							</div>
 						</div>
@@ -481,7 +481,7 @@ get_header(); ?>
 						<div class="fill">
 							<div class="container">
 								<div class="cap-7c-6g">
-									<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+									<h3>Miles walked in your shoes.</h3>
 								</div>
 							</div>
 						</div>
