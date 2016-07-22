@@ -163,7 +163,7 @@ get_header(); ?>
 								<ul>
 									<li>
 										<blockquote>
-											Our site is stale so we really need a full redesign rather than incremental testing.
+											Our site is stale so we really need a full redesign rather than iterative testing.
 										</blockquote>
 										<a href="/blog/announcing-the-data-driven-redesign/">Understand the data-driven redesign</a>
 									</li>
