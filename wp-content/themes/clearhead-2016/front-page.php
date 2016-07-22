@@ -424,6 +424,7 @@ get_header(); ?>
 								</div>
 							</div>
 							<h3>Platforms We Use</h3>
+<?php /*
 							<div class="platforms-list">
 								<ul class="cap-8c-7g">
 									<li>Tealium</li>
@@ -450,7 +451,7 @@ get_header(); ?>
 									<li>Many, many more</li>
 								</ul>
 							</div>
-
+*/ ?>
 							<hr class="extra-space">
 
 							<div class="client-testimonial">
