@@ -162,7 +162,7 @@ body.ch-report .nav-wrap {
   z-index: 110; }
   body.ch-report .nav-wrap:before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: -10px;
     left: 0;
     width: 100%;
