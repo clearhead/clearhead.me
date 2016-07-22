@@ -61,12 +61,12 @@
 	}
 }
 
-// header, section, footer {
-// 	max-width: 100vw;
-// }
-// section, footer {
-// 	overflow-x: hidden;
-// }
+header, section, footer {
+	max-width: 100vw;
+}
+section:not(.theme-orange), footer {
+	overflow-x: hidden;
+}
 
 header {
 	width: 100%;

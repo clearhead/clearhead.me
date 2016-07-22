@@ -20661,13 +20661,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-sm.jpg": {
+	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-original.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 21105,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-sm.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-sm.jpg",
+		"initialSize": 152401,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-original.jpg",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-original.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -20676,20 +20676,9 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 152401,
+		"initialSize": 143167,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26162,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are-sm.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -20701,17 +20690,6 @@
 		"initialSize": 144902,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-are.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with-sm.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 32383,
-		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with-sm.jpg",
-		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with-sm.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

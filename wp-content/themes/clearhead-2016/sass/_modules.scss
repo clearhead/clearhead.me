@@ -113,43 +113,13 @@
     padding: 0;
     position: relative;
     pointer-events: none;
-    // .prlx {
-    //     // background-color: #0099A9;
-    //     overflow: hidden;
-    //     position: relative;
-    //     background-color: gray;
-    // }
-    //
-    // .img {
-    //     background-position: center;
-    //     // background-size: cover;
-    //     background-repeat: no-repeat;
-    //     display: none;
-    //     position: absolute;
-    //     width: 100%;
-    // }
-    //
-    // .prlx2 {
-    //     height: 13em;
-    //
-    // }
-    //
-    // .img2 {
-    //     height: 100vh;
-    //     // top: -40vh;
-    //     background-color: black;
-    // }
-    //
-    // .img2 {
-    //     // background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg');
-    // }
-    $parallax-space: 60%; // Example, can be anything
+    $parallax-space: 60%;
 
-    .window {
+    .px-window {
         height: 12.78125em;
         overflow: hidden;
         position: relative;
-        .photo {
+        .px-photo {
             display: none;
             position: absolute;
             height: 100% + $parallax-space;
@@ -157,11 +127,30 @@
             width: 100%;
             overflow: hidden;
             background-color: $blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             img {
+                position: relative;
                 display: block;
-                position: absolute;
-                top: -36.95652174%;
-                top: -26%;
+                flex-shrink: 0;
+                // position: absolute;
+                // top: -36.95652174%;
+                max-width: none;
+                width: 100%;
+            }
+            img {
+                width: 220%;
+                position: relative;
+                @include w480 {
+                    width: 150%;
+                }
+                @include w640 {
+                    width: 110%;
+                }
+                @include w1000 {
+                    width: 100%;
+                }
             }
         }
     }
@@ -175,6 +164,50 @@
         .container {
             height: 100%;
         }
+    }
+    &.photo-callout {
+        &-blue {
+            .px-window .px-photo {
+                img {
+                    margin-right: 90vw;
+                    @include w480 {
+                        width: 160%;
+                        margin-right: 50vw;
+                    }
+                    @include w640 {
+                        width: 130%;
+                        margin-right: 10vw;
+                    }
+                    @include w1000 {
+                        margin-right: 0;
+                        width: 100%;
+                    }
+                }
+                @include w480 {
+                    align-items: flex-start;
+                }
+            }
+        }
+        &-orange {
+            .px-window .px-photo {
+                img {
+                    margin-right: 65vw;
+                    @include w480 {
+                        margin-right: 15vw;
+                    }
+                    @include w640 {
+                        margin-right: 0;
+                    }
+                    @include w1000 {
+                        margin-top: 5vw;
+                    }
+                }
+            }
+        }
+        // &-purple {
+        //     .px-window .px-photo {
+        //     }
+        // }
     }
 }
 
@@ -581,14 +614,12 @@
 
             bottom: -42px;
             left: 36px;
-            // background-color: red;
             transform: rotate(-90deg);
             @include w480 {
                 left: -36px;
                 top: 54px;
                 bottom: auto;
-                transform: rotate(-90deg);
-
+                transform: none;
             }
         }
         blockquote {
