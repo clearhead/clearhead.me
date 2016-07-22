@@ -38,15 +38,21 @@
 
 // @media screen and (min-width:680px) {
 	body.sidebar-right .container-index {
-		display: flex;
-
+		@include w640 {
+			display: flex;
+			flex-direction: row;
+		}
 		.main-content {
-			width: calc(100% - (14.45625em + 1.65625em));
+			@include w640 {
+				width: calc(100% - (14.45625em + 1.65625em));
+			}
 		}
 		aside {
-			width: 14.45625em;
-			margin-left: 1.65625em;
-			flex-shrink: 0;
+			@include w640 {
+				width: 14.45625em;
+				margin-left: 1.65625em;
+				flex-shrink: 0;
+			}
 		}
 		// margin: 0 -260px 0 0;
 		// width: 100%;
@@ -87,7 +93,7 @@ body.page-template-default {
 	.entry-content.container {
 		margin-top: 4em;
 		h1, h2, h3, h4, h5, h6 {
-		    font-family: 'ff-bau-web-pro';
+			font-family: "ff-bau-web-pro";
 		}
 		h4 {
 			text-transform: none;
@@ -103,8 +109,10 @@ body.page-template-default {
 	}
 }
 
-img {
-	background-color: $gray;
+.legacy-styles {
+	img {
+		background-color: $gray;
+	}
 }
 
 
@@ -380,7 +388,9 @@ img {
 	.site-content:after,
 	.site-footer:before,
 	.site-footer:after,
-	.layout-sidebar:after {
+	.layout-sidebar:after,
+	.posts-navigation:before,
+	.posts-navigation:after {
 	  content: "";
 	  display: table;
 	}
@@ -390,7 +400,8 @@ img {
 	.site-header:after,
 	.site-content:after,
 	.site-footer:after,
-	.layout-sidebar:after {
+	.layout-sidebar:after,
+	.posts-navigation:after {
 	  clear: both;
 	}
 
@@ -485,7 +496,7 @@ img {
 	}
 	.entry-content,
 	.posted-on a {
-		color: #787e81;
+		color: lighten($black, 17.5%);
 	}
 }
 
@@ -610,6 +621,11 @@ img {
 // 	  border-bottom: 0;
 // 	}
 // }
+.legacy-styles {
+	.posts-navigation {
+		margin-bottom: 2.5em;
+	}
+}
 	/*--------------------------------------------------------------
 	## Widgets
 	--------------------------------------------------------------*/
@@ -620,6 +636,7 @@ img {
 		background-color: #f9f9fa;
 		margin-bottom: 3em;
 		font-size: 14px;
+		width: 100%;
 	}
 	@media screen and (min-width:640px) {
 		.widget {
@@ -695,6 +712,9 @@ img {
 	.page .entry-header {
 	  padding: 3rem 0;
 	  text-align: center;
+	  a {
+		  line-height: 1;
+	  }
 	}
 	.entry-title {
 		text-transform: lowercase;
@@ -705,6 +725,9 @@ img {
 	.entry-header .foot {
 	  font-size: 14px;
 	  line-height: 32px;
+	  .tags-links {
+		  display: inline-block;
+	  }
 	}
 	@media screen and (max-width:640px) {
 	  .entry-header .tagged a {
@@ -727,6 +750,12 @@ img {
 	    margin-left: 6px;
 	    margin-bottom: 12px;
 	    border-radius: 2px;
+		display: inline-block;
+		line-height: 1;
+		svg {
+			display: inline-block;
+			line-height: 1;
+		}
 	  }
 	  .entry-header .foot a:hover {
 	    background: rgba(255, 255, 255, 0.4);
@@ -734,10 +763,14 @@ img {
 	    text-decoration: none;
 	  }
 	}
+	.entry-header .social {
+		flex-shrink: 0;
+		margin-left: 1em;
+	}
 	.entry-header .social a {
-	  padding: 10px;
-	  width: 32px;
+	  padding: 1px 10px 9px;
 	  text-align: center;
+	  line-height: 1;
 	}
 	.entry-header .social a svg {
 	  position: relative;
@@ -780,8 +813,8 @@ img {
 	}
 	.entry-content,
 	.entry-content p {
-		font-size: 16px;
-		line-height: 1.5;
+		font-size: 18px;
+		line-height: 1.4;
 	}
 	.read-more {
 		display: inline-block;
@@ -792,11 +825,13 @@ img {
 		border-bottom: 1px solid #eee;
 		padding-top: 2em;
 		padding-bottom: 0.75em;
-		max-width: 600px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 1.5em;
 		margin-bottom: 2em;
+		@include w640 {
+			max-width: 600px;
+		}
 	}
 	.author-top .avatar {
 		border-radius: 100%;
@@ -876,16 +911,17 @@ body.single-post, body.page {
 				}
 			}
 			.foot {
-				display: flex;
-				justify-content: space-between;
+				@include w640 {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-start;
+				}
 				margin: 1.68125rem 0;
 			}
 		}
 		.entry-image {
-			margin: -4.5em auto 2.625em;
-			img {
-				//temporary
-				height: 350px;
+			@include w640 {
+				margin: -4.5em auto 2.625em;
 			}
 		}
 	}
@@ -896,7 +932,9 @@ body.single-post, body.page {
 	--------------------------------------------------------------*/
 .legacy-styles {
 	.entry-content {
-	  max-width: 600px;
+		@include w640 {
+			max-width: 600px;
+		}
 	}
 	.entry-content a {
 	  border-bottom: 1px dashed rgba(17, 119, 150, 0.3);
@@ -922,7 +960,8 @@ body.single-post, body.page {
 	  color: #117793;
 	}
 	.entry-content {
-	  font-family: "ff-more-web-pro";
+	  font-family: "minion-pro", Georgia, Times, 'Times New Roman', serif;
+	// font-family: "ff-bau-web-pro";
 	}
 	.entry-content blockquote {
 	  border-left: 3px solid #3DC5F3;
@@ -1036,9 +1075,7 @@ body.single-post, body.page {
 	}
 
 	.related-posts .related-image {
-		//temporary
 		img {
-			height: 87px;
 			display: block;
 		}
 		a {

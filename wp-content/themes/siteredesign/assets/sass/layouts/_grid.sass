@@ -1,0 +1,210 @@
+//Settings
+$default-gutter:  1%   //left and right padding
+// $breakpoints:     small medium; //small medium large x-large xx-large xxx-large;
+$content-width:   46.545454545em
+$max-width:       65.5em  //regular width
+$max-width-plus:  80em  //wide width
+
+@mixin grid-items() 
+  &--f1
+    flex-grow: 1
+  &--f2
+    flex-grow: 2
+  &--f3
+    flex-grow: 3
+  &--f4
+    flex-grow: 4
+  
+  &--full 
+    width: 100%
+  
+  &--half 
+    width: 50%
+    // margin-left: 0
+    &--offset 
+      margin-left: 50%
+  
+  &--third 
+    width: 33.33333333%
+    // margin-left: 0
+    &x2 
+      width: 66.66666667%
+    &--offset 
+      margin-left: 33.33333333%
+      &x2 
+        margin-left: 66.66666667%
+
+  &--fourth 
+    width: 25%
+    // margin-left: 0
+    &x3 
+      width: 75%
+    &--offset 
+      margin-left: 25%
+      &x3 
+        margin-left: 75%
+   
+  &--fifth 
+    width: 20%
+    &x2 
+      width: 40%
+    &x3
+      width: 60%
+    &x4 
+      width: 80%
+ 
+  &--sixth 
+    width: 16.66666667%
+    &x5 
+      width: 83.33333335%
+
+  &--seventh 
+    width: 14.28571429%
+
+  &--eighth 
+    width: 12.5%
+    &x7 
+      width: 87.5%
+ 
+  &--ninth 
+    width: 11.11111111%
+    &x2 
+      width: 22.22222222%
+ 
+    // &x3 
+    //   width: 33.33333333%
+    
+    // &x4 
+    //   width: 44.44444444%
+
+  &--tenth 
+    width: 10%
+    &x9 
+      width: 90%
+    // &x2 
+    //   width: 20%
+    &x3 
+      width: 30%
+    // &x4 
+    //   width: 40%
+    &x7
+      width: 70%
+    
+  &--eleventh 
+    width: 9.090909091%
+
+  &--twelveth 
+    width: 8.333333333%
+    &x2 
+      width: 16.666666666%
+    &x3 
+      width: 24.999999999%
+    &x4 
+      width: 33.333333332%
+    &x5 
+      width: 41.666666665%
+      
+  &--reset 
+    width: auto
+
+.grid-row 
+  // max-width: $max-width
+  width: 100%
+  margin: 0 auto
+  display: flex
+  flex-wrap: wrap
+
+.gs 
+  +grid-items
+
++medium 
+  .gm 
+    +grid-items
+
++large 
+  .gl 
+    +grid-items
+
++x-large 
+  .gxl 
+    +grid-items
+
++xx-large 
+  .gxxl 
+    +grid-items
+
++xxx-large 
+  .gxxxl 
+    +grid-items
+
+.grid-row-children-alignment
+  &--centered
+    align-items: center
+    justify-content: center
+    height: 100%
+  
+  &--vcentered
+    align-items: center
+    height: 100%
+  
+  &--hcentered
+    justify-content: center
+
+
+.grid-row-width
+  &--narrow
+    max-width: 68em
+  
+  &--wide
+    +x-large
+      max-width: $content-width
+  
+  &--widest
+    max-width: none
+  
+
+
+.grid-row-padding 
+  &--sides-only 
+    padding: 0 0.7058823529em
+    +medium 
+      padding: 0 0.9em
+    +large 
+      padding: 0 1.5em
+    // +xxx-large 
+    //   padding: 0
+
+  &--top-only
+    padding: 1em 0
+    +medium 
+      padding: 1.25em 0
+    +x-large 
+      padding: 3.25em 0
+    +xx-large 
+      padding: 2.6em 0
+
+
+  &--short 
+    padding: 1em
+    +medium 
+      padding: 0.75em 3.5em
+    +large 
+      padding: .75em 6.6em
+    +x-large 
+      padding: .85em 3.75em
+  
+  &--full 
+    padding: 1em
+    +medium 
+      padding: 2em 3.5em
+    +large
+      padding: 3.25em 6.6em
+    +x-large 
+      padding: 3.25em 3.75em
+    +xx-large 
+      padding: 3.25em 3.75em
+    // +xxx-large 
+    //   padding: 4.6em 2.2em
+.nowrap
+  flex-wrap: nowrap
+  align-items: center

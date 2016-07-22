@@ -3,10 +3,15 @@
 .container {
 	min-width: 288px;
 	margin: 0 auto;
-	max-width: calc(100% - 1.5em);
-	width: 50em;
+
+	max-width: calc(100% - 1.5rem);
+	width: 50rem;
 	@include w480 {
-		width: 48.5em;
+		width: 48.5rem;
+	}
+	@include w640 {
+		width: ($full/1.0625);
+		max-width: calc(100% - 2.5rem);
 	}
 	@include w1000 {
 		width: $full;
@@ -35,17 +40,62 @@
 	max-width: ($column * 8) + ($gutter * 7);
 }
 
+@media screen and (max-width: 639px) {
+	.dn_n640 {
+		display: none;
+	}
+}
+@include w640 {
+	.dn_w640 {
+		display: none;
+	}
+}
+@media screen and (max-width: 999px) {
+	.dn_n1000 {
+		display: none;
+	}
+}
+@include w1000 {
+	.dn_w1000 {
+		display: none;
+	}
+}
+
+header, section, footer {
+	max-width: 100vw;
+}
+section:not(.theme-orange), footer { // columns broke with this enabled on theme orange
+	overflow-x: hidden;
+}
+
+@mixin transform($contents) {
+  -webkit-transform: $contents;
+  -ms-transform: $contents;
+  transform: $contents;
+}
+
+@mixin transition($contents) {
+  -webkit-transition: $contents;
+  -ms-transition: $contents;
+  transition: $contents;
+}
+
+
 header {
 	width: 100%;
-	background-color: $white;
 	color: $black;
 	// padding: 0.578125em 0;
-
 	position: fixed;
 	top: 0;
 	z-index: 100;
 	box-shadow: 0 0 0.325em 0 rgba($black, 0);
 	transition: box-shadow 0.25s ease;
+
+	font-size: 112.5%;
+	@include w480  { font-size: 106.25%; }
+	@include w640  { font-size: 103.125%; }
+	@include w1000 { font-size: 100%; }
+
 	&.scrolled {
 		box-shadow: 0 0 0.325em 0 rgba($black, 0.3);
 		nav ul li.active {
@@ -57,48 +107,88 @@ header {
 		.menu-mobile nav ul li {
 			&.active {
 				a {
-					color: $blue;
+					color: $white;
 					border-color: $blue;
+					&:hover {
+						color: $blue;
+					}
 				}
 			}
 		}
 	}
-	> .container {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		height: 2.78125em;
+	.main-header {
+		position: relative;
+		z-index: 90;
+		background: $white;
+		> .container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			height: 2.78125em;
+		}
 	}
 	.logo {
-		height: 2.78125em;
-		width: 2.78125em;
-		background-color: $blue;
-		color: transparent;
-		overflow: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		figure {
-			height: 0.96875em;
-			width: 1.0625em;
-			margin: 0 0.09375em 0.09375em 0;
-			display: flex;
-			border: 1.5px solid $black;
-
-			// display: none;
-			.icon {
+		flex-shrink: 0;
+		figcaption {
+			font-weight: $bold;
+			text-transform: lowercase;
+			margin-top: 0.25em;
+			position: relative;
+			span {
+				display: block;
+				color: transparent;
 			}
-			figcaption {
+			svg {
+				width: 100%;
+				height: 100%;
 				position: absolute;
 				pointer-events: none;
+				top: -0.0625em;
+				* {
+					fill: $blue;
+				}
+			}
+		}
+		.icon {
+			display: none;
+		}
+		@include w640 {
+			height: 2.78125em;
+			width: 2.78125em;
+			background-color: $blue;
+			color: transparent;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			figure {
+				height: 0.96875em;
+				width: 1.0625em;
+				margin: 0 0.125em 0.09375em 0;
+				display: flex;
+				.icon {
+					display: block;
+				}
+				figcaption {
+					display: none;
+				}
 			}
 		}
 	}
 	.menu-desktop {
-		width: calc(100% - 13.5em);
 		margin-right: 0.346875em;
+
+		width: calc(100% - 4.5em);
+		max-width: 30em;
+		@include w1000 {
+			width: calc(100% - 13.5em);
+			max-width: none;
+		}
 		nav {
 			display: none;
+			@include w640 {
+				display: block;
+			}
 		}
 	}
 	nav {
@@ -126,16 +216,43 @@ header {
 		}
 	}
 	.menu-mobile {
-		background-color: $black;
+		position: absolute;
+		z-index: 80;
+		background-color: rgba(black, 0.84375);
 		width: 100%;
+		overflow: hidden;
+		pointer-events: none;
+		transform: translateY(calc(-100vh + 2.78125em));
+		opacity: 0.5;
+		transition:
+			transform 0.25s ease,
+			opacity 0.25s ease;
+		@include w640 {
+			display: none;
+		}
 		nav ul {
-			height: 3.5em;
+			height: calc(100vh - 2.78125em);
+			flex-direction: column;
+			padding-bottom: 68px;
 			li {
+				flex-grow: 1;
+				border-bottom: 1px solid darken($gray, 40%);
+
 				a {
-					font-size: 0.9375em;
-					color: rgba($white, 0.9);
-					line-height: 4;
-					padding: 0 0.4125em;
+					display: block;
+					text-align: center;
+					width: 100%;
+					color: rgba($white, 0);
+					padding: 0.125em 0.4125em 0;
+					font-size: 1em;
+					line-height: calc(((100vh - 2.78125em) - 68px) / 6);
+					border-bottom: none;
+					transition:
+						color 0.1875s ease,
+						background-color 0.1875s ease;
+					&:hover {
+						// background-color: rgba(black, 0.5);
+					}
 				}
 			}
 		}
@@ -147,32 +264,135 @@ header {
 		color: $dark-blue;
 		text-transform: lowercase;
 		display: block;
-		padding: 8.5px;
+		padding: 0.5625em;
 		line-height: 1.25;
 		border-radius: 0.171875em;
+		flex-shrink: 0;
+		@include w640 {
+			display: none;
+		}
 		figure {
 			display: flex;
 			align-items: center;
+			justify-content: space-between;
 		}
 		figcaption {
 			position: relative;
-			top: 0.125em;
+			top: 0.0275em;
+			flex-shrink: 0;
 		}
 		.icon {
-			order: 2;
-			height: 1em;
-			width: 1em;
-			margin-left: 0.5em;
-			position: relative;
-			span {
-				display: block;
-				position: absolute;
-				font-size: 1.875em;
-				top: -0.2875em;
-				font-weight: $medium;
+			// height: 1em;
+			// width: 1em;
+			// position: relative;
+			// flex-shrink: 0;
+			// text-align: right;
+			// margin-left: 0.5em;
+			// span {
+			// 	display: block;
+			// 	position: absolute;
+			// 	font-size: 1.875em;
+			// 	top: -0.2875em;
+			// 	font-weight: $medium;
+			// 	transform: rotate(0deg);
+			// 	transition:
+			// 		transform 0.25s ease,
+			// 		top 0.25s ease,
+			// 		left 0.25s ease;
+			// }
 
-				// transform: rotate(45deg);
+			// Icon styles
+			&.icon15 {
+				margin-left: 0.5em;
+			  cursor: pointer;
+			  height: (23px/2);
+			  position: relative;
+			  width: (28px/2);
+			//   transform: scale(0.5625);
+			  .line-outer {
+			    $margin: (10px/2);
+
+			    @include transition(0.2s 0.2s cubic-bezier(0, 0, 0, 1));
+
+			    &:first-child .line-inner {
+			      top: 0;
+			    }
+
+			    &:nth-child(2) .line-inner {
+			      top: $margin;
+			    }
+
+			    &:nth-child(3) .line-inner {
+			      top: $margin * 2;
+			    }
+			  }
+
+			  .line-inner {
+			    @include transition(0.2s cubic-bezier(0, 0, 0, 1));
+			    background: $dark-blue;
+			    height: (3px/2);
+			    position: absolute;
+			    width: (28px/2);
+			  }
+
 			}
+		}
+	}
+}
+body {
+	.site-content, footer {
+		transform: translateY(0);
+		transition: transform 0.25s ease;
+		@include w640 {
+			transition: none;
+		}
+	}
+	&.show-menu-mobile {
+		.menu-mobile {
+			transform: translateY(0);
+			pointer-events: auto;
+			opacity: 1;
+			nav ul li a {
+				color: $white;
+				&:hover {
+					color: $white;
+				}
+			}
+		}
+		.menu-toggle-mobile .icon {
+
+			  .line-outer {
+				@include transition(0.2s cubic-bezier(0, 0, 0, 1));
+
+				&:first-child {
+				  @include transform(translate(0, 5px));
+
+				  .line-inner {
+					@include transform(rotate(45deg));
+				  }
+				}
+
+				&:nth-child(2) {
+				  opacity: 0;
+				}
+
+				&:nth-child(3) {
+				  @include transform(translate(0, -5px));
+
+				  .line-inner {
+					@include transform(rotate(-45deg));
+				  }
+				}
+			  }
+
+			  .line-inner {
+				@include transition(0.2s 0.2s cubic-bezier(0, 0, 0, 1));
+			  }
+		}
+		.site-content, footer {
+			// transform: translateY(calc(50em / 16));
+			// @include w480  { transform: translateY(calc(49em / 16.5)); } // 16.5 pt
+			// @include w640  { transform: translateY(0) }
 		}
 	}
 }
@@ -201,7 +421,42 @@ body:not(.home) nav li {
 	}
 }
 
+body.archive-view, body.single {
+	.menu-mobile nav li.menu-item-blog {
+		a {
+			color: $blue;
+			border-color: $blue;
+			border-bottom-width: 0.25em;
+		}
+	}
+}
+
+
+.contact-form {
+	input.error, textarea.error {
+		border:1px solid red!important;
+	}
+	.error {
+		color: red!important;
+	}
+
+	/*When form is submitted, button is disabled so users won't press it while
+	ajax completes*/
+	input[disabled] {
+    color: black;
+		background-color: #DCDAD1;
+    padding: 2px;
+    margin: 0 0 0 0;
+    background-image: none;
+	}
+}
+
 footer {
+	.cap-3c-2g {
+		@media screen and (max-width: 639px) {
+			max-width: 100%;
+		}
+	}
 	.main-footer {
 		padding: 2em 0 1.875em;
 		background-color: #103B48; // ‘extra dark blue’ used only here
@@ -213,7 +468,11 @@ footer {
 		}
 		.container {
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
+			@include w640 {
+				flex-direction: row;
+				justify-content: space-between;
+			}
 			.info {
 				h2 {
 					color: $white;
@@ -251,6 +510,7 @@ footer {
 						font-size: 0.875em;
 						line-height: 1.25;
 						margin-bottom: 0.59375em;
+						max-width: 24rem;
 					}
 					a {
 						display: block;
@@ -276,12 +536,13 @@ footer {
 						figure {
 							height: 1.0625em;
 							width: 1.325em;
-							background-color: $white;
 							position: relative;
 							margin-bottom: 1px;
 							bottom: 1px;
 							right: 2px;
 							margin-right: 5px;
+							background-image: url('img/icons/twitter.svg');
+							background-size: cover;
 						}
 						span {
 							font-size: 0.875em;
@@ -290,9 +551,13 @@ footer {
 				}
 			}
 			.contact {
-				order: 2;
+				margin-bottom: 2.5em;
+				@include w640 {
+					order: 2;
+					max-width: calc(100% - ((((1em * (((800 - (20 * 8)) / 9) / 18)) * 3) + ((1em * (20 / 18)) * 2)) + 2.5625em));
+					margin-bottom: 0;
+				}
 				width: 100%;
-				max-width: calc(100% - ((((1em * (((800 - (20 * 8)) / 9) / 18)) * 3) + ((1em * (20 / 18)) * 2)) + 2.5625em));
 
 				//Footer form submission styles
 				blockquote.contact-form-submission {
@@ -314,11 +579,28 @@ footer {
 						font-size: 0.875em;
 						line-height: 1.5625;
 						letter-spacing: -(0.535em/18);
+						font-size: 0.75em;
+						@include w1000 {
+							font-size: 0.875em;
+						}
 					}
 					figure {
-						width: calc(100% - 13.78125em);
-						background-color: #BABDC3;
-						padding-top: 20.325%;
+						width: calc(100% - 8.5em);
+						max-width: 11em;
+						@include w1000 {
+							max-width: 14em;
+							width: calc(100% - 12.75em);
+						}
+						a {
+							display: block;
+							transition: opacity 0.1875s ease;
+							&:hover {
+								opacity: 0.68125;
+							}
+						}
+						img {
+							display: block;
+						}
 					}
 				}
 			}
@@ -343,5 +625,11 @@ footer {
 section {
 	background-color: $white;
 	color: $black;
-	padding: 4.390625em 0;
+	padding: 2.25em 0;
+	@include w640 {
+		padding: 4.390625em 0;
+	}
+	@include w1000 {
+		padding: 4.390625em 0;
+	}
 }

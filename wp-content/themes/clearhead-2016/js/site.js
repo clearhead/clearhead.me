@@ -18,6 +18,17 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
     event.preventDefault();
 });
 
+// show/hide browse menu
+jQuery('.menu-toggle-mobile').click(function(e) {
+    e.preventDefault();
+    jQuery('body').toggleClass('show-menu-mobile');
+});
+
+jQuery('.menu-mobile a').click(function(e) {
+    jQuery('body').removeClass('show-menu-mobile');
+});
+
+
 //Validation for contact form before submission
 jQuery(".contact-form").validate();
 

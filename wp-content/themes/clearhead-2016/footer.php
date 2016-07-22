@@ -13,10 +13,10 @@
 
 	</div><!-- #content -->
 
-	<footer role="contentinfo">
+	<footer role="contentinfo" id="contact">
 		<div class="main-footer">
 			<div class="container">
-				<div class="contact" id="contact" >
+				<div class="contact">
 
 					<?php $the_query = new WP_Query( 'page_id=22' );
 						while ( $the_query->have_posts() ) :
@@ -30,11 +30,13 @@
 						<div>
 							<h3>Our Location</h3>
 							<p>
-								3601 S. Congress Ave., C302<br>
+								3601 S. Congress Ave.<span class="dn_n1000">, </span><span class="dn_w1000"><br></span>C302<br>
 								Austin, TX 78704
 							</p>
 						</div>
-						<figure></figure>
+						<figure>
+							<a href="https://www.google.com/maps/place/3601+S+Congress+Ave,+Austin,+TX+78704/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/location.jpg" alt="location"></a>
+						</figure>
 					</div>
 				</div>
 				<div class="info cap-3c-2g">
@@ -67,7 +69,7 @@
 					</div>
 					<div class="info-action">
 						<h3>Think you’d fit in?</h3>
-						<a href="." class="button button-reduced">Apply Here</a>
+						<a href="http://clearhead.theresumator.com/apply" class="button button-reduced">Apply Here</a>
 					</div>
 				</div>
 			</div>
@@ -75,7 +77,7 @@
 		<div class="sub-footer">
 			<div class="container">
 				<div class="closing-text">
-					Simple, sustainable optimization solutions. Designed by Humans in Austin, TX.
+					<span class="dn_n640">Simple, sustainable optimization solutions. </span>Designed by Humans in Austin, TX.
 				</div>
 				<div class="site-info">
 					&copy; <?php echo date("Y") ?> Clearhead

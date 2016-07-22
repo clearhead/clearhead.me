@@ -37,18 +37,6 @@ function clearhead_2016_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
-	/*
-	 * Enables support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	function clearhead_register_image_sizes() {
-		add_theme_support( 'post-thumbnails' );
-		set_post_thumbnail_size( 800, 350, true );
-		add_image_size( 'clearhead-archive', 400, 175, true );
-	}
-	add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
-
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -78,6 +66,18 @@ function clearhead_2016_setup() {
 }
 endif;
 add_action( 'after_setup_theme', 'clearhead_2016_setup' );
+
+/*
+ * Enables support for Post Thumbnails on posts and pages.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+ */
+function clearhead_register_image_sizes() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 800, 350, true );
+	add_image_size( 'clearhead-archive', 400, 175, true );
+}
+add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -118,13 +118,15 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  */
 function clearhead_2016_scripts_and_styles() {
 
-	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), '201607220928' );
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
-	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/site.js', array(), '20151215', true );
+
+	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/site.js', array(), '20160722927', true );
+
 
 	// scripts from previous clearhead theme
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20120206', true);
@@ -133,10 +135,10 @@ function clearhead_2016_scripts_and_styles() {
 
 	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-
 	// script from previous clearhead theme
 	if ( is_front_page() ) :
-		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array(), '20120206', true );
+		wp_enqueue_script( 'parallax-background', get_template_directory_uri() . '/js/parallax-background.js', array('jquery'), '20160716', true);
+		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array('jquery', 'parallax-background'), '20120206', true );
 	endif;
 
 

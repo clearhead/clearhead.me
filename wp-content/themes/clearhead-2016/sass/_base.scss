@@ -12,6 +12,7 @@ body {
 	letter-spacing: -(0.27em/18);
 	&.scrolled {
 		background-color: $blue;
+
 	}
 	&.home, &.error404 {
 		background-color: $blue;
@@ -111,8 +112,8 @@ h5 {
 	font-weight: $medium;
 }
 p {
-	margin-bottom: 1.5em;
 	letter-spacing: -(0.27em/18);
+	margin-bottom: 1.5em;
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -122,19 +123,24 @@ hr {
 	border-bottom: 1px solid $gray;
 	margin: 2.25em 0 1.875em;
 	&.extra-space {
-		margin: 6.109375em 0;
+		margin: 3.75em 0;
+		@include w640  { margin: 4em 0; }
+		@include w1000 { margin: 6.109375em 0; }
 	}
 }
 small {
 	font-size: 0.8em;
 }
 blockquote {
-	font-size: 1.125em;
 	font-weight: $medium;
 	color: rgba($black, 0.8);
 	letter-spacing: -(0.7em/18);
 	line-height: 1.5;
 	position: relative;
+
+	font-size: 1em;
+	@include w1000 { font-size: 1.125em; }
+
 	&:before, &:after {
 		font-size: 1.3em;
 		color: rgba($black, 0.3);
@@ -226,6 +232,9 @@ label {
 	letter-spacing: -(0.7em/18);
 	line-height: 1.36875;
 }
+img {
+	max-width: 100%;
+}
 
 // Themes
 // ------
@@ -265,11 +274,8 @@ article {
 		a {
 			display: block;
 			img {
-				height: auto;
+				// height: auto;
 				display: block;
-
-				// temporary
-				height: 12.390625em;
 			}
 		}
 	}

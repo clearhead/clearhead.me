@@ -21,7 +21,17 @@ get_header(); ?>
 				<section class="hero">
 					<div class="container">
 						<div class="cap-6c-6g">
-							<h1>Clearhead</h1>
+
+							<div class="logo-icon">
+								<figure>
+									<?php get_template_part( 'img/logo-icon.svg' ); ?>
+								</figure>
+							</div>
+
+							<h1>
+								<span>Clearhead</span>
+								<figure><?php get_template_part( 'img/logo-type.svg' ); ?></figure>
+							</h1>
 							<h5>The Digital Optimization Company</h5>
 							<p>
 								We help daring brands optimize their business outcomes through continuous testing &amp; personalization.
@@ -34,20 +44,54 @@ get_header(); ?>
 				</section>
 
 				<div id="what">
-					<section class="photo-callout photo-callout-blue">
+					<section class="parallax-callout photo-callout photo-callout-blue">
+						<div class="fill">
+							<div class="container">
+								<div class="cap-7c-6g">
+									<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+								</div>
+							</div>
+						</div>
+					    <div class="px-window">
+							<div class="px-photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg" alt="" />
+							</div>
+					    </div>
+					</section>
+
+					<?php /*
+					<section
+						class="photo-callout photo-callout-blue"
+
+						data-parallax="scroll"
+						data-bleed="75"
+						data-image-src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg"
+						data-natural-width="2400"
+						data-natural-height="1000"
+						data-speed="0.8"
+					>
 						<div class="container">
 							<div class="cap-7c-6g">
-								<h3>Solving <em>big</em> problems through testing and personalization</h3>
+								<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
 							</div>
 						</div>
 					</section>
+					*/ ?>
 
+					<!-- <section class="photo-callout photo-callout-blue">
+						<div class="container">
+							<div class="cap-7c-6g">
+								<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
+							</div>
+						</div>
+					</section> -->
 					<section>
 						<div class="container">
+
 							<div class="cap-6c-5g">
 								<h2>Solutions Tested<br>on Real Problems</h2>
 								<p>
-									Running the tests isn’t the problem. Reporting isn’t the problem. The problem is moving people and behavior, day in and out, towards more validated and confident solutions. That’s what we’re solving for.
+									Running the tests isn’t the problem. Reporting isn’t&nbsp;the problem. The problem is moving people and behavior, day in and out, towards more validated and confident solutions. That’s what we’re solving for.
 								</p>
 							</div>
 
@@ -55,7 +99,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Digital Optimization Programs</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Uncovering the best ideas quickly and iteratively</strong>
@@ -68,7 +114,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Data-driven Redesigns</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Disrupt with confidence</strong>
@@ -81,7 +129,9 @@ get_header(); ?>
 								<li>
 									<div>
 										<h3>Optimization Accelerators</h3>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
+										</figure>
 									</div>
 									<div>
 										<strong>Building towards a test-and-learn culture</strong>
@@ -113,7 +163,7 @@ get_header(); ?>
 								<ul>
 									<li>
 										<blockquote>
-											Our site is stale so we really need a full redesign rather than incremental testing.
+											Our site is stale so we really need a full redesign rather than iterative testing.
 										</blockquote>
 										<a href="/blog/announcing-the-data-driven-redesign/">Understand the data-driven redesign</a>
 									</li>
@@ -139,7 +189,7 @@ get_header(); ?>
 							<div class="cap-6c-5g">
 								<h2>Data Stories that Reveal Insight and Inspire Change</h2>
 								<p>
-									We’ve investigated every corner of digital experiences &amp; organizations across many industries. Whatever the problem, user journey, device, platform or success metric, we will optimize it.
+									We’ve investigated every corner of digital experiences &amp; organizations across many industries. Whatever the problem, user journey, device, platform or success metric, we will optimize&nbsp;it.
 								</p>
 							</div>
 
@@ -148,7 +198,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>Breaking Best Practices</h3>
-											<figure></figure>
+											<figure class="buildium-logo">
+												<?php get_template_part( 'img/stories/buildium.svg' ); ?>
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -160,7 +212,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>MVT’S Hidden Thrills</h3>
-											<figure></figure>
+											<figure>
+												<?php get_template_part( 'img/stories/village-roadshow.svg' ); ?>
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -172,7 +226,9 @@ get_header(); ?>
 									<li>
 										<div>
 											<h3>Testing the Power of Print</h3>
-											<figure></figure>
+											<figure>
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/stories/stories-bluedot.png" alt="blu dot">
+											</figure>
 										</div>
 										<div>
 											<p>
@@ -187,10 +243,14 @@ get_header(); ?>
 							<div class="client-testimonial">
 								<div class="client">
 									<div class="logo">
-										<figure></figure>
+										<figure class="village-roadshow-logo">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/village-roadshow.png" alt="Village Roadshow">
+										</figure>
 									</div>
-									<strong>John Satterley</strong>
-									<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
+									<div class="info">
+										<strong>Jon Satterley</strong>
+										<small>Group Director, Digital&nbsp;Development at Village Roadshow</small>
+									</div>
 								</div>
 								<div class="testimonial">
 									<blockquote>
@@ -202,15 +262,40 @@ get_header(); ?>
 						</div>
 					</section>
 				</div>
-
 				<div id="with">
-					<section class="photo-callout photo-callout-orange">
+					<section class="parallax-callout photo-callout photo-callout-orange">
+						<div class="fill">
+							<div class="container">
+								<div class="cap-7c-6g">
+									<h3>You, us and a few of&nbsp;our&nbsp;friends</h3>
+								</div>
+							</div>
+						</div>
+						<div class="px-window">
+							<div class="px-photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-do-it-with.jpg" alt="" />
+							</div>
+					    </div>
+					</section>
+
+					<?php /*
+					<section
+						class="photo-callout photo-callout-orange"
+
+						data-parallax="scroll"
+						data-bleed="75"
+						data-image-src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-do-it-with.jpg"
+						data-natural-width="2400"
+						data-natural-height="1000"
+						data-speed="0.8"
+					>
 						<div class="container">
 							<div class="cap-7c-6g">
-								<h3>You, us and a few of our friends</h3>
+								<h3>You, us and a few of&nbsp;our&nbsp;friends</h3>
 							</div>
 						</div>
 					</section>
+					*/ ?>
 
 					<section class="theme-orange">
 						<div class="container">
@@ -224,46 +309,69 @@ get_header(); ?>
 							<div class="logo-list logo-list-clients">
 								<ul>
 									<li>
-										<figure style="width: 5em"></figure>
+										<figure style="max-width: 4em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/adidas.png" alt="Adidas">
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/blu-dot.png" alt="Blu Dot">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7.25em"></figure>
+										<figure style="max-width: 7.25em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/world-market.png" alt="World Market">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 9.75em"></figure>
+										<figure style="max-width: 9.8125em;">
+											<?php get_template_part( 'img/clients/cvs.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7.4125em"></figure>
+										<figure style="max-width: 7.4125em;">
+											<?php get_template_part( 'img/clients/express.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/keurig.png" alt="Keurig">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 7em"></figure>
+										<figure style="max-width: 8.5em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/patagonia.png" alt="Patagonia">
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 5em"></figure>
+										<figure style="max-width: 6.125em;">
+											<?php get_template_part( 'img/clients/tesco.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/tory-burch.png" alt="Tory Burch">
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure style="max-width: 6.25em;">
+											<?php get_template_part( 'img/clients/ulta.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure></figure>
+										<figure>
+											<?php get_template_part( 'img/clients/usaa.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 5.5em"></figure>
+										<figure style="max-width: 9.36875em;">
+											<?php get_template_part( 'img/clients/vitamix.svg' ); ?>
+										</figure>
 									</li>
 									<li>
-										<figure style="width: 9em"></figure>
-									</li>
-									<li>
-										<figure style="width: 5.09375em"></figure>
+										<figure style="max-width: 5.125em;">
+											<?php get_template_part( 'img/clients/whole-foods.svg' ); ?>
+										</figure>
 									</li>
 									<li class="more">
 										<figure>
@@ -288,24 +396,33 @@ get_header(); ?>
 								<div class="logo-list logo-list-solutions">
 									<ul>
 										<li>
-											<figure style="width: 5em"></figure>
+											<figure style="max-width: 6.15625em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/optimizely.png" alt="Optimizely">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7em"></figure>
+											<figure style="max-width: 9.15625em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/monetate.png" alt="Monetate">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7.25em"></figure>
+											<figure style="max-width: 5.32em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/qubit.png" alt="Qubit">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 9.75em"></figure>
+											<figure style="max-width: 8.8125em;">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/technologies/maxymiser.png" alt="Maxymiser">
+											</figure>
 										</li>
 										<li>
-											<figure style="width: 7.4125em"></figure>
+											<figure style="max-width: 8.875em;">
+												<?php get_template_part( 'img/technologies/user-testing.svg' ); ?>
+											</figure>
 										</li>
 									</ul>
 								</div>
 							</div>
-
 							<h3>Platforms We Use</h3>
 							<div class="platforms-list">
 								<ul class="cap-8c-7g">
@@ -339,10 +456,14 @@ get_header(); ?>
 							<div class="client-testimonial">
 								<div class="client">
 									<div class="logo">
-										<figure></figure>
+										<figure class="keurig-logo">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/testimonials/keurig.png" alt="Keurig">
+										</figure>
 									</div>
-									<strong>Delia Vallejo</strong>
-									<small>Senior Director Ecommerce, Keurig&nbsp;Green&nbsp;Mountain</small>
+									<div class="info">
+										<strong>Delia Vallejo</strong>
+										<small>Senior Director Ecommerce, Keurig&nbsp;Green&nbsp;Mountain</small>
+									</div>
 								</div>
 								<div class="testimonial">
 									<blockquote>
@@ -354,17 +475,46 @@ get_header(); ?>
 					</section>
 				</div>
 
+
 				<div id="who">
-					<section class="photo-callout photo-callout-purple">
+					<section class="parallax-callout photo-callout photo-callout-purple">
+						<div class="fill">
+							<div class="container">
+								<div class="cap-7c-6g">
+									<h3>Miles walked in your shoes.</h3>
+								</div>
+							</div>
+						</div>
+						<div class="px-window">
+							<div class="px-photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-are.jpg" alt="" />
+							</div>
+					    </div>
+					</section>
+
+					<?php /*
+					<section
+						class="photo-callout photo-callout-purple"
+
+						data-parallax="scroll"
+						data-bleed="75"
+						data-image-src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-are.jpg"
+						data-natural-width="2400"
+						data-natural-height="1000"
+						data-speed="0.8"
+					>
 						<div class="container">
 							<div class="cap-7c-6g">
 								<h3>Miles walked in your shoes.</h3>
 							</div>
 						</div>
 					</section>
+					*/ ?>
 
 					<section class="theme-purple">
 						<div class="container">
+
+
 							<div class="cap-6c-5g">
 								<h2>We Were You</h2>
 								<p>
@@ -373,15 +523,18 @@ get_header(); ?>
 							</div>
 
 							<div class="origin-stories">
-								<h3>Curious about how Clearhead started?</h3>
+								<hr class="extra-space">
+								<h3>Curious about how Clearhead&nbsp;started?</h3>
 								<ul>
 									<li>
 										<a href="/blog/meet-matty/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/matty.jpg');"></div>
 												<figcaption>
 													<div>Read Matty’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -389,10 +542,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-ryan/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/ryan.jpg');"></div>
 												<figcaption>
 													<div>Read Ryan’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -400,10 +555,12 @@ get_header(); ?>
 									<li>
 										<a href="/blog/meet-sam/">
 											<figure>
-												<div class="photo"></div>
+												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/sam.jpg');"></div>
 												<figcaption>
 													<div>Read Sam’s Story</div>
-													<span></span>
+													<span>
+														<?php get_template_part( 'img/icons/target.svg' ); ?>
+													</span>
 												</figcaption>
 											</figure>
 										</a>
@@ -414,9 +571,9 @@ get_header(); ?>
 							<hr class="extra-space">
 
 							<div class="cap-6c-6g">
-								<h2>Great Quarterbacks are Always Surrounded by the Best Team</h2>
+								<h2>Success Starts with the Best&nbsp;Team</h2>
 								<p>
-									More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization&nbsp;methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.
+									More than just practitioners, your co-pilots are fun, middle-brained thinkers who are experts in technology and the Clearhead optimization<span class="dn_n640">&nbsp;</span><span class="dn_w640"> </span>methodology. Consider us your secret weapon for simplifying small tasks and taking big steps towards change.
 								</p>
 							</div>
 
@@ -424,38 +581,50 @@ get_header(); ?>
 								<ul>
 									<li>
 										<figure>
-											<div class="photo"></div>
-											<figcaption>Strategic Consultants</figcaption>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/consultants.jpg" alt="employee headshot">
+											</div>
+											<figcaption>Strategic<br>Consultants</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
-											<figcaption>Optimization Directors</figcaption>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/directors.jpg" alt="employee headshot">
+											</div>
+											<figcaption>Optimization<br>Directors</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
-											<figcaption>Project Managers</figcaption>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/managers.jpg" alt="employee headshot">
+											</div>
+											<figcaption>Project<br>Managers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
-											<figcaption><span>UX</span>&nbsp;+&nbsp;Interface Designers</figcaption>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/designers.jpg" alt="employee headshot">
+											</div>
+											<figcaption><span>UX</span>&nbsp;+&nbsp;Interface<br>Designers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
-											<figcaption>Front-end Developers</figcaption>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/developers.jpg" alt="employee headshot">
+											</div>
+											<figcaption>Front-end<br>Developers</figcaption>
 										</figure>
 									</li>
 									<li>
 										<figure>
-											<div class="photo"></div>
-											<figcaption>Data Analysts</figcaption>
+											<div class="photo">
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/team/analysts.jpg" alt="employee headshot">
+											</div>
+											<figcaption>Data<br>Analysts</figcaption>
 										</figure>
 									</li>
 								</ul>
@@ -468,7 +637,6 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 		</main>
 	</div>
-
 <?php
 // get_sidebar();
 get_footer();
