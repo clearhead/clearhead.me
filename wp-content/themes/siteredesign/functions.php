@@ -90,7 +90,7 @@ function siteredesign_scripts_and_styles() {
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
-	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '20151215', true );
+	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '20160721', true );
 	wp_localize_script( 'email-ajax', 'my_ajax_object',
             array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
