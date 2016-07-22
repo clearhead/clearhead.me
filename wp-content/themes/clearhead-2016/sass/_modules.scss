@@ -48,6 +48,9 @@
         position: relative;
         text-align: center;
         bottom: 1.25rem;
+        @include w640 {
+            text-align: left;
+        }
         figure {
             display: block;
             pointer-events: none;
@@ -109,6 +112,12 @@
         }
     }
 }
+body.ie .hero h1 figure svg {
+    @include w640 {
+        width: 17.5rem;
+    }
+}
+
 
 // Photo Callout
 // -------------
