@@ -18,6 +18,11 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
     event.preventDefault();
 });
 
+//Remove the sizes attr that is causing a bug in edge
+if(bowser.msedge) {
+  jQuery(".wp-post-image").attr("sizes","");
+}
+
 // show/hide browse menu
 jQuery('.menu-toggle-mobile').click(function(e) {
     e.preventDefault();
