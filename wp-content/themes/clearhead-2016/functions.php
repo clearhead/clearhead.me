@@ -37,18 +37,6 @@ function clearhead_2016_setup() {
 	 */
 	add_theme_support( 'title-tag' );
 
-	/*
-	 * Enables support for Post Thumbnails on posts and pages.
-	 *
-	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
-	 */
-	function clearhead_register_image_sizes() {
-		add_theme_support( 'post-thumbnails' );
-		set_post_thumbnail_size( 800, 350, true );
-		add_image_size( 'clearhead-archive', 400, 175, true );
-	}
-	add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
-
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -78,6 +66,18 @@ function clearhead_2016_setup() {
 }
 endif;
 add_action( 'after_setup_theme', 'clearhead_2016_setup' );
+
+/*
+ * Enables support for Post Thumbnails on posts and pages.
+ *
+ * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
+ */
+function clearhead_register_image_sizes() {
+	add_theme_support( 'post-thumbnails' );
+	set_post_thumbnail_size( 800, 350, true );
+	add_image_size( 'clearhead-archive', 400, 175, true );
+}
+add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
