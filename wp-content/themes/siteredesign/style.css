@@ -158,10 +158,21 @@ body.ch-report .nav-wrap {
   margin-left: auto;
   margin-right: auto;
   left: 0;
-  right: 0; }
+  right: 0;
+  z-index: 110; }
+  body.ch-report .nav-wrap:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    box-shadow: 0px 0px 35px 35px rgba(0, 0, 0, 0.3);
+    z-index: 100; }
   body.ch-report .nav-wrap .ch-wrap {
     color: white;
-    align-items: center; }
+    align-items: center;
+    z-index: 200; }
     body.ch-report .nav-wrap .ch-wrap .heading-5 {
       margin-right: 0.5em; }
       @media (min-width: 38.75em) {
@@ -171,10 +182,11 @@ body.ch-report .nav-wrap {
     color: white;
     display: flex; }
     body.ch-report .nav-wrap a:hover {
-      color: #32c4f5; }
+      color: #19748f; }
   body.ch-report .nav-wrap .social-wrap {
     align-items: center;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    z-index: 200; }
     body.ch-report .nav-wrap .social-wrap a {
       width: 1.25em; }
       body.ch-report .nav-wrap .social-wrap a:nth-of-type(2) {
@@ -298,8 +310,15 @@ body.ch-report section.keyfind .item-wrap .heading-wrap {
   body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
     margin-top: 0.25em;
     letter-spacing: -0.9px;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-size: 1.25em; }
     @media (min-width: 38.75em) {
+      body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
+        font-size: 1.22em; } }
+    @media (min-width: 48.75em) {
+      body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
+        font-size: 1.3em; } }
+    @media (min-width: 64em) {
       body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
         font-size: 1.6em; } }
     body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2 span, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue span, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue span {
@@ -410,14 +429,16 @@ body.ch-report section.keyfind .finding-3 {
       body.ch-report section.keyfind .finding-3 .data-wrap {
         margin-bottom: 2.75em; } }
   body.ch-report section.keyfind .finding-3 .share-button {
-    margin-left: 2em; }
+    margin-left: 2.75em; }
   body.ch-report section.keyfind .finding-3 img {
     padding: 1em 1em 0 1em; }
   body.ch-report section.keyfind .finding-3 li {
     margin: 0.75em 0; }
     body.ch-report section.keyfind .finding-3 li:first-of-type {
       margin-bottom: 0; }
-    body.ch-report section.keyfind .finding-3 li:nth-of-type(2) {
+    body.ch-report section.keyfind .finding-3 li:nth-of-type(3) {
+      margin-bottom: 0; }
+    body.ch-report section.keyfind .finding-3 li:nth-of-type(4) {
       margin-top: 0; }
 body.ch-report section.keyfind .finding-4 p span {
   font-weight: 600; }
@@ -490,11 +511,23 @@ body.ch-report section.keyfind .finding-5 .data-wrap {
   @media (min-width: 38.75em) {
     body.ch-report section.keyfind .finding-5 .data-wrap {
       margin-top: 0; } }
+  @media (min-width: 48.75em) {
+    body.ch-report section.keyfind .finding-5 .data-wrap {
+      flex-wrap: wrap; } }
+  @media (min-width: 55.25em) {
+    body.ch-report section.keyfind .finding-5 .data-wrap {
+      flex-wrap: nowrap; } }
   body.ch-report section.keyfind .finding-5 .data-wrap svg {
     width: 95%; }
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .finding-5 .data-wrap svg {
         width: 100%; } }
+@media (min-width: 48.75em) {
+  body.ch-report section.keyfind .finding-5 .text-wrap {
+    width: 100%; } }
+@media (min-width: 55.25em) {
+  body.ch-report section.keyfind .finding-5 .text-wrap {
+    width: 50%; } }
 body.ch-report section.keyfind .finding-5 .heading-wrap {
   margin-bottom: 1.25em; }
 body.ch-report section.keyfind .finding-5 .section-wrap {
@@ -530,6 +563,10 @@ body.ch-report section.keyfind .finding-6 .row-wrap {
   margin-top: 0.25em;
   justify-content: space-around;
   margin-bottom: 1.6em; }
+  body.ch-report section.keyfind .finding-6 .row-wrap .btn-wrap {
+    max-width: 8em; }
+  body.ch-report section.keyfind .finding-6 .row-wrap .share-button {
+    margin-left: 0; }
   @media (min-width: 38.75em) {
     body.ch-report section.keyfind .finding-6 .row-wrap .data-wrap {
       margin-left: 1.25em; } }
@@ -589,9 +626,18 @@ body.ch-report section.keyfind .finding-8 .list-wrap {
       body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li:before {
         content: "•";
         padding-right: 1em; }
-      body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li:nth-of-type(2):before {
+      body.ch-report section.keyfind .finding-8 .list-wrap .bullet-list li:nth-of-type(4):before {
         content: " ";
         padding-right: 1.35em; }
+body.ch-report section.keyfind .finding-3 .share-button, body.ch-report section.keyfind .finding-6 .share-button, body.ch-report section.keyfind .finding-8 .share-button {
+  width: auto;
+  margin-top: 0.9375em;
+  font-size: 0.7125em;
+  padding: 0.73em 1em 0.45em; }
+body.ch-report section.keyfind .finding-3 svg, body.ch-report section.keyfind .finding-6 svg, body.ch-report section.keyfind .finding-8 svg {
+  width: 1.325em;
+  margin-right: 0.5625em;
+  margin-bottom: 0.2875em; }
 body.ch-report section.keyfind .finding-9 {
   padding-bottom: 3.5em; }
   body.ch-report section.keyfind .finding-9 .heading-wrap {
@@ -794,7 +840,7 @@ body.ch-report .social-bar {
     color: white;
     margin-top: 0; }
 body.ch-report .share-button {
-  width: 9em;
+  width: auto;
   margin-top: 0.375em;
   transition: all 0.1875s ease;
   font-size: 0.875em;
@@ -809,9 +855,8 @@ body.ch-report .share-button {
   body.ch-report .share-button:hover {
     color: white;
     background: #19748f; }
-  body.ch-report .share-button svg {
-    width: 1em;
-    margin-right: 0.5em; }
+  body.ch-report .share-button p {
+    font-weight: 500; }
 body.ch-report footer {
   background: rgba(229, 238, 244, 0.7); }
   body.ch-report footer .heading-3, body.ch-report footer h1.heading-3--upper, body.ch-report footer h2.heading-3--upper, body.ch-report footer h3.heading-3--upper, body.ch-report footer h4.heading-3--upper, body.ch-report footer h5.heading-3--upper, body.ch-report footer h6.heading-3--upper, body.ch-report footer li.heading-3--upper, body.ch-report footer p.heading-3--upper, body.ch-report footer a.heading-3--upper, body.ch-report footer small.heading-3--upper, body.ch-report footer span.heading-3--upper, body.ch-report footer blockquote.heading-3--upper, body.ch-report footer cite.heading-3--upper, body.ch-report footer input.heading-3--upper, body.ch-report footer label.heading-3--upper {
@@ -1366,9 +1411,6 @@ body.ch-report .title-wrap {
   @media (min-width: 48.75em) {
     .grid-row-padding--sides-only {
       padding: 0 1.5em; } }
-  @media (min-width: 100em) {
-    .grid-row-padding--sides-only {
-      padding: 0; } }
 .grid-row-padding--top-only {
   padding: 1em 0; }
   @media (min-width: 38.75em) {
@@ -1381,10 +1423,10 @@ body.ch-report .title-wrap {
     .grid-row-padding--top-only {
       padding: 2.6em 0; } }
 .grid-row-padding--short {
-  padding: 2em 1em; }
+  padding: 1em; }
   @media (min-width: 38.75em) {
     .grid-row-padding--short {
-      padding: 1.75em 3.5em; } }
+      padding: 0.75em 3.5em; } }
   @media (min-width: 48.75em) {
     .grid-row-padding--short {
       padding: 0.75em 6.6em; } }
