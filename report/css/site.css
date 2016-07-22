@@ -90,7 +90,7 @@ html, button, input, p {
   font-style: normal;
   font-weight: 400; }
 
-h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 p.text3, body.ch-report section.keyfind .finding-5 .text-wrap .text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button, body.ch-report .social-bar .bar-wrap p, body.ch-report .share-button p, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p {
+h1, h2, h3, h4, h5, body.ch-report section.intro .thanks-list li, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p, body.ch-report section.keyfind .finding-2 .text-wrap p, body.ch-report section.keyfind .finding-4 p.text3, body.ch-report section.keyfind .finding-5 .text-wrap .text3, body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap p.info, body.ch-report section.keyfind span.text1, body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button, body.ch-report section.principles .contact-wrap .error-wrap label, body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button, body.ch-report .social-bar .bar-wrap p, body.ch-report .share-button p, body.ch-report footer .about-wrap p, body.ch-report footer a, body.ch-report .quote-wrap span, body.ch-report .quote-wrap p {
   font-family: "ff-bau-web-pro", sans-serif; }
 
 html {
@@ -752,7 +752,8 @@ body.ch-report section.principles .contact-wrap {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: flex-start; }
     @media (min-width: 38.75em) {
       body.ch-report section.principles .contact-wrap form {
         flex-wrap: nowrap;
@@ -778,6 +779,20 @@ body.ch-report section.principles .contact-wrap {
     @media (min-width: 38.75em) {
       body.ch-report section.principles .contact-wrap input {
         width: initial; } }
+  body.ch-report section.principles .contact-wrap .error-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    @media (min-width: 38.75em) {
+      body.ch-report section.principles .contact-wrap .error-wrap {
+        max-width: 11em; } }
+    body.ch-report section.principles .contact-wrap .error-wrap input.error {
+      border: 1px solid red; }
+    body.ch-report section.principles .contact-wrap .error-wrap label {
+      font-size: 0.8em;
+      padding-left: 0.15em;
+      margin-top: 0.375em;
+      color: red; }
 body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button {
   padding: 0.75em 1em;
   background-color: #32c4f5;
@@ -789,12 +804,13 @@ body.ch-report section.principles button, body.ch-report section.principles .btn
   @media (min-width: 38.75em) {
     body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button {
       width: initial;
-      align-self: stretch;
       padding: 0 1em;
       transition: all 0.1875s ease; } }
   @media (min-width: 48.75em) {
     body.ch-report section.principles button:hover, body.ch-report section.principles .btn:hover, body.ch-report section.principles .share-button:hover {
       background-color: #19748f; } }
+body.ch-report section.principles button {
+  padding: 0.75em 1em; }
 body.ch-report section.principles .btn {
   padding: 0.75em 1em;
   display: block;

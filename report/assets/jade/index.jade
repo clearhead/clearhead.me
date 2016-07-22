@@ -9,6 +9,7 @@ html
     meta(name="description" value="")
     |<script src="https://use.typekit.net/erk8dkx.js"></script>
     |<script>try{Typekit.load();}catch(e){}</script>
+    |<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     
     //- Facebook Social
     meta(property='og:url', content='http://clearhead.me')
@@ -688,10 +689,13 @@ body.ch-report
         .gs--full.contact-wrap
           a.btn(href="images/report.pdf" target="_blank") download the full report (pdf)
           h4.heading-4 Want to learn more about data-driven redesigns?
-          form
-            input(type='text' placeholder='name')
-            input(type='text' placeholder='company')
-            input(type='text' placeholder='email')
+          form#connectForm
+            .error-wrap
+              input(type='text', name='name', required placeholder='name')
+            .error-wrap
+              input(type='text', name='company', placeholder='company')
+            .error-wrap
+              input(type='email', name='email', required placeholder='email')
             button(type='submit') let’s connect!
 
   //-Footer
@@ -761,6 +765,21 @@ script(src="/js/site.js")
 | 
 |  return t;
 |}(document, "script", "twitter-wjs"));</script>
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+script(src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js')
+script.
+  $("#connectForm").validate();
+  //Handle the ajax submission
+  $("#connectForm").submit(function(e) {
+  $(".error_message").hide();
+  if($(this).valid()) {
+  $("#connectForm").hide();
+  $(".contact-wrap .heading-4").append('<div class="success_message">Message Sent! We will contact you soon</div>');
+  }
+  e.preventDefault();
+  });
+
+
 
 
 

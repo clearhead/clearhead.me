@@ -646,6 +646,7 @@ body.ch-report
         align-items: center
         flex-wrap: wrap
         justify-content: space-between
+        align-items: flex-start
         +medium
           flex-wrap: nowrap
           justify-content: space-between
@@ -670,7 +671,20 @@ body.ch-report
         width: 100%
         +medium
           width: initial
-
+      .error-wrap
+        display: flex
+        flex-direction: column
+        width: 100%
+        +medium
+          max-width: 11em
+        input.error
+          border: 1px solid red
+        label
+          @extend %font-family-b
+          font-size: .8em
+          padding-left: .15em
+          margin-top: .375em
+          color: red
     button, .btn, .share-button
       @extend %font-family-b
       padding: .75em 1em
@@ -683,12 +697,14 @@ body.ch-report
       // width: 100%
       +medium
         width: initial
-        align-self: stretch
+        // align-self: stretch
         padding: 0 1em
         transition: all 0.1875s ease
       +large
         &:hover
           background-color: $link-hover-color
+    button
+      padding: .75em 1em
     .btn
       padding: .75em 1em
       display: block
