@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="155px" height="218px" viewBox="0 0 155 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>big_bang</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ecommerce-Survey-Webpage" transform="translate(-536.000000, -3401.000000)">
+            <g id="Group-13" transform="translate(536.000000, 3383.000000)">
+                <g id="Group-2">
+                    <g id="big_bang">
+                        <g id="Group-11" transform="translate(0.000000, 43.118176)">
+                            <path d="M61.7460938,56.0664063 L61.7460937,36.4714 C61.7460937,36.4714 61.7460937,12.7773438 84.4960938,0.1953125" id="Path-37" stroke="#DFE8ED" stroke-width="4"></path>
+                            <path d="M87.8571429,74.7524063 C108.634894,84.6368275 123,105.844883 123,130.412844 C123,164.426491 95.4655121,192 61.5,192 C27.5344879,192 0,164.426491 0,130.412844 C0,105.844883 14.3651056,84.6368275 35.1428571,74.7524063 L35.1428571,59.0087557 C35.1428571,56.7947811 36.9269614,55 39.1482629,55 L83.8517371,55 C86.0638616,55 87.8571429,56.7934498 87.8571429,59.0087557 L87.8571429,74.7524063 Z" id="Combined-Shape" fill="#DFE8ED"></path>
+                            <path d="M122.025602,119.296296 C122.665794,122.865771 123,126.541875 123,130.296296 C123,164.374311 95.4655121,192 61.5,192 C27.5344879,192 0,164.374311 0,130.296296 C0,126.541875 0.334206125,122.865771 0.97439819,119.296296 L122.025602,119.296296 Z" id="Combined-Shape" fill="#32C4F5"></path>
+                        </g>
+                        <path d="M144,233.798172 L144,163.118176" id="Path-32" stroke="#6A6460" stroke-width="2" stroke-dasharray="5,4"></path>
+                        <path d="M144,162.798172 L144,104.118176" id="Path-32-Copy" stroke="#6A6460" stroke-width="2" stroke-dasharray="5,4" opacity="0.2"></path>
+                        <path d="M132,162.770519 L158.195312,162.118176" id="Path-33" stroke="#6A6460" stroke-width="2" stroke-dasharray="5,4"></path>
+                        <polygon id="Star-2" fill="#DFE8ED" transform="translate(81.189456, 40.021118) rotate(43.000000) translate(-81.189456, -40.021118) " points="83.7687546 50.0248976 64.9712176 65.6297945 79.0331594 47.7443552 51.3350921 47.7443557 77.863564 42.6200228 64.9712173 25.090776 81.1406975 38.5106273 87.0881231 14.4124418 86.3968117 38.5106273 102.566291 28.9773087 89.6739452 42.6200228 111.043821 46.9503269 88.5043498 47.7443552 97.9616791 65.6297945"></polygon>
+                        <path d="M132,101.770519 L158.195312,101.118176" id="Path-33-Copy" stroke="#6A6460" stroke-width="2" stroke-dasharray="5,4" opacity="0.2"></path>
+                        <path d="M132,233.770519 L158.195312,233.118176" id="Path-33" stroke="#6A6460" stroke-width="2" stroke-dasharray="5,4"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
