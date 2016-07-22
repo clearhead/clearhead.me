@@ -863,6 +863,14 @@ body.ch-report .share-button {
     font-weight: 500; }
 body.ch-report footer {
   background: rgba(229, 238, 244, 0.7); }
+  body.ch-report footer .footer-wrap {
+    padding-bottom: 4em; }
+    @media (min-width: 38.75em) {
+      body.ch-report footer .footer-wrap {
+        padding-bottom: 5em; } }
+    @media (min-width: 48.75em) {
+      body.ch-report footer .footer-wrap {
+        padding-bottom: 6.25em; } }
   body.ch-report footer .heading-3, body.ch-report footer h1.heading-3--upper, body.ch-report footer h2.heading-3--upper, body.ch-report footer h3.heading-3--upper, body.ch-report footer h4.heading-3--upper, body.ch-report footer h5.heading-3--upper, body.ch-report footer h6.heading-3--upper, body.ch-report footer li.heading-3--upper, body.ch-report footer p.heading-3--upper, body.ch-report footer a.heading-3--upper, body.ch-report footer small.heading-3--upper, body.ch-report footer span.heading-3--upper, body.ch-report footer blockquote.heading-3--upper, body.ch-report footer cite.heading-3--upper, body.ch-report footer input.heading-3--upper, body.ch-report footer label.heading-3--upper {
     font-size: 0.9em;
     line-height: 1.8;
