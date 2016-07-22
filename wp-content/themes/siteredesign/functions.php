@@ -42,6 +42,36 @@ function siteredesign_setup() {
 	) ) );
 }
 endif;
+
+function send_mail_via_wordpress() {
+	if ( isset($_POST['action']) && $_POST['action'] == "send_mail_via_wordpress" ){
+			//Loop through each field add to string to send to user
+			$bodyString = "";
+			foreach ($_POST as $field => $value) {
+					if($field != "action" && $value )
+					{
+						$bodyString .= $field . ": " . sanitize_text_field($value) . "\n";
+					}
+			}
+			//Set the reply to header
+			$headers = array( 'Reply-To: '.sanitize_text_field($_POST['email']));
+			$user_email = get_option('admin_email');
+			//send off the message
+	    wp_mail($user_email,'Survey Redesign Report', $bodyString, $headers);
+	    echo 'success';
+	    die();
+    }
+	echo 'fail';
+	die();
+}
+
+// if you want only logged in users to access this function use this hook
+add_action('wp_ajax_send_mail_via_wordpress', 'send_mail_via_wordpress');
+
+// if you want none logged in users to access this function use this hook
+add_action('wp_ajax_nopriv_send_mail_via_wordpress', 'send_mail_via_wordpress');
+
+
 add_action( 'after_setup_theme', 'siteredesign_setup' );
 
 
@@ -54,9 +84,16 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  */
 function siteredesign_scripts_and_styles() {
 
-	wp_enqueue_style( 'siteredesign-style', get_stylesheet_uri(), false, '201607210229');
+	wp_enqueue_style( 'siteredesign-style', get_stylesheet_uri(), false, '201607212301');
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
+
+	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
+
+	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '20151215', true );
+	wp_localize_script( 'email-ajax', 'my_ajax_object',
+            array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'siteredesign_scripts_and_styles' );
