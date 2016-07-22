@@ -299,7 +299,6 @@ article .entry-title {
 article .entry-image a {
   display: block; }
   article .entry-image a img {
-    height: auto;
     display: block; }
 
 article .entry-content p {

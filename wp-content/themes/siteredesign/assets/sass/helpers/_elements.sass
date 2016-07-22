@@ -1,3 +1,8 @@
+
+* 
+  -webkit-font-smoothing: antialiased!important
+  -moz-osx-font-smoothing: grayscale!important
+
 body.ch-report
 
   //- Nav
@@ -8,19 +13,41 @@ body.ch-report
     margin-right: auto
     left: 0
     right: 0
+    z-index: 110
+    &:before
+      content: ""
+      position: absolute
+      top: -10px
+      left: 0
+      width: 100%
+      height: 10px
+      box-shadow: 0px 0px 35px 35px rgba(0,0,0,.3)
+      z-index: 100
+
+
+
+
     .ch-wrap
       color: white
       align-items: center
-      // font-size: 0.7727272727em
+      z-index: 200
       .heading-5
         margin-right: .5em
-        font-size: 0.85em
-      img
-        width: .8em
+        +medium
+          font-size: 0.85em
+    a
+      color: white
+      display: flex
+      +large
+        &:hover
+          color: $link-hover-color
     .social-wrap
       align-items: center
       justify-content: flex-end
-      a, img
+      z-index: 200
+
+
+      a
         width: 1.25em
         &:nth-of-type(2)
           margin: 0 .85em
@@ -33,32 +60,58 @@ body.ch-report
     background-position: top center
     background-repeat: no-repeat
     .heading-wrap
-      // padding: 1.25em
-      padding: 1em 0 .5em
+      padding: .75em
       margin-top: .5em
       background: white
-      width: 76%
       text-align: center
+      // width: 80%
+      max-width: 780px
+      @media (min-width: 33.0625em)
+        padding: .75em 3em
+      @media (min-width: 38.4375em)
+        padding: .75em 4em
       +medium
-        height: 6em
+        padding: 1em
+        // height: 6em
+        // width: 76%
       .heading-3
-        padding-top: .35em
-        letter-spacing: 1px
+        // padding-top: .35em
+        letter-spacing: -.3px
         color: rgba(#313335, .9)
+        font-size: 1em
+        +medium
+          font-size: 1.1363636364em
       .heading-2
-        font-size: 2.1em
-        padding-top: 0.04545454545em
+        padding: 0.04545454545em 0 .325em
         letter-spacing: -.4px
+        font-size: 1.25em
+        line-height: 1.15em
+        +small
+          font-size: 1.35em
+        @media (min-width: 20.6875em)
+          font-size: 1.3em
+        +medium
+          font-size: 1.9em
+        +large
+          font-size: 2.1em
+        @media (min-width: 48.75em)
+          font-size: 1.9em
+        // +x-large
+        //   font-size: 2.1em
 
   //-Intro
   section.intro
+    +x-large
+      padding-right: 4em
     .key-quest
       margin: 1em 0 1.5em
       li
-        margin: 1.175em 0
+        margin: .75em 0
         display: flex
-        align-items: center
+        align-items: flex-start
         font-size: 1.1em
+        +medium
+          margin: 1.175em 0
         
     .table-wrap
       padding: 0 1em 1em
@@ -75,7 +128,8 @@ body.ch-report
         margin-bottom: 1.5em
         letter-spacing: -0.5px
     .thanks-list
-      column-count: 2
+      +medium
+        column-count: 2
       li
         @extend %font-family-b
         font-weight: 500
@@ -87,12 +141,12 @@ body.ch-report
         font-size: 0.7em
         padding-left: 1.5em
         letter-spacing: -.3px
-        margin: .75em 0
         color: rgba($black, .9)
-        &:nth-of-type(3)
-          font-size: .67em
-        // &:nth-of-type(6)
-        //   margin-top: 0
+        margin: 1em 0
+        +medium
+          margin: .75em 0
+          &:nth-of-type(3)
+            font-size: .67em
     .data-wrap
       flex-wrap: nowrap
       align-items: flex-end
@@ -111,18 +165,25 @@ body.ch-report
       &:not(:last-of-type)
         border-bottom: 1px solid RGBA(49,51,53,.2)
       .data-wrap
-        flex-wrap: nowrap
-        align-items: center
-        justify-content: space-between
+        +medium
+          flex-wrap: nowrap
+          align-items: center
+          justify-content: space-between
         .text1
           color: $text-color-blue
       .heading-wrap
         margin-bottom: 2em
         .heading-2
           margin-top: .25em
-          font-size: 1.6em
           letter-spacing: -.9px
           line-height: 1.3
+          font-size: 1.25em
+          +medium
+            font-size: 1.22em
+          +large
+            font-size: 1.3em
+          +x-large
+            font-size: 1.6em
           span
             color: $text-color-purple
         .heading-4--purple
@@ -131,10 +192,8 @@ body.ch-report
       .sub-items-wrap
         margin-bottom: 2em
         .sub-item
-          // margin-top: .25em
-          width: 42.5%
-          &:first-of-type
-            margin-right: 3.5em
+          +medium
+            width: 42.5%
           .info-wrap
             flex-wrap: nowrap
             align-items: flex-start
@@ -168,8 +227,16 @@ body.ch-report
       img
         margin-bottom: 2.6em
       .sub-item
+        &:first-of-type
+          margin-bottom: 2.5em
+        +medium
+          &:first-of-type
+            margin-right: 3.5em
+            margin-bottom: 0
         img
-          margin-bottom: 1.8em
+          margin-bottom: 1em
+          +medium
+            margin-bottom: 1.8em
       .text-wrap
         padding-bottom: 3em
     
@@ -186,7 +253,7 @@ body.ch-report
         .heading-1
           display: flex
           align-items: flex-start
-          margin-top: 1em
+          margin-top: .15em
           span
             font-size: .6em
             font-weight: 400
@@ -203,29 +270,52 @@ body.ch-report
       .heading-wrap 
         margin-bottom: 1.75em
       .sub-item
-        width: 46%
+        +medium
+          width: 46%
+        img
+          margin-top: 1em
+          +medium
+            margin-top: 0
       .row-wrap
         justify-content: space-between
       .para-wrap
-        margin: 1.9em 0 4em
+        margin: 1em 0
+        +medium
+          margin: 1.9em 0
     
     .finding-3
+      padding-bottom: 2.75em
       .image-wrap
-        margin-left: .6em
-        margin-top: .5em
+        margin-bottom: 1em
+        +medium
+          margin-left: .6em
+          margin-top: .5em
+          margin-bottom: 1em
       .text-wrap
+        +medium
         padding-left: .5em
         padding-top: .2em
       .data-wrap
-        margin-bottom: 2.75em
+        margin-bottom: 1em
+        +medium
+          margin-bottom: 2.75em
+      .share-button
+        margin-left: 2.75em
       img
         padding: 1em 1em 0 1em
       li
         margin: .75em 0
+        &:first-of-type
+          margin-bottom: 0
+        &:nth-of-type(3)
+          margin-bottom: 0
+        &:nth-of-type(4)
+          margin-top: 0
+    
     .finding-4
       p span
         font-weight: 600
-      span.text3
+      p.text3
         @extend %font-family-b
         font-weight: 400
         font-size: 0.6363636364em
@@ -234,16 +324,55 @@ body.ch-report
       .vs-wrap
         align-items: flex-end
         justify-content: center
-        margin-top: 2.75em
+        margin-top: 2.5em
         margin-bottom: .5em
-        // flex-wrap: nowrap
+        +large
+          // padding: 0 1em
+        .desk-guys
+          .text-wrap
+            display: flex
+            align-items: center
+            .heading-1
+              padding-right: .25em
+              flex-shrink: 0
+          +medium
+            display: flex
+            align-items: flex-end
+            justify-content: space-around
+            .text-wrap
+              flex-direction: column
+              .heading-1
+                font-weight: 500
+                font-size: 2.2em
+                letter-spacing: 2px
+                span
+                  font-size: .55em
+            .text-wrap-right
+              text-align: right
+              .text-wrap
+                align-items: flex-end
+        .images-wrap
+          align-items: flex-end
+          display: flex
+          justify-content: center
+          margin: 1em 0
+          +medium
+            margin: 0
+          +large
+            width: 37%
         .heading-1--lightblue
           font-weight: 500
           // padding-left: 1em
+          margin: 0 1em
         .text-wrap
-          justify-content: flex-end
+          p.text3
+            font-size: 0.7em
+            line-height: 1.6
+            letter-spacing: -.2px
         .guy-wrap
-          width: 38%
+          display: flex
+          +medium
+            width: 38%
           .data-wrap
             justify-content: initial
             // margin-left: 1.5em
@@ -254,7 +383,24 @@ body.ch-report
           span
             font-size: .5em
     .finding-5
-      // padding-bottom: 3.6em
+      .data-wrap
+        margin-top: 2em
+        +medium
+          margin-top: 0
+        +large
+          flex-wrap: wrap
+        @media (min-width: 55.25em)  
+          flex-wrap: nowrap
+        svg
+          width: 95%
+          +medium
+            width: 100%
+        flex-wrap: nowrap
+      .text-wrap
+        +large
+          width: 100%
+        @media (min-width: 55.25em)
+          width: 50%
       .heading-wrap
         margin-bottom: 1.25em
       .section-wrap
@@ -270,51 +416,81 @@ body.ch-report
         margin-bottom: 2.25em
         align-items: flex-start
         .item
-          width: calc(50% - .75em)
+          +medium
+            width: calc(50% - .75em)
         p
           padding-right: .5em
       .text-wrap
         padding-left: .5em
+        .heading-1
+          display: flex
+          align-items: flex-start
+          font-weight: 500
+          span
+            font-size: .5em
+        .text3
+          @extend %font-family-b
+          font-size: 0.7em
+          line-height: 1.4
+          letter-spacing: -.2px
     
     .finding-6
       .row-wrap
         margin-top: .25em
         justify-content: space-around
         margin-bottom: 1.6em
+        .btn-wrap
+          max-width: 8em
+        .share-button
+          margin-left: 0
         .data-wrap
-          margin-left: 1.25em
+          +medium
+            margin-left: 1.25em
         .text-wrap
-          width: 45%
-          padding-left: 1em
+          margin-top: 1.5em
+          +medium
+            margin-top: 0
+            width: 45%
+            padding-left: 1em
     
     .finding-7
       padding-bottom: 2.75em
       .row-wrap
         margin-bottom: 2em
+        +medium
+          flex-wrap: nowrap
       .heading-wrap
         margin-bottom: 1.75em
       .heading-2
         margin-bottom: 1.25em
       .text-wrap
-        padding-right: 1em
+        +medium
+          padding-right: 1em
       .image-wrap
-        margin-left: 1em
+        +medium
+          margin-left: 1em
 
     .finding-8
-      padding-bottom: 2.75em
       .row-wrap
-        justify-content: space-between
+        justify-content: center
         align-items: center
         margin-bottom: 1.5em
+        +medium
+          justify-content: space-between
       .heading-wrap
         margin-bottom: 1.25em
         .heading-2 span
           font-style: italic
+      a
+        margin: 0
       .image-wrap
-        margin-right: 1.8em
+        +medium
+          margin-right: 1.8em
       .text-wrap
-        width: 55%
         margin-bottom: 1.5em
+        +medium
+          width: 55%
+          margin-bottom: 1.5em
       .list-wrap
         margin-bottom: 2.4em
         .bullet-list 
@@ -325,6 +501,20 @@ body.ch-report
             &:before
               content: "•"
               padding-right: 1em
+            &:nth-of-type(4)
+              &:before
+                content: " "
+                padding-right: 1.35em 
+    .finding-3, .finding-6, .finding-8
+      .share-button
+        width: auto
+        margin-top: 0.9375em
+        font-size: 0.7125em
+        padding: 0.73em 1em 0.45em
+      svg
+        width: 1.325em
+        margin-right: 0.5625em
+        margin-bottom: 0.2875em
     
     .finding-9
       padding-bottom: 3.5em
@@ -340,7 +530,7 @@ body.ch-report
           padding-right: 1em
 
     .finding-10
-      padding-bottom: 0
+      // padding-bottom: 0
       .margin-wrap
         margin: 2.1em 0 1.75em
       .last-para
@@ -348,11 +538,16 @@ body.ch-report
       .row-wrap
         margin-bottom: 2.75em
         .text-wrap
-          width: 50%
+          +medium
+            width: 50%
         .data-wrap
-          width: 50%
+          margin-top: 1.5em
           align-items: flex-end
           padding-right: .5em
+          flex-wrap: nowrap
+          +medium
+            width: 50%
+            margin-top: 0
           p.info
             @extend %font-family-b
             font-size: 0.7em
@@ -378,70 +573,231 @@ body.ch-report
           padding-right: .75em
         .wrap
           align-items: flex-start
+          .helmet
+            display: none
+            +medium
+              display: initial
 
     ul.purple-bars 
       margin-top: 1.75em
       li
         margin: .1em 0
-        height: 1.725em
-        line-height: 1.8em
+        padding: .25em .25em .25em 0
         font-size: 1.1em
         background: rgba(#b698c7, .3)
+        +medium
+          height: 1.725em
+          line-height: 1.8em
+          padding: 0
         &:before
           content: "•"
           padding: 0 .75em 0 1em
     .future-item
       margin-top: 2.2em
+      &:last-of-type
+        padding-bottom: 2.5em
+        border-bottom: 1px solid RGBA(49,51,53,.2)
       .question
+        margin-bottom: .75em
         p
           font-weight: 600
       .answer
-        margin-top: .75em
-        // display: none
+        display: none
       .section-toggle
-        margin-top: .5em
-        font-weight: 500
-        font-size: 0.75em
-        letter-spacing: -.3px
-        color: $text-color-blue
+        cursor: pointer
+        &:hover
+          .heading-4
+            color: $link-hover-color
+          svg *
+            fill: $link-hover-color
+        .min, .expand
+          align-items: center
+        .heading-4
+          font-weight: 500
+          font-size: 0.75em
+          letter-spacing: -.3px
+          color: $text-color-blue
+          padding: 1em 0
+          margin-right: .25em
+          transition: all 0.1875s ease
+          // &:hover
+          //   color: $link-hover-color
+          //   svg *
+          //     fill: $link-hover-color!important
+        .min
+          display: none
+        &.active
+          @extend .section-toggle
+          .expand
+            display: none
+          .min
+            display: flex
     .contact-wrap
-      margin-bottom: 2em
-      padding: 2.15em 0
+      padding: 2.15em 0 0
       .heading-4
         font-size: 1.05em
         line-height: 1.5
         letter-spacing: -.6px
+        margin-top: 1.25em
       form
         margin-top: .75em
         margin-bottom: 1.5em
         display: flex
         align-items: center
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-start
+        +medium
+          flex-wrap: nowrap
+          justify-content: space-between
+        button
+          width: 100%
+          +medium
+            width: initial
+
       input, button
         @extend %font-family-b
-        font-size: 0.7272727273em
-        // height: 1.7272727273em
-        -webkit-appearance: none
-        -webkit-border-radius: 0
-      border-bottom: 1px solid RGBA(49,51,53,.2)
+        font-size: 0.9411764706em
+        +medium
+          font-size: 0.7272727273em
+          margin-bottom: .25em
+          margin-bottom: 0
+          width: initial
+
       input
         font-style: normal
         border: 1px solid $gray
         padding: .675em 0 .675em 1em
-      button
-        padding: .75em 2em
-        background: $text-color-blue
-        border: 0
-        color: white
-        cursor: pointer
+        width: 100%
+        +medium
+          width: initial
+      .error-wrap
+        display: flex
+        flex-direction: column
+        width: 100%
+        +medium
+          max-width: 11em
+        input.error
+          border: 1px solid red
+        label
+          @extend %font-family-b
+          font-size: .8em
+          padding-left: .15em
+          margin-top: .375em
+          color: red
+    button, .btn, .share-button
+      @extend %font-family-b
+      padding: .75em 1em
+      background-color: $text-color-blue
+      border: 0
+      color: white
+      cursor: pointer
+      letter-spacing: -.2px
+      flex-shrink: 0
+      // width: 100%
+      +medium
+        width: initial
+        // align-self: stretch
+        padding: 0 1em
+        transition: all 0.1875s ease
+      +large
         &:hover
-          background: lighten($text-color-blue, 10%)
+          background-color: $link-hover-color
+    button
+      padding: .75em 1em
+    .btn
+      padding: .75em 1em
+      display: block
+      width: 18em
+      text-align: center
+      margin-bottom: 2.15em
+      transition: all 0.1875s ease
+    
+      // flex-shrink: 0
+      // width: 30%
+      // a
+      //   display: block
+      //   width: 100%
+        text-align: center
+
     .final-text
-      margin-top: 1.25em
-        
+      margin-top: 2.25em
+  .social-bar
+    display: initial
+    position: fixed
+    bottom: 0
+    background-color: #123B47
+    color: white
+    width: 100%
+    padding-top: .5em
+    padding-bottom: .5em
+    svg
+      width: 1em
+      margin-right: .5em
+    .bar-wrap
+      justify-content: space-between
+      p
+        font-size: 0.7em
+        line-height: inherit
+        @extend %font-family-b
+        font-weight: 500
+      .pdf-wrap
+        a
+          display: flex
+          align-items: center
+          transition: all 0.1875s ease
+          +large
+            &:hover
+              color: $text-color-blue
+    .share-wrap
+      justify-content: flex-end
+
+      .btn-wrap
+
+        &:first-of-type
+          margin-right: 0.7058823529em
+          +medium
+            margin-right: 0.5em
+    .share-button
+      width: inherit
+      font-size: 1em
+    a
+      color: white
+      margin-top: 0
+  .share-button
+    width: auto
+    margin-top: .375em
+    transition: all 0.1875s ease
+    font-size: 0.875em
+    display: flex
+    align-items: center
+    background: $text-color-blue
+    color: white
+    padding: .5em
+    .button-wrap
+      display: flex
+      align-items: center
+    +large  
+      &:hover
+        color: white
+        background: $link-hover-color
+    p
+      @extend %font-family-b
+      font-weight: 500
+    // svg
+    //   width: 1em
+    //   margin-right: .5em
+
 
   //-Footer
   footer
     background: rgba(229,238,244,.7)
+    .footer-wrap
+      padding-bottom: 4em
+      +medium
+        padding-bottom: 5em
+      +large
+        padding-bottom: 6.25em
     .heading-3
       font-size: 0.9em
       line-height: 1.8
@@ -462,17 +818,17 @@ body.ch-report
       font-size: 0.8em
       line-height: 1
       font-weight: 400
-      margin: .5em 0
+      margin: 1em 0
 
   //-Quotes
   .quote-wrap
     padding: 1em
     background: rgba(229,238,244,.7)
-    width: 84%
     margin-bottom: .4em
+    +medium
+      width: 84%
     &:last-of-type
       margin-bottom: 0
-
     span
       @extend %font-family-b
       color: $text-color-blue
@@ -508,13 +864,19 @@ body.ch-report
     width: 100%
   a
     color: $text-color-blue
-    &:hover
-      color: lighten($text-color-blue, 10%)
+    transition: color 0.1875s ease
+    +large
+      &:hover
+        color: $link-hover-color
+  
+
   //- Purple Bar
   .title-wrap
     background: RGBA(182,152,199, .3)
     height: 4.75em
     .heading-1
+      text-align: center
+      line-height: 1.2
       color: $text-color-purple
       font-size: 1.5454545455em
 

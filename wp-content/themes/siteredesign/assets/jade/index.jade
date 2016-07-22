@@ -2,28 +2,29 @@ doctype html
 html
   head
     meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
     meta(name="apple-touch-fullscreen" content="yes")
     link(rel='stylesheet', href='css/site.css?v=1', type='text/css' )
     title Clearhead
     meta(name="description" value="")
     |<script src="https://use.typekit.net/erk8dkx.js"></script>
-    |<script>try{Typekit.load({ async: true });}catch(e){}</script>
+    |<script>try{Typekit.load();}catch(e){}</script>
+    |<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     
     //- Facebook Social
-    meta(property='og:url', content='http://hatchedtv.com')
+    meta(property='og:url', content='http://clearhead.me')
     meta(property='og:type', content='website')
-    meta(property='og:title', content='HatchedTV')
-    meta(property='og:description', content='The new entrepreneurial show that gives American inventors – with a special focus on teens, moms, and minority owners – an exciting and educational opportunity of a lifetime.')
-    meta(property='og:image', content='http://hatchedtv.com/images/herobg.png')
+    meta(property='og:title', content='The State of Ecommerce Redesign in 2016 - Clearhead')
+    meta(property='og:description', content='We help daring brands optimize their business outcomes through continuous testing & personalization.')
+    meta(property='og:image', content='images/hero_bg.jpg')
     
     //- Twitter Social
     meta(name='twitter:card', content='summary_large_image')
-    meta(name='twitter:site', content='@hatchedtv')
-    meta(name='twitter:creator', content='@hatchedtv')
-    meta(name='twitter:title', content='HatchedTV')
-    meta(name='twitter:description', content='The new entrepreneurial show that gives American inventors – with a special focus on teens, moms, and minority owners – an exciting and educational opportunity of a lifetime.')
-    meta(name='twitter:image', content='http://hatchedtv.com/images/herobg.png')
+    meta(name='twitter:site', content='@clearheadme')
+    meta(name='twitter:creator', content='@clearheadme')
+    meta(name='twitter:title', content='The State of Ecommerce Redesign in 2016 - Clearhead')
+    meta(name='twitter:description', content='We help daring brands optimize their business outcomes through continuous testing & personalization.')
+    meta(name='twitter:image', content='images/hero_bg.jpg')
 
 
 
@@ -31,33 +32,54 @@ html
 
 body.ch-report
   //- Nav
-  nav.grid-row.nav-wrap.grid-row-padding--short
-    .grid-row.ch-wrap
-      a(href="")
-        h5.heading-5 clearhead.me
-      a(href="")
-        img(src="/images/svg/launch-icon.svg")
-    .grid-row.social-wrap
-      a(href="")
-        img(src="/images/svg/facebook-icon.svg")
-      a(href="")
-        img(src="/images/svg/twitter-icon.svg")
-      a(href="")
-        img(src="/images/svg/linkedin-icon.svg")
+  nav
+    .grid-row-width--wide.grid-row.nav-wrap.grid-row-padding--short
+      .grid-row.ch-wrap
+        a(href="http://clearhead.me" target="_blank")
+          h5.heading-5 clearhead.me
+          svg(width='16px', height='16px', viewbox='0 0 16 16', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd', stroke-linecap='round')
+              g#Ecommerce-Survey-Webpage(transform='translate(-249.000000, -21.000000)', stroke-width='2', stroke='currentColor')
+                g#launch_icon(transform='translate(250.000000, 22.000000)')
+                  polyline#Rectangle-110(points='8.63068182 0 14 0 14 5.36931818')
+                  path#Path-89(d='M13.4034091,0.596590909 L5.64772727,8.35227273')
+                  polyline#Rectangle-110(points='13.125 10.3778409 13.125 14 0 14 0 0.875 3.62215909 0.875')
+
+
+      .grid-row.social-wrap
+        a(href="https://www.facebook.com/ClearheadMe" target="_blank")
+          svg(width='24px', height='24px', viewbox='0 0 24 24', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+              g#Ecommerce-Survey-Webpage(transform='translate(-795.000000, -18.000000)', fill='currentColor')
+                path#Facebook(d='M807.757249,41.884058 L796.318217,41.884058 C795.589972,41.884058 795,41.2937195 795,40.5657589 L795,19.3182064 C795,18.5900605 795.590065,18 796.318217,18 L817.565934,18 C818.2939,18 818.884058,18.5900605 818.884058,19.3182064 L818.884058,40.5657589 C818.884058,41.2938121 818.293808,41.884058 817.565934,41.884058 L811.479654,41.884058 L811.479654,32.6348344 L814.584192,32.6348344 L815.049052,29.0302479 L811.479654,29.0302479 L811.479654,26.7289472 C811.479654,25.6853362 811.769451,24.9741497 813.265975,24.9741497 L815.17472,24.9733157 L815.17472,21.7493446 C814.84461,21.7054167 813.711559,21.6072741 812.393342,21.6072741 C809.641343,21.6072741 807.757249,23.2870976 807.757249,26.3719638 L807.757249,29.0302479 L804.644742,29.0302479 L804.644742,32.6348344 L807.757249,32.6348344 L807.757249,41.884058 L807.757249,41.884058 Z')
+        a(href="http://twitter.com/clearheadme" target="_blank")
+          svg(width='24px', height='20px', viewbox='0 0 24 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+              g#Ecommerce-Survey-Webpage(transform='translate(-838.000000, -21.000000)', fill='currentColor')
+                path#Twitter(d='M861.884058,23.3562039 C861.006473,23.7558528 860.061597,24.0261191 859.070458,24.1468763 C860.082625,23.525839 860.859274,22.5410925 861.225168,21.3680221 C860.277488,21.9430566 859.230274,22.3613942 858.111563,22.5856576 C857.219959,21.6095366 855.945637,21 854.535333,21 C851.83108,21 849.637117,23.2498225 849.637117,26.0243639 C849.637117,26.4182626 849.679174,26.8006605 849.763288,27.1686826 C845.690787,26.958795 842.080912,24.9605501 839.662646,21.91718 C839.240676,22.6618497 838.99955,23.525839 838.99955,24.4458942 C838.99955,26.1882488 839.864518,27.7264661 841.179494,28.6278326 C840.377611,28.6033937 839.620589,28.3748175 838.958895,28.001045 L838.958895,28.0628613 C838.958895,30.4981324 840.648177,32.5294417 842.891206,32.9894693 C842.480451,33.1073514 842.047266,33.1662924 841.600062,33.1662924 C841.284636,33.1662924 840.97622,33.1361031 840.677616,33.0771621 C841.301459,35.0725318 843.109901,36.5259315 845.254798,36.5647463 C843.578134,37.9132022 841.464079,38.716813 839.169179,38.716813 C838.773845,38.716813 838.382717,38.6938116 838,38.6478088 C840.168729,40.0710192 842.745409,40.9033816 845.511345,40.9033816 C854.525519,40.9033816 859.453175,33.2482349 859.453175,26.608024 C859.453175,26.3895109 859.448969,26.1709977 859.440558,25.9567974 C860.398051,25.2480674 861.229374,24.3639518 861.884058,23.3562039')
+
+
+        a(href="https://www.linkedin.com/company/clearhead-group-llc" target="_blank")
+          svg(width='22px', height='20px', viewbox='0 0 22 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+            g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+              g#Ecommerce-Survey-Webpage(transform='translate(-879.000000, -20.000000)', fill='currentColor')
+                path#LinkedIn(d='M900.89372,39.9033816 L896.054909,39.9033816 L896.054909,32.9065471 C896.054909,31.0751352 895.298,29.8248812 893.633573,29.8248812 C892.360473,29.8248812 891.65248,30.6685796 891.322941,31.4816908 C891.199364,31.7735442 891.218673,32.1800998 891.218673,32.5866554 L891.218673,39.9033816 L886.424916,39.9033816 C886.424916,39.9033816 886.486705,27.5091711 886.424916,26.3825405 L891.218673,26.3825405 L891.218673,28.5045313 C891.50187,27.5767179 893.03371,26.2525447 895.478217,26.2525447 C898.511001,26.2525447 900.89372,28.1973843 900.89372,32.3852893 L900.89372,39.9033816 L900.89372,39.9033816 Z M881.577095,24.6913202 L881.5462,24.6913202 C880.001488,24.6913202 879,23.6577259 879,22.3475718 C879,21.0119283 880.031095,20 881.606702,20 C883.181021,20 884.14904,21.0093794 884.179935,22.3437484 C884.179935,23.6539025 883.181021,24.6913202 881.577095,24.6913202 L881.577095,24.6913202 L881.577095,24.6913202 Z M879.552235,26.3825405 L883.819502,26.3825405 L883.819502,39.9033816 L879.552235,39.9033816 L879.552235,26.3825405 L879.552235,26.3825405 Z')
+
+
   
   //- Hero
-  section.grid-row.grid-row-children-alignment--centered.hero-wrap(style="background-image: url('images/hero_bg.jpg');")
+  section.grid-row.grid-row-children-alignment--centered.grid-row-padding--short.hero-wrap(style="background-image: url('images/hero_bg.jpg');")
     .grid-row.heading-wrap
       .gs--full
-        h3.heading-3 Ecommerce Redesign Study 2016
+        h2.heading-2--blue The State of Ecommerce Redesigns&nbsp;in&nbsp;2016
       .gs--full
-        h2.heading-2--blue How Data Driven Are We?
+        h3.heading-3 How Data-Driven Are We?
   
   //-Intro
-  section.grid-row.grid-row-padding--full.intro
+  section.grid-row.grid-row-padding--full.grid-row-width--wide.intro
     p In a world where digital products can be iteratively changed and continuously optimized, it’s still commonplace for organizations to undertake disruptive full site or product redesign projects in shorter, specific time boxes. These projects are generally incredibly resource intensive and carry a high degree of risk and reward. 
     p While so much about digital consumer and business behavior has changed in the last 20 years, it seems that the redesign, as a project and practice, has survived significantly intact for many businesses. With investments this sizable, we wanted to gain clarity on the ecommerce website redesign process including the motivations for their undertaking, the extent to which data is injected into the process, how success is defined and measured and the problem patterns that frequently emerge. 
-    p Clearhead, an award-winning digital optimization company, frequently partners with leading ecommerce brands to create better customer experiences through testing and personalization driven by data. With that in mind, we decided to go straight to the source. We connected with over 200 ecommerce leaders who have been through multiple resigns in their careers to better understand how redesigns are contemplated and executed today. 
+    p Clearhead, an award-winning digital optimization company, frequently partners with leading ecommerce brands to create better customer experiences through testing and personalization driven by data. With that in mind, we decided to go straight to the source. We connected with over 200 ecommerce leaders who have been through multiple redesigns in their careers to better understand how redesigns are contemplated and executed today. 
     p We conducted both a survey and in-depth interviews, setting out to answer some key questions: 
     ol.key-quest
       li <p class="ol">1</p> How are redesigns typically defined?
@@ -72,7 +94,8 @@ body.ch-report
     .grid-row.grid-row-children-alignment--centered.table-wrap
       h3.heading-3 We talked to 
         span 203 participants
-      img(src="/images/svg/participants-chart.svg")
+      .image-wrap
+        img(src="/images/svg/participants-chart.svg")
     .gs--full.thanks-wrap
       h4.heading-4 special thanks to
       ul.thanks-list
@@ -90,7 +113,7 @@ body.ch-report
   section.keyfind
     .grid-row.grid-row-children-alignment--centered.title-wrap
       h1.heading-1 Key Findings
-    .grid-row.grid-row-padding--full
+    .grid-row.grid-row-padding--full.grid-row-width--wide
     
       //-Finding 1
       .grid-row.grid-row-children-alignment--centered.item-wrap.finding-1
@@ -169,12 +192,19 @@ body.ch-report
           .grid-row.data-wrap
             .image-wrap
               img(src="images/svg/f3-img-new.svg")
-            .gs--half.text-wrap
+            .gs--full.gm--half.text-wrap
               p Respondents were able to select from many reasons as the “best reasons” to start a redesign. The most popular reasons (selected by 60% or greater respondents) were:
               ul
                 li <p class="ol">1</p> Change in market/customer behavior
                 li <p class="ol">2</p> Moving to a new platform
                 li <p class="ol">3</p> Negative feedback from customers
+                li
+                  a.share-button(href='https://twitter.com/intent/tweet?text=The%20%231%20reason%20%23ecommerce%20marketers%20redesign%20their%20websites%3A%20Change%20in%20market/customer%20behavior.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
+                    .button-wrap
+                      svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+                        title twitter icon
+                        path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+                      p click to tweet
         .gs--full
           p A surprisingly low number of respondents (54%) selected need to increase sales or profitability as a best reason for a redesign.
 
@@ -188,26 +218,23 @@ body.ch-report
           p While respondents selected many reasons to start a redesign, including a change in platform, negative feedback, change in business model, or the need to increase sales, only 6% of respondents selected “Executive Desire for a Change” as the best reason for a redesign. With executives comprising 50% of our respondent pool, this carries quite some weight.
           p However, 20% reported that “<span>Executive Desire for a Change</span>” was the actual reason for their last redesign.
         .grid-row.vs-wrap
-          .guy-wrap
-            .grid-row.data-wrap
-              .gs--thirdx2
-                .grid-row.text-wrap
-                  h1.heading-1 6
-                    span %
-                  span.text3 suggest “executive desire for change” is the best reason for a redesign
-              .gs--third.image-wrap
+          .desk-guys
+            .gm--fourth.text-wrap-right
+              .text-wrap
+                h1.heading-1 6
+                  span %
+                p.text3 suggest “executive desire for change” is the best reason for a redesign
+            .images-wrap
+              .image-wrap
                 img(src="images/svg/f4-little-guy.svg")
-          h1.heading-1--lightblue vs
-          .guy-wrap
-            .grid-row.data-wrap
+              h1.heading-1--lightblue vs
               .image-wrap
                 img(src="images/svg/f4-big-guy.svg")
-              .gs--thirdx2.text-wrap
-                .gs--full
-                  h1.heading-1 20
-                    span %
-                .gs--full
-                  span.text3 report that “executive desire for change” is the actual reason for a redesign
+            .gm--fourth.text-wrap-left
+              .text-wrap
+                h1.heading-1 20
+                  span %
+                p.text3 report that “executive desire for change” is the actual reason for a redesign
       
       //-Finding 5
       .grid-row.grid-row-children-alignment--centered.grid-row-padding--top-only.item-wrap.finding-5
@@ -274,9 +301,10 @@ body.ch-report
                   .gs--full
                     span.text1 stale site?
                   .gs--full
-                    span.text2 43%
+                    h1.heading-1 43
+                      span %
                   .gs--full
-                    span.text3 claimed the biggest driver for a site redesign was that “the site has become stale”.
+                    p.text3 claimed the biggest driver for a site redesign was that “the site has become stale”.
           p Based on interview feedback the basis for redesign got into higher fidelity related to new branding and mobile responsiveness:
         .quote-wrap
           p "Last year we did a Tommy John redesign. The focus of the redesign was to give a new look and feel with the new brand."
@@ -310,7 +338,15 @@ body.ch-report
               img(src="images/svg/f6-hiring.svg")
             .text-wrap
               p 75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).
+              .btn-wrap
+                a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
+                  .button-wrap
+                    svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+                      title twitter icon
+                      path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+                    p click to tweet
           p However, in their last redesign respondents report UX research and platform integration were also the most lacking capabilities at their disposal, with web analytics coming in third.
+
 
       //-Finding 7
       .grid-row.grid-row-children-alignment--centered.grid-row-padding--top-only.item-wrap.finding-7
@@ -340,9 +376,16 @@ body.ch-report
             img(src="images/svg/f8-data.svg")
         .gs--full.list-wrap
           ul.bullet-list
-            li Only half (52%) of digital professionals test prototypes or wireframes with real customers. 
+            li Only half (52%) of digital professionals test prototypes or wireframes with real customers.
             li 39% do not define testable success metrics for design or technology solutions.
             li Remember what we said about the big bang reveal? 58% of respondents skip the gradual rolling out of a redesign to ensure success.
+            li
+              a.share-button(href='https://twitter.com/intent/tweet?text=Only%20half%20of%20%23ecommerce%20marketers%20test%20website%20prototypes%20or%20wireframes%20with%20real%20customers.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0%20')
+                .button-wrap
+                  svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+                    title twitter icon
+                    path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+                  p click to tweet
           p To what extent did the team use data to validate decisions? On a scale of 1-10, managers report in at 5.5, while executives report in at a 7 (28% difference).
           p From interviews we learned that many professionals turn to best practices and executive experience to decide what to do.
         .quote-wrap
@@ -418,9 +461,9 @@ body.ch-report
 
   //-Nine Principles of Future Redesigns
   section.principles
-    .grid-row.grid-row-children-alignment--centered.title-wrap
+    .grid-row.grid-row-children-alignment--centered.grid-row-padding--sides-only.title-wrap
       h1.heading-1 Nine Principles of Future Redesigns
-    .grid-row.grid-row-padding--full.section-wrap
+    .grid-row.grid-row-padding--full.grid-row-width--wide.section-wrap
       .grid-row.grid-row-children-alignment--centered
         .gs--full.margin-wrap
           p The next era of redesigns may prove more difficult. 
@@ -430,7 +473,7 @@ body.ch-report
             .gs--full.gm--thirdx2.text-wrap
               p “Now the bar is higher. We were like the Cleveland Browns and made it to the Dallas Cowboys. We’re in the game now. We’re not yet the New England Patriots. Getting the rest of the way to the Superbowl of retailers is a harder path.”
             .gs--full.gm--third.image-wrap
-              img(src="images/principles-helmets.png")
+              img.helmet(src="images/principles-helmets.png")
           span - Shawn Freeman, formerly SVP Global Digital Technology and Operations, Ralph Lauren and SVP and GM Digital Business, GameStop
         .gs--full
           p Further, the measurable success of the last redesign may be a function of vague expectations and qualitative goals rather than clearly defined goals and financial measurement. Only 34% said the reason for a redesign was to improve sales or profitability. And the number one actual reason for doing their last redesign was the site was “stale”.
@@ -449,94 +492,307 @@ body.ch-report
             .answer
               p A big-bang redesign creates risk and ambiguity. The risk is in making many decisions that go into one launch,  lowering the opportunity to validate each with customer feedback and data before launch. Second, performance ambiguity is created because it’s difficult to deconstruct what worked and what didn’t after an all-in-one launch. 
               p In contrast, we may see a broadening of the definition of “redesigns” in the future, evolving to include an increasingly popular iterative approach to validating priorities and UX decisions, testing, launching, and repeating that process for different parts of the site. This modern approach will allow each phase to have more confidence coming in and more data coming out on the impact. 
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 2. Stronger UX research to validate assumptions and solutions
             .answer
               p Hand-in-hand with an iterative redesign approach is an increasing capability to validate performance of UX decisions prior to launch. This can be done through wireframe testing (online or in person) or A/B testing a new UX. While we can look to UX “best practices” as a hypothesis to a customer problem, there will be increased appetite to test the impact of a best practice in a different business and customer context. 
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 3. Increasingly specific definitions of “success”.
             .answer
               p With higher customer expectations, competition and slim margins, there is high pressure to drive profitable growth. At the same time, this is one of the biggest digital investments a company can make. We expect it to increasingly be asked "did it work?" and "was it worth it?" and for executives and participants to be required to answer clearly against the definition. We expect to see more definitions of success being tied to financial results. But moreover, we also expect to see the definition of success clarified and communicated more broadly as redesigns take an iterative approach and digital teams cross omnichannel boundaries.
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 4. Clearly defined baselines, targets and time bases for goal & KPI improvement 
             .answer
               p As the success metrics of an increasing number of iterative redesigns get more defined, it will also be possible to get more detailed measures of performance improvement. In each phase, the performance of decisions and return on investments will be forecasted and targets set for improvements in conversion, average order value and other KPIs. As such, executives will be able to build more confidence in the results of their “change the business” activities.
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 5. More analytics & research resources to identify problems & validate solutions throughout the redesign process.
             .answer
               p 75% of respondents chose UX research and design as a critical capability going into a redesign, and it was also reported as the most lacking capability. If we agree future redesigns will require even higher confidence for performance, we anticipate a shift of budget and resources to increase the understanding of the key customer experience problems and how to solve them with higher confidence.
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 6. Clear definitions of key segments the site needs to serve (and clear hypotheses for serving those specific segments).
             .answer
               p If the last redesigns were largely about mobile UX improvements, we believe future redesigns will be made with personalization in mind. There is as much appetite as there is ambiguity around personalizing content and experiences for key customer segments based on referral source, prior purchases, customer value, preferences, and more. Defining the opportunities based on segments will be a key factor in UX and technology decisions in the next redesign. Further, organizations will take a more “service” based approach to features and experiences, leveraging APIs, data layers & algorithms more to drive the experiences versus features and widgets.
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 7. Greater understanding of “mobility” and “omni-channel” behavior and recognition of key use cases for adaptive experiences.
             .answer
               p While many recent redesigns focused on creating an adaptive, mobile experience, the next redesign will benefit from understanding how visitors are using the new the mobile experience. As a result, we will further optimize experiences and ability to accomplish tasks between devices. In other words, our focus will turn from simply creating a usable mobile experience to optimizing for mobile-first, mobile-dependent, and omni-channel interactions (ex: in store browsing, matching mobile web to app, increasing sign-ups and sign-ins, etc.).
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
           .gs--full.future-item
             .question 
               p 8. Increased pressure for measurable improvements immediately at re-launch (as opposed to generous “bake in” periods).
             .answer
               p After a ‘change-the-business’ big-bang redesign a performance drop is often expected due to the user experience disruption. Iterative redesigns are essentially a merging of run-the-business versus. change-the-business work streams. As such, each phase of an iterative redesign will be expected to have immediate benefits, building up to an overall benefit of an iteratively-redesigned site.
-            h4.heading-4.section-toggle minimize-selection
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
+
+
+
+
+
           .gs--full.future-item
             .question 
               p 9. A desire to reduce the “cost to serve” websites, wherein many manual, time consuming site sections & activities will be called into question.
             .answer
               p Given the growth of digital teams over the past years, mature organizations will consider the effort to maintain a site as an important factor to their redesign decisions. There will be higher consideration of UX and designs that facilitate automated personalization and API-driven content.
-            h4.heading-4.section-toggle minimize-selection
-        .gs--full.contact-wrap
-          h4.heading-4 Want to learn more about data-driven redesigns?
-          form
-            input(type='text' placeholder='name')
-            input(type='text' placeholder='company')
-            input(type='text' placeholder='email')
-            button(type='submit') let's connect!
+            .section-toggle
+              .toggle-wrap
+                .grid-row.expand
+                  h4.heading-4 expand to read more
+                  svg(width='10px', height='6px', viewbox='0 0 10 6', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-272.000000, -17624.000000)', fill='#32C4F5')
+                        g#Group-24(transform='translate(123.000000, 17618.000000)')
+                          polygon#down-arrow(transform='translate(153.863961, 6.863961) rotate(46.000000) translate(-153.863961, -6.863961) ', points='156.413386 3.36396103 157.363961 10.363961 150.363961 9.41338566')
+                .grid-row.min
+                  h4.heading-4 minimize section
+                  svg(width='10px', height='7px', viewbox='0 0 10 7', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                    g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                      g#Ecommerce-Survey-Webpage(transform='translate(-247.000000, -17256.000000)', fill='#32C4F5')
+                        g#Group-24-Copy-7(transform='translate(123.000000,  17250.000000)')
+                          polygon#Rectangle-224(transform='translate(128.863961, 11.863961) rotate(-135.000000) translate(-128.863961, -11.863961) ', points='131.413386 8.36396103 132.363961 15.363961 125.363961 14.4133857')
         .gs--full.final-text
           p As our survey revealed, site redesigns--from the reasons they begin to the end goals they serve to the very definition itself--are rapidly evolving. Many organizations have difficulty defining their goals and success, and many are gaining inspiration from past experience or the outside. 
           p Going forward, with the proliferation of technology, data and a more focused spotlight on UX, daring brands can engage ‘change the business’ redesigns with ‘run the business’ confidence. 
           p We hope this small peek into the world of your peers brings you a bit of confidence as you begin the journey toward your next redesign - whatever your definition of the word may be.
 
+        .gs--full.contact-wrap
+          a.btn(href="images/report.pdf" target="_blank") download the full report (pdf)
+          h4.heading-4 Want to learn more about data-driven redesigns?
+          form#connectForm
+            .error-wrap
+              input(type='text', name='name', required placeholder='name')
+            .error-wrap
+              input(type='text', name='company', placeholder='company')
+            .error-wrap
+              input(type='email', name='email', required placeholder='email')
+            button(type='submit') let’s connect!
+
   //-Footer
-  footer.grid-row.grid-row-padding--full
-    .gs--full.text-wrap
-      h3.heading-3 Hungry for more? Check out these articles from the founders at Clearhead:
-      ul
-        li
-          a(href="") A Call to Arms for Data-Driven Redesigns
-        li
-          a(href="") Problem and Solution Mapping: A Primer for Your Digital Dial Tone
-        li
-          a(href="") 4 Steps to Create a Test Before Invest Digital Innovation Plan
-        li
-          a(href="") Mythbusting the Magic Science of Optimization
-    .gs--full.about-wrap
-      h3.heading-3 About Clearhead
-      p Clearhead is the leading digital optimization company. An award-winning agency and consultancy, we help iconic brands and entrepreneurial leaders build better customer experiences and transform their business through data.
-      p Headquartered in Austin, TX, Clearhead was founded in 2012 by former ecommerce executives obsessed with the intersection of design, analytics and product innovation. Today, we provide user experience design, product development, analytics and strategic consulting solutions grounded in pioneering testing and personalization expertise. 
-      p Our diverse roster of clients includes adidas, CVS, Express, Patagonia, Tesco, Tory Burch, Ulta, Vitamix and Whole Foods. 
-      p To learn more, visit 
-        a(href="http://www.clearhead.me") www.clearhead.me
-
+  footer
+    .grid-row.grid-row-padding--full.grid-row-width--wide.footer-wrap
+      .gs--full.text-wrap
+        h3.heading-3 Hungry for more? Check out these articles from the founders at Clearhead:
+        ul
+          li
+            a(href="http://clearhead.me/blog/a-call-to-arms-for-data-driven-redesigns/" target="_blank") A Call to Arms for Data-Driven Redesigns
+          li
+            a(href="http://clearhead.me/blog/problem-solution-mapping-primer-digital-dial-tone/" target="_blank") Problem and Solution Mapping: A Primer for Your Digital Dial Tone
+          li
+            a(href="http://clearhead.me/blog/4-steps-to-create-a-test-before-invest-digital-innovation-plan/" target="_blank") 4 Steps to Create a Test Before Invest Digital Innovation Plan
+          li
+            a(href="http://clearhead.me/blog/mythbusting-the-magic-science-of-optimization/" target="_blank") Mythbusting the Magic Science of Optimization
+      .gs--full.about-wrap
+        h3.heading-3 About Clearhead
+        p Clearhead is the leading digital optimization company. An award-winning agency and consultancy, we help iconic brands and entrepreneurial leaders build better customer experiences and transform their business through data.
+        p Headquartered in Austin, TX, Clearhead was founded in 2012 by former ecommerce executives obsessed with the intersection of design, analytics and product innovation. Today, we provide user experience design, product development, analytics and strategic consulting solutions grounded in pioneering testing and personalization expertise. 
+        p Our diverse roster of clients includes adidas, CVS, Express, Patagonia, Tesco, Tory Burch, Ulta, Vitamix and Whole Foods. 
+        p To learn more, visit 
+          a(href="http://www.clearhead.me" target="_blank") www.clearhead.me
+  .social-bar
+    .grid-row.grid-row-padding--sides-only.grid-row-children-alignment--vcentered.bar-wrap
+      .pdf-wrap
+        a(href="images/report.pdf" target="_blank") 
+          svg(xmlns='http://www.w3.org/2000/svg', fill="currentColor", width='20', height='24', viewbox='0 0 24 24')
+            path(d='M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z')
+          p download pdf
+      .gl--half
+        .grid-row.share-wrap
+          .btn-wrap
+            a.share-button(href='https://twitter.com/intent/tweet?text=See%20what%20200%2B%20%23ecommerce%20execs%20had%20to%20say%20about%20the%20website%20redesign%20process%20in%20%40clearheadme\'s%20recent%20survey%3A%20http%3A//hubs.ly/H03L3HB0')
+              svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+                title twitter icon
+                path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+              p share
+          .btn-wrap
+            a.share-button(href="https://www.facebook.com/sharer/sharer.php?u=http%3A//hubs.ly/H03Hdsn0" onClick="return fbs_click(400, 300)" target="_blank" title="Share This on Facebook")
+              svg(width='20px', viewbox='0 0 24 24', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                  g#Ecommerce-Survey-Webpage(transform='translate(-795.000000, -18.000000)', fill='currentColor')
+                    path#Facebook(d='M807.757249,41.884058 L796.318217,41.884058 C795.589972,41.884058 795,41.2937195 795,40.5657589 L795,19.3182064 C795,18.5900605 795.590065,18 796.318217,18 L817.565934,18 C818.2939,18 818.884058,18.5900605 818.884058,19.3182064 L818.884058,40.5657589 C818.884058,41.2938121 818.293808,41.884058 817.565934,41.884058 L811.479654,41.884058 L811.479654,32.6348344 L814.584192,32.6348344 L815.049052,29.0302479 L811.479654,29.0302479 L811.479654,26.7289472 C811.479654,25.6853362 811.769451,24.9741497 813.265975,24.9741497 L815.17472,24.9733157 L815.17472,21.7493446 C814.84461,21.7054167 813.711559,21.6072741 812.393342,21.6072741 C809.641343,21.6072741 807.757249,23.2870976 807.757249,26.3719638 L807.757249,29.0302479 L804.644742,29.0302479 L804.644742,32.6348344 L807.757249,32.6348344 L807.757249,41.884058 L807.757249,41.884058 Z')
+              p share
+      //- a.share-button(href='https://www.facebook.com/sharer/sharer.php?u=http%3A//siteredesign.clearhead.me')
+      //-   .button-wrap
+      //-     svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+      //-       title twitter icon
+      //-       path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+      //-     p click to tweet
   //- .mq-tracker
+script(src="/js/site.js")
+|<script>window.twttr = (function(d, s, id) {
+|  var js, fjs = d.getElementsByTagName(s)[0],
+|    t = window.twttr || {};
+|  if (d.getElementById(id)) return t;
+|  js = d.createElement(s);
+|  js.id = id;
+|  js.src = "https://platform.twitter.com/widgets.js";
+|  fjs.parentNode.insertBefore(js, fjs);
+| 
+|  t._e = [];
+|  t.ready = function(f) {
+|    t._e.push(f);
+|  };
+| 
+|  return t;
+|}(document, "script", "twitter-wjs"));</script>
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js')
+script(src='http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js')
+script.
+  $("#connectForm").validate();
+  //Handle the ajax submission
+  $("#connectForm").submit(function(e) {
+  $(".error_message").hide();
+  if($(this).valid()) {
+  $("#connectForm").hide();
+  $(".contact-wrap .heading-4").append('<div class="success_message">Message Sent! We will contact you soon</div>');
+  }
+  e.preventDefault();
+  });
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+  
 
 
 

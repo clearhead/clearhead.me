@@ -1,6 +1,7 @@
 //Settings
 $default-gutter:  1%   //left and right padding
 // $breakpoints:     small medium; //small medium large x-large xx-large xxx-large;
+$content-width:   46.545454545em
 $max-width:       65.5em  //regular width
 $max-width-plus:  80em  //wide width
 
@@ -107,7 +108,7 @@ $max-width-plus:  80em  //wide width
     width: auto
 
 .grid-row 
-  max-width: $max-width
+  // max-width: $max-width
   width: 100%
   margin: 0 auto
   display: flex
@@ -155,7 +156,8 @@ $max-width-plus:  80em  //wide width
     max-width: 68em
   
   &--wide
-    max-width: $max-width-plus
+    +x-large
+      max-width: $content-width
   
   &--widest
     max-width: none
@@ -164,13 +166,13 @@ $max-width-plus:  80em  //wide width
 
 .grid-row-padding 
   &--sides-only 
-    padding: 0 20px
+    padding: 0 0.7058823529em
     +medium 
-      padding: 0 30px
+      padding: 0 0.9em
     +large 
-      padding: 0 30px
-    +xxx-large 
-      padding: 0
+      padding: 0 1.5em
+    // +xxx-large 
+    //   padding: 0
 
   &--top-only
     padding: 1em 0
@@ -183,22 +185,24 @@ $max-width-plus:  80em  //wide width
 
 
   &--short 
-    padding: 2em 1.5em
+    padding: 1em
     +medium 
-      padding: 1.75em 30px
+      padding: 0.75em 3.5em
     +large 
-      padding: .75em 5em
+      padding: .75em 6.6em
     +x-large 
-      padding: .85em 6em
+      padding: .85em 3.75em
   
   &--full 
-    padding: 1em 2em
+    padding: 1em
     +medium 
-      padding: 2em 4.5em
+      padding: 2em 3.5em
+    +large
+      padding: 3.25em 6.6em
     +x-large 
-      padding: 3.25em 6em
+      padding: 3.25em 3.75em
     +xx-large 
-      // padding: 1.25em 5.5em
+      padding: 3.25em 3.75em
     // +xxx-large 
     //   padding: 4.6em 2.2em
 .nowrap
