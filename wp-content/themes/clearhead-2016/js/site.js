@@ -18,10 +18,27 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
     event.preventDefault();
 });
 
+//Remove the sizes attr that is causing a bug in edge
+if(bowser.msedge) {
+  jQuery(".wp-post-image").attr("sizes","");
+}
+else if(bowser.msie) {
+  jQuery("body").addClass("ie");
+}
+else if (bowser.firefox) {
+  jQuery("body").addClass("firefox");
+}
+
+
+
 // show/hide browse menu
 jQuery('.menu-toggle-mobile').click(function(e) {
     e.preventDefault();
     jQuery('body').toggleClass('show-menu-mobile');
+});
+
+jQuery('.menu-mobile a').click(function(e) {
+    jQuery('body').removeClass('show-menu-mobile');
 });
 
 

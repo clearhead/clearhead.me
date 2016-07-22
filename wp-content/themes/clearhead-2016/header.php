@@ -29,7 +29,6 @@
 	<meta name="google-site-verification" content="rOVbTCkNzfmtGVaB3SNC3RQvDzAq88fhCv8fTG4mBbY" />
 
 	<?php wp_head(); ?>
-
 </head>
 
 <body <?php body_class(); ?>>
@@ -66,35 +65,47 @@
 				<a href="#show-menu" class="menu-toggle-mobile">
 					<figure>
 						<figcaption>Menu</figcaption>
-						<div class="icon"><span>+</span></div>
+						<div class="icon icon15">
+							<div class="line-outer">
+								<div class="line-inner"></div>
+							</div>
+							<div class="line-outer">
+								<div class="line-inner"></div>
+							</div>
+							<div class="line-outer">
+								<div class="line-inner"></div>
+							</div>
+						</div>
+
 					</figure>
 				</a>
 			</div>
 		</div>
 		<div class="menu-mobile">
-			<div class="container">
-				<nav role="navigation">
-			        <div class="menu-main-menu-container">
-			            <ul class="menu">
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-			                    <a href="/#what">Services</a>
-			                </li>
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-			                    <a href="/#with">Process</a>
-			                </li>
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-			                    <a href="/#who">Team</a>
-			                </li>
-			                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 menu-item-blog">
-			                    <a href="/blog/">Blog</a>
-			                </li>
-			                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-			                    <a href="/#contact">Contact</a>
-			                </li>
-			            </ul>
-			        </div>
-			    </nav>
-			</div>
+			<nav role="navigation">
+		        <div class="menu-main-menu-container">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					<?php /*
+					<ul class="menu">
+		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
+		                    <a href="/#what">Services</a>
+		                </li>
+		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
+		                    <a href="/#with">Process</a>
+		                </li>
+		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
+		                    <a href="/#who">Team</a>
+		                </li>
+		                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 menu-item-blog">
+		                    <a href="/blog/">Blog</a>
+		                </li>
+		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
+		                    <a href="/#contact">Contact</a>
+		                </li>
+		            </ul>
+					*/ ?>
+		        </div>
+		    </nav>
 		</div>
 	</header>
 
