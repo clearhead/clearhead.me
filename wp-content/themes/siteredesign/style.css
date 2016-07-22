@@ -181,8 +181,9 @@ body.ch-report .nav-wrap {
   body.ch-report .nav-wrap a {
     color: white;
     display: flex; }
-    body.ch-report .nav-wrap a:hover {
-      color: #19748f; }
+    @media (min-width: 48.75em) {
+      body.ch-report .nav-wrap a:hover {
+        color: #19748f; } }
   body.ch-report .nav-wrap .social-wrap {
     align-items: center;
     justify-content: flex-end;
@@ -790,9 +791,10 @@ body.ch-report section.principles button, body.ch-report section.principles .btn
       width: initial;
       align-self: stretch;
       padding: 0 1em;
-      transition: all 0.1875s ease; }
-      body.ch-report section.principles button:hover, body.ch-report section.principles .btn:hover, body.ch-report section.principles .share-button:hover {
-        background-color: #19748f; } }
+      transition: all 0.1875s ease; } }
+  @media (min-width: 48.75em) {
+    body.ch-report section.principles button:hover, body.ch-report section.principles .btn:hover, body.ch-report section.principles .share-button:hover {
+      background-color: #19748f; } }
 body.ch-report section.principles .btn {
   padding: 0.75em 1em;
   display: block;
@@ -824,8 +826,9 @@ body.ch-report .social-bar {
       display: flex;
       align-items: center;
       transition: all 0.1875s ease; }
-      body.ch-report .social-bar .bar-wrap .pdf-wrap a:hover {
-        color: #32c4f5; }
+      @media (min-width: 48.75em) {
+        body.ch-report .social-bar .bar-wrap .pdf-wrap a:hover {
+          color: #32c4f5; } }
   body.ch-report .social-bar .share-wrap {
     justify-content: flex-end; }
     body.ch-report .social-bar .share-wrap .btn-wrap:first-of-type {
@@ -852,9 +855,10 @@ body.ch-report .share-button {
   body.ch-report .share-button .button-wrap {
     display: flex;
     align-items: center; }
-  body.ch-report .share-button:hover {
-    color: white;
-    background: #19748f; }
+  @media (min-width: 48.75em) {
+    body.ch-report .share-button:hover {
+      color: white;
+      background: #19748f; } }
   body.ch-report .share-button p {
     font-weight: 500; }
 body.ch-report footer {
@@ -918,8 +922,9 @@ body.ch-report img {
 body.ch-report a {
   color: #32c4f5;
   transition: color 0.1875s ease; }
-  body.ch-report a:hover {
-    color: #19748f; }
+  @media (min-width: 48.75em) {
+    body.ch-report a:hover {
+      color: #19748f; } }
 body.ch-report .title-wrap {
   background: RGBA(182, 152, 199, 0.3);
   height: 4.75em; }
