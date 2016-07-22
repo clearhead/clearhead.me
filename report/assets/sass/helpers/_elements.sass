@@ -41,8 +41,9 @@ body.ch-report
     a
       color: white
       display: flex
-      &:hover
-        color: $link-hover-color
+      +large
+        &:hover
+          color: $link-hover-color
     .social-wrap
       align-items: center
       justify-content: flex-end
@@ -513,7 +514,6 @@ body.ch-report
         margin-top: 0.9375em
         font-size: 0.7125em
         padding: 0.73em 1em 0.45em
-        // margin-bottom: 0.38675em
       svg
         width: 1.325em
         margin-right: 0.5625em
@@ -636,9 +636,7 @@ body.ch-report
           .min
             display: flex
     .contact-wrap
-      // margin-bottom: 2em
       padding: 2.15em 0 0
-      // border-bottom: 1px solid RGBA(49,51,53,.2)
       .heading-4
         font-size: 1.05em
         line-height: 1.5
@@ -691,6 +689,7 @@ body.ch-report
         align-self: stretch
         padding: 0 1em
         transition: all 0.1875s ease
+      +large
         &:hover
           background-color: $link-hover-color
     .btn
@@ -734,8 +733,9 @@ body.ch-report
           display: flex
           align-items: center
           transition: all 0.1875s ease
-          &:hover
-            color: $text-color-blue
+          +large
+            &:hover
+              color: $text-color-blue
     .share-wrap
       justify-content: flex-end
 
@@ -764,9 +764,10 @@ body.ch-report
     .button-wrap
       display: flex
       align-items: center
-    &:hover
-      color: white
-      background: $link-hover-color
+    +large  
+      &:hover
+        color: white
+        background: $link-hover-color
     p
       @extend %font-family-b
       font-weight: 500
@@ -845,8 +846,9 @@ body.ch-report
   a
     color: $text-color-blue
     transition: color 0.1875s ease
-    &:hover
-      color: $link-hover-color
+    +large
+      &:hover
+        color: $link-hover-color
   
 
   //- Purple Bar
