@@ -368,9 +368,6 @@ article .author-meta h3 {
 header, section, footer {
   max-width: 100vw; }
 
-section:not(.theme-orange), footer {
-  overflow-x: hidden; }
-
 header {
   width: 100%;
   color: #313335;
@@ -922,6 +919,9 @@ section {
     position: relative;
     text-align: center;
     bottom: 1.25rem; }
+    @media screen and (min-width: 40em) {
+      .hero h1 {
+        text-align: left; } }
     .hero h1 figure {
       display: block;
       pointer-events: none;
@@ -973,6 +973,10 @@ section {
         margin-left: 0;
         margin-right: 0;
         max-width: none; } }
+
+@media screen and (min-width: 40em) {
+  body.ie .hero h1 figure svg {
+    width: 17.5rem; } }
 
 .parallax-callout {
   padding: 0;
@@ -1267,21 +1271,23 @@ section {
       display: inline-block;
       bottom: 10.5px;
       height: 48px;
-      width: 48px;
+      width: 28px;
       background-repeat: no-repeat;
       background-size: 29.5px; }
-    .expositive-remarks li:first-child {
-      margin-left: 24px; }
-      .expositive-remarks li:first-child:before {
-        left: -48px;
-        background-image: url("img/point-left.svg");
-        background-position: right -2.5px bottom 2px; }
-    .expositive-remarks li:last-child {
-      margin-right: 24px; }
-      .expositive-remarks li:last-child:before {
-        right: -48px;
-        background-image: url("img/point-right.svg");
-        background-position: left -2.5px bottom 2px; }
+    @media screen and (max-width: 639px) {
+      .expositive-remarks li:first-child {
+        left: 12px; } }
+    .expositive-remarks li:first-child:before {
+      left: -28px;
+      background-image: url("img/point-left.svg");
+      background-position: right -2.5px bottom 2px; }
+    @media screen and (max-width: 639px) {
+      .expositive-remarks li:last-child {
+        right: 12px; } }
+    .expositive-remarks li:last-child:before {
+      right: -28px;
+      background-image: url("img/point-right.svg");
+      background-position: left -2.5px bottom 2px; }
     .expositive-remarks li a {
       display: block;
       font-size: 0.875em;
@@ -1573,6 +1579,9 @@ section {
 
 .logo-list-solutions {
   margin: 1.65625em 0 2.90625em; }
+
+body.ie .logo-list li figure img, body.firefox .logo-list li figure img {
+  width: 100%; }
 
 .contact-cta {
   display: -webkit-box;
@@ -1896,7 +1905,7 @@ body.page-template-default .legacy-styles.blog-content-page {
 body.page-template-default .entry-content.container {
   margin-top: 4em; }
   body.page-template-default .entry-content.container h1, body.page-template-default .entry-content.container h2, body.page-template-default .entry-content.container h3, body.page-template-default .entry-content.container h4, body.page-template-default .entry-content.container h5, body.page-template-default .entry-content.container h6 {
-    font-family: "ff-bau-web-pro"; }
+    font-family: "ff-bau-web-pro", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; }
   body.page-template-default .entry-content.container h4 {
     text-transform: none;
     font-size: 0.9375rem;
@@ -1928,7 +1937,11 @@ body.page-template-default .entry-content.container {
   font-style: italic; }
 
 .legacy-styles blockquote {
-  margin: 0 1.5em; }
+  margin: 0 1.5em;
+  padding: 0 1rem;
+  letter-spacing: -0.25px; }
+  .legacy-styles blockquote p {
+    letter-spacing: -0.25px; }
 
 .legacy-styles address {
   margin: 0 0 1.5em; }
@@ -2601,7 +2614,20 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
 .legacy-styles .entry-content h4,
 .legacy-styles .entry-content h5,
 .legacy-styles .entry-content h6 {
-  color: #117793; }
+  color: #117793;
+  font-family: "ff-bau-web-pro", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none; }
+
+.legacy-styles .entry-content h1 {
+  font-size: 2.0625em; }
+
+.legacy-styles .entry-content h2 {
+  font-size: 1.5em; }
+
+.legacy-styles .entry-content h3 {
+  font-weight: 700;
+  font-size: 1.21875em;
+  line-height: 1.25; }
 
 .legacy-styles .entry-content {
   font-family: "minion-pro", Georgia, Times, 'Times New Roman', serif; }
@@ -2631,6 +2657,12 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
 .legacy-styles .wp-caption-text {
   opacity: 0.8;
   font-size: 14px; }
+
+.legacy-styles .entry-content ul li {
+  list-style: disc; }
+
+.legacy-styles .entry-content ol li {
+  list-style: decimal; }
 
 /*--------------------------------------------------------------
 	## Post Footer
@@ -2945,6 +2977,9 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
 
 .widget_recent_entries a, .widget_tag_cloud a {
   color: #313335; }
+
+.main-content > #disqus_thread {
+  display: none; }
 
 /* Text meant only for screen readers. */
 .screen-reader-text {

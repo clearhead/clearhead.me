@@ -424,6 +424,7 @@ get_header(); ?>
 								</div>
 							</div>
 							<h3>Platforms We Use</h3>
+
 							<div class="platforms-list">
 								<ul class="cap-8c-7g">
 									<li>Tealium</li>
