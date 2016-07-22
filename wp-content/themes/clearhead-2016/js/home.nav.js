@@ -25,8 +25,8 @@ function waypointObject(url) {
 }
 
 //parallaxBackground effects
-jQuery('.window').parallaxBackground({
-  'image': '.photo'
+jQuery('.px-window').parallaxBackground({
+  'image': '.px-photo'
 });
 
 

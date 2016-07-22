@@ -52,8 +52,8 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					    <div class="window">
-							<div class="photo">
+					    <div class="px-window">
+							<div class="px-photo">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/what-we-do.jpg" alt="" />
 							</div>
 					    </div>
@@ -271,8 +271,8 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					    <div class="window">
-							<div class="photo">
+						<div class="px-window">
+							<div class="px-photo">
 								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-do-it-with.jpg" alt="" />
 							</div>
 					    </div>
@@ -485,9 +485,9 @@ get_header(); ?>
 								</div>
 							</div>
 						</div>
-					    <div class="window">
-							<div class="photo">
-								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-are.jpg" alt="" style="top: -22%;"/>
+						<div class="px-window">
+							<div class="px-photo">
+								<img src="<?php bloginfo('stylesheet_directory'); ?>/img/callout-photos/who-we-are.jpg" alt="" />
 							</div>
 					    </div>
 					</section>
