@@ -1852,19 +1852,29 @@ h3.widget-title {
 /*--------------------------------------------------------------
 ## Layouts
 --------------------------------------------------------------*/
-body.sidebar-right .container-index {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+@media screen and (min-width: 40em) {
+  body.sidebar-right .container-index {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+@media screen and (min-width: 40em) {
   body.sidebar-right .container-index .main-content {
-    width: calc(100% - (14.45625em + 1.65625em)); }
+    width: calc(100% - (14.45625em + 1.65625em)); } }
+
+@media screen and (min-width: 40em) {
   body.sidebar-right .container-index aside {
     width: 14.45625em;
     margin-left: 1.65625em;
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
-            flex-shrink: 0; }
+            flex-shrink: 0; } }
 
 .archive-view .blog-content {
   padding-top: calc(2.78125em + 1px); }
@@ -2095,7 +2105,9 @@ body.page-template-default .entry-content.container {
 .legacy-styles .site-content:after,
 .legacy-styles .site-footer:before,
 .legacy-styles .site-footer:after,
-.legacy-styles .layout-sidebar:after {
+.legacy-styles .layout-sidebar:after,
+.legacy-styles .posts-navigation:before,
+.legacy-styles .posts-navigation:after {
   content: "";
   display: table; }
 
@@ -2105,7 +2117,8 @@ body.page-template-default .entry-content.container {
 .legacy-styles .site-header:after,
 .legacy-styles .site-content:after,
 .legacy-styles .site-footer:after,
-.legacy-styles .layout-sidebar:after {
+.legacy-styles .layout-sidebar:after,
+.legacy-styles .posts-navigation:after {
   clear: both; }
 
 .legacy-styles .clearfix:after, .legacy-styles .clearfix:before {
@@ -2288,6 +2301,9 @@ body.page-template-default .entry-content.container {
 /*--------------------------------------------------------------
 	## Navs
 	--------------------------------------------------------------*/
+.legacy-styles .posts-navigation {
+  margin-bottom: 2.5em; }
+
 /*--------------------------------------------------------------
 	## Widgets
 	--------------------------------------------------------------*/
@@ -2296,7 +2312,8 @@ body.page-template-default .entry-content.container {
   padding: 20px;
   background-color: #f9f9fa;
   margin-bottom: 3em;
-  font-size: 14px; }
+  font-size: 14px;
+  width: 100%; }
 
 @media screen and (min-width: 640px) {
   .legacy-styles .widget {
@@ -2361,6 +2378,8 @@ body.page-template-default .entry-content.container {
 .legacy-styles .page .entry-header {
   padding: 3rem 0;
   text-align: center; }
+  .legacy-styles .page .entry-header a {
+    line-height: 1; }
 
 .legacy-styles .entry-title {
   text-transform: lowercase; }
@@ -2371,6 +2390,8 @@ body.page-template-default .entry-content.container {
 .legacy-styles .entry-header .foot {
   font-size: 14px;
   line-height: 32px; }
+  .legacy-styles .entry-header .foot .tags-links {
+    display: inline-block; }
 
 @media screen and (max-width: 640px) {
   .legacy-styles .entry-header .tagged a {
@@ -2389,16 +2410,27 @@ body.page-template-default .entry-content.container {
     padding: 10px;
     margin-left: 6px;
     margin-bottom: 12px;
-    border-radius: 2px; }
+    border-radius: 2px;
+    display: inline-block;
+    line-height: 1; }
+    .legacy-styles .entry-header .foot a svg {
+      display: inline-block;
+      line-height: 1; }
   .legacy-styles .entry-header .foot a:hover {
     background: rgba(255, 255, 255, 0.4);
     color: #fff;
     text-decoration: none; } }
 
+.legacy-styles .entry-header .social {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  margin-left: 1em; }
+
 .legacy-styles .entry-header .social a {
-  padding: 10px;
-  width: 32px;
-  text-align: center; }
+  padding: 1px 10px 9px;
+  text-align: center;
+  line-height: 1; }
 
 .legacy-styles .entry-header .social a svg {
   position: relative;
@@ -2451,11 +2483,13 @@ body.page-template-default .entry-content.container {
   border-bottom: 1px solid #eee;
   padding-top: 2em;
   padding-bottom: 0.75em;
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5em;
   margin-bottom: 2em; }
+  @media screen and (min-width: 40em) {
+    .legacy-styles .author-top {
+      max-width: 600px; } }
 
 .legacy-styles .author-top .avatar {
   border-radius: 100%;
@@ -2524,24 +2558,32 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
       margin-bottom: 0;
       line-height: 1.5; }
   body.single-post .legacy-styles .entry-header .foot, body.page .legacy-styles .entry-header .foot {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin: 1.68125rem 0; }
+    @media screen and (min-width: 40em) {
+      body.single-post .legacy-styles .entry-header .foot, body.page .legacy-styles .entry-header .foot {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+        -webkit-align-items: flex-start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
 
-body.single-post .legacy-styles .entry-image, body.page .legacy-styles .entry-image {
-  margin: -4.5em auto 2.625em; }
+@media screen and (min-width: 40em) {
+  body.single-post .legacy-styles .entry-image, body.page .legacy-styles .entry-image {
+    margin: -4.5em auto 2.625em; } }
 
 /*--------------------------------------------------------------
 	## Entry Content (Post + Page body)
 	--------------------------------------------------------------*/
-.legacy-styles .entry-content {
-  max-width: 600px; }
+@media screen and (min-width: 40em) {
+  .legacy-styles .entry-content {
+    max-width: 600px; } }
 
 .legacy-styles .entry-content a {
   border-bottom: 1px dashed rgba(17, 119, 150, 0.3);
