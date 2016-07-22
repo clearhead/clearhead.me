@@ -919,6 +919,9 @@ section {
     position: relative;
     text-align: center;
     bottom: 1.25rem; }
+    @media screen and (min-width: 40em) {
+      .hero h1 {
+        text-align: left; } }
     .hero h1 figure {
       display: block;
       pointer-events: none;
@@ -970,6 +973,10 @@ section {
         margin-left: 0;
         margin-right: 0;
         max-width: none; } }
+
+@media screen and (min-width: 40em) {
+  body.ie .hero h1 figure svg {
+    width: 17.5rem; } }
 
 .parallax-callout {
   padding: 0;
