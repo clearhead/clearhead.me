@@ -93,7 +93,7 @@ body.page-template-default {
 	.entry-content.container {
 		margin-top: 4em;
 		h1, h2, h3, h4, h5, h6 {
-			font-family: "ff-bau-web-pro";
+			font-family: $body;
 		}
 		h4 {
 			text-transform: none;
@@ -137,6 +137,11 @@ body.page-template-default {
 	}
 	blockquote {
 	  margin: 0 1.5em;
+	  padding: 0 1rem;
+	  letter-spacing: -0.25px;
+	  p {
+		  letter-spacing: -0.25px;
+	  }
 	}
 	address {
 	  margin: 0 0 1.5em;
@@ -958,6 +963,21 @@ body.single-post, body.page {
 	.entry-content h5,
 	.entry-content h6 {
 	  color: #117793;
+	  font-family: $body;
+	  text-transform: none;
+	}
+	.entry-content {
+		h1 {
+			font-size: 2.0625em;
+		}
+		h2 {
+			font-size: 1.5em;
+		}
+		h3 {
+			font-weight: $bold;
+			font-size: 1.21875em;
+			line-height: 1.25;
+		}
 	}
 	.entry-content {
 	  font-family: "minion-pro", Georgia, Times, 'Times New Roman', serif;
@@ -992,6 +1012,15 @@ body.single-post, body.page {
 	  opacity: 0.8;
 	  font-size: 14px;
 	}
+	.entry-content {
+		ul li {
+			list-style: disc;
+		}
+		ol li {
+			list-style: decimal;
+		}
+	}
+
 }
 	/*--------------------------------------------------------------
 	## Post Footer
@@ -1349,4 +1378,8 @@ body.single-post, body.page {
 	a {
 		color: $black;
 	}
+}
+
+.main-content > #disqus_thread {
+	display: none;
 }
