@@ -24,6 +24,11 @@ function waypointObject(url) {
 
 }
 
+//parallaxBackground effects
+jQuery('.window').parallaxBackground({
+  'image': '.photo'
+});
+
 
 jQuery('.menu-item a, a.smooth-scroll, a[href$="main"]').click(function() {
   var href = jQuery(this).attr('href');
