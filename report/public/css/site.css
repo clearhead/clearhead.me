@@ -757,11 +757,6 @@ body.ch-report section.principles .contact-wrap {
       body.ch-report section.principles .contact-wrap form {
         flex-wrap: nowrap;
         justify-content: space-between; } }
-    body.ch-report section.principles .contact-wrap form button {
-      width: 100%; }
-      @media (min-width: 38.75em) {
-        body.ch-report section.principles .contact-wrap form button {
-          width: initial; } }
   body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button {
     font-size: 0.9411764706em; }
     @media (min-width: 38.75em) {

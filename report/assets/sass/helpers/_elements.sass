@@ -6,9 +6,6 @@
 body.ch-report
 
   //- Nav
-  nav
-    // box-shadow: inset 0px -1px 100px -25px #000
-
   .nav-wrap
     flex-wrap: nowrap
     position: absolute
@@ -652,17 +649,17 @@ body.ch-report
         +medium
           flex-wrap: nowrap
           justify-content: space-between
+        button
+          width: 100%
+          +medium
+            width: initial
+
       input, button
         @extend %font-family-b
         font-size: 0.9411764706em
         +medium
           font-size: 0.7272727273em
-        // height: 1.7272727273em
-        -webkit-appearance: none
-        -webkit-border-radius: 0
-        width: calc(50% - .25em)
-        margin-bottom: .25em
-        +medium
+          margin-bottom: .25em
           margin-bottom: 0
           width: initial
 
