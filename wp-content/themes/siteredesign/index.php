@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="text-wrap">    
+        <div class="text-wrap">
           <p>Further only 30% believe the platform needs to change, despite this being a leading reason to do a redesign. More on that later...</p>
         </div>
       </div>
@@ -872,9 +872,15 @@
         <div class="gs--full contact-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank" class="btn">download the full report (pdf)</a>
           <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
           <form id="connectForm">
-            <input type="text" name="name" required placeholder="name">
-            <input type="text" name="company" placeholder="company">
-            <input type="email" name="email" required placeholder="email">
+            <div class="error-wrap">
+              <input type="text" name="name" required placeholder="name">
+            </div>
+            <div class="error-wrap">
+              <input type="text" name="company" placeholder="company">
+            </div>
+            <div class="error-wrap">
+              <input type="email" name="email" required placeholder="email">
+            </div>
             <button type="submit">let’s connect!</button>
           </form>
         </div>
@@ -903,7 +909,7 @@
   </footer>
   <div class="social-bar">
     <div class="grid-row grid-row-padding--sides-only grid-row-children-alignment--vcentered bar-wrap">
-      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank"> 
+      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="24" viewbox="0 0 24 24">
             <path d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"></path>
           </svg>
@@ -930,7 +936,6 @@
     </div>
   </div>
 </body>
-<script src="<?php bloginfo('template_url'); ?>/js/site.js"></script>
 <script>window.twttr = (function(d, s, id) {
  var js, fjs = d.getElementsByTagName(s)[0],
    t = window.twttr || {};

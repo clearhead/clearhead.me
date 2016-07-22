@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
         success: function(parsedResponse) {
             console.log(parsedResponse);
             $("#connectForm").hide();
-            $(".contact-wrap .heading-4").append('<div class="success_message">Message Sent to ' + _data['email']  + '! We will contact you soon</div>');
+            $(".contact-wrap .heading-4").append('<div class="success_message">Message Sent! We will contact you soon</div>');
    	    },
         error: function(jqXHR,textStatus, errorThrown ) {
           $(".contact-wrap .heading-4").append('<div class="error_message">We\'ve had an issue submitting the form. Please try again</div>');

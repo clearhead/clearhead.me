@@ -8,6 +8,7 @@
     <title>Clearhead</title>
     <meta name="description" value=""><script src="https://use.typekit.net/erk8dkx.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
     <meta property="og:url" content="http://clearhead.me">
     <meta property="og:type" content="website">
     <meta property="og:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
@@ -870,10 +871,16 @@
         </div>
         <div class="gs--full contact-wrap"><a href="images/report.pdf" target="_blank" class="btn">download the full report (pdf)</a>
           <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
-          <form>
-            <input type="text" placeholder="name">
-            <input type="text" placeholder="company">
-            <input type="text" placeholder="email">
+          <form id="connectForm">
+            <div class="error-wrap">
+              <input type="text" name="name" required placeholder="name">
+            </div>
+            <div class="error-wrap">
+              <input type="text" name="company" placeholder="company">
+            </div>
+            <div class="error-wrap">
+              <input type="email" name="email" required placeholder="email">
+            </div>
             <button type="submit">let’s connect!</button>
           </form>
         </div>
@@ -881,7 +888,7 @@
     </div>
   </section>
   <footer>
-    <div class="grid-row grid-row-padding--full grid-row-width--wide">
+    <div class="grid-row grid-row-padding--full grid-row-width--wide footer-wrap">
       <div class="gs--full text-wrap">
         <h3 class="heading-3">Hungry for more? Check out these articles from the founders at Clearhead:</h3>
         <ul>
@@ -945,3 +952,17 @@
  
  return t;
 }(document, "script", "twitter-wjs"));</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
+<script>
+  $("#connectForm").validate();
+  //Handle the ajax submission
+  $("#connectForm").submit(function(e) {
+  $(".error_message").hide();
+  if($(this).valid()) {
+  $("#connectForm").hide();
+  $(".contact-wrap .heading-4").append('<div class="success_message">Message Sent! We will contact you soon</div>');
+  }
+  e.preventDefault();
+  });
+</script>

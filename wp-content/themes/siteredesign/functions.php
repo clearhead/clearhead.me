@@ -84,13 +84,15 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  */
 function siteredesign_scripts_and_styles() {
 
-	wp_enqueue_style( 'siteredesign-style', get_stylesheet_uri(), false, '201607212301');
+	wp_enqueue_style( 'siteredesign-style', get_stylesheet_uri(), false, '201607220106');
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
-	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '20151215', true );
+	wp_enqueue_script( 'site-js', get_template_directory_uri() . '/js/site.js', array('jquery'), '20160722', true);
+
+	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '20160722', true );
 	wp_localize_script( 'email-ajax', 'my_ajax_object',
             array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
