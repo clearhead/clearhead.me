@@ -877,7 +877,7 @@
         </div>
         <div class="gs--full contact-wrap">
           <div class="grid-row">
-            <div class="btn-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank" class="btn">download the full report (pdf)</a></div>
+            <div class="btn-wrap"><a href="<?php bloginfo('template_url'); ?>/images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank" class="btn">download the full report (pdf)</a></div>
             <div class="gs--full">
               <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
             </div>
@@ -922,7 +922,7 @@
   </footer>
   <div class="social-bar">
     <div class="grid-row grid-row-padding--sides-only grid-row-children-alignment--vcentered bar-wrap">
-      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank">
+      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank"> 
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="24" viewbox="0 0 24 24">
             <path d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"></path>
           </svg>
