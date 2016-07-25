@@ -107,7 +107,7 @@
       </ul>
     </div>
   </section>
-  <section class="keyfind">
+  <section id="findings" class="keyfind">
     <div class="grid-row grid-row-children-alignment--centered title-wrap">
       <h1 class="heading-1">Key Findings</h1>
     </div>
@@ -507,7 +507,7 @@
       </div>
     </div>
   </section>
-  <section class="principles">
+  <section id="principles" class="principles">
     <div class="grid-row grid-row-children-alignment--centered grid-row-padding--sides-only title-wrap">
       <h1 class="heading-1">Nine Principles of Future Redesigns</h1>
     </div>
