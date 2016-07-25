@@ -109,13 +109,6 @@ body.page-template-default {
 	}
 }
 
-.legacy-styles {
-	img {
-		background-color: $gray;
-	}
-}
-
-
 
 	/*--------------------------------------------------------------
 	# Typography
@@ -1279,18 +1272,18 @@ body.single-post, body.page {
 	}
 	.disc li {
 	  position: relative;
-	  padding-left: 14px;
+	//   padding-left: 14px;
 	}
 	.disc li:before {
-	  content: " ";
-	  display: block;
-	  width: 6px;
-	  height: 6px;
-	  border-radius: 10px;
-	  background: #ccc;
-	  position: absolute;
-	  left: 0;
-	  top: 5px;
+	//   content: " ";
+	//   display: block;
+	//   width: 6px;
+	//   height: 6px;
+	//   border-radius: 10px;
+	//   background: #ccc;
+	//   position: absolute;
+	//   left: 0;
+	//   top: 5px;
 	}
 	.dual-m {
 	  -webkit-column-count: 2;

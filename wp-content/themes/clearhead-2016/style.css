@@ -1916,9 +1916,6 @@ body.page-template-default .entry-content.container {
     margin-top: 0;
     margin-bottom: .5em; }
 
-.legacy-styles img {
-  background-color: #E0E2E2; }
-
 /*--------------------------------------------------------------
 	# Typography
 	--------------------------------------------------------------*/
@@ -2892,19 +2889,7 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
   border: 1000px; }
 
 .legacy-styles .disc li {
-  position: relative;
-  padding-left: 14px; }
-
-.legacy-styles .disc li:before {
-  content: " ";
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 10px;
-  background: #ccc;
-  position: absolute;
-  left: 0;
-  top: 5px; }
+  position: relative; }
 
 .legacy-styles .dual-m {
   -webkit-column-count: 2;
