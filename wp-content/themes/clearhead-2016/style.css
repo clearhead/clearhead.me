@@ -2641,7 +2641,6 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
 
 @media screen and (min-width: 780px) {
   .legacy-styles .entry-content blockquote {
-    width: 35em;
     margin: 3rem 0; }
   .legacy-styles .entry-content .aligncenter {
     width: 46em !important;
