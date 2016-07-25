@@ -198,3 +198,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Adds additional fields to the user profile
+ */
+require get_template_directory() . '/inc/profile.php';
