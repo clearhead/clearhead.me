@@ -432,9 +432,9 @@ get_header(); ?>
 									<li>Google Analytics</li>
 									<li>SiteCatalyst</li>
 									<li>Coremetrics</li>
-									<li>Hot Jar</li>
+									<li>HotJar</li>
 									<li>Crazy Egg</li>
-									<li>UserTesting.com</li>
+									<li>UserTesting</li>
 									<li>Bloomreach</li>
 									<li>Clicktale</li>
 									<li>OptimalSort</li>
