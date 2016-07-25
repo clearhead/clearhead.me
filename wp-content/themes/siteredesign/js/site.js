@@ -16,7 +16,11 @@ function fbs_click(width, height) {
     return false;
 }
 
-//Footer PDF link
+//Download PDF links
 jQuery(".pdf-wrap a, .contact-wrap a").click(function(e) {
 	dataLayer.push({'event': 'download-pdf'});
 });
+
+if(bowser.msie) {
+  jQuery("body").addClass("ie");
+}

@@ -88,11 +88,13 @@ function siteredesign_scripts_and_styles() {
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 
+	wp_enqueue_script( 'bowser', get_template_directory_uri() . '/js/bowser.js', array(), '20160722927', true );
+
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 
-	wp_enqueue_script( 'site-js', get_template_directory_uri() . '/js/site.js', array('jquery'), '20160725', true);
+	wp_enqueue_script( 'site-js', get_template_directory_uri() . '/js/site.js', array('jquery', 'bowser'), '201607250354', true);
 
-	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '20160725', true );
+	wp_enqueue_script( 'email-ajax', get_template_directory_uri() . '/js/emailSubmit.js', array('jquery', 'jquery-validate'), '201607250354', true );
 	wp_localize_script( 'email-ajax', 'my_ajax_object',
             array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
 
