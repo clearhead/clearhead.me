@@ -65,12 +65,14 @@
     </div>
   </nav>
   <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered grid-row-padding--short hero-wrap">
-    <div class="grid-row heading-wrap">
-      <div class="gs--full">
-        <h2 class="heading-2--blue">The State of Ecommerce Redesigns&nbsp;in&nbsp;2016</h2>
-      </div>
-      <div class="gs--full">
-        <h3 class="heading-3">How Data-Driven Are We?</h3>
+    <div class="gs--full">
+      <div class="grid-row heading-wrap">
+        <div class="gs--full">
+          <h2 class="heading-2--blue">The State of Ecommerce Redesigns&nbsp;in&nbsp;2016</h2>
+        </div>
+        <div class="gs--full">
+          <h3 class="heading-3">How Data-Driven Are We?</h3>
+        </div>
       </div>
     </div>
   </section>
@@ -92,7 +94,7 @@
     </ol>
     <div class="grid-row grid-row-children-alignment--centered table-wrap">
       <h3 class="heading-3">We talked to <span>203 participants</span></h3>
-	<div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/participants-chart.svg"></div>
+      <div class="gs--full image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/participants-chart.svg"></div>
     </div>
     <div class="gs--full thanks-wrap">
       <h4 class="heading-4">special thanks to</h4>
@@ -137,7 +139,7 @@
             </div>
           </div>
         </div>
-        <div class="text-wrap">
+        <div class="text-wrap">    
           <p>Further only 30% believe the platform needs to change, despite this being a leading reason to do a redesign. More on that later...</p>
         </div>
       </div>
@@ -230,18 +232,18 @@
         <div class="grid-row vs-wrap">
           <div class="desk-guys">
             <div class="gm--fourth text-wrap-right">
-              <div class="text-wrap">
+              <div class="grid-row text-wrap">
                 <h1 class="heading-1">6<span>%</span></h1>
                 <p class="text3">suggest “executive desire for change” is the best reason for a redesign</p>
               </div>
             </div>
-            <div class="images-wrap">
+            <div class="gs--full gm--half images-wrap">
               <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-little-guy.svg"></div>
               <h1 class="heading-1--lightblue">vs</h1>
               <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-big-guy.svg"></div>
             </div>
             <div class="gm--fourth text-wrap-left">
-              <div class="text-wrap">
+              <div class="grid-row text-wrap">
                 <h1 class="heading-1">20<span>%</span></h1>
                 <p class="text3">report that “executive desire for change” is the actual reason for a redesign</p>
               </div>
@@ -252,7 +254,7 @@
       <div class="grid-row grid-row-children-alignment--centered grid-row-padding--top-only item-wrap finding-5">
         <div class="gs--full heading-wrap">
           <h4 class="heading-4--purple">finding #5</h4>
-          <h2 class="heading-2">Why did we actually do a redesign? <span>The <br>site was “stale”.</span></h2>
+          <h2 class="heading-2">Why did we actually do a redesign? <span>The <span class="mobile-hide"><br></span>site was “stale”.</span></h2>
           <p>It’s one thing to suggest the best reasons to do a redesign. But what were the real reasons your last redesign got started?</p>
         </div>
         <div class="gs--full section-wrap">
@@ -262,7 +264,7 @@
             </div>
             <div class="item">
               <div class="grid-row data-wrap">
-                <div class="image-wrap">
+                <div class="gs--full gm--half image-wrap">
                   <svg width="204px" height="170px" viewbox="0 0 204 170" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch-->
                     <title>stale_computer</title>
@@ -367,21 +369,23 @@
       <div class="grid-row grid-row-children-alignment--centered grid-row-padding--top-only item-wrap finding-6">
         <div class="gs--full heading-wrap">
           <h4 class="heading-4--purple">finding #6</h4>
-          <h2 class="heading-2">Help! The most important capabilities for <br>redesigning are also the most lacking.</h2>
+          <h2 class="heading-2">Help! The most important capabilities for <span class="mobile-hide"><br></span>redesigning are also the most lacking.</h2>
         </div>
         <div class="gs--full">
           <div class="grid-row row-wrap">
             <div class="data-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f6-hiring.svg"></div>
             <div class="text-wrap">
               <p>75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).</p>
-              <div class="btn-wrap"><a href="https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0" class="share-button">
-                  <div class="button-wrap">
-                    <svg width="20" data-icon="twitter" viewbox="0 0 32 32" style="fill:currentcolor" class="js-geomicon geomicon">
-                      <title>twitter icon</title>
-                      <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
-                    </svg>
-                    <p>click to tweet</p>
-                  </div></a></div>
+              <ul>
+                <li><a href="https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0" class="share-button">
+                    <div class="button-wrap">
+                      <svg width="20" data-icon="twitter" viewbox="0 0 32 32" style="fill:currentcolor" class="js-geomicon geomicon">
+                        <title>twitter icon</title>
+                        <path d="M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4"></path>
+                      </svg>
+                      <p>click to tweet</p>
+                    </div></a></li>
+              </ul>
             </div>
           </div>
           <p>However, in their last redesign respondents report UX research and platform integration were also the most lacking capabilities at their disposal, with web analytics coming in third.</p>
@@ -871,20 +875,27 @@
           <p>Going forward, with the proliferation of technology, data and a more focused spotlight on UX, daring brands can engage ‘change the business’ redesigns with ‘run the business’ confidence. </p>
           <p>We hope this small peek into the world of your peers brings you a bit of confidence as you begin the journey toward your next redesign - whatever your definition of the word may be.</p>
         </div>
-        <div class="gs--full contact-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank" class="btn">download the full report (pdf)</a>
-          <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
-          <form id="connectForm">
-            <div class="error-wrap">
-              <input type="text" name="name" required placeholder="name">
+        <div class="gs--full contact-wrap">
+          <div class="grid-row">
+            <div class="btn-wrap"><a href="<?php bloginfo('template_url'); ?>/images/report.pdf" target="_blank" class="btn">download the full report (pdf)</a></div>
+            <div class="gs--full">
+              <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
             </div>
-            <div class="error-wrap">
-              <input type="text" name="company" placeholder="company">
+            <div class="gs--full">
+              <form id="connectForm">
+                <div class="error-wrap">
+                  <input type="text" name="name" required placeholder="name">
+                </div>
+                <div class="error-wrap">
+                  <input type="text" name="company" placeholder="company">
+                </div>
+                <div class="error-wrap">
+                  <input type="email" name="email" required placeholder="email">
+                </div>
+                <button type="submit">let’s connect!</button>
+              </form>
             </div>
-            <div class="error-wrap">
-              <input type="email" name="email" required placeholder="email">
-            </div>
-            <button type="submit">let’s connect!</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
