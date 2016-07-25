@@ -23,6 +23,8 @@
   </head>
 </html>
 <body class="ch-report">
+  <!-- Google Tag Manager -->
+  <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
   <nav>
     <div class="grid-row-width--wide grid-row nav-wrap grid-row-padding--short">
       <div class="grid-row ch-wrap"><a href="http://clearhead.me" target="_blank">
