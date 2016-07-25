@@ -3,6 +3,29 @@
   -webkit-font-smoothing: antialiased!important
   -moz-osx-font-smoothing: grayscale!important
 
+body.ch-report.ie
+  .hero-wrap
+    .heading-wrap
+      margin-top: 7%
+        // flex-direction: row
+        // display: flex
+  .share-button
+    max-height: 2.75em
+    color: white
+  .contact-wrap
+    button
+      width: inherit
+  #findings
+    .desk-guys
+      .text-wrap-left, .text-wrap-right
+        .text-wrap
+          display: flex
+          flex-direction: row
+      .text-wrap-right .heading-1
+        justify-content: flex-end
+  // .social-bar
+  //   margin-bottom: .25em
+
 body.ch-report
 
   //- Nav
@@ -59,6 +82,7 @@ body.ch-report
     background-size: cover
     background-position: top center
     background-repeat: no-repeat
+    -ms-flex-align: center
     .heading-wrap
       padding: .75em
       margin-top: .5em
@@ -208,7 +232,7 @@ body.ch-report
               font-weight: 500
               color: black
               letter-spacing: -2.3px
-              width: inherit
+              // width: inherit
               width: initial
               display: flex
               justify-content: flex-start
@@ -578,7 +602,7 @@ body.ch-report
           .helmet
             display: none
             +medium
-              display: initial
+              display: block
 
     ul.purple-bars 
       margin-top: 1.75em
@@ -655,7 +679,7 @@ body.ch-report
         button
           width: 100%
           +medium
-            width: initial
+            width: inherit
 
       input, button
         @extend %font-family-b
@@ -710,7 +734,7 @@ body.ch-report
     .btn
       padding: .75em 1em
       display: block
-      width: 18em
+      // width: 18em
       text-align: center
       margin-bottom: 2.15em
       transition: all 0.1875s ease
@@ -738,6 +762,9 @@ body.ch-report
       margin-right: .5em
     .bar-wrap
       justify-content: space-between
+      height: 2em
+      a
+        height: 2em
       p
         font-size: 0.7em
         line-height: inherit
@@ -884,7 +911,4 @@ body.ch-report
       line-height: 1.2
       color: $text-color-purple
       font-size: 1.5454545455em
-
-
-
 

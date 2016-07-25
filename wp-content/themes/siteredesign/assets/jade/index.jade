@@ -69,11 +69,12 @@ body.ch-report
   
   //- Hero
   section.grid-row.grid-row-children-alignment--centered.grid-row-padding--short.hero-wrap(style="background-image: url('images/hero_bg.jpg');")
-    .grid-row.heading-wrap
-      .gs--full
-        h2.heading-2--blue The State of Ecommerce Redesigns&nbsp;in&nbsp;2016
-      .gs--full
-        h3.heading-3 How Data-Driven Are We?
+    .gs--full
+      .grid-row.heading-wrap
+        .gs--full
+          h2.heading-2--blue The State of Ecommerce Redesigns&nbsp;in&nbsp;2016
+        .gs--full
+          h3.heading-3 How Data-Driven Are We?
   
   //-Intro
   section.grid-row.grid-row-padding--full.grid-row-width--wide.intro
@@ -94,7 +95,7 @@ body.ch-report
     .grid-row.grid-row-children-alignment--centered.table-wrap
       h3.heading-3 We talked to 
         span 203 participants
-      .image-wrap
+      .gs--full.image-wrap
         img(src="/images/svg/participants-chart.svg")
     .gs--full.thanks-wrap
       h4.heading-4 special thanks to
@@ -220,18 +221,18 @@ body.ch-report
         .grid-row.vs-wrap
           .desk-guys
             .gm--fourth.text-wrap-right
-              .text-wrap
+              .grid-row.text-wrap
                 h1.heading-1 6
                   span %
                 p.text3 suggest “executive desire for change” is the best reason for a redesign
-            .images-wrap
+            .gs--full.gm--half.images-wrap
               .image-wrap
                 img(src="images/svg/f4-little-guy.svg")
               h1.heading-1--lightblue vs
               .image-wrap
                 img(src="images/svg/f4-big-guy.svg")
             .gm--fourth.text-wrap-left
-              .text-wrap
+              .grid-row.text-wrap
                 h1.heading-1 20
                   span %
                 p.text3 report that “executive desire for change” is the actual reason for a redesign
@@ -249,7 +250,7 @@ body.ch-report
               p The #1 reason people selected as the biggest driver of their last site redesign: “The site has become stale”.
             .item
               .grid-row.data-wrap
-                .image-wrap
+                .gs--full.gm--half.image-wrap
                   svg(width='204px', height='170px', viewbox='0 0 204 170', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                     // Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch
                     title stale_computer
@@ -338,13 +339,20 @@ body.ch-report
               img(src="images/svg/f6-hiring.svg")
             .text-wrap
               p 75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).
-              .btn-wrap
-                a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
-                  .button-wrap
-                    svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
-                      title twitter icon
-                      path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
-                    p click to tweet
+              //- .btn-wrap
+              //-   a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
+              //-     svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+              //-       title twitter icon
+              //-       path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+              //-     p click to tweet
+              ul
+                li
+                  a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
+                    .button-wrap
+                      svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+                        title twitter icon
+                        path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+                      p click to tweet
           p However, in their last redesign respondents report UX research and platform integration were also the most lacking capabilities at their disposal, with web analytics coming in third.
 
 
@@ -687,16 +695,20 @@ body.ch-report
           p We hope this small peek into the world of your peers brings you a bit of confidence as you begin the journey toward your next redesign - whatever your definition of the word may be.
 
         .gs--full.contact-wrap
-          a.btn(href="images/report.pdf" target="_blank") download the full report (pdf)
-          h4.heading-4 Want to learn more about data-driven redesigns?
-          form#connectForm
-            .error-wrap
-              input(type='text', name='name', required placeholder='name')
-            .error-wrap
-              input(type='text', name='company', placeholder='company')
-            .error-wrap
-              input(type='email', name='email', required placeholder='email')
-            button(type='submit') let’s connect!
+          .grid-row
+            .btn-wrap
+              a.btn(href="images/report.pdf" target="_blank") download the full report (pdf)
+            .gs--full
+              h4.heading-4 Want to learn more about data-driven redesigns?
+            .gs--full
+              form#connectForm
+                .error-wrap
+                  input(type='text', name='name', required placeholder='name')
+                .error-wrap
+                  input(type='text', name='company', placeholder='company')
+                .error-wrap
+                  input(type='email', name='email', required placeholder='email')
+                button(type='submit') let’s connect!
 
   //-Footer
   footer
@@ -747,7 +759,7 @@ body.ch-report
       //-       title twitter icon
       //-       path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
       //-     p click to tweet
-  .mq-tracker
+  //- .mq-tracker
 script(src="/js/site.js")
 |<script>window.twttr = (function(d, s, id) {
 |  var js, fjs = d.getElementsByTagName(s)[0],

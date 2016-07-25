@@ -152,6 +152,29 @@ a {
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important; }
 
+body.ch-report.ie .hero-wrap .heading-wrap {
+  margin-top: 7%; }
+body.ch-report.ie .share-button {
+  max-height: 2.75em;
+  color: white; }
+body.ch-report.ie .contact-wrap button {
+  width: inherit; }
+body.ch-report.ie #findings .desk-guys .text-wrap-left .text-wrap, body.ch-report.ie #findings .desk-guys .text-wrap-right .text-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+body.ch-report.ie #findings .desk-guys .text-wrap-right .heading-1, body.ch-report.ie #findings .desk-guys .text-wrap-right h1.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right h2.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right h3.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right h4.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right h5.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right h6.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right li.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right p.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right a.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right small.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right span.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right blockquote.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right cite.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right input.heading-1--lightblue, body.ch-report.ie #findings .desk-guys .text-wrap-right label.heading-1--lightblue {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
 body.ch-report .nav-wrap {
   -webkit-flex-wrap: nowrap;
       -ms-flex-wrap: nowrap;
@@ -212,7 +235,8 @@ body.ch-report section.hero-wrap {
   min-height: 20em;
   background-size: cover;
   background-position: top center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  -ms-flex-align: center; }
   body.ch-report section.hero-wrap .heading-wrap {
     padding: 0.75em;
     margin-top: 0.5em;
@@ -393,7 +417,6 @@ body.ch-report section.keyfind .item-wrap .sub-items-wrap {
       font-weight: 500;
       color: black;
       letter-spacing: -2.3px;
-      width: inherit;
       width: initial;
       display: -webkit-box;
       display: -webkit-flex;
@@ -859,7 +882,7 @@ body.ch-report section.principles .section-wrap .sports-wrap {
       display: none; }
       @media (min-width: 38.75em) {
         body.ch-report section.principles .section-wrap .sports-wrap .wrap .helmet {
-          display: initial; } }
+          display: block; } }
 body.ch-report section.principles ul.purple-bars {
   margin-top: 1.75em; }
   body.ch-report section.principles ul.purple-bars li {
@@ -958,7 +981,7 @@ body.ch-report section.principles .contact-wrap {
       width: 100%; }
       @media (min-width: 38.75em) {
         body.ch-report section.principles .contact-wrap form button {
-          width: initial; } }
+          width: inherit; } }
   body.ch-report section.principles .contact-wrap input, body.ch-report section.principles .contact-wrap button {
     font-size: 0.9411764706em; }
     @media (min-width: 38.75em) {
@@ -1020,7 +1043,6 @@ body.ch-report section.principles button {
 body.ch-report section.principles .btn {
   padding: 0.75em 1em;
   display: block;
-  width: 18em;
   text-align: center;
   margin-bottom: 2.15em;
   -webkit-transition: all 0.1875s ease;
@@ -1043,7 +1065,10 @@ body.ch-report .social-bar {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    height: 2em; }
+    body.ch-report .social-bar .bar-wrap a {
+      height: 2em; }
     body.ch-report .social-bar .bar-wrap p {
       font-size: 0.7em;
       line-height: inherit;
