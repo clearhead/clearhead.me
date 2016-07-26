@@ -1738,45 +1738,31 @@ body.ie .logo-list li figure img, body.firefox .logo-list li figure img {
         .team-list ul li {
           width: calc((100%/6) - 1.625em);
           margin-bottom: 0; } }
-      .team-list ul li figure {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center; }
-        .team-list ul li figure .photo {
-          width: 100%;
-          background-color: #E0E2E2; }
-          .team-list ul li figure .photo img {
-            display: block; }
-        .team-list ul li figure figcaption {
-          margin-top: 0.71875em;
-          text-transform: lowercase;
-          font-weight: 500;
-          text-align: center;
-          color: #8E69AD;
-          line-height: 1.125;
-          letter-spacing: -0.0277777778em;
-          font-size: 0.875em; }
-          @media screen and (min-width: 30em) {
-            .team-list ul li figure figcaption {
-              font-size: 0.9375em; } }
-          @media screen and (min-width: 40em) {
-            .team-list ul li figure figcaption {
-              font-size: 0.875em; } }
-          @media screen and (min-width: 62.5em) {
-            .team-list ul li figure figcaption {
-              font-size: 1em; } }
-          .team-list ul li figure figcaption span {
-            text-transform: none; }
+      .team-list ul li figure .photo {
+        width: 100%;
+        background-color: #E0E2E2; }
+        .team-list ul li figure .photo img {
+          display: block; }
+      .team-list ul li figure figcaption {
+        margin-top: 0.71875em;
+        text-transform: lowercase;
+        font-weight: 500;
+        text-align: center;
+        color: #8E69AD;
+        line-height: 1.125;
+        letter-spacing: -0.0277777778em;
+        font-size: 0.875em; }
+        @media screen and (min-width: 30em) {
+          .team-list ul li figure figcaption {
+            font-size: 0.9375em; } }
+        @media screen and (min-width: 40em) {
+          .team-list ul li figure figcaption {
+            font-size: 0.875em; } }
+        @media screen and (min-width: 62.5em) {
+          .team-list ul li figure figcaption {
+            font-size: 1em; } }
+        .team-list ul li figure figcaption span {
+          text-transform: none; }
 
 h3.widget-title {
   font-size: 1.478125em;
