@@ -48,6 +48,9 @@
         position: relative;
         text-align: center;
         bottom: 1.25rem;
+        @include w640 {
+            text-align: left;
+        }
         figure {
             display: block;
             pointer-events: none;
@@ -109,6 +112,12 @@
         }
     }
 }
+body.ie .hero h1 figure svg {
+    @include w640 {
+        width: 17.5rem;
+    }
+}
+
 
 // Photo Callout
 // -------------
@@ -412,22 +421,26 @@
             display: inline-block;
             bottom: 10.5px;
             height: 48px;
-            width: 48px;
+            width: 28px;
             background-repeat: no-repeat;
             background-size: 29.5px;
         }
         &:first-child {
-            margin-left: 24px;
+            @media screen and (max-width: 639px) {
+                left: 12px;
+            }
             &:before {
-                left: -48px;
+                left: -28px;
                 background-image: url('img/point-left.svg');
                 background-position: right -2.5px bottom 2px;
             }
         }
         &:last-child {
-            margin-right: 24px;
+            @media screen and (max-width: 639px) {
+                right: 12px;
+            }
             &:before {
-                right: -48px;
+                right: -28px;
                 background-image: url('img/point-right.svg');
                 background-position: left -2.5px bottom 2px;
             }
@@ -685,6 +698,11 @@
         margin: 1.65625em 0 2.90625em;
     }
 }
+body.ie, body.firefox {
+    .logo-list li figure img {
+        width: 100%;
+    }
+}
 
 // Contact CTA
 // -----------
@@ -836,9 +854,6 @@
                 margin-bottom: 0;
             }
             figure {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 .photo {
                     width: 100%;
                     background-color: $gray;

@@ -57,9 +57,18 @@
 				<h3 class="m0"><a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ), get_the_author_meta( 'user_nicename' ) ); ?>"><?php the_author(); ?></a></h3>
 				<p class="m0 job-title"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
 			</div>
-			<div class="author-contact">
-					<a class="button button-reduced" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>">say hi to <?php the_author_meta( 'first_name' ); ?></a>
-			</div>
+
+
+			<?php if(!(empty(get_user_meta( get_the_author_meta( 'ID' ), 'hi', true)))): ?>
+
+				<div class="author-contact">
+					<a class="button button-reduced" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>">
+						say hi to <?php the_author_meta( 'first_name' ); ?>
+					</a>
+				</div>
+
+			<?php endif; ?>
+
 		</div>
 	</div><!-- .entry-meta -->
 
