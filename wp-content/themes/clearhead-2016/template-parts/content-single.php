@@ -59,7 +59,7 @@
 			</div>
 
 
-			<?php if(!(empty(get_user_meta( get_the_author_meta( 'ID' ), 'hi', true)))): ?>
+			<?php // if(!(empty(get_user_meta( get_the_author_meta( 'ID' ), 'hi', true)))): ?>
 
 				<div class="author-contact">
 					<a class="button button-reduced" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>">
@@ -67,7 +67,7 @@
 					</a>
 				</div>
 
-			<?php endif; ?>
+			<?php // endif; ?>
 
 		</div>
 	</div><!-- .entry-meta -->
