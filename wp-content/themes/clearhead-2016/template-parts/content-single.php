@@ -58,11 +58,17 @@
 				<p class="m0 job-title"><?php echo get_user_meta( get_the_author_meta( 'ID' ), 'title', true ); ?></p>
 			</div>
 
-			<div class="author-contact">
-				<a class="button button-reduced" href="<?php echo get_user_meta( get_the_author_meta( 'ID' ), 'hi', true); ?>">
-					say hi to <?php the_author_meta( 'first_name' ); ?>
-				</a>
-			</div>
+			<?php
+			$authorInfo = get_user_meta( get_the_author_meta( 'ID' ), 'hi', true);
+			$isAuthorEmpty = empty($authorInfo);
+			if(!$isAuthorEmpty): ?>
+				<div class="author-contact">
+					<a class="button button-reduced" href="<?php echo $authorInfo ?>">
+						say hi to <?php the_author_meta( 'first_name' ); ?>
+					</a>
+				</div>
+
+			<?php endif; ?>
 
 		</div>
 	</div><!-- .entry-meta -->
