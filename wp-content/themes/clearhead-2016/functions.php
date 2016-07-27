@@ -118,7 +118,7 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  */
 function clearhead_2016_scripts_and_styles() {
 
-	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), '201607271339' );
+	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), false, '201607271339' );
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 
