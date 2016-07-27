@@ -149,3 +149,9 @@ jQuery(".contact-form textarea").attr("rows", 4);
         jQuery(".pushbutton-wide").prop('disabled', false);
     });
 })(jQuery);
+
+
+jQuery('.grouped-links a').hover(
+   function(){ jQuery(this).closest('.grouped-links').addClass('phover') },
+   function(){ jQuery(this).closest('.grouped-links').removeClass('phover') }
+);
