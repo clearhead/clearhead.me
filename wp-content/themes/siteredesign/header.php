@@ -38,8 +38,13 @@
 	<?php wp_head(); ?>
 
 </head>
-
-<body <?php body_class("ch-report"); ?>>
+<?php
+//Deal with front page needing a special class
+$addClassString = "";
+if(is_front_page()){
+	$addClassString = "ch-report";
+} ?>
+<body <?php body_class($addClassString); ?>>
 	<!-- Google Tag Manager -->
 	<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 	<div id="content" class="site-content">
