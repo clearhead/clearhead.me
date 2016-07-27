@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <title>Clearhead</title>
-    <meta name="description" value=""><script src="https://use.typekit.net/erk8dkx.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <meta property="og:url" content="http://clearhead.me">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
-    <meta property="og:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
-    <meta property="og:image" content="<?php bloginfo('template_url'); ?>/images/hero_bg.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@clearheadme">
-    <meta name="twitter:creator" content="@clearheadme">
-    <meta name="twitter:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
-    <meta name="twitter:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
-    <meta name="twitter:image" content="<?php bloginfo('template_url'); ?>/images/hero_bg.jpg">
-    <?php wp_head(); ?>
-
-  </head>
-</html>
-<body class="ch-report">
-  <!-- Google Tag Manager -->
-  <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+<?php get_header(); ?>
   <nav>
     <div class="grid-row-width--wide grid-row nav-wrap grid-row-padding--short">
       <div class="grid-row ch-wrap"><a href="http://clearhead.me" target="_blank">
@@ -139,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="text-wrap">    
+        <div class="text-wrap">
           <p>Further only 30% believe the platform needs to change, despite this being a leading reason to do a redesign. More on that later...</p>
         </div>
       </div>
@@ -922,7 +896,7 @@
   </footer>
   <div class="social-bar">
     <div class="grid-row grid-row-padding--sides-only grid-row-children-alignment--vcentered bar-wrap">
-      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank"> 
+      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="24" viewbox="0 0 24 24">
             <path d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"></path>
           </svg>
@@ -948,21 +922,4 @@
       </div>
     </div>
   </div>
-</body>
-<script>window.twttr = (function(d, s, id) {
- var js, fjs = d.getElementsByTagName(s)[0],
-   t = window.twttr || {};
- if (d.getElementById(id)) return t;
- js = d.createElement(s);
- js.id = id;
- js.src = "https://platform.twitter.com/widgets.js";
- fjs.parentNode.insertBefore(js, fjs);
-
- t._e = [];
- t.ready = function(f) {
-   t._e.push(f);
- };
-
- return t;
-}(document, "script", "twitter-wjs"));</script>
-<?php wp_footer(); ?>
+<?php get_footer(); ?>
