@@ -455,7 +455,11 @@ header {
         -webkit-box-pack: center;
         -webkit-justify-content: center;
             -ms-flex-pack: center;
-                justify-content: center; }
+                justify-content: center;
+        -webkit-transition: background-color 0.25s ease;
+        transition: background-color 0.25s ease; }
+        header .logo:hover {
+          background-color: #3CB3DB; }
         header .logo figure {
           height: 0.96875em;
           width: 1.0625em;
@@ -653,6 +657,9 @@ body.show-menu-mobile .menu-toggle-mobile .icon .line-outer {
 body.show-menu-mobile .menu-toggle-mobile .icon .line-inner {
   -webkit-transition: 0.2s 0.2s cubic-bezier(0, 0, 0, 1);
   transition: 0.2s 0.2s cubic-bezier(0, 0, 0, 1); }
+
+body.home:not(.scrolled) header .logo:hover {
+  background-color: #32C4F5; }
 
 body.archive-view header:after {
   content: "";
@@ -1135,7 +1142,9 @@ section {
             -ms-flex-direction: row;
                 flex-direction: row;
         margin-bottom: 0.4125em; } }
-    .solutions-list li > div:first-child {
+    .solutions-list li.phover > div a {
+      color: #19748f; }
+    .solutions-list li > a {
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0;
@@ -1150,15 +1159,16 @@ section {
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; }
-      .solutions-list li > div:first-child h3 {
+              align-items: center;
+      color: #313335; }
+      .solutions-list li > a h3 {
         width: 10em; }
-      .solutions-list li > div:first-child svg {
+      .solutions-list li > a svg {
         display: block;
         max-width: 100%;
         width: 7em; }
       @media screen and (min-width: 40em) {
-        .solutions-list li > div:first-child {
+        .solutions-list li > a {
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
           -webkit-flex-direction: column;
@@ -1175,20 +1185,31 @@ section {
           -webkit-justify-content: flex-start;
               -ms-flex-pack: start;
                   justify-content: flex-start; }
-          .solutions-list li > div:first-child svg {
+          .solutions-list li > a svg {
             width: auto; } }
-    .solutions-list li > div:last-child {
+    .solutions-list li > div {
       border-top: 1px solid #E0E2E2;
       width: calc(100% - (($column * 3) + ($gutter * 3)));
       margin-top: 1em;
       padding-top: 1em; }
       @media screen and (min-width: 40em) {
-        .solutions-list li > div:last-child {
+        .solutions-list li > div {
           margin-top: 0;
           padding-top: 0;
           padding-left: 1.1111111111rem;
           border-top: 0;
           border-left: 1px solid #E0E2E2; } }
+      .solutions-list li > div a {
+        display: block;
+        font-weight: 500;
+        line-height: 1;
+        margin-bottom: 0.1875em;
+        font-size: 1em;
+        padding: 0.5em 0 0.325em; }
+        @media screen and (min-width: 40em) {
+          .solutions-list li > div a {
+            font-size: 0.875em;
+            padding: 0; } }
   .solutions-list h3 {
     font-weight: 700;
     line-height: 1.2875;
@@ -1206,17 +1227,6 @@ section {
     margin: 0.2875em 0 0.45625em; }
   .solutions-list p {
     margin-bottom: 0.765625em; }
-  .solutions-list a {
-    display: block;
-    font-weight: 500;
-    line-height: 1;
-    margin-bottom: 0.1875em;
-    font-size: 1em;
-    padding: 0.5em 0 0.325em; }
-    @media screen and (min-width: 40em) {
-      .solutions-list a {
-        font-size: 0.875em;
-        padding: 0; } }
 
 .expositive-remarks {
   margin-bottom: 0.75em; }

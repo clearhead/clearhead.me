@@ -158,6 +158,10 @@ header {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			transition: background-color 0.25s ease;
+			&:hover {
+				background-color: #3CB3DB;
+			}
 			figure {
 				height: 0.96875em;
 				width: 1.0625em;
@@ -390,6 +394,13 @@ body {
 			// transform: translateY(calc(50em / 16));
 			// @include w480  { transform: translateY(calc(49em / 16.5)); } // 16.5 pt
 			// @include w640  { transform: translateY(0) }
+		}
+	}
+}
+body.home {
+	&:not(.scrolled) {
+		header .logo:hover {
+			background-color: $blue;
 		}
 	}
 }
