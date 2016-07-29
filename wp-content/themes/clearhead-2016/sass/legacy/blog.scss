@@ -223,6 +223,9 @@ body.page-template-default {
 	table {
 	  margin: 0 0 1.5em;
 	  width: 100%;
+	  * {
+		  vertical-align: top;
+	  }
 	}
 }
 	/*--------------------------------------------------------------
@@ -357,11 +360,13 @@ body.page-template-default {
 	  display: inline;
 	  float: left;
 	  margin-right: 1.5em;
+	  margin-bottom: 1em;
 	}
 	.alignright {
 	  display: inline;
 	  float: right;
 	  margin-left: 1.5em;
+	  margin-bottom: 1em;
 	}
 	.aligncenter {
 	  clear: both;
@@ -551,9 +556,10 @@ body.page-template-default {
 	  margin: 0 auto;
 	}
 
-	img[class*="wp-image-"] {
+	img[class*="wp-image-"]:not(.alignleft):not(.alignright) {
 		display: block;
-		margin: 0 auto;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.wp-caption-text {
 	  text-align: center;
