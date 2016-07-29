@@ -550,6 +550,11 @@ body.page-template-default {
 	  display: block;
 	  margin: 0 auto;
 	}
+
+	img[class*="wp-image-"] {
+		display: block;
+		margin: 0 auto;
+	}
 	.wp-caption-text {
 	  text-align: center;
 	}
@@ -991,13 +996,13 @@ body.single-post, body.page {
 	    margin: 3rem 0;
 	  }
 	  .entry-content .aligncenter {
-	    width: 46em !important;
-	    max-width: 46em !important;
-	    margin-left: -4.4em;
+	    width: 44.4125em!important;
+	    max-width: 44.4125em!important;
+		margin-left: -5.53125em;
 	  }
 	  .entry-content .aligncenter img {
-	    width: 46em !important;
-	    max-width: 46em !important
+	    width: 44.4125em!important;
+	    max-width: 44.4125em!important
 	  }
 	}
 	.wp-caption-text {
