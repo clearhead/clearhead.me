@@ -96,13 +96,13 @@ get_header(); ?>
 							</div>
 
 							<ul class="solutions-list">
-								<li>
-									<div>
+								<li class="grouped-links">
+									<a href="/digital-optimization-programs/">
 										<h3>Digital Optimization Programs</h3>
 										<figure>
 											<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
 										</figure>
-									</div>
+									</a>
 									<div>
 										<strong>Uncovering the best ideas quickly and iteratively</strong>
 										<p>
@@ -111,13 +111,13 @@ get_header(); ?>
 										<a href="/digital-optimization-programs/">Learn More</a>
 									</div>
 								</li>
-								<li>
-									<div>
+								<li class="grouped-links">
+									<a href="/data-driven-redesigns/">
 										<h3>Data-driven Redesigns</h3>
 										<figure>
 											<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
 										</figure>
-									</div>
+									</a>
 									<div>
 										<strong>Disrupt with confidence</strong>
 										<p>
@@ -126,13 +126,13 @@ get_header(); ?>
 										<a href="/data-driven-redesigns/">Learn More</a>
 									</div>
 								</li>
-								<li>
-									<div>
+								<li class="grouped-links">
+									<a href="optimization-accelerators">
 										<h3>Optimization Accelerators</h3>
 										<figure>
 											<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
 										</figure>
-									</div>
+									</a>
 									<div>
 										<strong>Building towards a test-and-learn culture</strong>
 										<p>
@@ -424,6 +424,7 @@ get_header(); ?>
 								</div>
 							</div>
 							<h3>Platforms We Use</h3>
+
 							<div class="platforms-list">
 								<ul class="cap-8c-7g">
 									<li>Tealium</li>
@@ -431,9 +432,9 @@ get_header(); ?>
 									<li>Google Analytics</li>
 									<li>SiteCatalyst</li>
 									<li>Coremetrics</li>
-									<li>Hot Jar</li>
+									<li>HotJar</li>
 									<li>Crazy Egg</li>
-									<li>UserTesting.com</li>
+									<li>UserTesting</li>
 									<li>Bloomreach</li>
 									<li>Clicktale</li>
 									<li>OptimalSort</li>
