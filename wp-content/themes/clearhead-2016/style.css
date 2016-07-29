@@ -2255,6 +2255,10 @@ body.page-template-default .entry-content.container {
   display: block;
   margin: 0 auto; }
 
+.legacy-styles img[class*="wp-image-"] {
+  display: block;
+  margin: 0 auto; }
+
 .legacy-styles .wp-caption-text {
   text-align: center; }
 
@@ -2639,12 +2643,12 @@ body.single-post .legacy-styles .entry-header, body.page .legacy-styles .entry-h
   .legacy-styles .entry-content blockquote {
     margin: 3rem 0; }
   .legacy-styles .entry-content .aligncenter {
-    width: 46em !important;
-    max-width: 46em !important;
-    margin-left: -4.4em; }
+    width: 44.4125em !important;
+    max-width: 44.4125em !important;
+    margin-left: -5.53125em; }
   .legacy-styles .entry-content .aligncenter img {
-    width: 46em !important;
-    max-width: 46em !important; } }
+    width: 44.4125em !important;
+    max-width: 44.4125em !important; } }
 
 .legacy-styles .wp-caption-text {
   opacity: 0.8;
