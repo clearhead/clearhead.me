@@ -206,7 +206,7 @@ get_header(); ?>
 											<p>
 												Simplifying the checkout flow led to a 3.81% increase in order conversion rate for Steve Madden.
 											</p>
-											<a href="/revenue-simplification-steve-madden-case-study/">See How</a>
+											<a href="/blog/revenue-simplification-steve-madden-case-study/">See How</a>
 										</div>
 									</li>
 									<li>
