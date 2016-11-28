@@ -197,16 +197,16 @@ get_header(); ?>
 								<ul>
 									<li>
 										<div>
-											<h3>Breaking Best Practices</h3>
+											<h3>Revenue in Simplification</h3>
 											<figure class="buildium-logo">
-												<?php get_template_part( 'img/stories/buildium.svg' ); ?>
+												<img src="<?php bloginfo('stylesheet_directory'); ?>/img/stories/steve-madden.png" alt="Steve Madden">
 											</figure>
 										</div>
 										<div>
 											<p>
-												Asking for more information led to a 5.14% bump in trials and 4.2% increase in paid conversions for Buildium.
+												Simplifying the checkout flow led to a 3.81% increase in order conversion rate for Steve Madden.
 											</p>
-											<a href="/blog/revisiting-surveys-for-saas-our-buildium-com-case-study/">See How</a>
+											<a href="/revenue-simplification-steve-madden-case-study/">See How</a>
 										</div>
 									</li>
 									<li>
