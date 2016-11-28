@@ -153,7 +153,9 @@ a {
   -moz-osx-font-smoothing: grayscale !important; }
 
 body.ch-report .nav-wrap {
-  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -171,7 +173,11 @@ body.ch-report .nav-wrap {
     z-index: 100; }
   body.ch-report .nav-wrap .ch-wrap {
     color: white;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
     z-index: 200; }
     body.ch-report .nav-wrap .ch-wrap .heading-5 {
       margin-right: 0.5em; }
@@ -180,13 +186,23 @@ body.ch-report .nav-wrap {
           font-size: 0.85em; } }
   body.ch-report .nav-wrap a {
     color: white;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
     @media (min-width: 48.75em) {
       body.ch-report .nav-wrap a:hover {
         color: #19748f; } }
   body.ch-report .nav-wrap .social-wrap {
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     z-index: 200; }
     body.ch-report .nav-wrap .social-wrap a {
       width: 1.25em; }
@@ -246,8 +262,14 @@ body.ch-report section.intro .key-quest {
   margin: 1em 0 1.5em; }
   body.ch-report section.intro .key-quest li {
     margin: 0.75em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     font-size: 1.1em; }
     @media (min-width: 38.75em) {
       body.ch-report section.intro .key-quest li {
@@ -268,7 +290,9 @@ body.ch-report section.intro .thanks-wrap {
     letter-spacing: -0.5px; }
 @media (min-width: 38.75em) {
   body.ch-report section.intro .thanks-list {
-    column-count: 2; } }
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2; } }
 body.ch-report section.intro .thanks-list li {
   font-weight: 500;
   -webkit-column-break-inside: avoid;
@@ -287,8 +311,14 @@ body.ch-report section.intro .thanks-list li {
       body.ch-report section.intro .thanks-list li:nth-of-type(3) {
         font-size: 0.67em; } }
 body.ch-report section.intro .data-wrap {
-  flex-wrap: nowrap;
-  align-items: flex-end; }
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+              -ms-grid-row-align: flex-end;
+          align-items: flex-end; }
   body.ch-report section.intro .data-wrap .text-wrap {
     padding-left: 0.5em; }
 body.ch-report section.keyfind .title-wrap {
@@ -301,9 +331,18 @@ body.ch-report section.keyfind .item-wrap:not(:last-of-type) {
   border-bottom: 1px solid RGBA(49, 51, 53, 0.2); }
 @media (min-width: 38.75em) {
   body.ch-report section.keyfind .item-wrap .data-wrap {
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between; } }
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
 body.ch-report section.keyfind .item-wrap .data-wrap .text1 {
   color: #32c4f5; }
 body.ch-report section.keyfind .item-wrap .heading-wrap {
@@ -312,7 +351,10 @@ body.ch-report section.keyfind .item-wrap .heading-wrap {
     margin-top: 0.25em;
     letter-spacing: -0.9px;
     line-height: 1.3;
-    font-size: 1.25em; }
+    font-size: 0.91em; }
+    @media (min-width: 20.625em) {
+      body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
+        font-size: 1em; } }
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .item-wrap .heading-wrap .heading-2, body.ch-report section.keyfind .item-wrap .heading-wrap h1.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h2.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h3.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h4.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h5.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap h6.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap li.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap p.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap a.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap small.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap span.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap blockquote.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap cite.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap input.heading-2--blue, body.ch-report section.keyfind .item-wrap .heading-wrap label.heading-2--blue {
         font-size: 1.22em; } }
@@ -333,10 +375,18 @@ body.ch-report section.keyfind .item-wrap .sub-items-wrap {
     body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item {
       width: 42.5%; } }
   body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap {
-    flex-wrap: nowrap;
-    align-items: flex-start; }
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start; }
     body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap .heading-1, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap li.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap a.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap small.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap span.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap input.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap label.heading-1--lightblue {
-      flex-shrink: 0; }
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
     body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap .heading-1, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap li.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap a.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap small.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap span.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap input.heading-1--lightblue, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap label.heading-1--lightblue {
       padding: 0.1em 0.25em 0 0;
       font-size: 2.3636363636em;
@@ -345,11 +395,19 @@ body.ch-report section.keyfind .item-wrap .sub-items-wrap {
       letter-spacing: -2.3px;
       width: inherit;
       width: initial;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: flex-start; }
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
       body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap .heading-1 span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap label.heading-1--lightblue span {
         font-size: 0.6em;
-        align-self: flex-start; }
+        -webkit-align-self: flex-start;
+            -ms-flex-item-align: start;
+                align-self: flex-start; }
     body.ch-report section.keyfind .item-wrap .sub-items-wrap .sub-item .info-wrap p {
       font-size: 0.7em;
       line-height: 1.6em;
@@ -380,8 +438,14 @@ body.ch-report section.keyfind .finding-2 {
     padding-left: 0.5em;
     width: 54%; }
     body.ch-report section.keyfind .finding-2 .text-wrap .heading-1, body.ch-report section.keyfind .finding-2 .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-2 .text-wrap label.heading-1--lightblue {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      align-items: flex-start;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       margin-top: 0.15em; }
       body.ch-report section.keyfind .finding-2 .text-wrap .heading-1 span, body.ch-report section.keyfind .finding-2 .text-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-2 .text-wrap label.heading-1--lightblue span {
         font-size: 0.6em;
@@ -392,7 +456,11 @@ body.ch-report section.keyfind .finding-2 {
       letter-spacing: -0.2px;
       color: #6a6460; }
   body.ch-report section.keyfind .finding-2 .data-wrap {
-    align-items: flex-end; }
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+                -ms-grid-row-align: flex-end;
+            align-items: flex-end; }
   body.ch-report section.keyfind .finding-2 .image-wrap {
     width: 43%; }
   body.ch-report section.keyfind .finding-2 .heading-wrap {
@@ -406,7 +474,10 @@ body.ch-report section.keyfind .finding-2 {
       body.ch-report section.keyfind .finding-2 .sub-item img {
         margin-top: 0; } }
   body.ch-report section.keyfind .finding-2 .row-wrap {
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   body.ch-report section.keyfind .finding-2 .para-wrap {
     margin: 1em 0; }
     @media (min-width: 38.75em) {
@@ -449,23 +520,50 @@ body.ch-report section.keyfind .finding-4 p.text3 {
 body.ch-report section.keyfind .finding-4 img {
   width: initial; }
 body.ch-report section.keyfind .finding-4 .vs-wrap {
-  align-items: flex-end;
-  justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+              -ms-grid-row-align: flex-end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 2.5em;
   margin-bottom: 0.5em; }
   body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap .heading-1, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap label.heading-1--lightblue {
       padding-right: 0.25em;
-      flex-shrink: 0; }
+      -webkit-flex-shrink: 0;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
   @media (min-width: 38.75em) {
     body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      align-items: flex-end;
-      justify-content: space-around; }
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end;
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; }
       body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap {
-        flex-direction: column; }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
         body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap .heading-1, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap label.heading-1--lightblue {
           font-weight: 500;
           font-size: 2.2em;
@@ -475,11 +573,24 @@ body.ch-report section.keyfind .finding-4 .vs-wrap {
       body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap-right {
         text-align: right; }
         body.ch-report section.keyfind .finding-4 .vs-wrap .desk-guys .text-wrap-right .text-wrap {
-          align-items: flex-end; } }
+          -webkit-box-align: end;
+          -webkit-align-items: flex-end;
+              -ms-flex-align: end;
+                      -ms-grid-row-align: flex-end;
+                  align-items: flex-end; } }
   body.ch-report section.keyfind .finding-4 .vs-wrap .images-wrap {
-    align-items: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 1em 0; }
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .finding-4 .vs-wrap .images-wrap {
@@ -495,29 +606,47 @@ body.ch-report section.keyfind .finding-4 .vs-wrap {
     line-height: 1.6;
     letter-spacing: -0.2px; }
   body.ch-report section.keyfind .finding-4 .vs-wrap .guy-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .finding-4 .vs-wrap .guy-wrap {
         width: 38%; } }
     body.ch-report section.keyfind .finding-4 .vs-wrap .guy-wrap .data-wrap {
-      justify-content: initial; }
+      -webkit-box-pack: initial;
+      -webkit-justify-content: initial;
+          -ms-flex-pack: initial;
+              justify-content: initial; }
   body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap .heading-1, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap label.heading-1--lightblue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start; }
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap .heading-1 span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-4 .vs-wrap .text-wrap label.heading-1--lightblue span {
       font-size: 0.5em; }
 body.ch-report section.keyfind .finding-5 .data-wrap {
   margin-top: 2em;
-  flex-wrap: nowrap; }
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
   @media (min-width: 38.75em) {
     body.ch-report section.keyfind .finding-5 .data-wrap {
       margin-top: 0; } }
   @media (min-width: 48.75em) {
     body.ch-report section.keyfind .finding-5 .data-wrap {
-      flex-wrap: wrap; } }
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
   @media (min-width: 55.25em) {
     body.ch-report section.keyfind .finding-5 .data-wrap {
-      flex-wrap: nowrap; } }
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap; } }
   body.ch-report section.keyfind .finding-5 .data-wrap svg {
     width: 95%; }
     @media (min-width: 38.75em) {
@@ -542,7 +671,11 @@ body.ch-report section.keyfind .finding-5 .heading-2, body.ch-report section.key
   margin-bottom: 1.25em; }
 body.ch-report section.keyfind .finding-5 .row-wrap {
   margin-bottom: 2.25em;
-  align-items: flex-start; }
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start; }
   @media (min-width: 38.75em) {
     body.ch-report section.keyfind .finding-5 .row-wrap .item {
       width: calc(50% - .75em); } }
@@ -551,8 +684,14 @@ body.ch-report section.keyfind .finding-5 .row-wrap {
 body.ch-report section.keyfind .finding-5 .text-wrap {
   padding-left: 0.5em; }
   body.ch-report section.keyfind .finding-5 .text-wrap .heading-1, body.ch-report section.keyfind .finding-5 .text-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-5 .text-wrap label.heading-1--lightblue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     font-weight: 500; }
     body.ch-report section.keyfind .finding-5 .text-wrap .heading-1 span, body.ch-report section.keyfind .finding-5 .text-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-5 .text-wrap label.heading-1--lightblue span {
       font-size: 0.5em; }
@@ -562,7 +701,9 @@ body.ch-report section.keyfind .finding-5 .text-wrap {
     letter-spacing: -0.2px; }
 body.ch-report section.keyfind .finding-6 .row-wrap {
   margin-top: 0.25em;
-  justify-content: space-around;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   margin-bottom: 1.6em; }
   body.ch-report section.keyfind .finding-6 .row-wrap .btn-wrap {
     max-width: 8em; }
@@ -584,7 +725,9 @@ body.ch-report section.keyfind .finding-7 {
     margin-bottom: 2em; }
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .finding-7 .row-wrap {
-        flex-wrap: nowrap; } }
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; } }
   body.ch-report section.keyfind .finding-7 .heading-wrap {
     margin-bottom: 1.75em; }
   body.ch-report section.keyfind .finding-7 .heading-2, body.ch-report section.keyfind .finding-7 h1.heading-2--blue, body.ch-report section.keyfind .finding-7 h2.heading-2--blue, body.ch-report section.keyfind .finding-7 h3.heading-2--blue, body.ch-report section.keyfind .finding-7 h4.heading-2--blue, body.ch-report section.keyfind .finding-7 h5.heading-2--blue, body.ch-report section.keyfind .finding-7 h6.heading-2--blue, body.ch-report section.keyfind .finding-7 li.heading-2--blue, body.ch-report section.keyfind .finding-7 p.heading-2--blue, body.ch-report section.keyfind .finding-7 a.heading-2--blue, body.ch-report section.keyfind .finding-7 small.heading-2--blue, body.ch-report section.keyfind .finding-7 span.heading-2--blue, body.ch-report section.keyfind .finding-7 blockquote.heading-2--blue, body.ch-report section.keyfind .finding-7 cite.heading-2--blue, body.ch-report section.keyfind .finding-7 input.heading-2--blue, body.ch-report section.keyfind .finding-7 label.heading-2--blue {
@@ -596,12 +739,22 @@ body.ch-report section.keyfind .finding-7 {
     body.ch-report section.keyfind .finding-7 .image-wrap {
       margin-left: 1em; } }
 body.ch-report section.keyfind .finding-8 .row-wrap {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
   margin-bottom: 1.5em; }
   @media (min-width: 38.75em) {
     body.ch-report section.keyfind .finding-8 .row-wrap {
-      justify-content: space-between; } }
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
 body.ch-report section.keyfind .finding-8 .heading-wrap {
   margin-bottom: 1.25em; }
   body.ch-report section.keyfind .finding-8 .heading-wrap .heading-2 span, body.ch-report section.keyfind .finding-8 .heading-wrap h1.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h2.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h3.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h4.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h5.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap h6.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap li.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap p.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap a.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap small.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap span.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap blockquote.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap cite.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap input.heading-2--blue span, body.ch-report section.keyfind .finding-8 .heading-wrap label.heading-2--blue span {
@@ -662,9 +815,15 @@ body.ch-report section.keyfind .finding-10 .row-wrap {
       width: 50%; } }
   body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap {
     margin-top: 1.5em;
-    align-items: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+                -ms-grid-row-align: flex-end;
+            align-items: flex-end;
     padding-right: 0.5em;
-    flex-wrap: nowrap; }
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; }
     @media (min-width: 38.75em) {
       body.ch-report section.keyfind .finding-10 .row-wrap .data-wrap {
         width: 50%;
@@ -675,8 +834,14 @@ body.ch-report section.keyfind .finding-10 .row-wrap {
       line-height: 1.6;
       letter-spacing: -0.2px; }
   body.ch-report section.keyfind .finding-10 .row-wrap .heading-1, body.ch-report section.keyfind .finding-10 .row-wrap h1.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h2.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h3.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h4.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h5.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap h6.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap li.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap p.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap a.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap small.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap span.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap blockquote.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap cite.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap input.heading-1--lightblue, body.ch-report section.keyfind .finding-10 .row-wrap label.heading-1--lightblue {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-start; }
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     body.ch-report section.keyfind .finding-10 .row-wrap .heading-1 span, body.ch-report section.keyfind .finding-10 .row-wrap h1.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h2.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h3.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h4.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h5.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap h6.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap li.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap p.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap a.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap small.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap span.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap blockquote.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap cite.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap input.heading-1--lightblue span, body.ch-report section.keyfind .finding-10 .row-wrap label.heading-1--lightblue span {
       font-size: 0.5em; }
 body.ch-report section.principles .section-wrap .sports-wrap {
@@ -685,7 +850,11 @@ body.ch-report section.principles .section-wrap .sports-wrap {
     margin-top: 0.5em;
     padding-right: 0.75em; }
   body.ch-report section.principles .section-wrap .sports-wrap .wrap {
-    align-items: flex-start; }
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+                -ms-grid-row-align: flex-start;
+            align-items: flex-start; }
     body.ch-report section.principles .section-wrap .sports-wrap .wrap .helmet {
       display: none; }
       @media (min-width: 38.75em) {
@@ -724,7 +893,11 @@ body.ch-report section.principles .future-item {
     body.ch-report section.principles .future-item .section-toggle:hover svg * {
       fill: #19748f; }
     body.ch-report section.principles .future-item .section-toggle .min, body.ch-report section.principles .future-item .section-toggle .expand {
-      align-items: center; }
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+                  -ms-grid-row-align: center;
+              align-items: center; }
     body.ch-report section.principles .future-item .section-toggle .heading-4, body.ch-report section.principles .future-item .section-toggle h1.heading-4--purple, body.ch-report section.principles .future-item .section-toggle h2.heading-4--purple, body.ch-report section.principles .future-item .section-toggle h3.heading-4--purple, body.ch-report section.principles .future-item .section-toggle h4.heading-4--purple, body.ch-report section.principles .future-item .section-toggle h5.heading-4--purple, body.ch-report section.principles .future-item .section-toggle h6.heading-4--purple, body.ch-report section.principles .future-item .section-toggle li.heading-4--purple, body.ch-report section.principles .future-item .section-toggle p.heading-4--purple, body.ch-report section.principles .future-item .section-toggle a.heading-4--purple, body.ch-report section.principles .future-item .section-toggle small.heading-4--purple, body.ch-report section.principles .future-item .section-toggle span.heading-4--purple, body.ch-report section.principles .future-item .section-toggle blockquote.heading-4--purple, body.ch-report section.principles .future-item .section-toggle cite.heading-4--purple, body.ch-report section.principles .future-item .section-toggle input.heading-4--purple, body.ch-report section.principles .future-item .section-toggle label.heading-4--purple {
       font-weight: 500;
       font-size: 0.75em;
@@ -732,12 +905,16 @@ body.ch-report section.principles .future-item {
       color: #32c4f5;
       padding: 1em 0;
       margin-right: 0.25em;
+      -webkit-transition: all 0.1875s ease;
       transition: all 0.1875s ease; }
     body.ch-report section.principles .future-item .section-toggle .min {
       display: none; }
     body.ch-report section.principles .future-item .active.section-toggle .expand {
       display: none; }
     body.ch-report section.principles .future-item .active.section-toggle .min {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex; }
 body.ch-report section.principles .contact-wrap {
   padding: 2.15em 0 0; }
@@ -749,15 +926,34 @@ body.ch-report section.principles .contact-wrap {
   body.ch-report section.principles .contact-wrap form {
     margin-top: 0.75em;
     margin-bottom: 1.5em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     @media (min-width: 38.75em) {
       body.ch-report section.principles .contact-wrap form {
-        flex-wrap: nowrap;
-        justify-content: space-between; } }
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; } }
     body.ch-report section.principles .contact-wrap form button {
       width: 100%; }
       @media (min-width: 38.75em) {
@@ -780,8 +976,15 @@ body.ch-report section.principles .contact-wrap {
       body.ch-report section.principles .contact-wrap input {
         width: initial; } }
   body.ch-report section.principles .contact-wrap .error-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%; }
     @media (min-width: 38.75em) {
       body.ch-report section.principles .contact-wrap .error-wrap {
@@ -800,11 +1003,14 @@ body.ch-report section.principles button, body.ch-report section.principles .btn
   color: white;
   cursor: pointer;
   letter-spacing: -0.2px;
-  flex-shrink: 0; }
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
   @media (min-width: 38.75em) {
     body.ch-report section.principles button, body.ch-report section.principles .btn, body.ch-report section.principles .share-button {
       width: initial;
       padding: 0 1em;
+      -webkit-transition: all 0.1875s ease;
       transition: all 0.1875s ease; } }
   @media (min-width: 48.75em) {
     body.ch-report section.principles button:hover, body.ch-report section.principles .btn:hover, body.ch-report section.principles .share-button:hover {
@@ -817,6 +1023,7 @@ body.ch-report section.principles .btn {
   width: 18em;
   text-align: center;
   margin-bottom: 2.15em;
+  -webkit-transition: all 0.1875s ease;
   transition: all 0.1875s ease; }
 body.ch-report section.principles .final-text {
   margin-top: 2.25em; }
@@ -833,20 +1040,33 @@ body.ch-report .social-bar {
     width: 1em;
     margin-right: 0.5em; }
   body.ch-report .social-bar .bar-wrap {
-    justify-content: space-between; }
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     body.ch-report .social-bar .bar-wrap p {
       font-size: 0.7em;
       line-height: inherit;
       font-weight: 500; }
     body.ch-report .social-bar .bar-wrap .pdf-wrap a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-transition: all 0.1875s ease;
       transition: all 0.1875s ease; }
       @media (min-width: 48.75em) {
         body.ch-report .social-bar .bar-wrap .pdf-wrap a:hover {
           color: #32c4f5; } }
   body.ch-report .social-bar .share-wrap {
-    justify-content: flex-end; }
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
     body.ch-report .social-bar .share-wrap .btn-wrap:first-of-type {
       margin-right: 0.7058823529em; }
       @media (min-width: 38.75em) {
@@ -861,16 +1081,29 @@ body.ch-report .social-bar {
 body.ch-report .share-button {
   width: auto;
   margin-top: 0.375em;
+  -webkit-transition: all 0.1875s ease;
   transition: all 0.1875s ease;
   font-size: 0.875em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #32c4f5;
   color: white;
   padding: 0.5em; }
   body.ch-report .share-button .button-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center; }
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   @media (min-width: 48.75em) {
     body.ch-report .share-button:hover {
       color: white;
@@ -929,8 +1162,13 @@ body.ch-report .quote-wrap {
     color: RGBA(49, 51, 53, 0.8);
     margin-bottom: 0.4em; }
 body.ch-report li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: nowrap; }
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
 body.ch-report p.ol {
   margin-right: 1.25em;
   background: RGB(182, 152, 199);
@@ -940,15 +1178,23 @@ body.ch-report p.ol {
   height: 1.5em;
   line-height: 1.5em;
   text-align: center;
-  flex-shrink: 0; }
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
 body.ch-report img {
   width: 100%; }
 body.ch-report a {
   color: #32c4f5;
+  -webkit-transition: color 0.1875s ease;
   transition: color 0.1875s ease; }
   @media (min-width: 48.75em) {
     body.ch-report a:hover {
       color: #19748f; } }
+body.ch-report .mobile-hide {
+  display: none; }
+  @media (min-width: 20.625em) {
+    body.ch-report .mobile-hide {
+      display: initial; } }
 body.ch-report .title-wrap {
   background: RGBA(182, 152, 199, 0.3);
   height: 4.75em; }
@@ -961,17 +1207,34 @@ body.ch-report .title-wrap {
 .grid-row {
   width: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap; }
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .gs--f1 {
-  flex-grow: 1; }
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 .gs--f2 {
-  flex-grow: 2; }
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2; }
 .gs--f3 {
-  flex-grow: 3; }
+  -webkit-box-flex: 3;
+  -webkit-flex-grow: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3; }
 .gs--f4 {
-  flex-grow: 4; }
+  -webkit-box-flex: 4;
+  -webkit-flex-grow: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4; }
 .gs--full {
   width: 100%; }
 .gs--half {
@@ -1041,13 +1304,25 @@ body.ch-report .title-wrap {
 
 @media (min-width: 38.75em) {
   .gm--f1 {
-    flex-grow: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .gm--f2 {
-    flex-grow: 2; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   .gm--f3 {
-    flex-grow: 3; }
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3; }
   .gm--f4 {
-    flex-grow: 4; }
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4; }
   .gm--full {
     width: 100%; }
   .gm--half {
@@ -1116,13 +1391,25 @@ body.ch-report .title-wrap {
     width: auto; } }
 @media (min-width: 48.75em) {
   .gl--f1 {
-    flex-grow: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .gl--f2 {
-    flex-grow: 2; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   .gl--f3 {
-    flex-grow: 3; }
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3; }
   .gl--f4 {
-    flex-grow: 4; }
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4; }
   .gl--full {
     width: 100%; }
   .gl--half {
@@ -1191,13 +1478,25 @@ body.ch-report .title-wrap {
     width: auto; } }
 @media (min-width: 64em) {
   .gxl--f1 {
-    flex-grow: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .gxl--f2 {
-    flex-grow: 2; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   .gxl--f3 {
-    flex-grow: 3; }
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3; }
   .gxl--f4 {
-    flex-grow: 4; }
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4; }
   .gxl--full {
     width: 100%; }
   .gxl--half {
@@ -1266,13 +1565,25 @@ body.ch-report .title-wrap {
     width: auto; } }
 @media (min-width: 80em) {
   .gxxl--f1 {
-    flex-grow: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .gxxl--f2 {
-    flex-grow: 2; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   .gxxl--f3 {
-    flex-grow: 3; }
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3; }
   .gxxl--f4 {
-    flex-grow: 4; }
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4; }
   .gxxl--full {
     width: 100%; }
   .gxxl--half {
@@ -1341,13 +1652,25 @@ body.ch-report .title-wrap {
     width: auto; } }
 @media (min-width: 100em) {
   .gxxxl--f1 {
-    flex-grow: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
   .gxxxl--f2 {
-    flex-grow: 2; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   .gxxxl--f3 {
-    flex-grow: 3; }
+    -webkit-box-flex: 3;
+    -webkit-flex-grow: 3;
+        -ms-flex-positive: 3;
+            flex-grow: 3; }
   .gxxxl--f4 {
-    flex-grow: 4; }
+    -webkit-box-flex: 4;
+    -webkit-flex-grow: 4;
+        -ms-flex-positive: 4;
+            flex-grow: 4; }
   .gxxxl--full {
     width: 100%; }
   .gxxxl--half {
@@ -1415,14 +1738,28 @@ body.ch-report .title-wrap {
   .gxxxl--reset {
     width: auto; } }
 .grid-row-children-alignment--centered {
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%; }
 .grid-row-children-alignment--vcentered {
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center;
   height: 100%; }
 .grid-row-children-alignment--hcentered {
-  justify-content: center; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .grid-row-width--narrow {
   max-width: 68em; }
@@ -1478,10 +1815,18 @@ body.ch-report .title-wrap {
       padding: 3.25em 3.75em; } }
 
 .nowrap {
-  flex-wrap: nowrap;
-  align-items: center; }
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+              -ms-grid-row-align: center;
+          align-items: center; }
 
 /* No files to import found in content_blocks/* */
 /* No files to import found in partials/* */
 a[href="http://html5box.com/html5gallery/watermark.php"] {
   display: none; }
+
+/*# sourceMappingURL=site.css.map */

@@ -177,7 +177,9 @@ body.ch-report
           margin-top: .25em
           letter-spacing: -.9px
           line-height: 1.3
-          font-size: 1.25em
+          font-size: 0.91em
+          +small
+            font-size: 1em
           +medium
             font-size: 1.22em
           +large
@@ -869,7 +871,10 @@ body.ch-report
       &:hover
         color: $link-hover-color
   
-
+  .mobile-hide
+    display: none
+    +small
+      display: initial
   //- Purple Bar
   .title-wrap
     background: RGBA(182,152,199, .3)
