@@ -117,15 +117,15 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  * Enqueue scripts and styles.
  */
 function clearhead_2016_scripts_and_styles() {
-
-	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), '201607220928' );
+	$mtime = filemtime(dirname(__FILE__) . '/style.css');
+	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), false, $mtime );
 
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 	wp_enqueue_script( 'bowser', get_template_directory_uri() . '/js/bowser.js', array(), '20160722927', true );
-
-	wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', array('jquery', 'bowser'), '20160722927', true );
+	$mtime = filemtime(dirname(__FILE__) . '/js/site.js');
+	wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', array('jquery', 'bowser'), $mtime, true );
 
 
 	// scripts from previous clearhead theme
@@ -138,7 +138,8 @@ function clearhead_2016_scripts_and_styles() {
 	// script from previous clearhead theme
 	if ( is_front_page() ) :
 		wp_enqueue_script( 'parallax-background', get_template_directory_uri() . '/js/parallax-background.js', array('jquery'), '20160716', true);
-		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array('jquery', 'parallax-background'), '20120206', true );
+		$mtime = filemtime(dirname(__FILE__) . '/js/home.nav.js');
+		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array('jquery', 'parallax-background'), $mtime, true );
 	endif;
 
 
@@ -198,3 +199,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Adds additional fields to the user profile
+ */
+require get_template_directory() . '/inc/profile.php';

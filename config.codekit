@@ -20729,7 +20729,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 143167,
+		"initialSize": 152401,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg",
 		"outputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -21187,6 +21187,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/inc\/jetpack.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/inc\/profile.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/inc\/profile.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

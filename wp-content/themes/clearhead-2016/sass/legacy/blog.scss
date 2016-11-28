@@ -109,13 +109,6 @@ body.page-template-default {
 	}
 }
 
-.legacy-styles {
-	img {
-		background-color: $gray;
-	}
-}
-
-
 
 	/*--------------------------------------------------------------
 	# Typography
@@ -230,6 +223,9 @@ body.page-template-default {
 	table {
 	  margin: 0 0 1.5em;
 	  width: 100%;
+	  * {
+		  vertical-align: top;
+	  }
 	}
 }
 	/*--------------------------------------------------------------
@@ -364,11 +360,13 @@ body.page-template-default {
 	  display: inline;
 	  float: left;
 	  margin-right: 1.5em;
+	  margin-bottom: 1em;
 	}
 	.alignright {
 	  display: inline;
 	  float: right;
 	  margin-left: 1.5em;
+	  margin-bottom: 1em;
 	}
 	.aligncenter {
 	  clear: both;
@@ -556,6 +554,12 @@ body.page-template-default {
 	.wp-caption img[class*="wp-image-"] {
 	  display: block;
 	  margin: 0 auto;
+	}
+
+	img[class*="wp-image-"]:not(.alignleft):not(.alignright) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	.wp-caption-text {
 	  text-align: center;
@@ -995,17 +999,16 @@ body.single-post, body.page {
 	}
 	@media screen and (min-width:780px) {
 	  .entry-content blockquote {
-	    width: 35em;
 	    margin: 3rem 0;
 	  }
 	  .entry-content .aligncenter {
-	    width: 46em !important;
-	    max-width: 46em !important;
-	    margin-left: -4.4em;
+	    width: 44.4125em!important;
+	    max-width: 44.4125em!important;
+		margin-left: -5.53125em;
 	  }
 	  .entry-content .aligncenter img {
-	    width: 46em !important;
-	    max-width: 46em !important
+	    width: 44.4125em!important;
+	    max-width: 44.4125em!important
 	  }
 	}
 	.wp-caption-text {
@@ -1279,18 +1282,18 @@ body.single-post, body.page {
 	}
 	.disc li {
 	  position: relative;
-	  padding-left: 14px;
+	//   padding-left: 14px;
 	}
 	.disc li:before {
-	  content: " ";
-	  display: block;
-	  width: 6px;
-	  height: 6px;
-	  border-radius: 10px;
-	  background: #ccc;
-	  position: absolute;
-	  left: 0;
-	  top: 5px;
+	//   content: " ";
+	//   display: block;
+	//   width: 6px;
+	//   height: 6px;
+	//   border-radius: 10px;
+	//   background: #ccc;
+	//   position: absolute;
+	//   left: 0;
+	//   top: 5px;
 	}
 	.dual-m {
 	  -webkit-column-count: 2;

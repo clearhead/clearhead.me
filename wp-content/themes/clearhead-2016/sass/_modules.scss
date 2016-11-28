@@ -297,11 +297,17 @@ body.ie .hero h1 figure svg {
             flex-direction: row;
             margin-bottom: 0.4125em;
         }
-        > div:first-child {
+        &.phover {
+            > div a {
+                color: $dark-blue;
+            }
+        }
+        > a {
             flex-shrink: 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: $black;
             h3 {
                 width: 10em;
             }
@@ -321,7 +327,7 @@ body.ie .hero h1 figure svg {
                 }
             }
         }
-        > div:last-child {
+        > div {
             border-top: 1px solid $gray;
             width: calc(100% - (($column * 3) + ($gutter * 3)));
             margin-top: 1em;
@@ -332,6 +338,18 @@ body.ie .hero h1 figure svg {
                 padding-left: $gutter;
                 border-top: 0;
                 border-left: 1px solid $gray;
+            }
+            a {
+                display: block;
+                font-weight: $medium;
+                line-height: 1;
+                margin-bottom: 0.1875em;
+                font-size: 1em;
+                padding: 0.5em 0 0.325em;
+                @include w640 {
+                    font-size: 0.875em;
+                    padding: 0;
+                }
             }
         }
     }
@@ -356,18 +374,6 @@ body.ie .hero h1 figure svg {
     }
     p {
         margin-bottom: 0.765625em;
-    }
-    a {
-        display: block;
-        font-weight: $medium;
-        line-height: 1;
-        margin-bottom: 0.1875em;
-        font-size: 1em;
-        padding: 0.5em 0 0.325em;
-        @include w640 {
-            font-size: 0.875em;
-            padding: 0;
-        }
     }
 }
 
@@ -854,9 +860,6 @@ body.ie, body.firefox {
                 margin-bottom: 0;
             }
             figure {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
                 .photo {
                     width: 100%;
                     background-color: $gray;
