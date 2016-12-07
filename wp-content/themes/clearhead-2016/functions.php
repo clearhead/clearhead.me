@@ -117,44 +117,34 @@ add_filter( 'jetpack_implode_frontend_css', '__return_false' );
  * Enqueue scripts and styles.
  */
 function clearhead_2016_scripts_and_styles() {
+
 	$mtime = filemtime(dirname(__FILE__) . '/style.css');
 	wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), false, $mtime );
-
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
-
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20160716', true);
 	wp_enqueue_script( 'bowser', get_template_directory_uri() . '/js/bowser.js', array(), '20160722927', true );
 	$mtime = filemtime(dirname(__FILE__) . '/js/site.js');
 	wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', array('jquery', 'bowser'), $mtime, true );
-
-
-	// scripts from previous clearhead theme
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20120206', true);
 	wp_enqueue_script( 'waypoints-inview', get_template_directory_uri() . '/js/inview.min.js', array(), '20120206', true);
-
-
 	wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	// script from previous clearhead theme
 	if ( is_front_page() ) :
 		wp_enqueue_script( 'parallax-background', get_template_directory_uri() . '/js/parallax-background.js', array('jquery'), '20160716', true);
 		$mtime = filemtime(dirname(__FILE__) . '/js/home.nav.js');
 		wp_enqueue_script( 'clearhead-navigation-home', get_template_directory_uri() . '/js/home.nav.js', array('jquery', 'parallax-background'), $mtime, true );
 	endif;
-
-
 	wp_enqueue_script( 'clearhead-2016-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
-	// script from previous clearhead theme
 	if ( ! is_front_page() ) :
 		wp_enqueue_style( 'prism-css', get_template_directory_uri() . '/js/themes/prism-okaidia.css', array(), '20150629');
 		wp_enqueue_script( 'prism-js', get_template_directory_uri() . '/js/prism.js', array(), '20150629', true );
 	endif;
 
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
 }
 add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts_and_styles' );
 

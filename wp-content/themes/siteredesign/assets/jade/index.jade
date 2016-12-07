@@ -69,11 +69,12 @@ body.ch-report
   
   //- Hero
   section.grid-row.grid-row-children-alignment--centered.grid-row-padding--short.hero-wrap(style="background-image: url('images/hero_bg.jpg');")
-    .grid-row.heading-wrap
-      .gs--full
-        h2.heading-2--blue The State of Ecommerce Redesigns&nbsp;in&nbsp;2016
-      .gs--full
-        h3.heading-3 How Data-Driven Are We?
+    .gs--full
+      .grid-row.heading-wrap
+        .gs--full
+          h2.heading-2--blue The State of Ecommerce Redesigns&nbsp;in&nbsp;2016
+        .gs--full
+          h3.heading-3 Based on a Survey of 200 Ecommerce&nbsp;Leaders
   
   //-Intro
   section.grid-row.grid-row-padding--full.grid-row-width--wide.intro
@@ -94,7 +95,7 @@ body.ch-report
     .grid-row.grid-row-children-alignment--centered.table-wrap
       h3.heading-3 We talked to 
         span 203 participants
-      .image-wrap
+      .gs--full.image-wrap
         img(src="/images/svg/participants-chart.svg")
     .gs--full.thanks-wrap
       h4.heading-4 special thanks to
@@ -110,7 +111,7 @@ body.ch-report
         li Matt Kritzer, Tommy John
 
   //-Key Findings
-  section.keyfind
+  section.keyfind#findings
     .grid-row.grid-row-children-alignment--centered.title-wrap
       h1.heading-1 Key Findings
     .grid-row.grid-row-padding--full.grid-row-width--wide
@@ -220,18 +221,18 @@ body.ch-report
         .grid-row.vs-wrap
           .desk-guys
             .gm--fourth.text-wrap-right
-              .text-wrap
+              .grid-row.text-wrap
                 h1.heading-1 6
                   span %
                 p.text3 suggest “executive desire for change” is the best reason for a redesign
-            .images-wrap
+            .gs--full.gm--half.images-wrap
               .image-wrap
                 img(src="images/svg/f4-little-guy.svg")
               h1.heading-1--lightblue vs
               .image-wrap
                 img(src="images/svg/f4-big-guy.svg")
             .gm--fourth.text-wrap-left
-              .text-wrap
+              .grid-row.text-wrap
                 h1.heading-1 20
                   span %
                 p.text3 report that “executive desire for change” is the actual reason for a redesign
@@ -249,7 +250,7 @@ body.ch-report
               p The #1 reason people selected as the biggest driver of their last site redesign: “The site has become stale”.
             .item
               .grid-row.data-wrap
-                .image-wrap
+                .gs--full.gm--half.image-wrap
                   svg(width='204px', height='170px', viewbox='0 0 204 170', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
                     // Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch
                     title stale_computer
@@ -338,13 +339,20 @@ body.ch-report
               img(src="images/svg/f6-hiring.svg")
             .text-wrap
               p 75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).
-              .btn-wrap
-                a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
-                  .button-wrap
-                    svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
-                      title twitter icon
-                      path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
-                    p click to tweet
+              //- .btn-wrap
+              //-   a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
+              //-     svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+              //-       title twitter icon
+              //-       path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+              //-     p click to tweet
+              ul
+                li
+                  a.share-button(href='https://twitter.com/intent/tweet?text=75%25%20of%20%23ecommerce%20execs%20find%20UX%20research/design%20the%20most%20important%20capability%20in%20a%20site%20redesign.%20Read%20more%3A%20http%3A//hubs.ly/H03Hdsn0')
+                    .button-wrap
+                      svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
+                        title twitter icon
+                        path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
+                      p click to tweet
           p However, in their last redesign respondents report UX research and platform integration were also the most lacking capabilities at their disposal, with web analytics coming in third.
 
 
@@ -460,7 +468,7 @@ body.ch-report
           p Less than half of redesigns (41%) were extremely successful at launching within budget and only a quarter of redesigns (25%) launched on time.
 
   //-Nine Principles of Future Redesigns
-  section.principles
+  section.principles#principles
     .grid-row.grid-row-children-alignment--centered.grid-row-padding--sides-only.title-wrap
       h1.heading-1 Nine Principles of Future Redesigns
     .grid-row.grid-row-padding--full.grid-row-width--wide.section-wrap
@@ -474,7 +482,7 @@ body.ch-report
               p “Now the bar is higher. We were like the Cleveland Browns and made it to the Dallas Cowboys. We’re in the game now. We’re not yet the New England Patriots. Getting the rest of the way to the Superbowl of retailers is a harder path.”
             .gs--full.gm--third.image-wrap
               img.helmet(src="images/principles-helmets.png")
-          span - Shawn Freeman, formerly SVP Global Digital Technology and Operations, Ralph Lauren and SVP and GM Digital Business, GameStop
+          span - Mike Molitor, SVP Ecommerce, Kohl’s
         .gs--full
           p Further, the measurable success of the last redesign may be a function of vague expectations and qualitative goals rather than clearly defined goals and financial measurement. Only 34% said the reason for a redesign was to improve sales or profitability. And the number one actual reason for doing their last redesign was the site was “stale”.
           p Based on the research, interviews and our experience, we hypothesize the following factors will likely raise the bar for expectations of future redesigns:
@@ -687,16 +695,20 @@ body.ch-report
           p We hope this small peek into the world of your peers brings you a bit of confidence as you begin the journey toward your next redesign - whatever your definition of the word may be.
 
         .gs--full.contact-wrap
-          a.btn(href="images/report.pdf" target="_blank") download the full report (pdf)
-          h4.heading-4 Want to learn more about data-driven redesigns?
-          form#connectForm
-            .error-wrap
-              input(type='text', name='name', required placeholder='name')
-            .error-wrap
-              input(type='text', name='company', placeholder='company')
-            .error-wrap
-              input(type='email', name='email', required placeholder='email')
-            button(type='submit') let’s connect!
+          .grid-row
+            .btn-wrap
+              a.btn(href="images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank") download the full report (pdf)
+            .gs--full
+              h4.heading-4 Want to learn more about data-driven redesigns?
+            .gs--full
+              form#connectForm
+                .error-wrap
+                  input(type='text', name='name', required placeholder='name')
+                .error-wrap
+                  input(type='text', name='company', placeholder='company')
+                .error-wrap
+                  input(type='email', name='email', required placeholder='email')
+                button(type='submit') let’s connect!
 
   //-Footer
   footer
@@ -722,7 +734,7 @@ body.ch-report
   .social-bar
     .grid-row.grid-row-padding--sides-only.grid-row-children-alignment--vcentered.bar-wrap
       .pdf-wrap
-        a(href="images/report.pdf" target="_blank") 
+        a(href="images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank") 
           svg(xmlns='http://www.w3.org/2000/svg', fill="currentColor", width='20', height='24', viewbox='0 0 24 24')
             path(d='M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z')
           p download pdf
@@ -741,13 +753,20 @@ body.ch-report
                   g#Ecommerce-Survey-Webpage(transform='translate(-795.000000, -18.000000)', fill='currentColor')
                     path#Facebook(d='M807.757249,41.884058 L796.318217,41.884058 C795.589972,41.884058 795,41.2937195 795,40.5657589 L795,19.3182064 C795,18.5900605 795.590065,18 796.318217,18 L817.565934,18 C818.2939,18 818.884058,18.5900605 818.884058,19.3182064 L818.884058,40.5657589 C818.884058,41.2938121 818.293808,41.884058 817.565934,41.884058 L811.479654,41.884058 L811.479654,32.6348344 L814.584192,32.6348344 L815.049052,29.0302479 L811.479654,29.0302479 L811.479654,26.7289472 C811.479654,25.6853362 811.769451,24.9741497 813.265975,24.9741497 L815.17472,24.9733157 L815.17472,21.7493446 C814.84461,21.7054167 813.711559,21.6072741 812.393342,21.6072741 C809.641343,21.6072741 807.757249,23.2870976 807.757249,26.3719638 L807.757249,29.0302479 L804.644742,29.0302479 L804.644742,32.6348344 L807.757249,32.6348344 L807.757249,41.884058 L807.757249,41.884058 Z')
               p share
+          .btn-wrap
+            a.share-button.js-social-share(href='https://www.linkedin.com/shareArticle?mini=true&url=http://hubs.ly/H03Hdsn0' target="_blank" title="Share This on LinkedIn")
+              svg(width='22px', height='20px', viewbox='0 0 22 20', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink')
+                g#Page-1(stroke='none', stroke-width='1', fill='none', fill-rule='evenodd')
+                  g#Ecommerce-Survey-Webpage(transform='translate(-879.000000, -20.000000)', fill='currentColor')
+                    path#LinkedIn(d='M900.89372,39.9033816 L896.054909,39.9033816 L896.054909,32.9065471 C896.054909,31.0751352 895.298,29.8248812 893.633573,29.8248812 C892.360473,29.8248812 891.65248,30.6685796 891.322941,31.4816908 C891.199364,31.7735442 891.218673,32.1800998 891.218673,32.5866554 L891.218673,39.9033816 L886.424916,39.9033816 C886.424916,39.9033816 886.486705,27.5091711 886.424916,26.3825405 L891.218673,26.3825405 L891.218673,28.5045313 C891.50187,27.5767179 893.03371,26.2525447 895.478217,26.2525447 C898.511001,26.2525447 900.89372,28.1973843 900.89372,32.3852893 L900.89372,39.9033816 L900.89372,39.9033816 Z M881.577095,24.6913202 L881.5462,24.6913202 C880.001488,24.6913202 879,23.6577259 879,22.3475718 C879,21.0119283 880.031095,20 881.606702,20 C883.181021,20 884.14904,21.0093794 884.179935,22.3437484 C884.179935,23.6539025 883.181021,24.6913202 881.577095,24.6913202 L881.577095,24.6913202 L881.577095,24.6913202 Z M879.552235,26.3825405 L883.819502,26.3825405 L883.819502,39.9033816 L879.552235,39.9033816 L879.552235,26.3825405 L879.552235,26.3825405 Z')
+              p share
       //- a.share-button(href='https://www.facebook.com/sharer/sharer.php?u=http%3A//siteredesign.clearhead.me')
       //-   .button-wrap
       //-     svg.js-geomicon.geomicon(width='20', data-icon='twitter', viewbox='0 0 32 32', style='fill:currentcolor')
       //-       title twitter icon
       //-       path(d='M2 4 C6 8 10 12 15 11 A6 6 0 0 1 22 4 A6 6 0 0 1 26 6 A8 8 0 0 0 31 4 A8 8 0 0 1 28 8 A8 8 0 0 0 32 7 A8 8 0 0 1 28 11 A18 18 0 0 1 10 30 A18 18 0 0 1 0 27 A12 12 0 0 0 8 24 A8 8 0 0 1 3 20 A8 8 0 0 0 6 19.5 A8 8 0 0 1 0 12 A8 8 0 0 0 3 13 A8 8 0 0 1 2 4')
       //-     p click to tweet
-  .mq-tracker
+  //- .mq-tracker
 script(src="/js/site.js")
 |<script>window.twttr = (function(d, s, id) {
 |  var js, fjs = d.getElementsByTagName(s)[0],
@@ -778,6 +797,23 @@ script.
   }
   e.preventDefault();
   });
+script(type='text/javascript').
+  function windowPopup(url, width, height) {
+  // Calculate the position of the popup so
+  // it’s centered on the screen.
+  var left = (screen.width / 2) - (width / 2),
+  top = (screen.height / 2) - (height / 2);
+  window.open(
+  url,
+  "",
+  "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
+  );
+  }
+  jQuery(".js-social-share").on("click", function(e) {
+  e.preventDefault();
+  windowPopup(jQuery(this).attr("href"), 500, 300);
+  });
+
 
 
 
@@ -793,30 +829,3 @@ script.
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

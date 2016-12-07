@@ -1,7 +1,30 @@
 
-* 
+*
   -webkit-font-smoothing: antialiased!important
   -moz-osx-font-smoothing: grayscale!important
+
+body.ch-report.ie
+  .hero-wrap
+    .heading-wrap
+      margin-top: 7%
+        // flex-direction: row
+        // display: flex
+  .share-button
+    max-height: 2.75em
+    color: white
+  .contact-wrap
+    button
+      width: inherit
+  #findings
+    .desk-guys
+      .text-wrap-left, .text-wrap-right
+        .text-wrap
+          display: flex
+          flex-direction: row
+      .text-wrap-right .heading-1
+        justify-content: flex-end
+  // .social-bar
+  //   margin-bottom: .25em
 
 body.ch-report
 
@@ -52,13 +75,14 @@ body.ch-report
         &:nth-of-type(2)
           margin: 0 .85em
 
-  //- Hero      
+  //- Hero
   section.hero-wrap
     min-height: 20em
     // background-image: url('images/hero_bg.jpg')
     background-size: cover
     background-position: top center
     background-repeat: no-repeat
+    -ms-flex-align: center
     .heading-wrap
       padding: .75em
       margin-top: .5em
@@ -79,8 +103,14 @@ body.ch-report
         letter-spacing: -.3px
         color: rgba(#313335, .9)
         font-size: 1em
+        @media (min-width: 33.0625em)
+          font-size: .95em
         +medium
           font-size: 1.1363636364em
+        @media (min-width: 38.75em)
+          font-size: 1em
+        // +large
+        //   font-size: 1em
       .heading-2
         padding: 0.04545454545em 0 .325em
         letter-spacing: -.4px
@@ -112,7 +142,7 @@ body.ch-report
         font-size: 1.1em
         +medium
           margin: 1.175em 0
-        
+
     .table-wrap
       padding: 0 1em 1em
       background: rgba(229,238,244,.7)
@@ -121,7 +151,7 @@ body.ch-report
         margin: 1em 0
         span
           color: $text-color-blue
-    .thanks-wrap  
+    .thanks-wrap
       margin: 1em 0 .25em
       .heading-4
         font-size: 0.8181818182em
@@ -208,7 +238,7 @@ body.ch-report
               font-weight: 500
               color: black
               letter-spacing: -2.3px
-              width: inherit
+              // width: inherit
               width: initial
               display: flex
               justify-content: flex-start
@@ -241,7 +271,7 @@ body.ch-report
             margin-bottom: 1.8em
       .text-wrap
         padding-bottom: 3em
-    
+
     .finding-2
       padding-bottom: 3.6em
       .quote-wrap
@@ -269,7 +299,7 @@ body.ch-report
         align-items: flex-end
       .image-wrap
         width: 43%
-      .heading-wrap 
+      .heading-wrap
         margin-bottom: 1.75em
       .sub-item
         +medium
@@ -284,7 +314,7 @@ body.ch-report
         margin: 1em 0
         +medium
           margin: 1.9em 0
-    
+
     .finding-3
       padding-bottom: 2.75em
       .image-wrap
@@ -313,7 +343,7 @@ body.ch-report
           margin-bottom: 0
         &:nth-of-type(4)
           margin-top: 0
-    
+
     .finding-4
       p span
         font-weight: 600
@@ -391,7 +421,7 @@ body.ch-report
           margin-top: 0
         +large
           flex-wrap: wrap
-        @media (min-width: 55.25em)  
+        @media (min-width: 55.25em)
           flex-wrap: nowrap
         svg
           width: 95%
@@ -410,7 +440,7 @@ body.ch-report
       .margin-wrap
         margin-top: 2em
         margin-bottom: .35em
-        .heading-3 
+        .heading-3
           margin: 2em 0 1.5em
       .heading-2
         margin-bottom: 1.25em
@@ -435,7 +465,7 @@ body.ch-report
           font-size: 0.7em
           line-height: 1.4
           letter-spacing: -.2px
-    
+
     .finding-6
       .row-wrap
         margin-top: .25em
@@ -454,7 +484,7 @@ body.ch-report
             margin-top: 0
             width: 45%
             padding-left: 1em
-    
+
     .finding-7
       padding-bottom: 2.75em
       .row-wrap
@@ -495,7 +525,7 @@ body.ch-report
           margin-bottom: 1.5em
       .list-wrap
         margin-bottom: 2.4em
-        .bullet-list 
+        .bullet-list
           margin-bottom: 1.5em
           li
             font-size: 1.1em
@@ -506,7 +536,7 @@ body.ch-report
             &:nth-of-type(4)
               &:before
                 content: " "
-                padding-right: 1.35em 
+                padding-right: 1.35em
     .finding-3, .finding-6, .finding-8
       .share-button
         width: auto
@@ -517,7 +547,7 @@ body.ch-report
         width: 1.325em
         margin-right: 0.5625em
         margin-bottom: 0.2875em
-    
+
     .finding-9
       padding-bottom: 3.5em
       .heading-wrap
@@ -556,7 +586,7 @@ body.ch-report
             font-weight: 400
             line-height: 1.6
             letter-spacing: -.2px
-        .heading-1 
+        .heading-1
           display: flex
           align-items: flex-start
           span
@@ -564,7 +594,7 @@ body.ch-report
 
     span.text1
       @extend %font-family-b
-  
+
   //-Nine Principles of Future Redesigns
   section.principles
     .section-wrap
@@ -578,9 +608,9 @@ body.ch-report
           .helmet
             display: none
             +medium
-              display: initial
+              display: block
 
-    ul.purple-bars 
+    ul.purple-bars
       margin-top: 1.75em
       li
         margin: .1em 0
@@ -655,7 +685,7 @@ body.ch-report
         button
           width: 100%
           +medium
-            width: initial
+            width: inherit
 
       input, button
         @extend %font-family-b
@@ -710,11 +740,11 @@ body.ch-report
     .btn
       padding: .75em 1em
       display: block
-      width: 18em
+      // width: 18em
       text-align: center
       margin-bottom: 2.15em
       transition: all 0.1875s ease
-    
+
       // flex-shrink: 0
       // width: 30%
       // a
@@ -734,12 +764,20 @@ body.ch-report
     padding-top: .5em
     padding-bottom: .5em
     svg
-      width: 1em
-      margin-right: .5em
+      width: .75em
+      margin-right: .25em
+      +medium
+        width: 1em
+        margin-right: .5em
     .bar-wrap
       justify-content: space-between
+      height: 2em
+      a
+        height: 2em
       p
-        font-size: 0.7em
+        font-size: .6em
+        +medium
+          font-size: 0.7em
         line-height: inherit
         @extend %font-family-b
         font-weight: 500
@@ -756,10 +794,12 @@ body.ch-report
 
       .btn-wrap
 
-        &:first-of-type
-          margin-right: 0.7058823529em
-          +medium
-            margin-right: 0.5em
+        &:nth-last-child(n+2)
+          margin-right: .5em
+          // +small
+            // margin-right: 0.25em
+          // +medium
+          //   margin-right: 0.5em
     .share-button
       width: inherit
       font-size: 1em
@@ -779,7 +819,7 @@ body.ch-report
     .button-wrap
       display: flex
       align-items: center
-    +large  
+    +large
       &:hover
         color: white
         background: $link-hover-color
@@ -861,7 +901,7 @@ body.ch-report
     line-height: 1.5em
     text-align: center
     flex-shrink: 0
-  
+
   img
     width: 100%
   a
@@ -870,7 +910,7 @@ body.ch-report
     +large
       &:hover
         color: $link-hover-color
-  
+
   .mobile-hide
     display: none
     +small
@@ -884,7 +924,3 @@ body.ch-report
       line-height: 1.2
       color: $text-color-purple
       font-size: 1.5454545455em
-
-
-
-

@@ -1,28 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-touch-fullscreen" content="yes">
-    <link rel="stylesheet" href="css/site.css?v=1" type="text/css">
-    <title>Clearhead</title>
-    <meta name="description" value=""><script src="https://use.typekit.net/erk8dkx.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
-    <meta property="og:url" content="http://clearhead.me">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
-    <meta property="og:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
-    <meta property="og:image" content="images/hero_bg.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@clearheadme">
-    <meta name="twitter:creator" content="@clearheadme">
-    <meta name="twitter:title" content="The State of Ecommerce Redesign in 2016 - Clearhead">
-    <meta name="twitter:description" content="We help daring brands optimize their business outcomes through continuous testing &amp; personalization.">
-    <meta name="twitter:image" content="images/hero_bg.jpg">
-  </head>
-</html>
-<body class="ch-report">
+<?php get_header(); ?>
   <nav>
     <div class="grid-row-width--wide grid-row nav-wrap grid-row-padding--short">
       <div class="grid-row ch-wrap"><a href="http://clearhead.me" target="_blank">
@@ -62,7 +38,7 @@
           </svg></a></div>
     </div>
   </nav>
-  <section style="background-image: url('images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered grid-row-padding--short hero-wrap">
+  <section style="background-image: url('<?php bloginfo('template_url'); ?>/images/hero_bg.jpg');" class="grid-row grid-row-children-alignment--centered grid-row-padding--short hero-wrap">
     <div class="gs--full">
       <div class="grid-row heading-wrap">
         <div class="gs--full">
@@ -92,7 +68,7 @@
     </ol>
     <div class="grid-row grid-row-children-alignment--centered table-wrap">
       <h3 class="heading-3">We talked to <span>203 participants</span></h3>
-      <div class="gs--full image-wrap"><img src="/images/svg/participants-chart.svg"></div>
+      <div class="gs--full image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/participants-chart.svg"></div>
     </div>
     <div class="gs--full thanks-wrap">
       <h4 class="heading-4">special thanks to</h4>
@@ -118,10 +94,10 @@
         <div class="gs--full heading-wrap">
           <h4 class="heading-4--purple">finding #1</h4>
           <h2 class="heading-2">What changes need to happen for it to be considered a redesign? <span>UX, UI and features.</span></h2>
-        </div><img src="images/svg/f1-table.svg">
+        </div><img src="<?php bloginfo('template_url'); ?>/images/svg/f1-table.svg">
         <div class="grid-row sub-items-wrap">
           <div class="gs--full gm--fifthx2 sub-item">
-            <div class="grid-row"><img src="images/svg/f1-executive-group1.svg">
+            <div class="grid-row"><img src="<?php bloginfo('template_url'); ?>/images/svg/f1-executive-group1.svg">
               <div class="grid-row info-wrap">
                 <h1 class="heading-1">86<span>%</span></h1>
                 <p>of execs and managers believe UX/UI needs to change for a project to be considered a redesign</p>
@@ -129,7 +105,7 @@
             </div>
           </div>
           <div class="gs--full gm--fifthx2 sub-item">
-            <div class="grid-row"><img src="images/svg/f1-executive-group2.svg">
+            <div class="grid-row"><img src="<?php bloginfo('template_url'); ?>/images/svg/f1-executive-group2.svg">
               <div class="grid-row info-wrap">
                 <h1 class="heading-1">69<span>%</span></h1>
                 <p>believe features/functionality should change </p>
@@ -137,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="text-wrap">    
+        <div class="text-wrap">
           <p>Further only 30% believe the platform needs to change, despite this being a leading reason to do a redesign. More on that later...</p>
         </div>
       </div>
@@ -153,7 +129,7 @@
           </div>
           <div class="gs--full gm--fifthx2 sub-item">
             <div class="grid-row data-wrap">
-              <div class="image-wrap"><img src="images/svg/f2-big-bang.svg"></div>
+              <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f2-big-bang.svg"></div>
               <div class="text-wrap">
                 <div class="gs--full"><span class="text1">big bang method</span></div>
                 <div class="gs--full">
@@ -195,7 +171,7 @@
         </div>
         <div class="gs--full">
           <div class="grid-row data-wrap">
-            <div class="image-wrap"><img src="images/svg/f3-img-new.svg"></div>
+            <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f3-img-new.svg"></div>
             <div class="gs--full gm--half text-wrap">
               <p>Respondents were able to select from many reasons as the “best reasons” to start a redesign. The most popular reasons (selected by 60% or greater respondents) were:</p>
               <ul>
@@ -236,9 +212,9 @@
               </div>
             </div>
             <div class="gs--full gm--half images-wrap">
-              <div class="image-wrap"><img src="images/svg/f4-little-guy.svg"></div>
+              <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-little-guy.svg"></div>
               <h1 class="heading-1--lightblue">vs</h1>
-              <div class="image-wrap"><img src="images/svg/f4-big-guy.svg"></div>
+              <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f4-big-guy.svg"></div>
             </div>
             <div class="gm--fourth text-wrap-left">
               <div class="grid-row text-wrap">
@@ -361,7 +337,7 @@
         <div class="gs--full margin-wrap">
           <p>It’s important to note that a site being “stale” is not stating a data-based business or customer problem. As such, the goal to “unstale” a site may be difficult to measure objectively. And that, in turn, may make the reasoning behind a redesign process feel subjective or ambiguous to the organization.</p>
           <p>There also seemed to be a disconnect between the actual reasons that prompted organizations to embark on a  redesign versus the purported “best reasons” for a redesign. </p>
-          <h3 class="heading-3">Reasons to Embark on a Redesign: Theory vs. Reality</h3><img src="/images/svg/f5-table.svg">
+          <h3 class="heading-3">Reasons to Embark on a Redesign: Theory vs. Reality</h3><img src="<?php bloginfo('template_url'); ?>/images/svg/f5-table.svg">
         </div>
       </div>
       <div class="grid-row grid-row-children-alignment--centered grid-row-padding--top-only item-wrap finding-6">
@@ -371,7 +347,7 @@
         </div>
         <div class="gs--full">
           <div class="grid-row row-wrap">
-            <div class="data-wrap"><img src="images/svg/f6-hiring.svg"></div>
+            <div class="data-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f6-hiring.svg"></div>
             <div class="text-wrap">
               <p>75% state that UX research and design is the most critical capability needed for a redesign, with platform integration development ranking a distant second (59%).</p>
               <ul>
@@ -399,7 +375,7 @@
           <div class="gs--full gm--fifthx3 text-wrap">
             <p>67% selected “vague or undefined goals” as the biggest risk of failure with a site redesign. Despite this risk, 36% of respondents admitted to not having defined and measurable quantitative goals for their last redesign, and nearly half (47%) didn’t set any qualitative goals. </p>
           </div>
-          <div class="image-wrap"><img src="images/svg/f7-goal.svg"></div>
+          <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f7-goal.svg"></div>
         </div>
         <div class="quote-wrap">
           <p>“I’ve been in redesigns at other companies where those focal points weren’t defined. And the redesign goes off the rails.”</p><span>- Steve Brita, SVP Marketing, WWE</span>
@@ -414,7 +390,7 @@
           <div class="text-wrap">
             <p>85% report they collect analytics and customer data leading into a redesign, but interviews and other data suggest methods and rigor varied.</p>
           </div>
-          <div class="image-wrap"><img src="images/svg/f8-data.svg"></div>
+          <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f8-data.svg"></div>
         </div>
         <div class="gs--full list-wrap">
           <ul class="bullet-list">
@@ -451,7 +427,7 @@
           <h4 class="heading-4--purple">finding #9</h4>
           <h2 class="heading-2">Why do we emulate? <span>We lack the people <span class="mobile-hide"><br></span>or time to validate decisions.</span></h2>
           <p>It’s no secret that many organizations are attempting to do more with less, and this was heard loud and clear in our survey results. When respondents weren’t able to use data to validate assumptions going into a redesign, the primary reason was lack of resources (55%), followed by a lack of time (31%).</p>
-          <h3 class="heading-3">When you haven't used data to validate your assumptions during a redesign, what were the primary reasons?</h3><img src="images/svg/f9-table.svg">
+          <h3 class="heading-3">When you haven't used data to validate your assumptions during a redesign, what were the primary reasons?</h3><img src="<?php bloginfo('template_url'); ?>/images/svg/f9-table.svg">
         </div>
         <div class="quote-wrap">
           <p>“We thought we knew what customers wanted to hear about our products, but it was hard to make decisions about priority. Lots of back and forth on comps.”</p><span>- Matt Kritzer, VP Ecommerce and Online Marketing, Tommy John</span>
@@ -477,7 +453,7 @@
               <p>Prior to launch, 84% were confident that their upcoming redesign was going to be successful. Executives were even more confident (93%) than the average.</p>
             </div>
             <div class="data-wrap grid-row">
-              <div class="image-wrap"><img src="images/svg/f10-thumb.svg"></div>
+              <div class="image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/svg/f10-thumb.svg"></div>
               <div class="text-wrap">
                 <div class="gs--full">
                   <h1 class="heading-1">84<span>%</span></h1>
@@ -526,7 +502,7 @@
             <div class="gs--full gm--thirdx2 text-wrap">
               <p>“Now the bar is higher. We were like the Cleveland Browns and made it to the Dallas Cowboys. We’re in the game now. We’re not yet the New England Patriots. Getting the rest of the way to the Superbowl of retailers is a harder path.”</p>
             </div>
-            <div class="gs--full gm--third image-wrap"><img src="images/principles-helmets.png" class="helmet"></div>
+            <div class="gs--full gm--third image-wrap"><img src="<?php bloginfo('template_url'); ?>/images/principles-helmets.png" class="helmet"></div>
           </div><span>- Mike Molitor, SVP Ecommerce, Kohl’s</span>
         </div>
         <div class="gs--full">
@@ -543,7 +519,7 @@
         </div>
         <div class="questions-wrap">
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>1. More iterative redesign approach.</p>
             </div>
             <div class="answer">
@@ -580,7 +556,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>2. Stronger UX research to validate assumptions and solutions</p>
             </div>
             <div class="answer">
@@ -616,7 +592,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>3. Increasingly specific definitions of “success”.</p>
             </div>
             <div class="answer">
@@ -652,7 +628,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>4. Clearly defined baselines, targets and time bases for goal & KPI improvement </p>
             </div>
             <div class="answer">
@@ -688,7 +664,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>5. More analytics & research resources to identify problems & validate solutions throughout the redesign process.</p>
             </div>
             <div class="answer">
@@ -724,7 +700,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>6. Clear definitions of key segments the site needs to serve (and clear hypotheses for serving those specific segments).</p>
             </div>
             <div class="answer">
@@ -760,7 +736,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>7. Greater understanding of “mobility” and “omni-channel” behavior and recognition of key use cases for adaptive experiences.</p>
             </div>
             <div class="answer">
@@ -796,7 +772,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>8. Increased pressure for measurable improvements immediately at re-launch (as opposed to generous “bake in” periods).</p>
             </div>
             <div class="answer">
@@ -832,7 +808,7 @@
             </div>
           </div>
           <div class="gs--full future-item">
-            <div class="question"> 
+            <div class="question">
               <p>9. A desire to reduce the “cost to serve” websites, wherein many manual, time consuming site sections & activities will be called into question.</p>
             </div>
             <div class="answer">
@@ -875,7 +851,7 @@
         </div>
         <div class="gs--full contact-wrap">
           <div class="grid-row">
-            <div class="btn-wrap"><a href="images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank" class="btn">download the full report (pdf)</a></div>
+            <div class="btn-wrap"><a href="<?php bloginfo('template_url'); ?>/images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank" class="btn">download the full report (pdf)</a></div>
             <div class="gs--full">
               <h4 class="heading-4">Want to learn more about data-driven redesigns?</h4>
             </div>
@@ -920,7 +896,7 @@
   </footer>
   <div class="social-bar">
     <div class="grid-row grid-row-padding--sides-only grid-row-children-alignment--vcentered bar-wrap">
-      <div class="pdf-wrap"><a href="images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank"> 
+      <div class="pdf-wrap"><a href="<?php bloginfo('template_url'); ?>/images/clearhead-ecommerce-site-redesign-study-2016.pdf" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="24" viewbox="0 0 24 24">
             <path d="M16 11h5l-9 10-9-10h5v-11h8v11zm1 11h-10v2h10v-2z"></path>
           </svg>
@@ -955,51 +931,4 @@
       </div>
     </div>
   </div>
-</body>
-<script src="/js/site.js"></script><script>window.twttr = (function(d, s, id) {
- var js, fjs = d.getElementsByTagName(s)[0],
-   t = window.twttr || {};
- if (d.getElementById(id)) return t;
- js = d.createElement(s);
- js.id = id;
- js.src = "https://platform.twitter.com/widgets.js";
- fjs.parentNode.insertBefore(js, fjs);
- 
- t._e = [];
- t.ready = function(f) {
-   t._e.push(f);
- };
- 
- return t;
-}(document, "script", "twitter-wjs"));</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.js"></script>
-<script>
-  $("#connectForm").validate();
-  //Handle the ajax submission
-  $("#connectForm").submit(function(e) {
-  $(".error_message").hide();
-  if($(this).valid()) {
-  $("#connectForm").hide();
-  $(".contact-wrap .heading-4").append('<div class="success_message">Message Sent! We will contact you soon</div>');
-  }
-  e.preventDefault();
-  });
-</script>
-<script type="text/javascript">
-  function windowPopup(url, width, height) {
-  // Calculate the position of the popup so
-  // it’s centered on the screen.
-  var left = (screen.width / 2) - (width / 2),
-  top = (screen.height / 2) - (height / 2);
-  window.open(
-  url,
-  "",
-  "menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=" + width + ",height=" + height + ",top=" + top + ",left=" + left
-  );
-  }
-  jQuery(".js-social-share").on("click", function(e) {
-  e.preventDefault();
-  windowPopup(jQuery(this).attr("href"), 500, 300);
-  });
-</script>
+<?php get_footer(); ?>

@@ -17,3 +17,7 @@ function fbs_click(width, height) {
     window.open('http://www.facebook.com/sharer.php?u=http://hubs.ly/H03Hdsn0'+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
     return false;
 }
+
+if(bowser.msie) {
+  jQuery("body").addClass("ie");
+}

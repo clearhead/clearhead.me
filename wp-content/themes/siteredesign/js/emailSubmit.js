@@ -6,6 +6,7 @@ jQuery(document).ready(function($) {
 	$("#connectForm").submit(function(e) {
     $(".error_message").hide();
     if($(this).valid()) {
+      dataLayer.push({'event': 'send-email'});
       var array = $('#connectForm').serializeArray();
       var _data = {};
       for(var i=0; i < array.length; i++){
