@@ -1,7 +1,5 @@
 #[clearhead.me](http://clearhead.me/)
 
-Website for Clearhead
-
 ## Site Setup
 
 ### Hosting
@@ -23,7 +21,15 @@ The Contact form uses Jetpack’s [“Contact Form” module](https://jetpack.co
 
 
 ## Deploying
-[Git Push](https://my.wpengine.com/installs/clearhead/git_push) integration is setup with [Circle CI](https://circleci.com/gh/clearhead/clearhead.me) to automatically deploy changes via SSH to WP Engine. The deploy scripts are located in `/bin/`. Check [Circle CI](https://circleci.com/gh/clearhead/clearhead.me) for the status.
+[Git Push](https://my.wpengine.com/installs/clearhead/git_push) integration is setup with [Circle CI](https://circleci.com/gh/clearhead/clearhead.me) to automatically deploy changes via SSH to WP Engine. `/circle.yml` is the Circle CI config file and the deploy scripts are located in `/bin/`. Check [circleci.com/gh/clearhead/clearhead.me](https://circleci.com/gh/clearhead/clearhead.me) for the status.
 
-* Changes pushed to the `staging` branch to deploy to the **staging site**.
-* Changes pushed to the `master` branch to deploy to the **production site**.
+The configuration simply autodeploys `staging` to the staging site and `master` to the production site.
+
+### Development Workflow
+Here’s a recommended git workflow that should work for this project:
+
+1. Development can be done locally on new branches created *off of* `master`. For new features these can be “feature branches”. (Otherwise, generic “dev” branches for each team should suffice.)
+
+2. When changes on a branch are ready for testing or review, merge the branch into `staging` and push. This should deploy the changes to the [**staging site**](http://clearhead.staging.wpengine.com/).
+
+3. When changes on `staging` are ready for production, merge `staging` into `master` and push. This should deploy the changes to the [**production site**](http://clearhead.me/).
