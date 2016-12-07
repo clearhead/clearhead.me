@@ -23,7 +23,7 @@ The Contact form uses Jetpack’s [“Contact Form” module](https://jetpack.co
 
 
 ## Deploying
-[Git Push](https://my.wpengine.com/installs/clearhead/git_push) integration is setup with WP Engine so changes are automatically deployed. The deploy scripts are located in `/bin/`. Check [Circle CI](https://circleci.com/gh/clearhead/clearhead.me) for the status.
+[Git Push](https://my.wpengine.com/installs/clearhead/git_push) integration is setup with [Circle CI](https://circleci.com/gh/clearhead/clearhead.me) to automatically deploy changes via SSH to WP Engine. The deploy scripts are located in `/bin/`. Check [Circle CI](https://circleci.com/gh/clearhead/clearhead.me) for the status.
 
 * Changes pushed to the `staging` branch to deploy to the **staging site**.
 * Changes pushed to the `master` branch to deploy to the **production site**.
