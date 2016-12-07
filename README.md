@@ -16,7 +16,7 @@ As of now the CMS is only integrated with the blog and generic body content on a
 The CSS file (found at `~/style.css`) is a [Sass](http://sass-lang.com/) output file and should not be edited directly. The source files are in `~/sass/`. This Sass was originally compiled using [CodeKit](https://incident57.com/codekit/).
 
 ### Scripts
-Javascript files can be found in `~/js/` and enqueued from the `~/functions.php` file’s `clearhead_2016_scripts_and_styles` function.
+Javascript files can be found in `~/js/` and “[enqueued](https://developer.wordpress.org/reference/functions/wp_enqueue_script/)” from the `~/functions.php` file’s `clearhead_2016_scripts_and_styles` function using the `wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );` function and parameters. 
 
 ### Contact Form
 The Contact form uses Jetpack’s [“Contact Form” module](https://jetpack.com/support/contact-form/). The form’s entries are sent via email to the recipient specified in its shortcode markup – which is located in the [Contact page’s](http://clearhead.me/wp-admin/post.php?post=22&action=edit) entry.
