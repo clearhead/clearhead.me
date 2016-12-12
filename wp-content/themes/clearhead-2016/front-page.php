@@ -48,8 +48,8 @@ get_header(); ?>
 									<h3>New at Clearhead</h3>
 									<ul>
 										<li>
-											<a href=".">
-												<h4>The state of ecommerce redesigns in 2016: How data driven are we?</h4>
+											<a href="/blog/released-2016-digital-optimization-study-how-do-you-stack-up/">
+												<h4>Released: 2016 Digital Optimization Study. How do you stack up?</h4>
 												<div class="cta">
 													Read More
 													<span class="icon">
@@ -59,8 +59,8 @@ get_header(); ?>
 											</a>
 										</li>
 										<li>
-											<a href=".">
-												<h4>Clearhead named 3rd fastest growing company in central Texas</h4>
+											<a href="/blog/clearhead-ranked-no-5-in-austin-fast-50/">
+												<h4>Clearhead ranked no. 5 in Austin Fast 50</h4>
 												<div class="cta">
 													Read More
 													<span class="icon">
