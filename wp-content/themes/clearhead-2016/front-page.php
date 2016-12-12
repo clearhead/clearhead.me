@@ -59,8 +59,8 @@ get_header(); ?>
 											</a>
 										</li>
 										<li>
-											<a href="/blog/clearhead-ranked-no-5-in-austin-fast-50/">
-												<h4>Clearhead ranked no. 5 in Austin Fast 50</h4>
+											<a href="/blog/clearhead-named-3rd-fastest-growing-company-in-central-texas/">
+												<h4>Clearhead Named 3rd Fastest Growing Company in Central Texas</h4>
 												<div class="cta">
 													Read More
 													<span class="icon">
