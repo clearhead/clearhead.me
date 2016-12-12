@@ -10,13 +10,13 @@
 
     .cap-6c-5g {
         max-width: none;
-        padding: 5em 0 0;
+        padding: 3.5em 0 0;
         @include w480 {
             font-size: 93.75%;
         }
         @include w640 {
             font-size: 100%;
-            padding: 2.5em 0 0;
+            padding: 0 8em 2.5em 0;
             max-width: ($column * 6) + ($gutter * 6);
         }
         @include w1000 {
@@ -122,10 +122,28 @@
         left: 0;
         display: flex;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
+        @include w480 {
+        }
+        @include w1000 {
+            align-items: center;
+        }
         .flyover {
             position: relative;
-            margin-top: 0.53125em;
+            margin-bottom: 2.375em;
+            @media screen and (min-width: 375px) {
+                margin-bottom: 2.375em;
+            }
+            @include w480 {
+                margin-bottom: 1.65em;
+            }
+            @include w640 {
+                margin-bottom: 3em;
+            }
+            @include w1000 {
+                margin-bottom: 0;
+                margin-top: 0.53125em;
+            }
             &.is_hidden {
                 .flex {
                     transform: translateX(125%);
@@ -203,7 +221,10 @@
                     }
                 }
                 figure {
-                    width: 11.1875em;
+                    width: 7.5em;
+                    @media screen and (min-width: 375px) {
+                        width: 11.1875em;
+                    }
                     flex-shrink: 0;
                     background-color: lighten($black, 41.25%);
                     background-size: cover;
@@ -213,7 +234,10 @@
             }
             .toggle {
                 position: absolute;
-                font-size: 0.7125em;
+                font-size: 1em;
+                @include w640 {
+                    font-size: 0.7125em;
+                }
                 font-weight: $medium;
                 top: 0.96875em;
                 right: 0;
@@ -225,25 +249,22 @@
                 transform: translateX(250%);
                 transition:
                     transform 0.375s ease-in-out;
-                &:after {
+                &:after, &:before {
                     content: "";
-                    background-image: linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
                     position: absolute;
                     top: 0;
-                    right: 0;
                     width: 0.875em;
                     height: 100%;
                     z-index: 20;
+                    pointer-events: none;
+                }
+                &:after {
+                    background-image: linear-gradient(right, rgba($white, 1), rgba($white, 0));
+                    right: 0;
                 }
                 &:before {
-                    content: "";
-                    background-image: linear-gradient(left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
-                    position: absolute;
-                    top: 0;
+                    background-image: linear-gradient(left, rgba($white, 1), rgba($white, 0));
                     left: 0;
-                    width: 0.875em;
-                    height: 100%;
-                    z-index: 20;
                 }
                 .label {
                     position: absolute;
@@ -254,7 +275,10 @@
                     left: 0;
                     text-transform: lowercase;
                     line-height: 1;
-                    padding: 0.5em 1em 0.46875em 1em;
+                    padding: 0.5625em 1em 0.46875em 1em;
+                    @include w640 {
+                        padding-top: 0.5em;
+                    }
                     color: currentColor;
                     transition:
                         transform 0.375s ease-in-out,
@@ -263,14 +287,12 @@
                         display: none;
 
                         padding-left: 1.6875em;
-                        // transform: translateX(-775%);
                         .icon {
                             left: 0.8125em;
                         }
                     }
                     &-hide {
                         padding-right: 1.6875em;
-                        // transform: translateX(0);
                         .icon {
                             right: 0.875em;
                         }
@@ -278,9 +300,19 @@
                 }
                 .icon {
                     position: absolute;
-                    top: 0.625em;
-                    svg * {
-                        stroke: currentColor;
+                    width: 0.46875em;
+                    display: block;
+
+                    top: 0.5625em;
+                    @include w1000 {
+                        top: 0.625em;
+                    }
+                    svg {
+                        width: 100%;
+                        height: 100%;
+                        * {
+                            stroke: currentColor;
+                        }
                     }
                 }
             }

@@ -864,14 +864,14 @@ section {
   padding: 5.71875em 0 3.375em; }
   .hero .cap-6c-5g {
     max-width: none;
-    padding: 5em 0 0; }
+    padding: 3.5em 0 0; }
     @media screen and (min-width: 30em) {
       .hero .cap-6c-5g {
         font-size: 93.75%; } }
     @media screen and (min-width: 40em) {
       .hero .cap-6c-5g {
         font-size: 100%;
-        padding: 2.5em 0 0;
+        padding: 0 8em 2.5em 0;
         max-width: 30.3703703704rem; } }
     @media screen and (min-width: 62.5em) {
       .hero .cap-6c-5g {
@@ -963,12 +963,31 @@ section {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    @media screen and (min-width: 62.5em) {
+      .hero .overlay {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center; } }
     .hero .overlay .flyover {
       position: relative;
-      margin-top: 0.53125em; }
+      margin-bottom: 2.375em; }
+      @media screen and (min-width: 375px) {
+        .hero .overlay .flyover {
+          margin-bottom: 2.375em; } }
+      @media screen and (min-width: 30em) {
+        .hero .overlay .flyover {
+          margin-bottom: 1.65em; } }
+      @media screen and (min-width: 40em) {
+        .hero .overlay .flyover {
+          margin-bottom: 3em; } }
+      @media screen and (min-width: 62.5em) {
+        .hero .overlay .flyover {
+          margin-bottom: 0;
+          margin-top: 0.53125em; } }
       .hero .overlay .flyover.is_hidden .flex {
         -webkit-transform: translateX(125%);
                 transform: translateX(125%);
@@ -1028,16 +1047,19 @@ section {
               .hero .overlay .flyover .flex .articles a .cta .icon svg * {
                 stroke: currentColor; }
         .hero .overlay .flyover .flex figure {
-          width: 11.1875em;
+          width: 7.5em;
           -ms-flex-negative: 0;
               flex-shrink: 0;
           background-color: #989ca0;
           background-size: cover;
           background-position: center;
           background-repeat: no-repeat; }
+          @media screen and (min-width: 375px) {
+            .hero .overlay .flyover .flex figure {
+              width: 11.1875em; } }
       .hero .overlay .flyover .toggle {
         position: absolute;
-        font-size: 0.7125em;
+        font-size: 1em;
         font-weight: 500;
         top: 0.96875em;
         right: 0;
@@ -1052,26 +1074,25 @@ section {
         transition: -webkit-transform 0.375s ease-in-out;
         transition: transform 0.375s ease-in-out;
         transition: transform 0.375s ease-in-out, -webkit-transform 0.375s ease-in-out; }
-        .hero .overlay .flyover .toggle:after {
+        @media screen and (min-width: 40em) {
+          .hero .overlay .flyover .toggle {
+            font-size: 0.7125em; } }
+        .hero .overlay .flyover .toggle:after, .hero .overlay .flyover .toggle:before {
           content: "";
+          position: absolute;
+          top: 0;
+          width: 0.875em;
+          height: 100%;
+          z-index: 20;
+          pointer-events: none; }
+        .hero .overlay .flyover .toggle:after {
           background-image: -webkit-linear-gradient(right, white, rgba(255, 255, 255, 0));
           background-image: linear-gradient(right, white, rgba(255, 255, 255, 0));
-          position: absolute;
-          top: 0;
-          right: 0;
-          width: 0.875em;
-          height: 100%;
-          z-index: 20; }
+          right: 0; }
         .hero .overlay .flyover .toggle:before {
-          content: "";
           background-image: -webkit-linear-gradient(left, white, rgba(255, 255, 255, 0));
           background-image: linear-gradient(left, white, rgba(255, 255, 255, 0));
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 0.875em;
-          height: 100%;
-          z-index: 20; }
+          left: 0; }
         .hero .overlay .flyover .toggle .label {
           position: absolute;
           z-index: 10;
@@ -1081,12 +1102,15 @@ section {
           left: 0;
           text-transform: lowercase;
           line-height: 1;
-          padding: 0.5em 1em 0.46875em 1em;
+          padding: 0.5625em 1em 0.46875em 1em;
           color: currentColor;
           -webkit-transition: color 0.1875s ease, -webkit-transform 0.375s ease-in-out;
           transition: color 0.1875s ease, -webkit-transform 0.375s ease-in-out;
           transition: transform 0.375s ease-in-out, color 0.1875s ease;
           transition: transform 0.375s ease-in-out, color 0.1875s ease, -webkit-transform 0.375s ease-in-out; }
+          @media screen and (min-width: 40em) {
+            .hero .overlay .flyover .toggle .label {
+              padding-top: 0.5em; } }
           .hero .overlay .flyover .toggle .label-show {
             display: none;
             padding-left: 1.6875em; }
@@ -1098,9 +1122,17 @@ section {
               right: 0.875em; }
         .hero .overlay .flyover .toggle .icon {
           position: absolute;
-          top: 0.625em; }
-          .hero .overlay .flyover .toggle .icon svg * {
-            stroke: currentColor; }
+          width: 0.46875em;
+          display: block;
+          top: 0.5625em; }
+          @media screen and (min-width: 62.5em) {
+            .hero .overlay .flyover .toggle .icon {
+              top: 0.625em; } }
+          .hero .overlay .flyover .toggle .icon svg {
+            width: 100%;
+            height: 100%; }
+            .hero .overlay .flyover .toggle .icon svg * {
+              stroke: currentColor; }
 
 @media screen and (min-width: 40em) {
   body.ie .hero h1 figure svg {

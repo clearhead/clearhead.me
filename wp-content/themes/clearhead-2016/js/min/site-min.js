@@ -159,23 +159,37 @@ jQuery('.grouped-links a').hover(
 jQuery(document).ready(function(){
     setTimeout(function() {
         jQuery('.flyover').removeClass('is_hidden');
-    }, 500);
+    }, 750);
     setTimeout(function() {
         jQuery('.flyover').addClass('has_toggle');
-    }, 675);
+    }, 925);
 
-    jQuery('.flyover .toggle').click( function(e) {
+    jQuery('.flyover .label-hide').click( function(e) {
         e.preventDefault();
         jQuery('.flyover').toggleClass('is_hidden');
         setTimeout(function() {
             jQuery('.flyover').removeClass('has_toggle');
-        }, 250);
+        }, 200);
         setTimeout(function() {
             jQuery('.flyover').toggleClass('is_toggled');
-        }, 400);
+        }, 325);
         setTimeout(function() {
             jQuery('.flyover').addClass('has_toggle');
-        }, 450);
+        }, 375);
+    });
+
+    jQuery('.flyover .label-show').click( function(e) {
+        e.preventDefault();
+        jQuery('.flyover').toggleClass('is_hidden');
+        setTimeout(function() {
+            jQuery('.flyover').removeClass('has_toggle');
+        }, 25);
+        setTimeout(function() {
+            jQuery('.flyover').toggleClass('is_toggled');
+        }, 150);
+        setTimeout(function() {
+            jQuery('.flyover').addClass('has_toggle');
+        }, 200);
     });
 });
 
