@@ -20,7 +20,7 @@ get_header(); ?>
 
 				<section class="hero">
 					<div class="container">
-						<div class="cap-6c-6g">
+						<div class="cap-6c-5g">
 
 							<div class="logo-icon">
 								<figure>
@@ -39,6 +39,54 @@ get_header(); ?>
 							<p>
 								Every idea, every product, every experience – driven by data. Imagine that. That’s Clearhead.
 							</p>
+						</div>
+					</div>
+					<div class="overlay">
+						<div class="flyover is_hidden">
+							<div class="flex">
+								<div class="articles">
+									<h3>New at Clearhead</h3>
+									<ul>
+										<li>
+											<a href=".">
+												<h4>The state of ecommerce redesigns in 2016: How data driven are we?</h4>
+												<div class="cta">
+													Read More
+													<span class="icon">
+														<?php get_template_part( 'img/icons/link-arrow.svg' ); ?>
+													</span>
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href=".">
+												<h4>Clearhead named 3rd fastest growing company in central Texas</h4>
+												<div class="cta">
+													Read More
+													<span class="icon">
+														<?php get_template_part( 'img/icons/link-arrow.svg' ); ?>
+													</span>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<figure style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/news/latest.jpg');"></figure>
+							</div>
+							<a href="." class="toggle">
+								<div class="label label-hide">
+									Hide
+									<span class="icon">
+										<?php get_template_part( 'img/icons/right-arrow.svg' ); ?>
+									</span>
+								</div>
+								<div class="label label-show">
+									<span class="icon">
+										<?php get_template_part( 'img/icons/left-arrow.svg' ); ?>
+									</span>
+									New
+								</div>
+							</a>
 						</div>
 					</div>
 				</section>

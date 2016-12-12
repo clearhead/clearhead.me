@@ -3,11 +3,12 @@
 .hero {
     background-color: $blue;
     color: $white;
+    position: relative;
 
     font-size: 87.5%;
-    padding: (2.5em + 2.78125em) 0 2.5em;
+    padding: (2.9375em + 2.78125em) 0 3.375em;
 
-    .cap-6c-6g {
+    .cap-6c-5g {
         max-width: none;
         padding: 5em 0 0;
         @include w480 {
@@ -20,7 +21,7 @@
         }
         @include w1000 {
             font-size: 112.5%;
-            padding: 5.25em 0 3.8125em;
+            padding: 5.25em 2em 3.8125em 0;
         }
     }
     .logo-icon {
@@ -60,8 +61,10 @@
                 margin: 0 auto;
                 max-width: 100%;
                 width: 5.7125em;
+
                 @include w640 {
                     width: auto;
+                    height: 0.875em;
                     margin: 0;
                 }
             }
@@ -92,10 +95,10 @@
     }
     p {
     	letter-spacing: -0.0390625em;
-        line-height: 1.625;
+        line-height: 1.75;
     	font-weight: $medium;
-        margin-bottom: 1.5625em;
-        font-size: 1.125em;
+        margin-bottom: 1.75em;
+        font-size: 1em;
 
         text-align: center;
         max-width: 19em;
@@ -109,6 +112,178 @@
             margin-left: 0;
             margin-right: 0;
             max-width: none;
+        }
+    }
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 2.78125em);
+        top: 2.78125em;
+        left: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        .flyover {
+            position: relative;
+            margin-top: 0.53125em;
+            &.is_hidden {
+                .flex {
+                    transform: translateX(125%);
+                    opacity: 0;
+                }
+            }
+            &.has_toggle {
+                .toggle {
+                    transform: translateX(0%);
+                }
+            }
+            &.is_toggled {
+                .toggle .label {
+                    &-hide {
+                        // transform: translateX(775%);
+                        display: none;
+                    }
+                    &-show {
+                        // transform: translateX(0);
+                        display: block;
+                    }
+                }
+            }
+            .flex {
+                display: flex;
+                box-shadow: 0 0 0.1875em 0 rgba(black, 0.1875);
+                transform: translateX(0);
+                opacity: 1;
+                transition:
+                    transform 0.375s ease-in-out,
+                    opacity 0.375s ease-in-out
+                ;
+                .articles {
+                    background-color: $white;
+                    color: $black;
+                    padding: 1.0625em 0.90625em 0.875em;
+                    width: 14.53125em;
+                    h3 {
+                        font-weight: $bold;
+                        border-bottom: 1.5px solid lighten($black, 41.25%);
+                        padding-bottom: 0.359375em;
+                        margin-bottom: 0.7125em;
+                        letter-spacing: -0.1875px;
+                    }
+                    li:nth-last-child(n+2) {
+                        border-bottom: 1px solid $gray;
+                        margin-bottom: 0.78125em;
+                        padding-bottom: 0.6875em;
+                    }
+                    a {
+                        h4 {
+                            text-transform: none;
+                            font-size: 0.875em;
+                            line-height: 1.4125;
+                            margin-bottom: 0.4375em;
+                            padding-right: 1.875em;
+                            color: $black;
+                        }
+                        .cta {
+                            display: block;
+                            font-size: 0.8125em;
+                            font-weight: $medium;
+                            text-transform: lowercase;
+                            letter-spacing: -0.125px;
+                            .icon {
+                                display: inline-block;
+                                position: relative;
+                                top: 0.0625em;
+                                left: 0.125em;
+                                svg * {
+                                    stroke: currentColor;
+                                }
+                            }
+                        }
+                    }
+                }
+                figure {
+                    width: 11.1875em;
+                    flex-shrink: 0;
+                    background-color: lighten($black, 41.25%);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+            .toggle {
+                position: absolute;
+                font-size: 0.7125em;
+                font-weight: $medium;
+                top: 0.96875em;
+                right: 0;
+                background-color: $white;
+                box-shadow: 0 0 0.5em 0 rgba(black, 0.09375);
+                width: 4.625em;
+                height: 1.9375em;
+                overflow: hidden;
+                transform: translateX(250%);
+                transition:
+                    transform 0.375s ease-in-out;
+                &:after {
+                    content: "";
+                    background-image: linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 0.875em;
+                    height: 100%;
+                    z-index: 20;
+                }
+                &:before {
+                    content: "";
+                    background-image: linear-gradient(left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 0.875em;
+                    height: 100%;
+                    z-index: 20;
+                }
+                .label {
+                    position: absolute;
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    text-transform: lowercase;
+                    line-height: 1;
+                    padding: 0.5em 1em 0.46875em 1em;
+                    color: currentColor;
+                    transition:
+                        transform 0.375s ease-in-out,
+                        color 0.1875s ease;
+                    &-show {
+                        display: none;
+
+                        padding-left: 1.6875em;
+                        // transform: translateX(-775%);
+                        .icon {
+                            left: 0.8125em;
+                        }
+                    }
+                    &-hide {
+                        padding-right: 1.6875em;
+                        // transform: translateX(0);
+                        .icon {
+                            right: 0.875em;
+                        }
+                    }
+                }
+                .icon {
+                    position: absolute;
+                    top: 0.625em;
+                    svg * {
+                        stroke: currentColor;
+                    }
+                }
+            }
         }
     }
 }

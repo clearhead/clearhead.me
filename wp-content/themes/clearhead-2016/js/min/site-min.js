@@ -156,4 +156,27 @@ jQuery('.grouped-links a').hover(
    function(){ jQuery(this).closest('.grouped-links').removeClass('phover') }
 );
 
+jQuery(document).ready(function(){
+    setTimeout(function() {
+        jQuery('.flyover').removeClass('is_hidden');
+    }, 500);
+    setTimeout(function() {
+        jQuery('.flyover').addClass('has_toggle');
+    }, 675);
+
+    jQuery('.flyover .toggle').click( function(e) {
+        e.preventDefault();
+        jQuery('.flyover').toggleClass('is_hidden');
+        setTimeout(function() {
+            jQuery('.flyover').removeClass('has_toggle');
+        }, 250);
+        setTimeout(function() {
+            jQuery('.flyover').toggleClass('is_toggled');
+        }, 400);
+        setTimeout(function() {
+            jQuery('.flyover').addClass('has_toggle');
+        }, 450);
+    });
+});
+
 
