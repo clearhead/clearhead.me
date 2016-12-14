@@ -48,7 +48,7 @@ get_header(); ?>
 									<h3>New at Clearhead</h3>
 									<ul>
 										<li>
-											<a href="/blog/released-2016-digital-optimization-study-how-do-you-stack-up/">
+											<a href="http://clrhd.com/2gKdYHD">
 												<h4>Released: 2016 Digital Optimization Study. How do you stack up?</h4>
 												<div class="cta">
 													Read More
@@ -59,7 +59,7 @@ get_header(); ?>
 											</a>
 										</li>
 										<li>
-											<a href="/blog/clearhead-named-3rd-fastest-growing-company-in-central-texas/">
+											<a href="http://clrhd.com/2hOYxdl">
 												<h4>Clearhead Named 3rd Fastest Growing Company in Central Texas</h4>
 												<div class="cta">
 													Read More
