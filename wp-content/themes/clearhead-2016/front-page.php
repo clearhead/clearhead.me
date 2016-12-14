@@ -145,48 +145,77 @@ get_header(); ?>
 
 							<ul class="solutions-list">
 								<li class="grouped-links">
-									<a href="/digital-optimization-programs/">
-										<h3>Digital Optimization Programs</h3>
-										<figure>
-											<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
-										</figure>
-									</a>
 									<div>
+										<a href="/digital-optimization-programs/">
+											<h3>
+												Digital Optimization<span class="custom-break"><br><span> </span></span>Programs&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
 										<strong>Uncovering the best ideas quickly and iteratively</strong>
 										<p>
 											We enhance and augment your team to accelerate testing and personalization. We surface &amp; validate the very best hypotheses to your most important end user problems.
 										</p>
-										<a href="/digital-optimization-programs/">Learn More</a>
+									</div>
+									<div>
+										<a href="/digital-optimization-programs/">
+											<figure>
+												<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/digital-optimization-programs/" class="button">Learn More</a>
 									</div>
 								</li>
+
 								<li class="grouped-links">
-									<a href="/data-driven-redesigns/">
-										<h3>Data-driven Redesigns</h3>
-										<figure>
-											<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
-										</figure>
-									</a>
 									<div>
+										<a href="/data-driven-redesigns/">
+											<h3>
+												Data-driven<span class="custom-break"><br><span> </span></span>Redesigns&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
 										<strong>Disrupt with confidence</strong>
 										<p>
-											The decision has been made. For something this big, the process should be driven and validated by your customers. Ensure your redesign is destined for success.
+											The decision has been made. For something this big, the process&nbsp;should be driven and validated by your customers. Ensure your redesign is destined for success.
 										</p>
-										<a href="/data-driven-redesigns/">Learn More</a>
+									</div>
+									<div>
+										<a href="/data-driven-redesigns/">
+											<figure>
+												<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/data-driven-redesigns/" class="button">Learn More</a>
 									</div>
 								</li>
+
 								<li class="grouped-links">
-									<a href="optimization-accelerators">
-										<h3>Optimization Accelerators</h3>
-										<figure>
-											<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
-										</figure>
-									</a>
 									<div>
+										<a href="/optimization-accelerators/">
+											<h3>
+												Optimization<span class="custom-break"><br><span> </span></span>Accelerators&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
 										<strong>Building towards a test-and-learn culture</strong>
 										<p>
 											We help executives assess internal readiness &amp; then provide the&nbsp;blueprint to build and support a data-driven organization across their teams.
 										</p>
-										<a href="optimization-accelerators">Learn More</a>
+									</div>
+									<div>
+										<a href="/optimization-accelerators/">
+											<figure>
+												<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/optimization-accelerators/" class="button">Learn More</a>
 									</div>
 								</li>
 							</ul>

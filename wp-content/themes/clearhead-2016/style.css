@@ -851,10 +851,7 @@ section {
   padding: 2.25em 0; }
   @media screen and (min-width: 40em) {
     section {
-      padding: 4.390625em 0; } }
-  @media screen and (min-width: 62.5em) {
-    section {
-      padding: 4.390625em 0; } }
+      padding: 3.265625em 0; } }
 
 .hero {
   background-color: #32C4F5;
@@ -1264,7 +1261,7 @@ section {
   margin-top: 1.875em; }
   @media screen and (min-width: 40em) {
     .solutions-list {
-      margin-top: 2.25em; } }
+      margin-top: 2.28125em; } }
   .solutions-list li {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1281,86 +1278,100 @@ section {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
             -ms-flex-direction: row;
-                flex-direction: row;
-        margin-bottom: 0.4125em; } }
-    .solutions-list li.phover > div a {
+                flex-direction: row; } }
+    .solutions-list li.phover a:not(.button):not(.contact-form .pushbutton-wide):not(.contact-form .contact-submit input.pushbutton-wide) {
       color: #19748f; }
-    .solutions-list li > a {
-      -ms-flex-negative: 0;
-          flex-shrink: 0;
+    .solutions-list li.phover .button, .solutions-list li.phover .contact-form .pushbutton-wide, .contact-form .solutions-list li.phover .pushbutton-wide {
+      background-color: #19748f; }
+    .solutions-list li > div:first-child {
+      margin-bottom: 1.1111111111rem; }
+      @media screen and (min-width: 40em) {
+        .solutions-list li > div:first-child {
+          margin-bottom: 0; } }
+      .solutions-list li > div:first-child a {
+        display: block;
+        border-bottom: 1px solid #E0E2E2;
+        margin-bottom: 0.75em; }
+        .solutions-list li > div:first-child a h3 {
+          line-height: 1.125;
+          margin: 0.0625em 0 0.296875em;
+          font-weight: 700;
+          display: inline-block;
+          letter-spacing: -0.6875px;
+          font-size: 1.34375em; }
+          @media screen and (min-width: 40em) {
+            .solutions-list li > div:first-child a h3 {
+              font-size: 1.1875em; } }
+          @media screen and (min-width: 62.5em) {
+            .solutions-list li > div:first-child a h3 {
+              font-size: 1.34375em; } }
+          .solutions-list li > div:first-child a h3 .custom-break span {
+            display: none; }
+          @media screen and (min-width: 30em) {
+            .solutions-list li > div:first-child a h3 .custom-break br {
+              display: none; }
+            .solutions-list li > div:first-child a h3 .custom-break span {
+              display: inline; } }
+          .solutions-list li > div:first-child a h3 .icon {
+            display: inline-block;
+            position: relative;
+            top: 0.09375em;
+            left: 0.1875em; }
+            .solutions-list li > div:first-child a h3 .icon svg * {
+              fill: currentColor; }
+      .solutions-list li > div:first-child strong {
+        font-weight: 500;
+        display: block;
+        margin-bottom: 0.1875em; }
+    .solutions-list li > div:last-child {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      color: #313335; }
-      .solutions-list li > a h3 {
-        width: 10em; }
-      .solutions-list li > a svg {
-        display: block;
-        max-width: 100%;
-        width: 7em; }
+      -webkit-box-align: end;
+          -ms-flex-align: end;
+              align-items: flex-end; }
       @media screen and (min-width: 40em) {
-        .solutions-list li > a {
+        .solutions-list li > div:last-child {
+          -ms-flex-negative: 0;
+              flex-shrink: 0;
           -webkit-box-orient: vertical;
           -webkit-box-direction: normal;
               -ms-flex-direction: column;
                   flex-direction: column;
-          width: 11.8518518519rem;
-          margin-right: 1.1111111111rem;
-          -webkit-box-align: start;
-              -ms-flex-align: start;
-                      -ms-grid-row-align: flex-start;
-                  align-items: flex-start;
-          -webkit-box-pack: start;
-              -ms-flex-pack: start;
-                  justify-content: flex-start; }
-          .solutions-list li > a svg {
-            width: auto; } }
-    .solutions-list li > div {
-      border-top: 1px solid #E0E2E2;
-      width: calc(100% - (($column * 3) + ($gutter * 3)));
-      margin-top: 1em;
-      padding-top: 1em; }
-      @media screen and (min-width: 40em) {
-        .solutions-list li > div {
-          margin-top: 0;
-          padding-top: 0;
-          padding-left: 1.1111111111rem;
-          border-top: 0;
-          border-left: 1px solid #E0E2E2; } }
-      .solutions-list li > div a {
-        display: block;
-        font-weight: 500;
-        line-height: 1;
-        margin-bottom: 0.1875em;
-        font-size: 1em;
-        padding: 0.5em 0 0.325em; }
+          -ms-flex-pack: distribute;
+              justify-content: space-around;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                      -ms-grid-row-align: center;
+                  align-items: center;
+          width: 12.1875em;
+          padding-bottom: 0.125em;
+          margin-left: 2.09375em; } }
+      .solutions-list li > div:last-child figure {
+        max-width: 7em; }
+        .solutions-list li > div:last-child figure svg {
+          height: 100%;
+          display: block;
+          max-width: 100%; }
+          @media screen and (min-width: 40em) {
+            .solutions-list li > div:last-child figure svg {
+              width: auto; } }
+      .solutions-list li > div:last-child .button, .solutions-list li > div:last-child .contact-form .pushbutton-wide, .contact-form .solutions-list li > div:last-child .pushbutton-wide {
+        text-transform: none;
+        position: relative;
+        bottom: 0.15625em;
+        padding: 0.875em 1.203125em 0.75em;
+        font-size: 0.875em; }
         @media screen and (min-width: 40em) {
-          .solutions-list li > div a {
-            font-size: 0.875em;
-            padding: 0; } }
-  .solutions-list h3 {
-    font-weight: 700;
-    line-height: 1.2875;
-    margin: 0.2875em 0; }
-    @media screen and (min-width: 40em) {
-      .solutions-list h3 {
-        margin: 0.2875em 0 0.734375em; } }
-  .solutions-list figure {
-    max-width: 9em; }
-    .solutions-list figure svg {
-      height: 100%; }
-  .solutions-list strong {
-    font-weight: 500;
-    display: block;
-    margin: 0.2875em 0 0.45625em; }
-  .solutions-list p {
-    margin-bottom: 0.765625em; }
+          .solutions-list li > div:last-child .button, .solutions-list li > div:last-child .contact-form .pushbutton-wide, .contact-form .solutions-list li > div:last-child .pushbutton-wide {
+            font-size: 0.8125em; } }
 
 .expositive-remarks {
   margin-bottom: 0.75em; }

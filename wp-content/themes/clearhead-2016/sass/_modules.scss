@@ -492,7 +492,7 @@ body.ie .hero h1 figure svg {
 .solutions-list {
     margin-top: 1.875em;
     @include w640 {
-        margin-top: 2.25em;
+        margin-top: 2.28125em;
     }
     li {
         display: flex;
@@ -502,85 +502,125 @@ body.ie .hero h1 figure svg {
         margin-bottom: $gutter;
         @include w640 {
             flex-direction: row;
-            margin-bottom: 0.4125em;
         }
         &.phover {
-            > div a {
+            a:not(.button) {
                 color: $dark-blue;
             }
-        }
-        > a {
-            flex-shrink: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: $black;
-            h3 {
-                width: 10em;
-            }
-            svg {
-                display: block;
-                max-width: 100%;
-                width: 7em;
-            }
-            @include w640 {
-                flex-direction: column;
-                width: ($column * 3);
-                margin-right: $gutter;
-                align-items: flex-start;
-                justify-content: flex-start;
-                svg {
-                    width: auto;
-                }
+            .button {
+                background-color: $dark-blue;
             }
         }
         > div {
-            border-top: 1px solid $gray;
-            width: calc(100% - (($column * 3) + ($gutter * 3)));
-            margin-top: 1em;
-            padding-top: 1em;
-            @include w640 {
-                margin-top: 0;
-                padding-top: 0;
-                padding-left: $gutter;
-                border-top: 0;
-                border-left: 1px solid $gray;
-            }
-            a {
-                display: block;
-                font-weight: $medium;
-                line-height: 1;
-                margin-bottom: 0.1875em;
-                font-size: 1em;
-                padding: 0.5em 0 0.325em;
+            &:first-child {
+                margin-bottom: $gutter;
                 @include w640 {
+                    margin-bottom: 0;
+                }
+                a {
+                    display: block;
+                    border-bottom: 1px solid $gray;
+                    margin-bottom: 0.75em;
+                    h3 {
+                        line-height: 1.125;
+                        margin: 0.0625em 0 0.296875em;
+                        font-weight: $bold;
+                        display: inline-block;
+                        letter-spacing: -0.6875px;
+
+                        font-size: 1.34375em;
+                        @include w640 {
+                            font-size: 1.1875em;
+                        }
+                        @include w1000 {
+                            font-size: 1.34375em;
+                        }
+                        .custom-break {
+                            span {
+                                display: none;
+                            }
+                            @include w480 {
+                                br {
+                                    display: none;
+                                }
+                                span {
+                                    display: inline;
+                                }
+                            }
+                            // @include w640 {
+                            //     br {
+                            //         display: block;
+                            //     }
+                            //     span {
+                            //         display: none;
+                            //     }
+                            // }
+                            // @include w1000 {
+                            //     br {
+                            //         display: none;
+                            //     }
+                            //     span {
+                            //         display: inline;
+                            //     }
+                            // }
+                        }
+                        .icon {
+                            display: inline-block;
+                            position: relative;
+                            top: 0.09375em;
+                            left: 0.1875em;
+                            svg * {
+                                fill: currentColor;
+                            }
+                        }
+                    }
+                }
+                strong {
+                    font-weight: $medium;
+                    display: block;
+                    margin-bottom: 0.1875em;
+                }
+            }
+            &:last-child {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: flex-end;
+                @include w640 {
+                    flex-shrink: 0;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 12.1875em;
+                    padding-bottom: 0.125em;
+                    margin-left: 2.09375em;
+                }
+
+
+                figure {
+                    max-width: 7em;
+                    svg {
+                        height: 100%;
+                        display: block;
+                        max-width: 100%;
+                        @include w640 {
+                            width: auto;
+                        }
+                    }
+                }
+                .button {
+                    text-transform: none;
+                    position: relative;
+                    bottom: 0.15625em;
+                    padding: 0.875em 1.203125em 0.75em;
+
                     font-size: 0.875em;
-                    padding: 0;
+                    @include w640 {
+                        font-size: 0.8125em;
+                    }
                 }
             }
         }
-    }
-    h3 {
-        font-weight: $bold;
-        line-height: 1.2875;
-        margin: 0.2875em 0;
-        @include w640 {
-            margin: 0.2875em 0 0.734375em;
-        }
-    }
-    figure {
-        max-width: 9em;
-        svg {
-            height: 100%;
-        }
-    }
-    strong {
-        font-weight: $medium;
-        display: block;
-        margin: 0.2875em 0 0.45625em;
-    }
-    p {
-        margin-bottom: 0.765625em;
     }
 }
 

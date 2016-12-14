@@ -20924,6 +20924,15 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/icons\/circle-arrow.svg.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/clearhead-2016\/img\/icons\/circle-arrow.svg.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/img\/icons\/left-arrow.svg.php": {
 		"fileType": 8192,
 		"ignore": 0,

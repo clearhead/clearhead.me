@@ -26,20 +26,20 @@
                         <use xlink:href="#ddr-path-1"></use>
                     </mask>
                     <use id="ddr-Mask" fill="#FFFFFF" xlink:href="#ddr-path-1"></use>
-                    <polygon fill="#32C4F5" mask="url(#ddr-mask-2)" points="4.31640625 34.9942244 123.589844 0.874340025 157.589844 -0.125659975 157.589844 34.3019964"></polygon>
+                    <polygon fill="#16687E" mask="url(#ddr-mask-2)" points="4.31640625 34.9942244 123.589844 0.874340025 157.589844 -0.125659975 157.589844 34.3019964"></polygon>
                 </g>
-                <use id="ddr-Rectangle-151" stroke="#32C4F5" mask="url(#ddr-mask-4)" stroke-width="6" xlink:href="#ddr-path-3"></use>
-                <use id="ddr-Rectangle-151-Copy" stroke="#32C4F5" mask="url(#ddr-mask-6)" stroke-width="6" xlink:href="#ddr-path-5"></use>
-                <use id="ddr-Rectangle-151-Copy-2" stroke="#32C4F5" mask="url(#ddr-mask-8)" stroke-width="6" xlink:href="#ddr-path-7"></use>
-                <use id="ddr-Rectangle-151-Copy-3" stroke="#32C4F5" mask="url(#ddr-mask-10)" stroke-width="4" xlink:href="#ddr-path-9"></use>
+                <use id="ddr-Rectangle-151" stroke="#16687E" mask="url(#ddr-mask-4)" stroke-width="6" xlink:href="#ddr-path-3"></use>
+                <use id="ddr-Rectangle-151-Copy" stroke="#16687E" mask="url(#ddr-mask-6)" stroke-width="6" xlink:href="#ddr-path-5"></use>
+                <use id="ddr-Rectangle-151-Copy-2" stroke="#16687E" mask="url(#ddr-mask-8)" stroke-width="6" xlink:href="#ddr-path-7"></use>
+                <use id="ddr-Rectangle-151-Copy-3" stroke="#16687E" mask="url(#ddr-mask-10)" stroke-width="4" xlink:href="#ddr-path-9"></use>
                 <circle id="ddr-Oval-113-Copy" fill="#FFFFFF" cx="139" cy="17" r="4"></circle>
                 <circle id="ddr-Oval-113-Copy" fill="#FFFFFF" cx="150" cy="17" r="4"></circle>
                 <circle id="ddr-Oval-113-Copy" fill="#FFFFFF" cx="139" cy="28" r="4"></circle>
                 <circle id="ddr-Oval-113-Copy" fill="#FFFFFF" cx="150" cy="28" r="4"></circle>
-                <circle id="ddr-Oval-113" fill="#32C4F5" cx="8" cy="43" r="4"></circle>
-                <circle id="ddr-Oval-113" fill="#32C4F5" cx="61" cy="43" r="4"></circle>
-                <circle id="ddr-Oval-113" fill="#32C4F5" cx="95" cy="43" r="4"></circle>
-                <circle id="ddr-Oval-113" fill="#32C4F5" cx="109" cy="43" r="4"></circle>
+                <circle id="ddr-Oval-113" fill="#16687E" cx="8" cy="43" r="4"></circle>
+                <circle id="ddr-Oval-113" fill="#16687E" cx="61" cy="43" r="4"></circle>
+                <circle id="ddr-Oval-113" fill="#16687E" cx="95" cy="43" r="4"></circle>
+                <circle id="ddr-Oval-113" fill="#16687E" cx="109" cy="43" r="4"></circle>
             </g>
         </g>
     </g>
