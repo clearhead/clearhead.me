@@ -41,37 +41,92 @@ get_header(); ?>
 							</p>
 						</div>
 					</div>
+
 					<div class="overlay">
 						<div class="flyover is_hidden">
 							<div class="flex">
-								<div class="articles">
-									<h3>New at Clearhead</h3>
-									<ul>
-										<li>
-											<a href="http://clrhd.com/2gKdYHD">
-												<h4>Released: 2016 Digital Optimization Study. How do you stack up?</h4>
-												<div class="cta">
-													Read More
-													<span class="icon">
-														<?php get_template_part( 'img/icons/link-arrow.svg' ); ?>
-													</span>
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="http://clrhd.com/2hOYxdl">
-												<h4>Clearhead Named 3rd Fastest Growing Company in Central Texas</h4>
-												<div class="cta">
-													Read More
-													<span class="icon">
-														<?php get_template_part( 'img/icons/link-arrow.svg' ); ?>
-													</span>
-												</div>
-											</a>
-										</li>
-									</ul>
-								</div>
-								<figure style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/news/latest.jpg');"></figure>
+								<?php // Get the latest 2 featured posts
+								$posts = get_posts(array(
+									'meta_query' => array(
+										array(
+											'key' => 'featured_post',
+											'compare' => '==',
+											'value' => '1'
+										)
+									),
+									'numberposts' => 2
+								));
+								if( $posts ): ?>
+
+									<div class="articles">
+										<h3>New at Clearhead</h3>
+										<ul>
+											<?php foreach( $posts as $post ):
+												setup_postdata( $post )
+												?>
+
+												<li>
+													<?php // Use alertnate URL if this post has one
+													if( get_field('alternate_url') ): ?>
+														<a href="<?php the_field('alternate_url'); ?>">
+													<?php else: ?>
+														<a href="<?php the_permalink(); ?>">
+													<?php endif; ?>
+														<h4><?php the_title(); ?></h4>
+														<div class="cta">
+															Read More
+															<span class="icon">
+																<?php get_template_part( 'img/icons/link-arrow.svg' ); ?>
+															</span>
+														</div>
+													</a>
+												</li>
+
+											<?php endforeach; ?>
+										</ul>
+									</div>
+									<?php wp_reset_postdata(); ?>
+								<?php endif; ?>
+
+								<?php
+								// Get the latest 1 featured post (so we can get the picture)
+								$posts = get_posts(array(
+									'meta_query' => array(
+										array(
+											'key' => 'featured_post',
+											'compare' => '==',
+											'value' => '1'
+										)
+									),
+									'numberposts' => 1
+								));
+								if( $posts ): ?>
+									<?php foreach( $posts as $post ):
+										setup_postdata( $post )
+										?>
+										<?php // Use alternate photo if this post has one
+										if( get_field('alternate_photo') ): ?>
+											<?php
+											$image = get_field('alternate_photo');
+											if( !empty($image) ):
+												// Use the right image size
+												$size = 'news-box';
+												$thumb = $image['sizes'][ $size ];
+												?>
+
+												<figure style="background-image: url('<?php echo $thumb; ?>');"></figure>
+
+											<?php endif; ?>
+										<?php // Otherwise just use this post’s featured image
+										else: ?>
+
+											<figure style="background-image: url('<?php the_post_thumbnail_url( 'news-box' ); ?>');"></figure>
+
+										<?php endif; ?>
+									<?php endforeach; ?>
+									<?php wp_reset_postdata(); ?>
+								<?php endif; ?>
+
 							</div>
 							<a href="." class="toggle">
 								<div class="label label-hide">
@@ -89,6 +144,7 @@ get_header(); ?>
 							</a>
 						</div>
 					</div>
+
 				</section>
 
 				<div id="what">

@@ -76,6 +76,7 @@ function clearhead_register_image_sizes() {
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 800, 350, true );
 	add_image_size( 'clearhead-archive', 400, 175, true );
+	add_image_size( 'news-box', 264, 390, true );
 }
 add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
 
@@ -144,7 +145,7 @@ function clearhead_2016_scripts_and_styles() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
-	
+
 }
 add_action( 'wp_enqueue_scripts', 'clearhead_2016_scripts_and_styles' );
 
