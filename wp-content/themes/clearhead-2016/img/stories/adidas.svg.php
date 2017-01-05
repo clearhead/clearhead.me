@@ -1,6 +1,6 @@
 <svg width="718px" height="484px" viewBox="0 0 718 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Adidas-logo" transform="translate(-1.000000, -1.000000)" fill="#000000">
+        <g id="Adidas-logo" transform="translate(-1.000000, -1.000000)" fill="#343434">
             <g id="layer1" transform="translate(0.842498, 0.181370)">
                 <g id="g2402" transform="translate(0.052366, 0.514260)">
                     <g id="g3035">
