@@ -351,7 +351,7 @@ get_header(); ?>
 										</div>
 										<div>
 											<p>
-												Testing a new shipping vendor led to a +4.00% increase in order conversion for adidas.
+												Testing a new shipping vendor led to a 4.38% increase in order conversion rate for adidas.
 											</p>
 											<a href="/blog/adidas-case-study/">See How</a>
 										</div>
