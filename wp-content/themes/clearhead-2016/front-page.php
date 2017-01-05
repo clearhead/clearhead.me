@@ -344,16 +344,16 @@ get_header(); ?>
 									</li>
 									<li>
 										<div>
-											<h3>MVT’S Hidden Thrills</h3>
+											<h3>Data-driven Scores Big</h3>
 											<figure>
-												<?php get_template_part( 'img/stories/village-roadshow.svg' ); ?>
+												<?php get_template_part( 'img/stories/adidas.svg' ); ?>
 											</figure>
 										</div>
 										<div>
 											<p>
-												Village Roadshow’s complex test on benefit-based price tables lead to a 7% lift in order conversion rates.
+												Testing a new shipping vendor led to a +4.00% increase in order conversion for adidas.
 											</p>
-											<a href="/blog/multivariate-testings-hidden-thrills-our-vrtp-case-study/">See How</a>
+											<a href="/blog/adidas-case-study/">See How</a>
 										</div>
 									</li>
 									<li>
