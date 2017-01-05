@@ -1487,7 +1487,7 @@ section {
   .stories-list figure {
     height: 2.734375em;
     width: 2.734375em;
-    margin: 0.125em 0.25em 0 0.26875em;
+    margin: 0.125em 0.0625em 0 0.4375em;
     -ms-flex-negative: 0;
         flex-shrink: 0;
     display: -webkit-box;
