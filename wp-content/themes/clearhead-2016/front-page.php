@@ -344,7 +344,7 @@ get_header(); ?>
 									</li>
 									<li>
 										<div>
-											<h3>Data-driven Scores Big</h3>
+											<h3>Winning Big with Customers</h3>
 											<figure>
 												<?php get_template_part( 'img/stories/adidas.svg' ); ?>
 											</figure>
