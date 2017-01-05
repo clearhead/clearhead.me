@@ -20,7 +20,7 @@ get_header(); ?>
 
 				<section class="hero">
 					<div class="container">
-						<div class="cap-6c-6g">
+						<div class="cap-6c-5g">
 
 							<div class="logo-icon">
 								<figure>
@@ -41,6 +41,110 @@ get_header(); ?>
 							</p>
 						</div>
 					</div>
+
+					<div class="overlay">
+						<div class="flyover is_hidden">
+							<div class="flex">
+								<?php // Get the latest 2 featured posts
+								$posts = get_posts(array(
+									'meta_query' => array(
+										array(
+											'key' => 'featured_post',
+											'compare' => '==',
+											'value' => '1'
+										)
+									),
+									'numberposts' => 2
+								));
+								if( $posts ): ?>
+
+									<div class="articles">
+										<h3>New at Clearhead</h3>
+										<ul>
+											<?php foreach( $posts as $post ):
+												setup_postdata( $post )
+												?>
+
+												<li>
+													<?php // Use alertnate URL if this post has one
+													if( get_field('alternate_url') ): ?>
+														<a href="<?php the_field('alternate_url'); ?>">
+													<?php else: ?>
+														<a href="<?php the_permalink(); ?>">
+													<?php endif; ?>
+														<h4><?php the_title(); ?></h4>
+														<div class="cta">
+															Read More
+															<span class="icon">
+																<?php get_template_part( 'img/icons/link-arrow.svg' ); ?>
+															</span>
+														</div>
+													</a>
+												</li>
+
+											<?php endforeach; ?>
+										</ul>
+									</div>
+									<?php wp_reset_postdata(); ?>
+								<?php endif; ?>
+
+								<?php
+								// Get the latest 1 featured post (so we can get the picture)
+								$posts = get_posts(array(
+									'meta_query' => array(
+										array(
+											'key' => 'featured_post',
+											'compare' => '==',
+											'value' => '1'
+										)
+									),
+									'numberposts' => 1
+								));
+								if( $posts ): ?>
+									<?php foreach( $posts as $post ):
+										setup_postdata( $post )
+										?>
+										<?php // Use alternate photo if this post has one
+										if( get_field('alternate_photo') ): ?>
+											<?php
+											$image = get_field('alternate_photo');
+											if( !empty($image) ):
+												// Use the right image size
+												$size = 'news-box';
+												$thumb = $image['sizes'][ $size ];
+												?>
+
+												<figure style="background-image: url('<?php echo $thumb; ?>');"></figure>
+
+											<?php endif; ?>
+										<?php // Otherwise just use this post’s featured image
+										else: ?>
+
+											<figure style="background-image: url('<?php the_post_thumbnail_url( 'news-box' ); ?>');"></figure>
+
+										<?php endif; ?>
+									<?php endforeach; ?>
+									<?php wp_reset_postdata(); ?>
+								<?php endif; ?>
+
+							</div>
+							<a href="." class="toggle">
+								<div class="label label-hide">
+									Hide
+									<span class="icon">
+										<?php get_template_part( 'img/icons/right-arrow.svg' ); ?>
+									</span>
+								</div>
+								<div class="label label-show">
+									<span class="icon">
+										<?php get_template_part( 'img/icons/left-arrow.svg' ); ?>
+									</span>
+									New
+								</div>
+							</a>
+						</div>
+					</div>
+
 				</section>
 
 				<div id="what">
@@ -97,48 +201,77 @@ get_header(); ?>
 
 							<ul class="solutions-list">
 								<li class="grouped-links">
-									<a href="/digital-optimization-programs/">
-										<h3>Digital Optimization Programs</h3>
-										<figure>
-											<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
-										</figure>
-									</a>
 									<div>
+										<a href="/digital-optimization-programs/">
+											<h3>
+												Digital Optimization<span class="custom-break"><br><span> </span></span>Programs&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
 										<strong>Uncovering the best ideas quickly and iteratively</strong>
 										<p>
 											We enhance and augment your team to accelerate testing and personalization. We surface &amp; validate the very best hypotheses to your most important end user problems.
 										</p>
-										<a href="/digital-optimization-programs/">Learn More</a>
+									</div>
+									<div>
+										<a href="/digital-optimization-programs/">
+											<figure>
+												<?php get_template_part( 'img/solutions/digital-optimization-programs.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/digital-optimization-programs/" class="button">Learn More</a>
 									</div>
 								</li>
+
 								<li class="grouped-links">
-									<a href="/data-driven-redesigns/">
-										<h3>Data-driven Redesigns</h3>
-										<figure>
-											<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
-										</figure>
-									</a>
 									<div>
+										<a href="/data-driven-redesigns/">
+											<h3>
+												Data-driven<span class="custom-break"><br><span> </span></span>Redesigns&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
 										<strong>Disrupt with confidence</strong>
 										<p>
-											The decision has been made. For something this big, the process should be driven and validated by your customers. Ensure your redesign is destined for success.
+											The decision has been made. For something this big, the process&nbsp;should be driven and validated by your customers. Ensure your redesign is destined for success.
 										</p>
-										<a href="/data-driven-redesigns/">Learn More</a>
+									</div>
+									<div>
+										<a href="/data-driven-redesigns/">
+											<figure>
+												<?php get_template_part( 'img/solutions/data-driven-redesigns.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/data-driven-redesigns/" class="button">Learn More</a>
 									</div>
 								</li>
+
 								<li class="grouped-links">
-									<a href="optimization-accelerators">
-										<h3>Optimization Accelerators</h3>
-										<figure>
-											<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
-										</figure>
-									</a>
 									<div>
+										<a href="/optimization-accelerators/">
+											<h3>
+												Optimization<span class="custom-break"><br><span> </span></span>Accelerators&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
 										<strong>Building towards a test-and-learn culture</strong>
 										<p>
 											We help executives assess internal readiness &amp; then provide the&nbsp;blueprint to build and support a data-driven organization across their teams.
 										</p>
-										<a href="optimization-accelerators">Learn More</a>
+									</div>
+									<div>
+										<a href="/optimization-accelerators/">
+											<figure>
+												<?php get_template_part( 'img/solutions/optimization-accelerators.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/optimization-accelerators/" class="button">Learn More</a>
 									</div>
 								</li>
 							</ul>
@@ -211,16 +344,16 @@ get_header(); ?>
 									</li>
 									<li>
 										<div>
-											<h3>MVT’S Hidden Thrills</h3>
+											<h3>Winning Big with Customers</h3>
 											<figure>
-												<?php get_template_part( 'img/stories/village-roadshow.svg' ); ?>
+												<?php get_template_part( 'img/stories/adidas.svg' ); ?>
 											</figure>
 										</div>
 										<div>
 											<p>
-												Village Roadshow’s complex test on benefit-based price tables lead to a 7% lift in order conversion rates.
+												Testing a new shipping vendor led to a +4.00% increase in order conversion for adidas.
 											</p>
-											<a href="/blog/multivariate-testings-hidden-thrills-our-vrtp-case-study/">See How</a>
+											<a href="/blog/adidas-case-study/">See How</a>
 										</div>
 									</li>
 									<li>

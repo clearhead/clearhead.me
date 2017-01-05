@@ -635,9 +635,6 @@ section {
 	color: $black;
 	padding: 2.25em 0;
 	@include w640 {
-		padding: 4.390625em 0;
-	}
-	@include w1000 {
-		padding: 4.390625em 0;
+		padding: 3.265625em 0;
 	}
 }

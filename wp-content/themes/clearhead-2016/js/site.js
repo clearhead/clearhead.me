@@ -155,3 +155,40 @@ jQuery('.grouped-links a').hover(
    function(){ jQuery(this).closest('.grouped-links').addClass('phover') },
    function(){ jQuery(this).closest('.grouped-links').removeClass('phover') }
 );
+
+jQuery(document).ready(function(){
+    setTimeout(function() {
+        jQuery('.flyover').removeClass('is_hidden');
+    }, 750);
+    setTimeout(function() {
+        jQuery('.flyover').addClass('has_toggle');
+    }, 925);
+
+    jQuery('.flyover .label-hide').click( function(e) {
+        e.preventDefault();
+        jQuery('.flyover').toggleClass('is_hidden');
+        setTimeout(function() {
+            jQuery('.flyover').removeClass('has_toggle');
+        }, 200);
+        setTimeout(function() {
+            jQuery('.flyover').toggleClass('is_toggled');
+        }, 325);
+        setTimeout(function() {
+            jQuery('.flyover').addClass('has_toggle');
+        }, 375);
+    });
+
+    jQuery('.flyover .label-show').click( function(e) {
+        e.preventDefault();
+        jQuery('.flyover').toggleClass('is_hidden');
+        setTimeout(function() {
+            jQuery('.flyover').removeClass('has_toggle');
+        }, 25);
+        setTimeout(function() {
+            jQuery('.flyover').toggleClass('is_toggled');
+        }, 150);
+        setTimeout(function() {
+            jQuery('.flyover').addClass('has_toggle');
+        }, 200);
+    });
+});

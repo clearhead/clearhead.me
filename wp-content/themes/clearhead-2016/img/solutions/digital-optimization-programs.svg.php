@@ -48,7 +48,7 @@
               </g>
               <g clip-path="url(#ca61b399-e295-4463-a002-2bc82b4e6d63)">
                 <g clip-path="url(#b1822d79-e905-4060-9a3f-132c0a5da884)">
-                  <rect x="5.91" y="15.64" width="144.71" height="41.26" rx="13" ry="13" fill="none" stroke="#3cc3f2" stroke-miterlimit="10" stroke-width="6"/>
+                  <rect x="5.91" y="15.64" width="144.71" height="41.26" rx="13" ry="13" fill="none" stroke="#16687E" stroke-miterlimit="10" stroke-width="6"/>
                 </g>
               </g>
             </g>
@@ -64,7 +64,7 @@
               </g>
               <g clip-path="url(#57413df2-03f7-4e84-9df8-93179bb215a6)">
                 <g clip-path="url(#6c54ad5d-1233-4036-a6b7-b0738da3b867)">
-                  <rect x="31.99" y="0.87" width="98.82" height="32.99" fill="#3cc3f2"/>
+                  <rect x="31.99" y="0.87" width="98.82" height="32.99" fill="#16687E"/>
                 </g>
               </g>
             </g>
@@ -73,17 +73,17 @@
       </g>
       <g clip-path="url(#74792f98-fc35-46b4-9387-8933d9ccc3f0)">
         <g clip-path="url(#3bca820a-1d5f-45b9-b2e0-a81b0b551b50)">
-          <rect x="66" y="4" width="26" height="26" fill="none" stroke="#3cc3f2" stroke-miterlimit="10" stroke-width="6"/>
+          <rect x="66" y="4" width="26" height="26" fill="none" stroke="#16687E" stroke-miterlimit="10" stroke-width="6"/>
         </g>
       </g>
       <g clip-path="url(#5eb6ce3a-d3f0-45f9-8d5a-1e6be47618e8)">
         <g clip-path="url(#3bca820a-1d5f-45b9-b2e0-a81b0b551b50)">
-          <rect x="101" y="4" width="26" height="26" fill="none" stroke="#3cc3f2" stroke-miterlimit="10" stroke-width="6"/>
+          <rect x="101" y="4" width="26" height="26" fill="none" stroke="#16687E" stroke-miterlimit="10" stroke-width="6"/>
         </g>
       </g>
       <g clip-path="url(#8124af2a-e57e-4dc4-bafb-55ea6f5b3226)">
         <g clip-path="url(#3bca820a-1d5f-45b9-b2e0-a81b0b551b50)">
-          <rect x="32" y="4" width="26" height="26" fill="none" stroke="#3cc3f2" stroke-miterlimit="10" stroke-width="6"/>
+          <rect x="32" y="4" width="26" height="26" fill="none" stroke="#16687E" stroke-miterlimit="10" stroke-width="6"/>
         </g>
       </g>
       <g clip-path="url(#c1b528e5-eb64-40ed-b1bf-f09a9ba23a98)">
@@ -93,12 +93,12 @@
       </g>
       <g clip-path="url(#c1b528e5-eb64-40ed-b1bf-f09a9ba23a98)">
         <g clip-path="url(#3bca820a-1d5f-45b9-b2e0-a81b0b551b50)">
-          <rect x="32" y="43" width="95" height="26" fill="none" stroke="#3cc3f2" stroke-miterlimit="10" stroke-width="6"/>
+          <rect x="32" y="43" width="95" height="26" fill="none" stroke="#16687E" stroke-miterlimit="10" stroke-width="6"/>
         </g>
       </g>
       <g clip-path="url(#950b48d9-8521-4540-b771-806e3131c72a)">
         <g clip-path="url(#3bca820a-1d5f-45b9-b2e0-a81b0b551b50)">
-          <rect x="15" y="46" width="19" height="19" fill="#3cc3f2"/>
+          <rect x="15" y="46" width="19" height="19" fill="#16687E"/>
         </g>
       </g>
     </g>
