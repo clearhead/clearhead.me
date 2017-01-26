@@ -7,7 +7,7 @@
 		"uuidString": "A92E27E7-81CB-446F-91FF-FC15E07402AF"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
@@ -19,6 +19,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.htaccess",
 		"oF": 0
 		},
 	"\/apple-touch-icon-precomposed.png": {
@@ -20320,6 +20326,12 @@
 		"oAP": "\/wp-content\/themes\/clearhead-2016\/template-parts\/content.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/templates\/jobs.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/templates\/jobs.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead\/404.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -29954,6 +29966,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -30493,6 +30509,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,

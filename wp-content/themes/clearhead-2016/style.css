@@ -1982,22 +1982,22 @@ body.single .blog-content {
   body.single .blog-content .entry-header {
     padding-top: 2.78125em; }
 
-body.page-template-default .legacy-styles.blog-content-page {
+body.page-template-default .legacy-styles.blog-content-page, body.page-template-jobs .legacy-styles.blog-content-page {
   padding-top: 0; }
-  body.page-template-default .legacy-styles.blog-content-page .entry-header {
+  body.page-template-default .legacy-styles.blog-content-page .entry-header, body.page-template-jobs .legacy-styles.blog-content-page .entry-header {
     padding: calc(2.78125em + 2.6875rem) 0 2.6875rem; }
-    body.page-template-default .legacy-styles.blog-content-page .entry-header .entry-title {
+    body.page-template-default .legacy-styles.blog-content-page .entry-header .entry-title, body.page-template-jobs .legacy-styles.blog-content-page .entry-header .entry-title {
       margin: 0.65625em 0; }
 
-body.page-template-default .entry-content.container {
+body.page-template-default .entry-content.container, body.page-template-jobs .entry-content.container {
   margin-top: 4em; }
-  body.page-template-default .entry-content.container h1, body.page-template-default .entry-content.container h2, body.page-template-default .entry-content.container h3, body.page-template-default .entry-content.container h4, body.page-template-default .entry-content.container h5, body.page-template-default .entry-content.container h6 {
+  body.page-template-default .entry-content.container h1, body.page-template-default .entry-content.container h2, body.page-template-default .entry-content.container h3, body.page-template-default .entry-content.container h4, body.page-template-default .entry-content.container h5, body.page-template-default .entry-content.container h6, body.page-template-jobs .entry-content.container h1, body.page-template-jobs .entry-content.container h2, body.page-template-jobs .entry-content.container h3, body.page-template-jobs .entry-content.container h4, body.page-template-jobs .entry-content.container h5, body.page-template-jobs .entry-content.container h6 {
     font-family: "ff-bau-web-pro", -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-  body.page-template-default .entry-content.container h4 {
+  body.page-template-default .entry-content.container h4, body.page-template-jobs .entry-content.container h4 {
     text-transform: none;
     font-size: 0.9375rem;
     font-weight: 700; }
-  body.page-template-default .entry-content.container h2 {
+  body.page-template-default .entry-content.container h2, body.page-template-jobs .entry-content.container h2 {
     font-size: 1.5rem;
     line-height: 1.25;
     margin-top: 0;
