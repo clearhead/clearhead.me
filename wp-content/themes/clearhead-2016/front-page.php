@@ -523,7 +523,7 @@ get_header(); ?>
 
 							<hr class="extra-space">
 
-							<div class="cap-6c-5g">
+							<div class="cap-7c-6g">
 								<h2>Experts on Your Technology, Without Bias</h2>
 
 								<div class="logo-list logo-list-solutions">
@@ -553,6 +553,11 @@ get_header(); ?>
 												<?php get_template_part( 'img/technologies/user-testing.svg' ); ?>
 											</figure>
 										</li>
+										<li>
+											<figure style="max-width: 8.875em;">
+												<?php get_template_part( 'img/technologies/tealium.svg' ); ?>
+											</figure>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -560,7 +565,6 @@ get_header(); ?>
 
 							<div class="platforms-list">
 								<ul class="cap-8c-7g">
-									<li>Tealium</li>
 									<li>Adobe Target</li>
 									<li>Google Analytics</li>
 									<li>SiteCatalyst</li>
