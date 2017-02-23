@@ -17,15 +17,18 @@
 		<div class="main-footer">
 			<div class="container">
 				<div class="contact">
-
-					<?php $the_query = new WP_Query( 'page_id=22' );
-						while ( $the_query->have_posts() ) :
-							$the_query->the_post();
-							the_content();
-							endwhile;
-						wp_reset_postdata();
-					?>
-
+					<h3 class="mt0 mb0">need to talk?</h3>
+					<!--[if lte IE 8]>
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+					<![endif]-->
+					<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+					<script>
+					  hbspt.forms.create({
+					    css: '',
+					    portalId: '2142966',
+					    formId: 'd0a43d12-9761-4388-a142-1c3cd3171fed'
+					  });
+					</script>
 					<div class="contact-info">
 						<div>
 							<h3>Our Location</h3>

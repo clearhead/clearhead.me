@@ -21,12 +21,6 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
-	"\/.htaccess": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/.htaccess",
-		"oF": 0
-		},
 	"\/apple-touch-icon-precomposed.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -23979,198 +23973,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-1000x662.jpg": {
-		"ft": 16384,
-		"iS": 50149,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-1000x662.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-150x150.jpg": {
-		"ft": 16384,
-		"iS": 3694,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-150x150.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-264x390.jpg": {
-		"ft": 16384,
-		"iS": 11999,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-264x390.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-400x175.jpg": {
-		"ft": 16384,
-		"iS": 8171,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-400x175.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-453x300.jpg": {
-		"ft": 16384,
-		"iS": 12250,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-453x300.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-768x509.jpg": {
-		"ft": 16384,
-		"iS": 30393,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-768x509.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-800x350.jpg": {
-		"ft": 16384,
-		"iS": 26478,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij-800x350.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij.jpg": {
-		"ft": 16384,
-		"iS": 4211640,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/04\/vekqfhaa3e4-jasper-van-der-meij.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-150x150.png": {
-		"ft": 32768,
-		"iS": 35183,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-150x150.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-254x300.png": {
-		"ft": 32768,
-		"iS": 106346,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-254x300.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-264x390.png": {
-		"ft": 32768,
-		"iS": 140675,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-264x390.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-400x175.png": {
-		"ft": 32768,
-		"iS": 129139,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-400x175.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-768x907.png": {
-		"ft": 32768,
-		"iS": 865607,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-768x907.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-800x350.png": {
-		"ft": 32768,
-		"iS": 466218,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-800x350.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-846x1000.png": {
-		"ft": 32768,
-		"iS": 1030140,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM-846x1000.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM.png": {
-		"ft": 32768,
-		"iS": 2071430,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/Screen-Shot-2016-12-19-at-7.21.45-AM.png",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-150x150.jpg": {
-		"ft": 16384,
-		"iS": 7826,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-150x150.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-230x300.jpg": {
-		"ft": 16384,
-		"iS": 20095,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-230x300.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-264x390.jpg": {
-		"ft": 16384,
-		"iS": 28740,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-264x390.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-400x175.jpg": {
-		"ft": 16384,
-		"iS": 20100,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-400x175.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-766x1000.jpg": {
-		"ft": 16384,
-		"iS": 173382,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-766x1000.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-768x1003.jpg": {
-		"ft": 16384,
-		"iS": 174296,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-768x1003.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall-800x350.jpg": {
-		"ft": 16384,
-		"iS": 68560,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall-800x350.jpg",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/wp-content\/uploads\/2016\/05\/waterfall.jpg": {
-		"ft": 16384,
-		"iS": 4314980,
-		"oA": 0,
-		"oAP": "\/wp-content\/uploads\/2016\/05\/waterfall.jpg",
-		"oF": 0,
-		"opt": 0
-		},
 	"\/wp-cron.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -29322,7 +29124,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 505348029,
-	"displayValue": "clearhead",
+	"displayValue": "clearhead.me",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/apple-touch-icon.png"
 	},
@@ -30658,7 +30460,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/local.clearhead\/",
+	"externalServerAddress": "http:\/\/local.clearhead",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

@@ -1165,17 +1165,24 @@ h3.widget-title {
 
 // Contact Form
 // ------------
-.contact-form {
+.contact-form, .hbspt-form {
 	margin-top: 0.84375em;
+  min-height: 18.575em;
 	label {
 		color: #9CB1B6; // ‘dark gray’ used only here
-		span {
-			color: #5D767C; // ‘extra dark gray’ used only here
-			&:before {
-				content: " ";
-			}
-		}
+    .hs-form-required {
+      display: none;
+    }
+    .required {
+      color: #5D767C;
+      &:before {
+  				content: " ";
+  			}
+    }
 	}
+  textarea {
+    height: 6em;
+  }
 	input:not([type="submit"]), textarea {
 		background-color: #B9BDC4;
 		border: none;
@@ -1190,7 +1197,7 @@ h3.widget-title {
 	}
 
   //Styles for submit button in footer..feel free to fix up nicely
-  .pushbutton-wide, .contact-submit input.pushbutton-wide {
+  .pushbutton-wide, .contact-submit input.pushbutton-wide, .actions input {
   	@extend .button;
   	background-color: #FDB216;
   	color: $black;
@@ -1201,10 +1208,10 @@ h3.widget-title {
   }
 
   input.error, textarea.error {
-		border:1px solid red!important;
+		border:2px solid #de9702!important;
 	}
 	.error {
-		color: red!important;
+		color: #de9702!important;
 	}
 
 	/*When form is submitted, button is disabled so users won't press it while
@@ -1216,4 +1223,17 @@ h3.widget-title {
     margin: 0 0 0 0;
     background-image: none;
 	}
+
+  .hs-error-msgs {
+    margin-top: -.25em;
+    margin-bottom: 1.25em;
+    label {
+    color: #de9702!important;
+    font-size: 0.75em;
+    }
+
+  }
+}
+.main-footer .contact .mt0 {
+	margin-bottom: 1.5em;
 }
