@@ -665,7 +665,7 @@ get_header(); ?>
 								<h3>Curious about how Clearhead&nbsp;started?</h3>
 								<ul>
 									<li>
-										<a href="/blog/meet-matty/">
+										<a href="/meet-matty/">
 											<figure>
 												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/matty.jpg');"></div>
 												<figcaption>
@@ -678,7 +678,7 @@ get_header(); ?>
 										</a>
 									</li>
 									<li>
-										<a href="/blog/meet-ryan/">
+										<a href="/meet-ryan/">
 											<figure>
 												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/ryan.jpg');"></div>
 												<figcaption>
@@ -691,7 +691,7 @@ get_header(); ?>
 										</a>
 									</li>
 									<li>
-										<a href="/blog/meet-sam/">
+										<a href="/meet-sam/">
 											<figure>
 												<div class="photo" style="background-image: url('<?php bloginfo('stylesheet_directory'); ?>/img/founders/sam.jpg');"></div>
 												<figcaption>

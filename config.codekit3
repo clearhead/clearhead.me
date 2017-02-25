@@ -21,6 +21,12 @@
 		"oAP": "\/.gitignore",
 		"oF": 0
 		},
+	"\/.htaccess": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.htaccess",
+		"oF": 0
+		},
 	"\/apple-touch-icon-precomposed.png": {
 		"ft": 32768,
 		"iS": 0,
@@ -20326,6 +20332,12 @@
 		"oAP": "\/wp-content\/themes\/clearhead-2016\/template-parts\/content.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/templates\/bio-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/templates\/bio-page.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/templates\/jobs.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -23972,6 +23984,198 @@
 		"oAP": "\/wp-content\/themes\/twentyfifteen\/style-min.css",
 		"oF": 0,
 		"oS": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-150x150.jpg": {
+		"ft": 16384,
+		"iS": 8387,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-150x150.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-150x150.png": {
+		"ft": 32768,
+		"iS": 34708,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-150x150.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-264x350.jpg": {
+		"ft": 16384,
+		"iS": 23584,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-264x350.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-264x350.png": {
+		"ft": 32768,
+		"iS": 107804,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-264x350.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-400x175.jpg": {
+		"ft": 16384,
+		"iS": 21337,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-400x175.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-400x175.png": {
+		"ft": 32768,
+		"iS": 94850,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-400x175.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-600x263.jpg": {
+		"ft": 16384,
+		"iS": 38053,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-600x263.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-600x263.png": {
+		"ft": 32768,
+		"iS": 176960,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-600x263.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-768x336.jpg": {
+		"ft": 16384,
+		"iS": 53126,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-768x336.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-768x336.png": {
+		"ft": 32768,
+		"iS": 257673,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350-768x336.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350.jpg": {
+		"ft": 16384,
+		"iS": 94714,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/deckercollage-800x350.png": {
+		"ft": 32768,
+		"iS": 209969,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/deckercollage-800x350.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/garner-3-150x150.jpg": {
+		"ft": 16384,
+		"iS": 7069,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/garner-3-150x150.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/garner-3-264x350.jpg": {
+		"ft": 16384,
+		"iS": 22179,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/garner-3-264x350.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/garner-3-400x175.jpg": {
+		"ft": 16384,
+		"iS": 11470,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/garner-3-400x175.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/garner-3-600x263.jpg": {
+		"ft": 16384,
+		"iS": 21280,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/garner-3-600x263.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/garner-3-768x336.jpg": {
+		"ft": 16384,
+		"iS": 31070,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/garner-3-768x336.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/garner-3.jpg": {
+		"ft": 16384,
+		"iS": 113701,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/garner-3.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-150x150.jpg": {
+		"ft": 16384,
+		"iS": 5545,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-150x150.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-264x350.jpg": {
+		"ft": 16384,
+		"iS": 14824,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-264x350.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-400x175.jpg": {
+		"ft": 16384,
+		"iS": 15537,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-400x175.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-600x263.jpg": {
+		"ft": 16384,
+		"iS": 28589,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-600x263.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-768x336.jpg": {
+		"ft": 16384,
+		"iS": 40690,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350-768x336.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350.jpg": {
+		"ft": 16384,
+		"iS": 73281,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/02\/Matty-1-e1470935000379-800x350.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/wp-cron.php": {
 		"ft": 8192,
