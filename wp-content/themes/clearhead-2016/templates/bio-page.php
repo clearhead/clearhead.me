@@ -9,7 +9,7 @@ get_header(); ?>
 		<section class="legacy-styles bio-page">
 			<div class="main-content">
 
-				<article id="post-<?php the_ID(); ?> bio-page" <?php post_class(); ?>>
+				<article id="post-<?php the_ID(); ?> bio-page" class="<?php echo strtolower(str_replace(' ', '-', the_title('', '', false))); ?>">
 					<!-- Entry Header -->
 					<div class="entry-header">
 						<div class="container">
