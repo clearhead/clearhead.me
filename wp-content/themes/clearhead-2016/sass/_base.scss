@@ -325,10 +325,15 @@ section.bio-page {
 		}
 		ul {
 			margin-left: 0;
-			justify-content: flex-start;
-			li {
-				margin-left: 1em;
+			justify-content: center;
+			@include w480 {
+				justify-content: flex-start;
+				li {
+					margin-left: 1em;
+				}
 			}
+
+
 		}
 	}
 	article.post-5200 {
@@ -336,9 +341,12 @@ section.bio-page {
 			&:first-of-type {
 				display: none;
 			}
-			&:nth-of-type(2) {
-				margin-left: 0;
+			@include w480 {
+				&:nth-of-type(2) {
+					margin-left: 0;
+				}
 			}
+
 		}
 	}
 	article.post-5204 {
@@ -346,9 +354,11 @@ section.bio-page {
 			&:nth-of-type(2) {
 				display: none;
 			}
+			@include w480 {
 			&:nth-of-type(1) {
 				margin-left: 0;
 			}
+		}
 		}
 	}
 	article.post-5207 {
@@ -356,9 +366,11 @@ section.bio-page {
 			&:nth-of-type(3) {
 				display: none;
 			}
+			@include w480 {
 			&:nth-of-type(1) {
 				margin-left: 0;
 			}
+		}
 		}
 	}
 }
