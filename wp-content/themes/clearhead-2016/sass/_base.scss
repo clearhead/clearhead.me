@@ -42,6 +42,7 @@ a {
 	text-transform: lowercase;
 	font-weight: $medium;
 	font-size: 0.875em;
+	text-align: center;
 	transition:
 		background-color 0.1875s ease,
 		color 0.1875s ease;
@@ -122,6 +123,7 @@ hr {
 	border: none;
 	border-bottom: 1px solid $gray;
 	margin: 2.25em 0 1.875em;
+	width: 100%;
 	&.extra-space {
 		margin: 3.75em 0;
 		@include w640  { margin: 4em 0; }

@@ -16,6 +16,19 @@ jQuery('a.smooth-scroll[href^="#"]').click(function(event) {
     var target = jQuery(id).offset().top - offset;
     jQuery('html, body').animate({scrollTop:target}, 700);
     event.preventDefault();
+
+    jQuery('footer#contact .hs_full_name input').focus();
+});
+
+jQuery('a.contact-focus[href^="#"]').click(function(event) {
+    var id = jQuery(this).attr("href");
+    var offset = 49;
+    var target = jQuery(id).offset().top - offset;
+    jQuery('html, body').animate({scrollTop:target}, 700);
+    event.preventDefault();
+
+    jQuery('footer#contact .hs_full_name input').focus();
+
 });
 
 //Remove the sizes attr that is causing a bug in edge

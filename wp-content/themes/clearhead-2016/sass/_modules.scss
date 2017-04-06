@@ -963,8 +963,22 @@ body.ie, body.firefox {
 .contact-cta {
     display: flex;
     align-items: center;
+    hr {
+        margin: 0 0 4.5em;
+    }
     p {
         margin: 0 1.625em 0 0;
+    }
+    &-product {
+        flex-direction: column;
+        align-items: center;
+        margin: -1.5em 0 1.75em;
+        h5 {
+            margin: 0 0 1.5em 0;
+        }
+        .button {
+            width: 9em;
+        }
     }
 }
 
