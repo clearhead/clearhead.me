@@ -2160,51 +2160,57 @@ h3.widget-title {
       .background-graphic figure {
         right: -7.5%; } }
 
-.steps-feature li:nth-child(odd) {
-  background-color: #32C4F5;
-  color: #FFFFFF; }
-  .steps-feature li:nth-child(odd) h2 {
+.steps-feature {
+  padding: 0; }
+  .steps-feature ul li:nth-child(odd) {
+    background-color: #32C4F5;
     color: #FFFFFF; }
-
-.steps-feature li .row {
-  position: relative; }
-  .steps-feature li .row .step {
-    padding: 4.75em 0; }
-    @media screen and (min-width: 62.5em) {
-      .steps-feature li .row .step {
-        position: relative;
-        left: calc(-3rem - 1.5rem); } }
-    @media screen and (min-width: 40em) {
-      .steps-feature li .row .step > div {
-        max-width: 22.5em; } }
-    @media screen and (min-width: 62.5em) {
-      .steps-feature li .row .step > div {
-        max-width: 24em; } }
-    .steps-feature li .row .step h2 {
-      font-weight: 400;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      .steps-feature li .row .step h2 span {
-        display: inline-block;
-        width: 3rem;
-        text-align: right; }
-    .steps-feature li .row .step p {
-      padding-left: calc(3rem + 1.5rem); }
-  .steps-feature li .row figure {
-    background-color: #E0E2E2;
-    background-size: cover;
-    background-position: center 25%;
-    background-repeat: no-repeat;
-    height: 20em; }
-    @media screen and (min-width: 40em) {
-      .steps-feature li .row figure {
-        background-position: center;
-        width: 33.3333333333%;
-        position: absolute;
-        top: 0;
-        right: 0;
-        height: 100%; } }
+    .steps-feature ul li:nth-child(odd) h2 {
+      color: #FFFFFF; }
+  .steps-feature ul li .row {
+    position: relative; }
+    .steps-feature ul li .row .step {
+      padding: 4.75em 0; }
+      @media screen and (min-width: 62.5em) {
+        .steps-feature ul li .row .step {
+          position: relative;
+          left: calc(-3rem - 1.5rem); } }
+      @media screen and (min-width: 40em) {
+        .steps-feature ul li .row .step > div {
+          max-width: 22.5em; } }
+      @media screen and (min-width: 62.5em) {
+        .steps-feature ul li .row .step > div {
+          max-width: 24em; } }
+      .steps-feature ul li .row .step h2 {
+        font-weight: 400;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .steps-feature ul li .row .step h2 span {
+          display: inline-block;
+          width: 3rem;
+          text-align: right;
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+        .steps-feature ul li .row .step h2 em {
+          -ms-flex-negative: 0;
+              flex-shrink: 0; }
+      .steps-feature ul li .row .step p {
+        padding-left: calc(3rem + 1.5rem); }
+    .steps-feature ul li .row figure {
+      background-color: #E0E2E2;
+      background-size: cover;
+      background-position: center 25%;
+      background-repeat: no-repeat;
+      height: 20em; }
+      @media screen and (min-width: 40em) {
+        .steps-feature ul li .row figure {
+          background-position: center;
+          width: 33.3333333333%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%; } }
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:

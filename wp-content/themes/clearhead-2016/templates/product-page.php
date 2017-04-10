@@ -83,8 +83,8 @@ get_header(); ?>
 				</div>
 			</section>
 
-			<section>
-				<ul class="steps-feature">
+			<section class="steps-feature">
+				<ul>
 					<li>
 						<div class="row">
 							<div class="container">

@@ -1403,7 +1403,8 @@ h3.widget-title {
 // Steps Feature
 // -------------
 .steps-feature {
-    li {
+    padding: 0;
+    ul li {
         &:nth-child(odd) {
             background-color: $blue;
             color: $white;
@@ -1434,6 +1435,10 @@ h3.widget-title {
                         display: inline-block;
                         width: 3rem;
                         text-align: right;
+                        flex-shrink: 0;
+                    }
+                    em {
+                        flex-shrink: 0;
                     }
                 }
                 p {

@@ -223,7 +223,7 @@ get_header(); ?>
 												<?php get_template_part( 'img/solutions/problem-solution-mapping.svg' ); ?>
 											</figure>
 										</a>
-										<a href="/digital-optimization-programs/" class="button">Learn More</a>
+										<a href="/problem-solution-mapping/" class="button">Learn More</a>
 									</div>
 								</li>
 							</ul>
