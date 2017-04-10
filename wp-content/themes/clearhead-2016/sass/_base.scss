@@ -60,6 +60,12 @@ a {
 	&-reduced {
 		padding: 0.65625em 1.09375em 0.5em;
 	}
+	&-large {
+		font-size: 1.125em;
+		padding: 0.9375em 2em 0.75em;
+		text-transform: initial;
+		font-weight: $bold;
+	}
 }
 
 strong, b {
@@ -91,6 +97,13 @@ h2 {
 	@include w480 {
 		font-size: 2em;
 	}
+	&.lead {
+		color: $blue;
+		&:not(:first-of-type) {
+			margin-top: 1em;
+			padding-right: 2em;
+		}
+	}
 }
 h3 {
 	font-size: 1.2222222222em;
@@ -106,6 +119,13 @@ h4 {
 	@include w480 {
 		font-size: 1.4125em;
 	}
+	&.lead {
+		text-transform: initial;
+		line-height: 1.5;
+		color: $blue;
+		font-weight: $bold;
+		font-size: (24/18)*1em;
+	}
 }
 h5 {
 	font-size: 1.125em;
@@ -117,6 +137,9 @@ p {
 	margin-bottom: 1.5em;
 	&:last-child {
 		margin-bottom: 0;
+	}
+	&.lead {
+		font-size: (24/18)*1em;
 	}
 }
 hr {
@@ -159,6 +182,11 @@ blockquote {
 		margin-top: -0.03125em;
 	}
 }
+
+.text-transform-disabled {
+	text-transform: initial;
+}
+
 
 article ul {
 	margin-bottom: 1.5em;

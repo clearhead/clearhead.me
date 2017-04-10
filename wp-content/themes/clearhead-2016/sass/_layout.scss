@@ -23,6 +23,14 @@
 	width: 100%;
 	max-width: ($column * 3) + ($gutter * 2);
 }
+.cap-4c-3g {
+	width: 100%;
+	max-width: ($column * 4) + ($gutter * 3);
+}
+.cap-5c-4g {
+	width: 100%;
+	max-width: ($column * 5) + ($gutter * 4);
+}
 .cap-6c-5g {
 	width: 100%;
 	max-width: ($column * 6) + ($gutter * 5);
@@ -77,6 +85,9 @@ header, section, footer {
   transition: $contents;
 }
 
+main {
+	overflow: hidden;
+}
 
 header {
 	width: 100%;
@@ -636,5 +647,11 @@ section {
 	padding: 2.25em 0;
 	@include w640 {
 		padding: 3.265625em 0;
+	}
+	&.spacing-added {
+		padding: 3.5em 0;
+		@include w640 {
+			padding: 7em 0;
+		}
 	}
 }

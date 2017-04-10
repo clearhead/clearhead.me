@@ -182,20 +182,58 @@ get_header(); ?>
 					</section>
 					*/ ?>
 
-					<!-- <section class="photo-callout photo-callout-blue">
+					<?php /*
+					<section class="photo-callout photo-callout-blue">
 						<div class="container">
 							<div class="cap-7c-6g">
 								<h3>Solving <em>big</em> problems through testing&nbsp;and&nbsp;personalization</h3>
 							</div>
 						</div>
-					</section> -->
+					</section>
+					*/ ?>
 					<section>
 						<div class="container">
 
+							<h2>The physics of <span class="text-transform-disabled">ROI</span></h2>
 							<div class="cap-6c-5g">
-								<h2>Solutions Tested<br>on Real Problems</h2>
 								<p>
-									Running the tests isn’t the problem. Reporting isn’t&nbsp;the problem. The problem is moving people and behavior, day in and out, towards more validated and confident solutions. That’s what we’re solving for.
+									All of Clearhead’s services are built on a unifying framework for continuous optimization. We call this framework Problem Solution Mapping (PSM).
+								</p>
+							</div>
+
+							<ul class="solutions-list">
+								<li class="grouped-links">
+									<div>
+										<a href="/problem-solution-mapping/">
+											<h3>
+												Problem Solution<span class="custom-break"><br><span> </span></span>Mapping&nbsp;<?php /*
+												*/ ?><span class="icon">
+													<?php get_template_part( 'img/icons/circle-arrow.svg' ); ?>
+												</span>
+											</h3>
+										</a>
+										<strong>Finding the predictably positive outcomes</strong>
+										<p>
+											Together, we solidify goals, discover the largest problems to solve, and validate the big impact ideas. Only then do you get confident results.
+										</p>
+									</div>
+									<div>
+										<a href="/problem-solution-mapping/">
+											<figure>
+												<?php get_template_part( 'img/solutions/problem-solution-mapping.svg' ); ?>
+											</figure>
+										</a>
+										<a href="/digital-optimization-programs/" class="button">Learn More</a>
+									</div>
+								</li>
+							</ul>
+
+							<hr class="extra-space">
+
+							<h2>Solutions based on real evidence</h2>
+							<div class="cap-6c-5g">
+								<p>
+									All of our services are rooted in PSM and based on data – be it continuous experimentation, personalization, data-driven design or transformation acceleration.
 								</p>
 							</div>
 
@@ -278,7 +316,7 @@ get_header(); ?>
 
 							<hr class="extra-space">
 
-							<div class="expositive-remarks">
+							<div class="quote-blocks">
 								<ul>
 									<li>
 										<blockquote>

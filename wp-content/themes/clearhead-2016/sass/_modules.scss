@@ -479,7 +479,7 @@ body.ie .hero h1 figure svg {
     }
     &-purple {
         background-color: darken($light-purple, 7.5%);
-        // background-image: url('img/callout-photos/who-we-are.jpg');
+        // background-image: url('img/z-photos/who-we-are.jpg');
         h3 {
             background-color: $light-purple;
             color: $dark-purple;
@@ -624,9 +624,9 @@ body.ie .hero h1 figure svg {
     }
 }
 
-// Expositive Remarks
+// Quote Blocks
 // ------------------
-.expositive-remarks {
+.quote-blocks {
     margin-bottom: 0.75em;
     @include w640 {
         margin-bottom: -0.36875em;
@@ -655,6 +655,10 @@ body.ie .hero h1 figure svg {
                     }
                 }
             }
+        }
+        &.unpaired-list {
+            align-items: flex-end;
+            margin-bottom: 2em;
         }
     }
     li {
@@ -698,7 +702,7 @@ body.ie .hero h1 figure svg {
                 background-position: left -2.5px bottom 2px;
             }
         }
-        a {
+        a, .source {
             display: block;
             font-size: 0.875em;
             margin-top: 0.390625em;
@@ -710,6 +714,9 @@ body.ie .hero h1 figure svg {
             @include w640 {
                 padding: 0.4125em 0;
             }
+        }
+        .source {
+            color: $blue;
         }
     }
 }
@@ -1250,4 +1257,205 @@ h3.widget-title {
 }
 .main-footer .contact .mt0 {
 	margin-bottom: 1.5em;
+}
+
+// Product Hero
+// ------------
+.product-hero {
+    margin-top: (50/18)*1em;
+    background-image: url('img/products/psm/product-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 10;
+    font-size: 90%;
+    @include w640 {
+        font-size: initial;
+    }
+    .filter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(darken(saturate($dark-blue, 100%), 12.5%), 0.5);
+        z-index: 20;
+        background-image: linear-gradient(transparent, rgba(black, 0.375));
+    }
+    .container {
+        position: relative;
+        z-index: 30;
+        padding: 3.5em 0 2.75em;
+        @include w640 {
+            padding-top: 22.5vh;
+            padding-bottom: 12.5vh;
+        }
+    }
+    h1 {
+        color: $blue;
+        font-size: (40/18)*1em;
+        text-transform: initial;
+    }
+    h2 {
+        color: $white;
+        font-size: (36/18)*1em;
+        text-transform: initial;
+        max-width: (440/18)*1rem;
+        margin-bottom: 0.4375em;
+    }
+}
+
+// Feature List
+// ------------
+.feature-list {
+    font-size: (24/18)*1em;
+    li {
+        margin-bottom: 0.1875em;
+        display: block;
+        padding-left: 1.5em;
+        position: relative;
+        &:before {
+            content: "";
+            width: 1.5em;
+            height: 0.6875em;
+            display: inline-block;
+            background-image: url('img/icons/check.svg');
+            position: absolute;
+            top: 0.28125em;
+            left: 0.03125em;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    &-blue {
+        font-size: (20/18)*1em;
+        li {
+            margin-bottom: 0.625em;
+            font-weight: $bold;
+            color: $dark-blue;
+            text-transform: lowercase;
+            &:before {
+                opacity: 0.375;
+                font-size: 1.1875em;
+                top: 0.15625em;
+            }
+        }
+    }
+}
+
+// Product Chart
+// -------------
+.product-chart {
+    margin: 4em 0;
+}
+
+// Feature Banner
+// --------------
+.feature-banner {
+    background-color: $blue;
+    @include w640 {
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            > * {
+                width: calc(50% - 2em);
+            }
+        }
+    }
+    h4 {
+        color: $white;
+        padding-right: 1em;
+    }
+}
+
+// Background Graphic
+// ------------------
+.background-graphic {
+    position: relative;
+    @media screen and (max-width: 754px) {
+        .cap-4c-3g {
+            max-width: 28em;
+        }
+    }
+    figure {
+        display: none;
+
+        @media screen and (min-width: 755px) {
+            display: block;
+        }
+        pointer-events: none;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: -0.25em;
+        right: -12.5%;
+        @include w1000 {
+            right: -7.5%;
+        }
+
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+    }
+}
+
+// Steps Feature
+// -------------
+.steps-feature {
+    li {
+        &:nth-child(odd) {
+            background-color: $blue;
+            color: $white;
+            h2 {
+                color: $white;
+            }
+        }
+        .row {
+            position: relative;
+            .step {
+                padding: 4.75em 0;
+                @include w1000 {
+                    position: relative;
+                    left: calc(-3rem - 1.5rem);
+                }
+                > div {
+                    @include w640 {
+                        max-width: 22.5em;
+                    }
+                    @include w1000 {
+                        max-width: 24em;
+                    }
+                }
+                h2 {
+                    font-weight: $regular;
+                    display: flex;
+                    span {
+                        display: inline-block;
+                        width: 3rem;
+                        text-align: right;
+                    }
+                }
+                p {
+                    padding-left: calc(3rem + 1.5rem);
+                }
+            }
+            figure {
+                background-color: $gray;
+                background-size: cover;
+                background-position: center 25%;
+                background-repeat: no-repeat;
+                height: 20em;
+
+                @include w640 {
+                    background-position: center;
+                    width: (100/3)*1%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    height: 100%;
+                }
+            }
+        }
+    }
 }
