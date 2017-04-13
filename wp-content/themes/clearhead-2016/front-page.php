@@ -228,7 +228,7 @@ get_header(); ?>
 								</li>
 							</ul>
 
-							<h2>Solutions based on real evidence</h2>
+							<h2>Solutions designed based on evidence</h2>
 							<div class="cap-6c-5g">
 								<p>
 									All of our services are rooted in PSM and based on data – be it continuous experimentation, personalization, data-driven design or transformation acceleration.
