@@ -212,7 +212,7 @@ get_header(); ?>
 												</span>
 											</h3>
 										</a>
-										<strong>Finding the predictably positive outcomes</strong>
+										<strong>Find predictably positive outcomes</strong>
 										<p>
 											Together, we solidify goals, discover the largest problems to solve, and validate the big impact ideas. Only then do you get confident results.
 										</p>
@@ -227,8 +227,6 @@ get_header(); ?>
 									</div>
 								</li>
 							</ul>
-
-							<hr class="extra-space">
 
 							<h2>Solutions based on real evidence</h2>
 							<div class="cap-6c-5g">

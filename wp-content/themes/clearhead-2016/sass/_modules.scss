@@ -491,6 +491,9 @@ body.ie .hero h1 figure svg {
 // --------------
 .solutions-list {
     margin-top: 1.875em;
+    &:not(:last-of-type) {
+        margin-bottom: 4em;
+    }
     @include w640 {
         margin-top: 2.28125em;
     }

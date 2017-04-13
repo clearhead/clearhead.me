@@ -117,7 +117,7 @@ get_header(); ?>
 								<div class="step">
 									<div>
 										<h2><span>03</span><em>&nbsp;|&nbsp;</em><strong>analyze &amp; prioritize</strong></h2>
-										<p>This step is about using big data, analytics data, surveys, usability tests, and more to delineate, validate and prioritize each problem. We then organize a final list of problems the evidence indicates are most worth solving.</p>
+										<p>This step is about using analytics, stats, surveys, usability reserach, and more to delineate, validate and prioritize each problem. We then organize a final list of problems the evidence indicates are most worth solving.</p>
 										<p>The magic happens when everyone agrees on the priority of problems, using data. These articulated problems become the tree trunk from which all high impact experiments, ideas and solutions grow.</p>
 									</div>
 								</div>
@@ -164,11 +164,9 @@ get_header(); ?>
 							Your map – an evidence-based, fully understood and agreed upon set of goals, problems and hypotheses – becomes the roadmap across your teams. Your Marketers, Product Managers, Merchandisers, Designers, Developers &amp; Analysts all working on solving a common set of Problems; all experimenting towards better outcomes.
 						</p>
 						<p>
-							From this roadmap, Clearhead helps clients start experimenting with <a href="/digital-optimization-programs/">Digital Optimization Program</a> and/or <a href="/optimization-accelerators/">optimization accelerators</a>. From here, all activity is centered around value creation through the continuous solving of critical problems.
+							From this roadmap, Clearhead helps clients start experimenting with <a href="/digital-optimization-programs/">Digital Optimization Program</a> and/or <a href="/optimization-accelerators/">Optimization Accelerators</a>. From here, all activity is centered around value creation through the continuous solving of critical problems.
 						</p>
 					</div>
-
-					<hr class="extra-space">
 
 					<div class="quote-blocks">
 						<ul class="unpaired-list">
@@ -195,7 +193,7 @@ get_header(); ?>
 							<p>
 								From here Clearhead can help you execute tests, experiments, analysis, personalization, research, disruptive design, full redesigns or help solve organizational problems. But for now, this is where Problem Solution Mapping ends.
 							</p>
-							<h2 class="lead">Are you ready to reach the next level?</h2>
+							<h2 class="lead">How would this work for you?</h2>
 							<a href="#contact" class="button contact-focus button-large">Let’s Talk</a>
 						</div>
 						<figure style="background-image: url('/wp-content/themes/clearhead-2016/img/products/psm/steps.svg');"></figure>

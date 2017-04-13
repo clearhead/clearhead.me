@@ -1351,6 +1351,8 @@ section {
 
 .solutions-list {
   margin-top: 1.875em; }
+  .solutions-list:not(:last-of-type) {
+    margin-bottom: 4em; }
   @media screen and (min-width: 40em) {
     .solutions-list {
       margin-top: 2.28125em; } }
