@@ -10,6 +10,11 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="product-hero">
+				<div class="background">					
+					<div class="video-frame">
+						<!-- <video src="" autoplay poster=""></video> -->
+					</div>
+				</div>
 				<div class="filter"></div>
 				<div class="container">
 					<h1>Problem Solution Mapping</h1>
