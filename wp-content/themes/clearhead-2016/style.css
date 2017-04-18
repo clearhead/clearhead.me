@@ -2081,9 +2081,10 @@ h3.widget-title {
       position: absolute;
       top: 0;
       left: 0;
-      height: 0;
       height: 100%;
       width: 100%; }
+      .product-hero .background .video-frame video {
+        height: inherit; }
   .product-hero .container {
     position: relative;
     z-index: 30;
