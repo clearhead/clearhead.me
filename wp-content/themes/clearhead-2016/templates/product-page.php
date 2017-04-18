@@ -12,7 +12,9 @@ get_header(); ?>
 			<div class="product-hero">
 				<div class="background">					
 					<div class="video-frame">
-						<!-- <video src="" autoplay poster=""></video> -->
+						<video autoplay playsinline muted loop>
+							<source src="/wp-content/themes/clearhead-2016/videos/psm-time-lapse.mp4" type="video/mp4">
+						</video>
 					</div>
 				</div>
 				<div class="filter"></div>
