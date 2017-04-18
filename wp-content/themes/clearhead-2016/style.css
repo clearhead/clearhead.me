@@ -2049,12 +2049,14 @@ h3.widget-title {
 
 .product-hero {
   margin-top: 2.7777777778em;
-  background-image: url("img/products/psm/product-hero.jpg");
+  background-image: url("img/products/psm/video-still.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   position: relative;
   z-index: 10;
-  font-size: 90%; }
+  font-size: 90%;
+  overflow: hidden;
+  text-shadow: 0 0 0.5em rgba(49, 51, 53, 0.25); }
   @media screen and (min-width: 40em) {
     .product-hero {
       font-size: initial; } }
@@ -2064,10 +2066,25 @@ h3.widget-title {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 80, 104, 0.5);
+    background-color: rgba(0, 90, 117, 0.5);
     z-index: 20;
     background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.375));
     background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.375)); }
+  .product-hero .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0;
+    padding-top: 56.25%;
+    width: 100%; }
+    .product-hero .background .video-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%; }
+      .product-hero .background .video-frame video {
+        height: inherit; }
   .product-hero .container {
     position: relative;
     z-index: 30;
@@ -2078,44 +2095,40 @@ h3.widget-title {
         padding-bottom: 12.5vh; } }
   .product-hero h1 {
     color: #32C4F5;
-    font-size: 2.2222222222em;
     text-transform: initial; }
   .product-hero h2 {
     color: #FFFFFF;
-    font-size: 2em;
     text-transform: initial;
-    max-width: 24.4444444444rem;
     margin-bottom: 0.4375em; }
 
-.feature-list {
-  font-size: 1.3333333333em; }
-  .feature-list li {
-    margin-bottom: 0.1875em;
-    display: block;
-    padding-left: 1.5em;
-    position: relative; }
-    .feature-list li:before {
-      content: "";
-      width: 1.5em;
-      height: 0.6875em;
-      display: inline-block;
-      background-image: url("img/icons/check.svg");
-      position: absolute;
-      top: 0.28125em;
-      left: 0.03125em;
-      background-repeat: no-repeat;
-      background-size: contain; }
-  .feature-list-blue {
-    font-size: 1.1111111111em; }
-    .feature-list-blue li {
-      margin-bottom: 0.625em;
-      font-weight: 700;
-      color: #19748f;
-      text-transform: lowercase; }
-      .feature-list-blue li:before {
-        opacity: 0.375;
-        font-size: 1.1875em;
-        top: 0.15625em; }
+.feature-list li {
+  margin-bottom: 0.1875em;
+  display: block;
+  padding-left: 1.5em;
+  position: relative; }
+  .feature-list li:before {
+    content: "";
+    width: 1.5em;
+    height: 0.6875em;
+    display: inline-block;
+    background-image: url("img/icons/check.svg");
+    position: absolute;
+    top: 0.28125em;
+    left: 0.03125em;
+    background-repeat: no-repeat;
+    background-size: contain; }
+
+.feature-list-blue {
+  font-size: 1.1111111111em; }
+  .feature-list-blue li {
+    margin-bottom: 0.625em;
+    font-weight: 700;
+    color: #19748f;
+    text-transform: lowercase; }
+    .feature-list-blue li:before {
+      opacity: 0.375;
+      font-size: 1.1875em;
+      top: 0.15625em; }
 
 .product-chart {
   margin: 4em 0; }

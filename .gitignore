@@ -85,7 +85,6 @@ wp-content/mysql.sql
 *.ra
 *.3gpp
 *.3gp
-*.mp4
 *.mpeg
 *.mpg
 *.mov

@@ -1265,13 +1265,15 @@ h3.widget-title {
 // Product Hero
 // ------------
 .product-hero {
-    margin-top: (50/18)*1em;
-    background-image: url('img/products/psm/product-hero.jpg');
+    margin-top: 1em*(50/18);
+    background-image: url('img/products/psm/video-still.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     position: relative;
     z-index: 10;
     font-size: 90%;
+    overflow: hidden;
+    text-shadow: 0 0 0.5em rgba($black, 0.25);
     @include w640 {
         font-size: initial;
     }
@@ -1281,9 +1283,27 @@ h3.widget-title {
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(darken(saturate($dark-blue, 100%), 12.5%), 0.5);
+        background-color: rgba(darken(saturate($dark-blue, 100%), 10%), 0.5);
         z-index: 20;
         background-image: linear-gradient(transparent, rgba(black, 0.375));
+    }
+    .background {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        padding-top: 100%/(16/9);
+        width: 100%;
+        .video-frame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            video {
+                height: inherit;
+            }
+        }
     }
     .container {
         position: relative;
@@ -1296,14 +1316,11 @@ h3.widget-title {
     }
     h1 {
         color: $blue;
-        font-size: (40/18)*1em;
         text-transform: initial;
     }
     h2 {
         color: $white;
-        font-size: (36/18)*1em;
         text-transform: initial;
-        max-width: (440/18)*1rem;
         margin-bottom: 0.4375em;
     }
 }
@@ -1311,7 +1328,6 @@ h3.widget-title {
 // Feature List
 // ------------
 .feature-list {
-    font-size: (24/18)*1em;
     li {
         margin-bottom: 0.1875em;
         display: block;

@@ -10,6 +10,13 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="product-hero">
+				<div class="background">					
+					<div class="video-frame">
+						<video autoplay playsinline muted loop>
+							<source src="/wp-content/themes/clearhead-2016/videos/psm-time-lapse.mp4" type="video/mp4">
+						</video>
+					</div>
+				</div>
 				<div class="filter"></div>
 				<div class="container">
 					<h1>Problem Solution Mapping</h1>
