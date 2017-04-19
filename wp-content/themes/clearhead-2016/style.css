@@ -906,27 +906,15 @@ h3.widget-title { font-size: 1.478125em; font-weight: 700; }
 
 .main-footer .contact .mt0 { margin-bottom: 1.5em; }
 
-.product-hero { margin-top: 2.7777777778em; background-repeat: no-repeat; background-position: bottom; position: relative; z-index: 10; font-size: 90%; overflow: hidden; text-shadow: 0 0 0.5em rgba(49, 51, 53, 0.25); background-size: 250%; }
-
-@media screen and (min-width: 30em) { .product-hero { background-size: 150%; } }
-
-@media screen and (min-width: 40em) { .product-hero { font-size: initial; background-size: 200%; } }
-
-@media screen and (min-width: 62.5em) { .product-hero { background-size: 100%; } }
+.product-hero { margin-top: 2.7777777778em; background-repeat: no-repeat; background-position: bottom; position: relative; z-index: 10; font-size: 90%; overflow: hidden; text-shadow: 0 0 0.5em rgba(49, 51, 53, 0.25); background-size: 100%; background-color: #3B515C; height: 100%; }
 
 .product-hero .filter { position: absolute; top: 0; left: 0; height: 100%; width: 100%; background-color: rgba(0, 90, 117, 0.5); z-index: 20; background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.375)); background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.375)); }
 
-.product-hero .background { position: absolute; bottom: 0; left: 0; height: 0; padding-top: 56.25%; width: 250%; }
-
-@media screen and (min-width: 30em) { .product-hero .background { width: 150%; } }
-
-@media screen and (min-width: 40em) { .product-hero .background { font-size: initial; width: 200%; } }
-
-@media screen and (min-width: 62.5em) { .product-hero .background { width: 100%; } }
+.product-hero .background { position: absolute; bottom: 0; left: 0; height: 100%; width: 100%; }
 
 .product-hero .background .video-frame { position: absolute; top: 0; left: 0; height: 100%; width: 100%; }
 
-.product-hero .background .video-frame video { width: 100%; }
+.product-hero .background .video-frame video { height: 100%; width: 100%; -o-object-fit: cover; object-fit: cover; }
 
 .product-hero .container { position: relative; z-index: 30; padding: 3.5em 0 2.75em; }
 
