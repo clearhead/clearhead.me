@@ -197,7 +197,7 @@ get_header(); ?>
 							<h2>The physics of <span class="text-transform-disabled">ROI</span></h2>
 							<div class="cap-6c-5g">
 								<p>
-									All of Clearhead’s services are built on a unifying framework for continuous optimization. We call this framework Problem Solution Mapping (PSM).
+									Clearhead’s services are built on a unifying framework for continuous optimization. We call this framework Problem Solution Mapping (PSM).
 								</p>
 							</div>
 
@@ -212,7 +212,7 @@ get_header(); ?>
 												</span>
 											</h3>
 										</a>
-										<strong>Find predictably positive outcomes</strong>
+										<strong>Finding predictably positive outcomes</strong>
 										<p>
 											Together, we solidify goals, discover the largest problems to solve, and validate the big impact ideas. Only then do you get confident results.
 										</p>
@@ -271,7 +271,7 @@ get_header(); ?>
 												</span>
 											</h3>
 										</a>
-										<strong>Disrupt with confidence</strong>
+										<strong>Disrupting with confidence</strong>
 										<p>
 											The decision has been made. For something this big, the process&nbsp;should be driven and validated by your customers. Ensure your redesign is destined for success.
 										</p>

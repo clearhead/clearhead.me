@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Product Page
+Template Name: Problem Solution Mapping Page
 */
 
 get_header(); ?>
@@ -9,12 +9,16 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="product-hero">
+			<div class="product-hero" style="background-image: url('img/products/psm/video-still.jpg');">
 				<div class="background">					
-					<div class="video-frame">
-						<video autoplay playsinline muted loop>
-							<source src="/wp-content/themes/clearhead-2016/videos/psm-time-lapse.mp4" type="video/mp4">
-						</video>
+					<div class="video-frame"> 
+					<?php
+						if(get_field('hero_video')): ?>
+							<video autoplay playsinline muted loop>
+								<source src="<?php echo get_field('hero_video') ?>" type="video/mp4">
+							</video>
+						<?php 
+						endif; ?>
 					</div>
 				</div>
 				<div class="filter"></div>
@@ -164,14 +168,14 @@ get_header(); ?>
 			<section class="spacing-added">
 				<div class="container">
 					<div class="cap-6c-5g">
-						<h2 class="lead">The outcome</h2>
+						<h2 class="lead">The Outcome</h2>
 					</div>
 					<div class="cap-7c-6g">
 						<p>
 							Your map – an evidence-based, fully understood and agreed upon set of goals, problems and hypotheses – becomes the roadmap across your teams. Your Marketers, Product Managers, Merchandisers, Designers, Developers &amp; Analysts all working on solving a common set of Problems; all experimenting towards better outcomes.
 						</p>
 						<p>
-							From this roadmap, Clearhead helps clients start experimenting with <a href="/digital-optimization-programs/">Digital Optimization Program</a> and/or <a href="/optimization-accelerators/">Optimization Accelerators</a>. From here, all activity is centered around value creation through the continuous solving of critical problems.
+							From this roadmap, Clearhead helps clients start experimenting with <a href="/digital-optimization-programs/">Digital Optimization Programs</a> and/or <a href="/optimization-accelerators/">Optimization Accelerators</a>. From here, all activity is centered around value creation through the continuous solving of critical problems.
 						</p>
 					</div>
 
