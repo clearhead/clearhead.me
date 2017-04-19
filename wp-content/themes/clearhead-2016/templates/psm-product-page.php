@@ -9,7 +9,7 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="product-hero" style="background-image: url('img/products/psm/video-still.jpg');">
+			<div class="product-hero" style="background-image: url('/wp-content/themes/clearhead-2016/img/products/psm/video-still.jpg');">
 				<div class="background">					
 					<div class="video-frame"> 
 					<?php
