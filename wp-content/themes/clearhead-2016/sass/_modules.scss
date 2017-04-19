@@ -1266,15 +1266,23 @@ h3.widget-title {
 // ------------
 .product-hero {
     margin-top: 1em*(50/18);
-    background-size: cover;
+    background-repeat: no-repeat;
     background-position: bottom;
     position: relative;
     z-index: 10;
     font-size: 90%;
     overflow: hidden;
     text-shadow: 0 0 0.5em rgba($black, 0.25);
+    background-size: 250%;
+    @include w480 {
+        background-size: 150%;        
+    }
     @include w640 {
         font-size: initial;
+        background-size: 200%;
+    }
+    @include w1000 {
+        background-size: 100%;
     }
     .filter {
         position: absolute;
@@ -1292,15 +1300,27 @@ h3.widget-title {
         left: 0;
         height: 0;
         padding-top: 100%/(16/9);
-        width: 100%;
+
+        width: 250%;
+        @include w480 {
+            width: 150%;        
+        }
+        @include w640 {
+            font-size: initial;
+            width: 200%;
+        }
+        @include w1000 {
+            width: 100%;
+        }
         .video-frame {
             position: absolute;
             top: 0;
             left: 0;
             height: 100%;
             width: 100%;
+
             video {
-                height: inherit;
+                width: 100%;
             }
         }
     }
