@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Product Page
+Template Name: Problem Solution Mapping Page
 */
 
 get_header(); ?>
