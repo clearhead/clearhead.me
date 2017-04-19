@@ -9,12 +9,16 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<div class="product-hero">
-				<div class="background">
-					<div class="video-frame">
-						<video autoplay playsinline muted loop>
-							<source src="/wp-content/themes/clearhead-2016/videos/psm-time-lapse.mp4" type="video/mp4">
-						</video>
+			<div class="product-hero" style="background-image: url('img/products/psm/video-still.jpg');">
+				<div class="background">					
+					<div class="video-frame"> 
+					<?php
+						if(get_field('hero_video')): ?>
+							<video autoplay playsinline muted loop>
+								<source src="<?php echo get_field('hero_video') ?>" type="video/mp4">
+							</video>
+						<?php 
+						endif; ?>
 					</div>
 				</div>
 				<div class="filter"></div>
