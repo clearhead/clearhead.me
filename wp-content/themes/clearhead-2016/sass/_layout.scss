@@ -42,6 +42,9 @@
 .cap-7c-6g {
 	width: 100%;
 	max-width: ($column * 7) + ($gutter * 6);
+	&-centered {
+		margin: 0 auto;
+	}
 }
 .cap-8c-7g {
 	width: 100%;

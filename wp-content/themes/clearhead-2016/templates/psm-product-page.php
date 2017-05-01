@@ -10,14 +10,14 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<div class="product-hero" style="background-image: url('/wp-content/themes/clearhead-2016/img/products/psm/video-still.jpg');">
-				<div class="background">					
-					<div class="video-frame"> 
+				<div class="background">
+					<div class="video-frame">
 					<?php
 						if(get_field('hero_video')): ?>
 							<video autoplay playsinline muted loop>
 								<source src="<?php echo get_field('hero_video') ?>" type="video/mp4">
 							</video>
-						<?php 
+						<?php
 						endif; ?>
 					</div>
 				</div>
@@ -35,29 +35,30 @@ get_header(); ?>
 
 			<section>
 				<div class="container">
-					<div class="cap-7c-6g">
-						<h4 class="lead">Problem Solution Mapping is an operating methodology invented at Clearhead in our second year working with clients.</h4>
-						<h4 class="lead">We realized we could make a much bigger impact by changing the way we chose ideas, taking time to understand and embrace problems before we proposed or tested solution hypotheses.</h4>
+					<div class="cap-7c-6g cap-7c-6g-centered">
+						<p><strong>Problem Solution Mapping</strong> is an operating methodology invented at Clearhead in our second year working with clients. We realized we could make a much bigger impact by changing the way we chose ideas, taking time to understand and embrace problems before we proposed or tested solution hypotheses.</p>
 					</div>
 					<figure class="product-chart">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/products/psm/map.svg" alt="">
 					</figure>
 
-					<div class="quote-blocks">
-						<ul class="unpaired-list">
-							<li>
-								<blockquote>
-									The Clearhead process resulted in a philosophical change, and we're making traction in how we do things.
-								</blockquote>
-								<div class="source">Megan Millard, VP Sales + Marketing, Nau</div>
-							</li>
-							<li>
-								<blockquote>
-									Clearhead’s strategic approach to UX and digital product development ensures that our investments will solve our end users’ biggest problems and, by doing so, will also yield significant ROI for the business.
-								</blockquote>
-								<div class="source">Mark Friedman, President of Ecommerce, Steve Madden</div>
-							</li>
-						</ul>
+					<div class="cap-7c-6g cap-7c-6g-centered">
+						<div class="quote-blocks quote-blocks-full-width">
+							<ul class="unpaired-list">
+								<li>
+									<blockquote>
+										The Clearhead process resulted in a philosophical change, and we’re making traction in how we do things.
+									</blockquote>
+									<div class="source">Megan Millard, VP Sales + Marketing, Nau</div>
+								</li>
+								<li>
+									<blockquote>
+										Clearhead’s strategic approach to UX and digital product development ensures that our investments will solve our end users’ biggest problems and, by doing so, will also yield significant ROI for the business.
+									</blockquote>
+									<div class="source">Mark Friedman, President of Ecommerce, Steve Madden</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 
 				</div>
@@ -69,7 +70,7 @@ get_header(); ?>
 						<h4 class="lead">
 							We developed PSM based on the premise that any project, program or change is an experiment.
 						</h4>
-						<ul class="feature-list feature-list-blue">
+						<ul class="feature-list feature-list-banner">
 							<li>Promotions and campaigns</li>
 							<li>Merchandising changes</li>
 							<li>Copy changes</li>
@@ -86,10 +87,10 @@ get_header(); ?>
 			<section class="spacing-added">
 				<div class="container">
 					<div class="cap-6c-5g">
-						<h2 class="lead">So… how does a <span class="text-transform-disabled">PSM</span>&nbsp;workshop work?</h2>
+						<h2>So… how does a <span class="text-transform-disabled">PSM</span>&nbsp;workshop work?</h2>
 					</div>
-					<div class="cap-7c-6g">
-						<p class="lead">Today, PSM is at the core of every engagement with Clearhead clients, whether that is an Accelerator, Digital Optimization Program or Data-Driven Redesign.</p>
+					<div class="cap-6c-5g">
+						<p>Today, PSM is at the core of every engagement with Clearhead clients, whether that is an Accelerator, Digital Optimization Program or Data-Driven Redesign.</p>
 					</div>
 				</div>
 			</section>
@@ -101,7 +102,7 @@ get_header(); ?>
 							<div class="container">
 								<div class="step">
 									<div>
-										<h2><span>01</span><em>&nbsp;|&nbsp;</em><strong>Establish goals</strong></h2>
+										<h2><span>01</span> <strong>Establish goals</strong></h2>
 										<p>First, our senior consultants meet one-on-one with key stakeholders to identify what success looks like, and in what timeframe.</p>
 									</div>
 								</div>
@@ -114,7 +115,7 @@ get_header(); ?>
 							<div class="container">
 								<div class="step">
 									<div>
-										<h2><span>02</span><em>&nbsp;|&nbsp;</em><strong>uncover problems</strong></h2>
+										<h2><span>02</span> <strong>uncover problems</strong></h2>
 										<p>Next, we meet with cross-functional groups. Armed with markers, post its and technology, we uncover business and end user problems together. These problems are organized into clusters and prepared for validation.</p>
 									</div>
 								</div>
@@ -127,7 +128,7 @@ get_header(); ?>
 							<div class="container">
 								<div class="step">
 									<div>
-										<h2><span>03</span><em>&nbsp;|&nbsp;</em><strong>analyze &amp; prioritize</strong></h2>
+										<h2><span>03</span> <strong>analyze &amp; prioritize</strong></h2>
 										<p>This step is about using analytics, stats, surveys, usability reserach, and more to delineate, validate and prioritize each problem. We then organize a final list of problems the evidence indicates are most worth solving.</p>
 										<p>The magic happens when everyone agrees on the priority of problems, using data. These articulated problems become the tree trunk from which all high impact experiments, ideas and solutions grow.</p>
 									</div>
@@ -141,7 +142,7 @@ get_header(); ?>
 							<div class="container">
 								<div class="step">
 									<div>
-										<h2><span>04</span><em>&nbsp;|&nbsp;</em><strong>ideate solution hypotheses</strong></h2>
+										<h2><span>04</span> <strong>ideate solution hypotheses</strong></h2>
 										<p>Then the fun part: solution hypotheses. We use the same discovery techniques leveraged in problem research to ideate the best solutions for the most important problems. Ideas can come from anywhere, so we work with cross-functional teams to bring new ideas to the wall (and bring our own based on the 1000s of experiments we’ve launched).</p>
 									</div>
 								</div>
@@ -154,7 +155,7 @@ get_header(); ?>
 							<div class="container">
 								<div class="step">
 									<div>
-										<h2><span>05</span><em>&nbsp;|&nbsp;</em><strong>develop optimization roadmap</strong></h2>
+										<h2><span>05</span> <strong>develop optimization roadmap</strong></h2>
 										<p>We prioritize these ideas into a hypothesis roadmap that takes the form of experiments, tests, research or analytics. We’re looking for confidence in the highest impact ideas to solve the highest priority problems, ultimately to move the needle on those key goals.</p>
 									</div>
 								</div>
@@ -168,43 +169,40 @@ get_header(); ?>
 			<section class="spacing-added">
 				<div class="container">
 					<div class="cap-6c-5g">
-						<h2 class="lead">The Outcome</h2>
+						<h2>The Outcomes</h2>
 					</div>
 					<div class="cap-7c-6g">
 						<p>
 							Your map – an evidence-based, fully understood and agreed upon set of goals, problems and hypotheses – becomes the roadmap across your teams. Your Marketers, Product Managers, Merchandisers, Designers, Developers &amp; Analysts all working on solving a common set of Problems; all experimenting towards better outcomes.
 						</p>
 						<p>
-							From this roadmap, Clearhead helps clients start experimenting with <a href="/digital-optimization-programs/">Digital Optimization Programs</a> and/or <a href="/optimization-accelerators/">Optimization Accelerators</a>. From here, all activity is centered around value creation through the continuous solving of critical problems.
+							From this roadmap, Clearhead helps clients start experimenting with <a href="/digital-optimization-programs/">Digital Optimization Programs</a> and/or <a href="/optimization-accelerators/">Optimization Accelerators</a>. From here, all activity is centered around value creation through the continuous solving of critical&nbsp;problems.
 						</p>
+						<div class="quote-blocks quote-blocks-full-width">
+							<ul class="unpaired-list">
+								<li>
+									<blockquote>
+										The PSM methodology helped me to focus on root cause problems rather than treating symptoms.
+									</blockquote>
+									<div class="source">Ana Grace, Former Director of Ecommerce, GoDaddy</div>
+								</li>
+								<li>
+									<blockquote>
+										The Clearhead team worked alongside Tesco as trusted advisors to empower and align efforts to move beyond the status quo to achieve the organizational goals.
+									</blockquote>
+									<div class="source">Ashish Umre, Lead Scientist--Marketing Data Science &amp; Optimization, Tesco</div>
+								</li>
+							</ul>
+						</div>
 					</div>
-
-					<div class="quote-blocks">
-						<ul class="unpaired-list">
-							<li>
-								<blockquote>
-									The PSM methodology helped me to focus on root cause problems rather than treating symptoms.
-								</blockquote>
-								<div class="source">Ana Grace, Former Director of Ecommerce, GoDaddy</div>
-							</li>
-							<li>
-								<blockquote>
-									The Clearhead team worked alongside Tesco as trusted advisors to empower and align efforts to move beyond the status quo to achieve the organizational goals.
-								</blockquote>
-								<div class="source">Ashish Umre, Lead Scientist--Marketing Data Science &amp; Optimization, Tesco</div>
-							</li>
-						</ul>
-					</div>
-
-					<hr class="extra-space">
 
 					<div class="background-graphic">
 						<div class="cap-4c-3g">
-							<h2 class="lead">Next steps</h2>
+							<h2>Next steps</h2>
 							<p>
 								From here Clearhead can help you execute tests, experiments, analysis, personalization, research, disruptive design, full redesigns or help solve organizational problems. But for now, this is where Problem Solution Mapping ends.
 							</p>
-							<h2 class="lead">How would this work for you?</h2>
+							<h3 class="text-transform-disabled"><strong>How would PSM<br>work for you?</strong></h3>
 							<a href="#contact" class="button contact-focus button-large">Let’s Talk</a>
 						</div>
 						<figure style="background-image: url('/wp-content/themes/clearhead-2016/img/products/psm/steps.svg');"></figure>
