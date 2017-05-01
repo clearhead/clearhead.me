@@ -36,7 +36,7 @@ get_header(); ?>
 			<section>
 				<div class="container">
 					<div class="cap-7c-6g cap-7c-6g-centered">
-						<p><strong>Problem Solution Mapping</strong> is an operating methodology invented at Clearhead in our second year working with clients. We realized we could make a much bigger impact by changing the way we chose ideas, taking time to understand and embrace problems before we proposed or tested solution hypotheses.</p>
+						<p><strong>Problem Solution Mapping</strong> is an operating methodology invented at Clearhead based on our observations and cumulative learnings from thousands of UX experiments. We realized we could make a much bigger impact by changing the way we chose ideas, taking time to understand and embrace problems before we proposed or tested solution hypotheses.</p>
 					</div>
 					<figure class="product-chart">
 						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/products/psm/map.svg" alt="">
@@ -129,7 +129,7 @@ get_header(); ?>
 								<div class="step">
 									<div>
 										<h2><span>03</span> <strong>analyze &amp; prioritize</strong></h2>
-										<p>This step is about using analytics, stats, surveys, usability reserach, and more to delineate, validate and prioritize each problem. We then organize a final list of problems the evidence indicates are most worth solving.</p>
+										<p>This step is about using analytics, stats, surveys, usability research, and more to delineate, validate and prioritize each problem. We then organize a final list of problems the evidence indicates are most worth solving.</p>
 										<p>The magic happens when everyone agrees on the priority of problems, using data. These articulated problems become the tree trunk from which all high impact experiments, ideas and solutions grow.</p>
 									</div>
 								</div>
