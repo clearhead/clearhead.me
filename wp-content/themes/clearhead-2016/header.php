@@ -20,7 +20,7 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<script src="//d3c3cq33003psk.cloudfront.net/opentag-128043-1821808.js" async defer></script>
-	<script src="//cdn.optimizely.com/js/2448130542.js"></script>
+	<!-- <script src="//cdn.optimizely.com/js/2448130542.js"></script> -->
 
 	<script src="https://use.typekit.net/erk8dkx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
