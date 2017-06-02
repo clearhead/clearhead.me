@@ -423,15 +423,9 @@ footer .main-footer .container .contact .contact-info p { font-size: 0.875em; li
 
 @media screen and (min-width: 62.5em) { footer .main-footer .container .contact .contact-info p { font-size: 0.875em; } }
 
-footer .main-footer .container .contact .contact-info figure { width: calc(100% - 8.5em); max-width: 11em; }
+footer .main-footer .container .contact .contact-info > div { width: 50%; }
 
-@media screen and (min-width: 62.5em) { footer .main-footer .container .contact .contact-info figure { max-width: 14em; width: calc(100% - 12.75em); } }
-
-footer .main-footer .container .contact .contact-info figure a { display: block; -webkit-transition: opacity 0.1875s ease; transition: opacity 0.1875s ease; }
-
-footer .main-footer .container .contact .contact-info figure a:hover { opacity: 0.68125; }
-
-footer .main-footer .container .contact .contact-info figure img { display: block; }
+@media screen and (min-width: 62.5em) { footer .main-footer .container .contact .contact-info > div:first-child { padding-right: 1em; } }
 
 footer .sub-footer { background-color: #32C4F5; }
 

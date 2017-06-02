@@ -31,15 +31,29 @@
 					</script>
 					<div class="contact-info">
 						<div>
-							<h3>Our Location</h3>
+							<h3>Austin Office</h3>
 							<p>
-								3601 S. Congress Ave.<span class="dn_n1000">, </span><span class="dn_w1000"><br></span>C302<br>
+								3601 S. Congress Ave.
+								<br>
+								Bldg. C302
+								<br>
 								Austin, TX 78704
+								<br>
+								United States
 							</p>
 						</div>
-						<figure>
-							<a href="https://www.google.com/maps/place/3601+S+Congress+Ave,+Austin,+TX+78704/"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/location.jpg" alt="location"></a>
-						</figure>
+						<div>
+							<h3>London Office</h3>
+							<p>
+								14 Grays Inn Road
+								<br>
+								London
+								<br>
+								WC1X 8HN
+								<br>
+								United Kingdom
+							</p>
+						</div>
 					</div>
 				</div>
 				<div class="info cap-3c-2g">
