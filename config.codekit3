@@ -7,7 +7,7 @@
 		"uuidString": "A92E27E7-81CB-446F-91FF-FC15E07402AF"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
 	"\/.editorconfig": {
 		"ft": 8192,
@@ -19946,6 +19946,18 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/browser-chrome-dark.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/browser-chrome-dark.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/browser-chrome.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/browser-chrome.svg.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/what-we-do-original.jpg": {
 		"ft": 16384,
 		"iS": 152401,
@@ -19981,6 +19993,196 @@
 		"iS": 188460,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/callout-photos\/who-we-do-it-with.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/adidas-hero.jpg": {
+		"ft": 16384,
+		"iS": 135930,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/adidas-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/articles\/adidas.jpg": {
+		"ft": 16384,
+		"iS": 23281,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/articles\/adidas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/articles\/blu-dot.jpg": {
+		"ft": 16384,
+		"iS": 20584,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/articles\/blu-dot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/articles\/steve-madden.jpg": {
+		"ft": 16384,
+		"iS": 11940,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/articles\/steve-madden.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/dan-mccauley.jpg": {
+		"ft": 16384,
+		"iS": 6314,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/dan-mccauley.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 7585,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/thumbnail-variation-1.jpg": {
+		"ft": 16384,
+		"iS": 5865,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/thumbnail-variation-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/thumbnail-variation-2.jpg": {
+		"ft": 16384,
+		"iS": 5348,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/thumbnail-variation-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/zoom-control.jpg": {
+		"ft": 16384,
+		"iS": 49336,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/zoom-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/zoom-functionality.jpg": {
+		"ft": 16384,
+		"iS": 85576,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-1\/zoom-functionality.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/innovation-program.jpg": {
+		"ft": 16384,
+		"iS": 79969,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/innovation-program.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 7585,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/thumbnail-variation.jpg": {
+		"ft": 16384,
+		"iS": 5865,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/thumbnail-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/ultra-boost.jpg": {
+		"ft": 16384,
+		"iS": 194552,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-2\/ultra-boost.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/checkout-flow.jpg": {
+		"ft": 16384,
+		"iS": 66414,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/checkout-flow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/delivery-details.jpg": {
+		"ft": 16384,
+		"iS": 138145,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/delivery-details.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 6761,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/thumbnail-variation.jpg": {
+		"ft": 16384,
+		"iS": 6925,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/experiment-3\/thumbnail-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/jack-rusina.jpg": {
+		"ft": 16384,
+		"iS": 10041,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/case-studies\/jack-rusina.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -20144,6 +20346,12 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/icons\/circle-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/img\/icons\/down-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/img\/icons\/down-arrow.svg.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/clearhead-2016\/img\/icons\/left-arrow.svg.php": {
@@ -20936,6 +21144,19 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/wp-content\/themes\/clearhead-2016\/sass\/_extensions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/css\/_extensions.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
 	"\/wp-content\/themes\/clearhead-2016\/sass\/_layout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -21378,19 +21599,6 @@
 		"oS": 2,
 		"uL": 1
 		},
-	"\/wp-content\/themes\/clearhead-2016\/sass\/_variables.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/wp-content\/themes\/clearhead-2016\/css\/_variables.css",
-		"oF": 0,
-		"oS": 2,
-		"uL": 1
-		},
 	"\/wp-content\/themes\/clearhead-2016\/sass\/legacy\/blog.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -21520,6 +21728,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/clearhead-2016\/templates\/bio-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2016\/templates\/case-study.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/templates\/case-study.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/clearhead-2016\/templates\/jobs.php": {
@@ -33509,6 +33723,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

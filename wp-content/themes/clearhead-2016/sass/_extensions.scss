@@ -1,5 +1,6 @@
 // Color palette
 $black: #313335;
+$dark-gray: #74797D;
 $gray: #E0E2E2;
 $white: #FFFFFF;
 
@@ -25,6 +26,12 @@ $regular: 400;  // (allows normal and italic)
 $medium: 500;   // (allows normal and italic)
 $bold: 700;     // (allows normal and italic)
 
+// Article font
+$article: "minion-pro", Georgia, Times, 'Times New Roman', serif;
+$regular: 400;  // (allows normal and italic)
+$bold: 700;     // (allows normal and italic)
+
+
 // Static Units
 $full:   1rem * (  800                  / 18);
 $column: 1rem * (((800 - (20 * 8)) / 9) / 18);
@@ -32,6 +39,16 @@ $gutter: 1rem * (  20                   / 18);
 
 // Fluid Units
 $fluid-thirds: calc((100%/3) - ((1rem*(20/18))*(2/3)));
+
+// Point sizing
+$base: 18;
+@function em($pixels, $context: $base) {
+	@return #{$pixels/$context}em;
+}
+
+@function rem($pixels, $context: $base) {
+	@return #{$pixels/$context}rem;
+}
 
 // Media queries
 @mixin w480  { @media screen and (min-width: 30em)   { @content; } }
