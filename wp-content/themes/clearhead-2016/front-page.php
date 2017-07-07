@@ -489,6 +489,11 @@ get_header(); ?>
 									</li>
 									<li>
 										<figure style="max-width: 7.25em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/cdw.png" alt="CDW">
+										</figure>
+									</li>
+									<li>
+										<figure style="max-width: 7.25em;">
 											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/world-market.png" alt="World Market">
 										</figure>
 									</li>
@@ -530,6 +535,11 @@ get_header(); ?>
 									<li>
 										<figure style="max-width: 9.36875em;">
 											<?php get_template_part( 'img/clients/vitamix.svg' ); ?>
+										</figure>
+									</li>
+									<li>
+										<figure style="max-width: 8.5em;">
+											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/wwe.png" alt="WWE">
 										</figure>
 									</li>
 									<li class="more">
