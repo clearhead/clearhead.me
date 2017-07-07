@@ -518,11 +518,6 @@ get_header(); ?>
 										</figure>
 									</li>
 									<li>
-										<figure>
-											<img src="<?php bloginfo('stylesheet_directory'); ?>/img/clients/tory-burch.png" alt="Tory Burch">
-										</figure>
-									</li>
-									<li>
 										<figure style="max-width: 6.25em;">
 											<?php get_template_part( 'img/clients/ulta.svg' ); ?>
 										</figure>
@@ -535,11 +530,6 @@ get_header(); ?>
 									<li>
 										<figure style="max-width: 9.36875em;">
 											<?php get_template_part( 'img/clients/vitamix.svg' ); ?>
-										</figure>
-									</li>
-									<li>
-										<figure style="max-width: 5.125em;">
-											<?php get_template_part( 'img/clients/whole-foods.svg' ); ?>
 										</figure>
 									</li>
 									<li class="more">
