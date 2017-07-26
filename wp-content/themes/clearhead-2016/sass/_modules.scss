@@ -1528,8 +1528,37 @@ h3.widget-title {
     svg, img {
         display: block;
     }
-    .browser-chrome + img {
-        margin-top: -1px;
+    // .browser-chrome + img {
+    //     margin-top: -1px;
+    // }
+    .browser-chrome {
+        height: em(29);
+        background-color: rgba(white, 0.42);
+        border-top-left-radius: em(5);
+        border-top-right-radius: em(5);
+        ul {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            margin-left: 0.875em;
+            li {
+                display: block;
+                height: em(10.125);
+                width: em(10.125);
+                background-color: $blue;
+                border-radius: 1em;
+                margin-right: 0.275em;
+                margin-bottom: 0;
+            }
+        }
+        &--dark {
+            background-color: rgba(white, 0.15);
+            ul {
+                li {
+                    background-color: $black;
+                }
+            }
+        }
     }
 }
 
@@ -1773,12 +1802,21 @@ article.case-study {
     }
     ul {
         list-style: none;
-        display: flex;
-        justify-content: space-between;
+        margin: 0;
+        @include w640 {
+            display: flex;
+            justify-content: space-between;
+        }
         li {
-            width: calc((100%/3) - (#{$gutter}*1.625/3));
+            display: flex;
+            width: 100%;
+            @include w640 {
+                width: calc((100%/3) - (#{$gutter}*1.625/3));
+            }
             a {
-                display: block;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
                 padding: em(12);
                 color: $medium-blue;
                 border: 2px solid currentColor;
@@ -1801,10 +1839,12 @@ article.case-study {
                 color: currentColor;
                 letter-spacing: -0.32px;
                 line-height: (22/16);
+                margin-bottom: rem(7);
             }
             svg {
                 display: block;
-                margin: em(5) auto em(2);
+                margin: auto auto em(2);
+
                 * {
                     stroke: currentColor;
                 }
@@ -1836,6 +1876,10 @@ article.case-study {
 }
 
 .cta-callout {
+    font-size: 95%;
+    @media (min-width: 375px) {
+        font-size: 100%;
+    }
     background-color: $shade-blue;
     padding: em(26) em(26) em(25);
     display: flex;

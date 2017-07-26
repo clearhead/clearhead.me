@@ -81,7 +81,11 @@ get_header(); ?>
 		<div class="container">
 			<figure class="browser-preview">
 				<div class="browser-chrome">
-					<?php get_template_part( 'img/browser-chrome.svg' ); ?>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-1/zoom-functionality.jpg" alt="Zoom functionality">
 			</figure>
@@ -151,8 +155,12 @@ get_header(); ?>
 				</ul>
 			</div>
 			<figure class="browser-preview">
-				<div class="browser-chrome">
-					<?php get_template_part( 'img/browser-chrome-dark.svg' ); ?>
+				<div class="browser-chrome browser-chrome--dark">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-1/zoom-control.jpg" alt="Zoom control">
 			</figure>
@@ -194,7 +202,11 @@ get_header(); ?>
 		<div class="container">
 			<figure class="browser-preview">
 				<div class="browser-chrome">
-					<?php get_template_part( 'img/browser-chrome.svg' ); ?>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-2/innovation-program.jpg" alt="Innovation program">
 			</figure>
@@ -256,8 +268,12 @@ get_header(); ?>
 				</ul>
 			</div>
 			<figure class="browser-preview">
-				<div class="browser-chrome">
-					<?php get_template_part( 'img/browser-chrome-dark.svg' ); ?>
+				<div class="browser-chrome browser-chrome--dark">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-2/ultra-boost.jpg" alt="Zoom control">
 			</figure>
@@ -278,7 +294,11 @@ get_header(); ?>
 		<div class="container">
 			<figure class="browser-preview">
 				<div class="browser-chrome">
-					<?php get_template_part( 'img/browser-chrome.svg' ); ?>
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-3/checkout-flow.jpg" alt="Innovation program">
 			</figure>
@@ -340,8 +360,12 @@ get_header(); ?>
 				</ul>
 			</div>
 			<figure class="browser-preview">
-				<div class="browser-chrome">
-					<?php get_template_part( 'img/browser-chrome-dark.svg' ); ?>
+				<div class="browser-chrome browser-chrome--dark">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
 				</div>
 				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-3/delivery-details.jpg" alt="Zoom control">
 			</figure>

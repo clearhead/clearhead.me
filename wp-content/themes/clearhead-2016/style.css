@@ -988,7 +988,15 @@ h3.widget-title { font-size: 1.478125em; font-weight: 700; }
 
 .browser-preview svg, .browser-preview img { display: block; }
 
-.browser-preview .browser-chrome + img { margin-top: -1px; }
+.browser-preview .browser-chrome { height: 1.6111111111em; background-color: rgba(255, 255, 255, 0.42); border-top-left-radius: 0.2777777778em; border-top-right-radius: 0.2777777778em; }
+
+.browser-preview .browser-chrome ul { display: -webkit-box; display: -ms-flexbox; display: flex; height: 100%; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 0.875em; }
+
+.browser-preview .browser-chrome ul li { display: block; height: 0.5625em; width: 0.5625em; background-color: #32C4F5; border-radius: 1em; margin-right: 0.275em; margin-bottom: 0; }
+
+.browser-preview .browser-chrome--dark { background-color: rgba(255, 255, 255, 0.15); }
+
+.browser-preview .browser-chrome--dark ul li { background-color: #313335; }
 
 .article-testimony { background-color: #EEFBFF; text-align: center; padding: 2.7777777778em 0; }
 
@@ -1075,19 +1083,23 @@ article.case-study .experiment-gallery .thumbnails li:not(.selected) a:hover { o
 
 .section-jump p { margin-bottom: 2.6944444444em; }
 
-.section-jump ul { list-style: none; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.section-jump ul { list-style: none; margin: 0; }
 
-.section-jump ul li { width: calc((100%/3) - (1.1111111111rem*1.625/3)); }
+@media screen and (min-width: 40em) { .section-jump ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; } }
 
-.section-jump ul li a { display: block; padding: 0.6666666667em; color: #23A0CA; border: 2px solid currentColor; transition: color 0.1875s ease-out, border 0.1875s ease-out; }
+.section-jump ul li { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; }
+
+@media screen and (min-width: 40em) { .section-jump ul li { width: calc((100%/3) - (1.1111111111rem*1.625/3)); } }
+
+.section-jump ul li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; padding: 0.6666666667em; color: #23A0CA; border: 2px solid currentColor; transition: color 0.1875s ease-out, border 0.1875s ease-out; }
 
 .section-jump ul li a:hover { color: #19748f; }
 
 .section-jump ul li span { display: block; color: #74797D; font-weight: 500; font-size: 0.6666666667em; line-height: 1.6666666667; }
 
-.section-jump ul li strong { display: block; font-weight: 500; font-size: 0.8888888889em; color: currentColor; letter-spacing: -0.32px; line-height: 1.375; }
+.section-jump ul li strong { display: block; font-weight: 500; font-size: 0.8888888889em; color: currentColor; letter-spacing: -0.32px; line-height: 1.375; margin-bottom: 0.3888888889rem; }
 
-.section-jump ul li svg { display: block; margin: 0.2777777778em auto 0.1111111111em; }
+.section-jump ul li svg { display: block; margin: auto auto 0.1111111111em; }
 
 .section-jump ul li svg * { stroke: currentColor; }
 
@@ -1101,7 +1113,9 @@ article.case-study .experiment-gallery .thumbnails li:not(.selected) a:hover { o
 
 .results-table tr td:last-child { text-align: right; }
 
-.cta-callout { background-color: #EEFBFF; padding: 1.4444444444em 1.4444444444em 1.3888888889em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0.75em; }
+.cta-callout { font-size: 95%; background-color: #EEFBFF; padding: 1.4444444444em 1.4444444444em 1.3888888889em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 0.75em; }
+
+@media (min-width: 375px) { .cta-callout { font-size: 100%; } }
 
 .cta-callout em { margin-right: 1.2222222222em; }
 
@@ -1121,7 +1135,7 @@ article.case-study .experiment-gallery .thumbnails li:not(.selected) a:hover { o
 
 .article-ps { padding-top: 0; }
 
-.article-ps h5 { font-weight: 500; text-transform: none; letter-spacing: -0.6px; font-size: 1em; line-height: 1.2222222222; margin-bottom: 1.5rem; }
+.article-ps h5 { font-weight: 500; text-transform: none; letter-spacing: -0.6px; font-size: 1em; line-height: 1.2222222222; margin-bottom: 1.5em; }
 
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
