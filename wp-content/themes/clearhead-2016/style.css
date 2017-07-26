@@ -998,6 +998,12 @@ h3.widget-title { font-size: 1.478125em; font-weight: 700; }
 
 .browser-preview .browser-chrome--dark ul li { background-color: #313335; }
 
+.browser-preview .browser-content { margin-left: 0; list-style: none !important; }
+
+.browser-preview .browser-content li { display: block; }
+
+.browser-preview .browser-content li:not(.is-showing) { display: none; }
+
 .article-testimony { background-color: #EEFBFF; text-align: center; padding: 2.7777777778em 0; }
 
 .article-testimony figure img { display: block; width: 4.1666666667em; height: 4.1666666667em; border-radius: 100%; margin: 0 auto 0.8888888889em; }
@@ -1075,9 +1081,11 @@ article.case-study .experiment-gallery .thumbnails li a img { display: block; ma
 
 article.case-study .experiment-gallery .thumbnails li a span { display: block; color: #FFFFFF; font-size: 0.7777777778em; line-height: 1.8571428571; font-weight: 700; }
 
+article.case-study .experiment-gallery .thumbnails li.selected a { transition: none; }
+
 article.case-study .experiment-gallery .thumbnails li:not(.selected) a { opacity: 0.3; }
 
-article.case-study .experiment-gallery .thumbnails li:not(.selected) a:hover { opacity: 0.6; }
+article.case-study .experiment-gallery .thumbnails li:not(.selected) a:hover { opacity: 0.4; }
 
 .section-jump { text-align: center; padding: 3.4444444444em 0 3.1111111111em; }
 
@@ -1085,11 +1093,12 @@ article.case-study .experiment-gallery .thumbnails li:not(.selected) a:hover { o
 
 .section-jump ul { list-style: none; margin: 0; }
 
-@media screen and (min-width: 40em) { .section-jump ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; } }
+@media screen and (min-width: 40em) { .section-jump ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; } }
 
-.section-jump ul li { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; }
+.section-jump ul li { display: -webkit-box; display: -ms-flexbox; display: flex; width: 100%; max-width: 24.4444444444em; margin-left: auto; margin-right: auto; }
 
-@media screen and (min-width: 40em) { .section-jump ul li { width: calc((100%/3) - (1.1111111111rem*1.625/3)); } }
+@media screen and (min-width: 40em) { .section-jump ul li { width: calc((100%/3) - (1.1111111111rem*1.625/3)); }
+  .section-jump ul li:not(:last-child) { margin-right: 1.1111111111rem; } }
 
 .section-jump ul li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; width: 100%; padding: 0.6666666667em; color: #23A0CA; border: 2px solid currentColor; transition: color 0.1875s ease-out, border 0.1875s ease-out; }
 

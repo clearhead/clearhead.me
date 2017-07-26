@@ -162,7 +162,17 @@ get_header(); ?>
 						<li></li>
 					</ul>
 				</div>
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-1/zoom-control.jpg" alt="Zoom control">
+				<ul class="browser-content">
+					<li class="is-showing">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-1/zoom-control.jpg" alt="Zoom control">
+					</li>
+					<li>
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-1/zoom-variation.jpg" alt="Zoom control">
+					</li>
+					<li>
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-1/zoom-control.jpg" alt="Zoom control">
+					</li>
+				</ul>
 			</figure>
 		</div>
 	</section>
@@ -275,7 +285,14 @@ get_header(); ?>
 						<li></li>
 					</ul>
 				</div>
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-2/ultra-boost.jpg" alt="Zoom control">
+				<ul class="browser-content">
+					<li class="is-showing">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-2/ultra-boost.jpg" alt="Zoom control">
+					</li>
+					<li>
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-2/ultra-boost-variation.jpg" alt="Zoom control">
+					</li>
+				</ul>
 			</figure>
 		</div>
 	</section>
@@ -367,7 +384,14 @@ get_header(); ?>
 						<li></li>
 					</ul>
 				</div>
-				<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-3/delivery-details.jpg" alt="Zoom control">
+				<ul class="browser-content">
+					<li class="is-showing">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-3/delivery-details.jpg" alt="Zoom control">
+					</li>
+					<li>
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/experiment-3/delivery-variation.jpg" alt="Zoom control">
+					</li>
+				</ul>
 			</figure>
 		</div>
 	</section>

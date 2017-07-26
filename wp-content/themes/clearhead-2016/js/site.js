@@ -205,3 +205,17 @@ jQuery(document).ready(function(){
         }, 200);
     });
 });
+
+jQuery('.experiment-gallery .thumbnails a').click(function(e) {
+	e.preventDefault();
+
+    var thisContent = jQuery(this).closest('.experiment-gallery').find('.browser-content');
+    var theseThumbs = jQuery(this).closest('ul');
+    var thisThumb = jQuery(this).parent('li');
+    var thumbIndex = thisThumb.index();
+
+    jQuery(theseThumbs).children('li').removeClass('selected');
+    jQuery(thisThumb).addClass('selected');
+    jQuery(thisContent).find('li').removeClass('is-showing');
+    jQuery(thisContent).find('li:nth-child(' + (thumbIndex + 1) + ')').addClass('is-showing');
+});
