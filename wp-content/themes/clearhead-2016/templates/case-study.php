@@ -19,13 +19,12 @@ get_header(); ?>
 				<?php echo $subtitle; ?>
 			</h2>
 			<?php endif; 
-			$hero_image = get_field('hero_image'); 
-			if( !empty($hero_image) ): ?>
+			$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+			if ($feat_image ): ?>
 				<figure>
-					<img src="<?php echo $hero_image['url']; ?>" alt="<?php echo $hero_image['alt']; ?>">
+					<img src="<?php echo $feat_image; ?>">
 				</figure>
-			<?php
-			endif; ?>
+			<?php endif; ?>
 		</div>
 	</section>
 	<?php
