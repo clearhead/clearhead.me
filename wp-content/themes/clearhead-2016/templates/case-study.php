@@ -66,8 +66,8 @@ get_header(); ?>
 				<p>Ready to learn more about how <?php the_field('client_name'); ?> uses data and testing to drive business results?</p>
 				<ul>
 					<?php 
-						while ( have_rows('experiments_section')): the_row();
-						$count = 1; ?>
+						$count = 1;
+						while ( have_rows('experiments_section')): the_row(); ?>
 						<li>
 							<a class="smooth-scroll" href="#experiment-<?php echo $count; ?>">
 								<span>Experiment <?php echo $count ?></span>
@@ -81,11 +81,12 @@ get_header(); ?>
 				</ul>
 			</div>
 		</section> <?
+		$count = 1; 
 		while ( have_rows('experiments_section')): the_row();
-			$count = 1; 
 			$overview_content = get_sub_field('overview_content');
 			$experiment_details = get_sub_field('experiment_details');?>
 			<section class="section-intro" id="experiment-<?php echo $count ?>">
+				<?php $count++; ?>
 				<div class="container">
 					<figure class="browser-preview">
 						<div class="browser-chrome">
