@@ -12,13 +12,13 @@ get_header(); ?>
 			<h1>
 				<?php the_title() ?>
 			</h1>
-			<?php 
+			<?php
 			$subtitle = get_field('subtitle');
 			if($subtitle):?>
 			<h2>
 				<?php echo $subtitle; ?>
 			</h2>
-			<?php endif; 
+			<?php endif;
 			$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 			if ($feat_image ): ?>
 				<figure>
@@ -29,7 +29,7 @@ get_header(); ?>
 	</section>
 	<?php
 	if( have_rows('intro_section') ):
-		while( have_rows('intro_section') ) : the_row(); 
+		while( have_rows('intro_section') ) : the_row();
 			if( get_row_layout() == 'testimonial_block'): ?>
 				<section class="article-testimony">
 					<div class="container">
@@ -57,15 +57,15 @@ get_header(); ?>
 			endif;
 		endwhile;
 	endif; ?>
-	<?php 
-	if( have_rows('experiments_section') ): 
+	<?php
+	if( have_rows('experiments_section') ):
 		$experiments = get_field_object('experiments_section');
 		$experimentCount = count($experiments); ?>
 		<section class="section-jump">
 			<div class="container">
 				<p>Ready to learn more about how <?php the_field('client_name'); ?> uses data and testing to drive business results?</p>
 				<ul>
-					<?php 
+					<?php
 						$count = 1;
 						while ( have_rows('experiments_section')): the_row(); ?>
 						<li>
@@ -75,13 +75,13 @@ get_header(); ?>
 								<?php get_template_part( 'img/icons/down-arrow.svg' ); ?>
 							</a>
 						</li>
-					<?php 
+					<?php
 					$count++;
 					endwhile; ?>
 				</ul>
 			</div>
 		</section> <?
-		$count = 1; 
+		$count = 1;
 		while ( have_rows('experiments_section')): the_row();
 			$overview_content = get_sub_field('overview_content');
 			$experiment_details = get_sub_field('experiment_details');?>
@@ -151,7 +151,7 @@ get_header(); ?>
 									</a>
 								</li>
 							<?php
-							else: 
+							else:
 							?>
 								<li>
 									<a href=".">
@@ -160,7 +160,7 @@ get_header(); ?>
 									</a>
 								</li>
 							<?php
-							endif; 
+							endif;
 							?>
 						<?php
 						endfor; ?>
@@ -199,7 +199,7 @@ get_header(); ?>
 				<div class="container">
 					<div class="cap-7c-6g cap-7c-6g-centered">
 						<h2>Results</h2>
-						<?php the_sub_field('results_content'); 
+						<?php the_sub_field('results_content');
 						if(get_sub_field('results_link')): ?>
 							<strong><a href="<?php the_sub_field('results_link') ?>">Read the full data story</a></strong>
 						<?php endif ?>
@@ -209,44 +209,44 @@ get_header(); ?>
 	<?php
 		endwhile;
 	endif; ?>
-
-	<section class="article-ps">
-		<div class="container">
-			<div class="article-list">
-				<h5>Read more case studies</h5>
-				<ul>
-					<li>
-						<a href=".">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/articles/adidas.jpg" alt="adidas">
-							<span>
-								Winning Big with Customers
-							</span>
-						</a>
-					</li>
-					<li>
-						<a href=".">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/articles/steve-madden.jpg" alt="Steve Madden">
-							<span>
-								Revenue in Simplification: Steve Madden Case Study
-							</span>
-						</a>
-					</li>
-					<li>
-						<a href=".">
-							<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/articles/blu-dot.jpg" alt="Blu Dot">
-							<span>
-								Testing the Power of Print
-							</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<div class="cta-callout">
-				<em>Ready to learn more?</em>
-				<a href="#contact" class="button smooth-scroll">Let’s Talk</a>
-			</div>
+</article>
+<section class="article-ps">
+	<div class="container">
+		<div class="article-list">
+			<h5>Read more case studies</h5>
+			<ul>
+				<li>
+					<a href=".">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/articles/adidas.jpg" alt="adidas">
+						<span>
+							Winning Big with Customers
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href=".">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/articles/steve-madden.jpg" alt="Steve Madden">
+						<span>
+							Revenue in Simplification: Steve Madden Case Study
+						</span>
+					</a>
+				</li>
+				<li>
+					<a href=".">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/img/case-studies/articles/blu-dot.jpg" alt="Blu Dot">
+						<span>
+							Testing the Power of Print
+						</span>
+					</a>
+				</li>
+			</ul>
 		</div>
-	</section>
+		<div class="cta-callout">
+			<em>Ready to learn more?</em>
+			<a href="#contact" class="button smooth-scroll">Let’s Talk</a>
+		</div>
+	</div>
+</section>
 
 <?php
 endwhile;
