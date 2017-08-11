@@ -1644,6 +1644,34 @@ article.case-study {
         line-height: (26/17);
         margin-bottom: 0;
     }
+    ol {
+        color: $black;
+        font-weight: $medium;
+        font-size: em(15);
+        margin-bottom: 2.25em;
+        counter-reset: item;
+        li {
+            margin-bottom: 1em;
+            display: flex;
+            margin-left: 0.625em;
+            align-items: center;
+            &:before {
+                content: counter(item);
+				counter-increment: item;
+                color: $blue;
+                background-color: $shade-blue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: rem(14);
+                width: rem(27);
+                height: rem(27);
+                margin-right: 0.75em;
+                border-radius: 100%;
+                text-align: center;
+            }
+        }
+    }
     strong a {
         font-weight: $medium;
         text-decoration: underline;
@@ -1667,11 +1695,15 @@ article.case-study {
             letter-spacing: -0.45px;
             font-weight: $regular;
             line-height: (42/30);
-            margin-bottom: rem(44);
+            margin-bottom: 0;
+            padding-bottom: rem(44);
             text-transform: lowercase;
         }
         figure img {
             display: block;
+        }
+        &+ .section-intro {
+            padding-top: 0;
         }
     }
 
@@ -1757,11 +1789,15 @@ article.case-study {
                     display: flex;
                     margin-bottom: 0;
                     line-height: (21/13);
+                    align-items: flex-start;
                     strong {
                         font-weight: $medium;
                         display: block;
                         margin-right: 0.5em;
                         width: rem(90);
+                        flex-shrink: 0;
+                    }
+                    span {
                     }
                 }
             }
