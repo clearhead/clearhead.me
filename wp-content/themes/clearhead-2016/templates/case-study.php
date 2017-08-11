@@ -56,11 +56,12 @@ get_header(); ?>
 				</section> <?php
 			endif;
 		endwhile;
-	endif; ?>
-	<?php
-	if( have_rows('experiments_section') ):
-		$experiments = get_field_object('experiments_section');
-		$experimentCount = count($experiments); ?>
+	endif; 
+	$experiments = get_field_object('experiments_section');
+	$experimentCount = count($experiments['value']); ?>
+	<?php 
+	//Check to seee if we have greater than one experiment, then show the section
+	if( $experimentCount > 1 ): ?>
 		<section class="section-jump">
 			<div class="container">
 				<p>Ready to learn more about how <?php the_field('client_name'); ?> uses data and testing to drive business results?</p>
@@ -80,8 +81,9 @@ get_header(); ?>
 					endwhile; ?>
 				</ul>
 			</div>
-		</section> <?
-		$count = 1;
+		</section> <?php
+		endif;
+		$count = 1; 
 		while ( have_rows('experiments_section')): the_row();
 			$overview_content = get_sub_field('overview_content');
 			$experiment_details = get_sub_field('experiment_details');?>
@@ -207,8 +209,7 @@ get_header(); ?>
 				</div>
 		</section>
 	<?php
-		endwhile;
-	endif; ?>
+		endwhile; ?>
 </article>
 <section class="article-ps">
 	<div class="container">
