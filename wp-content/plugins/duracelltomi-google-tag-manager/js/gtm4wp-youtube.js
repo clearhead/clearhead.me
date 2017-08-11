@@ -10,14 +10,27 @@ if ( typeof onYouTubeIframeAPIReady === "undefined" ) {
 	  });
 
   	jQuery( "iframe[src^='https://www.youtube.com/embed']" ).each( function() {
-  		var playerID = jQuery( this ).attr( "id" );
+  		var gtm4wp_jqthis = jQuery( this );
+  		var playerID = gtm4wp_jqthis.attr( "id" );
+  		
 	  	if ( ( playerID == undefined ) || ( playerID == "" ) ) {
-  		  var _gtm4wp_temp  = jQuery( this ).attr( "src" ).split( "?" );
+  		  var _gtm4wp_temp  = gtm4wp_jqthis.attr( "src" ).split( "?" );
   		  var _gtm4wp_temp2 = _gtm4wp_temp[ 0 ].split( "/" );
 			
 				var playerID = "youtubeplayer_" + _gtm4wp_temp2[ _gtm4wp_temp2.length-1 ];
-				jQuery( this ).attr( "id", playerID );
+				gtm4wp_jqthis.attr( "id", playerID );
   		}
+
+			var gtm4wp_yturl = gtm4wp_jqthis.attr( "src" );
+			if ( gtm4wp_yturl.indexOf( "enablejsapi=1" ) == -1 ) {
+				if ( gtm4wp_yturl.indexOf( "?" ) == -1 ) {
+					gtm4wp_yturl += "?";
+				}
+
+				gtm4wp_yturl += "&enablejsapi=1&origin=" + document.location.protocol + "//" + document.location.hostname;
+
+				gtm4wp_jqthis.attr( "src", gtm4wp_yturl );
+			}
 
 			player = new YT.Player( playerID, {
 				events: {
@@ -63,8 +76,8 @@ function gtm4wp_onYouTubePlayerStateChange( event ) {
   switch( event.data ) {
     case -1:                       playerState = "unstarted"; break;
     case YT.PlayerState.ENDED:     playerState = "ended"; break;
-    case YT.PlayerState.PLAYING:   playerState = "playing"; break;
-    case YT.PlayerState.PAUSED:    playerState = "paused"; break;
+    case YT.PlayerState.PLAYING:   playerState = "play"; break;
+    case YT.PlayerState.PAUSED:    playerState = "pause"; break;
     case YT.PlayerState.BUFFERING: playerState = "buffering"; break;
     case YT.PlayerState.CUED:      playerState = "cued"; break;
   }
@@ -131,7 +144,7 @@ function gtm4wp_onYouTubePlaybackRateChange( event ) {
   		'duration': event.target.getDuration()
   	},
   	'mediaCurrentTime': event.target.getCurrentTime(),
-  	'mediaPlayerEvent': 'playback-rate-change',
+  	'mediaPlayerEvent': 'ratechange',
   	'mediaPlayerEventParam': event.data
   });
 }

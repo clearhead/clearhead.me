@@ -141,8 +141,8 @@ class WPSEO_GSC_Service {
 
 		if ( class_exists( 'Yoast_Api_Google_Client' ) === false ) {
 			$this->incompatible_api_libs(
-				/* translators: %1$s expands to Yoast SEO, %2$s expands to Google Analytics by Yoast */
 				sprintf(
+					/* translators: %1$s expands to Yoast SEO, %2$s expands to Google Analytics by Yoast */
 					__(
 						'%1$s detected you’re using a version of %2$s which is not compatible with %1$s. Please update %2$s to the latest version to use this feature.',
 						'wordpress-seo'
@@ -152,7 +152,7 @@ class WPSEO_GSC_Service {
 				)
 			);
 
-			wp_redirect( admin_url( 'admin.php?page=wpseo_dashboard' ) );
+			wp_redirect( admin_url( 'admin.php?page=' . WPSEO_Admin::PAGE_IDENTIFIER ) );
 			exit;
 		}
 
@@ -166,7 +166,7 @@ class WPSEO_GSC_Service {
 	 */
 	private function incompatible_api_libs( $notice ) {
 		Yoast_Notification_Center::get()->add_notification(
-			new Yoast_Notification( $notice, array( 'type' => 'error' ) )
+			new Yoast_Notification( $notice, array( 'type' => Yoast_Notification::ERROR ) )
 		);
 	}
 

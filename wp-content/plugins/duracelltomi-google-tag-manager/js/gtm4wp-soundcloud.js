@@ -3,7 +3,8 @@ var gtm4wp_soundclound_percentage_tracking = 10;
 var gtm4wp_soundclound_percentage_tracking_marks = {};
 
 jQuery(function() {
-	jQuery( '[id^="soundcloudplayer_"]' ).each(function() {
+//	jQuery( '[id^="soundcloudplayer_"]' ).each(function() {
+	jQuery( 'iframe[src*="soundcloud.com"]' ).each(function() {
 	  var iframe  = this,
 				widget  = SC.Widget( this ),
 	  		jqframe = jQuery( iframe ),
@@ -47,11 +48,11 @@ jQuery(function() {
 			});
 
 			widget.bind( SC.Widget.Events.FINISH, function( eventData ) {
-				gtm4wp_onSoundCloudPlayerStateChange( eventData, 'finish' );
+				gtm4wp_onSoundCloudPlayerStateChange( eventData, 'ended' );
 			});
 
 			widget.bind( SC.Widget.Events.SEEK, function( eventData ) {
-				gtm4wp_onSoundCloudPlayerStateChange( eventData, 'seek' );
+				gtm4wp_onSoundCloudPlayerStateChange( eventData, 'seeked' );
 			});
 
 			widget.bind( SC.Widget.Events.CLICK_DOWNLOAD, function() {

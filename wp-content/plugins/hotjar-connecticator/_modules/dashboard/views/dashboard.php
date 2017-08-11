@@ -8,12 +8,14 @@
 	
 	<ul>
 		<?php
-		foreach ($rssPosts->item as $key=>$rssPost) {
-			?>
-			<li>
-				<a href="<?php echo (string) $rssPost->link; ?>" target="_blank" class="rsswidget"><?php echo (string) $rssPost->title; ?></a> <span class="rss-date">&ndash;&nbsp;<span class="rss-date"><?php echo date('m.d.y', strtotime($rssPost->pubDate)); ?></span> 
-			</li>
-			<?php	
+		if (!empty($rssPosts->item)) {
+			foreach ($rssPosts->item as $key=>$rssPost) {
+				?>
+				<li>
+					<a href="<?php echo (string) $rssPost->link; ?>" target="_blank" class="rsswidget"><?php echo (string) $rssPost->title; ?></a> <span class="rss-date">– <span class="rss-date"><?php echo date('m.d.y', strtotime($rssPost->pubDate)); ?></span>
+				</li>
+				<?php
+			}
 		}
 		?>
 		

@@ -2,7 +2,7 @@
 /**
 Plugin Name: Hotjar Connecticator
 Plugin URI: http://www.bluemedicinelabs.com/
-Version: 1.1.0
+Version: 1.1.1
 Author: Blue Medicine Labs
 Author URI: http://www.bluemedicinelabs.com/
 Description: Allows you to insert your Hotjar script in the header of your WP site
@@ -31,38 +31,6 @@ License: GPL2
  /* Disclaimer: This plugin is created and maintained only by the authors at Blue Medicine Labs. 
  	Reference to Hotjar and use of any brand elements does not equate to endorsement. */
 
-// Create a helper function for easy SDK access.
-function hc_fs() {
-    global $hc_fs;
-
-    if ( ! isset( $hc_fs ) ) {
-        // Include Freemius SDK.
-        require_once dirname(__FILE__) . '/freemius/start.php';
-
-        $hc_fs = fs_dynamic_init( array(
-            'id'                => '130',
-            'slug'              => 'hotjar-connecticator',
-            'public_key'        => 'pk_0491b4c23f8b1b105f6f8518cd116',
-            'is_premium'        => false,
-            'has_addons'        => false,
-            'has_paid_plans'    => false,
-            'menu'              => array(
-                'slug'       => 'hotjar-connecticator',
-                'account'    => false,
-                'support'    => false,
-                'parent'     => array(
-                    'slug' => 'options-general.php',
-                ),
-            ),
-        ) );
-    }
-
-    return $hc_fs;
-}
-
-// Init Freemius.
-hc_fs();
-
 /**
 * Hotjar Connecticator Class
 */
@@ -75,7 +43,7 @@ class bml_turboheaders {
         $this->plugin = new stdClass;
         $this->plugin->name = 'hotjar-connecticator'; // Plugin Folder
         $this->plugin->displayName = 'Hotjar Connecticator'; // Plugin Name
-        $this->plugin->version = '1.0';
+        $this->plugin->version = '1.1.1';
         $this->plugin->folder = WP_PLUGIN_DIR.'/'.$this->plugin->name; // Full Path to Plugin Folder
         $this->plugin->url = WP_PLUGIN_URL.'/'.str_replace(basename( __FILE__),"",plugin_basename(__FILE__));
         

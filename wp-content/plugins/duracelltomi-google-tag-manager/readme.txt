@@ -1,10 +1,10 @@
 === DuracellTomi's Google Tag Manager for WordPress ===
 Contributors: duracelltomi
 Donate link: https://duracelltomi.com/
-Tags: google tag manager, tag manager, gtm, google, adwords, google adwords, adwords remarketing, remarketing, google analytics, analytics
+Tags: google tag manager, tag manager, gtm, google, adwords, google adwords, adwords remarketing, remarketing, google analytics, analytics, facebook ads, facebook remarketing, facebook pixel
 Requires at least: 3.4.0
-Tested up to: 4.4
-Stable tag: 1.2
+Tested up to: 4.8.1
+Stable tag: 1.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -12,36 +12,26 @@ The first Google Tag Manager plugin for WordPress with business goals in mind.
 
 == Description ==
 
-Google Tag Manager (GTM) is Google's free tool to everyone to be able to manage your analyitcs, PPC and other code snipetts
-using an intuitive web UI.
+Google Tag Manager (GTM) is Google's free tool for everyone to be able to manage your analyitcs, PPC and other code snipets
+using an intuitive web UI. To learn more about this tool, visit the [official website](https://www.google.com/analytics/tag-manager/).
 
-This plugin can place the necessary container code snippet into your website so that you do not need to edit your theme files.
+This plugin can place the necessary container code snippet into your website so that you do not need to add this manually.
 Multiple containers are supported!
 
-= Basic data included =
+The plugin can support your GTM setups by adding lots of meta data about the visited page and about the user into the so called data layer.
+GTM help center incluldes [more details about this data layer](https://developers.google.com/tag-manager/devguide#datalayer).
 
-Google Tag Manager for WordPress (aka GTM4WP or GTM 4 WP) builds a so called dataLayer variable for you. Using this you can manage your tags
-very easily since you can fire them using rules that include
+**Some parts of the plugin requires PHP 5.3 newer.
+PHP 5.4 or newer is recommended.**
 
-* post/page titles
-* post/page dates
-* post/page category names
-* post/page tag names
-* post/page author names
-* post types
-* post count on the current page + in the current category/tag/taxonomy
-* logged in status
-* logged in user role
-* logged in user ID (to track cross device behavior in Google Analytics)
-* search data
+Please note that PHP 5.x is nearing its end of life cycle thus it is recommended to upgrade. If you are not sure which version you are using, please contact
+your hosting provider for support.
 
-Use search data to generate Analytics events when an empty search result is being shown.
-This is useful to see what people are searching for that is not available on your site (for example a product).
+= GTM container code placement =
 
-Use post count to generate Analytics events when an empty result is being shown.
-This can be useful to catch empty (product) categories.
-
-= Codeless container code injection =
+GTM container code snippet is currently divided into two parts: the most important part will be added to the <head> tag of your website every time. The second part is
+called the iframe tag and it is only being used when users do not have JavaScript enabled. Code placement option only controls this second code snippet. For best
+performance this should be just after the opening body tag but it might be also safe to use the footer option in plugin settings as the worst case.
 
 Yaniv Friedensohn showed me a solution that can add the GTM container code after the opening body tag
 for almost every theme without modifying the theme files:
@@ -52,6 +42,23 @@ I added this solution to the plugin, currently as an experimental option.
 
 Users of the Genisis Framework should use the "Custom" option but without altering the theme.
 The Google Tag Manager container code will be added automatically.
+
+= Basic data included =
+
+* post/page titles
+* post/page dates
+* post/page category names
+* post/page tag names
+* post/page author ID and names
+* post/page ID
+* post types
+* post count on the current page + in the current category/tag/taxonomy
+* logged in status
+* logged in user role
+* logged in user ID (to track cross device behavior in Google Analytics)
+* logged in user email address (to comply with [GTM terms of service](https://www.google.com/analytics/tag-manager/use-policy/) do not pass this towards Google tags)
+* search data
+* site name and id for WordPress multisite instances
 
 = Browser / OS / Device data =
 
@@ -80,20 +87,12 @@ Weather data is queried from Open Weather Map. Depending on your websites traffi
 
 http://openweathermap.org/price
 
+It is also required to obtain a free API key from OpenWeatherMap on the page above.
+
 To determine to current location of your visitor, this plugin uses geoplugin.net.
 Depending on your websites traffic, additional fees may be applied:
 
 http://www.geoplugin.com/premium
-
-= Tag Manager Events =
-
-This plugin can fire several Tag Manager event so that you can include special tags when
-
-* the visitor moves between elements of a form (comment, contact, etc.)
-* the visitor clicks on a Facebook like/share (limited feature) or Twitter button
-* the visitor clicks on an outbound link (deprecated)
-* the visitor clicks on a download link (deprecated)
-* the visitor clicks on an email link (deprecated)
 
 = Media player events =
 
@@ -108,8 +107,8 @@ The plugin can track user interaction with your embeded media:
 It fires dataLayer events when a media player was being loaded on the page, when the media is being played, paused or stopped.
 It can fire dataLayer events when the user reaches 10, 20, 30, ..., 90, 100% of the media duration.
 
-Note: the plugin can only track media that was being embeded using the internal oEmbed feature of WordPress.
-No 3rd party embedding plugin is currently supported.
+Tracking should work with embedded media using the oEmbed feauture of WordPress and it should also work with other plugins or even with copy/pasted codes.
+Currently, players injected into the website after page load are not being tracked.
 
 = Scroll tracking =
 
@@ -134,16 +133,16 @@ http://cutroni.com/blog/2012/02/21/advanced-content-tracking-with-google-analyti
 Google Tag Manager for WordPress can add every dataLayer variable as an AdWords remarketing custom parameter list.
 Using this you can create more sophisticated remarketing lists.
 
-= Blacklist & Whitelist Tag Manager tags and macros =
+= Blacklist & Whitelist Tag Manager tags and variables =
 
-To increase security on your website, you can whitelist and blacklist tags and macros.
-This means you can disable certain tags from being fired or prevent the use of certain macro types
+To increase security on your website, you can whitelist and blacklist tags and variables.
+This means you can disable certain tags from being fired or prevent the use of certain variable types
 from being used regardless of your current Tag Manager setup.
 
 If your Google account is being hacked that is associated with your Google Tag Manager account,
 an attacker could easily execute malware on your website without accessing its code on your hosting server.
 
-By blacklisting custom HTML tags and/or custom JavaScript macros for example you can have a more secure Tag Manager container
+By blacklisting custom HTML tags and/or custom JavaScript variables for example you can have a more secure Tag Manager container
 if you do not use those kind of elements.
 
 = Integration =
@@ -159,6 +158,7 @@ Google Tag Manager for WordPress can integrate with several popular plugins.
 	* Enhanced e-commerce (beta):
 		*	implementation of [Enhanced E-commerce](https://developers.google.com/tag-manager/enhanced-ecommerce)
 		* Does not include tracking of promotions since WooCommerce does not have such a feature (yet)
+		* Does not currently support refunds
 
 More integration to come!
 
@@ -170,41 +170,32 @@ More integration to come!
 
 == Frequently Asked Questions ==
 
-= How can I implement enhanced e-commerce in Google Tag Manager =
+= How can I ... =
 
-I created a step-by-step guide for this:
-http://duracelltomi.com/google-tag-manager-for-wordpress/how-to-articles/setup-enhanced-ecommerce-tracking
+I created some step by step guides so that you can create the proper settings in Google Tag Manager:
+http://duracelltomi.com/google-tag-manager-for-wordpress/how-to-articles/
 
-= PayPal transactions in WooCommerce are not being tracked in Google Analyics =
+= PayPal / 3rd party payment gateway transactions in WooCommerce are not being tracked in Google Analyics =
 
-PayPal does not redirect the user back to your website by default.
+PayPal and some other 3rd party payment gateways does not redirect the user back to your website by default
+after a successful transaction.
 It offers the route back for your customer but it can happen that users simply close the browser
 before they get back to your thankyou page (aka. order received page)
 
 This means that neither Google Analyics tags or any other tags are being fired.
 
-Enable auto return in your PayPal settings. This will instruct PayPal to show a quick
+Enable auto return in your payment gateway settings. This will instruct them to show a quick
 info page after payment and then redirect the user back to your site. This will
 increase the number of tracked transactions.
 
-= Why isn't there an option to blacklist tag/macro classes =
+= Why isn't there an option to blacklist tag/variable classes =
 
-Although Google recommends to blacklist tags and macros using classes, I found it is complicated for people to understand
-what tags and macros are being blacklisted/whitelisted automatically using classses. Therefore I decided to include
-individual tags and macros on the blacklist tabs.
+Although Google recommends to blacklist tags and variables using classes, I found it is complicated for people to understand
+what tags and variables are being blacklisted/whitelisted automatically using classses. Therefore I decided to include
+individual tags and variables on the blacklist tabs.
 
-Please remember that tags are useless without macros so only blacklist macros if you are certain that you do not use them
-with any macro in your container.
-
-= How can I track add-to-cart events in WooCommerce =
-
-To track add-to-cart events using classic transactions you have to catch the dataLayer event gtm4wp.addProductToCart
-
-There are 3 additional dataLayer variables that can be accessed during the event using classic ecommerce tracking:
-
-* productName: the name of the product where the cart button has been pressed
-* productSKU: the SKU you entered in your product settings
-* productID: the ID of the WordPress post that holds your product data
+Please remember that tags are useless without variables so only blacklist variables if you are certain that you do not use them
+with any tags in your container.
 
 = How can I track scroll events in Google Tag Manager? =
 
@@ -279,6 +270,95 @@ If you or your social plugin inserts the Facebook buttons using IFRAMEs (like So
 6. Scroll tracking
 
 == Changelog ==
+
+= 1.7 =
+
+* Updated: even better WooCommerce 3.0 compatibility (WooCommerce 2.6 still supported but this support ends with the next plugin version)
+* Fixed: properly escaping product category name on variable product detail pages
+* Fixed: proper data layer stucture in the gtm4wp.changeDetailViewEEC event
+* Added: Google Optimize page hiding snippet under Integrations tab
+* Added: add to cart data for WooCommerce enhanced ecommerce tracking if user undos a cart item removal (no need to update GTM tags)
+* Added: you can now enter a product ID prefix so that IDs can match with IDs in some product feeds generated by other plugins
+* Added: option to track cart page as step 1 in enhanced ecommerce checkout funnel
+
+= 1.6.1 =
+
+* Fixed: PHP warning message on WooCommerce cart page
+* Fixed: Better compatibility with WooCommerce 2.6.x :-)
+
+= 1.6 =
+
+* Fixed: do not block product list item clicks if ad blocker is enabled
+* Fixed: only track product clicks in product lists if link points to the product detail page URL
+* Fixed: PHP warning in backlogs 'Undefined variable: gtm4wp_options'
+* Added: product variation support in WooCommerce integration (enhanced ecommerce implementations should add the GTM event gtm4wp.changeDetailViewEEC to the ecommerce event trigger)
+* Updated: better WooCommerce 3.0 compatibility
+
+= 1.5.1 =
+
+* Fixed: clicks on products in product list pages redirected to undefined URLs with some themes.
+
+= 1.5 =
+
+Lots of WooCommerce ecommerce codes has been changed and extended, please double check your measurement after upgrading to this version!
+
+* Added: warning message if you are using PHP 5.3 or older. Browser/OS/Device tracking needs 5.4 or newer
+* Added: Email address of the logged in user into the visitorEmail dataLayer variable. Remember: to comply with GTM TOS you are not allowed to pass this data towards any Google tag but you can use this in any other 3rd party tag.
+* Added: gtm4wp_eec_product_array WordPress filter so that plugin and theme authors can add their own data for enhanced ecommere product arrays
+* Fixed: JavaScript error in WooCommerce stores when enhanced ecommerce enabled and a product being clicked in a widget area
+* Fixed: Order data not present in some cases on the order received page
+* Changed: Extended "User SKUs instead of IDs for remarketing" option to be also applied to ecommerce product data arrays
+* Changed: Use wc_clean instead of the deprecated function woocommerce_clean
+* Changed: New, divided GTM container implemented - a fixed part in the <head> and an iframe part placed using the container placement option you've set earlier
+
+= 1.4 =
+
+* Fixed: WP CLI error message
+* Fixed: wrong dynamic remarketing tagging on cart and checkout pages
+* Updated: WhichBrowser library to 2.0.22
+* Updated: slightly changed container code snippet to prevent W3 Total Cache to alter the code which breaks proper code execution
+* Updated: replaced file_get_contents() usage in weather tracking to wp_remote_get() so that it is more compatible with several WP instances
+* Updated: YouTube/Video/Soundcloud tracking now tracks videos not embedded using oEmbed (like videos in a widget area)
+* Updated: new Vimeo Player API implemented which should solve several issues
+* Changed: adapted W3C HTML5 media player event names which changes some events (needs updating your existing GTM setup):
+  * Soundcloud: finish => ended, seek => seeked
+  * YouTube: playing => play, paused => pause, playback-rate-change => ratechange
+  * Vimeo: seek => seeked
+* Added: new placement option - 'off'. This will only generate the data layer but you will need to add the proper GTM container code snippet by hand
+* Added: new data layer variable: authorID
+* Added: new data layer variable: siteID to be able to track based on blog ID in a multisite environment
+* Added: new data layer variable: siteName to be able to track in a multisite environment
+
+= 1.3.2 =
+
+* Fixed: remove cart event not fired in WooCommerce 2.6
+* Fixed: ecomm_prodid.push error message on product detail pages
+* Fixed: proper tracking of cart actions on the cart page for WooCommerce 2.6
+* Fixed: 'Illegal string offset' errors in some cases in the cart
+* Fixed: OpenWeatherMap requires a (free) API key now, you can now enter this to use weather data in data layer
+
+= 1.3.1 =
+
+* Fixed: "json_encode() expects parameter 2 to be long, string given" on PHP 5.3 instances
+* Fixed: Fatal PHP error in cart if you enabled taxes to be included in your cart
+
+= 1.3 =
+
+Major changes to the Enhanced Ecommerce implementation of the WooCommerce integration!
+
+* Fixed: proper tracking of list positions
+* Fixed: opening product detail page in a new window/tab when user pressed the CTRL key
+* Fixed: ecomm_totalvalue included the total price of the cart without taxes
+* Fixed: ecomm_totalvalue does not take into account the quantity of ordered products on the order received page
+* Fixed: php error message on product lists when AdWords dynamic remarketing was enabled on WooCommerce 2.6
+* Fixed: added data-cfasync="false" to the GTM container code for better compatibility with CloudFlare
+* Added: introducing tracking of list names (general product list, recent products list, featured products list, etc.)
+  * Some list names (like cross-sells) will be shown as 'General Product List'. A proposed change in WooCommerce 2.6 will solve that issue
+* Added: tracking product lists in widgets
+* Added: tracking checkout options (payment and shipment)
+* Updated: better add-to-cart / remove-from-cart management in mini cart and while updating cart content
+* Updated: added currency code to each enhanced ecommerce call so that currency reporting is OK for multi currency sites
+* Updated: replaced usage of get_currentuser() to keep compatibility with WordPress 4.5
 
 = 1.2 =
 
@@ -412,6 +492,42 @@ Please report all bugs found in my plugin using the [contact form on my website]
 * First beta release
 
 == Upgrade Notice ==
+
+= 1.7 =
+
+Better WooCommerce 3.x compatibility and new features
+
+= 1.6.1 =
+
+Bugfix release.
+
+= 1.6 =
+
+If you are using WooCommerce and enhanced ecommerce, please add gtm4wp.changeDetailViewEEC to the ecommerce helper trigger
+
+= 1.5.1 =
+
+Fixed: clicks on products in product list pages redirected to undefined URLs with some themes.
+
+= 1.5 =
+
+Lots of WooCommerce ecommerce codes has been changed and extended, please double check your measurement after upgrading to this version!
+
+= 1.4 =
+
+Several additions and fixes, breaking changes on media player tracking, please read changelog before upgrade
+
+= 1.3.2 =
+
+Quickfix release for 1.3.x: major changes and improvements in the enhanced ecommerce implementation for WooCommerce. If you are already using this beta feature, please read the changelog before upgrading!
+
+= 1.3.1 =
+
+Quickfix release for 1.3: major changes and improvements in the enhanced ecommerce implementation for WooCommerce. If you are already using this beta feature, please read the changelog before upgrading!
+
+= 1.3 =
+
+Major changes and improvements in the enhanced ecommerce implementation for WooCommerce. If you are already using this beta feature, please read the changelog before upgrading!
 
 = 1.2 =
 
