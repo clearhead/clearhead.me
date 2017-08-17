@@ -101,7 +101,24 @@ get_header(); ?>
 							<img src="<?php echo get_sub_field('overview_screenshot')['url']?>" alt="<?php echo get_sub_field('overview_screenshot')['alt']?>">
 						</figure>
 					</div>
+				</section> <?
+				while( have_rows('experiment_testimonial_block') ) : the_row();?>
+				<section class="article-testimony">
+					<div class="container">
+						<?php
+						$avatar = get_sub_field('source_avatar');
+						if(!empty($avatar)): ?>
+							<figure class="source-photo">
+								<img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>">
+							</figure>
+						<?php
+						endif; ?>
+						<blockquote><?php the_sub_field('testimony') ?></blockquote>
+						<cite><?php the_sub_field('source_name_and_description') ?></cite>
+					</div>
 				</section>
+				<?php 
+				endwhile; ?>
 				<section>
 					<div class="container">
 						<div class="cap-7c-6g cap-7c-6g-centered">
