@@ -248,7 +248,8 @@ get_header(); ?>
 	$category_query_args = array(
 		'post__not_in' => $not_in_array,
 		'cat' => $catId,
-		'posts_per_page' => 3
+		'posts_per_page' => 3,
+		'meta_query' => array(array('key' => '_thumbnail_id'))
 	);
 	$category_query = new WP_Query( $category_query_args );
 
