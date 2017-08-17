@@ -212,7 +212,7 @@ get_header(); ?>
 			endwhile; ?>
 	</article>
 	<?php
-	//Get the category id
+	//Read More Section
 	$current_post_id = get_the_ID();
 	$catId = get_cat_ID('Case Studies');
 	$not_in_array = array($current_post_id);
@@ -231,15 +231,19 @@ get_header(); ?>
 				<h5>Read more case studies</h5>
 				<ul> <?php
 					while ($category_query->have_posts()) : $category_query->the_post(); 
-					$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
-					<li>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-							<img src="<?php echo $url ?>" alt="<?php the_title_attribute(); ?>">
-							<span>
-								<?php the_title(); ?>
-							</span>
-						</a>
-					</li>
+						$url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID)); 
+						if( count($url) > 0 ) {
+							$imageUrl = $url[0];
+						}
+						?>
+						<li>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+								<img src="<?php echo $imageUrl; ?>">
+								<span>
+									<?php the_title(); ?>
+								</span>
+							</a>
+						</li>
 					<?php
 					endwhile; ?>
 				</ul>
