@@ -209,7 +209,36 @@ get_header(); ?>
 					</div>
 			</section>
 		<?php
-			endwhile; ?>
+		endwhile; 
+		if( have_rows('outro_section') ):
+			while( have_rows('outro_section') ) : the_row();
+				if( get_row_layout() == 'testimonial_block'): ?>
+					<section class="article-testimony">
+						<div class="container">
+							<?php
+							$avatar = get_sub_field('source_avatar');
+							if(!empty($avatar)): ?>
+								<figure class="source-photo">
+									<img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>">
+								</figure>
+							<?php
+							endif; ?>
+							<blockquote><?php the_sub_field('testimony') ?></blockquote>
+							<cite><?php the_sub_field('source_name_and_description') ?></cite>
+						</div>
+					</section>
+				<?php
+				elseif( get_row_layout() == 'content_block'): ?>
+					<section>
+						<div class="container">
+							<div class="cap-7c-6g cap-7c-6g-centered">
+								<?php echo the_sub_field('content'); ?>
+							</div>
+						</div>
+					</section><?php
+				endif;
+			endwhile;
+		endif; ?>
 	</article>
 	<?php
 	//Read More Section
