@@ -1672,6 +1672,24 @@ article.case-study {
             }
         }
     }
+    p img {
+        height: auto;
+        position: relative;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+
+        @media (min-width: 850px) {
+            margin-top: 2em;
+            width: 711px;
+            max-width: ((711/583)*100%);
+            left: (((711/583)*100%)-100%)/-2;
+        }
+        @media (min-width: 1000px) {
+            width: 800px;
+            max-width: ((800/618)*100%);
+            left: (((800/618)*100%)-100%)/-2;
+        }
+    }
     strong a {
         font-weight: $medium;
         text-decoration: underline;

@@ -1030,6 +1030,12 @@ article.case-study ol li { margin-bottom: 1em; display: -webkit-box; display: -m
 
 article.case-study ol li:before { content: counter(item); counter-increment: item; color: #32C4F5; background-color: #EAF9FE; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; font-size: 0.7777777778rem; width: 1.5rem; height: 1.5rem; margin-right: 0.75em; border-radius: 100%; text-align: center; }
 
+article.case-study p img { height: auto; position: relative; margin-top: 1em; margin-bottom: 0.5em; }
+
+@media (min-width: 850px) { article.case-study p img { margin-top: 2em; width: 711px; max-width: 121.955403087%; left: -10.9777015437%; } }
+
+@media (min-width: 1000px) { article.case-study p img { width: 800px; max-width: 129.449838188%; left: -14.7249190939%; } }
+
 article.case-study strong a { font-weight: 500; text-decoration: underline; font-size: 0.9444444444em; display: block; margin-bottom: 0.5em; }
 
 article.case-study .article-intro { background-color: #32C4F5; color: #FFFFFF; padding: 6em 0 0; }
