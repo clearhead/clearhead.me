@@ -20,7 +20,7 @@ get_header(); ?>
 				</h2>
 				<?php endif;
 				$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-				if ($feat_image ): ?>
+				if ($feat_image && have_rows('intro_section')): ?>
 					<figure>
 						<img src="<?php echo $feat_image; ?>">
 					</figure>
