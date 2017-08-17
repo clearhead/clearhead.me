@@ -1,0 +1,203 @@
+// BASE
+// --------------------------------------
+
+
+// Typography
+// ----------
+body {
+	line-height: $lh-normal;
+	font-family: $body;
+	font-weight: $regular;
+	color: $black;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color: currentColor;
+	transition:
+		color $timing-normal,
+		border-color $timing-normal,
+		background-color $timing-normal;
+}
+.copy {
+	a:not(.button) {
+		color: darken($blue, 15%);
+		display: inline;
+		&:hover {
+			color: darken($blue, 25%);
+		}
+	}
+	p, ul {
+	}
+	p, ul, .button, img {
+		&:not(:last-child) {
+			margin-bottom: 1.5em;
+		}
+	}
+	ul {
+		li {
+		}
+	}
+	strong {
+		font-weight: $bold;
+	}
+}
+
+em {
+	font-style: italic;
+}
+small {
+	font-size: em(14);
+}
+
+h1 {
+	@include h1-set;
+	&:not(:last-child) {
+		// margin-bottom: 2rem;
+	}
+}
+
+h2 {
+	@include h2-set;
+	&:not(:last-child) {
+		// margin-bottom: 2rem;
+	}
+}
+
+h3 {
+	@include h3-set;
+	&:not(:last-child) {
+		// margin-bottom: 1rem;
+	}
+	// color: $gray-dark;
+}
+
+h4 {
+	@include h4-set;
+	&:not(:last-child) {
+		// margin-bottom: 1rem;
+	}
+	// color: $gray-dark;
+}
+
+h5 {
+	@include h5-set;
+	&:not(:last-child) {
+		// margin-bottom: 1rem;
+	}
+	// color: $gray-dark;
+}
+
+h6 {
+	@include h6-set;
+	&:not(:last-child) {
+		// margin-bottom: 1rem;
+	}
+	// color: $gray;
+}
+
+
+// Inputs
+// ------
+select, input, textarea {
+	-webkit-appearance: none;
+	appearance: none;
+	font-family: $body;
+	margin: 0;
+	font-size: em(16);
+	display: block;
+	color: currentColor;
+	border: none;
+	line-height: $lh-normal;
+	width: 100%;
+	border-radius: 0;
+	padding: 0;
+
+	// Some default placeholder colors… auto-prefixer had issues auto-prefixing these
+	&::placeholder {
+		color: currentColor;
+	}
+}
+
+label {
+	cursor: pointer;
+	&::selection {
+		background-color: transparent; // prevent accidental text selection
+	}
+}
+
+
+// Images
+// ------
+img, svg {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+
+// REUSABLE INNER ELEMENTS
+// --------------------------------------
+
+// Buttons
+// -------
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	transition: background-color $timing-normal;
+}
+.button {
+	margin: 0;
+	display: inline-block;
+	cursor: pointer;
+	@include h4-set;
+	color: $white;
+	background-color: $blue;
+
+	font-size: em(14);
+	line-height: (18/14);
+	padding: rem(26) rem(24) rem(23);
+	letter-spacing: 0.83px;
+	text-transform: uppercase;
+	font-weight: $medium;
+	border-radius: rem(2);
+	 min-width: rem(242);
+
+	transition:
+		color $timing-normal,
+		background-color $timing-normal;
+	&:hover, &:focus {
+		background-color: darken($blue, 7.5%);
+		&:after {
+			border-left-color: darken($blue, 7.5%);
+		}
+	}
+
+	&--white {
+		background-color: white;
+		color: $black;
+		&:hover {
+			color: $white;
+		}
+	}
+
+	// &:focus {
+	// 	outline: 0;
+	// 	&::-moz-focus-inner {
+	// 		border: 0;
+	// 	}
+	// }
+
+	// &:disabled {
+	// 	background-color: $gray;
+	// 	&:after {
+	// 		border-left: rem(18) solid $gray;
+	// 	}
+	// }
+}
+
+// #__bs_notify__ {
+// 	display: none !important;
+// }

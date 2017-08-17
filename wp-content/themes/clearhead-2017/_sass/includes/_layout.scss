@@ -1,0 +1,109 @@
+// LAYOUT
+// --------------------------------------
+
+// Containers
+// ----------
+.container {
+    margin: 0 auto;
+    min-width: 272px;
+    width: calc(100% - #{$gutter});
+    @include w1280 {
+        width: calc(100% - #{em(120)});
+    }
+     .container { // unset narrow rules for nested containers
+        @include n700 {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    &--large {
+        @include w700 {
+            width: col(11);
+        }
+        @include w1280 {
+            width: col(12);
+        }
+    }
+    &--medium {
+        @include w700 {
+            width: col(9);
+        }
+        @include w1280 {
+            width: col(8);
+        }
+    }
+    &--widened {
+        @include n700 {
+            width: calc(100% - #{$gutter/2});
+        }
+    }
+    &--padded {
+        @include n700 {
+            padding: 0 $gutter/4;
+        }
+    }
+}
+
+
+// Site Header
+// -----------
+.site-header {
+    padding: em(26) 0;
+    padding: em(40) 0;
+    .flex-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo {
+            width: em(211.5);
+            a {
+                transition: opacity $timing-normal;
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+        nav {
+            // position: relative;
+            // top: -3px;
+            // left: -19px;
+            ul {
+                display: flex;
+                li {
+                    margin-bottom: em(2);
+                    &:not(:last-child) {
+                        margin-right: calc(#{em(11.45)} + 1vw);
+                    }
+                    a {
+                        text-transform: lowercase;
+                        border-bottom: rem(3) solid transparent;
+                        color: rgba($white, 0.76);
+                        padding: 0 rem(7.5) rem(4);
+                        font-weight: $medium;
+                        font-size: em(15);
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                    &.selected {
+                        a {
+                            color: $white;
+                            border-bottom-color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Site Footer
+// -----------
+.site-footer {
+}
+
+// Article
+// -------
+article {
+}

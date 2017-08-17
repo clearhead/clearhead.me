@@ -1,0 +1,93 @@
+// CSS EXTENSIONS
+// --------------------------------------
+
+// Variables
+// ---------
+
+// Color palette
+$white: #FFFFFF;
+$black: #313335;
+$gray: #787B7F;
+$blue: #32C4F5;
+$blue-shade: #EAF9FE;
+
+
+
+// Body font
+$body: 'ff-bau-web-pro', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$regular: 400;  // (allows normal and italic)
+$medium: 500;   // (allows normal and italic)
+$bold: 700;     // (allows normal and italic)
+
+// Duration and timing
+$timing-normal: 0.1875s ease-out;
+$timing-slower: 0.25s ease-out;
+
+// Border radius
+$br-normal: em(2);
+
+// Line height
+$lh-normal: (30/18);
+
+
+
+// Functions
+// ---------
+
+// Point sizing
+$base: 16;
+@function em($pixels, $context: $base) {
+	@return #{$pixels/$context}em;
+}
+
+@function rem($pixels, $context: $base) {
+	@return #{$pixels/$context}rem;
+}
+
+@function linearInterp($x0, $y0, $x1, $y1) {
+    //Find slope
+    $slope: ($y1 - $y0)/($x1 - $x0);
+    $intercept: $y0 - $slope * $x0;
+    @return calc(#{$slope*100}vw + #{rem($intercept)});
+
+}
+
+
+// NOTE: When used in calc() interpolate like this: “calc(100% - #{em(60)})”
+
+
+
+// Mixins
+// ------
+
+// Media queries
+@mixin n480  { @media screen and (max-width: 479px)	{ @content; } }
+@mixin w480  { @media screen and (min-width: 480px)	{ @content; } }
+@mixin n700  { @media screen and (max-width: 699px)	{ @content; } }
+@mixin w700  { @media screen and (min-width: 700px)	{ @content; } }
+@mixin n1000 { @media screen and (max-width: 999px)	{ @content; } }
+@mixin w1000 { @media screen and (min-width: 1000px) { @content; } }
+@mixin n1280 { @media screen and (max-width: 1279px) { @content; } }
+@mixin w1280 { @media screen and (min-width: 1280px) { @content; } }
+@mixin n1440 { @media screen and (max-width: 1439px) { @content; } }
+@mixin w1440 { @media screen and (min-width: 1440px) { @content; } }
+@mixin w1920 { @media screen and (min-width: 1920px) { @content; } }
+
+// Type
+@mixin h1-set {
+}
+
+@mixin h2-set {
+}
+
+@mixin h3-set {
+}
+
+@mixin h4-set {
+}
+
+@mixin h5-set {
+}
+
+@mixin h6-set {
+}
