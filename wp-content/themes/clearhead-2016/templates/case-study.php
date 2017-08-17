@@ -260,14 +260,11 @@ get_header(); ?>
 				<h5>Read more case studies</h5>
 				<ul> <?php
 					while ($category_query->have_posts()) : $category_query->the_post(); 
-						$url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID)); 
-						if( count($url) > 0 ) {
-							$imageUrl = $url[0];
-						}
+						$url = get_the_post_thumbnail_url($post);
 						?>
 						<li>
 							<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-								<img src="<?php echo $imageUrl; ?>">
+								<img src="<?php echo $url; ?>">
 								<span>
 									<?php the_title(); ?>
 								</span>
