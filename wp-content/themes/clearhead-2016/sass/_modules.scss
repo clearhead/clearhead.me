@@ -1690,6 +1690,15 @@ article.case-study {
             left: (((800/618)*100%)-100%)/-2;
         }
     }
+    .section-label {
+        display: block;
+        color: lighten($dark-gray, 10%);
+        font-weight: $medium;
+        font-size: 0.8125em;
+        line-height: (20/12);
+        margin-left: rem(2);
+        margin-bottom: 0.625em;
+    }
     strong a {
         font-weight: $medium;
         text-decoration: underline;
@@ -1814,8 +1823,6 @@ article.case-study {
                         margin-right: 0.5em;
                         width: rem(90);
                         flex-shrink: 0;
-                    }
-                    span {
                     }
                 }
             }

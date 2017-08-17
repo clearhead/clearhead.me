@@ -56,10 +56,10 @@ get_header(); ?>
 					</section> <?php
 				endif;
 			endwhile;
-		endif; 
+		endif;
 		$experiments = get_field_object('experiments_section');
 		$experimentCount = count($experiments['value']); ?>
-		<?php 
+		<?php
 		//Check to seee if we have greater than one experiment, then show the section
 		if( $experimentCount > 1 ): ?>
 			<section class="section-jump">
@@ -83,7 +83,7 @@ get_header(); ?>
 				</div>
 			</section> <?php
 			endif;
-			$count = 1; 
+			$count = 1;
 			while ( have_rows('experiments_section')): the_row();
 				$overview_content = get_sub_field('overview_content');
 				$experiment_details = get_sub_field('experiment_details');?>
@@ -122,6 +122,7 @@ get_header(); ?>
 				<section>
 					<div class="container">
 						<div class="cap-7c-6g cap-7c-6g-centered">
+							<span class="section-label">Experiment #</span>
 							<h2><?php the_sub_field('title')?>: <?php the_sub_field('subtitle')?></h2>
 							<?php echo $overview_content['content'] ?>
 						</div>
