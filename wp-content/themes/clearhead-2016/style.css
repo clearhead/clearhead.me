@@ -1036,6 +1036,8 @@ article.case-study p img { height: auto; position: relative; margin-top: 1em; ma
 
 @media (min-width: 1000px) { article.case-study p img { width: 800px; max-width: 129.449838188%; left: -14.7249190939%; } }
 
+article.case-study .section-label { display: block; color: #8e9296; font-weight: 500; font-size: 0.8125em; line-height: 1.6666666667; margin-left: 0.1111111111rem; margin-bottom: 0.625em; }
+
 article.case-study strong a { font-weight: 500; text-decoration: underline; font-size: 0.9444444444em; display: block; margin-bottom: 0.5em; }
 
 article.case-study .article-intro { background-color: #32C4F5; color: #FFFFFF; padding: 6em 0 0; }
