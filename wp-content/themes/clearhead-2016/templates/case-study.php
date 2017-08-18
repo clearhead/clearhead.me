@@ -72,7 +72,15 @@ get_header(); ?>
 							<li>
 								<a class="smooth-scroll" href="#experiment-<?php echo $count; ?>">
 									<span>Experiment <?php echo $count ?></span>
-									<strong><?php the_sub_field('subtitle'); ?></strong>
+									<?php 
+										$title = get_sub_field('title');
+										$subtitle = get_sub_field('subtitle');
+									?>
+									<?php if($subtitle): ?>
+										<strong><?php echo $subtitle; ?></strong>
+									<?php elseif($title): ?>
+										<strong><?php echo $title; ?></strong>
+									<?php endif; ?>
 									<?php get_template_part( 'img/icons/down-arrow.svg' ); ?>
 								</a>
 							</li>
@@ -88,7 +96,6 @@ get_header(); ?>
 				$overview_content = get_sub_field('overview_content');
 				$experiment_details = get_sub_field('experiment_details');?>
 				<section class="section-intro" id="experiment-<?php echo $count ?>">
-					<?php $count++; ?>
 					<div class="container">
 						<figure class="browser-preview">
 							<div class="browser-chrome">
@@ -122,7 +129,7 @@ get_header(); ?>
 				<section>
 					<div class="container">
 						<div class="cap-7c-6g cap-7c-6g-centered">
-							<span class="section-label">Experiment #</span>
+							<span class="section-label">Experiment <?php echo $count; ?></span>
 							<h2><?php the_sub_field('title')?>: <?php the_sub_field('subtitle')?></h2>
 							<?php echo $overview_content['content'] ?>
 						</div>
@@ -227,6 +234,8 @@ get_header(); ?>
 					</div>
 			</section>
 		<?php
+		//Increment the loop counter
+		$count++;
 		endwhile; 
 		if( have_rows('outro_section') ):
 			while( have_rows('outro_section') ) : the_row();
