@@ -304,7 +304,7 @@ get_header(); ?>
 			</div>
 			<div class="cta-callout">
 				<em>Ready to learn more?</em>
-				<a href="#contact" class="button smooth-scroll">Let’s Talk</a>
+				<a href="#contact" class="button contact-focus">Let’s Talk</a>
 			</div>
 		</div>
 	</section>
