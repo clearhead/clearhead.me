@@ -106,7 +106,7 @@ class WPSEO_Meta {
 				'help-button'  => '', // Translation added later.
 			),
 			'focuskw_text_input' => array(
-				'type'          => 'text',
+				'type'          => 'focuskeyword',
 				'title'         => '', // Translation added later.
 				'default_value' => '',
 				'autocomplete'  => false,
@@ -140,8 +140,14 @@ class WPSEO_Meta {
 				'default_value' => '0',
 				'description'   => '',
 			),
+			'content_score'  => array(
+				'type'          => 'hidden',
+				'title'         => 'content_score',
+				'default_value' => '0',
+				'description'   => '',
+			),
 			'metakeywords'   => array(
-				'type'          => 'text',
+				'type'          => 'metakeywords',
 				'title'         => '', // Translation added later.
 				'default_value' => '',
 				'class'         => 'metakeywords',
@@ -182,7 +188,6 @@ class WPSEO_Meta {
 				'options'       => array(
 					'-'            => '', // Site-wide default - translation added later.
 					'none'         => '', // Translation added later.
-					'noodp'        => '', // Translation added later.
 					'noimageindex' => '', // Translation added later.
 					'noarchive'    => '', // Translation added later.
 					'nosnippet'    => '', // Translation added later.
@@ -398,17 +403,8 @@ class WPSEO_Meta {
 				$field_defs['meta-robots-noindex']['options']['0'] = sprintf( $field_defs['meta-robots-noindex']['options']['0'], ( ( isset( $options[ 'noindex-' . $post_type ] ) && $options[ 'noindex-' . $post_type ] === true ) ? 'noindex' : 'index' ) );
 
 				/* Adjust the robots advanced 'site-wide default' text string based on those settings */
-				if ( $options['noodp'] !== false ) {
-					$robots_adv = array();
-					if ( $options['noodp'] === true ) {
-						// Use translation from field def options - mind that $options and $field_def['options'] keys should be the same!
-						$robots_adv[] = $field_defs['meta-robots-adv']['options']['noodp'];
-					}
-					$robots_adv = implode( ', ', $robots_adv );
-				}
-				else {
-					$robots_adv = __( 'None', 'wordpress-seo' );
-				}
+				$robots_adv = __( 'None', 'wordpress-seo' );
+
 				$field_defs['meta-robots-adv']['options']['-'] = sprintf( $field_defs['meta-robots-adv']['options']['-'], $robots_adv );
 				unset( $robots_adv );
 
@@ -461,7 +457,6 @@ class WPSEO_Meta {
 					$clean = strval( $int ); // Convert to string to make sure default check works.
 				}
 				break;
-
 
 			case ( $field_def['type'] === 'checkbox' ):
 				// Only allow value if it's one of the predefined options.
@@ -521,6 +516,19 @@ class WPSEO_Meta {
 			default:
 				if ( is_string( $meta_value ) ) {
 					$clean = WPSEO_Utils::sanitize_text_field( trim( $meta_value ) );
+				}
+
+				if ( $meta_key === self::$meta_prefix . 'focuskw' ) {
+					$clean = str_replace( array(
+						'&lt;',
+						'&gt;',
+						'&quot',
+						'&#96',
+						'<',
+						'>',
+						'"',
+						'`',
+					), '', $clean );
 				}
 				break;
 		}
@@ -586,7 +594,7 @@ class WPSEO_Meta {
 	 *
 	 * @static
 	 *
-	 * @param  null   $null       Old, disregard.
+	 * @param  bool   $check      The current status to allow updating metadata for the given type.
 	 * @param  int    $object_id  ID of the current object for which the meta is being updated.
 	 * @param  string $meta_key   The full meta key (including prefix).
 	 * @param  string $meta_value New meta value.
@@ -594,7 +602,7 @@ class WPSEO_Meta {
 	 *
 	 * @return null|bool          true = stop saving, null = continue saving
 	 */
-	public static function remove_meta_if_default( $null, $object_id, $meta_key, $meta_value, $prev_value = '' ) {
+	public static function remove_meta_if_default( $check, $object_id, $meta_key, $meta_value, $prev_value = '' ) {
 		/* If it's one of our meta fields, check against default */
 		if ( isset( self::$fields_index[ $meta_key ] ) && self::meta_value_is_default( $meta_key, $meta_value ) === true ) {
 			if ( $prev_value !== '' ) {
@@ -607,7 +615,7 @@ class WPSEO_Meta {
 			return true; // Stop saving the value.
 		}
 
-		return null; // Go on with the normal execution (update) in meta.php.
+		return $check; // Go on with the normal execution (update) in meta.php.
 	}
 
 
@@ -616,20 +624,20 @@ class WPSEO_Meta {
 	 *
 	 * @static
 	 *
-	 * @param  null   $null       Old, disregard.
+	 * @param  bool   $check      The current status to allow adding metadata for the given type.
 	 * @param  int    $object_id  ID of the current object for which the meta is being added.
 	 * @param  string $meta_key   The full meta key (including prefix).
 	 * @param  string $meta_value New meta value.
 	 *
 	 * @return null|bool          true = stop saving, null = continue saving
 	 */
-	public static function dont_save_meta_if_default( $null, $object_id, $meta_key, $meta_value ) {
+	public static function dont_save_meta_if_default( $check, $object_id, $meta_key, $meta_value ) {
 		/* If it's one of our meta fields, check against default */
 		if ( isset( self::$fields_index[ $meta_key ] ) && self::meta_value_is_default( $meta_key, $meta_value ) === true ) {
 			return true; // Stop saving the value.
 		}
 
-		return null; // Go on with the normal execution (add) in meta.php.
+		return $check; // Go on with the normal execution (add) in meta.php.
 	}
 
 
@@ -726,6 +734,19 @@ class WPSEO_Meta {
 		return update_post_meta( $post_id, self::$meta_prefix . $key, $meta_value );
 	}
 
+	/**
+	 * Deletes a meta value for a post
+	 *
+	 * @static
+	 *
+	 * @param string $key The internal key of the meta value to change (without prefix).
+	 * @param int    $post_id The ID of the post to change the meta for.
+	 *
+	 * @return bool Whether the value was changed
+	 */
+	public static function delete( $key, $post_id ) {
+		return delete_post_meta( $post_id, self::$meta_prefix . $key );
+	}
 
 	/**
 	 * Used for imports, this functions imports the value of $old_metakey into $new_metakey for those post
@@ -1024,6 +1045,11 @@ class WPSEO_Meta {
 	 * @return array
 	 */
 	public static function keyword_usage( $keyword, $post_id ) {
+
+		if ( empty( $keyword ) ) {
+			return array();
+		}
+
 		$get_posts = new WP_Query(
 			array(
 				'meta_key'       => '_yoast_wpseo_focuskw',

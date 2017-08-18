@@ -104,7 +104,7 @@ class WPCOM_JSON_API_List_Posts_Endpoint extends WPCOM_JSON_API_Post_Endpoint {
 
 		if ( isset( $args['meta_key'] ) ) {
 			$show = false;
-			if ( $this->is_metadata_public( $args['meta_key'] ) )
+			if ( WPCOM_JSON_API_Metadata::is_public( $args['meta_key'] ) )
 				$show = true;
 			if ( current_user_can( 'edit_post_meta', $query['post_type'], $args['meta_key'] ) )
 				$show = true;
@@ -170,6 +170,23 @@ class WPCOM_JSON_API_List_Posts_Endpoint extends WPCOM_JSON_API_Post_Endpoint {
 
 		if ( isset( $args['tag'] ) ) {
 			$query['tag'] = $args['tag'];
+		}
+
+		if ( ! empty( $args['term'] ) ) {
+			$query['tax_query'] = array();
+			foreach ( $args['term'] as $taxonomy => $slug ) {
+				$taxonomy_object = get_taxonomy( $taxonomy );
+				if ( false === $taxonomy_object || ( ! $taxonomy_object->public && 
+						! current_user_can( $taxonomy_object->cap->assign_terms ) ) ) {
+					continue;
+				}
+
+				$query['tax_query'][] = array(
+					'taxonomy' => $taxonomy,
+					'field' => 'slug',
+					'terms' => explode( ',', $slug )
+				);				
+			}
 		}
 
 		if ( isset( $args['page'] ) ) {

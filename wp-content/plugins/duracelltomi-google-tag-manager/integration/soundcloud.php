@@ -1,4 +1,7 @@
 <?php
+/*
+Altering query parameters no longer needed
+
 function gtm4wp_soundcloud( $return, $url, $data ) {
   if ( false !== strpos( $return, "soundcloud.com" ) ) {
 	  if ( false === strpos( $return, ' id="' ) ) {
@@ -21,8 +24,10 @@ function gtm4wp_soundcloud( $return, $url, $data ) {
 }
 
 add_filter( "oembed_result", "gtm4wp_soundcloud", 10, 3 );
+*/
 
 if ( ! is_admin() ) {
-	wp_enqueue_script( "gtm4wp-soundcloud-api", "https://w.soundcloud.com/player/api.js", array(), "1.0", false );
-	wp_enqueue_script( "gtm4wp-soundcloud", $gtp4wp_plugin_url . "js/gtm4wp-soundcloud.js", array( "jquery" ), "1.0", false );
+	$in_footer = apply_filters( 'gtm4wp_soundcloud', false);
+	wp_enqueue_script( "gtm4wp-soundcloud-api", "https://w.soundcloud.com/player/api.js", array(), "1.0", $in_footer );
+	wp_enqueue_script( "gtm4wp-soundcloud", $gtp4wp_plugin_url . "js/gtm4wp-soundcloud.js", array( "jquery" ), GTM4WP_VERSION, $in_footer );
 }

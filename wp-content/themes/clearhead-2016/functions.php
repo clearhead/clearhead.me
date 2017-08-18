@@ -77,6 +77,7 @@ function clearhead_register_image_sizes() {
 	set_post_thumbnail_size( 800, 350, true );
 	add_image_size( 'clearhead-archive', 400, 175, true );
 	add_image_size( 'news-box', 264, 390, true );
+	add_image_size( 'variation-thumbnail', 206, 140, array('center', 'top') );
 }
 add_action( 'after_setup_theme', 'clearhead_register_image_sizes' );
 

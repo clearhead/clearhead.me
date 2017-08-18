@@ -67,7 +67,7 @@ jQuery(".contact-form textarea").attr("rows", 4);
 (function($) {
     $(".contact-form").on('submit', function (e) {
         //disable the button on form submit
-        jQuery(".pushbutton-wide").prop('disabled', true);
+        $(".pushbutton-wide").prop('disabled', true);
         if($(this).valid())
         {
           //Wrapper for our form fields to submit via ajax
@@ -159,7 +159,7 @@ jQuery(".contact-form textarea").attr("rows", 4);
           // stop the form from submitting
           e.preventDefault();
         }
-        jQuery(".pushbutton-wide").prop('disabled', false);
+        $(".pushbutton-wide").prop('disabled', false);
     });
 })(jQuery);
 
@@ -169,41 +169,57 @@ jQuery('.grouped-links a').hover(
    function(){ jQuery(this).closest('.grouped-links').removeClass('phover') }
 );
 
-jQuery(document).ready(function(){
+jQuery(document).ready(function($){
     setTimeout(function() {
-        jQuery('.flyover').removeClass('is_hidden');
+        $('.flyover').removeClass('is_hidden');
     }, 750);
     setTimeout(function() {
-        jQuery('.flyover').addClass('has_toggle');
+        $('.flyover').addClass('has_toggle');
     }, 925);
 
-    jQuery('.flyover .label-hide').click( function(e) {
+    $('.flyover .label-hide').click( function(e) {
         e.preventDefault();
-        jQuery('.flyover').toggleClass('is_hidden');
+        $('.flyover').toggleClass('is_hidden');
         setTimeout(function() {
-            jQuery('.flyover').removeClass('has_toggle');
+            $('.flyover').removeClass('has_toggle');
         }, 200);
         setTimeout(function() {
-            jQuery('.flyover').toggleClass('is_toggled');
+            $('.flyover').toggleClass('is_toggled');
         }, 325);
         setTimeout(function() {
-            jQuery('.flyover').addClass('has_toggle');
+            $('.flyover').addClass('has_toggle');
         }, 375);
     });
 
-    jQuery('.flyover .label-show').click( function(e) {
+    $('.flyover .label-show').click( function(e) {
         e.preventDefault();
-        jQuery('.flyover').toggleClass('is_hidden');
+        $('.flyover').toggleClass('is_hidden');
         setTimeout(function() {
-            jQuery('.flyover').removeClass('has_toggle');
+            $('.flyover').removeClass('has_toggle');
         }, 25);
         setTimeout(function() {
-            jQuery('.flyover').toggleClass('is_toggled');
+            $('.flyover').toggleClass('is_toggled');
         }, 150);
         setTimeout(function() {
-            jQuery('.flyover').addClass('has_toggle');
+            $('.flyover').addClass('has_toggle');
         }, 200);
     });
+
+    $('.experiment-gallery .thumbnails a').click(function(e) {
+        e.preventDefault();
+
+        var thisContent = $(this).closest('.experiment-gallery').find('.browser-content');
+        var theseThumbs = $(this).closest('ul');
+        var thisThumb = $(this).parent('li');
+        var thumbIndex = thisThumb.index();
+
+        $(theseThumbs).children('li').removeClass('selected');
+        $(thisThumb).addClass('selected');
+        $(thisContent).find('li').removeClass('is-showing');
+        $(thisContent).find('li:nth-child(' + (thumbIndex + 1) + ')').addClass('is-showing');
+    });
+
+
 });
 
 

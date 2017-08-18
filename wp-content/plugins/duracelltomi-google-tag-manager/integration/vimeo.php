@@ -1,4 +1,7 @@
 <?php
+/*
+Altering query parameters no longer needed with new Vimeo JS API
+
 function gtm4wp_vimeo( $return, $url, $data ) {
   if ( false !== strpos( $return, "vimeo.com" ) ) {
 	  if ( false === strpos( $return, ' id="' ) ) {
@@ -16,8 +19,10 @@ function gtm4wp_vimeo( $return, $url, $data ) {
 }
 
 add_filter( "oembed_result", "gtm4wp_vimeo", 10, 3 );
+*/
 if ( ! is_admin() ) {
-	wp_enqueue_script( "gtm4wp-vimeo-froogaloop", $gtp4wp_plugin_url . "js/froogaloop.js", array(), "2.0", false );
-	//wp_enqueue_script( "gtm4wp-vimeo-froogaloop", "//f.vimeocdn.com/js/froogaloop2.min.js", array(), "2.0", false );
-	wp_enqueue_script( "gtm4wp-vimeo", $gtp4wp_plugin_url . "js/gtm4wp-vimeo.js", array( "jquery" ), "1.0", false );
+	$in_footer = apply_filters( 'gtm4wp_vimeo', false);
+//	wp_enqueue_script( "gtm4wp-vimeo-froogaloop", $gtp4wp_plugin_url . "js/froogaloop.js", array(), "2.0", $in_footer );
+	wp_enqueue_script( "gtm4wp-vimeo-api", "https://player.vimeo.com/api/player.js", array(), "1.0", $in_footer );
+	wp_enqueue_script( "gtm4wp-vimeo", $gtp4wp_plugin_url . "js/gtm4wp-vimeo.js", array( "jquery" ), GTM4WP_VERSION, $in_footer );
 }
