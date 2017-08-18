@@ -130,7 +130,7 @@ get_header(); ?>
 					<div class="container">
 						<div class="cap-7c-6g cap-7c-6g-centered">
 							<span class="section-label">Experiment <?php echo $count; ?></span>
-							<h2><?php the_sub_field('title')?><?php if(get_sub_field('subtile')): ?>: <?php the_sub_field('subtitle')?><?php endif; ?></h2>
+							<h2><?php the_sub_field('title')?><?php if(get_sub_field('subtitle')): ?>: <?php the_sub_field('subtitle')?><?php endif; ?></h2>
 							<?php echo $overview_content['content'] ?>
 						</div>
 						<div class="experiment-split">
