@@ -108,7 +108,7 @@ get_header(); ?>
 							<img src="<?php echo get_sub_field('overview_screenshot')['url']?>" alt="<?php echo get_sub_field('overview_screenshot')['alt']?>">
 						</figure>
 					</div>
-				</section> <?
+				</section> <?php
 				while( have_rows('experiment_testimonial_block') ) : the_row();?>
 				<section class="article-testimony">
 					<div class="container">
