@@ -48,12 +48,25 @@
 // Site Header
 // -----------
 .site-header {
-    padding: em(26) 0;
-    padding: em(40) 0;
+    padding: em(20) 0;
+    @include w700 {
+        padding: em(26) 0;
+    }
+    @include w1280 {
+        padding: em(38) 0;
+    }
     .flex-row {
         display: flex;
-        justify-content: space-between;
+
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include w700 {
+            justify-content: center;
+        }
+        @include w1000 {
+            justify-content: space-between;
+        }
         .logo {
             width: em(211.5);
             a {
@@ -63,24 +76,85 @@
                 }
             }
         }
+        .detail {
+            color: rgba($white, 0.7);
+            line-height: (19/16);
+            @include n700 {
+                width: 100%;
+                order: 3;
+                margin-top: em(12);
+                margin-left: em(50);
+            }
+            @include w700 {
+                margin: em(13) 0 0 em(10);
+            }
+            @include w1000 {
+                margin-left: linearInterp(1000, 10, 1440, 20);
+                margin-right: auto;
+            }
+            @include w1440 {
+                margin-left: em(20);
+            }
+        }
         nav {
-            // position: relative;
-            // top: -3px;
-            // left: -19px;
-            ul {
+            &:not(.is-showing) {
+                display: none;
+            }
+            @include n700 {
+                position: fixed;
+                height: 100vh;
+                width: 100vw;
+                background-color: $blue-dark-1;
+                left: 0;
+                top: 0;
+                z-index: 100;
+                margin-top: 0;
+                text-align: center;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @include w700-n1000 {
+                width: 100%;
+                margin-top: 1.5em;
+            }
+            ul {
+                @include n700 {
+                    flex-direction: column;
+                }
+                padding-top: 0.25em;
+                display: flex;
+                justify-content: center;
                 li {
-                    margin-bottom: em(2);
+                    @include w700 {
+                        margin-bottom: em(2);
+                    }
                     &:not(:last-child) {
-                        margin-right: calc(#{em(11.45)} + 1vw);
+                        margin-right: em(5);
+                        @include w1000 {
+                            margin-right: linearInterp(1000, 5, 1440, 26);
+                        }
+                        @include w1440 {
+                            margin-right: em(26);
+                        }
                     }
                     a {
+                        @include n700 {
+                            padding: calc(0.25rem + 1.5625vh) 0;
+                            font-size: em(24);
+                            font-weight: $bold;
+                            color: rgba($white, 0.6);
+                        }
                         text-transform: lowercase;
-                        border-bottom: rem(3) solid transparent;
                         color: rgba($white, 0.76);
-                        padding: 0 rem(7.5) rem(4);
                         font-weight: $medium;
-                        font-size: em(15);
+                        @include w700 {
+                            padding: rem(10) rem(7.5) rem(4);
+                            border-bottom: rem(3) solid transparent;
+                        }
+                        @include w1000 {
+                            font-size: em(15);
+                        }
                         &:hover {
                             color: $white;
                         }
@@ -88,10 +162,45 @@
                     &.selected {
                         a {
                             color: $white;
-                            border-bottom-color: $white;
+                            @include w700 {
+                                border-bottom-color: $white;
+                            }
                         }
                     }
                 }
+            }
+            &.is-showing {
+                .menu-toggle--close {
+                    @include n700 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .menu-toggle {
+        font-size: 1em;
+        position: absolute;
+        top: rem(27);
+        right: rem(24.25);
+        height: rem(26);
+        width: rem(26);
+        padding: 0;
+        background-color: transparent;
+        cursor: pointer;
+        transition: opacity $timing-normal;
+        &:hover {
+            opacity: 0.7;
+        }
+        .icon {
+            width: 100%;
+        }
+        &--close {
+            display: none;
+        }
+        &--open {
+            @include w700 {
+                display: none;
             }
         }
     }

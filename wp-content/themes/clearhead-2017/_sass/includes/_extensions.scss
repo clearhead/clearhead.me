@@ -9,6 +9,7 @@ $white: #FFFFFF;
 $black: #313335;
 $gray: #787B7F;
 $blue: #32C4F5;
+$blue-dark-1: #23A0CA;
 $blue-shade: #EAF9FE;
 
 
@@ -65,6 +66,7 @@ $base: 16;
 @mixin w480  { @media screen and (min-width: 480px)	{ @content; } }
 @mixin n700  { @media screen and (max-width: 699px)	{ @content; } }
 @mixin w700  { @media screen and (min-width: 700px)	{ @content; } }
+@mixin w700-n1000  { @media screen and (min-width: 700px) and (max-width: 999px) { @content; } }
 @mixin n1000 { @media screen and (max-width: 999px)	{ @content; } }
 @mixin w1000 { @media screen and (min-width: 1000px) { @content; } }
 @mixin n1280 { @media screen and (max-width: 1279px) { @content; } }

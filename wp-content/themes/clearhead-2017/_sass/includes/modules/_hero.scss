@@ -1,4 +1,8 @@
 .top-group {
+    @include n700 {
+        background-image: none !important;
+        background-color: $blue;
+    }
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -14,16 +18,18 @@
         .flex-space {
             display: flex;
             flex-direction: column;
-            // justify-content: space-around;
             align-items: center;
             flex-grow: 1;
         }
         h1 {
             font-weight: $bold;
-            font-size: em(42);
             position: relative;
             line-height: (70/42);
             margin: auto 0;
+            font-size: em(30);
+            @include w700 {
+                font-size: em(42);
+            }
         }
         .cta {
             display: flex;
