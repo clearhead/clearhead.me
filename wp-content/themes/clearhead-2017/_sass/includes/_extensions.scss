@@ -8,6 +8,7 @@
 $white: #FFFFFF;
 $black: #313335;
 $gray: #787B7F;
+$gray-shade: #E3E5E6;
 $blue: #32C4F5;
 $blue-dark-1: #23A0CA;
 $blue-shade: #EAF9FE;
@@ -77,19 +78,51 @@ $base: 16;
 
 // Type
 @mixin h1-set {
+	font-weight: $bold;
+	line-height: (70/42);
+	letter-spacing: em(-0.71);
+
+	font-size: 7.5vw;
+	@media (min-width: 370px) {
+		font-size: em(30);
+	}
+	@include w700 {
+		font-size: em(42);
+	}
 }
 
 @mixin h2-set {
+	font-size: em(34);
+	font-weight: $bold;
+	line-height: (42/34);
+	letter-spacing: em(-0.71);
 }
 
 @mixin h3-set {
+	font-size: em(22);
+	line-height: (32/22);
+	font-weight: $bold;
+	letter-spacing: em(-0.5);
 }
 
 @mixin h4-set {
+	font-size: em(20);
+	line-height: (34/20);
+	font-weight: $bold;
+	letter-spacing: em(-0.42);
 }
 
 @mixin h5-set {
+	font-size: em(16);
+	line-height: (20/16);
+	font-weight: $medium;
+	letter-spacing: em(-0.46);
 }
 
 @mixin h6-set {
+	font-size: em(13);
+	line-height: (16/13);
+	font-weight: $medium;
+	letter-spacing: em(-0.27);
+	text-transform: uppercase;
 }

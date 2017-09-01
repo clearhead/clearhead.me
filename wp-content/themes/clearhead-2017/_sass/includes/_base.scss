@@ -29,6 +29,8 @@ a {
 		}
 	}
 	p, ul {
+		font-size: em(19);
+		line-height: (30/19);
 	}
 	p, ul, .button, img {
 		&:not(:last-child) {
@@ -42,6 +44,9 @@ a {
 	strong {
 		font-weight: $bold;
 	}
+	&--centered {
+		text-align: center;
+	}
 }
 
 em {
@@ -54,47 +59,51 @@ small {
 h1 {
 	@include h1-set;
 	&:not(:last-child) {
-		// margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 
 h2 {
 	@include h2-set;
 	&:not(:last-child) {
-		// margin-bottom: 2rem;
+		margin-bottom: 2rem;
 	}
 }
 
 h3 {
 	@include h3-set;
 	&:not(:last-child) {
-		// margin-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
-	// color: $gray-dark;
 }
 
 h4 {
 	@include h4-set;
 	&:not(:last-child) {
-		// margin-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
-	// color: $gray-dark;
 }
 
 h5 {
 	@include h5-set;
 	&:not(:last-child) {
-		// margin-bottom: 1rem;
+		margin-bottom: 1rem;
 	}
-	// color: $gray-dark;
 }
 
 h6 {
 	@include h6-set;
 	&:not(:last-child) {
-		// margin-bottom: 1rem;
+		margin-bottom: 0.75rem;
 	}
 	// color: $gray;
+}
+
+hr {
+	border: none;
+	height: em(2);
+	background-color: $gray-shade;
+	margin: em(80) 0;
 }
 
 
@@ -178,6 +187,14 @@ button {
 	&--white {
 		background-color: white;
 		color: $black;
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&--light {
+		background-color: $blue-shade;
+		color: $blue;
 		&:hover {
 			color: $white;
 		}

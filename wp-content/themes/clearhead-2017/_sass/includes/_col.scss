@@ -29,22 +29,29 @@ $gutter: $gutter-width/$base*1rem;
     pointer-events: none;
     z-index: 1000;
     ul {
-        display: flex;
         justify-content: space-between;
+        display: flex;
+        margin: 0 auto;
+        @include w700 {
+            width: col(13);
+        }
+        @include w1000 {
+            width: col(12);
+        }
         li {
             width: col(1);
-            background-color: rgba(lighten(#555555, 7.5%), 0.525);
+            background-color: rgba(lighten(#555555, 7.5%), 0.375);
             height: 100vh;
-            // @include w700 {
-            //     &:nth-child(12) {
-            //         display: none;
-            //     }
-            // }
-            // @include w1280 {
-            //     &:nth-child(11) {
-            //         display: none;
-            //     }
-            // }
+            @include w700 {
+                &:nth-last-child(1) {
+                    display: none;
+                }
+            }
+            @include w1000 {
+                &:nth-last-child(2) {
+                    display: none;
+                }
+            }
         }
     }
     &:not(:target) { // display via #markers to see

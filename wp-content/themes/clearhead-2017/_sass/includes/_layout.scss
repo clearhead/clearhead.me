@@ -8,9 +8,9 @@
     min-width: 272px;
     width: calc(100% - #{$gutter});
     @include w1280 {
-        width: calc(100% - #{em(120)});
+        width: calc(100% - #{$gutter*2});
     }
-     .container { // unset narrow rules for nested containers
+    .container { // unset narrow rules for nested containers
         @include n700 {
             margin: 0;
             width: 100%;
@@ -18,9 +18,9 @@
     }
     &--large {
         @include w700 {
-            width: col(11);
+            width: col(13);
         }
-        @include w1280 {
+        @include w1000 {
             width: col(12);
         }
     }
@@ -51,6 +51,7 @@
     padding: em(20) 0;
     @include w700 {
         padding: em(26) 0;
+        padding: em(18) 0;
     }
     @include w1280 {
         padding: em(38) 0;
@@ -62,13 +63,16 @@
         flex-wrap: wrap;
         justify-content: space-between;
         @include w700 {
-            justify-content: center;
+            // justify-content: center;
         }
         @include w1000 {
             justify-content: space-between;
         }
         .logo {
             width: em(211.5);
+            @include w700-n1000 {
+                width: em(150);
+            }
             a {
                 transition: opacity $timing-normal;
                 &:hover {
@@ -88,6 +92,9 @@
             @include w700 {
                 margin: em(13) 0 0 em(10);
             }
+            @include w700-n1000 {
+                display: none;
+            }
             @include w1000 {
                 margin-left: linearInterp(1000, 10, 1440, 20);
                 margin-right: auto;
@@ -98,7 +105,9 @@
         }
         nav {
             &:not(.is-showing) {
-                display: none;
+                @include n700 {
+                    display: none;
+                }
             }
             @include n700 {
                 position: fixed;
@@ -115,8 +124,9 @@
                 align-items: center;
             }
             @include w700-n1000 {
-                width: 100%;
-                margin-top: 1.5em;
+                // width: 100%;
+                // margin-top: 1.5em;
+                font-size: 90%;
             }
             ul {
                 @include n700 {
@@ -131,6 +141,7 @@
                     }
                     &:not(:last-child) {
                         margin-right: em(5);
+                        margin-right: em(8);
                         @include w1000 {
                             margin-right: linearInterp(1000, 5, 1440, 26);
                         }
@@ -210,6 +221,26 @@
 // Site Footer
 // -----------
 .site-footer {
+}
+
+// Content Section
+// ---------------
+.content-section {
+    padding: em(80) 0;
+    .content-cap {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3em;
+        &--large {
+            max-width: match(10);
+        }
+        &--medium {
+            max-width: match(8);
+        }
+        &--small {
+            max-width: match(6);
+        }
+    }
 }
 
 // Article
