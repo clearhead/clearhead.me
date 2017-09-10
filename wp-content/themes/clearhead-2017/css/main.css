@@ -53,22 +53,10 @@ body {
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto; }
-    @media screen and (min-width: 700px) {
-      .col-markers ul {
-        width: calc((6.80556vw * 13 ) - 1.875rem); } }
-    @media screen and (min-width: 1000px) {
-      .col-markers ul {
-        width: calc((6.80556vw * 12 ) - 1.875rem); } }
     .col-markers ul li {
       width: calc((6.80556vw * 1 ) - 1.875rem);
-      background-color: rgba(104, 104, 104, 0.375);
+      background-color: rgba(49, 51, 53, 0.4);
       height: 100vh; }
-      @media screen and (min-width: 700px) {
-        .col-markers ul li:nth-last-child(1) {
-          display: none; } }
-      @media screen and (min-width: 1000px) {
-        .col-markers ul li:nth-last-child(2) {
-          display: none; } }
   .col-markers:not(:target) {
     display: none; }
 
@@ -92,7 +80,7 @@ a {
 
 .copy p, .copy ul {
   font-size: 1.1875em;
-  line-height: 1.57895; }
+  line-height: 1.89474; }
 
 .copy p:not(:last-child), .copy ul:not(:last-child), .copy .button:not(:last-child), .copy img:not(:last-child) {
   margin-bottom: 1.5em; }
@@ -158,11 +146,14 @@ h5 {
 h6 {
   font-size: 0.8125em;
   line-height: 1.23077;
-  font-weight: 500;
-  letter-spacing: -0.01688em;
+  font-weight: 400;
+  letter-spacing: 0.0625em;
   text-transform: uppercase; }
   h6:not(:last-child) {
-    margin-bottom: 0.75rem; }
+    margin-bottom: 0.5rem; }
+
+.lowercase {
+  text-transform: lowercase; }
 
 hr {
   border: none;
@@ -243,6 +234,10 @@ button {
     color: #32C4F5; }
     .button--light:hover {
       color: #FFFFFF; }
+  .button--small {
+    font-size: 0.8125em;
+    padding: 1rem 0.8125rem 0.75rem;
+    min-width: 11.3125rem; }
 
 .container {
   margin: 0 auto;
@@ -250,7 +245,7 @@ button {
   width: calc(100% - 1.875rem); }
   @media screen and (min-width: 1280px) {
     .container {
-      width: calc(100% - 3.75rem); } }
+      width: calc((6.80556vw * 14 ) - 1.875rem); } }
   @media screen and (max-width: 699px) {
     .container .container {
       margin: 0;
@@ -261,18 +256,6 @@ button {
   @media screen and (min-width: 1000px) {
     .container--large {
       width: calc((6.80556vw * 12 ) - 1.875rem); } }
-  @media screen and (min-width: 700px) {
-    .container--medium {
-      width: calc((6.80556vw * 9 ) - 1.875rem); } }
-  @media screen and (min-width: 1280px) {
-    .container--medium {
-      width: calc((6.80556vw * 8 ) - 1.875rem); } }
-  @media screen and (max-width: 699px) {
-    .container--widened {
-      width: calc(100% - 0.9375rem); } }
-  @media screen and (max-width: 699px) {
-    .container--padded {
-      padding: 0 0.46875rem; } }
 
 .site-header {
   padding: 1.25em 0; }
@@ -282,7 +265,7 @@ button {
       padding: 1.125em 0; } }
   @media screen and (min-width: 1280px) {
     .site-header {
-      padding: 2.375em 0; } }
+      padding: 2.3125em 0; } }
   .site-header .flex-row {
     display: -webkit-box;
     display: -webkit-flex;
@@ -292,13 +275,15 @@ button {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media screen and (max-width: 699px) {
+      .site-header .flex-row {
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; } }
     @media screen and (min-width: 1000px) {
       .site-header .flex-row {
         -webkit-box-pack: justify;
@@ -309,7 +294,7 @@ button {
       width: 13.21875em; }
       @media screen and (min-width: 700px) and (max-width: 999px) {
         .site-header .flex-row .logo {
-          width: 9.375em; } }
+          margin-right: 3em; } }
       .site-header .flex-row .logo a {
         transition: opacity 0.1875s ease-out; }
         .site-header .flex-row .logo a:hover {
@@ -367,6 +352,9 @@ button {
                 align-items: center; } }
     @media screen and (min-width: 700px) and (max-width: 999px) {
       .site-header .flex-row nav {
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
         font-size: 90%; } }
     .site-header .flex-row nav ul {
       padding-top: 0.25em;
@@ -409,7 +397,7 @@ button {
             color: rgba(255, 255, 255, 0.6); } }
         @media screen and (min-width: 700px) {
           .site-header .flex-row nav ul li a {
-            padding: 0.625rem 0.46875rem 0.25rem;
+            padding: 0.4375rem 0.46875rem 0.25rem;
             border-bottom: 0.1875rem solid transparent; } }
         @media screen and (min-width: 1000px) {
           .site-header .flex-row nav ul li a {
@@ -531,5 +519,94 @@ button {
       .top-group .hero .cta .icon {
         display: block;
         margin-top: 1.4375em; }
+
+.services-feature {
+  text-align: center; }
+  .services-feature .intro {
+    background-image: url("../assets/arrows-circle.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 2em 0;
+    margin-bottom: 0.84375em; }
+    .services-feature .intro h2 {
+      margin-bottom: 0.71875rem; }
+    .services-feature .intro .button {
+      border: 2px solid white; }
+  .services-feature > ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .services-feature > ul > li {
+      width: calc((6.80556vw * 3 ) - 1.875rem); }
+      .services-feature > ul > li a {
+        padding: 1.0625em 0.75em 1.5em;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        transition: background-color 0.1875s ease-out;
+        position: relative; }
+        .services-feature > ul > li a:hover h4, .services-feature > ul > li a:hover .icon {
+          visibility: hidden;
+          opacity: 0; }
+        .services-feature > ul > li a:not(:hover) .button {
+          background-color: #EAF9FE;
+          color: #32C4F5; }
+        .services-feature > ul > li a h4, .services-feature > ul > li a .icon, .services-feature > ul > li a .details {
+          transition: opacity 0.1875s ease-out, visibility 0.1875s ease-out, -webkit-transform 0.1875s ease-out;
+          transition: opacity 0.1875s ease-out, visibility 0.1875s ease-out, transform 0.1875s ease-out;
+          transition: opacity 0.1875s ease-out, visibility 0.1875s ease-out, transform 0.1875s ease-out, -webkit-transform 0.1875s ease-out; }
+        .services-feature > ul > li a h4 {
+          max-width: 10em;
+          font-size: 1.375em;
+          line-height: 1.45455;
+          margin-bottom: 1.28125em; }
+        .services-feature > ul > li a .icon {
+          margin: auto 0 2.4375em; }
+        .services-feature > ul > li a .button {
+          position: relative;
+          z-index: 2; }
+          .services-feature > ul > li a .button:hover {
+            background-color: #32C4F5; }
+        .services-feature > ul > li a .details {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+          background-color: #EAF9FE;
+          padding: 1.25em 0.75em 1.5em; }
+          .services-feature > ul > li a .details ul {
+            font-size: 0.875em;
+            line-height: 1.64286;
+            letter-spacing: 0.015rem; }
+            .services-feature > ul > li a .details ul:first-child:after {
+              content: "";
+              display: block;
+              margin: 0.75rem auto 0.875rem;
+              width: 5rem;
+              height: 0.125rem;
+              background-color: rgba(50, 196, 245, 0.3); }
+            .services-feature > ul > li a .details ul li {
+              margin-bottom: 0.3125rem; }
+        .services-feature > ul > li a:not(:hover) .details {
+          visibility: hidden;
+          opacity: 0;
+          pointer-events: none; }
 
 /*# sourceMappingURL=main.css.map */

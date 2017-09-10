@@ -32,26 +32,26 @@ $gutter: $gutter-width/$base*1rem;
         justify-content: space-between;
         display: flex;
         margin: 0 auto;
-        @include w700 {
-            width: col(13);
-        }
-        @include w1000 {
-            width: col(12);
-        }
+        // @include w700 {
+        //     width: col(13);
+        // }
+        // @include w1000 {
+        //     width: col(12);
+        // }
         li {
             width: col(1);
-            background-color: rgba(lighten(#555555, 7.5%), 0.375);
+            background-color: rgba($black, 0.4);
             height: 100vh;
-            @include w700 {
-                &:nth-last-child(1) {
-                    display: none;
-                }
-            }
-            @include w1000 {
-                &:nth-last-child(2) {
-                    display: none;
-                }
-            }
+            // @include w700 {
+            //     &:nth-last-child(1) {
+            //         display: none;
+            //     }
+            // }
+            // @include w1000 {
+            //     &:nth-last-child(2) {
+            //         display: none;
+            //     }
+            // }
         }
     }
     &:not(:target) { // display via #markers to see

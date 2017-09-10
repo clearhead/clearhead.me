@@ -13,8 +13,6 @@ $blue: #32C4F5;
 $blue-dark-1: #23A0CA;
 $blue-shade: #EAF9FE;
 
-
-
 // Body font
 $body: 'ff-bau-web-pro', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $regular: 400;  // (allows normal and italic)
@@ -30,7 +28,6 @@ $br-normal: em(2);
 
 // Line height
 $lh-normal: (30/18);
-
 
 
 // Functions
@@ -55,26 +52,22 @@ $base: 16;
 }
 
 
-// NOTE: When used in calc() interpolate like this: “calc(100% - #{em(60)})”
-
-
-
 // Mixins
 // ------
 
 // Media queries
-@mixin n480  { @media screen and (max-width: 479px)	{ @content; } }
-@mixin w480  { @media screen and (min-width: 480px)	{ @content; } }
-@mixin n700  { @media screen and (max-width: 699px)	{ @content; } }
-@mixin w700  { @media screen and (min-width: 700px)	{ @content; } }
-@mixin w700-n1000  { @media screen and (min-width: 700px) and (max-width: 999px) { @content; } }
-@mixin n1000 { @media screen and (max-width: 999px)	{ @content; } }
-@mixin w1000 { @media screen and (min-width: 1000px) { @content; } }
-@mixin n1280 { @media screen and (max-width: 1279px) { @content; } }
-@mixin w1280 { @media screen and (min-width: 1280px) { @content; } }
-@mixin n1440 { @media screen and (max-width: 1439px) { @content; } }
-@mixin w1440 { @media screen and (min-width: 1440px) { @content; } }
-@mixin w1920 { @media screen and (min-width: 1920px) { @content; } }
+@mixin n480  		{ @media screen and (max-width: 479px)	{ @content; } }
+@mixin w480  		{ @media screen and (min-width: 480px)	{ @content; } }
+@mixin n700 	 	{ @media screen and (max-width: 699px)	{ @content; } }
+@mixin w700  		{ @media screen and (min-width: 700px)	{ @content; } }
+@mixin w700-n1000 	{ @media screen and (min-width: 700px) and (max-width: 999px) { @content; } }
+@mixin n1000 		{ @media screen and (max-width: 999px)	{ @content; } }
+@mixin w1000 		{ @media screen and (min-width: 1000px) { @content; } }
+@mixin n1280 		{ @media screen and (max-width: 1279px) { @content; } }
+@mixin w1280 		{ @media screen and (min-width: 1280px) { @content; } }
+@mixin n1440 		{ @media screen and (max-width: 1439px) { @content; } }
+@mixin w1440 		{ @media screen and (min-width: 1440px) { @content; } }
+@mixin w1920 		{ @media screen and (min-width: 1920px) { @content; } }
 
 // Type
 @mixin h1-set {
@@ -122,7 +115,7 @@ $base: 16;
 @mixin h6-set {
 	font-size: em(13);
 	line-height: (16/13);
-	font-weight: $medium;
-	letter-spacing: em(-0.27);
+	font-weight: $regular;
+	letter-spacing: em(1);
 	text-transform: uppercase;
 }

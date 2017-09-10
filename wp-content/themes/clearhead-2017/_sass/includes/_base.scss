@@ -30,7 +30,7 @@ a {
 	}
 	p, ul {
 		font-size: em(19);
-		line-height: (30/19);
+		line-height: (36/19);
 	}
 	p, ul, .button, img {
 		&:not(:last-child) {
@@ -94,9 +94,12 @@ h5 {
 h6 {
 	@include h6-set;
 	&:not(:last-child) {
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.5rem;
 	}
-	// color: $gray;
+}
+
+.lowercase {
+	text-transform: lowercase;
 }
 
 hr {
@@ -172,7 +175,7 @@ button {
 	text-transform: uppercase;
 	font-weight: $medium;
 	border-radius: rem(2);
-	 min-width: rem(242);
+	min-width: rem(242);
 
 	transition:
 		color $timing-normal,
@@ -198,6 +201,12 @@ button {
 		&:hover {
 			color: $white;
 		}
+	}
+
+	&--small {
+		font-size: em(13);
+		padding: rem(16) rem(13) rem(12);
+		min-width: rem(181);
 	}
 
 	// &:focus {

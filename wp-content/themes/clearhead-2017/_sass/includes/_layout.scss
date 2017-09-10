@@ -8,7 +8,7 @@
     min-width: 272px;
     width: calc(100% - #{$gutter});
     @include w1280 {
-        width: calc(100% - #{$gutter*2});
+      width: col(14);
     }
     .container { // unset narrow rules for nested containers
         @include n700 {
@@ -24,24 +24,6 @@
             width: col(12);
         }
     }
-    &--medium {
-        @include w700 {
-            width: col(9);
-        }
-        @include w1280 {
-            width: col(8);
-        }
-    }
-    &--widened {
-        @include n700 {
-            width: calc(100% - #{$gutter/2});
-        }
-    }
-    &--padded {
-        @include n700 {
-            padding: 0 $gutter/4;
-        }
-    }
 }
 
 
@@ -54,16 +36,14 @@
         padding: em(18) 0;
     }
     @include w1280 {
-        padding: em(38) 0;
+        padding: em(37) 0;
     }
     .flex-row {
         display: flex;
-
         align-items: center;
-        flex-wrap: wrap;
         justify-content: space-between;
-        @include w700 {
-            // justify-content: center;
+        @include n700 {
+            flex-wrap: wrap;
         }
         @include w1000 {
             justify-content: space-between;
@@ -71,7 +51,7 @@
         .logo {
             width: em(211.5);
             @include w700-n1000 {
-                width: em(150);
+                margin-right: 3em;
             }
             a {
                 transition: opacity $timing-normal;
@@ -124,8 +104,7 @@
                 align-items: center;
             }
             @include w700-n1000 {
-                // width: 100%;
-                // margin-top: 1.5em;
+                flex-shrink: 0;
                 font-size: 90%;
             }
             ul {
@@ -160,7 +139,7 @@
                         color: rgba($white, 0.76);
                         font-weight: $medium;
                         @include w700 {
-                            padding: rem(10) rem(7.5) rem(4);
+                            padding: rem(7) rem(7.5) rem(4);
                             border-bottom: rem(3) solid transparent;
                         }
                         @include w1000 {
