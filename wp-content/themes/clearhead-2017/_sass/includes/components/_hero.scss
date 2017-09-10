@@ -1,0 +1,39 @@
+.top-group {
+    @include n700 {
+        background-image: none !important;
+        background-color: $blue;
+    }
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .hero {
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        .flex-space {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        h1 {
+            margin: auto 0;
+            position: relative;
+        }
+        .cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: em(68);
+            .icon {
+                display: block;
+                margin-top: em(23);
+            }
+        }
+    }
+}

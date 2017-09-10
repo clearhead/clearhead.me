@@ -1,0 +1,98 @@
+.services-feature {
+    text-align: center;
+    .intro {
+        background-image: url('../assets/arrows-circle.svg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        padding: em(32) 0;
+        margin-bottom: em(13.5);
+        h2 {
+            margin-bottom: rem(11.5);
+        }
+        .button {
+            border: 2px solid white;
+        }
+    }
+    > ul {
+        display: flex;
+        justify-content: space-between;
+        > li {
+            width: col(3);
+            a {
+                padding: em(17) em(12) em(24);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: background-color $timing-normal;
+                position: relative;
+                &:hover {
+                    // background-color: $blue-shade;
+                    h4, .icon {
+                        visibility: hidden;
+                        opacity: 0;
+                    }
+                }
+                &:not(:hover) {
+                    .button {
+                        background-color: $blue-shade;
+                        color: $blue;
+                    }
+                }
+                h4, .icon, .details {
+                    transition: opacity $timing-normal, visibility $timing-normal, transform $timing-normal;
+                }
+                h4 {
+                    max-width: 10em;
+                    font-size: em(22);
+                    line-height: (32/22);
+                    margin-bottom: em(20.5);
+                }
+                .icon {
+                    margin: auto 0 em(39);
+                }
+                .button {
+                    position: relative;
+                    z-index: 2;
+                    &:hover {
+                        background-color: $blue;
+                    }
+                }
+                .details {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 1;
+                    background-color: $blue-shade;
+                    padding: em(20) em(12) em(24);
+                    ul {
+                        font-size: em(14);
+                        line-height: (23/14);
+                        letter-spacing: rem(0.24);
+                        &:first-child {
+                            &:after {
+                                content: "";
+                                display: block;
+                                margin: rem(12) auto rem(14);
+                                width: rem(80);
+                                height: rem(2);
+                                background-color: rgba($blue, 0.3);
+                            }
+                        }
+                        li {
+                            margin-bottom: rem(5);
+                        }
+                    }
+                }
+                &:not(:hover) {
+                    .details {
+                        visibility: hidden;
+                        opacity: 0;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+}

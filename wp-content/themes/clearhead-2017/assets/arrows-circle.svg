@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="820px" height="176px" viewBox="0 0 820 176" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 58</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="CH.me-Homepage-Hover-2" transform="translate(-315.000000, -1101.000000)" stroke="#787B7F" stroke-width="2">
+            <g id="Group-30" transform="translate(0.000000, 900.000000)">
+                <g id="Group-28" transform="translate(305.000000, 202.000000)">
+                    <g id="Group-58">
+                        <g id="Group-32" transform="translate(74.654293, 117.679856) rotate(-13.000000) translate(-74.654293, -117.679856) translate(4.154293, 91.179856)">
+                            <path d="M1.30987584,47.5279805 C42.1314761,14.8777717 88.3694109,-0.727947416 140.02368,0.710823035" id="Path-25"></path>
+                            <polyline id="Path-27" points="3.6070914 35.6815977 0.224951054 48.3383388 16.4244311 52.4447481"></polyline>
+                        </g>
+                        <g id="Group-32" transform="translate(767.654293, 126.679856) scale(-1, 1) rotate(-17.000000) translate(-767.654293, -126.679856) translate(697.154293, 100.179856)">
+                            <path d="M1.30987584,47.5279805 C40.6919101,21.3202022 86.9298449,5.71448305 140.02368,0.710823035" id="Path-25"></path>
+                            <polyline id="Path-27" points="3.6070914 35.6815977 0.224951054 48.3383388 16.4244311 52.4447481"></polyline>
+                        </g>
+                        <g id="Group-56" transform="translate(535.537695, 128.611769)">
+                            <path d="M31.1760415,0.347877651 C19.7148301,4.64182176 9.41201649,19.0015692 0.267600753,43.4271199" id="Path-26" transform="translate(15.721821, 21.887499) scale(-1, 1) translate(-15.721821, -21.887499) "></path>
+                            <polyline id="Path-27" transform="translate(29.377344, 36.753197) scale(-1, 1) rotate(-29.000000) translate(-29.377344, -36.753197) " points="25.1868215 27.1130873 22.1825533 41.6703006 36.5721344 46.3933076"></polyline>
+                        </g>
+                        <g id="Group-55" transform="translate(234.719120, 120.130603)">
+                            <path d="M41.2948657,0.0984867023 C36.1587408,3.19212782 25.496539,17.0015084 9.30826027,41.5266284" id="Path-26"></path>
+                            <polyline id="Path-27" transform="translate(11.934899, 34.542303) rotate(-29.000000) translate(-11.934899, -34.542303) " points="13.2027522 24.547293 4.74010835 39.8143066 19.1296894 44.5373136"></polyline>
+                        </g>
+                        <path d="M667.039961,128.646807 C357.961715,130.890521 186.933423,120.559551 153.955088,97.6538967 C104.487584,63.2954153 144.3101,3.38698769 300.933687,0.492860751 C457.557273,-2.40126619 654.379504,6.44437307 699.192428,54.1232592 C729.06771,85.9091833 689.682248,114.884876 581.036042,141.050338" id="Path-28"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

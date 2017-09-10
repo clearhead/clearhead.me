@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="135px" height="97px" viewBox="0 0 135 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon_Design</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="135" height="97"></rect>
+        <rect id="path-2" x="0" y="0" width="135" height="12"></rect>
+        <polygon id="path-3" points="29.0128205 56.1538462 26.2051282 39.3076923 36.5 13.1025641 46.7948718 39.3076923 43.9871795 56.1538462"></polygon>
+        <rect id="path-4" x="26.2051282" y="54.2820513" width="20.5897436" height="9.35897436"></rect>
+    </defs>
+    <g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CH.me-Homepage" transform="translate(-214.000000, -1417.000000)">
+            <g id="Group-30" transform="translate(0.000000, 900.000000)">
+                <g id="Icon_Design" transform="translate(214.000000, 517.000000)">
+                    <g id="Group-22">
+                        <g id="Rectangle-19">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#AEB1B5" stroke-width="2" x="1" y="1" width="133" height="95"></rect>
+                        </g>
+                        <g id="Rectangle-19" transform="translate(67.500000, 6.000000) scale(1, -1) translate(-67.500000, -6.000000) ">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#AEB1B5" stroke-width="2" x="1" y="1" width="133" height="10"></rect>
+                        </g>
+                    </g>
+                    <circle id="Oval-4" fill="#AEB1B5" cx="7" cy="6" r="2"></circle>
+                    <circle id="Oval-4" fill="#AEB1B5" cx="13" cy="6" r="2"></circle>
+                    <circle id="Oval-4" fill="#AEB1B5" cx="19" cy="6" r="2"></circle>
+                    <g id="Group-23" transform="translate(30.000000, 21.000000)">
+                        <g id="Combined-Shape">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <path stroke="#AEB1B5" stroke-width="2" d="M29.8599476,55.1538462 L43.1400524,55.1538462 L45.7630249,39.416011 L36.5,15.8374021 L27.2369751,39.416011 L29.8599476,55.1538462 Z"></path>
+                        </g>
+                        <path d="M36.5,18.7179487 L36.5,37.4370647" id="Path-36" stroke="#AEB1B5" stroke-width="2"></path>
+                        <g id="Rectangle-18">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <rect stroke="#AEB1B5" stroke-width="2" x="27.2051282" y="55.2820513" width="18.5897436" height="7.35897436"></rect>
+                        </g>
+                        <!-- <path d="M6.55128205,3.74358974 L67.3846154,3.74358974" id="Path-37" stroke="#AEB1B5" stroke-width="2"></path> -->
+                        <path d="M69.1773052,36.4358974 C68.6487527,18.8430777 54.2209323,4.74358974 36.5,4.74358974 C18.7790677,4.74358974 4.35124726,18.8430777 3.82269478,36.4358974 L69.1773052,36.4358974 Z" id="Oval-6" stroke="#AEB1B5" stroke-width="2"></path>
+                        <circle id="Oval-3" fill="#AEB1B5" cx="36.5" cy="37.4358974" r="3.74358974"></circle>
+                        <circle id="Oval-3" fill="#A3EEFF" cx="3.74358974" cy="3.74358974" r="3.74358974"></circle>
+                        <circle id="Oval-3" fill="#A3EEFF" cx="69.2564103" cy="3.74358974" r="3.74358974"></circle>
+                        <rect id="Rectangle-4" fill="#A3EEFF" x="32.7564103" y="0" width="7.48717949" height="7.48717949"></rect>
+                        <rect id="Rectangle-4" fill="#A3EEFF" x="0" y="33.6923077" width="7.48717949" height="7.48717949"></rect>
+                        <rect id="Rectangle-4" fill="#A3EEFF" x="65.5128205" y="33.6923077" width="7.48717949" height="7.48717949"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
