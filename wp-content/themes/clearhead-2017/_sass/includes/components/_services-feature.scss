@@ -1,13 +1,28 @@
 .services-feature {
     text-align: center;
     .intro {
-        background-image: url('../assets/arrows-circle.svg');
-        background-position: top center;
-        background-repeat: no-repeat;
-        padding: em(32) 0;
-        margin-bottom: em(13.5);
+        margin: 0 auto em(24);
+        @include w1000 {
+            min-height: em(178);
+            background-image: url('../assets/arrows-circle.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: calc(3em + 100%*(772/1146));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h6 {
+            margin: rem(10) 0 rem(8);
+        }
         h2 {
-            margin-bottom: rem(11.5);
+            margin-bottom: rem(11);
+            font-size: em(26);
+            @include w1000 {
+                font-size: 2.375vw;
+            }
         }
         .button {
             border: 2px solid white;
@@ -15,9 +30,23 @@
     }
     > ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+        @include n1000 {
+            max-width: match(6);
+            margin: 0 auto;
+        }
         > li {
-            width: col(3);
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - #{$gutter/2});
+            max-width: match(3);
+            @include n1000 {
+                margin: $gutter/2 0;
+            }
+            @include w1000 {
+                width: col(3);
+            }
             a {
                 padding: em(17) em(12) em(24);
                 display: flex;
@@ -25,14 +54,17 @@
                 align-items: center;
                 transition: background-color $timing-normal;
                 position: relative;
+                flex-grow: 1;
+                @include n1000 {
+                    min-height: 18em;
+                }
                 &:hover {
-                    // background-color: $blue-shade;
                     h4, .icon {
                         visibility: hidden;
                         opacity: 0;
                     }
                 }
-                &:not(:hover) {
+                &:not(:hover):not(:focus) {
                     .button {
                         background-color: $blue-shade;
                         color: $blue;
@@ -42,10 +74,19 @@
                     transition: opacity $timing-normal, visibility $timing-normal, transform $timing-normal;
                 }
                 h4 {
-                    max-width: 10em;
-                    font-size: em(22);
                     line-height: (32/22);
-                    margin-bottom: em(20.5);
+                    margin-bottom: em(24.75);
+                    @include n1000 {
+                        max-width: 10em;
+                        font-size: em(18);
+                    }
+                    @include w1000 {
+                        font-size: 1.65vw;
+                    }
+                    @include w1280 {
+                        max-width: 10em;
+                        font-size: em(22);
+                    }
                 }
                 .icon {
                     margin: auto 0 em(39);
@@ -53,6 +94,10 @@
                 .button {
                     position: relative;
                     z-index: 2;
+                    @media (min-width: 1000px) and (max-width: 1151px) {
+                        min-width: 0;
+                        width: 100%;
+                    }
                     &:hover {
                         background-color: $blue;
                     }
@@ -67,9 +112,15 @@
                     background-color: $blue-shade;
                     padding: em(20) em(12) em(24);
                     ul {
-                        font-size: em(14);
                         line-height: (23/14);
                         letter-spacing: rem(0.24);
+                        font-size: em(13);
+                        @include w1000-n1280 {
+                            font-size: em(11);
+                        }
+                        @include w1280 {
+                            font-size: em(14);
+                        }
                         &:first-child {
                             &:after {
                                 content: "";
@@ -85,7 +136,7 @@
                         }
                     }
                 }
-                &:not(:hover) {
+                &:not(:hover):not(:focus) {
                     .details {
                         visibility: hidden;
                         opacity: 0;

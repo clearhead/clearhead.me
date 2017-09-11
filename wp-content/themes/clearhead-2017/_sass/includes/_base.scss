@@ -182,6 +182,7 @@ button {
 		background-color $timing-normal;
 	&:hover, &:focus {
 		background-color: darken($blue, 7.5%);
+		color: $white;
 		&:after {
 			border-left-color: darken($blue, 7.5%);
 		}

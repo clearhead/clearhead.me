@@ -63,6 +63,7 @@ $base: 16;
 @mixin w700-n1000 	{ @media screen and (min-width: 700px) and (max-width: 999px) { @content; } }
 @mixin n1000 		{ @media screen and (max-width: 999px)	{ @content; } }
 @mixin w1000 		{ @media screen and (min-width: 1000px) { @content; } }
+@mixin w1000-n1280 	{ @media screen and (min-width: 1000px) and (max-width: 1279px) { @content; } }
 @mixin n1280 		{ @media screen and (max-width: 1279px) { @content; } }
 @mixin w1280 		{ @media screen and (min-width: 1280px) { @content; } }
 @mixin n1440 		{ @media screen and (max-width: 1439px) { @content; } }

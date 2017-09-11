@@ -22,10 +22,24 @@
 
         $('a.smooth-scroll[href^="#"]').click(function(event) {
             var id = $(this).attr("href");
-            // var offset = 10;
-            var target = $(id).top;
+            var offset = 49;
+            var target = $(id).offset().top - offset;
             $('html, body').animate({scrollTop:target}, 700);
             event.preventDefault();
+        });
+
+        $(function() {
+            //caches a jQuery object containing the header element
+            var header = $('.site-header');
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+
+                if (scroll >= 14) {
+                    header.addClass('is-filled');
+                } else {
+                    header.removeClass('is-filled');
+                }
+            });
         });
 
     </script>

@@ -30,13 +30,69 @@
 // Site Header
 // -----------
 .site-header {
-    padding: em(20) 0;
-    @include w700 {
-        padding: em(26) 0;
-        padding: em(18) 0;
+    height: em(119);
+    &.is-filled {
+        .fixed-area {
+            background-color: $white;
+            box-shadow: 0 em(1) em(2) 0 rgba(black, 0.14);
+            padding: $gutter/2 0;
+            @include w700 {
+                padding: $gutter/2 0;
+            }
+            @include w1280 {
+                padding: em(23) 0 em(20.5);
+            }
+        }
+        .fixed-area {
+            position: fixed;
+        }
+        .flex-row {
+            .logo {
+                a {
+                    color: $blue;
+                }
+            }
+            .detail {
+                color: rgba($blue, 0.7);
+            }
+            nav {
+                ul {
+                    li {
+                        a {
+                            color: rgba($black, 0.76);
+                            &:hover {
+                                color: $black;
+                            }
+                        }
+                        &.selected {
+                            a {
+                                color: $black;
+                                @include w700 {
+                                    border-bottom-color: $blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu-toggle {
+            .icon {
+                color: $blue;
+            }
+        }
     }
-    @include w1280 {
-        padding: em(37) 0;
+    .fixed-area {
+        transition: background-color $timing-normal;
+        width: 100%;
+        z-index: 100;
+        padding: em(20) 0;
+        @include w700 {
+            padding: em(18) 0;
+        }
+        @include w1280 {
+            padding: em(37) 0 em(8);
+        }
     }
     .flex-row {
         display: flex;
@@ -54,9 +110,10 @@
                 margin-right: 3em;
             }
             a {
-                transition: opacity $timing-normal;
+                transition: color $timing-normal;
+                color: $white;
                 &:hover {
-                    opacity: 0.5;
+                    color: rgba($white, 0.625);
                 }
             }
         }
@@ -184,6 +241,8 @@
         }
         .icon {
             width: 100%;
+            transition: color $timing-normal;
+            color: $white;
         }
         &--close {
             display: none;
