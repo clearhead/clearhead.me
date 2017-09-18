@@ -1,0 +1,13 @@
+.inline-bulleted-list {
+    color: rgba($black, 0.7);
+    li {
+        display: inline;
+        &:not(:first-child) {
+            &::before {
+                content: "•";
+                display: inline-block;
+                padding: 0 em(8.5);
+            }
+        }
+    }
+}

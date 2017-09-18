@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -1002,5 +1003,14 @@ button {
   @media screen and (min-width: 1000px) {
     .stories-blocks .dn-w1000 {
       display: none; } }
+
+.inline-bulleted-list {
+  color: rgba(49, 51, 53, 0.7); }
+  .inline-bulleted-list li {
+    display: inline; }
+    .inline-bulleted-list li:not(:first-child)::before {
+      content: "•";
+      display: inline-block;
+      padding: 0 0.53125em; }
 
 /*# sourceMappingURL=main.css.map */
