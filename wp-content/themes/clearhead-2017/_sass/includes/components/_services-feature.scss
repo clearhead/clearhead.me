@@ -1,7 +1,10 @@
 .services-feature {
     text-align: center;
     .intro {
-        margin: 0 auto em(24);
+        margin: 0 auto em(41);
+        @include w700 {
+            margin-bottom: em(24);
+        }
         @include w1000 {
             min-height: em(178);
             background-image: url('../assets/arrows-circle.svg');
@@ -19,12 +22,23 @@
         }
         h2 {
             margin-bottom: rem(11);
-            font-size: em(26);
             @include w1000 {
                 font-size: 2.375vw;
             }
         }
         .button {
+            @include n700 {
+                background-color: transparent;
+                text-transform: lowercase;
+                letter-spacing: 0;
+                font-weight: $regular;
+                font-size: em(18);
+                padding: rem(7);
+                min-width: 0;
+                &:hover {
+                    color: $gray;
+                }
+            }
             border: 2px solid white;
         }
     }
@@ -32,53 +46,88 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        @include n1000 {
+        @include w700-n1000 {
             max-width: match(6);
             margin: 0 auto;
         }
         > li {
             display: flex;
-            flex-direction: column;
-            width: calc(50% - #{$gutter/2});
-            max-width: match(3);
             @include n1000 {
+            }
+            @include n700 {
+                width: 100%;
+                position: relative;
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 200vw;
+                    position: absolute;
+                    height: rem(4);
+                    background-color: white;
+                    left: -50vw;
+                    bottom: 0;
+                }
+            }
+            @include w700 {
                 margin: $gutter/2 0;
+                width: calc(50% - #{$gutter/2});
+                max-width: match(3);
+                flex-direction: column;
             }
             @include w1000 {
                 width: col(3);
             }
             a {
-                padding: em(17) em(12) em(24);
                 display: flex;
-                flex-direction: column;
-                align-items: center;
                 transition: background-color $timing-normal;
                 position: relative;
-                flex-grow: 1;
-                @include n1000 {
+                flex-direction: column;
+                padding: em(22) em(22);
+                @include n700 {
+                    width: 100%;
+                    background-color: $blue-shade;
+                    box-shadow:
+                        1em 0 0 0 $blue-shade,
+                        -1em 0 0 0 $blue-shade;
+                }
+                @include w700-n1000 {
                     min-height: 18em;
                 }
-                &:hover {
-                    h4, .icon {
-                        visibility: hidden;
-                        opacity: 0;
+                @include w700 {
+                    padding: em(17) em(12) em(24);
+                    align-items: center;
+                    flex-grow: 1;
+                    &:hover {
+                        h4, .icon {
+                            visibility: hidden;
+                            opacity: 0;
+                        }
                     }
-                }
-                &:not(:hover):not(:focus) {
-                    .button {
-                        background-color: $blue-shade;
-                        color: $blue;
+                    &:not(:hover):not(:focus) {
+                        .button {
+                            background-color: $blue-shade;
+                            color: $blue;
+                        }
                     }
                 }
                 h4, .icon, .details {
                     transition: opacity $timing-normal, visibility $timing-normal, transform $timing-normal;
                 }
                 h4 {
-                    line-height: (32/22);
-                    margin-bottom: em(24.75);
+                    line-height: (30/22);
                     @include n1000 {
                         max-width: 10em;
                         font-size: em(18);
+                    }
+                    @include n700 {
+                        text-align: left;
+                        font-size: em(24);
+                        letter-spacing: rem(-0.56);
+                        margin-bottom: rem(13.5);
+                    }
+                    @include w700 {
+                        margin-bottom: em(24.75);
+                        line-height: (32/22);
                     }
                     @include w1000 {
                         font-size: 1.65vw;
@@ -89,20 +138,44 @@
                     }
                 }
                 .icon {
-                    margin: auto 0 em(39);
+                    @include n700 {
+                        position: absolute;
+                        right: em(-32);
+                        bottom: 0;
+                        max-width: em(122);
+                    }
+                    @include w700 {
+                        margin: auto 0 em(39);
+                    }
                 }
                 .button {
                     position: relative;
                     z-index: 2;
+                    @include n700 {
+                        background-color: transparent;
+                        color: $blue;
+                        text-transform: lowercase;
+                        letter-spacing: 0;
+                        font-weight: $regular;
+                        font-size: em(18);
+                        min-width: 0;
+                        padding: rem(1.75) 0;
+                        text-align: left;
+                    }
+                    @include w700 {
+                        &:hover {
+                            background-color: $blue;
+                        }
+                    }
                     @media (min-width: 1000px) and (max-width: 1151px) {
                         min-width: 0;
                         width: 100%;
                     }
-                    &:hover {
-                        background-color: $blue;
-                    }
                 }
                 .details {
+                    @include n700 {
+                        display: none;
+                    }
                     position: absolute;
                     top: 0;
                     right: 0;
@@ -110,7 +183,10 @@
                     left: 0;
                     z-index: 1;
                     background-color: $blue-shade;
-                    padding: em(20) em(12) em(24);
+                    padding: em(20) em(12) em(74);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
                     ul {
                         line-height: (23/14);
                         letter-spacing: rem(0.24);
@@ -121,8 +197,8 @@
                         @include w1280 {
                             font-size: em(14);
                         }
-                        &:first-child {
-                            &:after {
+                        &:not(:first-child) {
+                            &:before {
                                 content: "";
                                 display: block;
                                 margin: rem(12) auto rem(14);
@@ -136,11 +212,13 @@
                         }
                     }
                 }
-                &:not(:hover):not(:focus) {
-                    .details {
-                        visibility: hidden;
-                        opacity: 0;
-                        pointer-events: none;
+                @include w700 {
+                    &:not(:hover):not(:focus) {
+                        .details {
+                            visibility: hidden;
+                            opacity: 0;
+                            pointer-events: none;
+                        }
                     }
                 }
             }

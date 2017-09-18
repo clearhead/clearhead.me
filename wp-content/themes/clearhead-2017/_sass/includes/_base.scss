@@ -106,7 +106,13 @@ hr {
 	border: none;
 	height: em(2);
 	background-color: $gray-shade;
-	margin: em(80) 0;
+	margin: em(28) 0;
+	@include w700 {
+		margin: em(50) 0;
+	}
+	@include w1000 {
+		margin: em(80) 0;
+	}
 }
 
 
@@ -171,8 +177,9 @@ button {
 	font-size: em(14);
 	line-height: (18/14);
 	padding: rem(26) rem(24) rem(23);
-	letter-spacing: 0.83px;
+	letter-spacing: rem(0.83);
 	text-transform: uppercase;
+	text-align: center;
 	font-weight: $medium;
 	border-radius: rem(2);
 	min-width: rem(242);
@@ -223,6 +230,16 @@ button {
 	// 		border-left: rem(18) solid $gray;
 	// 	}
 	// }
+}
+
+.button-svg {
+	text {
+		font-size: rem(13);
+		fill: black;
+		letter-spacing: rem(0.83);
+		text-transform: uppercase;
+		font-weight: $medium;
+	}
 }
 
 // #__bs_notify__ {

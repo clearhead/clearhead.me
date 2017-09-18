@@ -30,7 +30,12 @@
 // Site Header
 // -----------
 .site-header {
-    height: em(119);
+    @include n700 {
+        height: em(75);
+    }
+    @include w1280 {
+        height: em(119);
+    }
     &.is-filled {
         .fixed-area {
             background-color: $white;
@@ -50,9 +55,15 @@
             .logo {
                 a {
                     color: $blue;
+                    &:hover {
+                        color: rgba($blue, 0.7);
+                    }
                 }
             }
             .detail {
+                @include n700 {
+                    display: none;
+                }
                 color: rgba($blue, 0.7);
             }
             nav {
@@ -77,13 +88,19 @@
             }
         }
         .menu-toggle {
+            @include n700 {
+                top: rem(22);
+            }
             .icon {
                 color: $blue;
             }
         }
     }
     .fixed-area {
-        transition: background-color $timing-normal;
+        @include n700 {
+            height: em(70);
+        }
+        transition: background-color $timing-slower;
         width: 100%;
         z-index: 100;
         padding: em(20) 0;
@@ -110,7 +127,7 @@
                 margin-right: 3em;
             }
             a {
-                transition: color $timing-normal;
+                transition: color $timing-slower;
                 color: $white;
                 &:hover {
                     color: rgba($white, 0.625);
@@ -265,6 +282,7 @@
 // ---------------
 .content-section {
     padding: em(80) 0;
+    overflow: hidden;
     .content-cap {
         margin: 0 auto;
         text-align: center;

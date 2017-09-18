@@ -31,14 +31,29 @@
         $(function() {
             //caches a jQuery object containing the header element
             var header = $('.site-header');
-            $(window).scroll(function() {
+            $(window).on('scroll resize', function() {
                 var scroll = $(window).scrollTop();
 
-                if (scroll >= 14) {
-                    header.addClass('is-filled');
+                if (window.matchMedia('(max-width: 699px)').matches) {
+                    if (scroll >= 5) {
+                        header.addClass('is-filled');
+                    } else {
+                        header.removeClass('is-filled');
+                    }
+                } else if (window.matchMedia('(max-width: 1279px)').matches) {
+                    if (scroll >= 3) {
+                        header.addClass('is-filled');
+                    } else {
+                        header.removeClass('is-filled');
+                    }
                 } else {
-                    header.removeClass('is-filled');
+                    if (scroll >= 14) {
+                        header.addClass('is-filled');
+                    } else {
+                        header.removeClass('is-filled');
+                    }
                 }
+
             });
         });
 

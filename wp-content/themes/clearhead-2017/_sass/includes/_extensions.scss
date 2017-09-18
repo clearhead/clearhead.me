@@ -58,6 +58,7 @@ $base: 16;
 // Media queries
 @mixin n480  		{ @media screen and (max-width: 479px)	{ @content; } }
 @mixin w480  		{ @media screen and (min-width: 480px)	{ @content; } }
+@mixin w480-n700 	{ @media screen and (min-width: 480px) and (max-width: 699px) { @content; } }
 @mixin n700 	 	{ @media screen and (max-width: 699px)	{ @content; } }
 @mixin w700  		{ @media screen and (min-width: 700px)	{ @content; } }
 @mixin w700-n1000 	{ @media screen and (min-width: 700px) and (max-width: 999px) { @content; } }
@@ -86,10 +87,14 @@ $base: 16;
 }
 
 @mixin h2-set {
-	font-size: em(34);
+	font-size: em(29);
+	letter-spacing: em(-0.6);
 	font-weight: $bold;
 	line-height: (42/34);
-	letter-spacing: em(-0.71);
+	@include w1000 {
+		font-size: em(34);
+		letter-spacing: em(-0.71);
+	}
 }
 
 @mixin h3-set {

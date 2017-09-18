@@ -1,0 +1,164 @@
+.stories-blocks {
+    display: flex;
+    justify-content: center;
+    @include n480 {
+        flex-wrap: wrap;
+    }
+    ul {
+        max-width: rem(345);
+        @include w480 {
+            width: calc((100%/2) - (#{$gutter}*(1/3)));
+            &:not(:last-of-type) {
+                margin-right: $gutter*(1/2);
+            }
+        }
+        @include w700 {
+            &:not(:last-of-type) {
+                margin-right: $gutter*(2/3);
+            }
+        }
+        @include w1000 {
+            width: calc((100%/3) - (#{$gutter}*(1/3)));
+            max-width: match(4.375);
+        }
+        @include w1280 {
+            width: col(4);
+            &:not(:last-of-type) {
+                margin-right: $gutter;
+            }
+        }
+        li {
+            margin-bottom: $gutter*(1/2);
+            @include w700 {
+                margin-bottom: $gutter*(2/3);
+            }
+            @include w1280 {
+                margin-bottom: $gutter;
+            }
+            .block {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                min-height: em(310);
+                background-color: $blue-dark-1;
+                color: $white;
+                position: relative;
+                overflow: hidden;
+
+                padding: $gutter*(2/3);
+                @include w700 {
+                    padding: $gutter;
+                }
+                @include w1000 {
+                    padding: $gutter*(2/3);
+                }
+                @include w1280 {
+                    padding: $gutter;
+                }
+
+                .background {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 1;
+                    transform: scale(1.025);
+                    transition: transform $timing-slower;
+                    &--topped {
+                        background-position: top center;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 2;
+                        transition: background-color $timing-slower;
+                    }
+                }
+                &:hover .background {
+                    transform: scale(1);
+                    &:after {
+                        background-color: rgba(black, 0.25);
+                    }
+                }
+
+                .moves {
+                    transform: translateY(0);
+                    transition: transform $timing-slower, opacity $timing-slower;
+                    position: relative;
+                    z-index: 3;
+                }
+                &:hover .moves {
+                    &--down {
+                        transform: translateY(3px);
+                    }
+                    &--up {
+                        transform: translateY(-3px);
+                    }
+                }
+
+                .label {
+                    text-transform: lowercase;
+                    color: rgba($white, 0.8);
+                    line-height: (23/16);
+                    letter-spacing: em(-0.5);
+                    margin-bottom: em(7);
+                }
+
+                h4 {
+                    font-size: em(22);
+                    line-height: (30/22);
+                    letter-spacing: rem(-0.32);
+                    &.capped {
+                        @include n1440 {
+                            max-width: rem(180);
+                        }
+                        @include w1440 {
+                            width: 60%;
+                        }
+                    }
+                }
+
+                .icon {
+                    margin-top: auto;
+                }
+
+                .button-svg {
+                    margin-bottom: 2em;
+                    opacity: 0;
+                }
+                &:hover .button-svg {
+                    opacity: 1;
+                }
+
+                &--tall {
+                    min-height: rem(400);
+                    @include w1280 {
+                        min-height: rem(450);
+                    }
+                    h4 {
+                        margin-bottom: rem(33);
+                    }
+                }
+            }
+        }
+    }
+    @include n1000 {
+        .dn-n1000 {
+            display: none;
+        }
+    }
+    @include w1000 {
+        .dn-w1000 {
+            display: none;
+        }
+    }
+}
