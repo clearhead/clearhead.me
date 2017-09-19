@@ -288,8 +288,32 @@
 .content-section {
     padding: em(80) 0;
     overflow: hidden;
+    position: relative;
     &:not(.contact-callout) {
         min-height: calc(100vh - #{rem(104)});
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    & + .content-section {
+        &::before {
+            content: "";
+            display: block;
+            height: em(2);
+            margin: 0 auto 0;
+            background-color: $gray-shade;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            width: col(12);
+            @include w700 {
+                width: col(13);
+            }
+            @include w1000 {
+                width: col(12);
+            }
+        }
     }
     .content-cap {
         margin: 0 auto;

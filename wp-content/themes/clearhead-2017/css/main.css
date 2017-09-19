@@ -525,9 +525,40 @@ button {
 
 .content-section {
   padding: 5em 0;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .content-section:not(.contact-callout) {
-    min-height: calc(100vh - 6.5rem); }
+    min-height: calc(100vh - 6.5rem);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .content-section + .content-section::before {
+    content: "";
+    display: block;
+    height: 0.125em;
+    margin: 0 auto 0;
+    background-color: #E3E5E6;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    width: calc((6.80556vw * 12 ) - 1.875rem); }
+    @media (min-width: 700px) {
+      .content-section + .content-section::before {
+        width: calc((6.80556vw * 13 ) - 1.875rem); } }
+    @media (min-width: 1000px) {
+      .content-section + .content-section::before {
+        width: calc((6.80556vw * 12 ) - 1.875rem); } }
   .content-section .content-cap {
     margin: 0 auto;
     text-align: center;
