@@ -56,20 +56,21 @@ $base: 16;
 // ------
 
 // Media queries
-@mixin n480  		{ @media screen and (max-width: 479px)	{ @content; } }
-@mixin w480  		{ @media screen and (min-width: 480px)	{ @content; } }
-@mixin w480-n700 	{ @media screen and (min-width: 480px) and (max-width: 699px) { @content; } }
-@mixin n700 	 	{ @media screen and (max-width: 699px)	{ @content; } }
-@mixin w700  		{ @media screen and (min-width: 700px)	{ @content; } }
-@mixin w700-n1000 	{ @media screen and (min-width: 700px) and (max-width: 999px) { @content; } }
-@mixin n1000 		{ @media screen and (max-width: 999px)	{ @content; } }
-@mixin w1000 		{ @media screen and (min-width: 1000px) { @content; } }
-@mixin w1000-n1280 	{ @media screen and (min-width: 1000px) and (max-width: 1279px) { @content; } }
-@mixin n1280 		{ @media screen and (max-width: 1279px) { @content; } }
-@mixin w1280 		{ @media screen and (min-width: 1280px) { @content; } }
-@mixin n1440 		{ @media screen and (max-width: 1439px) { @content; } }
-@mixin w1440 		{ @media screen and (min-width: 1440px) { @content; } }
-@mixin w1920 		{ @media screen and (min-width: 1920px) { @content; } }
+@mixin n480  		{ @media (max-width: 479px)	{ @content; } }
+@mixin w480  		{ @media (min-width: 480px)	{ @content; } }
+@mixin w480-n700 	{ @media (min-width: 480px) and (max-width: 699px) { @content; } }
+@mixin n700 	 	{ @media (max-width: 699px)	{ @content; } }
+@mixin w700  		{ @media (min-width: 700px)	{ @content; } }
+@mixin w700-n1000 	{ @media (min-width: 700px) and (max-width: 999px) { @content; } }
+@mixin n1000 		{ @media (max-width: 999px)	{ @content; } }
+@mixin w1000 		{ @media (min-width: 1000px) { @content; } }
+@mixin w1000-n1280 	{ @media (min-width: 1000px) and (max-width: 1279px) { @content; } }
+@mixin n1280 		{ @media (max-width: 1279px) { @content; } }
+@mixin w1280 		{ @media (min-width: 1280px) { @content; } }
+@mixin w1280-n1440 	{ @media (min-width: 1280px) and (max-width: 1439px) { @content; } }
+@mixin n1440 		{ @media (max-width: 1439px) { @content; } }
+@mixin w1440 		{ @media (min-width: 1440px) { @content; } }
+@mixin w1920 		{ @media (min-width: 1920px) { @content; } }
 
 // Type
 @mixin h1-set {

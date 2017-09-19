@@ -1,13 +1,90 @@
 .inline-bulleted-list {
     color: rgba($black, 0.7);
+    margin: 0 auto;
+
+    &:visted {
+        color: purple;
+    }
+
     li {
         display: inline;
-        &:not(:first-child) {
-            &::before {
-                content: "•";
+        &:not(:last-child) {
+            &::after {
+                content: "\00a0•";
                 display: inline-block;
-                padding: 0 em(8.5);
             }
         }
     }
+
+    @media (min-width: 320px) and (max-width: 374px) {
+        max-width: em(286);
+        li {
+            &:nth-child(2), &:nth-child(4), &:nth-child(7), &:nth-child(9), &:nth-child(12), &:nth-child(15), &:nth-child(19) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+    @media (min-width: 375px) and (max-width: 479px) {
+        max-width: em(345);
+        li {
+            &:nth-child(3), &:nth-child(7), &:nth-child(10), &:nth-child(14), &:nth-child(18) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+    @include w480-n700 {
+        max-width: em(450);
+        li {
+            &:nth-child(4), &:nth-child(9), &:nth-child(14), &:nth-child(20) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+    @include w700-n1000 {
+        max-width: em(589);
+        li {
+            &:nth-child(6), &:nth-child(12), &:nth-child(19) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+    @include w1000-n1280 {
+        max-width: em(787);
+        li {
+            &:nth-child(8), &:nth-child(17) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+    @include w1280-n1440 {
+        max-width: em(1015);
+        li {
+            &:nth-child(10) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+    @include w1440 {
+        max-width: match(12);
+        li {
+            &:nth-child(12) {
+                &::after {
+                    content: "";
+                }
+            }
+        }
+    }
+
 }
