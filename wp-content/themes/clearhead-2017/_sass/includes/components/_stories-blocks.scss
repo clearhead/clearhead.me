@@ -5,21 +5,24 @@
         flex-wrap: wrap;
     }
     ul {
-        max-width: rem(345);
-        @include w480 {
+        max-width: rem(334);
+        @include w480-n700 {
             width: calc((100%/2) - (#{$gutter}*(1/3)));
-            &:not(:last-of-type) {
+            &:not(:nth-last-child(2)) {
                 margin-right: $gutter*(1/2);
             }
         }
-        @include w700 {
-            &:not(:last-of-type) {
+        @include w700-n1000 {
+            &:not(:nth-last-child(2)) {
                 margin-right: $gutter*(2/3);
             }
         }
         @include w1000 {
             width: calc((100%/3) - (#{$gutter}*(1/3)));
             max-width: match(4.375);
+            &:not(:last-of-type) {
+                margin-right: $gutter*(2/3);
+            }
         }
         @include w1280 {
             width: col(4);

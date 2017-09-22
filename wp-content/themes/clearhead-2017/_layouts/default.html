@@ -20,7 +20,10 @@
 
     <script>
         $('.menu-toggle').click(function() {
-            $('nav').toggleClass('is-showing');
+            $('.site-header nav').toggleClass('is-showing');
+        });
+        $('a.smooth-scroll').click(function() {
+            $('nav').removeClass('is-showing');
         });
 
         // $('a.smooth-scroll').click(function(event) {
