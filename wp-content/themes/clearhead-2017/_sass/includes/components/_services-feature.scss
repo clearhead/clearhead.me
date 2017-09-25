@@ -52,8 +52,6 @@
         }
         > li {
             display: flex;
-            @include n1000 {
-            }
             @include n700 {
                 width: 100%;
                 position: relative;
@@ -97,10 +95,11 @@
                     padding: em(17) em(12) em(24);
                     align-items: center;
                     flex-grow: 1;
-                    &:hover {
+                    &:hover, &:focus {
                         h4, .icon {
                             visibility: hidden;
                             opacity: 0;
+                            transform: scale(0.985) translateY(-0.25vh);
                         }
                     }
                     &:not(:hover):not(:focus) {
@@ -115,6 +114,7 @@
                 }
                 h4 {
                     line-height: (30/22);
+                    transform: translateY(0);
                     @include n1000 {
                         max-width: 10em;
                         font-size: em(18);
@@ -187,6 +187,8 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    transform: translateY(0);
+                    transition: transform $timing-slower, opacity 0.5s ease-out;
                     ul {
                         line-height: (23/14);
                         letter-spacing: rem(0.24);
@@ -218,6 +220,7 @@
                             visibility: hidden;
                             opacity: 0;
                             pointer-events: none;
+                            transform: translateY(0.375vh);
                         }
                     }
                 }

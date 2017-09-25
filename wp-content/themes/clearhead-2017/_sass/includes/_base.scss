@@ -122,7 +122,7 @@ select, input, textarea {
 	-webkit-appearance: none;
 	appearance: none;
 	font-family: $body;
-	margin: 0;
+	margin: 0 0 em(25);
 	font-size: em(16);
 	display: block;
 	color: currentColor;
@@ -130,7 +130,8 @@ select, input, textarea {
 	line-height: $lh-normal;
 	width: 100%;
 	border-radius: 0;
-	padding: 0;
+	padding: em(10.5) 0.5em em(6.5);
+	border-radius: rem(2);
 
 	// Some default placeholder colors… auto-prefixer had issues auto-prefixing these
 	&::placeholder {
@@ -138,7 +139,16 @@ select, input, textarea {
 	}
 }
 
+textarea {
+	min-height: em(109);
+}
+
 label {
+	display: block;
+	font-size: em(14);
+	line-height: (22/14);
+	color: rgba($black, 0.7);
+	margin-bottom: rem(5);
 	cursor: pointer;
 	&::selection {
 		background-color: transparent; // prevent accidental text selection
@@ -230,6 +240,39 @@ button {
 	// 		border-left: rem(18) solid $gray;
 	// 	}
 	// }
+}
+
+// Separating this because hubspot
+input[type="submit"] {
+	margin: 0;
+	display: inline-block;
+	cursor: pointer;
+	@include h4-set;
+	color: $white;
+	background-color: $blue;
+
+	font-size: em(14);
+	line-height: (18/14);
+	padding: rem(16) rem(13) rem(12);
+	letter-spacing: rem(0.83);
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: $medium;
+	border-radius: rem(2);
+	min-width: rem(181);
+
+	width: auto;
+
+	transition:
+		color $timing-normal,
+		background-color $timing-normal;
+	&:hover, &:focus {
+		background-color: darken($blue, 7.5%);
+		color: $white;
+		&:after {
+			border-left-color: darken($blue, 7.5%);
+		}
+	}
 }
 
 .button-svg {

@@ -86,10 +86,12 @@
                         transition: background-color $timing-slower;
                     }
                 }
-                &:hover .background {
-                    transform: scale(1);
-                    &:after {
-                        background-color: rgba(black, 0.3125);
+                &:hover, &:focus {
+                    .background {
+                        transform: scale(1);
+                        &:after {
+                            background-color: rgba(black, 0.3125);
+                        }
                     }
                 }
 
@@ -99,12 +101,14 @@
                     position: relative;
                     z-index: 3;
                 }
-                &:hover .moves {
-                    &--down {
-                        transform: translateY(3px);
-                    }
-                    &--up {
-                        transform: translateY(-3px);
+                &:hover, &:focus {
+                    .moves {
+                        &--down {
+                            transform: translateY(3px);
+                        }
+                        &--up {
+                            transform: translateY(-3px);
+                        }
                     }
                 }
 
@@ -138,8 +142,10 @@
                     margin-bottom: 2em;
                     opacity: 0;
                 }
-                &:hover .button-svg {
-                    opacity: 1;
+                &:hover, &:focus {
+                    .button-svg {
+                        opacity: 1;
+                    }
                 }
 
                 &--tall {

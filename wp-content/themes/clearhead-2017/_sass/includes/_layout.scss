@@ -352,7 +352,7 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    & + .content-section {
+    & + .content-section:not(.contact-callout) {
         &::before {
             content: "";
             display: block;
