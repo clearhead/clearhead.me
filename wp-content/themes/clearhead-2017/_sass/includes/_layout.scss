@@ -333,6 +333,115 @@
 // Site Footer
 // -----------
 .site-footer {
+    .flex-row {
+        display: flex;
+        align-items: center;
+        @include n700 {
+            flex-direction: column;
+            align-items: center;
+            padding: em(22) 0 em(26);
+        }
+        padding: em(16) 0 em(14);
+        &:not(:last-child) {
+            border-bottom: 1px solid rgba($black, 0.1);
+            padding: em(22) 0 em(9);
+        }
+        @include w700 {
+            justify-content: space-between;
+        }
+    }
+    .logo {
+        padding: rem(5) rem(10) rem(5) 0;
+        @include n700 {
+            margin-bottom: em(9);
+            padding-left: em(10);
+        }
+        &:hover {
+            color: $blue;
+        }
+    }
+    nav {
+        ul {
+            display: flex;
+            @include n700 {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            li {
+                @include n700 {
+                    width: calc(50% - #{em(34)});
+                    margin: em(7);
+                    &:nth-of-type(1) { order: 1; }
+                    &:nth-of-type(2) { order: 3; }
+                    &:nth-of-type(3) { order: 5; }
+                    &:nth-of-type(4) { order: 2; }
+                    &:nth-of-type(5) { order: 4; }
+                    &:nth-of-type(6) { order: 6; }
+                }
+                &:not(:last-child) {
+                    @include w700 {
+                        margin-right: rem(8);
+                    }
+                    @include w1000 {
+                        margin-right: linearInterp(1000, 5, 1440, 26);
+                    }
+                    @include w1440 {
+                        margin-right: rem(26);
+                    }
+                }
+                a {
+                    font-weight: $medium;
+                    @include n700 {
+                        font-size: em(16);
+                        padding: em(8);
+                        text-align: center;
+                    }
+                    @include w700 {
+                        font-size: em(14);
+                        padding: rem(7) rem(7.5) rem(4);
+                    }
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+                &:last-child a {
+                    @include w700 {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+    .social-list {
+        @include n700 {
+            margin-bottom: 1em;
+        }
+        display: flex;
+        margin-left: em(-9);
+        li {
+            &:not(:last-child) {
+                margin-right: rem(15);
+            }
+            &:first-child {
+                margin-right: rem(12);
+            }
+            a {
+                width: 2em;
+                height: 2em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    color: $blue;
+                }
+            }
+        }
+    }
+    small {
+        font-size: em(12);
+        line-height: (25/12);
+        color: rgba($black, 0.8);
+    }
 }
 
 // Content Section
