@@ -7,22 +7,38 @@
         margin-bottom: rem(2);
     }
     .flex-row {
-        display: flex;
-        justify-content: space-between;
+        @include w1000 {
+            display: flex;
+            justify-content: space-between;
+        }
         .column {
+            @include n1000 {
+                max-width: em(460);
+            }
             &:first-child {
-                width: col(6);
+                @include n1000 {
+                    margin-bottom: $gutter*1.5;
+                }
+                @include w1000 {
+                    width: col(6);
+                }
             }
             &:last-child {
-                width: col((17/3));
+                @include w1000 {
+                    width: col((17/3));
+                }
             }
         }
     }
     .locations-list {
-        display: flex;
+        @include w700 {
+            display: flex;
+        }
         li {
-            width: col(2);
             margin-bottom: em(37);
+            @include w1000 {
+                width: col(2);
+            }
             &:not(:last-child) {
                 margin-right: $gutter;
             }
