@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package clearhead-2016
+ * @package clearhead-2017
  */
 
 get_header(); ?>

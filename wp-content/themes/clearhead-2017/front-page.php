@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package clearhead-2016
+ * @package clearhead-2017
  */
 
 get_header(); ?>

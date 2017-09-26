@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package clearhead-2016
+ * @package clearhead-2017
  */
 
 ?><!DOCTYPE html>
