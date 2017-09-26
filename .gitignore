@@ -99,3 +99,4 @@ wp-content/mysql.sql
 *.avi
 
 *.sublime-workspace
+node_modules/
