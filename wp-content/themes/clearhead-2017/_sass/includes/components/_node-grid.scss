@@ -1,0 +1,35 @@
+.node-grid {
+    background-color: $blue;
+    color: $white;
+    padding: 4em 0 5em;
+    h2 {
+        @include n700 {
+            display: none;
+        }
+        font-size: em(36);
+        margin-bottom: 3.25rem;
+    }
+    img {
+        @include n700 {
+            display: none;
+        }
+        display: block;
+    }
+    .cta {
+        @include w700 {
+            margin-top: 4.5em;
+        }
+        p {
+            font-weight: $medium;
+            font-size: em(20);
+            letter-spacing: rem(-0.71);
+        }
+        .button--white {
+            color: $blue;
+            &:hover {
+                color: $blue-dark-1;
+                background-color: $blue-shade;
+            }
+        }
+    }
+}

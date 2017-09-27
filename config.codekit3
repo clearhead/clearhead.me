@@ -24795,6 +24795,12 @@
 		"oAP": "\/wp-content\/themes\/clearhead-2016\/templates\/case-study.php",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/clearhead-2016\/templates\/case-study.php.orig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2016\/templates\/case-study.php.orig",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2016\/templates\/jobs.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -24811,6 +24817,24 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/.gitigore",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/.jscsrc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/.jscsrc",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/.jshintignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/.jshintignore",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/404.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/404.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/clearhead-2017\/_config.yml": {
@@ -24954,6 +24978,45 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/_node-grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/_node-grid.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/_page-banner.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/_page-banner.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/_photo-links.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/_photo-links.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
 	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/_services-feature.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -24980,6 +25043,61 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/_team-grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/_team-grid.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/_testimonial-blocks.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/_testimonial-blocks.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/components\/summary-blocks.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/summary-blocks.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/summary-blocks.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/summary-blocks-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/summary-blocks.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_sass\/includes\/css\/summary-blocks.css.map",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2017\/_sass\/main.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -24993,10 +25111,2045 @@
 		"oS": 2,
 		"uL": 1
 		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/404.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/404.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/archive.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/archive.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/arrows-circle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/arrows-circle.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clearhead-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clearhead-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clearhead-wordmark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clearhead-wordmark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/adidas.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/adidas.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/cvs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/cvs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/keurig.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/keurig.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/p-g.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/p-g.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/patagonia.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/patagonia.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/sonos.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/sonos.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/tesco.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/tesco.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/ulta.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/ulta.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/usaa.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/usaa.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/west-elm.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/west-elm.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/wwe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/clients\/wwe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/down-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/down-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/hero.jpg": {
+		"ft": 16384,
+		"iS": 800265,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/map.png": {
+		"ft": 32768,
+		"iS": 201365,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/menu-close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/menu-close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/menu-open.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/menu-open.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/account-directors.jpg": {
+		"ft": 16384,
+		"iS": 12093,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/account-directors.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/data-analysts.jpg": {
+		"ft": 16384,
+		"iS": 6049,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/data-analysts.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/delia-vallejo.jpg": {
+		"ft": 16384,
+		"iS": 15224,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/delia-vallejo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/founders-arrows.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/founders-arrows.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/founders.jpg": {
+		"ft": 16384,
+		"iS": 311528,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/founders.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/front-end-developers.jpg": {
+		"ft": 16384,
+		"iS": 6779,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/front-end-developers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/jack-rusina.jpg": {
+		"ft": 16384,
+		"iS": 10041,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/jack-rusina.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/optimization-directors.jpg": {
+		"ft": 16384,
+		"iS": 7299,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/optimization-directors.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/project-managers.jpg": {
+		"ft": 16384,
+		"iS": 7264,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/project-managers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/strategic-consultants.jpg": {
+		"ft": 16384,
+		"iS": 7035,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/strategic-consultants.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/ux-interface-designers.jpg": {
+		"ft": 16384,
+		"iS": 6827,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/ux-interface-designers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/ux-researchers.jpg": {
+		"ft": 16384,
+		"iS": 11054,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/people\/ux-researchers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/experience-design.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/experience-design.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/experimentation-personalization.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/experimentation-personalization.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/research-analytics.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/research-analytics.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/test-learn-consulting.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/services\/test-learn-consulting.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/adidas-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/adidas-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/adidas-photo.jpg": {
+		"ft": 16384,
+		"iS": 43259,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/adidas-photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/Asset 1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/Asset 1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/blu-dot-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/blu-dot-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/blu-dot-photo.jpg": {
+		"ft": 16384,
+		"iS": 57743,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/blu-dot-photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/button-jillian.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/button-jillian.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/button.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/button.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/light-bulb.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/light-bulb.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/steve-madden-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/steve-madden-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/steve-madden-photo.jpg": {
+		"ft": 16384,
+		"iS": 52500,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/steve-madden-photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/study-photo.jpg": {
+		"ft": 16384,
+		"iS": 61457,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/stories\/study-photo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/adobe-target.png": {
+		"ft": 32768,
+		"iS": 13411,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/adobe-target.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/google-analytics.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/google-analytics.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/maxymiser.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/maxymiser.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/monetate.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/monetate.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/optimizely.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/optimizely.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/tealium.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/tools\/tealium.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/assets\/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/assets\/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/comments.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/comments.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/css\/main.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/css\/main-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/css\/main.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/css\/main.css.map",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/footer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/footer.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/front-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/front-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/functions.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/functions.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/header.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/4jello4.gif": {
+		"ft": 4194304,
+		"iS": 489570,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/4jello4.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/browser-chrome-dark.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/browser-chrome-dark.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/browser-chrome.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/browser-chrome.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/what-we-do-original.jpg": {
+		"ft": 16384,
+		"iS": 152401,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/what-we-do-original.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/what-we-do.jpg": {
+		"ft": 16384,
+		"iS": 143167,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/what-we-do.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/who-we-are.jpg": {
+		"ft": 16384,
+		"iS": 144902,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/who-we-are.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/who-we-do-it-with.jpg": {
+		"ft": 16384,
+		"iS": 188460,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/callout-photos\/who-we-do-it-with.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/adidas-hero.jpg": {
+		"ft": 16384,
+		"iS": 135930,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/adidas-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/articles\/adidas.jpg": {
+		"ft": 16384,
+		"iS": 23281,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/articles\/adidas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/articles\/blu-dot.jpg": {
+		"ft": 16384,
+		"iS": 20584,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/articles\/blu-dot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/articles\/steve-madden.jpg": {
+		"ft": 16384,
+		"iS": 11940,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/articles\/steve-madden.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/dan-mccauley.jpg": {
+		"ft": 16384,
+		"iS": 6314,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/dan-mccauley.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 7585,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/thumbnail-variation-1.jpg": {
+		"ft": 16384,
+		"iS": 5865,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/thumbnail-variation-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/thumbnail-variation-2.jpg": {
+		"ft": 16384,
+		"iS": 5348,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/thumbnail-variation-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/zoom-control.jpg": {
+		"ft": 16384,
+		"iS": 49336,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/zoom-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/zoom-functionality.jpg": {
+		"ft": 16384,
+		"iS": 78395,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/zoom-functionality.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/zoom-variation.jpg": {
+		"ft": 16384,
+		"iS": 80500,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-1\/zoom-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/innovation-program.jpg": {
+		"ft": 16384,
+		"iS": 79969,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/innovation-program.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 6761,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/thumbnail-variation.jpg": {
+		"ft": 16384,
+		"iS": 6925,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/thumbnail-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/ultra-boost-variation.jpg": {
+		"ft": 16384,
+		"iS": 184702,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/ultra-boost-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/ultra-boost.jpg": {
+		"ft": 16384,
+		"iS": 194552,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-2\/ultra-boost.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/checkout-flow.jpg": {
+		"ft": 16384,
+		"iS": 66414,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/checkout-flow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/delivery-details.jpg": {
+		"ft": 16384,
+		"iS": 138145,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/delivery-details.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/delivery-variation.jpg": {
+		"ft": 16384,
+		"iS": 112611,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/delivery-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 4806,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/thumbnail-variation.jpg": {
+		"ft": 16384,
+		"iS": 5134,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/experiment-3\/thumbnail-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/jack-rusina.jpg": {
+		"ft": 16384,
+		"iS": 10041,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/case-studies\/jack-rusina.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/adidas.png": {
+		"ft": 32768,
+		"iS": 10953,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/adidas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/blu-dot.png": {
+		"ft": 32768,
+		"iS": 12828,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/blu-dot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/cvs.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/cvs.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/express.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/express.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/keurig.png": {
+		"ft": 32768,
+		"iS": 8342,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/keurig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/patagonia.png": {
+		"ft": 32768,
+		"iS": 13319,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/patagonia.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/tesco.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/tesco.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/tory-burch.png": {
+		"ft": 32768,
+		"iS": 14679,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/tory-burch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/ulta.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/ulta.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/usaa.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/usaa.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/vitamix.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/vitamix.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/whole-foods.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/whole-foods.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/world-market.png": {
+		"ft": 32768,
+		"iS": 22370,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/clients\/world-market.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/founders\/matty.jpg": {
+		"ft": 16384,
+		"iS": 39855,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/founders\/matty.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/founders\/ryan.jpg": {
+		"ft": 16384,
+		"iS": 25254,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/founders\/ryan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/founders\/sam.jpg": {
+		"ft": 16384,
+		"iS": 56835,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/founders\/sam.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/check.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/check.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/circle-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/circle-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/down-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/down-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/left-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/left-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/link-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/link-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/right-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/right-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/target.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/target.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/target.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/target.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/icons\/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/location.jpg": {
+		"ft": 16384,
+		"iS": 26315,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/location.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/logo-icon.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/logo-icon.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/logo-type.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/logo-type.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/news\/latest.jpg": {
+		"ft": 16384,
+		"iS": 20460,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/news\/latest.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/point-left-large.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/point-left-large.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/point-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/point-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/point-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/point-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/analyze.jpg": {
+		"ft": 16384,
+		"iS": 90784,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/analyze.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/goals.jpg": {
+		"ft": 16384,
+		"iS": 127762,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/goals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/hypotheses.jpg": {
+		"ft": 16384,
+		"iS": 217206,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/hypotheses.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/map.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/map.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/problems.jpg": {
+		"ft": 16384,
+		"iS": 169815,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/problems.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/product-hero.jpg": {
+		"ft": 16384,
+		"iS": 76298,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/product-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/roadmap.jpg": {
+		"ft": 16384,
+		"iS": 150785,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/roadmap.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/steps.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/steps.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/video-still.jpg": {
+		"ft": 16384,
+		"iS": 95110,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/products\/psm\/video-still.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/data-driven-redesigns.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/data-driven-redesigns.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/data-driven-redesigns.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/data-driven-redesigns.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/ddr_graphic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/ddr_graphic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/digital-optimization-programs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/digital-optimization-programs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/digital-optimization-programs.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/digital-optimization-programs.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/optimization-accelerators.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/optimization-accelerators.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/optimization-accelerators.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/optimization-accelerators.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/problem-solution-mapping.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/problem-solution-mapping.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/problem-solution-mapping.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/solutions\/problem-solution-mapping.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/adidas.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/adidas.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/buildium.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/buildium.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/steve-madden.png": {
+		"ft": 32768,
+		"iS": 2193,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/steve-madden.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/stories-bluedot.png": {
+		"ft": 32768,
+		"iS": 7333,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/stories-bluedot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/village-roadshow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/stories\/village-roadshow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/analysts.jpg": {
+		"ft": 16384,
+		"iS": 9114,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/analysts.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/consultants.jpg": {
+		"ft": 16384,
+		"iS": 10863,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/consultants.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/designers.jpg": {
+		"ft": 16384,
+		"iS": 9745,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/designers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/developers.jpg": {
+		"ft": 16384,
+		"iS": 9347,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/developers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/directors.jpg": {
+		"ft": 16384,
+		"iS": 10061,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/directors.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/managers.jpg": {
+		"ft": 16384,
+		"iS": 9913,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/team\/managers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/maxymiser.png": {
+		"ft": 32768,
+		"iS": 11375,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/maxymiser.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/maxymiser.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/maxymiser.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/monetate.png": {
+		"ft": 32768,
+		"iS": 12298,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/monetate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/optimizely.png": {
+		"ft": 32768,
+		"iS": 17477,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/optimizely.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/qubit.png": {
+		"ft": 32768,
+		"iS": 11694,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/qubit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/tealium.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/tealium.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/user-testing.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/technologies\/user-testing.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/testimonials\/keurig.png": {
+		"ft": 32768,
+		"iS": 8342,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/testimonials\/keurig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/img\/testimonials\/village-roadshow.png": {
+		"ft": 32768,
+		"iS": 23195,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/img\/testimonials\/village-roadshow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/inc\/custom-header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/inc\/custom-header.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/inc\/customizer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/inc\/extras.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/inc\/extras.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/inc\/jetpack.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/inc\/profile.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/inc\/profile.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/inc\/template-tags.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/inc\/template-tags.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2017\/_site\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/index.html",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/2017-home.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/2017-home-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/bowser.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/bowser-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/customizer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/customizer-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/home.nav.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/home.nav-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/inview.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/inview.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/jquery.validate.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/jquery.validate.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/jquery.waypoints.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/jquery.waypoints.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/home.nav-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/min\/home.nav-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/navigation copy-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/min\/navigation copy-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/parallax-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/min\/parallax-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/site-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/min\/site-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/navigation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/navigation-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/parallax-background.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/parallax-background-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/prism.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/prism-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/site.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/site-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/skip-link-focus-fix.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/min\/skip-link-focus-fix-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-coy.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-coy-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-dark.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-dark-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-funky.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-funky-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-okaidia.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-okaidia-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-tomorrow.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-tomorrow-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-twilight.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-twilight-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/js\/themes\/prism-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/languages\/clearhead-2016.pot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/languages\/clearhead-2016.pot",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/languages\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/languages\/readme.txt",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/layouts\/content-sidebar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/layouts\/content-sidebar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/layouts\/sidebar-content.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/layouts\/sidebar-content-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/readme.txt",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/rtl.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/rtl-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/sass\/legacy\/blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/sass\/css\/blog.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/sass\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/css\/style.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/screenshot.png": {
+		"ft": 32768,
+		"iS": 264,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/search.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/search.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/searchform.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/searchform.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/sidebar.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/sidebar.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/single.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/style.css.map",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/svg\/facebook.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/svg\/facebook.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/svg\/linkedin.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/svg\/linkedin.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/svg\/twitter.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/svg\/twitter.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content-none.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content-none.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content-single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content-single.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/template-parts\/content.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/templates\/basic-product-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/templates\/basic-product-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/templates\/bio-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/templates\/bio-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/templates\/case-study.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/templates\/case-study.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/templates\/case-study.php.orig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/templates\/case-study.php.orig",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/templates\/jobs.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/templates\/jobs.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/_site\/templates\/psm-product-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/_site\/templates\/psm-product-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/archive.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/archive.php",
 		"oF": 0
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/arrows-circle.svg": {
@@ -25019,6 +27172,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/clearhead-wordmark.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/clearhead-wordmark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/clients\/adidas.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -25034,6 +27197,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/clients\/cvs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/clients\/keurig.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/clients\/keurig.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -25119,11 +27292,85 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-design-node-grid.png": {
+		"ft": 32768,
+		"iS": 126484,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-design-node-grid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-design-split.jpg": {
+		"ft": 16384,
+		"iS": 167979,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-design-split.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-design.jpg": {
+		"ft": 16384,
+		"iS": 91990,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-design.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-optimization-node-grid.png": {
+		"ft": 32768,
+		"iS": 121022,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experience-optimization-node-grid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experimentation-personalization-node-grid.png": {
+		"ft": 32768,
+		"iS": 214085,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experimentation-personalization-node-grid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/research-analytics-node-grid.png": {
+		"ft": 32768,
+		"iS": 104438,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/research-analytics-node-grid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/down-arrow.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/down-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/facebook.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -25137,6 +27384,27 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/linkedin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/map.png": {
+		"ft": 32768,
+		"iS": 201365,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/menu-close.svg": {
@@ -25158,6 +27426,126 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/account-directors.jpg": {
+		"ft": 16384,
+		"iS": 12093,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/account-directors.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/data-analysts.jpg": {
+		"ft": 16384,
+		"iS": 6049,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/data-analysts.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/delia-vallejo.jpg": {
+		"ft": 16384,
+		"iS": 15224,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/delia-vallejo.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/founders-arrows.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/founders-arrows.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/founders.jpg": {
+		"ft": 16384,
+		"iS": 311528,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/founders.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/front-end-developers.jpg": {
+		"ft": 16384,
+		"iS": 6779,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/front-end-developers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/jack-rusina.jpg": {
+		"ft": 16384,
+		"iS": 10041,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/jack-rusina.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/optimization-directors.jpg": {
+		"ft": 16384,
+		"iS": 7299,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/optimization-directors.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/project-managers.jpg": {
+		"ft": 16384,
+		"iS": 7264,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/project-managers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/strategic-consultants.jpg": {
+		"ft": 16384,
+		"iS": 7035,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/strategic-consultants.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/ux-interface-designers.jpg": {
+		"ft": 16384,
+		"iS": 6827,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/ux-interface-designers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/people\/ux-researchers.jpg": {
+		"ft": 16384,
+		"iS": 11054,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/people\/ux-researchers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/services\/experience-design.svg": {
 		"ft": 2097152,
@@ -25370,6 +27758,22 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/wp-content\/themes\/clearhead-2017\/assets\/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/comments.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/comments.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2017\/css\/main.css": {
 		"aP": 0,
 		"bl": 0,
@@ -25386,6 +27790,24 @@
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/main.css.map",
 		"oF": 0
 		},
+	"\/wp-content\/themes\/clearhead-2017\/footer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/footer.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/front-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/front-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/functions.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/functions.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2017\/gulpfile.js": {
 		"ft": 64,
 		"ma": 0,
@@ -25396,11 +27818,1013 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/wp-content\/themes\/clearhead-2017\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/header.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/4jello4.gif": {
+		"ft": 4194304,
+		"iS": 489570,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/4jello4.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/browser-chrome-dark.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/browser-chrome-dark.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/browser-chrome.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/browser-chrome.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/what-we-do-original.jpg": {
+		"ft": 16384,
+		"iS": 152401,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/what-we-do-original.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/what-we-do.jpg": {
+		"ft": 16384,
+		"iS": 143167,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/what-we-do.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/who-we-are.jpg": {
+		"ft": 16384,
+		"iS": 144902,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/who-we-are.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/who-we-do-it-with.jpg": {
+		"ft": 16384,
+		"iS": 188460,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/callout-photos\/who-we-do-it-with.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/adidas-hero.jpg": {
+		"ft": 16384,
+		"iS": 135930,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/adidas-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/articles\/adidas.jpg": {
+		"ft": 16384,
+		"iS": 23281,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/articles\/adidas.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/articles\/blu-dot.jpg": {
+		"ft": 16384,
+		"iS": 20584,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/articles\/blu-dot.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/articles\/steve-madden.jpg": {
+		"ft": 16384,
+		"iS": 11940,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/articles\/steve-madden.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/dan-mccauley.jpg": {
+		"ft": 16384,
+		"iS": 6314,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/dan-mccauley.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 7585,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/thumbnail-variation-1.jpg": {
+		"ft": 16384,
+		"iS": 5865,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/thumbnail-variation-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/thumbnail-variation-2.jpg": {
+		"ft": 16384,
+		"iS": 5348,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/thumbnail-variation-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/zoom-control.jpg": {
+		"ft": 16384,
+		"iS": 49336,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/zoom-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/zoom-functionality.jpg": {
+		"ft": 16384,
+		"iS": 78395,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/zoom-functionality.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/zoom-variation.jpg": {
+		"ft": 16384,
+		"iS": 80500,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-1\/zoom-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/innovation-program.jpg": {
+		"ft": 16384,
+		"iS": 79969,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/innovation-program.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 6761,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/thumbnail-variation.jpg": {
+		"ft": 16384,
+		"iS": 6925,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/thumbnail-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/ultra-boost-variation.jpg": {
+		"ft": 16384,
+		"iS": 184702,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/ultra-boost-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/ultra-boost.jpg": {
+		"ft": 16384,
+		"iS": 194552,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-2\/ultra-boost.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/checkout-flow.jpg": {
+		"ft": 16384,
+		"iS": 66414,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/checkout-flow.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/delivery-details.jpg": {
+		"ft": 16384,
+		"iS": 138145,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/delivery-details.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/delivery-variation.jpg": {
+		"ft": 16384,
+		"iS": 112611,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/delivery-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/thumbnail-control.jpg": {
+		"ft": 16384,
+		"iS": 4806,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/thumbnail-control.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/thumbnail-variation.jpg": {
+		"ft": 16384,
+		"iS": 5134,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/experiment-3\/thumbnail-variation.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/jack-rusina.jpg": {
+		"ft": 16384,
+		"iS": 10041,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/case-studies\/jack-rusina.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/adidas.png": {
+		"ft": 32768,
+		"iS": 10953,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/adidas.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/blu-dot.png": {
+		"ft": 32768,
+		"iS": 12828,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/blu-dot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/cvs.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/cvs.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/express.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/express.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/keurig.png": {
+		"ft": 32768,
+		"iS": 8342,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/keurig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/patagonia.png": {
+		"ft": 32768,
+		"iS": 13319,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/patagonia.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/tesco.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/tesco.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/tory-burch.png": {
+		"ft": 32768,
+		"iS": 14679,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/tory-burch.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/ulta.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/ulta.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/usaa.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/usaa.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/vitamix.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/vitamix.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/whole-foods.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/whole-foods.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/clients\/world-market.png": {
+		"ft": 32768,
+		"iS": 22370,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/clients\/world-market.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/founders\/matty.jpg": {
+		"ft": 16384,
+		"iS": 39855,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/founders\/matty.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/founders\/ryan.jpg": {
+		"ft": 16384,
+		"iS": 25254,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/founders\/ryan.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/founders\/sam.jpg": {
+		"ft": 16384,
+		"iS": 56835,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/founders\/sam.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/check.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/check.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/check.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/circle-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/circle-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/down-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/down-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/left-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/left-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/link-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/link-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/right-arrow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/right-arrow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/target.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/target.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/target.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/target.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/icons\/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/icons\/twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/location.jpg": {
+		"ft": 16384,
+		"iS": 26315,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/location.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/logo-icon.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/logo-icon.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/logo-type.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/logo-type.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/news\/latest.jpg": {
+		"ft": 16384,
+		"iS": 20460,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/news\/latest.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/point-left-large.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/point-left-large.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/point-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/point-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/point-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/point-right.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/analyze.jpg": {
+		"ft": 16384,
+		"iS": 90784,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/analyze.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/goals.jpg": {
+		"ft": 16384,
+		"iS": 127762,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/goals.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/hypotheses.jpg": {
+		"ft": 16384,
+		"iS": 217206,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/hypotheses.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/map.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/map.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/problems.jpg": {
+		"ft": 16384,
+		"iS": 169815,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/problems.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/product-hero.jpg": {
+		"ft": 16384,
+		"iS": 76298,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/product-hero.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/roadmap.jpg": {
+		"ft": 16384,
+		"iS": 150785,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/roadmap.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/steps.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/steps.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/video-still.jpg": {
+		"ft": 16384,
+		"iS": 95110,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/products\/psm\/video-still.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/data-driven-redesigns.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/data-driven-redesigns.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/data-driven-redesigns.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/data-driven-redesigns.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/ddr_graphic.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/ddr_graphic.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/digital-optimization-programs.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/digital-optimization-programs.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/digital-optimization-programs.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/digital-optimization-programs.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/optimization-accelerators.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/optimization-accelerators.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/optimization-accelerators.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/optimization-accelerators.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/problem-solution-mapping.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/problem-solution-mapping.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/solutions\/problem-solution-mapping.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/solutions\/problem-solution-mapping.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/stories\/adidas.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/stories\/adidas.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/stories\/buildium.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/stories\/buildium.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/stories\/steve-madden.png": {
+		"ft": 32768,
+		"iS": 2193,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/stories\/steve-madden.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/stories\/stories-bluedot.png": {
+		"ft": 32768,
+		"iS": 7333,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/stories\/stories-bluedot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/stories\/village-roadshow.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/stories\/village-roadshow.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/team\/analysts.jpg": {
+		"ft": 16384,
+		"iS": 9114,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/team\/analysts.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/team\/consultants.jpg": {
+		"ft": 16384,
+		"iS": 10863,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/team\/consultants.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/team\/designers.jpg": {
+		"ft": 16384,
+		"iS": 9745,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/team\/designers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/team\/developers.jpg": {
+		"ft": 16384,
+		"iS": 9347,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/team\/developers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/team\/directors.jpg": {
+		"ft": 16384,
+		"iS": 10061,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/team\/directors.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/team\/managers.jpg": {
+		"ft": 16384,
+		"iS": 9913,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/team\/managers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/maxymiser.png": {
+		"ft": 32768,
+		"iS": 11375,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/maxymiser.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/maxymiser.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/maxymiser.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/monetate.png": {
+		"ft": 32768,
+		"iS": 12298,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/monetate.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/optimizely.png": {
+		"ft": 32768,
+		"iS": 17477,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/optimizely.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/qubit.png": {
+		"ft": 32768,
+		"iS": 11694,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/qubit.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/tealium.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/tealium.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/technologies\/user-testing.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/technologies\/user-testing.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/testimonials\/keurig.png": {
+		"ft": 32768,
+		"iS": 8342,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/testimonials\/keurig.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/img\/testimonials\/village-roadshow.png": {
+		"ft": 32768,
+		"iS": 23195,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/img\/testimonials\/village-roadshow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/inc\/custom-header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/inc\/custom-header.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/inc\/customizer.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/inc\/customizer.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/inc\/extras.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/inc\/extras.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/inc\/jetpack.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/inc\/jetpack.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/inc\/profile.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/inc\/profile.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/inc\/template-tags.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/inc\/template-tags.php",
+		"oF": 0
+		},
 	"\/wp-content\/themes\/clearhead-2017\/index.html": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/index.html",
 		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/index.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/2017-home.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/2017-home-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/2017-nav.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/2017-nav-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/bowser.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/bowser-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/customizer.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/customizer-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/home.nav.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/home.nav-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"\/wp-content\/themes\/clearhead-2017\/js\/inview.min.js": {
 		"ft": 64,
@@ -25408,6 +28832,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/inview.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/jquery.validate.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/jquery.validate.min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
@@ -25422,11 +28856,231 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/min\/2017-home-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/min\/2017-home-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/min\/2017-nav-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/min\/2017-nav-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/min\/home.nav-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/min\/home.nav-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/min\/navigation copy-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/min\/navigation copy-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/min\/parallax-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/min\/parallax-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/min\/site-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/min\/site-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/navigation.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/navigation-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/parallax-background.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/parallax-background-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/prism.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/prism-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/site.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/site-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/skip-link-focus-fix.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/skip-link-focus-fix-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-coy.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-coy-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-dark.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-dark-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-funky.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-funky-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-okaidia.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-okaidia-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-tomorrow.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-tomorrow-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-twilight.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-twilight-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/themes\/prism-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/languages\/clearhead-2016.pot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/languages\/clearhead-2016.pot",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/languages\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/languages\/readme.txt",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/layouts\/content-sidebar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/layouts\/content-sidebar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/layouts\/sidebar-content.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/layouts\/sidebar-content-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/wp-content\/themes\/clearhead-2017\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
 		"oAP": "\/build\/wp-content\/themes\/clearhead-2017\/node_modules",
 		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/package-lock.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/package-lock-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/wp-content\/themes\/clearhead-2017\/package.json": {
 		"ft": 524288,
@@ -25435,6 +29089,675 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/readme.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/readme.txt",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/rtl.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/rtl-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_base.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/_base.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_extensions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/_extensions.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_layout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/_layout.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_modules.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/_modules.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/_reset.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/_normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/css\/_normalize.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/elements\/_elements.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_elements.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/elements\/_lists.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_lists.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/elements\/_tables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_tables.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/forms\/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_buttons.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/forms\/_fields.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_fields.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/forms\/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_forms.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/layout\/_content-sidebar.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_content-sidebar.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/layout\/_sidebar-content.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_sidebar-content.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/media\/_captions.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_captions.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/media\/_galleries.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_galleries.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/media\/_media.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_media.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/mixins\/_mixins-master.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_mixins-master.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/modules\/_accessibility.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_accessibility.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/modules\/_alignments.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_alignments.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/modules\/_clearings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_clearings.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/modules\/_infinite-scroll.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_infinite-scroll.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/navigation\/_links.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_links.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/navigation\/_menus.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_menus.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/navigation\/_navigation.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_navigation.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/_site.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_site.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/primary\/_comments.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/css\/_comments.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/primary\/_posts-and-pages.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/css\/_posts-and-pages.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/secondary\/_widgets.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/site\/css\/_widgets.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/typography\/_copy.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_copy.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/typography\/_headings.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_headings.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/typography\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_typography.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/variables-site\/_colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_colors.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/variables-site\/_structure.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_structure.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/variables-site\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_typography.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/_u\/variables-site\/_variables-site.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/_u\/css\/_variables-site.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/legacy\/blog.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sass\/css\/blog.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sass\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/style.css",
+		"oF": 0,
+		"oS": 2,
+		"uL": 1
+		},
+	"\/wp-content\/themes\/clearhead-2017\/screenshot.png": {
+		"ft": 32768,
+		"iS": 264,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/screenshot.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/themes\/clearhead-2017\/search.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/search.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/searchform.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/searchform.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/sidebar.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/sidebar.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/single.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/wp-content\/themes\/clearhead-2017\/style.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/style.css.map",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/svg\/facebook.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/svg\/facebook.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/svg\/linkedin.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/svg\/linkedin.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/svg\/twitter.svg.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/svg\/twitter.svg.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/template-parts\/content-none.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/template-parts\/content-none.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/template-parts\/content-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/template-parts\/content-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/template-parts\/content-single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/template-parts\/content-single.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/template-parts\/content.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/template-parts\/content.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/basic-product-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/basic-product-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/bio-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/bio-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/case-study.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/case-study.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/case-study.php.orig": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/case-study.php.orig",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/jobs.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/jobs.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/psm-product-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/psm-product-page.php",
+		"oF": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/templates\/service.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/templates\/service.php",
+		"oF": 0
 		},
 	"\/wp-content\/themes\/clearhead\/404.php": {
 		"ft": 8192,

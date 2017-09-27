@@ -29,12 +29,21 @@
 
 // Site Header
 // -----------
-.site-header {
+.top-group .site-header {
     @include n700 {
         height: em(75);
     }
     @include w1280 {
         height: em(119);
+    }
+}
+.site-header {
+    @include n700 {
+        height: em(69);
+    }
+    height: em(75);
+    @include w1280 {
+        height: em(88);
     }
     &.is-filled {
         .fixed-area {
@@ -450,7 +459,7 @@
     padding: em(80) 0;
     overflow: hidden;
     position: relative;
-    &:not(.contact-callout) {
+    &:not(.contact-callout):not(.content-section--basic) {
         min-height: calc(100vh - #{rem(104)});
         display: flex;
         flex-direction: column;
@@ -484,7 +493,6 @@
     }
     .content-cap {
         margin: 0 auto;
-        text-align: center;
         margin-bottom: 3em;
         &--large {
             max-width: match(10);
@@ -521,6 +529,18 @@
                 margin-top: 0;
                 bottom: 0;
             }
+        }
+    }
+    &--basic {
+        padding: em(40) 0;
+        @include w700 {
+            padding: em(60) 0;
+        }
+        @include w1000 {
+            padding: em(80) 0;
+        }
+        .content-cap {
+            margin-bottom: 0;
         }
     }
 }

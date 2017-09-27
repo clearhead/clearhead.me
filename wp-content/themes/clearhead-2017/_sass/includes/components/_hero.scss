@@ -32,6 +32,10 @@
             margin-bottom: em(68);
             &:hover {
                 .button {
+                    @include n700 {
+                        background-color: $blue-shade;
+                        color: $blue-dark-1;
+                    }
                     background-color: $blue;
                     color: $white;
                 }
@@ -49,4 +53,9 @@
             }
         }
     }
+}
+
+.page-template-service .top-group {
+    // background-image: none !important;
+    height: 18em;
 }

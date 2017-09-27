@@ -12,7 +12,7 @@
 ?>
 
 	</div><!-- #content -->
-	<?php if(is_front_page()): ?>
+	<?php if(is_front_page() || is_page_template( 'templates/service.php' )): ?>
 		<section class="content-section contact-callout">
 		<div class="section-target" id="contact"></div>
 		<div class="section-target section-target--view section-target--view--end" id="contact-view"></div>
@@ -52,7 +52,7 @@
 					</ul>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/map.png" alt="Map of Clearhead’s location in Austin, TX">
 				</div>
-				<div class="column">
+				<div class="column" id="contact-form">
 					<h4>Let’s talk.</h4>
 
 					<!--[if lte IE 8]>

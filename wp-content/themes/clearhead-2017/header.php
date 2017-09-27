@@ -32,18 +32,22 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<?php if ( !is_front_page() ): ?>
+	<?php if ( !is_front_page() && !is_page_template( 'templates/service.php' ) ): ?>
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'clearhead-2016' ); ?></a>
 	<?php endif; ?>
 
-	<?php if(is_front_page()): ?>
-	<div class="top-group" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/hero.jpg');">
-	<header class="site-header">
+	<?php if(is_front_page() || is_page_template( 'templates/service.php' )): ?>
+		<?php if( is_page_template( 'templates/service.php' ) ): ?>
+		<header class="site-header is-filled">
+		<?php else: ?>
+		<div class="top-group" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/hero.jpg');">
+			<header class="site-header">
+		<?php endif; ?>
 		<div class="fixed-area">
 			<div class="container">
 				<div class="flex-row">
 					<div class="logo">
-						<a href="{{ site.github.url }}/">
+						<a href="/">
 							<svg viewBox="0 0 212 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<defs>
 									<polygon id="path-1" points="39.5675238 0.432380952 0 0.432380952 0 39.9998095 39.5675238 39.9998095 39.5675238 0.432380952"></polygon>
@@ -112,12 +116,12 @@
 			</div>
 		</div>
 	</header>
-	<?php 
+	<?php
 	else: ?>
 	<header role="banner">
 		<div class="main-header">
 			<div class="container">
-				<?php if ( is_front_page() ): ?>
+				<?php if ( is_front_page() || is_page_template( 'templates/service.php' ) ): ?>
 					<a class="logo" href="#main" rel="home">
 				<?php else: ?>
 					<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">

@@ -1,0 +1,56 @@
+.summary-blocks {
+    h2 {
+        font-size: em(28);
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            width: col(4);
+            &:not(:last-child) {
+                margin-right: $gutter;
+            }
+            a {
+                &:hover {
+                    background-color: $blue-shade;
+                    figure figcaption {
+                        border-color: rgba($blue, 0.25);
+                    }
+                }
+                figure {
+                    .photo {
+                        padding-top: 100%*(157/360);
+                        background-color: $gray-shade;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+                    figcaption {
+                        border: 1px solid $gray-shade;
+                        border-top: none;
+                        padding: em(14);
+                        transition: border-color $timing-normal;
+                        span {
+                            display: block;
+                        }
+                        .title {
+                            font-weight: $medium;
+                            font-size: em(17);
+                            line-height: (25/17);
+                            letter-spacing: rem(-0.25);
+                            margin-bottom: rem(4);
+                        }
+                        .cta {
+                            font-size: rem(15);
+                            line-height: (23/15);
+                            color: $blue;
+                            text-transform: lowercase;
+                            letter-spacing: rem(-0.47);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

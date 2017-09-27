@@ -25,7 +25,7 @@ jQuery('a.contact-focus[href^="#"]').click(function(event) {
     jQuery('html, body').animate({scrollTop:target}, 700);
     event.preventDefault();
 
-    jQuery('footer#contact .hs_full_name input').focus();
+    jQuery('input[name="full_name"]').focus();
 
 });
 

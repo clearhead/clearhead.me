@@ -44,7 +44,7 @@ get_header(); ?>
 			<div class="section-target section-target--view" id="what-we-do-view"></div>
 			<div class="container container--large">
 				<div class="content-cap content-cap--large copy copy--centered">
-					<p>Clearhead, the experience optimization company, uses evidence and experimentation to create more confident and measurable outcomes. Our services are built on a unifying framework for continuous optimization. Together, we solidify goals, discover the largest problems to solve, and validate the big impact ideas. Only then do you get&nbsp;confident&nbsp;results.</p>
+					<p>Clearhead, the experience optimization company, uses evidence and experimentation to create more confident and measurable outcomes. Our services are built on a unifying framework for continuous optimization. Together, we solidify goals, discover the largest problems to solve, and validate the big impact ideas. Only then do you get confident&nbsp;results.</p>
 				</div>
 				<div class="services-feature">
 					<div class="intro">
@@ -54,7 +54,7 @@ get_header(); ?>
 					</div>
 					<ul>
 						<li>
-							<a href=".">
+							<a href="/experience-design/">
 								<h4>Experience &amp; Design</h4>
 								<div class="icon">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/services/experience-design.svg" alt="">
@@ -306,7 +306,7 @@ get_header(); ?>
 			<div class="section-target" id="partners"></div>
 			<div class="section-target section-target--view" id="partners-view"></div>
 			<div class="container container--large flex-space">
-				<div class="content-cap content-cap--small">
+				<div class="content-cap content-cap--small copy copy--centered">
 					<h2 class="lowercase">We Love Working with Clients That Inspire Us to Think Bigger</h2>
 				</div>
 				<div class="logos-grid logos-grid--home-arrangement">
@@ -343,7 +343,7 @@ get_header(); ?>
 						</li>
 						<li>
 							<blockquote>
-								<q>The Clearhead team are the thought leaders in the space and their methodology resonated with me. Working with the team has been awesome and they are very much partners. They’ve made a significant difference and impact.</q>
+								<q>Clearhead has been an incredible partner and the best vendor I have had the opportunity to work with. Their user-friendly data storytelling has been truly transformational for our culture, allowing us to use data to drive real business results.</q>
 								<cite>
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/jack-rusina.jpg" alt="Delia Vallejo">
 									<div class="info">
@@ -372,7 +372,7 @@ get_header(); ?>
 						<li><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adidas"></span></div></li>
 					</ul>
 				</div>
-				<div class="content-cap centered">
+				<div class="content-cap">
 					<ul class="inline-bulleted-list">
 						<li>Crazy&nbsp;Egg</li>
 						<li>Adobe&nbsp;Target</li>
