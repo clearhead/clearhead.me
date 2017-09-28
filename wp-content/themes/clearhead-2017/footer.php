@@ -28,7 +28,7 @@
 								Austin, TX 78704<br>
 								United States
 							</address>
-							<a href=".">View on Map</a>
+							<a href="https://www.google.com/maps/place/3601+S+Congress+Ave,+Austin,+TX+78704/@30.2281058,-97.7632086,17z/data=!3m1!4b1!4m5!3m4!1s0x8644b494df64cf3b:0xef1546de04d9d3ad!8m2!3d30.2281058!4d-97.7610199">View on Map</a>
 						</li>
 						<li>
 							<h4>Cincinnati</h4>
@@ -37,7 +37,7 @@
 								Cincinnati, OH 45202<br>
 								United States
 							</address>
-							<a href=".">View on Map</a>
+							<a href="https://www.google.com/maps/place/1311+Vine+St,+Cincinnati,+OH+45202/@39.1098636,-84.5175376,17z/data=!3m1!4b1!4m5!3m4!1s0x8841b3fd941f70a9:0x75d87f887d8f7bd4!8m2!3d39.1098636!4d-84.5153489?sa=X&ved=0ahUKEwji9_TVucjWAhVBjVQKHYGgAgMQ8gEIJTAA">View on Map</a>
 						</li>
 						<li>
 							<h4>London</h4>
@@ -47,7 +47,7 @@
 								WC1X 8HN<br>
 								United Kingdom
 							</address>
-							<a href=".">View on Map</a>
+							<a href="https://www.google.com/maps/place/14+Grays+Inn+Rd,+London+WC1X,+UK/@51.5188788,-0.1136711,17z/data=!3m1!4b1!4m5!3m4!1s0x48761b4c0acf9d41:0x2e1dd5df1515f6de!8m2!3d51.5188788!4d-0.1114824">View on Map</a>
 						</li>
 					</ul>
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/map.png" alt="Map of Clearhead’s location in Austin, TX">
@@ -100,7 +100,7 @@
 							<a class="smooth-scroll" href="/#contact">Contact Us</a>
 						</li>
 						<li>
-							<a href="/jobs">Jobs</a>
+							<a href="http://clearhead.theresumator.com/apply">Jobs</a>
 						</li>
 						<li>
 							<a href="/blog">Blog</a>

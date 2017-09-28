@@ -147,7 +147,7 @@ get_header(); ?>
 				<div class="stories-blocks">
 					<ul>
 						<li>
-							<a href="." class="block block--tall">
+							<a href="/blog/testing-the-power-of-print-our-blu-dot-case-study/" class="block block--tall">
 								<div class="background" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/stories/blu-dot-photo.jpg');"></div>
 								<div class="label moves moves--down">Case Study</div>
 								<h4 class="moves moves--down">Testing the Power of Print: Our Blu Dot Case Study</h4>
@@ -166,7 +166,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href="." class="block">
+							<a href="/blog/problem-solution-mapping-inventedand-wins-revenue/" class="block">
 								<div class="background"></div>
 								<div class="label moves moves--down">From the Blog</div>
 								<h4 class="moves moves--down">How Problem Solution Mapping Was Invented… and Why It Wins More Revenue</h4>
@@ -185,7 +185,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li class="dn-w1000">
-							<a href="." class="block block--tall">
+							<a href="/blog/revenue-simplification-steve-madden-case-study/" class="block block--tall">
 								<div class="background background--topped" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/stories/steve-madden-photo.jpg');"></div>
 								<div class="label moves moves--down">Case Study</div>
 								<h4 class="capped moves moves--down">Revenue in Simplification: Steve Madden Case Study</h4>
@@ -206,7 +206,7 @@ get_header(); ?>
 					</ul>
 					<ul>
 						<li>
-							<a href="." class="block block--tall">
+							<a href="/blog/adidas-case-study/" class="block block--tall">
 								<div class="background" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/stories/adidas-photo.jpg');"></div>
 								<div class="label moves moves--down">Case Study</div>
 								<h4 class="moves moves--down">Data-Driven Approach Scores Big: Adidas Case Study</h4>
@@ -225,7 +225,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href="." class="block block--tall">
+							<a href="/blog/released-2016-digital-optimization-study-how-do-you-stack-up/" class="block block--tall">
 								<div class="background" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/stories/study-photo.jpg');"></div>
 								<div class="label moves moves--down">Latest Report</div>
 								<h4 class="moves moves--down">Digital Optimization Benchmarking Study</h4>
@@ -240,7 +240,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li class="dn-w1000">
-							<a href="." class="block">
+							<a href="/blog/physics-of-roi/" class="block">
 								<div class="background"></div>
 								<div class="label moves moves--down">From the Blog</div>
 								<h4 class="moves moves--down">Stack the chips in your favor with the physics of ROI</h4>
@@ -261,7 +261,7 @@ get_header(); ?>
 					</ul>
 					<ul class="dn-n1000">
 						<li>
-							<a href="." class="block">
+							<a href="/blog/physics-of-roi/" class="block">
 								<div class="background"></div>
 								<div class="label moves moves--down">From the Blog</div>
 								<h4 class="moves moves--down">Stack the chips in your favor with the physics of ROI</h4>
@@ -280,7 +280,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href="." class="block block--tall">
+							<a href="/blog/revenue-simplification-steve-madden-case-study/" class="block block--tall">
 								<div class="background background--topped" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/stories/steve-madden-photo.jpg');"></div>
 								<div class="label moves moves--down">Case Study</div>
 								<h4 class="capped moves moves--down">Revenue in Simplification: Steve Madden Case Study</h4>
@@ -413,7 +413,7 @@ get_header(); ?>
 				<div class="container container--large">
 					<ul>
 						<li>
-							<a class="button button--white" href=".">Read Sam’s Story</a>
+							<a class="button button--white" href="/meet-sam/">Read Sam’s Story</a>
 							<div class="background background--arrows-svg">
 								<svg width="632px" height="39px" viewBox="0 0 632 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									<g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -432,7 +432,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<a class="button button--white" href=".">Read Matty’s Story</a>
+							<a class="button button--white" href="/meet-matty/">Read Matty’s Story</a>
 							<div class="background background--arrows-svg">
 								<svg width="632px" height="39px" viewBox="0 0 632 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									<g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -451,7 +451,7 @@ get_header(); ?>
 							</div>
 						</li>
 						<li>
-							<a class="button button--white" href=".">Read Ryan’s Story</a>
+							<a class="button button--white" href="/meet-ryan/">Read Ryan’s Story</a>
 							<div class="background background--arrows-svg">
 								<svg width="632px" height="39px" viewBox="0 0 632 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 									<g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
