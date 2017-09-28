@@ -29,6 +29,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include n700 {
+                margin-bottom: em(102);
+            }
             margin-bottom: em(68);
             &:hover {
                 .button {

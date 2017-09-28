@@ -44,13 +44,13 @@ get_header(); ?>
 			<div class="section-target section-target--view" id="what-we-do-view"></div>
 			<div class="container container--large">
 				<div class="content-cap content-cap--large copy copy--centered">
-					<p>Clearhead, the experience optimization company, uses evidence and experimentation to create more confident and measurable outcomes. Our services are built on a unifying framework for continuous optimization. Together, we solidify goals, discover the largest problems to solve, and validate the big impact ideas. Only then do you get confident&nbsp;results.</p>
+					<p>Clearhead is the experience optimization company. Using evidence and experimentation, we help some of the best known brands design, build and deliver amazing experiences across the customer journey. Problem Solution Mapping (PSM), our unifying framework for continuous optimization, ensures we solve the biggest problems and deliver confident and measurable&nbsp;outcomes.</p>
 				</div>
 				<div class="services-feature">
 					<div class="intro">
 						<h6>Our Unifying Framework</h6>
 						<h2>Problem Solution Mapping</h2>
-						<a href="." class="button button--light button--small">Learn More</a>
+						<a href="/problem-solution-mapping/" class="button button--light button--small">Learn More</a>
 					</div>
 					<ul>
 						<li>
@@ -75,7 +75,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href=".">
+							<a href="/research-analytics/">
 								<h4>Research &amp; Analytics</h4>
 								<div class="icon">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/services/research-analytics.svg" alt="">
@@ -95,7 +95,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href=".">
+							<a href="/experimentation-personalization/">
 								<h4>Experimentation &amp; Personalization</h4>
 								<div class="icon">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/services/experimentation-personalization.svg" alt="">
@@ -116,7 +116,7 @@ get_header(); ?>
 							</a>
 						</li>
 						<li>
-							<a href=".">
+							<a href="/data-driven-consulting/">
 								<h4>Data-Driven Consulting</h4>
 								<div class="icon">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/services/test-learn-consulting.svg" alt="">
@@ -153,11 +153,11 @@ get_header(); ?>
 								<h4 class="moves moves--down">Testing the Power of Print: Our Blu Dot Case Study</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-1"><svg>
+									<defs><mask id="mask-1-study"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">See the Study</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-1)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-1-study)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -172,11 +172,11 @@ get_header(); ?>
 								<h4 class="moves moves--down">How Problem Solution Mapping Was Invented… and Why It Wins More Revenue</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-2"><svg>
+									<defs><mask id="mask-2-post"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">Read the Post</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-2)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-2-post)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -191,11 +191,11 @@ get_header(); ?>
 								<h4 class="capped moves moves--down">Revenue in Simplification: Steve Madden Case Study</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-3"><svg>
+									<defs><mask id="mask-3-study"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">See the Study</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-3)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-3-study)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -212,11 +212,11 @@ get_header(); ?>
 								<h4 class="moves moves--down">Data-Driven Approach Scores Big: Adidas Case Study</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-4"><svg>
+									<defs><mask id="mask-4-study"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">See the Study</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-4)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-4-study)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -231,11 +231,11 @@ get_header(); ?>
 								<h4 class="moves moves--down">Digital Optimization Benchmarking Study</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-5"><svg>
+									<defs><mask id="mask-5-report"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">See the Report</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-5)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-5-report)" fill="white" fill-opacity="1"/>
 								</svg>
 							</a>
 						</li>
@@ -246,11 +246,11 @@ get_header(); ?>
 								<h4 class="moves moves--down">Stack the chips in your favor with the physics of ROI</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-6"><svg>
+									<defs><mask id="mask-6-post"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">Read the Post</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-6)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-6-post)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -267,11 +267,11 @@ get_header(); ?>
 								<h4 class="moves moves--down">Stack the chips in your favor with the physics of ROI</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-7"><svg>
+									<defs><mask id="mask-7-post"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">Read the Post</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-7)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-7-post)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -286,11 +286,11 @@ get_header(); ?>
 								<h4 class="capped moves moves--down">Revenue in Simplification: Steve Madden Case Study</h4>
 
 								<svg class="button-svg moves moves--down" width="182" height="46">
-									<defs><mask id="mask-8"><svg>
+									<defs><mask id="mask-8-study"><svg>
 										<rect x="0" y="0" width="182" height="46" rx="2" ry="2" style="fill: #fff"/>
 										<text text-anchor="middle" x="91" y="28">See the Study</text>
 									</svg></mask></defs>
-									<rect width="182" height="46" mask="url(#mask-8)" fill="white" fill-opacity="1"/>
+									<rect width="182" height="46" mask="url(#mask-8-study)" fill="white" fill-opacity="1"/>
 								</svg>
 
 								<div class="icon moves moves--up">
@@ -327,7 +327,7 @@ get_header(); ?>
 					<ul>
 						<li>
 							<blockquote>
-								<q>The Clearhead team are the thought leaders in the space and their methodology resonated with me. Working with the team has been awesome and they are very much partners. They’ve made a significant difference and impact.</q>
+								<q>The Clearhead team is the thought leader in the space and their methodology resonated with me. Working with the team has been awesome and they are very much partners. They’ve made a significant difference and impact.</q>
 								<cite>
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/delia-vallejo.jpg" alt="Delia Vallejo">
 									<div class="info">
@@ -359,17 +359,17 @@ get_header(); ?>
 						</li>
 					</ul>
 				</div>
-				<div class="content-cap content-cap--small">
+				<div class="content-cap content-cap--small copy copy--centered">
 					<h4 class="lowercase">We Are Experts on Your Technology, Without Bias</h4>
 				</div>
 				<div class="logos-grid logos-grid--small">
 					<ul>
-						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/optimizely.svg" alt="Adidas"></span></div></li>
-						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/monetate.svg" alt="Adidas"></span></div></li>
-						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/google-analytics.svg" alt="Adidas"></span></div></li>
-						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/maxymiser.svg" alt="Adidas"></span></div></li>
-						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/tealium.svg" alt="Adidas"></span></div></li>
-						<li><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adidas"></span></div></li>
+						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/optimizely.svg" alt="Optimizely"></span></div></li>
+	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/monetate.svg" alt="Monetate"></span></div></li>
+	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/google-analytics.svg" alt="Google Analytics"></span></div></li>
+	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/maxymiser.svg" alt="Maxymiser"></span></div></li>
+	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/tealium.svg" alt="Tealium"></span></div></li>
+	                    <li><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adobe Target"></span></div></li>
 					</ul>
 				</div>
 				<div class="content-cap">
@@ -483,8 +483,8 @@ get_header(); ?>
 					<ul>
 						<li>
 							<figure>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/strategic-consultants.jpg" alt="">
-								<figcaption>strategic consultants</figcaption>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/account-directors.jpg" alt="">
+								<figcaption>account directors</figcaption>
 							</figure>
 						</li>
 						<li>
@@ -495,14 +495,8 @@ get_header(); ?>
 						</li>
 						<li>
 							<figure>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/front-end-developers.jpg" alt="">
-								<figcaption>front-end developers</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/ux-interface-designers.jpg" alt="">
-								<figcaption>UX + interface designers</figcaption>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/project-managers.jpg" alt="">
+								<figcaption>project managers</figcaption>
 							</figure>
 						</li>
 						<li>
@@ -513,8 +507,8 @@ get_header(); ?>
 						</li>
 						<li>
 							<figure>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/project-managers.jpg" alt="">
-								<figcaption>project managers</figcaption>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/ux-interface-designers.jpg" alt="">
+								<figcaption>UX + interface designers</figcaption>
 							</figure>
 						</li>
 						<li>
@@ -525,8 +519,14 @@ get_header(); ?>
 						</li>
 						<li>
 							<figure>
-								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/account-directors.jpg" alt="">
-								<figcaption>account directors</figcaption>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/front-end-developers.jpg" alt="">
+								<figcaption>front-end developers</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/strategic-consultants.jpg" alt="">
+								<figcaption>strategic consultants</figcaption>
 							</figure>
 						</li>
 					</ul>

@@ -6,9 +6,9 @@
 
 
 .contact-callout {
-    padding: 1.5em 0;
+    padding: 1.5em 0 2.5em;
     @include w700 {
-        padding: 2.5em 0;
+        padding: 2.5em 0 ;
     }
     @include w1000 {
         padding: 3.75em 0;

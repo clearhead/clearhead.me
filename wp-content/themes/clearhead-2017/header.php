@@ -81,7 +81,7 @@
 								<a class="smooth-scroll" href="/#what-we-do">What We Do</a>
 							</li>
 							<li>
-								<a class="smooth-scroll" href="/#partners">Partners</a>
+								<a class="smooth-scroll" href="/#partners">Who We Work With</a>
 							</li>
 							<li>
 								<a class="smooth-scroll" href="/#who-we-are">Who We Are</a>
@@ -90,10 +90,10 @@
 								<a class="smooth-scroll" href="/#contact">Contact Us</a>
 							</li>
 							<li>
-								<a href="/jobs">Jobs</a>
+								<a href="http://clearhead.theresumator.com/apply">Jobs</a>
 							</li>
 							<li>
-								<a href="/blog">Blog</a>
+								<a href="/blog/">Blog</a>
 							</li>
 						</ul>
 					</nav>

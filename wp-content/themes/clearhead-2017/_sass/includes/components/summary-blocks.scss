@@ -1,45 +1,94 @@
 .summary-blocks {
+    padding: em(20) 0;
     h2 {
         font-size: em(28);
         text-align: center;
+        letter-spacing: rem(-1.08);
+        margin-bottom: rem(52);
     }
     ul {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         li {
-            width: col(4);
-            &:not(:last-child) {
-                margin-right: $gutter;
+            width: 100%;
+            max-width: match(4);
+            display: flex;
+            flex-direction: column;
+            @include n700 {
+                margin-bottom: $gutter;
+            }
+            @include w700 {
+                width: calc((100%/3) - #{($gutter/2)*(2/3)});
+                &:not(:last-child) {
+                    margin-right: $gutter/2;
+                }
+            }
+            @include w1000 {
+                width: col(4);
+                &:not(:last-child) {
+                    margin-right: $gutter;
+                }
             }
             a {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(black, 0);
+                transition: transform $timing-normal, box-shadow $timing-normal;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: column;
                 &:hover {
-                    background-color: $blue-shade;
-                    figure figcaption {
-                        border-color: rgba($blue, 0.25);
+                    transform: scale(1.01);
+                    box-shadow: 0 0.15em 0.375em 0 rgba(black, 0.075);
+                    figure .photo::before {
+                        opacity: 0.75;
                     }
                 }
                 figure {
+                    display: flex;
+                    flex-direction: column;
+                    flex-grow: 1;
                     .photo {
                         padding-top: 100%*(157/360);
                         background-color: $gray-shade;
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            left: 0;
+                            background-color: rgba(black, 0.075);
+                            background-image: radial-gradient(transparent, rgba(black, 0.025), rgba(black, 0.175));
+                            opacity: 0.15;
+                            transition: opacity $timing-normal;
+                        }
                     }
                     figcaption {
                         border: 1px solid $gray-shade;
                         border-top: none;
                         padding: em(14);
                         transition: border-color $timing-normal;
+                        flex-grow: 1;
+                        display: flex;
+                        flex-direction: column;
                         span {
                             display: block;
                         }
                         .title {
                             font-weight: $medium;
-                            font-size: em(17);
                             line-height: (25/17);
                             letter-spacing: rem(-0.25);
                             margin-bottom: rem(4);
+                            font-size: em(15);
+                            @include w1000 {
+                                font-size: em(17);
+                            }
                         }
                         .cta {
                             font-size: rem(15);
@@ -47,6 +96,7 @@
                             color: $blue;
                             text-transform: lowercase;
                             letter-spacing: rem(-0.47);
+                            margin-top: auto;
                         }
                     }
                 }

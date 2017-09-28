@@ -106,10 +106,7 @@ hr {
 	border: none;
 	height: em(2);
 	background-color: $gray-shade;
-	margin: em(28) 0;
-	@include w700 {
-		margin: em(50) 0;
-	}
+	margin: em(50) 0;
 	@include w1000 {
 		margin: em(80) 0;
 	}

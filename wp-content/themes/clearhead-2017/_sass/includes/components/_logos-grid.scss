@@ -1,5 +1,12 @@
 .logos-grid {
     margin-bottom: em(44);
+    h2 {
+        font-size: em(28);
+        text-align: center;
+        letter-spacing: rem(-1.08);
+        margin-top: rem(11);
+        margin-bottom: rem(14);
+    }
     ul {
         display: flex;
         flex-wrap: wrap;
@@ -86,5 +93,8 @@
                 }
             }
         }
+    }
+    &--in-page {
+        margin-bottom: em(50);
     }
 }

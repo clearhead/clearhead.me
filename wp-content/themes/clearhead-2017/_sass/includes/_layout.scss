@@ -73,6 +73,9 @@
                 @include n700 {
                     display: none;
                 }
+                @include w1000-n1280 {
+                    font-size: 90%;
+                }
                 color: rgba($blue, 0.7);
             }
             nav {
@@ -203,7 +206,7 @@
                 }
             }
             @include n700 {
-                position: fixed;
+                position: absolute;
                 height: 100vh;
                 width: 100vw;
                 background-color: $blue-dark-1;
@@ -223,7 +226,12 @@
             }
             @include w700-n1000 {
                 flex-shrink: 0;
+                font-size: 80%;
+                padding: rem(1.25) 0;
+            }
+            @include w1000-n1280 {
                 font-size: 90%;
+                padding: rem(1.25) 0;
             }
             ul {
                 @include n700 {
@@ -456,7 +464,10 @@
 // Content Section
 // ---------------
 .content-section {
-    padding: em(80) 0;
+    padding: em(50) 0;
+    @include w1000 {
+        padding: em(80) 0;
+    }
     overflow: hidden;
     position: relative;
     &:not(.contact-callout):not(.content-section--basic) {
