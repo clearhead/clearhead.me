@@ -1,0 +1,128 @@
+// CSS EXTENSIONS
+// --------------------------------------
+
+// Variables
+// ---------
+
+// Color palette
+$white: #FFFFFF;
+$black: #313335;
+$gray: #787B7F;
+$gray-shade: #E3E5E6;
+$blue: #32C4F5;
+$blue-dark-1: #23A0CA;
+$blue-shade: #EAF9FE;
+
+// Body font
+$body: 'ff-bau-web-pro', -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$regular: 400;  // (allows normal and italic)
+$medium: 500;   // (allows normal and italic)
+$bold: 700;     // (allows normal and italic)
+
+// Duration and timing
+$timing-normal: 0.1875s ease-out;
+$timing-slower: 0.25s ease-out;
+
+// Border radius
+$br-normal: em(2);
+
+// Line height
+$lh-normal: (30/18);
+
+
+// Functions
+// ---------
+
+// Point sizing
+$base: 16;
+@function em($pixels, $context: $base) {
+	@return #{$pixels/$context}em;
+}
+
+@function rem($pixels, $context: $base) {
+	@return #{$pixels/$context}rem;
+}
+
+@function linearInterp($x0, $y0, $x1, $y1) {
+    //Find slope
+    $slope: ($y1 - $y0)/($x1 - $x0);
+    $intercept: $y0 - $slope * $x0;
+    @return calc(#{$slope*100}vw + #{rem($intercept)});
+
+}
+
+
+// Mixins
+// ------
+
+// Media queries
+@mixin n480  		{ @media (max-width: 479px)	{ @content; } }
+@mixin w480  		{ @media (min-width: 480px)	{ @content; } }
+@mixin w480-n700 	{ @media (min-width: 480px) and (max-width: 699px) { @content; } }
+@mixin n700 	 	{ @media (max-width: 699px)	{ @content; } }
+@mixin w700  		{ @media (min-width: 700px)	{ @content; } }
+@mixin w700-n1000 	{ @media (min-width: 700px) and (max-width: 999px) { @content; } }
+@mixin n1000 		{ @media (max-width: 999px)	{ @content; } }
+@mixin w1000 		{ @media (min-width: 1000px) { @content; } }
+@mixin w1000-n1280 	{ @media (min-width: 1000px) and (max-width: 1279px) { @content; } }
+@mixin n1280 		{ @media (max-width: 1279px) { @content; } }
+@mixin w1280 		{ @media (min-width: 1280px) { @content; } }
+@mixin w1280-n1440 	{ @media (min-width: 1280px) and (max-width: 1439px) { @content; } }
+@mixin n1440 		{ @media (max-width: 1439px) { @content; } }
+@mixin w1440 		{ @media (min-width: 1440px) { @content; } }
+@mixin w1920 		{ @media (min-width: 1920px) { @content; } }
+
+// Type
+@mixin h1-set {
+	font-weight: $bold;
+	line-height: (70/42);
+	letter-spacing: em(-0.71);
+
+	font-size: 7.5vw;
+	@media (min-width: 370px) {
+		font-size: em(30);
+	}
+	@include w700 {
+		font-size: em(42);
+	}
+}
+
+@mixin h2-set {
+	font-size: em(29);
+	letter-spacing: em(-0.6);
+	font-weight: $bold;
+	line-height: (42/34);
+	@include w1000 {
+		font-size: em(34);
+		letter-spacing: em(-0.71);
+	}
+}
+
+@mixin h3-set {
+	font-size: em(22);
+	line-height: (32/22);
+	font-weight: $bold;
+	letter-spacing: em(-0.5);
+}
+
+@mixin h4-set {
+	font-size: em(20);
+	line-height: (34/20);
+	font-weight: $bold;
+	letter-spacing: em(-0.42);
+}
+
+@mixin h5-set {
+	font-size: em(16);
+	line-height: (20/16);
+	font-weight: $medium;
+	letter-spacing: em(-0.46);
+}
+
+@mixin h6-set {
+	font-size: em(13);
+	line-height: (16/13);
+	font-weight: $regular;
+	letter-spacing: em(1);
+	text-transform: uppercase;
+}

@@ -1,0 +1,65 @@
+.testimonial-blocks {
+    margin-bottom: 4.125em;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+            margin-bottom: $gutter;
+            @include w700 {
+                flex-basis: calc(50% - #{$gutter/2});
+                display: flex;
+                &:nth-child(odd) {
+                    margin-right: $gutter;
+                }
+            }
+            blockquote {
+                padding: em(28) em(30);
+                background-color: $blue-shade;
+                display: flex;
+                flex-direction: column;
+                q {
+                    margin-bottom: em(18);
+                    display: block;
+                    line-height: (30/18);
+                    font-size: em(18);
+                    letter-spacing: -0.15px;
+                    color: $blue;
+                    &::before {
+                        content: "\201C";
+                    }
+                    &::after {
+                        content: "\201D";
+                    }
+                }
+                cite {
+                    display: flex;
+                    align-items: center;
+                    margin-top: auto;
+                    > img {
+                        width: em(70);
+                        height: em(70);
+                        margin-right: em(14);
+                        border-radius: 100%;
+                    }
+                    .info {
+                        line-height: (23/16);
+                        margin-top: rem(3);
+                        strong {
+                            font-weight: $medium;
+                            display: block;
+                            font-size: em(18);
+                        }
+                        span {
+                            display: block;
+                        }
+                    }
+                    .icon {
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+
+    }
+
+}

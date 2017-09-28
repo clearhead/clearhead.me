@@ -1,0 +1,287 @@
+// BASE
+// --------------------------------------
+
+
+// Typography
+// ----------
+body {
+	line-height: $lh-normal;
+	font-family: $body;
+	font-weight: $regular;
+	color: $black;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	color: currentColor;
+	transition:
+		color $timing-normal,
+		border-color $timing-normal,
+		background-color $timing-normal;
+}
+.copy {
+	a:not(.button) {
+		color: darken($blue, 15%);
+		display: inline;
+		&:hover {
+			color: darken($blue, 25%);
+		}
+	}
+	p, ul {
+		font-size: em(19);
+		line-height: (36/19);
+	}
+	p, ul, .button, img {
+		&:not(:last-child) {
+			margin-bottom: 1.5em;
+		}
+	}
+	ul {
+		li {
+		}
+	}
+	strong {
+		font-weight: $bold;
+	}
+	&--centered {
+		text-align: center;
+	}
+}
+
+em {
+	font-style: italic;
+}
+small {
+	font-size: em(14);
+}
+
+h1 {
+	@include h1-set;
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+h2 {
+	@include h2-set;
+	&:not(:last-child) {
+		margin-bottom: 2rem;
+	}
+}
+
+h3 {
+	@include h3-set;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+h4 {
+	@include h4-set;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+h5 {
+	@include h5-set;
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+h6 {
+	@include h6-set;
+	&:not(:last-child) {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.lowercase {
+	text-transform: lowercase;
+}
+
+hr {
+	border: none;
+	height: em(2);
+	background-color: $gray-shade;
+	margin: em(50) 0;
+	@include w1000 {
+		margin: em(80) 0;
+	}
+}
+
+
+// Inputs
+// ------
+select, input, textarea {
+	-webkit-appearance: none;
+	appearance: none;
+	font-family: $body;
+	margin: 0 0 em(25);
+	font-size: em(16);
+	display: block;
+	color: currentColor;
+	border: none;
+	line-height: $lh-normal;
+	width: 100%;
+	border-radius: 0;
+	padding: em(10.5) 0.5em em(6.5);
+	border-radius: rem(2);
+
+	// Some default placeholder colors… auto-prefixer had issues auto-prefixing these
+	&::placeholder {
+		color: currentColor;
+	}
+}
+
+textarea {
+	min-height: em(109);
+}
+
+label {
+	display: block;
+	font-size: em(14);
+	line-height: (22/14);
+	color: rgba($black, 0.7);
+	margin-bottom: rem(5);
+	cursor: pointer;
+	&::selection {
+		background-color: transparent; // prevent accidental text selection
+	}
+}
+
+
+// Images
+// ------
+img, svg {
+	display: block;
+	height: auto;
+	max-width: 100%;
+}
+
+
+// REUSABLE INNER ELEMENTS
+// --------------------------------------
+
+// Buttons
+// -------
+button {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	transition: background-color $timing-normal;
+}
+.button {
+	margin: 0;
+	display: inline-block;
+	cursor: pointer;
+	@include h4-set;
+	color: $white;
+	background-color: $blue;
+
+	font-size: em(14);
+	line-height: (18/14);
+	padding: rem(26) rem(24) rem(23);
+	letter-spacing: rem(0.83);
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: $medium;
+	border-radius: rem(2);
+	min-width: rem(242);
+
+	transition:
+		color $timing-normal,
+		background-color $timing-normal;
+	&:hover, &:focus {
+		background-color: darken($blue, 7.5%);
+		color: $white;
+		&:after {
+			border-left-color: darken($blue, 7.5%);
+		}
+	}
+
+	&--white {
+		background-color: white;
+		color: $black;
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&--light {
+		background-color: $blue-shade;
+		color: $blue;
+		&:hover {
+			color: $white;
+		}
+	}
+
+	&--small {
+		font-size: em(13);
+		padding: rem(16) rem(13) rem(12);
+		min-width: rem(181);
+	}
+
+	// &:focus {
+	// 	outline: 0;
+	// 	&::-moz-focus-inner {
+	// 		border: 0;
+	// 	}
+	// }
+
+	// &:disabled {
+	// 	background-color: $gray;
+	// 	&:after {
+	// 		border-left: rem(18) solid $gray;
+	// 	}
+	// }
+}
+
+// Separating this because hubspot
+input[type="submit"] {
+	margin: 0;
+	display: inline-block;
+	cursor: pointer;
+	@include h4-set;
+	color: $white;
+	background-color: $blue;
+
+	font-size: em(14);
+	line-height: (18/14);
+	padding: rem(16) rem(13) rem(12);
+	letter-spacing: rem(0.83);
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: $medium;
+	border-radius: rem(2);
+	min-width: rem(181);
+
+	width: auto;
+
+	transition:
+		color $timing-normal,
+		background-color $timing-normal;
+	&:hover, &:focus {
+		background-color: darken($blue, 7.5%);
+		color: $white;
+		&:after {
+			border-left-color: darken($blue, 7.5%);
+		}
+	}
+}
+
+.button-svg {
+	text {
+		font-size: rem(13);
+		fill: black;
+		letter-spacing: rem(0.83);
+		text-transform: uppercase;
+		font-weight: $medium;
+	}
+}
+
+// #__bs_notify__ {
+// 	display: none !important;
+// }

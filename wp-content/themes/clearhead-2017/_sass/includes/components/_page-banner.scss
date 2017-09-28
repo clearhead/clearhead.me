@@ -1,0 +1,70 @@
+.page-banner.background, .page-banner .background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &::after {
+        content: "";
+        background-color: rgba(black, 0.15625);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+.page-banner {
+    color: $white;
+    padding: rem(294) 0 rem(88);
+    padding: calc(#{rem(140)} + (100vw * #{(154/1440)})) 0 calc(#{rem(40)} + (100vw * #{(48/1440)}));
+    position: relative;
+    h1 {
+        font-size: rem(52);
+        font-size: calc(#{rem(32)} + (100vw * #{(20/1440)}));
+        margin: 0;
+        line-height: 1.25;
+        position: relative;
+        z-index: 1;
+    }
+    h2 {
+        font-size: rem(48);
+        font-size: calc(#{rem(28)} + (100vw * #{(20/1440)}));
+        line-height: (68/48);
+        z-index: 1;
+    }
+    &--split {
+        padding: calc(#{rem(40)} + (100vw * #{(68/1440)})) 0;
+        background-color: $blue-shade;
+        color: $blue;
+        h2 {
+            @include n700 {
+                text-align: center;
+                margin-top: 15.75rem;
+            }
+            @include w700 {
+                width: col(6);
+            }
+            @include w1000 {
+                width: col(5);
+            }
+        }
+        .frame {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            @include n700 {
+                height: 15.75em;
+            }
+            @include w700 {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 50vw;
+            }
+            &::after {
+                background-color: rgba(black, 0.09375);
+            }
+        }
+    }
+}
