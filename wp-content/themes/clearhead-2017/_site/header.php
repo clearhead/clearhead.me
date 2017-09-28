@@ -32,7 +32,10 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'clearhead-2016' ); ?></a>
+	<?php if ( !is_front_page() ): ?>
+		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'clearhead-2016' ); ?></a>
+	<?php endif; ?>
+
 	<?php if(is_front_page()): ?>
 	<div class="top-group" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/hero.jpg');">
 	<header class="site-header">
@@ -184,6 +187,5 @@
 		    </nav>
 		</div>
 	</header>
-	<?php else: ?>
 	<div id="content" class="site-content">
 	<?php endif; ?>

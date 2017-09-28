@@ -50,7 +50,7 @@
 							<a href=".">View on Map</a>
 						</li>
 					</ul>
-					<img src="assets/map.png" alt="Map of Clearhead’s location in Austin, TX">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/map.png" alt="Map of Clearhead’s location in Austin, TX">
 				</div>
 				<div class="column">
 					<h4>Let’s talk.</h4>
@@ -100,10 +100,10 @@
 							<a class="smooth-scroll" href="/#contact">Contact Us</a>
 						</li>
 						<li>
-							<a href="{{ site.github.url }}/jobs">Jobs</a>
+							<a href="/jobs">Jobs</a>
 						</li>
 						<li>
-							<a href="{{ site.github.url }}/blog">Blog</a>
+							<a href="/blog">Blog</a>
 						</li>
 					</ul>
 				</nav>
@@ -111,7 +111,7 @@
 			<div class="flex-row">
 				<ul class="social-list">
 					<li>
-						<a href=".">
+						<a href="https://www.facebook.com/ClearheadMe/">
 							<svg width="12px" height="22px" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<title>Facebook</title>
 								<g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -127,7 +127,7 @@
 						</a>
 					</li>
 					<li>
-						<a href=".">
+						<a href="https://twitter.com/clearheadme">
 							<svg width="21px" height="18px" viewBox="0 0 21 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<title>Twitter</title>
 								<g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -143,7 +143,7 @@
 						</a>
 					</li>
 					<li>
-						<a href=".">
+						<a href="https://www.linkedin.com/company/2803373/">
 							<svg width="27px" height="23px" viewBox="0 0 27 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 								<title>LinkedIn</title>
 								<defs>

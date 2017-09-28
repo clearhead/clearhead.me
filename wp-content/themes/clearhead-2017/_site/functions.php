@@ -122,9 +122,11 @@ function clearhead_2017_scripts_and_styles() {
 	if(is_front_page()) {
 		$mtime = filemtime(dirname(__FILE__) . '/css/main.css');
 		wp_enqueue_style( 'clearhead-2017-style',  get_template_directory_uri() . '/css/main.css', false, $mtime );
+		wp_enqueue_script( 'clearhead-2017-navigation', get_template_directory_uri() . '/js/2017-home.js', array(), '20151215', true );
 	} else {
 		$mtime = filemtime(dirname(__FILE__) . '/style.css');
 		wp_enqueue_style( 'clearhead-2016-style', get_stylesheet_uri(), false, $mtime );
+		wp_enqueue_script( 'clearhead-2016-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	}
 	wp_deregister_style( 'grunion.css' ); // Grunion contact form
 	wp_enqueue_script( 'jquery-validate', get_template_directory_uri() . '/js/jquery.validate.min.js', array('jquery'), '20170716', true);
@@ -133,7 +135,6 @@ function clearhead_2017_scripts_and_styles() {
 	wp_enqueue_script( 'site', get_template_directory_uri() . '/js/site.js', array('jquery', 'bowser'), $mtime, true );
 	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', array(), '20120206', true);
 	wp_enqueue_script( 'waypoints-inview', get_template_directory_uri() . '/js/inview.min.js', array(), '20120206', true);
-	wp_enqueue_script( 'clearhead-2017-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	if ( is_front_page() ) :
 		wp_enqueue_script( 'parallax-background', get_template_directory_uri() . '/js/parallax-background.js', array('jquery'), '20170716', true);
