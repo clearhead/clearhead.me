@@ -2,7 +2,6 @@ jQuery(document).ready(function($){
 
     $('.menu-toggle').click(function () {
         $('.site-header nav').toggleClass('is-showing');
-        $('body').toggleClass('prevent-scrolling');
     });
     $('a.smooth-scroll').click(function () {
         $('nav').removeClass('is-showing');
