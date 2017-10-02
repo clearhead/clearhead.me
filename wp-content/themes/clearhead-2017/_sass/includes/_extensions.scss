@@ -44,11 +44,10 @@ $base: 16;
 }
 
 @function linearInterp($x0, $y0, $x1, $y1) {
-    //Find slope
+    // Find slope
     $slope: ($y1 - $y0)/($x1 - $x0);
     $intercept: $y0 - $slope * $x0;
     @return calc(#{$slope*100}vw + #{rem($intercept)});
-
 }
 
 

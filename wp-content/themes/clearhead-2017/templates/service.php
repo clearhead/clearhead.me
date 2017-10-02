@@ -65,16 +65,16 @@ get_header(); ?>
             <div class="logos-grid logos-grid--in-page">
                 <h2 class="lowercase">Technology</h2>
                 <ul>
-                    <li><div><span><img style="max-width: 85%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/dynamic-yield.svg" alt="Dynamic Yield"></span></div></li>
-                    <li><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/hotjar.svg" alt="Hotjar"></span></div></li>
-                    <li><div><span><img style="max-width: 67%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/optimal-workshop.svg" alt="Optimal Workshop"></span></div></li>
-                    <li><div><span><img style="max-width: 77%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/sessioncam.svg" alt="SessionCam"></span></div></li>
+                    <li><div><span><img style="max-width: 85%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/dynamic-yield.png" alt="Dynamic Yield"></span></div></li>
+                    <li><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/hotjar.png" alt="Hotjar"></span></div></li>
+                    <li><div><span><img style="max-width: 67%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/optimal-workshop.png" alt="Optimal Workshop"></span></div></li>
+                    <li><div><span><img style="max-width: 77%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/sessioncam.png" alt="SessionCam"></span></div></li>
                     <li><div><span><img style="max-width: 71%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/lookback.svg" alt="Lookback"></span></div></li>
                     <li><div><span><img style="max-width: 72%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/python.svg" alt="Python"></span></div></li>
                     <li><div><span><img style="max-width: 67%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/usertesting.svg" alt="UserTesting"></span></div></li>
-                    <li><div><span><img style="max-width: 64%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/ibm-digital-analytics.svg" alt="IBM Digital Analytics"></span></div></li>
+                    <li><div><span><img style="max-width: 64%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/ibm-digital-analytics.png" alt="IBM Digital Analytics"></span></div></li>
                     <li><div><span><img style="max-width: 22%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/r-project.svg" alt="R Project"></span></div></li>
-                    <li><div><span><img style="max-width: 53%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/adobe-analytics.svg" alt="Adobe Analytics"></span></div></li>
+                    <li><div><span><img style="max-width: 53%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/adobe-analytics.png" alt="Adobe Analytics"></span></div></li>
                 </ul>
             </div>
         <?php endif; ?>
