@@ -27305,7 +27305,7 @@
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/data-driven-consulting-split.jpg": {
 		"ft": 16384,
-		"iS": 58274,
+		"iS": 160803,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/data-driven-consulting-split.jpg",
 		"oF": 0,
@@ -27347,7 +27347,7 @@
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experimentation-personalization-split.jpg": {
 		"ft": 16384,
-		"iS": 204380,
+		"iS": 149795,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/experimentation-personalization-split.jpg",
 		"oF": 0,
@@ -27376,65 +27376,71 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/adobe-analytics.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/adobe-analytics.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/adobe-analytics.png": {
+		"ft": 32768,
+		"iS": 12326,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/adobe-analytics.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/dynamic-yield.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/dynamic-yield.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/dynamic-yield.png": {
+		"ft": 32768,
+		"iS": 13925,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/dynamic-yield.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/hotjar.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/hotjar.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/hotjar.png": {
+		"ft": 32768,
+		"iS": 7027,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/hotjar.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/ibm-digital-analytics.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/ibm-digital-analytics.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/ibm-digital-analytics.png": {
+		"ft": 32768,
+		"iS": 13515,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/ibm-digital-analytics.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/lookback.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/lookback.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/lookback.png": {
+		"ft": 32768,
+		"iS": 2896,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/lookback.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/optimal-workshop.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/optimal-workshop.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/optimal-workshop.png": {
+		"ft": 32768,
+		"iS": 16013,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/optimal-workshop.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/python.svg": {
 		"ft": 2097152,
@@ -27456,15 +27462,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/sessioncam.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/sessioncam.svg",
+	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/sessioncam.png": {
+		"ft": 32768,
+		"iS": 10573,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/sessioncam.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+		"oT": 1,
+		"q": 100
 		},
 	"\/wp-content\/themes\/clearhead-2017\/assets\/competencies\/tools\/usertesting.svg": {
 		"ft": 2097152,
@@ -28902,6 +28909,16 @@
 		"mi": 0,
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/2017-home-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-content\/themes\/clearhead-2017\/js\/2017-nav-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-content\/themes\/clearhead-2017\/js\/min\/2017-nav-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
