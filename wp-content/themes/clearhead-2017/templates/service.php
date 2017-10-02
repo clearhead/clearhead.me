@@ -31,7 +31,7 @@ get_header(); ?>
             <h2>Uncover the “what” and the “why” with Clearhead.</h2>
         <?php elseif ($slug == "experimentation-personalization"): ?>
             <h2>Experiment confidently with Clearhead.</h2>
-        <?php elseif ($slug == "data-driven-consulting"): ?>
+        <?php elseif ($slug == "test-learn-consulting"): ?>
             <h2>Build a test-and-learn culture with Clearhead.</h2>
         <?php endif; ?>
     </div>
@@ -46,10 +46,10 @@ get_header(); ?>
             <?php if ($slug == "experience-design"): ?>
                 <p>Schedule a 30 minute call to learn more about our consulting capabilities.</p>
             <?php elseif ($slug == "research-analytics"): ?>
-                <p>Schedule a 30 minute call to learn more about our full experimentation + personalization capabilities.</p>
+                <p>Schedule a 30 minute call to learn more about our research + analytics capabilities.</p>
             <?php elseif ($slug == "experimentation-personalization"): ?>
                 <p>Schedule a 30 minute call to learn more about our full research + analytics capabilities.</p>
-            <?php elseif ($slug == "data-driven-consulting"): ?>
+            <?php elseif ($slug == "test-learn-consulting"): ?>
                 <p>Schedule a 30 minute call to learn more about our full design capabilities.</p>
             <?php endif; ?>
 
@@ -69,7 +69,7 @@ get_header(); ?>
                     <li><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/hotjar.png" alt="Hotjar"></span></div></li>
                     <li><div><span><img style="max-width: 67%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/optimal-workshop.png" alt="Optimal Workshop"></span></div></li>
                     <li><div><span><img style="max-width: 77%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/sessioncam.png" alt="SessionCam"></span></div></li>
-                    <li><div><span><img style="max-width: 71%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/lookback.svg" alt="Lookback"></span></div></li>
+                    <li><div><span><img style="max-width: 71%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/lookback.png" alt="Lookback"></span></div></li>
                     <li><div><span><img style="max-width: 72%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/python.svg" alt="Python"></span></div></li>
                     <li><div><span><img style="max-width: 67%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/usertesting.svg" alt="UserTesting"></span></div></li>
                     <li><div><span><img style="max-width: 64%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/tools/ibm-digital-analytics.png" alt="IBM Digital Analytics"></span></div></li>
@@ -157,6 +157,17 @@ get_header(); ?>
                             </figure>
                         </a>
                     </li>
+                    <li>
+                        <a href="http://clearhead.me/blog/the-three-cs-of-clearhead-research/">
+                            <figure>
+                                <div class="photo" style="background-image: url('http://clearhead.me/wp-content/uploads/2017/09/The-three-Cs-of-research-1.png')"></div>
+                                <figcaption>
+                                    <span class="title">The Three C’s of Clearhead Research</span>
+                                    <span class="cta">See Blog Post</span>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
                 </ul>
             <?php elseif ($slug == "experimentation-personalization"): ?>
                 <h2 class="lowercase">Our Top Experimentation + Personalization Blog&nbsp;Posts</h2>
@@ -195,7 +206,7 @@ get_header(); ?>
                         </a>
                     </li>
                 </ul>
-            <?php elseif ($slug == "data-driven-consulting"): ?>
+            <?php elseif ($slug == "test-learn-consulting"): ?>
                 <h2 class="lowercase">Our Top Consulting Blog&nbsp;Posts</h2>
                 <ul>
                     <li>

@@ -117,7 +117,7 @@ get_header(); ?>
 						</li>
 						<li>
 							<a href="/data-driven-consulting/">
-								<h4>Data-Driven Consulting</h4>
+								<h4>Test &amp; Learn Consulting</h4>
 								<div class="icon">
 									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/services/test-learn-consulting.svg" alt="">
 								</div>
@@ -130,7 +130,7 @@ get_header(); ?>
 										<li>Training + Workshops</li>
 									</ul>
 									<ul>
-										<li>DDT (Data-Driven Transformation)</li>
+										<li>Data-Driven Consulting (DDC)</li>
 									</ul>
 								</div>
 							</a>
