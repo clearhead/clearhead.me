@@ -83,13 +83,11 @@ get_header(); ?>
 								<span class="button button--small">Learn More</span>
 								<div class="details">
 									<ul>
+										<li>Experience Mapping</li>
 										<li>Usability Testing</li>
 										<li>Digital Analytics</li>
 										<li>Statistical Modeling</li>
 										<li>Heuristic Evalution</li>
-									</ul>
-									<ul>
-										<li>Experience Mapping</li>
 									</ul>
 								</div>
 							</a>
@@ -103,7 +101,7 @@ get_header(); ?>
 								<span class="button button--small">Learn More</span>
 								<div class="details">
 									<ul>
-										<li>Testing + P13N Strategy</li>
+										<li>Testing + Personalization Strategy</li>
 										<li>A/B/n + MVT Test Execution</li>
 										<li>Data Storytelling</li>
 										<li>Audience Discovery</li>
@@ -139,10 +137,7 @@ get_header(); ?>
 				</div>
 				<hr>
 				<div class="content-cap content-cap--small copy copy--centered">
-					<h2 class="lowercase">Data Stories That Reveal Insights and Inspire Change</h2>
-				</div>
-				<div class="content-cap content-cap--large copy copy--centered">
-					<p>We’ve investigated every corner of digital experiences & organizations across many industries. Whatever the problem, user journey, device, platform or success metric, we will optimize it.</p>
+					<h2 class="lowercase">The Latest in Clearhead Thinking</h2>
 				</div>
 				<div class="stories-blocks">
 					<ul>
@@ -329,7 +324,6 @@ get_header(); ?>
 							<blockquote>
 								<q>The Clearhead team is the thought leader in the space and their methodology resonated with me. Working with the team has been awesome and they are very much partners. They’ve made a significant difference and impact.</q>
 								<cite>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/delia-vallejo.jpg" alt="Delia Vallejo">
 									<div class="info">
 										<strong>Delia Vallejo</strong>
 										<span>Senior Director Ecommerce,</span>
@@ -345,7 +339,6 @@ get_header(); ?>
 							<blockquote>
 								<q>Clearhead has been an incredible partner and the best vendor I have had the opportunity to work with. Their user-friendly data storytelling has been truly transformational for our culture, allowing us to use data to drive real business results.</q>
 								<cite>
-									<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/people/jack-rusina.jpg" alt="Delia Vallejo">
 									<div class="info">
 										<strong>Jack Rusina</strong>
 										<span>Senior Manager of User Experience,</span>

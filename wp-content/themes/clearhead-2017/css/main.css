@@ -160,7 +160,7 @@ input[type="submit"]:hover:after, input[type="submit"]:focus:after { border-left
 @media (min-width: 1000px) and (max-width: 1279px) { .site-header.is-filled .flex-row .detail { font-size: 90%; } }
 
 @media (min-width: 700px) { .site-header.is-filled .flex-row nav ul li a { color: rgba(49, 51, 53, 0.76); }
-  .site-header.is-filled .flex-row nav ul li a:hover { color: #313335; } }
+  .site-header.is-filled .flex-row nav ul li a:hover { color: #313335; border-bottom-color: rgba(120, 123, 127, 0.5); } }
 
 @media (min-width: 700px) { .site-header.is-filled .flex-row nav ul li.is-active a { color: #313335; border-bottom-color: #32C4F5; } }
 
@@ -245,6 +245,8 @@ input[type="submit"]:hover:after, input[type="submit"]:focus:after { border-left
 @media (min-width: 1000px) { .site-header .flex-row nav ul li a { font-size: 0.9375em; } }
 
 .site-header .flex-row nav ul li a:hover { color: #FFFFFF; }
+
+@media (min-width: 700px) { .site-header .flex-row nav ul li a:hover { border-bottom-color: rgba(255, 255, 255, 0.5); } }
 
 .site-header .flex-row nav ul li.is-active a { color: #FFFFFF; }
 

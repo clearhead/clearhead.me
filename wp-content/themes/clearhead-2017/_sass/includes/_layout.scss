@@ -86,6 +86,7 @@
                                 color: rgba($black, 0.76);
                                 &:hover {
                                     color: $black;
+                                    border-bottom-color: rgba($gray, 0.5);
                                 }
                             }
                         }
@@ -286,6 +287,9 @@
                         }
                         &:hover {
                             color: $white;
+                            @include w700 {
+                                border-bottom-color: rgba($white, 0.5);
+                            }
                         }
                     }
                     &.is-active {
