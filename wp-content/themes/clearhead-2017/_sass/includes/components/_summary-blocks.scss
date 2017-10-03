@@ -49,12 +49,15 @@
                     flex-direction: column;
                     flex-grow: 1;
                     .photo {
-                        padding-top: 100%*(157/360);
                         background-color: $gray-shade;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        background-position: center;
                         position: relative;
+                        div {
+                            width: 100%;
+                            padding-top: 100%*(157/360);
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
                         &:before {
                             content: "";
                             display: block;

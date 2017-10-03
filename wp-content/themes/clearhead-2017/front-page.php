@@ -311,16 +311,16 @@ get_header(); ?>
 				</div>
 				<div class="logos-grid logos-grid--home-arrangement">
 					<ul>
-						<li><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/adidas.svg" alt="Adidas"></span></div></li>
-						<li><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/cvs.svg" alt="CVS"></span></div></li>
-						<li><div><span><img style="max-width: 86%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/patagonia.svg" alt="Patagonia"></span></div></li>
-						<li><div><span><img style="max-width: 63%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/tesco.svg" alt="Tesco"></span></div></li>
-						<li><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/p-g.svg" alt="P and G"></span></div></li>
-						<li><div><span><img style="max-width: 32%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/usaa.svg" alt="USAA"></span></div></li>
-						<li><div><span><img style="max-width: 41%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/wwe.svg" alt="WWE"></span></div></li>
-						<li><div><span><img style="max-width: 66%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/sonos.svg" alt="Sonos"></span></div></li>
-						<li><div><span><img style="max-width: 62%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/ulta.svg" alt="Ulta"></span></div></li>
-						<li><div><span><img style="max-width: 72%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/west-elm.svg" alt="West Elm"></span></div></li>
+						<li><div><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/adidas.svg" alt="Adidas"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/cvs.svg" alt="CVS"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 86%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/patagonia.svg" alt="Patagonia"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 63%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/tesco.svg" alt="Tesco"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 45%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/p-g.svg" alt="P and G"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 32%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/usaa.svg" alt="USAA"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 41%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/wwe.svg" alt="WWE"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 66%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/sonos.svg" alt="Sonos"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 62%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/ulta.svg" alt="Ulta"></span></div></div></li>
+						<li><div><div><span><img style="max-width: 72%;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/clients/west-elm.svg" alt="West Elm"></span></div></div></li>
 					</ul>
 				</div>
 				<div class="testimonial-blocks">
@@ -364,12 +364,12 @@ get_header(); ?>
 				</div>
 				<div class="logos-grid logos-grid--small">
 					<ul>
-						<li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/optimizely.svg" alt="Optimizely"></span></div></li>
-	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/monetate.svg" alt="Monetate"></span></div></li>
-	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/google-analytics.svg" alt="Google Analytics"></span></div></li>
-	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/maxymiser.svg" alt="Maxymiser"></span></div></li>
-	                    <li><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/tealium.svg" alt="Tealium"></span></div></li>
-	                    <li><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adobe Target"></span></div></li>
+						<li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/optimizely.svg" alt="Optimizely"></span></div></div></li>
+	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/monetate.svg" alt="Monetate"></span></div></div></li>
+	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/google-analytics.svg" alt="Google Analytics"></span></div></div></li>
+	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/maxymiser.svg" alt="Maxymiser"></span></div></div></li>
+	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/tealium.svg" alt="Tealium"></span></div></div></li>
+	                    <li><div><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adobe Target"></span></div></div></li>
 					</ul>
 				</div>
 				<div class="content-cap">
