@@ -25711,7 +25711,7 @@
 		"uL": 1
 		},
 	"\/wp-content\/themes\/clearhead-2017\/_sass\/main.scss": {
-		"aP": 0,
+		"aP": 1,
 		"bl": 0,
 		"dP": 10,
 		"dS": 0,
@@ -25720,7 +25720,7 @@
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/css\/main.css",
 		"oF": 0,
-		"oS": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/wp-content\/themes\/clearhead-2017\/_sass\/style.scss": {
@@ -25733,7 +25733,7 @@
 		"oA": 0,
 		"oAP": "\/wp-content\/themes\/clearhead-2017\/style.css",
 		"oF": 2,
-		"oS": 2,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/wp-content\/themes\/clearhead-2017\/_site\/404.php": {

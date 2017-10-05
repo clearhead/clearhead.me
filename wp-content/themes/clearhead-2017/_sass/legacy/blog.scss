@@ -66,20 +66,20 @@
 	// 	width: 260px;
 	// }
 // }
-.archive-view .blog-content {
-	padding-top: calc(2.78125em + 1px);
-}
-.blog-content {
-	padding-top: 2.78125em;
-}
-body.single {
-	.blog-content {
-		padding-top: 0;
-		.entry-header {
-			padding-top: 2.78125em;
-		}
-	}
-}
+// .archive-view .blog-content {
+// 	padding-top: calc(2.78125em + 1px);
+// }
+// .blog-content {
+// 	padding-top: 2.78125em;
+// }
+// body.single {
+// 	.blog-content {
+// 		padding-top: 0;
+// 		.entry-header {
+// 			padding-top: 2.78125em;
+// 		}
+// 	}
+// }
 body.page-template-default, body.page-template-jobs, body.page-template-basic-product-page {
 	.legacy-styles.blog-content-page {
 		padding-top: 0;
