@@ -1,0 +1,22 @@
+.ch2017-capsule {
+    @import "includes/reset";
+
+    @import "includes/extensions";
+    @import "includes/col";
+    @import "includes/base";
+    @import "includes/layout";
+
+    @import "includes/components/hero";
+    @import "includes/components/services-feature";
+    @import "includes/components/stories-blocks";
+    @import "includes/components/inline-bulleted-list";
+    @import "includes/components/contact-callout";
+    @import "includes/components/logos-grid";
+    @import "includes/components/testimonial-blocks";
+    @import "includes/components/photo-links";
+    @import "includes/components/team-grid";
+
+    @import "includes/components/page-banner";
+    @import "includes/components/node-grid";
+    @import "includes/components/summary-blocks";
+}

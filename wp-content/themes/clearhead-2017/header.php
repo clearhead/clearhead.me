@@ -34,10 +34,9 @@
 <div id="page" class="site">
 	<?php if ( !is_front_page() && !is_page_template( 'templates/service.php' ) ): ?>
 		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'clearhead-2016' ); ?></a>
+		<div class="ch2017-capsule">
 	<?php endif; ?>
-
-	<?php if(is_front_page() || is_page_template( 'templates/service.php' )): ?>
-		<?php if( is_page_template( 'templates/service.php' ) ): ?>
+		<?php if( !is_front_page() ): ?>
 		<header class="site-header is-filled">
 		<?php else: ?>
 		<div class="top-group" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/hero.jpg');">
@@ -116,80 +115,6 @@
 			</div>
 		</div>
 	</header>
-	<?php
-	else: ?>
-	<header role="banner">
-		<div class="main-header">
-			<div class="container">
-				<?php if ( is_front_page() || is_page_template( 'templates/service.php' ) ): ?>
-					<a class="logo" href="#main" rel="home">
-				<?php else: ?>
-					<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<?php endif; ?>
-
-					<figure>
-						<div class="icon">
-							<?php get_template_part( 'img/logo-icon.svg' ); ?>
-						</div>
-						<figcaption>
-							<?php get_template_part( 'img/logo-type.svg' ); ?>
-							<span>Clearhead</span>
-						</figcaption>
-					</figure>
-				</a>
-				<div class="menu-desktop">
-					<nav role="navigation">
-						<?php /*
-						<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'clearhead-2016' ); ?></button>
-						*/ ?>
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					</nav>
-				</div>
-				<a href="#show-menu" class="menu-toggle-mobile">
-					<figure>
-						<figcaption>Menu</figcaption>
-						<div class="icon icon15">
-							<div class="line-outer">
-								<div class="line-inner"></div>
-							</div>
-							<div class="line-outer">
-								<div class="line-inner"></div>
-							</div>
-							<div class="line-outer">
-								<div class="line-inner"></div>
-							</div>
-						</div>
-
-					</figure>
-				</a>
-			</div>
-		</div>
-		<div class="menu-mobile">
-			<nav role="navigation">
-		        <div class="menu-main-menu-container">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<?php /*
-					<ul class="menu">
-		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6">
-		                    <a href="/#what">Services</a>
-		                </li>
-		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8">
-		                    <a href="/#with">Process</a>
-		                </li>
-		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7">
-		                    <a href="/#who">Team</a>
-		                </li>
-		                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 menu-item-blog">
-		                    <a href="/blog/">Blog</a>
-		                </li>
-		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-9">
-		                    <a href="/#contact">Contact</a>
-		                </li>
-		            </ul>
-					*/ ?>
-		        </div>
-		    </nav>
-		</div>
-	</header>
-	<div id="content" class="site-content">
-	<?php endif; ?>
+	<?php if ( !is_front_page() && !is_page_template( 'templates/service.php' ) ): ?>
+	</div>
+	<?php endif;
