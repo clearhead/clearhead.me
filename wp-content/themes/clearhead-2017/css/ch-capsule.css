@@ -37,6 +37,10 @@
 
 .ch2017-capsule .copy p, .ch2017-capsule .copy ul { font-size: 1.1875em; line-height: 1.8947368421; }
 
+.ch2017-capsule .copy p.intro, .ch2017-capsule .copy ul.intro { color: rgba(120, 123, 127, 0.75); text-transform: lowercase; margin-top: -1em; letter-spacing: -0.03125rem; margin-bottom: -1em; font-size: 1.25em; }
+
+@media (min-width: 700px) { .ch2017-capsule .copy p.intro, .ch2017-capsule .copy ul.intro { font-size: 1.375em; } }
+
 .ch2017-capsule .copy p:not(:last-child), .ch2017-capsule .copy ul:not(:last-child), .ch2017-capsule .copy .button:not(:last-child), .ch2017-capsule .copy img:not(:last-child) { margin-bottom: 1.5em; }
 
 .ch2017-capsule .copy strong { font-weight: 700; }

@@ -5,6 +5,7 @@ html {
 	// @include w1440 { font-size: 118.75%;  } // 19 pt
 }
 body {
+	border: 20px solid red;
 	line-height: 1.45625;
 	font-family: $body;
 	font-weight: $regular;
@@ -140,6 +141,9 @@ p {
 	}
 	&.lead {
 		font-size: (24/18)*1em;
+	}
+	&.intro {
+		background-color: red;
 	}
 }
 hr {

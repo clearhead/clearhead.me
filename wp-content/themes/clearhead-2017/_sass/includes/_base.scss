@@ -31,6 +31,17 @@ a {
 	p, ul {
 		font-size: em(19);
 		line-height: (36/19);
+		&.intro {
+			color: rgba($gray, 0.75);
+			text-transform: lowercase;
+			margin-top: -1em;
+			letter-spacing: rem(-0.5);
+			margin-bottom: -1em;
+			font-size: em(20);
+			@include w700 {
+				font-size: em(22);
+			}
+		}
 	}
 	p, ul, .button, img {
 		&:not(:last-child) {

@@ -302,7 +302,8 @@ get_header(); ?>
 			<div class="section-target section-target--view" id="partners-view"></div>
 			<div class="container container--large flex-space">
 				<div class="content-cap content-cap--small copy copy--centered">
-					<h2 class="lowercase">We Love Working with Clients That Inspire Us to Think Bigger</h2>
+					<h2 class="lowercase">We Love Working with Clients That&nbsp;Inspire Us to Think Bigger</h2>
+					<p class="intro">We work with 50+ clients including</p>
 				</div>
 				<div class="logos-grid logos-grid--home-arrangement">
 					<ul>
