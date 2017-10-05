@@ -369,26 +369,26 @@ get_header(); ?>
 				</div>
 				<div class="content-cap">
 					<ul class="inline-bulleted-list">
-						<li>Crazy&nbsp;Egg</li>
-						<li>Adobe&nbsp;Target</li>
-						<li>UserTesting.com</li>
+						<li>Dynamic&nbsp;Yield</li>
+						<li>Qubit</li>
+						<li>Drupal</li>
+						<li>Wordpress</li>
+						<li>Sitecore</li>
 						<li>Demandware</li>
 						<li>Magento</li>
-						<li>Sitecore</li>
+						<li>Shopify</li>
+						<li>Hybris</li>
 						<li>SAP</li>
-						<li>Google&nbsp;Analytics</li>
-						<li>Bloomreach</li>
+						<li>ATG</li>
+						<li>BloomReach</li>
+						<li>Crazy&nbsp;Egg</li>
+						<li>Treejack</li>
+						<li>OptimalSort</li>
+						<li>UserTesting</li>
+						<li>Hotjar</li>
 						<li>Clicktale</li>
 						<li>SiteCatalyst</li>
-						<li>Shopify</li>
 						<li>Coremetrics</li>
-						<li>Hot&nbsp;Jar</li>
-						<li>OptimalSort</li>
-						<li>TreeJack</li>
-						<li>Hybris</li>
-						<li>WordPress</li>
-						<li>Drupal</li>
-						<li>ATG</li>
 						<li>Many,&nbsp;many&nbsp;more</li>
 					</ul>
 				</div>

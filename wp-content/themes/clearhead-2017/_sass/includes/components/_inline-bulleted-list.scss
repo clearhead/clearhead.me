@@ -23,7 +23,7 @@
     @media (min-width: 320px) and (max-width: 374px) {
         max-width: em(286);
         li {
-            &:nth-child(2), &:nth-child(4), &:nth-child(7), &:nth-child(9), &:nth-child(12), &:nth-child(15), &:nth-child(18) {
+            &:nth-child(3), &:nth-child(6), &:nth-child(10), &:nth-child(13), &:nth-child(16), &:nth-child(19) {
                 // background-color: red;
                 &::after {
                     display: none;
@@ -37,10 +37,10 @@
             &:nth-child(1), &:nth-child(15) {
                 margin-left: 1rem;
             }
-            &:nth-child(2), &:nth-child(17) {
+            &:nth-child(3), &:nth-child(17) {
                 margin-right: 1rem;
             }
-            &:nth-child(2), &:nth-child(5), &:nth-child(8), &:nth-child(11), &:nth-child(14), &:nth-child(17), &:nth-child(20) {
+            &:nth-child(3), &:nth-child(6), &:nth-child(11), &:nth-child(14), &:nth-child(17), &:nth-child(20) {
                 // background-color: red;
                 &::after {
                     display: none;
@@ -51,7 +51,7 @@
     @include w480-n700 {
         max-width: em(390);
         li {
-            &:nth-child(3), &:nth-child(7), &:nth-child(10), &:nth-child(14), &:nth-child(18) {
+            &:nth-child(4), &:nth-child(8), &:nth-child(13), &:nth-child(17), &:nth-child(20) {
                 // background-color: red;
                 &::after {
                     display: none;
@@ -62,7 +62,7 @@
     @include w700-n1000 {
         max-width: em(589);
         li {
-            &:nth-child(5), &:nth-child(11), &:nth-child(17) {
+            &:nth-child(6), &:nth-child(13), &:nth-child(19) {
                 // background-color: red;
                 &::after {
                     display: none;
@@ -71,9 +71,9 @@
         }
     }
     @include w1000-n1280 {
-        max-width: em(760);
+        max-width: em(752);
         li {
-            &:nth-child(7), &:nth-child(14) {
+            &:nth-child(8), &:nth-child(17) {
                 // background-color: red;
                 &::after {
                     display: none;
@@ -84,7 +84,7 @@
     @include w1280-n1440 {
         max-width: em(860);
         li {
-            &:nth-child(8), &:nth-child(17) {
+            &:nth-child(10), &:nth-child(19) {
                 // background-color: red;
                 &::after {
                     display: none;
@@ -95,7 +95,7 @@
     @include w1440 {
         max-width: match(12);
         li {
-            &:nth-child(11) {
+            &:nth-child(13) {
                 // background-color: red;
                 &::after {
                     display: none;
