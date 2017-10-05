@@ -473,9 +473,9 @@ body.archive-view, body.single {
 	}
 }
 
-//To fix up some footer text issues from 2017
+// To fix up some footer text issues from 2017
 footer {
-	color: black;
+	color: $black;
 }
 // footer {
 // 	.cap-3c-2g {
@@ -659,9 +659,9 @@ footer {
 section {
 	background-color: $white;
 	color: $black;
-	// padding: 2.25em 0;
+	padding: 2.25em 0;
 	@include w640 {
-		//padding: 3.265625em 0;
+		padding: 3.265625em 0;
 	}
 	&.spacing-added {
 		padding: 3.5em 0;
