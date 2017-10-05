@@ -356,14 +356,15 @@ get_header(); ?>
 				<div class="content-cap content-cap--small copy copy--centered">
 					<h4 class="lowercase">We Are Experts on Your Technology, Without Bias</h4>
 				</div>
-				<div class="logos-grid logos-grid--small">
+				<div class="logos-grid logos-grid--small logos-grid--small--addon">
 					<ul>
 						<li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/optimizely.svg" alt="Optimizely"></span></div></div></li>
-	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/monetate.svg" alt="Monetate"></span></div></div></li>
-	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/google-analytics.svg" alt="Google Analytics"></span></div></div></li>
-	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/maxymiser.svg" alt="Maxymiser"></span></div></div></li>
-	                    <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/tealium.svg" alt="Tealium"></span></div></div></li>
-	                    <li><div><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adobe Target"></span></div></div></li>
+	          <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/monetate.svg" alt="Monetate"></span></div></div></li>
+	          <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/google-analytics.svg" alt="Google Analytics"></span></div></div></li>
+	          <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/maxymiser.svg" alt="Maxymiser"></span></div></div></li>
+	          <li><div><div><span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/tealium.svg" alt="Tealium"></span></div></div></li>
+						<li><div><div><span><img style="width: 8.5em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-target.png" alt="Adobe Target"></span></div></div></li>
+						<li><div><div><span><img style="width: 9em;" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tools/adobe-analytics.png" alt="Adobe Analytics"></span></div></div></li>
 					</ul>
 				</div>
 				<div class="content-cap">

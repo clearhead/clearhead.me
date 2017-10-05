@@ -676,6 +676,14 @@
 
 @media (min-width: 1000px) { .ch2017-capsule .logos-grid--small ul li { margin: 0.625rem 0.75rem; width: calc((6.8055555556vw * 2 ) - 1.875rem); } }
 
+@media (min-width: 1000px) { .ch2017-capsule .logos-grid--small--addon { margin-bottom: 0.5em; } }
+
+.ch2017-capsule .logos-grid--small--addon ul li { margin: 0.234375rem 0.625rem; width: calc((6.8055555556vw * 5.8947368421 ) - 1.875rem); }
+
+@media (min-width: 700px) { .ch2017-capsule .logos-grid--small--addon ul li { margin: 0.234375rem 0.9375rem; width: calc((6.8055555556vw * 2.8888888889 ) - 1.875rem); } }
+
+@media (min-width: 1280px) { .ch2017-capsule .logos-grid--small--addon ul li { margin: 0.625rem 1.0714285714rem; width: calc((6.8055555556vw * 1.6 ) - 1.875rem); } }
+
 .ch2017-capsule .logos-grid--in-page { margin-bottom: 3.125em; }
 
 .ch2017-capsule .testimonial-blocks { margin-bottom: 4.125em; }

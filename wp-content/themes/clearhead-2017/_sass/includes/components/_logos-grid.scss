@@ -97,6 +97,25 @@
                 }
             }
         }
+        &--addon {
+          @include w1000 {
+              margin-bottom: 0.5em;
+          }
+          ul {
+              li {
+                  margin: $gutter/8 $gutter/3;
+                  width: col(#{(14/2.375)});
+                  @include w700 {
+                      margin: $gutter/8 $gutter/2;
+                      width: col(#{(13/4.5)});
+                  }
+                  @include w1280 {
+                      margin: $gutter/3 $gutter/1.75;
+                      width: col(#{(12/7.5)});
+                  }
+              }
+          }
+        }
     }
     &--in-page {
         margin-bottom: em(50);
