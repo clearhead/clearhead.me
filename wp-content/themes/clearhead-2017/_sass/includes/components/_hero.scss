@@ -1,0 +1,64 @@
+.top-group {
+    @include n700 {
+        background-image: none !important;
+        background-color: $blue;
+    }
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    .hero {
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        .flex-space {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-grow: 1;
+        }
+        h1 {
+            margin: auto 0;
+            position: relative;
+        }
+        .cta {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include n700 {
+                margin-bottom: em(102);
+            }
+            margin-bottom: em(68);
+            &:hover {
+                .button {
+                    @include n700 {
+                        background-color: $blue-shade;
+                        color: $blue-dark-1;
+                    }
+                    background-color: $blue;
+                    color: $white;
+                }
+                .icon {
+                    transform: translateY(0.25em);
+                    color: rgba($blue-shade, 0.65);
+                }
+            }
+            .icon {
+                display: block;
+                margin-top: em(23);
+                transform: translateY(0);
+                transition: color $timing-normal, transform $timing-slower;
+                color: $white;
+            }
+        }
+    }
+}
+
+.page-template-service .top-group {
+    // background-image: none !important;
+    height: 18em;
+}

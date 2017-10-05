@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="65px" viewBox="0 0 64 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 38</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="CH.me-Design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CH.me-Homepage" transform="translate(-962.000000, -2206.000000)" stroke="#FFFFFF">
+            <g id="Contents-#3" transform="translate(0.000000, 1673.000000)">
+                <g id="Group-36" transform="translate(930.000000, 318.000000)">
+                    <g id="Group-38" transform="translate(32.000000, 215.000000)">
+                        <path d="M23.1866667,62.805467 L34.6009447,52.8815789 L37.0592105,52.8815789 C51.385913,52.8815789 63,41.2674919 63,26.9407895 C63,12.614087 51.385913,1 37.0592105,1 L26.9407895,1 C12.614087,1 1,12.614087 1,26.9407895 C1,39.5620872 10.0773482,50.291705 22.3619554,52.478923 L23.1866667,52.6257591 L23.1866667,62.805467 Z" id="Combined-Shape" stroke-width="2"></path>
+                        <g id="Group-14" transform="translate(20.000000, 11.000000)" stroke-width="1.8">
+                            <g id="Group-25">
+                                <path d="M7.07142857,26.269568 L17.6142857,26.269568 L17.6142857,22.0115787 L18.0186178,21.7447891 C21.1616737,19.6709131 23.1,16.1189409 23.1,12.2263056 C23.1,5.96723497 18.1265582,0.9 12,0.9 C5.87344182,0.9 0.9,5.96723497 0.9,12.2263056 C0.9,16.3876219 3.11713474,20.1489235 6.61546695,22.1332429 L7.07142857,22.3918729 L7.07142857,26.269568 Z" id="Combined-Shape"></path>
+                                <path d="M8.91428571,15.6225016 L11.6571429,17.6602192" id="Path-14" stroke-linecap="round"></path>
+                                <path d="M13.0285714,15.6225016 L15.7714286,17.6602192" id="Path-14" stroke-linecap="round" transform="translate(14.400000, 16.641360) scale(-1, 1) translate(-14.400000, -16.641360) "></path>
+                                <path d="M12.3428571,17.6602192 L12.3428571,25.1318504" id="Path-14" stroke-linecap="round" transform="translate(12.342857, 21.396035) scale(-1, 1) translate(-12.342857, -21.396035) "></path>
+                                <polyline id="Path-4" points="7.47857143 26.4903288 7.47857143 29.2072856 17.2060716 29.2072856 17.2060716 26.61367"></polyline>
+                                <polyline id="Path-4" points="8.16428571 29.131528 8.16428571 31.8484848 16.519286 31.8484848 16.519286 29.2548692"></polyline>
+                                <rect id="Rectangle-3" x="11.4" y="32.6727273" width="1.95" height="1" rx="0.5"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

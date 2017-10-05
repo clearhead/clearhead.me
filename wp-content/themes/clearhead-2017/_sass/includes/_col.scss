@@ -1,0 +1,60 @@
+// COL (function-based column-sizing)
+// --------------------------------------
+$col-width: 68;
+$gutter-width: 30;
+$column: (($col-width+$gutter-width)/1440)*100vw;
+$column-match: $col-width/$base*1rem;
+$gutter: $gutter-width/$base*1rem;
+
+// Functions
+// ---------
+@function col($col, $subtract_gutter: false) {
+    @if $subtract_gutter != false {
+        @return calc((#{$column} * #{$col} ) - #{2 * $gutter});
+    }
+    @else {
+        @return calc((#{$column} * #{$col} ) - #{$gutter});
+    }
+}
+
+@function match($unit) {
+    @return (($column-match + $gutter) * $unit ) - $gutter;
+}
+
+// Column-markers
+// --------------
+.col-markers {
+    position: fixed;
+    width: 100%;
+    pointer-events: none;
+    z-index: 1000;
+    ul {
+        justify-content: space-between;
+        display: flex;
+        margin: 0 auto;
+        // @include w700 {
+        //     width: col(13);
+        // }
+        // @include w1000 {
+        //     width: col(12);
+        // }
+        li {
+            width: col(1);
+            background-color: rgba(black, 0.15625);
+            height: 100vh;
+            // @include w700 {
+            //     &:nth-last-child(1) {
+            //         display: none;
+            //     }
+            // }
+            // @include w1000 {
+            //     &:nth-last-child(2) {
+            //         display: none;
+            //     }
+            // }
+        }
+    }
+    &:not(:target) { // display via #markers to see
+        display: none;
+    }
+}

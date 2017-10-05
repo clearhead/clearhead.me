@@ -1,0 +1,112 @@
+.ch2017-capsule {
+    @import "includes/reset";
+
+    // Unsetting some things for the capsule
+    font-size: 16px !important;
+    letter-spacing: 0;
+
+
+    @import "includes/extensions";
+    @import "includes/col";
+
+    $column-match: $col-width/$base*16px;
+    $gutter: $gutter-width/$base*16px;
+
+    @import "includes/base";
+
+    // Overriding some base styles
+    h1, h2, h3, h4, h5 {
+        text-transform: none;
+    }
+    label {
+        text-transform: none;
+        letter-spacing: 0;
+    }
+    input[type="submit"] {
+
+        // padding: rem(16) rem(13) rem(12);
+        padding: 16px 13px 12px;
+
+        // letter-spacing: rem(0.83);
+    	letter-spacing: 0.83px;
+
+    	// border-radius: rem(2);
+    	// min-width: rem(181);
+        border-radius: 2px;
+    	min-width: 181px;
+
+    }
+
+
+
+    @import "includes/layout";
+
+    // Overriding some rem-related things
+    .site-header {
+        &.is-filled {
+            .menu-toggle {
+                @include n700 {
+                    // top: rem(22);
+                    top: 22px;
+                }
+            }
+        }
+        .flex-row {
+            nav {
+                @include w700-n1000 {
+                    // padding: rem(1.25) 0;
+                    padding: 1.25px 0;
+                }
+                @include w1000-n1280 {
+                    // padding: rem(1.25) 0;
+                    padding: 1.25px 0;
+                }
+                ul {
+                    li {
+                        a {
+                            line-height: (25/15);
+                            @include n700 {
+                                // padding: calc(0.25rem + 1.5625vh) 0;
+                                padding: calc(4px + 1.5625vh) 0;
+                            }
+                            @include w700 {
+                                // padding: rem(7) rem(7.5) rem(4);
+                                padding: 7px 7.5px 4px;
+
+                                // border-bottom: rem(3) solid transparent;
+                                border-bottom: 3px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu-toggle {
+            // top: rem(27);
+            // right: rem(24.25);
+            // height: rem(26);
+            // width: rem(26);
+            top: 27px;
+            right: 24.25px;
+            height: 26px;
+            width: 26px;
+        }
+    }
+
+
+    @import "includes/components/hero";
+    @import "includes/components/services-feature";
+    @import "includes/components/stories-blocks";
+    @import "includes/components/inline-bulleted-list";
+    @import "includes/components/contact-callout";
+    @import "includes/components/logos-grid";
+    @import "includes/components/testimonial-blocks";
+    @import "includes/components/photo-links";
+    @import "includes/components/team-grid";
+
+    @import "includes/components/page-banner";
+    @import "includes/components/node-grid";
+    @import "includes/components/summary-blocks";
+
+
+}
