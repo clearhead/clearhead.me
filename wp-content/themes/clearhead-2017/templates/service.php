@@ -44,13 +44,13 @@ get_header(); ?>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/competencies/<?php echo $slug ?>-node-grid.png" alt="">
         <div class="cta">
             <?php if ($slug == "experience-design"): ?>
-                <p>Schedule a 30 minute call to learn more about our consulting capabilities.</p>
+                <p>Schedule a 30 minute call to learn more about our experience + design capabilities.</p>
             <?php elseif ($slug == "research-analytics"): ?>
                 <p>Schedule a 30 minute call to learn more about our research + analytics capabilities.</p>
             <?php elseif ($slug == "experimentation-personalization"): ?>
-                <p>Schedule a 30 minute call to learn more about our full research + analytics capabilities.</p>
+                <p>Schedule a 30 minute call to learn more about our experimentation + personalization capabilities.</p>
             <?php elseif ($slug == "test-learn-consulting"): ?>
-                <p>Schedule a 30 minute call to learn more about our full design capabilities.</p>
+                <p>Schedule a 30 minute call to learn more about our consulting capabilities.</p>
             <?php endif; ?>
 
             <a class="button button--white contact-focus" href="#contact-form">Contact Us</a>
@@ -96,7 +96,7 @@ get_header(); ?>
 
         <div class="summary-blocks">
             <?php if ($slug == "experience-design"): ?>
-                <h2 class="lowercase">Our Top Design + Experience Blog&nbsp;Posts</h2>
+                <h2 class="lowercase">Our Top Experience + Design Blog&nbsp;Posts</h2>
                 <ul>
                     <li>
                         <a href="http://clearhead.me/blog/vitamix-data-driven-experience-case-study/">

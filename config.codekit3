@@ -2625,12 +2625,6 @@
 		"oAP": "\/wp-admin\/includes\/class-wp-comments-list-table.php",
 		"oF": 0
 		},
-	"\/wp-admin\/includes\/class-wp-community-events.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-admin\/includes\/class-wp-community-events.php",
-		"oF": 0
-		},
 	"\/wp-admin\/includes\/class-wp-filesystem-base.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -3861,106 +3855,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"\/wp-admin\/js\/widgets\/media-audio-widget.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-audio-widget-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-audio-widget.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-audio-widget.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-image-widget.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-image-widget-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-image-widget.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-image-widget.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-video-widget.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-video-widget-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-video-widget.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-video-widget.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-widgets.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-widgets-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/media-widgets.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/media-widgets.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/text-widgets.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/text-widgets-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
-	"\/wp-admin\/js\/widgets\/text-widgets.min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 0,
-		"oA": 0,
-		"oAP": "\/wp-admin\/js\/widgets\/min\/text-widgets.min-min.js",
-		"oF": 0,
-		"sC": 0,
-		"tS": 0
-		},
 	"\/wp-admin\/js\/word-count.js": {
 		"ft": 64,
 		"ma": 0,
@@ -4577,12 +4471,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-comments-post.php",
-		"oF": 0
-		},
-	"\/wp-config-sample.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-config-sample.php",
 		"oF": 0
 		},
 	"\/wp-config.php": {
@@ -11546,12 +11434,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/wp-content\/plugins\/jetpack\/locales.php",
-		"oF": 0
-		},
-	"\/wp-content\/plugins\/jetpack\/logs": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/wp-content\/plugins\/jetpack\/logs",
 		"oF": 0
 		},
 	"\/wp-content\/plugins\/jetpack\/modules\/after-the-deadline.php": {
@@ -65005,6 +64887,654 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-1000x346.png": {
+		"ft": 32768,
+		"iS": 105748,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-1000x346.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-150x150.png": {
+		"ft": 32768,
+		"iS": 11657,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-206x140.png": {
+		"ft": 32768,
+		"iS": 15808,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-206x140.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-264x390.png": {
+		"ft": 32768,
+		"iS": 35608,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-264x390.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-400x175.png": {
+		"ft": 32768,
+		"iS": 35926,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-400x175.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-600x208.png": {
+		"ft": 32768,
+		"iS": 49925,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-600x208.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-768x266.png": {
+		"ft": 32768,
+		"iS": 79387,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-768x266.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1-800x350.png": {
+		"ft": 32768,
+		"iS": 113125,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1-800x350.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1.png": {
+		"ft": 32768,
+		"iS": 134632,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-1000x346.png": {
+		"ft": 32768,
+		"iS": 105748,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-1000x346.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-150x150.png": {
+		"ft": 32768,
+		"iS": 11657,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-150x150.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-206x140.png": {
+		"ft": 32768,
+		"iS": 15808,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-206x140.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-264x390.png": {
+		"ft": 32768,
+		"iS": 35608,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-264x390.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-400x175.png": {
+		"ft": 32768,
+		"iS": 35926,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-400x175.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-600x208.png": {
+		"ft": 32768,
+		"iS": 49925,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-600x208.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-768x266.png": {
+		"ft": 32768,
+		"iS": 79387,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-768x266.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map-800x350.png": {
+		"ft": 32768,
+		"iS": 113125,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map-800x350.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/08\/psm-map.png": {
+		"ft": 32768,
+		"iS": 134632,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/08\/psm-map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-1000x303.jpg": {
+		"ft": 16384,
+		"iS": 60629,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-1000x303.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-150x150.jpg": {
+		"ft": 16384,
+		"iS": 7514,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-150x150.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-206x140.jpg": {
+		"ft": 16384,
+		"iS": 9100,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-206x140.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-264x390.jpg": {
+		"ft": 16384,
+		"iS": 25549,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-264x390.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-400x175.jpg": {
+		"ft": 16384,
+		"iS": 19286,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-400x175.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-600x182.jpg": {
+		"ft": 16384,
+		"iS": 26256,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-600x182.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-768x233.jpg": {
+		"ft": 16384,
+		"iS": 39530,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-768x233.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting-800x350.jpg": {
+		"ft": 16384,
+		"iS": 61690,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting-800x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/data-driven-consulting.jpg": {
+		"ft": 16384,
+		"iS": 395070,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/data-driven-consulting.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-1000x303.jpg": {
+		"ft": 16384,
+		"iS": 49617,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-1000x303.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-150x150.jpg": {
+		"ft": 16384,
+		"iS": 6840,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-150x150.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-206x140.jpg": {
+		"ft": 16384,
+		"iS": 8404,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-206x140.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-264x390.jpg": {
+		"ft": 16384,
+		"iS": 17726,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-264x390.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-400x175.jpg": {
+		"ft": 16384,
+		"iS": 16643,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-400x175.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-600x182.jpg": {
+		"ft": 16384,
+		"iS": 23387,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-600x182.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-768x233.jpg": {
+		"ft": 16384,
+		"iS": 33777,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-768x233.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1-800x350.jpg": {
+		"ft": 16384,
+		"iS": 45574,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1-800x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1.jpg": {
+		"ft": 16384,
+		"iS": 276185,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-1000x303.jpg": {
+		"ft": 16384,
+		"iS": 49617,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-1000x303.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-150x150.jpg": {
+		"ft": 16384,
+		"iS": 6840,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-150x150.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-206x140.jpg": {
+		"ft": 16384,
+		"iS": 8404,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-206x140.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-264x390.jpg": {
+		"ft": 16384,
+		"iS": 17726,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-264x390.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-400x175.jpg": {
+		"ft": 16384,
+		"iS": 16643,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-400x175.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-600x182.jpg": {
+		"ft": 16384,
+		"iS": 23387,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-600x182.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-768x233.jpg": {
+		"ft": 16384,
+		"iS": 33777,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-768x233.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design-800x350.jpg": {
+		"ft": 16384,
+		"iS": 45574,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design-800x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experience-design.jpg": {
+		"ft": 16384,
+		"iS": 276185,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experience-design.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-1000x303.jpg": {
+		"ft": 16384,
+		"iS": 46605,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-1000x303.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-150x150.jpg": {
+		"ft": 16384,
+		"iS": 5844,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-150x150.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-206x140.jpg": {
+		"ft": 16384,
+		"iS": 7715,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-206x140.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-264x390.jpg": {
+		"ft": 16384,
+		"iS": 14333,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-264x390.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-400x175.jpg": {
+		"ft": 16384,
+		"iS": 15135,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-400x175.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-600x182.jpg": {
+		"ft": 16384,
+		"iS": 22121,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-600x182.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-768x233.jpg": {
+		"ft": 16384,
+		"iS": 31961,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-768x233.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization-800x350.jpg": {
+		"ft": 16384,
+		"iS": 42369,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization-800x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/experimentation-personalization.jpg": {
+		"ft": 16384,
+		"iS": 306425,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/experimentation-personalization.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-1000x303.jpg": {
+		"ft": 16384,
+		"iS": 49721,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-1000x303.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-150x150.jpg": {
+		"ft": 16384,
+		"iS": 6274,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-150x150.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-206x140.jpg": {
+		"ft": 16384,
+		"iS": 8014,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-206x140.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-264x390.jpg": {
+		"ft": 16384,
+		"iS": 16831,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-264x390.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-400x175.jpg": {
+		"ft": 16384,
+		"iS": 16092,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-400x175.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-600x182.jpg": {
+		"ft": 16384,
+		"iS": 24179,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-600x182.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-768x233.jpg": {
+		"ft": 16384,
+		"iS": 34395,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-768x233.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs-800x350.jpg": {
+		"ft": 16384,
+		"iS": 42666,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs-800x350.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/wp-content\/uploads\/2017\/09\/research-analyitcs.jpg": {
+		"ft": 16384,
+		"iS": 301407,
+		"oA": 0,
+		"oAP": "\/wp-content\/uploads\/2017\/09\/research-analyitcs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/wp-content\/uploads\/sites\/2\/2016\/07\/clearhead-redesign-report-1024x538.jpg": {
 		"ft": 16384,
 		"iS": 70895,
@@ -68959,6 +69489,12 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/wp-includes\/js\/tinymce\/plugins\/media\/moxieplayer.swf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/wp-includes\/js\/tinymce\/plugins\/media\/moxieplayer.swf",
+		"oF": 0
+		},
 	"\/wp-includes\/js\/tinymce\/plugins\/media\/plugin.js": {
 		"ft": 64,
 		"ma": 0,
@@ -69119,6 +69655,26 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"\/wp-includes\/js\/tinymce\/plugins\/wpembed\/plugin.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-includes\/js\/tinymce\/plugins\/wpembed\/min\/plugin-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"\/wp-includes\/js\/tinymce\/plugins\/wpembed\/plugin.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/wp-includes\/js\/tinymce\/plugins\/wpembed\/min\/plugin.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/wp-includes\/js\/tinymce\/plugins\/wpemoji\/plugin.js": {
 		"ft": 64,
 		"ma": 0,
@@ -69239,11 +69795,37 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/readme.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/readme.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
 	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce-small.eot": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce-small.eot",
 		"oF": 0
+		},
+	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce-small.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce-small-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce-small.svg": {
 		"ft": 2097152,
@@ -69272,6 +69854,14 @@
 		"oA": 2,
 		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce.eot",
 		"oF": 0
+		},
+	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/fonts\/tinymce.svg": {
 		"ft": 2097152,
@@ -69326,6 +69916,16 @@
 		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/img\/trans.gif",
 		"oF": 0,
 		"opt": 0
+		},
+	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/skin.ie7.min.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/wp-includes\/js\/tinymce\/skins\/lightgray\/skin.ie7.min-min.css",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/wp-includes\/js\/tinymce\/skins\/lightgray\/skin.min.css": {
 		"aP": 0,
@@ -71154,30 +71754,6 @@
 		"oAP": "\/wp-includes\/widgets\/class-wp-widget-links.php",
 		"oF": 0
 		},
-	"\/wp-includes\/widgets\/class-wp-widget-media-audio.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-includes\/widgets\/class-wp-widget-media-audio.php",
-		"oF": 0
-		},
-	"\/wp-includes\/widgets\/class-wp-widget-media-image.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-includes\/widgets\/class-wp-widget-media-image.php",
-		"oF": 0
-		},
-	"\/wp-includes\/widgets\/class-wp-widget-media-video.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-includes\/widgets\/class-wp-widget-media-video.php",
-		"oF": 0
-		},
-	"\/wp-includes\/widgets\/class-wp-widget-media.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/wp-includes\/widgets\/class-wp-widget-media.php",
-		"oF": 0
-		},
 	"\/wp-includes\/widgets\/class-wp-widget-meta.php": {
 		"ft": 8192,
 		"oA": 0,
@@ -71299,7 +71875,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 505348029,
-	"displayValue": "clearhead.me",
+	"displayValue": "clearhead",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "\/apple-touch-icon.png"
 	},
