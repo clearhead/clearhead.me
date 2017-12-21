@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php if ( has_post_thumbnail() ) : ?>
@@ -16,9 +15,18 @@
 		<a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_post_thumbnail(); ?></a>
 	</div>
 	<?php endif; ?>
+	<?php
+		// get subtitle field, if post doesn't have it then make variable empty (avoid)
+		$subtitle = get_field('subtitle');
+		if ($subtitle == NULL) {
+			$subtitle = '';
+		}
 
+		$header_title = get_the_title() . ' ' . $subtitle;
+	?>
+		
 	<div class="archive-entry-header">
-		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+		<h1 class="entry-title"><a href="<?php echo esc_url( get_permalink() ); ?>" rel="bookmark"><?php echo $header_title ?></a></h1>
 	</div><!-- .archive-entry-header -->
 
 	<div class="entry-content entry-content-archive">
