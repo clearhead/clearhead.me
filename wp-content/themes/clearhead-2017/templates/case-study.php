@@ -5,7 +5,8 @@ Template Post Type: post
 */
 
 get_header(); ?>
-<?php while ( have_posts() ) : the_post(); ?>
+<?php 
+while ( have_posts() ) : the_post();// while 1 ?>
 	<article class="case-study">
 		<section class="article-intro">
 			<div class="container">
@@ -20,33 +21,36 @@ get_header(); ?>
 				</h2>
 				<?php endif;
 				$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
-				if ($feat_image ): ?>
+				if ($feat_image ):// if 1 ?>
 					<figure>
 						<img src="<?php echo $feat_image; ?>">
 					</figure>
-				<?php endif; ?>
+				<?php endif; // end if 1 ?>
 			</div>
 		</section>
 		<?php
-		if( have_rows('intro_section') ):
-			while( have_rows('intro_section') ) : the_row();
-				if( get_row_layout() == 'testimonial_block'): ?>
+			if( have_rows('intro_section') ): // if 2
+		?>
+		<!-- INTRO -->
+		<?php
+			while( have_rows('intro_section') ) : the_row(); // while 2
+				if( get_row_layout() == 'testimonial_block'): // if 3 ?>
 					<section class="article-testimony">
 						<div class="container">
 							<?php
 							$avatar = get_sub_field('source_avatar');
-							if(!empty($avatar)): ?>
+							if(!empty($avatar)): // if 4?>
 								<figure class="source-photo">
 									<img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>">
 								</figure>
 							<?php
-							endif; ?>
+							endif; // end if 4?>
 							<blockquote><?php the_sub_field('testimony') ?></blockquote>
 							<cite><?php the_sub_field('source_name_and_description') ?></cite>
 						</div>
 					</section>
 				<?php
-				elseif( get_row_layout() == 'content_block'): ?>
+				elseif( get_row_layout() == 'content_block'): // if 3 - elseif?>
 					<section>
 						<div class="container">
 							<div class="cap-7c-6g cap-7c-6g-centered">
@@ -54,21 +58,24 @@ get_header(); ?>
 							</div>
 						</div>
 					</section> <?php
-				endif;
-			endwhile;
-		endif; 
+				endif; // en if 3
+			endwhile;// end while 2
+			?>
+			<!-- END INTRO -->
+		<?php
+		endif; // end if 2
 		$experiments = get_field_object('experiments_section');
-		$experimentCount = count($experiments['value']); ?>
-		<?php 
-		//Check to seee if we have greater than one experiment, then show the section
-		if( $experimentCount > 1 ): ?>
+		$experimentCount = count($experiments['value']);
+			//Check to seee if we have greater than one experiment, then show the section
+			if( $experimentCount > 1 ): // if 5 ?>
+			
 			<section class="section-jump">
 				<div class="container">
 					<p>Ready to learn more about how <?php the_field('client_name'); ?> uses data and testing to drive business results?</p>
 					<ul>
 						<?php
 							$count = 1;
-							while ( have_rows('experiments_section')): the_row(); ?>
+							while ( have_rows('experiments_section')): the_row();// while 3 ?>
 							<li>
 								<a class="smooth-scroll" href="#experiment-<?php echo $count; ?>">
 									<span>Experiment <?php echo $count ?></span>
@@ -77,16 +84,18 @@ get_header(); ?>
 								</a>
 							</li>
 						<?php
-						$count++;
-						endwhile; ?>
+							$count++;
+							endwhile;// end while 3 ?>
 					</ul>
 				</div>
-			</section> <?php
-			endif;
-			$count = 1; 
-			while ( have_rows('experiments_section')): the_row();
+			</section>
+			
+			<?php
+			endif; // end if 5
+			while ( have_rows('experiments_section')): the_row(); // while 4
 				$overview_content = get_sub_field('overview_content');
 				$experiment_details = get_sub_field('experiment_details');?>
+				<!-- experiment -->
 				<section class="section-intro" id="experiment-<?php echo $count ?>">
 					<?php $count++; ?>
 					<div class="container">
@@ -105,8 +114,20 @@ get_header(); ?>
 				<section>
 					<div class="container">
 						<div class="cap-7c-6g cap-7c-6g-centered">
-							<h2><?php the_sub_field('title')?>: <?php the_sub_field('subtitle')?></h2>
-							<?php echo $overview_content['content'] ?>
+							<?php 
+								$subtitle = get_sub_field('subtitle');
+								$subtitle = ( strlen($subtitle) == 0 ) ? false : true;
+							 
+							 if ($subtitle) : //if 5.1
+							 	// if there is a subtitle show the both title and subtitle with a colon in the middle
+							?>
+								<h2><?php the_sub_field('title')?>: <?php the_sub_field('subtitle')?></h2>
+							<?php else: ?>
+								<h2><?php the_sub_field('title')?></h2>	
+							<?php 
+							endif; // end if 5.1
+							echo $overview_content['content'] 
+							?>
 						</div>
 						<div class="experiment-split">
 							<div class="problem">
@@ -145,7 +166,7 @@ get_header(); ?>
 							<ul class="thumbnails"> <?php
 							for($i = 0; $i < count($variation_screenshots); $i++): ?>
 								<?php
-								if($i == 0):?>
+								if($i == 0): // if 6?>
 									<li class="selected">
 										<a href=".">
 											<img src="<?php echo $variation_screenshots[$i]['sizes']['variation-thumbnail'] ?>" alt="control">
@@ -153,7 +174,7 @@ get_header(); ?>
 										</a>
 									</li>
 								<?php
-								else:
+								else: // if 6 - else
 								?>
 									<li>
 										<a href=".">
@@ -162,7 +183,7 @@ get_header(); ?>
 										</a>
 									</li>
 								<?php
-								endif;
+								endif; // end if 6
 								?>
 							<?php
 							endfor; ?>
@@ -180,17 +201,17 @@ get_header(); ?>
 								<?php
 								for($i = 0; $i < count($variation_screenshots); $i++): ?>
 									<?php
-									if($i == 0): ?>
+									if($i == 0): // if 7 ?>
 										<li class="is-showing">
 											<img src="<?php echo $variation_screenshots[$i]['url'] ?>" alt="Zoom control">
 										</li>
 									<?php
-									else: ?>
+									else: // if 7 - else ?>
 										<li>
 											<img src="<?php echo $variation_screenshots[$i]['url'] ?>" alt="Zoom variant <?php echo $i ?>">
 										</li>
 									<?php
-									endif; ?>
+									endif; // end if 7?>
 								<?php
 								endfor; ?>
 							</ul>
@@ -201,16 +222,68 @@ get_header(); ?>
 					<div class="container">
 						<div class="cap-7c-6g cap-7c-6g-centered">
 							<h2>Results</h2>
-							<?php the_sub_field('results_content');
-							if(get_sub_field('results_link')): ?>
+							<?php 
+								the_sub_field('results_content');
+								if(get_sub_field('results_link')): // if 8
+							?>
 								<strong><a href="<?php the_sub_field('results_link') ?>">Read the full data story</a></strong>
-							<?php endif ?>
+							<?php 
+								endif // end if 8
+							?>
 						</div>
 					</div>
-			</section>
-		<?php
-			endwhile; ?>
+				</section>
+				<!-- end experiment -->
+			<?php
+			endwhile;// end while 4
+			
+			// outro section
+			if( have_rows('outro_section') ): // if 9
+			?>
+			<!-- OUTRO SECTION -->
+			<?php
+				while( have_rows('outro_section') ) : the_row();// while 5
+					if( get_row_layout() == 'testimonial_block'): // if 10
+			?>
+						<section class="article-testimony">
+							<div class="container">
+							<?php
+								$avatar = get_sub_field('source_avatar');
+								if(!empty($avatar)): // if 11 
+							?>
+								<figure class="source-photo">
+									<img src="<?php echo $avatar['url']; ?>" alt="<?php echo $avatar['alt']; ?>">
+								</figure>
+							<?php
+								endif; // end if 11
+							?>
+								<blockquote><?php the_sub_field('testimony') ?></blockquote>
+								<cite><?php the_sub_field('source_name_and_description') ?></cite>
+							</div>
+						</section>
+					<?php
+					elseif( get_row_layout() == 'content_block'):// if 10 - else 
+					?>
+
+						<section>
+							<div class="container">
+								<div class="cap-7c-6g cap-7c-6g-centered">
+									<?php 
+										echo the_sub_field('content'); 
+									?>
+								</div>
+							</div>
+						</section> 
+					<?php 
+					endif; // end if 10
+				endwhile; // end while 5
+				?>
+				<!-- END OUTRO SECTION -->
+				<?php
+			endif; // end if 9
+			?>
 	</article>
+
 	<?php
 	//Get the category id
 	$current_post_id = get_the_ID();
@@ -223,14 +296,14 @@ get_header(); ?>
 	);
 	$category_query = new WP_Query( $category_query_args );
 
-	if ( $category_query->have_posts() ) :
+	if ( $category_query->have_posts() ) : // if 12
 	?>
 	<section class="article-ps">
 		<div class="container">
 			<div class="article-list">
 				<h5>Read more case studies</h5>
 				<ul> <?php
-					while ($category_query->have_posts()) : $category_query->the_post(); 
+					while ($category_query->have_posts()) : $category_query->the_post(); // while 6
 					$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID), 'thumbnail' ); ?>
 					<li>
 						<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -241,7 +314,7 @@ get_header(); ?>
 						</a>
 					</li>
 					<?php
-					endwhile; ?>
+					endwhile;// end while 6 ?>
 				</ul>
 			</div>
 			<div class="cta-callout">
@@ -251,6 +324,6 @@ get_header(); ?>
 		</div>
 	</section>
 	<?php
-	endif;
-endwhile;
+	endif; // end if 12
+endwhile; // end while 1
 get_footer();
