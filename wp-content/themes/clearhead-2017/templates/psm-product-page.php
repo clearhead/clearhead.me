@@ -35,6 +35,16 @@ get_header(); ?>
 
 			<section>
 				<div class="container">
+					<section class="vid-cont" style="text-align: center; padding: 0; margin-bottom: 3.3em; max-width:100%">
+						<style>
+						.psm-embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } 
+						.psm-embed-container iframe, .psm-embed-container object, .psm-embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+						</style>
+
+						<div class="psm-embed-container">
+							<iframe src="https://player.vimeo.com/video/269693847" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+						</div>
+					</section>
 					<div class="cap-7c-6g cap-7c-6g-centered">
 						<p><strong>Problem Solution Mapping</strong> is an operating methodology invented at Clearhead based on our observations and cumulative learnings from thousands of UX experiments. We realized we could make a much bigger impact by changing the way we chose ideas, taking time to understand and embrace problems before we proposed or tested solution hypotheses.</p>
 					</div>
