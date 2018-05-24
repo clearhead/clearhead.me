@@ -59,7 +59,7 @@
 							</svg>
 						</a>
 					</div>
-					<span class="detail">now part of Accenture Interactive</span>
+					<span class="detail">part of Accenture Interactive</span>
 					<nav>
 						<button class="menu-toggle menu-toggle--close">
 							<div class="icon">
