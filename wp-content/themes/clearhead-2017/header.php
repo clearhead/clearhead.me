@@ -89,7 +89,7 @@
 								<a class="smooth-scroll" href="/#contact">Contact Us</a>
 							</li>
 							<li>
-								<a href="http://clearhead.theresumator.com/apply">Jobs</a>
+								<a href="https://www.accenture.com/us-en/careers/jobsearch?jk=clearhead">Jobs</a>
 							</li>
 							<li>
 								<a href="/blog/">Blog</a>
